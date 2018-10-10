@@ -1,0 +1,74 @@
+/*
+	Load css for CLMB
+
+*/
+.header_left {
+	background-color: #ffffff;
+}
+
+.header_right {
+	background-color: #ffffff;
+}
+
+.sidebar {
+	background-color: #576777;
+}
+
+.navbar-fixed-bottom {
+	background-color: #576777;
+	border: 0px;
+}
+
+.nav_area .menu_item_wrapper .menu_item {
+	background: #576777 !important;
+}
+
+.nav_area .panel-default {
+	border-color: #576777 !important;
+}
+
+.nav-menu {
+	background: #576777 !important;
+}
+
+/*MENU ON HOVER*/
+.nav_area .nav-menu:hover {
+	background: #01afba !important;
+}
+
+.nav_area .menu_item_wrapper .menu_item a:hover, .nav_area .menu_item_wrapper .menu_item a:focus
+	{
+	text-decoration: none;
+}
+
+.active {
+	background-color: #01afba !important;
+}
+
+.submit_button {
+	background-color: #01afba !important;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.icon_holder .glyphicon {
+	color: #01afba;
+}
+
+.user_profile {
+	color: #01afba;
+}
+
+.content-user-profile {
+	color: #01afba;
+}
+
+.arrow-up {
+    border-bottom: 10px solid #576777;
+}
+
+.dropdown-menu-user-profile {
+	background: #576777 !important;
+}

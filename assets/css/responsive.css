@@ -1,0 +1,182 @@
+/* Version: 1.0.0 */
+/* Owner: Astek Mauritius Ltd */
+
+/* Main css file for responsive styles */
+@media ( max-width : 1919px) {
+}
+
+@media ( max-width : 1450px) {
+}
+
+@media ( max-width : 1300px) {
+}
+
+@media ( max-width : 1180px) {
+	.icon_holder .user {
+		display: block !important;
+	}
+	.user_profile {
+		display: none !important;
+	}
+	.header_right {
+		max-width: 400px;
+		min-width: 200px;
+	}
+	.user_profile_holder {
+		width: 55px;
+		top: -1px;
+	}
+	.icon_holder .glyphicon {
+		top: 5px;
+	}
+}
+
+@media ( max-width : 800px) {
+}
+
+@media ( max-width : 640px) {
+}
+
+@media ( max-width : 480px) {
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px) {
+	.nav_area .mobile_nav_trigger {
+		display: block;
+	}
+	.nav_area {
+		min-width: 50px;
+	}
+	.mob_nav_area {
+		min-width: 220px;
+	}
+	.nav_area .menu_item_wrapper {
+		/*display: none;*/
+		
+	}
+	.mob_nav_area .menu_item_wrapper {
+		display: block;
+	}
+	.form-group {
+		margin-bottom: 15px !important;
+	}
+	.header_left {
+		max-width: 70px;
+		min-width: 70px;
+	}
+	.header_left .logo_wrapper {
+		max-width: 70px;
+		min-width: 70px;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-left: 0px;
+	}
+	.header_left .logo_wrapper img {
+		max-width: 70px;
+		min-width: 70px;
+		height: 60px;
+	}
+	.sidebar {
+		position: fixed;
+		top: 70px;
+		min-width: 70px;
+		max-width: 70px;
+	}
+	.main {
+		margin-left: 0px;
+		padding: 40px 5px 25px 41px;
+	}
+	.nav_area .menu_title {
+		display: none !important;
+	}
+	.nav_area .panel-title {
+		padding-left: 10px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.header_left .logo_wrapper img {
+		/*display: none;*/
+		right: 0%;
+		height: 60px;
+	}
+	.header_left {
+		max-width: 70px;
+		min-width: 70px;
+		height: 60px;
+		border: 0px solid red;
+	}
+	.navbar-area {
+		height: 60px;
+	}
+	.navbar-area .mobile_nav_trigger {
+		display: block;
+		padding-left: 0px;
+	}
+	.sidebar {
+		display: none !important;
+		min-width: 220px;
+		max-width: 220px;
+	}
+	.main {
+		margin-left: 0px;
+		padding: 35px 5px 25px 5px;
+	}
+	.nav_area .menu_item_wrapper {
+		/*display: none;*/
+		
+	}
+	.mob_nav_area {
+		display: block !important;
+		top: 0px;
+		z-index: 1091;
+		min-width: 220px;
+		height: calc(100vh - 135px);
+		border: 0px solid orange;
+	}
+	.nav_area .menu_title {
+		display: block !important;
+		text-align: left;
+		margin-top: -15px;
+		margin-left: 27px;
+	}
+	.mob_nav_area .menu_item_wrapper {
+		display: block !important;
+	}
+	.nav_area .panel-title {
+		padding-left: 0px;
+	}
+	.overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1090;
+		background: rgba(0, 0, 0, 0.3);
+		overflow: hidden;
+	}
+	.menu-close-wrapper {
+		border: 0px solid orange;
+		width: 60px;
+		height: 52px;
+		z-index: 1095;
+		position: fixed;
+		left: 220px;
+		top: 0px;
+		background: white;
+		display: block !important;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-bottom: 1px solid black;
+		border-right: 1px solid black;
+		border-top: 1px solid black;
+	}
+	.dropdown-menu-user-profile {
+		top: 42px !important;
+	}
+}
+
+/* END RESPONSIVE */

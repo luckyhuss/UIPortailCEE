@@ -1,0 +1,657 @@
+/* Author: Tewin Sham */
+/* Version: 1.0.0 */
+/* Owner: Astek Mauritius Ltd */
+
+/* Main css file for default styles */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {font-size: 24px;}
+h3 {font-size: 22px;}
+h4 {font-size: 18px;}
+h5 {font-size: 16px;}
+h6 {font-size: 14px;}
+
+header, footer, .page_area {
+    float: left; width: 100%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container > div {
+    padding: 15px;
+}
+
+.separator {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.center_of_attention {
+    z-index: 9999;
+}
+
+
+/* Header */
+header {
+    background-color: #ffffff;
+}
+
+/*
+.header_left {
+    max-width: 220px;
+    min-width: 220px;
+}
+
+.header_left .logo_wrapper {
+    float: left;
+    width: 100%;
+}
+
+.header_left .logo_wrapper img {
+    width: 100%;
+}
+
+*/
+
+
+#left {
+    float:left;
+    width:100px;
+}
+
+#center {
+    display: inline-block;
+    margin:0 auto;
+    width:auto;
+}
+
+#right {
+    float:right;
+    max-width: 300px;
+    min-width: 200px;
+    background-color: #281c40;
+    float:right;
+    top:0px;
+    height:80px;
+    }
+
+.navbar {
+    
+background-color: #ffffff;
+}
+
+.container-fluid {
+	width:100%;
+    text-align:center;
+height:80px;
+
+    padding:0px;
+    border: #2e353d 1px;
+
+}
+
+.header_left {
+    max-width: 220px;
+    min-width: 220px;
+    height: 70px;
+    border: 1px solid orange;
+}
+
+.header_left .logo_wrapper {
+    float: left;
+    max-width: 200px;
+    min-width: 200px;
+    margin: 0px 5px 0px;
+    border: 1px solid blue;
+}
+
+.header_left .logo_wrapper img {
+    max-width: 200px;
+    min-width: 200px;
+    height: 65px;
+    border: 0px solid blue;
+}
+
+
+.header_middle {
+    width: 100%;
+    background-color: yellow;
+}
+
+#header-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+#header-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#header-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#header-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#header-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+
+.header_right {
+    max-width: 300px;
+    min-width: 200px;
+    background-color: #281c40;
+    float:right;
+    top:0px;
+}
+
+
+
+.header_right .icon_holder {
+    float: right;
+    color: #ffffff;
+    font-size: 26px;
+    margin: 5px 15px;
+}
+
+.header_right .icon_holder .glyphicon {
+    float: left;
+}
+
+.badge-notify{
+    background:red;
+    position:absolute;
+    margin-top: -10px;
+    margin-left: -10px;
+    float: left;
+}
+
+.notifications_area {
+    padding: 15px;
+}
+
+
+/* Page Area */
+.page_area {
+    min-height: calc(100vh - 120px);
+    background-color: #ebe9e5;
+    
+}
+
+.nav_area {
+    max-width: 220px;
+    min-width: 220px;
+    min-height: calc(100vh - 120px);
+    background-color: #281c40;
+    padding: 0 !important;
+}
+
+.content_area {
+    width: 100%;
+}
+
+
+/* Navigation */
+.nav_area .mobile_nav_trigger {
+    display: none;
+    color: #fff;
+    font-size: 26px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.nav_area .menu_item_wrapper {
+    border-radius: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #3e3353; 
+    
+}
+
+.nav_area .menu_item_wrapper .menu_item {
+    border-radius: 0!important;
+    background:#281c40!important;
+}
+
+.nav_area .menu_item_wrapper .menu_item a span {
+    margin-right: 10px;
+    color:#ffffff;
+    font-size: 14px;
+    
+}
+
+.nav_area .menu_item_wrapper .menu_item a:hover, .nav_area .menu_item_wrapper .menu_item a:focus {
+    text-decoration: none;
+}
+
+.nav_area .panel-default{
+    border-color:#281c40!important; 
+    
+}
+
+.nav-menu {
+    background:#281c40!important;
+}
+
+.nav_area .panel-body {
+    background:#5b91e7!important;
+    color:white!important;
+}
+
+/*MENU ON HOVER*/
+.nav_area .nav-menu:hover{
+    background: #35396a!important;
+}
+
+.active{
+    background-color: #5b91e7
+    !important;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #281c40;
+}
+
+.copyright_area {
+    width: 100%;
+    text-align: center;
+    color: #ebe9e5;
+}
+
+
+/*Search Area*/
+
+.panel_header_element {
+    margin-right: 15px;
+}
+
+.search_area {
+    float: left;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.search_area .row {
+    margin-bottom: 25px;
+}
+
+.search_area .search_last_row {
+    margin-bottom: 0;
+}
+
+.form_search_bar .form-group {
+    width: 100%;
+    display: flex;
+}
+
+.form_search_bar .form-group .form_label {
+    min-width: 100px;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.form_search_bar .form-group .form_input {
+    width: 100%;
+;}
+
+
+.form_search_bar .form-group .form_input input[type=text], .form_search_bar .form-group .form_input .datepicker, .form_search_bar .form-group .form_input select {
+    width: 100%;
+}
+
+.search_area .checkbox-inline {
+    margin-left: 0;
+}
+
+.search_area .submit_button_holder {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.search_area .submit_button_holder button {
+    border-radius: 0 0 6px 6px;
+    position: absolute;
+    top: 17px;
+    right: 15px;
+}
+
+
+
+/* Data Tables Global */
+.data_table_holder {
+    margin-top: 25px;
+}
+
+.data_table_holder .glyphicon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*Dossiers En Cours*/
+.dossiersEnCours_area .liste_critere {
+    top: 40% !important;
+}
+
+
+/* Suive Mon Activite */
+
+.suiviDeMonActivite_area .title {
+    font-size: 18px;
+}
+
+.suiviDeMonActivite_area .sub_title_info {
+    font-size: 18px;
+    text-align: right;
+    padding-right: 60px;
+}
+
+.graph_swap {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/*start notification*/
+.notifications {
+    min-width:308px;
+    left: -285px;
+    top: 51px;
+}
+
+.notification-heading, .notification-footer  {
+    text-align: center;
+    height: 25px;
+    margin-top: -10px;
+}
+
+.menu-title {
+    color: black;
+    font-size:1.5rem;
+     display:inline-block;
+}
+
+.dropdown-menu.divider {
+    margin:5px 0;
+}
+
+.notifications-wrapper {
+    overflow:auto;
+     max-height:250px;
+}
+
+.notifications a.content {
+    text-decoration:none;
+    background:#ccc;
+}
+
+.notifications-wrapper>li>a {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: normal;
+}
+
+/* end dropdown notifications*/
+
+
+/*contact-area*/
+
+.custom-nav{
+    margin: 0;
+    border: none;
+  }
+  
+  .custom-tab{
+    padding: 0;
+    background-color: #f5f5f5;
+    height: 145px;
+    border-left: solid 1px white;
+  }
+  
+  .nav-tabs>li.active>a:hover,
+  .nav-tabs>li.active>a:focus {
+    background-color: #f5f5f5;
+  }
+  
+  .nav>li>a:hover,
+  .nav>li>a:focus {
+    background-color: #f5f5f5;
+  }
+  
+  .custom-tab a{
+    padding: 0;
+    border: none !important;
+    margin: 0;
+    color: black;
+  }
+
+  /* end of contact area*/
+
+  
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#processusCard .card {
+    border: none;
+    background: #f5f5f5;
+    padding: 5px;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(-180deg);
+}
+
+.frontside,
+.backside {
+    backface-visibility: hidden;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 250px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+        background-color: #f5f5f5;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.fiches_area .col-xs-12 .col-sm-6 .col-md-2{
+    background-color: #f5f5f5;
+}
+
+#infoCee .fiches_area {
+    margin-left: 140px;
+    margin-bottom: 40px;
+}
+
+
+/*steps in info_cee*/
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 84%;
+    position: relative;
+    margin: 0;
+}
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+/* end of steps of info_cee*/
+
+
+.gaadiex-list {list-style-type: none; margin: 0;padding: 0;}
+.gaadiex-list>.gaadiex-list-item {padding: 0 22px;}
+.gaadiex-list-item-img  {
+    float: left;
+    width: 58px;
+    height: 58px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.gaadiex-list-item i  {
+    float: left;
+    font-size:48px;
+    width: 58px;
+    height: 58px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.border-b-1 {border-bottom: 1px solid rgba(162,162,162,.16);}
+  
+
+
+
+  .panel-heading > a {
+    background: #5b91ef!important;
+  }
+  
+  
+  

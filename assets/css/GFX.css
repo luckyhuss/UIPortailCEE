@@ -1,0 +1,82 @@
+/*
+	Load css for GreenFlex
+	green : #44b749 on select
+	white : on hover
+	back  : black
+	
+	Charte graphique 
+	: #35396a on hover
+	: #5b91e7 active
+	
+*/
+
+.header_right {
+	background-color: #ffffff;
+}
+
+.sidebar {
+	background-color: #272727;
+}
+
+.navbar-fixed-bottom {
+	background-color: #272727;
+	border:0px;
+}
+
+.nav_area .menu_item_wrapper .menu_item {
+    background:#272727!important;
+}
+
+.nav_area .panel-default{
+    border-color:#272727!important; 
+    
+}
+
+.nav-menu {
+    background:#272727!important;
+}
+
+
+/*MENU ON HOVER*/
+.nav_area .nav-menu:hover{
+    background: #44b749!important;
+    
+}
+
+
+.nav_area .menu_item_wrapper .menu_item a:hover, .nav_area .menu_item_wrapper .menu_item a:focus {
+    text-decoration: none;
+}
+
+.active{
+    background-color: #44b749!important;
+}
+
+.submit_button {
+	background-color: #44b749 !important;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.icon_holder .glyphicon{
+	color:#44b749;
+}
+
+.user_profile{
+	color:#44b749;
+}
+
+
+.content-user-profile {
+	color: #44b749;
+}
+
+.arrow-up {
+    border-bottom: 10px solid #272727;
+}
+
+.dropdown-menu-user-profile {
+	background: #272727 !important;
+}
