@@ -7,9 +7,9 @@
 			<div class="header_left">
 				<div class="logo_wrapper">
 					<a href="/"> <picture>
-						<source srcset="assets/img/CPB-small.png"
+						<source srcset="assets/img/CLMB-small.png"
 							media="(max-width: 1024px)">
-						<img src="assets/img/CPB-large.png"> </picture>
+						<img src="assets/img/CLMB-large.png"> </picture>
 					</a>
 				</div>
 			</div>
