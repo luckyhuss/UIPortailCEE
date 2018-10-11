@@ -139,12 +139,12 @@ picture {
 	font-weight: bold;
 	font-size: 15px;
 	text-decoration: none;
-	padding-right:12px;
+	padding-right: 12px;
 	min-width: max-content;
 }
 
-.user-name-holder{
-	padding-right:5px;	
+.user-name-holder {
+	padding-right: 5px;
 }
 
 .user_profile {
@@ -423,10 +423,16 @@ ul, li {
 #resultatRecherche thead, #resultatRecherche tbody,
 	#detailDossierOperations thead, #detailDossierOperations tbody,
 	#infoBeneficiaire thead, #infoBeneficiaire tbody, #listesDesDocs thead,
-	#listesDesDocs tbody {
+	#listesDesDocs tbody, #info_importantes thead, #info_importantes tbody,
+	#changement_fiche thead, #changement_fiche tbody,
+	#changement_partenariat thead, #changement_partenariat tbody {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #303030;
+}
+
+.col-changement, .col-detail-dossier {
+	width: 90%;
 }
 
 .form-control {
@@ -492,6 +498,22 @@ caption {
 #collapseCalendrier {
 	text-align: center;
 }
+
+/* info importante */
+.info-importante {
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 5px;
+	margin-bottom: 25px;
+}
+
+.calendar {
+	margin-right: 0px;
+	padding-right: 0px;
+	padding-left: 5px;
+	margin-bottom: 35px;
+}
+
 /* calendar */
 
 /*calendar legend */
@@ -530,4 +552,8 @@ caption {
 
 .grc-calendar-legend .list-group-item {
 	border: 0px;
+}
+
+.fc-view-container {
+	
 }

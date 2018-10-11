@@ -7,7 +7,7 @@
     
     <?php include ('recherche-dossiers.php'); ?>
     
-    <?php //include ('accueil.php'); ?>
+    <?php include ('accueil.php'); ?>
 
 </div>
 </section>

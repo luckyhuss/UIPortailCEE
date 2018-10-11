@@ -3,7 +3,7 @@
 <div class="panel-heading">
   <h4 class="panel-title">
     <span class="panel_header_element"><a data-toggle="collapse" href="#collapseSearchBar">Criteres De Recherche</a></span>
-    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseSearchBar"><i class="glyphicon glyphicon-sort"></i></a></span>
+    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseSearchBar"><i class="glyphicon glyphicon-search"></i></a></span>
   </h4>
 </div>
 

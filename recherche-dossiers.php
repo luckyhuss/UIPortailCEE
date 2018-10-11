@@ -6,7 +6,7 @@
 <div class="panel-heading">
   <h4 class="panel-title">
     <span class="panel_header_element"><a data-toggle="collapse" href="#resultatMesDossiers">Resultat De La Recherche</a></span>
-    <span class="panel_header_element"><a data-toggle="collapse" href="#resultatMesDossiers"><i class="glyphicon glyphicon-sort"></i></a></span>
+    <span class="panel_header_element"><a data-toggle="collapse" href="#resultatMesDossiers"><i class="glyphicon glyphicon-list-alt"></i></a></span>
   </h4>
 </div>
 

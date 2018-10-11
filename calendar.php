@@ -4,7 +4,7 @@
 <div class="panel-heading">
   <h4 class="panel-title">
     <span class="panel_header_element"><a data-toggle="collapse" href="#collapseCalendrier">Calendrier</a></span>
-    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseCalendrier"><i class="glyphicon glyphicon-sort"></i></a></span>
+    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseCalendrier"><i class="glyphicon glyphicon-calendar"></i></a></span>
   </h4>
 </div>
 

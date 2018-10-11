@@ -40,6 +40,8 @@
 @media ( max-width : 480px) {
 }
 
+
+
 /* RESPONSIVE */
 @media screen and (max-width: 1024px) {
 	.nav_area .mobile_nav_trigger {
@@ -93,6 +95,16 @@
 	}
 	.nav_area .panel-title {
 		padding-left: 10px;
+	}
+	
+}
+
+@media ( max-width : 990px) {
+	.info-importante {
+		padding-right: 0px;
+	}
+	.calendar {
+		padding-left: 0px;
 	}
 }
 
