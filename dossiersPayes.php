@@ -2,18 +2,18 @@
 <div class="panel panel-default">
 <div class="panel-heading">
   <h4 class="panel-title">
-    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseDossiersEnCours">Dossiers En Cours</a></span>
-    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseDossiersEnCours"><i class="glyphicon glyphicon-file"></i></a></span>
+    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseDossiersPayes">Dossiers Payes</a></span>
+    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseDossiersPayes"><i class="glyphicon glyphicon-file"></i></a></span>
   </h4>
 </div>
 
-<div id="collapseDossiersEnCours" class="panel-collapse collapse in">
+<div id="collapseDossiersPayes" class="panel-collapse collapse in">
 <div class="panel-body">
 
-	<!-- Data table  -->
+	<!-- Data table -->
 	<div class="row">
 		<div class="col-md-12 data_table_holder">
-            <table id="dossiersEnCours" class="table table-striped table-bordered nowrap" style="width:100%">
+            <table id="dossiersPayes" class="table table-striped table-bordered nowrap" style="width:100%">
             <thead>
             <tr>
                 <th>Num Dossier</th>
@@ -65,6 +65,7 @@
             <div class="col-md-12 submit_button_holder">
             <button type="submit" class="btn btn-primary submit_button">Voir Plus</button>
             </div> 
+
 		</div>
     </div>
     <!-- End datatable -->
@@ -86,7 +87,7 @@
         </div>
 
         <div class="modal-body">
-        <span>Ajouter detail du Dossier (gerer mes dossiers)</span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
         </div>
 
         <div class="modal-footer">
@@ -95,4 +96,4 @@
         </div>
     </div>
 </div>
-<!-- Modal -->
+<!-- Modal-->

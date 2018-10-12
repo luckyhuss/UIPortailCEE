@@ -425,7 +425,10 @@ ul, li {
 	#infoBeneficiaire thead, #infoBeneficiaire tbody, #listesDesDocs thead,
 	#listesDesDocs tbody, #info_importantes thead, #info_importantes tbody,
 	#changement_fiche thead, #changement_fiche tbody,
-	#changement_partenariat thead, #changement_partenariat tbody {
+	#changement_partenariat thead, #changement_partenariat tbody, #listesDesDocs thead,
+	#listesDesDocs tbody, #dossiersEnCours thead, #dossiersEnCours tbody,
+	#dossiersDeposes thead, #dossiersDeposes tbody, #dossiersPayes thead,
+	#dossiersPayes tbody, #listeDossiers thead, #listeDossiers tbody  {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #303030;
@@ -627,4 +630,17 @@ float:left;
 text-align: right; 
 display:inline-block;
 padding-left:5px;
+}
+
+/* piloter mon activite */
+#collapseListeDossiers .submit_button_holder, #collapseDossiersPayes .submit_button_holder,
+ #collapseDossiersEnCours .submit_button_holder, #collapseDossiersDeposes .submit_button_holder {
+	text-align: right;
+}
+
+#collapseListeDossiers .submit_button_holder button, #collapseDossiersPayes .submit_button_holder button 
+, #collapseDossiersEnCours .submit_button_holder button, #collapseDossiersDeposes .submit_button_holder button{
+    position: inherit;
+    top: 10px;
+    left: 15px;
 }

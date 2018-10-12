@@ -5,7 +5,7 @@
     
     <?php //include ('dossiersEnCours.php'); ?>
     
-    <?php include ('recherche-dossiers.php'); ?>
+    <?php include ('piloter-mon-activites.php'); ?>
     
     <?php include ('accueil.php'); ?>
 
