@@ -1,74 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+
+
+<html lang="fr-FR" xmlns="http://www.w3.org/1999/xhtml">
+
+
 <head>
+<title>TOTAL - Portail CEE</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>TOTAL</title>
-
-<!-- Bootstrap -->
-<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" type="image/png" href="assets/img/total-icon.png">
 <link href="assets/css/auth.css" rel="stylesheet">
-<link href="assets/css/responsive.css" rel="stylesheet">
-
-
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
 </head>
 
-
-
 <body>
+	<!-- ================================================ TEALIUM =========================== -->
 
-<div class="login_page">
-  <div class="login_wrapper">
 
-    <form class="login">
-      <p class="title">Nom Du Projet</p>
 
-      <div class="validation_msg_area">
-      <div class="alert alert-danger">Sample alert message in case of validation error. Hide this with css display:none; dynamically.</div>
-      </div>
+	<div class="login_page">
 
-      <div class="form-group input_field">
-      <input class="form-control" type="text" placeholder="Username">
-      <i class="fa fa-user"></i>
-      </div>
+		<!-- CONTAINER -->
 
-      <div class="form-group input_field">
-      <input class="form-control" type="password" placeholder="Password">
-      <i class="fa fa-key"></i>
-      </div>
+			<!-- CONTENT -->
+			<div class="login_wrapper">
 
-      <div class="form-group button_field">
-      <button type="submit" class="btn btn-primary">S'IDENTIFIER</button>
-      </div>
 
-    </form>
+				<!-- Emplacement des différents screenset à intégrer dans les menus sous forme de tab et les popin éventuelles -->
 
-    <div class="login_copyright">Copyright &copy; 2018 Company Name.</div>
-  </div>
+
+				<form class="login" id="login"></form>
+				<!-- >div id="cee-login-container"></div-->
+
+				<!-- gigya.js script should only be included once -->
+				<script type="text/javascript">
+                window.__gigyaConf = {enableSSOToken:true};
+                </script>
+
+				<script type="text/javascript"
+					src="https://cdns.gigya.com/js/gigya.js?apiKey=3_uqyrM6IxD2UABJ48ldLyTKDuY3MxBl53jez4riy1nWRi2FHYav0tt9_Chiohe3OJ">
+                </script>
+				<script>
+                var customLangParamsGigya = {
+                    "GIGYA_LOGIN_SCREEN_CAPTION":'Portail CEE'
+                };
+                
+                
+                gigya.socialize.addEventHandlers({
+                    onLogin: function() {
+                        console.log("logged");
+                    }
+                });
+                    
+                    gigya.accounts.showScreenSet({
+                        screenSet: 'CoreModel-Custom-RegistrationLogin',
+                        startScreen:'gigya-login-screen',
+                        customLang: customLangParamsGigya,
+                        //containerID: 'cee-login-container',
+                        containerID: 'login',
+                        lang:'fr'
+                    });
+        		</script>
+
+			
+
+			</div>
+		
 </div>
 
-
-
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<!-- Other JS scripts -->
-<script src="assets/js/general.js"></script>
-
 </body>
+
 </html>
+
+
