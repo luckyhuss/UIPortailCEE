@@ -301,8 +301,20 @@ body {
 	width: 100%!important;
 	padding-left: 10px!important;
 	padding-right: 10px!important;
-	padding-top: 0px!important;
+	padding-top: 10px!important;
 	padding-bottom: 15px!important;
+}
+
+@media ( max-width : 550px) {
+	.gigya-screen.portrait { 
+		padding-top: 10px!important;
+	}
+}
+
+@media ( max-width : 920px) {
+	.gigya-screen.portrait { 
+		padding-top: 10px!important;
+	}
 }
 
 .with-divider {
@@ -346,8 +358,9 @@ h1.gigya-screen-caption {
 	border: 0px solid blue;
 	border-top-right-radius: 6px!important;
 	border-top-left-radius: 6px!important;
-	background-color: #FF3838!important;
+	background-color: blue;/*#FF3838!important;*/
 	margin-right: -10px!important;
+	color:#ffffff!important;
 }
 
 form header {
