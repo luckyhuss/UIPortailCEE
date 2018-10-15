@@ -43,7 +43,8 @@
                 </script>
 				<script>
                 var customLangParamsGigya = {
-                    "GIGYA_LOGIN_SCREEN_CAPTION":'Portail CEE'
+                    "GIGYA_LOGIN_SCREEN_CAPTION":'Portail CEE',
+                    //"this_field_is_required":'login is required'
                 };
                 
                 

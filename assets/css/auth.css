@@ -7,7 +7,9 @@
 .login_wrapper {
 	width: 100%;
 	height: 100vh;
-	background-image: linear-gradient(lightblue, silver);
+	background-image: linear-gradient(silver, black);
+	padding-left:0px!important;
+	padding-right:0px!important;
 }
 
 #grad {
@@ -24,33 +26,10 @@ keyframes spinner { 0% {
 {
 transform
 
-
-
-
-
-
 :
 
-
-
- 
-
-
-
 rotateZ
-
-
-
-
-
-
-(359
-deg
-
-
-
-
-);
+(359 deg );
 }
 }
 * {
@@ -70,7 +49,7 @@ deg
 .login {
 	border-radius: 6px 6px 5px 5px;
 	padding: 10px 0px 10px 0px;
-	max-width: 45%!important;
+	width: 45%!important;
 	height: 350px;
 	background: #ffffff;
 	position: relative;
@@ -86,8 +65,8 @@ deg
 
 @media ( max-width : 640px) {
 	.login {
-		height: 370px!important;
-		width: 80%!important;
+		height: 370px !important;
+		width: 70% !important;
 	}
 }
 
@@ -273,11 +252,13 @@ body {
 }
 
 .gigya-input-submit {
-	background: #FF3838!important;
+	background: #FF3838 !important;
+	max-width: 125px !important;
+	margin-left: 0px !important;
 }
 
 .gigya-composite-control-header {
-	display: none!important;
+	display: none !important;
 }
 
 .content {
@@ -285,82 +266,88 @@ body {
 }
 
 .gigya-screen.portrait {
-	width: 100%!important;
+	width: 100% !important;
 }
 
 .gigya-screen-content div.gigya-screen.landscape {
-	width: 100%!important;
+	width: 100% !important;
 	padding-top: 30px;
 }
 
 #login_content {
-	min-width: 100%!important;
+	min-width: 100% !important;
 }
 
 .gigya-screen.portrait {
-	width: 100%!important;
-	padding-left: 10px!important;
-	padding-right: 10px!important;
-	padding-top: 10px!important;
-	padding-bottom: 15px!important;
+	width: 100% !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	padding-top: 10px !important;
+	padding-bottom: 15px !important;
 }
 
 @media ( max-width : 550px) {
-	.gigya-screen.portrait { 
-		padding-top: 10px!important;
+	.gigya-screen.portrait {
+		padding-top: 10px !important;
+	}
+}
+
+@media ( max-width : 550px) {
+	.login .gigya-style-modern .gigya-android .gigya-chrome {
+		width: 90% !important;
 	}
 }
 
 @media ( max-width : 920px) {
-	.gigya-screen.portrait { 
-		padding-top: 10px!important;
+	.gigya-screen.portrait {
+		padding-top: 10px !important;
 	}
 }
 
 .with-divider {
-	display: none!important;
+	display: none !important;
 }
 
 .gigya-screen.landscape .gigya-layout-row.with-divider {
-	display: none!important;
+	display: none !important;
 }
 
 .gigya-screen.portrait.mobile {
-	padding-left: 10px!important;
-	padding-right: 10px!important;
-	padding-top: 10px!important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	padding-top: 10px !important;
 }
 
 .gigya-screen-content div.gigya-screen.landscape {
-	padding-left: 10px!important;
-	padding-right: 10px!important;
-	padding-top: 5px!important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	padding-top: 5px !important;
 }
 
 .login-caption {
 	border: 1px solid blue;
-	border-top-right-radius: 6px!important;
-	border-top-left-radius: 6px!important;
-	background-color: #FF3838!important;
+	border-top-right-radius: 6px !important;
+	border-top-left-radius: 6px !important;
+	background-color: #FF3838 !important;
 	position: absolute;
 	z-index: 1089;
-	width: 45%!important;
-	height: 45px!important;
-	top: 20px!important;
+	width: 45% !important;
+	height: 45px !important;
+	top: 20px !important;
 }
 
 h1.gigya-screen-caption {
-	font-size: 30px!important;
-	padding-left: 15px!important;
-	padding-top: 15px!important;
-	margin-left: 0px!important;
-	margin-top: -10px!important;
+	font-size: 30px !important;
+	padding-left: 15px !important;
+	padding-top: 15px !important;
+	margin-left: 0px !important;
+	margin-top: -10px !important;
 	border: 0px solid blue;
-	border-top-right-radius: 6px!important;
-	border-top-left-radius: 6px!important;
-	background-color: blue;/*#FF3838!important;*/
-	margin-right: -10px!important;
-	color:#ffffff!important;
+	border-top-right-radius: 6px !important;
+	border-top-left-radius: 6px !important;
+	background-color: #0e0e11 !important; /*#FF3838!important;*/
+	margin-right: -10px !important;
+	color: #ffffff !important;
 }
 
 form header {
@@ -374,18 +361,22 @@ form header {
 
 #login_content_caption {
 	border: 0px solid yellow;
-	margin-right: -10px!important;
+	margin-right: -10px !important;
 }
 
-#login_content_caption{
-	border:0px solid blue;
-	margin-right:0px!important;
+#login_content_caption {
+	border: 0px solid blue;
+	margin-right: 0px !important;
 }
 
 .gig-tfa-button-submit {
-	border-color: transparent!important;
+	border-color: transparent !important;
 }
 
 .gigya-screen .gigya-error-msg-active.gigya-form-error-msg {
-	margin-top:-10px!important;
+	margin-top: -10px !important;
+}
+
+.gigya-screen .gigya-error-msg {
+    display: flex!important;
 }
