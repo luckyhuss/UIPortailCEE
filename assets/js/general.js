@@ -84,9 +84,7 @@ jQuery(document).ready(function() {
 } );
 
 
-/* Recherche Dossier */
-
-
+/* Gerer mes Dossiers */
 $(document).ready(function() {
     $('#resultatRecherche').DataTable( {
         "searching": false,
@@ -126,9 +124,10 @@ $(document).ready(function() {
         "ordering": false,
    } );
 } );
+/* Gerer mes Dossiers */
 
 
-
+/* page d'accueil*/
 //calendar
 $(document).ready(function() {
     $('#bootstrapModalFullCalendar').fullCalendar({
@@ -158,8 +157,8 @@ $(document).ready(function() {
               "title":"Dossier 1",
               "allday":"false",
               "description":"<p>Nothing to see!</p>",
-              "start":moment().subtract('days',14),
-              "end":moment().subtract('days',14),
+              "start":'2018-10-01',
+              "end":'2018-10-01'
            },
            {
               "title":"Dossier 2",
@@ -232,9 +231,47 @@ $(document).ready(function() {
             "end":moment().add('days',15),
          },
            
-        ]
+        ],
     });
 });
+/* page d'accueil*/
 
+/* piloter mon activite*/
+jQuery(document).ready(function() {
+    jQuery('#dossiersEnCours').DataTable({
+    	"paging":   false,
+        "info":     false,
+        "ordering": false,
+        "searching": false,
+        "scrollX": true
+    });
+} );
 
+jQuery(document).ready(function() {
+    jQuery('#dossiersDeposes').DataTable({
+    	"paging":   false,
+        "info":     false,
+        "ordering": false,
+        "searching": false,
+        "scrollX": true
+    });
+} );
 
+jQuery(document).ready(function() {
+    jQuery('#dossiersPayes').DataTable({
+    	"paging":   false,
+        "info":     false,
+        "ordering": false,
+        "searching": false,
+        "scrollX": true
+    });
+} );
+
+jQuery(document).ready(function() {
+    jQuery('#listeDossiers').DataTable({
+    	"paging":   true,
+        "info":     false,
+        "ordering": false,
+        "searching": false,
+    });
+} );
