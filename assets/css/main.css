@@ -569,14 +569,6 @@ caption {
 	border: 0px;
 }
 
-span.a {
-    display: inline; /* the default for span */
-    width: 100px;
-    height: 100px;
-    padding: 5px;
-    border: 1px solid blue;    
-    background-color: yellow; 
-}
 
 .grc-calendar-legend .list-group{
 	padding-left: 0;

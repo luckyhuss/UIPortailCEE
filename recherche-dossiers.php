@@ -109,7 +109,7 @@
 				<span class="panel_header_element"><a data-toggle="collapse"
 					href="#collapseDetailDossier">Detail Du Dossier</a></span> <span
 					class="panel_header_element"><a data-toggle="collapse"
-					href="#collapseDetailDossier"><i class="glyphicon glyphicon-sort"></i></a></span>
+					href="#collapseDetailDossier"><i class="glyphicon glyphicon-folder-open"></i></a></span>
 			</h4>
 		</div>
 
