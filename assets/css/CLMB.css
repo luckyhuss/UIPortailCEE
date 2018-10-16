@@ -42,7 +42,11 @@
 }
 
 .active {
-	background-color: #01afba !important;
+	background-color: #01afba!important;
+}
+
+.home{
+    background-color: #01afba!important;
 }
 
 .submit_button {

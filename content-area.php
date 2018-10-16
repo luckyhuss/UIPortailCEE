@@ -7,7 +7,7 @@
     
     <?php include ('piloter-mon-activites.php'); ?>
     
-    <?php include ('accueil.php'); ?>
+    <?php //include ('accueil.php'); ?>
 
 </div>
 </section>

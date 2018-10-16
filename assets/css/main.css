@@ -83,6 +83,10 @@ footer {
 	border: 0px solid red;
 }
 
+picture {
+	
+}
+
 .navbar-area .mobile_nav_trigger {
 	display: none;
 	font-size: 28px;
@@ -210,6 +214,9 @@ footer {
  Sidebar / main
 
 */
+main {
+	
+}
 
 .main {
 	padding: 40px 5px 25px 5px;
@@ -481,8 +488,6 @@ caption {
 	position: relative;
 	top: -10px;
 }
-
-
 #collapseDetailDossier .detailDossier h5{
 	font-family: 'Open Sans', sans-serif;
     margin: 8px;
@@ -630,13 +635,22 @@ padding-left:5px;
 	text-align: right;
 }
 
+#filiales{
+	width:70%;
+}
+.filtre-option-filiales {
+	display:flex;
+}
+
+/*End piloter mon activite*/
+
+
 #collapseListeDossiers .submit_button_holder button, #collapseDossiersPayes .submit_button_holder button 
 , #collapseDossiersEnCours .submit_button_holder button, #collapseDossiersDeposes .submit_button_holder button{
     position: inherit;
     top: 10px;
     left: 15px;
 }
-
 /*
 .card {
   margin-top: 50px;
@@ -725,7 +739,7 @@ padding-left:5px;
     border-radius: 15px;
 }
 */
-  .cards li {
+.cards li {
 	margin: 10px;
 	padding: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
