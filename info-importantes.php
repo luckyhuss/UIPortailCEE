@@ -17,22 +17,17 @@
             <thead>
             <tr>
                 <th class="col-changement">Changement Processus</th>
-                <th></th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td>Processus 1</td>
-                <td class="text-center"><a href="http://kmmc.in/wp-content/uploads/2014/01/lesson2.pdf" download="processus_1" target="_blank"><i class="glyphicon glyphicon-download-alt"></i></a></td>
+                <td><a href="#" data-toggle="modal" data-target="#Modal1">Processus 1</a></td>
             </tr>
             <tr>
-                <td>Processus 2</td>
-                <td class="text-center"><a href="https://easychair.org/publications/easychair.docx" download="processus_2" target="_blank"><i class="glyphicon glyphicon-download-alt"></i></a></td>
-                
+                <td><a href="#" data-toggle="modal" data-target="#Modal1">Processus 2</a></td>
             </tr>
             <tr>
-                <td>Processus 3</td>
-                <td class="text-center"><a href="http://www.nature.com/nature/journal/v461/n7265/extref/nature08489-s3.xls" download="processus_3" target="_blank"><i class="glyphicon glyphicon-download-alt"></i></a></td>
+                <td><a href="#" data-toggle="modal" data-target="#Modal1">Processus 3</a></td>
             </tr>
             </tbody>
             </table>
@@ -47,22 +42,17 @@
             <thead>
             <tr>
                 <th class="col-changement">Changement Fiche</th>
-                <th></th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td>Fiche 1</td>
-                <td class="text-center"><a href="http://kmmc.in/wp-content/uploads/2014/01/lesson2.pdf" download="processus_1" target="_blank"><i class="glyphicon glyphicon-download-alt"></i></a></td>
+                <td><a href="#" data-toggle="modal" data-target="#Modal1">Fiche 1</a></td>
             </tr>
             <tr>
-                <td>Fiche 2</td>
-                <td class="text-center"><a href="https://easychair.org/publications/easychair.docx" download="processus_2" target="_blank"><i class="glyphicon glyphicon-download-alt"></i></a></td>
-                
+                <td><a href="#" data-toggle="modal" data-target="#Modal1">Fiche 1</a></td>
             </tr>
             <tr>
-                <td>Fiche 3</td>
-                <td class="text-center"><a href="http://www.nature.com/nature/journal/v461/n7265/extref/nature08489-s3.xls" download="processus_3" target="_blank"><i class="glyphicon glyphicon-download-alt"></i></a></td>
+                <td><a href="#" data-toggle="modal" data-target="#Modal1">Fiche 1</a></td>
             </tr>
             </tbody>
             </table>
@@ -77,21 +67,17 @@
                 <thead>
                 <tr>
                     <th class="col-changement">Changement Partenariat</th>
-                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>Partenariat 1</td>
-                    <td class="text-center"><a href="#"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
+                    <td><a href="#" data-toggle="modal" data-target="#Modal1">Partenariat 1</a></td>
                 </tr>
                 <tr>
-                    <td>Partenariat 2</td>
-                    <td class="text-center"><a href="#"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
+                    <td><a href="#" data-toggle="modal" data-target="#Modal1">Partenariat 2</a></td>
                 </tr>
                 <tr>
-                    <td>Partenariat 3</td>
-                    <td class="text-center"><a href="#"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
+                    <td><a href="#" data-toggle="modal" data-target="#Modal1">Partenariat 3</a></td>
                 </tr>
                 </tbody>
             </table>
