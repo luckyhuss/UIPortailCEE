@@ -129,6 +129,7 @@ $(document).ready(function() {
 
 /* page d'accueil*/
 //calendar
+
 $(document).ready(function() {
     $('#bootstrapModalFullCalendar').fullCalendar({
         lang: 'fr',
@@ -145,12 +146,21 @@ $(document).ready(function() {
             trigger: 'hover'
         });
       },
-        eventClick:  function(event, jsEvent, view) {
+    dayClick: function(date, allDay, jsEvent, view) {
+        var eventsCount = 0;
+        var date = date.format('YYYY-MM-DD');
+
+        $('#bootstrapModalFullCalendar').fullCalendar('clientEvents', function(event) {
+          var start = moment(event.start).format("YYYY-MM-DD");
+          var end = moment(event.end).format("YYYY-MM-DD");
+          if(date == start)
+          {
             $('#modalTitle').html(event.title);
             $('#modalBody').html(event.description);
-            $('#fullCalModal').modal();
-            return false;
-        },
+          }
+        openModal();
+        });
+    },
         events:
         [
            {
@@ -234,6 +244,25 @@ $(document).ready(function() {
         ],
     });
 });
+
+function openModal() {
+    var title = $('#modalTitle').html();
+    if(title.length == 0){
+        $('#modalTitle').html("Pas de dossier arrivant à échéance ce jour");
+        $('#modalBody').html("Pas de dossier arrivant à échéance ce jour");
+    }
+    $('#fullCalModal').modal();
+}
+
+function CloseCalendarModal() {
+    $('#modalTitle').html("");
+    $('#modalBody').html("");
+}
+
+$(".js-close").on("click", function (e) {
+    CloseCalendarModal();
+})
+
 /* page d'accueil*/
 
 /* piloter mon activite*/
