@@ -4,7 +4,7 @@
 <div class="panel-heading">
   <h4 class="panel-title">
     <span class="panel_header_element"><a data-toggle="collapse" href="#collapseContactArea">Qui contacter?</a></span>
-    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseContactArea"><i class="glyphicon glyphicon-sort"></i></a></span>
+    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseContactArea"><i class="glyphicon glyphicon-phone"></i></a></span>
   </h4>
 </div>
 

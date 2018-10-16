@@ -39,15 +39,12 @@
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"
-									aria-hidden="true">
-									<span class="sr-only">close</span>
-								</button>
+							<button type="button" class="btn btn-default js-close" data-dismiss="modal">x</button>
 								<h4 id="modalTitle" class="modal-title"></h4>
 							</div>
 							<div id="modalBody" class="modal-body"></div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-default"
+								<button type="button" class="btn js-close btn-default"
 									data-dismiss="modal">Close</button>
 							</div>
 						</div>

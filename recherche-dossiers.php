@@ -118,6 +118,22 @@
 
 				<div class="detailDossier">
 
+					<div class="row">
+						<div class="col-md-6 js-date-engagement">
+							<h5><strong>Date Engagement: </strong> @Model.DateEngagement</h5>
+						</div>
+						<div class="col-md-6 js-aide">
+							<h5><strong>Aide: </strong> @Model.Aide</h5>
+						</div>
+
+						<div class="col-md-6 js-date-fin-traveau">
+							<h5><strong>Date Fin Travaux: </strong> @Model.DateFinTravaux</h5>
+						</div>
+						<div class="col-md-6 js-date-premier-contact">
+							<h5><strong>Date Premier Contact: </strong> @Model.DatePremierContact</h5>
+						</div>
+					</div>
+
 
 					<table id="detailDossierOperations"
 						class="table table-striped table-bordered nowrap"
@@ -218,8 +234,7 @@
 	<div class="modal-dialog liste_critere" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"
-					aria-label="Close"></button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">x</button>
 				<h4 class="modal-title" id="myModalLabel">Liste Criteres</h4>
 			</div>
 
