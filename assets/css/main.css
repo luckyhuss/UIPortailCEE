@@ -83,10 +83,6 @@ footer {
 	border: 0px solid red;
 }
 
-picture {
-	
-}
-
 .navbar-area .mobile_nav_trigger {
 	display: none;
 	font-size: 28px;
@@ -214,10 +210,6 @@ picture {
  Sidebar / main
 
 */
-main {
-	
-}
-
 .main {
 	padding: 40px 5px 25px 5px;
 	margin-left: 110px;
@@ -425,10 +417,11 @@ ul, li {
 	#infoBeneficiaire thead, #infoBeneficiaire tbody, #listesDesDocs thead,
 	#listesDesDocs tbody, #info_importantes thead, #info_importantes tbody,
 	#changement_fiche thead, #changement_fiche tbody,
-	#changement_partenariat thead, #changement_partenariat tbody, #listesDesDocs thead,
-	#listesDesDocs tbody, #dossiersEnCours thead, #dossiersEnCours tbody,
-	#dossiersDeposes thead, #dossiersDeposes tbody, #dossiersPayes thead,
-	#dossiersPayes tbody, #listeDossiers thead, #listeDossiers tbody  {
+	#changement_partenariat thead, #changement_partenariat tbody,
+	#listesDesDocs thead, #listesDesDocs tbody, #dossiersEnCours thead,
+	#dossiersEnCours tbody, #dossiersDeposes thead, #dossiersDeposes tbody,
+	#dossiersPayes thead, #dossiersPayes tbody, #listeDossiers thead,
+	#listeDossiers tbody {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #303030;
@@ -488,10 +481,11 @@ caption {
 	position: relative;
 	top: -10px;
 }
-#collapseDetailDossier .detailDossier h5{
+
+#collapseDetailDossier .detailDossier h5 {
 	font-family: 'Open Sans', sans-serif;
-    margin: 8px;
-    font-size: 15px;
+	margin: 8px;
+	font-size: 15px;
 }
 
 /* calendar */
@@ -528,17 +522,17 @@ caption {
 .grc-calendar-legend {
 	padding: 10px 0px 0;
 	font-weight: bold;
-	border:0px solid red;
-	min-height:100%;
-	min-width:100%;
+	border: 0px solid red;
+	min-height: 100%;
+	min-width: 100%;
 }
 
 .grc-calendar-legend li {
 	display: inline-block;
 	padding: 5px 0px;
 	text-align: left;
-	font-size:14px;
-	font-family:'Open Sans',sans serif;
+	font-size: 14px;
+	font-family: 'Open Sans', sans serif;
 }
 
 .grc-calendar-legend li:not(last-child) {
@@ -549,10 +543,9 @@ caption {
 	background-color: #e4043b;
 	width: 50px;
 	height: 20px;
-	
 	display: inline-flex; /* the default for span */
-    margin-right:10px;
-    padding: 5px;
+	margin-right: 10px;
+	padding: 5px;
 }
 
 .grc-calendar-legend .renouvellement-change {
@@ -560,8 +553,8 @@ caption {
 	width: 50px;
 	height: 20px;
 	display: inline-flex; /* the default for span */
-    margin-right:10px;
-    padding: 5px;
+	margin-right: 10px;
+	padding: 5px;
 }
 
 .grc-calendar-legend .date-change {
@@ -569,20 +562,19 @@ caption {
 	width: 50px;
 	height: 20px;
 	display: inline-flex; /* the default for span */
-    margin-right:10px;
-    padding: 5px;
+	margin-right: 10px;
+	padding: 5px;
 }
 
 .grc-calendar-legend .list-group-item {
 	border: 0px;
 }
 
-
-.grc-calendar-legend .list-group{
+.grc-calendar-legend .list-group {
 	padding-left: 0;
-    margin-bottom: 20px;
-    display: inline-grid;
-    float: left;
+	margin-bottom: 20px;
+	display: inline-grid;
+	float: left;
 }
 
 .fc-day-grid-container {
@@ -608,163 +600,87 @@ caption {
 	min-height: 450px;
 }
 
-
-
-
 .service-list {
-list-style-type: none;
-margin-left:0px;
-padding-left:0px;
-display: inline-block;
+	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	display: inline-block;
 }
 
-.service-list img
-{
-float:left;
+.service-list img {
+	float: left;
 }
 
-.service-list p,h3 {
-text-align: right; 
-display:inline-block;
-padding-left:5px;
+.service-list p, h3 {
+	text-align: right;
+	display: inline-block;
+	padding-left: 5px;
 }
 
 /* piloter mon activite */
 #collapseListeDossiers .submit_button_holder, #collapseDossiersPayes .submit_button_holder,
- #collapseDossiersEnCours .submit_button_holder, #collapseDossiersDeposes .submit_button_holder {
+	#collapseDossiersEnCours .submit_button_holder,
+	#collapseDossiersDeposes .submit_button_holder {
 	text-align: right;
 }
 
-#filiales{
-	width:70%;
+#filiales {
+	width: 70%;
 }
+
 .filtre-option-filiales {
-	display:flex;
+	display: flex;
+}
+
+.filtre-container{
+	
 }
 
 /*End piloter mon activite*/
+#collapseListeDossiers .submit_button_holder button,
+	#collapseDossiersPayes .submit_button_holder button,
+	#collapseDossiersEnCours .submit_button_holder button,
+	#collapseDossiersDeposes .submit_button_holder button {
+	position: inherit;
+	top: 10px;
+	left: 15px;
+}
 
 
-#collapseListeDossiers .submit_button_holder button, #collapseDossiersPayes .submit_button_holder button 
-, #collapseDossiersEnCours .submit_button_holder button, #collapseDossiersDeposes .submit_button_holder button{
-    position: inherit;
-    top: 10px;
-    left: 15px;
-}
-/*
-.card {
-  margin-top: 50px;
-  font-family: 'Roboto', sans-serif;
-  color: #444;
-  border: 1px solid #999;
-  border-radius: 4px;
-  background: #eee;
-  text-align: center;
-  padding-top: 10px;
-  float: left;
-}
-  .card:before {
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    background-color: #eee;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    font-size: 28px;
-    font-style: normal;
-    left: 50%;
-    line-height: 60px;
-    position: absolute;
-    top: -30px;
-    width: 60px;
-  }
-  .card-question {
-    margin: 15px 0 10px;
-    font-size: 18px;
-  }
-  .card-separator {
-    width: 100%;
-    margin:  5px 0 5px 0;
-  }
-  a {
-    text-decoration: none;
-    color: #7f8c8d;
-  }
+/* contact-area */
 
-  .card-green:before {
-    color: #16a085;
-    content: "\f007";
-	font-family: 'FontAwesome';
-	top: 45px;
-  }
-  .card-green .card-separator {
-    border: 1px solid #16a085;
-  }
+ul.cards-container {
+	display: block;
+	align-items: center;
+	flex-direction: column;
+}
 
-  .stepwizard-step p {
-    margin-top: 10px;
-}
-.stepwizard-row {
-    display: table-row;
-}
-.stepwizard {
-    display: table;
-    width: 84%;
-    position: relative;
-    margin: 0;
-}
-.stepwizard-step button[disabled] {
-    opacity: 1 !important;
-    filter: alpha(opacity=100) !important;
-}
-.stepwizard-row:before {
-    top: 14px;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 1px;
-    background-color: #ccc;
-}
-.stepwizard-step {
-    text-align: center;
-    position: relative;
-}
-.btn-circle {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    padding: 6px 0;
-    font-size: 12px;
-    line-height: 1.428571429;
-    border-radius: 15px;
-}
-*/
-.cards li {
+.cards-container li {
 	margin: 10px;
 	padding: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 	font-size: 13px;
 	font-family: 'Open Sans', sans-serif;
-  }
+}
 
-  .cards li .details {
+.cards-container li .details {
 	float: left;
 	text-align: left;
 	transition: all 0.5s ease-in-out;
 	text-shadow: 1px 1px rgba(0, 0, 0, 0);
 	min-width: 250px;
-  }
-  .cards li .details > span,
-  .cards li .details > a {
+}
+
+.cards-container li .details>span, .cards-container li .details>a {
 	display: block;
 	padding: 0 15px 0 35px;
 	margin-bottom: 15px;
 	text-decoration: none;
 	position: relative;
-  }
-  .cards li .details > span:before,
-  .cards li .details > a:before {
+}
+
+.cards-container li .details>span:before, .cards-container li .details>a:before {
 	display: inline-block;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
@@ -773,17 +689,66 @@ padding-left:5px;
 	width: 15px;
 	text-align: center;
 	color: #444;
-  }
-  .cards li .details a {
+}
+
+.cards-container li .details a {
 	color: #57893c;
 	transition: color 0.5s ease-in-out;
-  }
-
-  .cards li .details .name {
-	font-weight: 600;
-  }
-
-  /* add close to modal */
-  .modal-header .btn{
-	float: right;
 }
+
+.cards-container li .details .name {
+	font-weight: 600;
+}
+
+.cards-container {
+	list-style: none;
+	margin: 0 0 0 0;;
+	max-width: 100% !important;
+}
+
+.container {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.item {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 5px;
+	min-width: 200px;
+	min-height: 50px;
+	margin: 10px;
+	line-height: 50px;
+	color: black;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
+}
+
+/*float layout*/
+.float {
+	min-width: 200px;
+	margin: 0 auto;
+}
+
+.float:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.float-item {
+	float: left;
+}
+
+
+/* END contact-area */
+
+
+
+

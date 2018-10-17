@@ -8,6 +8,8 @@
     <?php include ('piloter-mon-activites.php'); ?>
     
     <?php //include ('accueil.php'); ?>
+    
+    <?php include ('contact-area.php'); ?>
 
 </div>
 </section>
