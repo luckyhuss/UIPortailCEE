@@ -653,11 +653,16 @@ ul.cards-container {
 	display: block;
 	align-items: center;
 	flex-direction: column;
+	padding-left:0px;
+}
+
+#collapseContactArea .panel-body{
+	padding-left:5px!important;
 }
 
 .cards-container li {
 	margin: 10px;
-	padding: 20px;
+	padding: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 	font-size: 13px;
@@ -669,12 +674,13 @@ ul.cards-container {
 	text-align: left;
 	transition: all 0.5s ease-in-out;
 	text-shadow: 1px 1px rgba(0, 0, 0, 0);
-	min-width: 250px;
+	min-width: 200px;
 }
+
 
 .cards-container li .details>span, .cards-container li .details>a {
 	display: block;
-	padding: 0 15px 0 35px;
+	padding: 0 15px 0 15px;
 	margin-bottom: 15px;
 	text-decoration: none;
 	position: relative;
@@ -730,7 +736,7 @@ ul.cards-container {
 
 /*float layout*/
 .float {
-	min-width: 200px;
+	min-width: 220px;
 	margin: 0 auto;
 }
 
@@ -746,6 +752,11 @@ ul.cards-container {
 	float: left;
 }
 
+
+.contact-container{
+	width:22px;
+	
+}
 
 /* END contact-area */
 

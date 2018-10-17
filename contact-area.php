@@ -6,7 +6,7 @@
 				<span class="panel_header_element"><a data-toggle="collapse"
 					href="#collapseContactArea">Qui contacter?</a></span> <span
 					class="panel_header_element"><a data-toggle="collapse"
-					href="#collapseContactArea"><i class="glyphicon glyphicon-sort"></i></a></span>
+					href="#collapseContactArea"><img class="contact-container" src="assets/img/contact-icon.png"></a></span>
 			</h4>
 		</div>
 
