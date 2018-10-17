@@ -16,23 +16,23 @@
 				<ul class="cards-container float">
 					<li class="item float-item">
 						<div class="details">
-							<span class="name glyphicon glyphicon-user">BO</span> <a
-								class="glyphicon glyphicon-earphone" href="tel:123-456-789">123-456-789</a>
+							<span class="name glyphicon glyphicon-user"><span class="contacts">BO</span></span> <a
+								class="glyphicon glyphicon-earphone" href="tel:123-456-789"><span class="contacts">123-456-789</span></a>
 							<a class="glyphicon glyphicon-envelope"
-								href="mailto:emilia.jacobs@email.com">bo@email.com</a>
+								href="mailto:emilia.jacobs@email.com"><span class="contacts">bo@email.com</span></a>
 						</div>
 					</li>
 					<li class="item float-item"><div class="details">
-							<span class="name glyphicon glyphicon-user">Commercial</span><a
-								class="glyphicon glyphicon-earphone" href="tel:123-456-789">123-456-789</a><a
+							<span class="name glyphicon glyphicon-user"><span class="contacts">Commercial</span></span><a
+								class="glyphicon glyphicon-earphone" href="tel:123-456-789"><span class="contacts">123-456-789</span></a><a
 								class="glyphicon glyphicon-envelope"
-								href="mailto:tim.pawson@email.com">commercial@email.com</a>
+								href="mailto:tim.pawson@email.com"><span class="contacts">commercial@email.com</span></a>
 						</div></li>
 					<li class="item float-item"><div class="details">
-							<span class="name glyphicon glyphicon-user">Department CEE</span><a
-								class="glyphicon glyphicon-earphone" href="tel:123-456-789">123-456-789</a><a
+							<span class="name glyphicon glyphicon-user"><span class="contacts">Department CEE</span></span><a
+								class="glyphicon glyphicon-earphone" href="tel:123-456-789"><span class="contacts">123-456-789</span></a><a
 								class="glyphicon glyphicon-envelope"
-								href="mailto:amanda.tyler@email.com">dep.cee@email.com </a>
+								href="mailto:amanda.tyler@email.com"><span class="contacts">dep.cee@email.com </span></a>
 						</div></li>
 				</ul>
 
