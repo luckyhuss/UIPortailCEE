@@ -17,7 +17,11 @@
 <body>
 	<!-- ================================================ TEALIUM =========================== -->
 
-
+<div class="banner_container">
+		<div class="total-logo_container">
+			<img alt="" src="assets/img/trans-back-total.png">
+		</div>
+	</div>
 
 	<div class="login_page">
 

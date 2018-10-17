@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.error-page_banner {
+.logout-page_banner {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 		rgba(0, 0, 0, .12);*/
 }
 
-ul.error-message_container {
+ul.logout-message_container {
 	list-style: none;
 	text-align: center;
 	vertical-align: middle;
@@ -34,19 +34,19 @@ ul.error-message_container {
 	padding-top: 50px;
 }
 
-.error-page_total-logo img {
+.logout-page_total-logo img {
 	border: 0px solid red;
 	width: 400px;
 	position: relative;
 }
 
 @media ( max-width : 640px) {
-	.error-page_total-logo img {
+	.logout-page_total-logo img {
 		width: 300px;
 	}
 }
 
-.error-page_container {
+.logout-page_container {
 	border: 0px solid red;
 	width: 80%;
 	position: relative;
