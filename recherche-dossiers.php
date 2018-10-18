@@ -117,23 +117,22 @@
 			<div class="panel-body">
 
 				<div class="detailDossier">
-
-					<div class="row">
+							<legend class="the-legend">Dossier</legend>
+							<div class="row">
 						<div class="col-md-6 js-date-engagement">
-							<h5><strong>Date Engagement: </strong> @Model.DateEngagement</h5>
+							<h5><span class="enteteDossier">Date Engagement:</span> @Model.DateEngagement</h5>
 						</div>
 						<div class="col-md-6 js-aide">
-							<h5><strong>Aide: </strong> @Model.Aide</h5>
+						<h5><span class="enteteDossier">Aide: </span> @Model.Aide</h5>
 						</div>
 
 						<div class="col-md-6 js-date-fin-traveau">
-							<h5><strong>Date Fin Travaux: </strong> @Model.DateFinTravaux</h5>
+						<h5><span class="enteteDossier">Date Fin Travaux: </span> @Model.DateFinTravaux</h5>
 						</div>
 						<div class="col-md-6 js-date-premier-contact">
-							<h5><strong>Date Premier Contact: </strong> @Model.DatePremierContact</h5>
+						<h5><span class="enteteDossier">Date Premier Contact: </span> @Model.DatePremierContact</h5>
 						</div>
 					</div>
-
 
 					<table id="detailDossierOperations"
 						class="table table-striped table-bordered nowrap"
