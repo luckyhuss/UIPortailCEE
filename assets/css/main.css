@@ -902,3 +902,27 @@ ul.cards-container {
  .modal-header .btn{
 	float: right;
 }
+
+/* validation error message */
+.input-validation-error{
+border-color: red !important;
+}
+
+#formSearchBar ul{
+	padding-left: 30px;
+}
+
+#formSearchBar li{
+	list-style: circle;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	padding: 5px;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    margin-bottom: 20px;
+	border-radius: 4px;
+}

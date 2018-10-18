@@ -16,13 +16,13 @@
 
 					<form id="formSearchBar" class="form_search_bar form-inline"
 						action="#" method="POST">
-
+						<div class="text-danger validation-summary-errors alert-danger" data-valmsg-summary="true"><ul><li>Le No. Action doit être numérique</li><li>La Référence Externe doit être alphanumérique</li><li>Le Code Postal doit être numérique</li><li>La Ville doit être alphanumérique</li></ul></div>
 						<div class="row">
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
 									<span class="form_label"><label for="NumAction">Num Action</label></span>
 									<span class="form_input"><input type="number"
-										class="form-control" id="numAction" placeholder=""></span>
+										class="form-control input-validation-error" id="numAction" placeholder=""></span>
 								</div>
 							</div>
 
