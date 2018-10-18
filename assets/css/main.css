@@ -249,6 +249,10 @@ footer {
 	transition: all 0.3s;
 }
 
+.nav_area .nav-menu:hover{
+    cursor: pointer;
+}
+
 .nav_area .panel-heading {
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
