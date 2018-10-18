@@ -43,10 +43,6 @@
 								</div>
 							</div>
 
-						</div>
-
-						<div class="row">
-
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
 									<span class="form_label"><label for="StatutPortail">Statut
@@ -73,11 +69,6 @@
 								</div>
 							</div>
 
-
-						</div>
-
-						<div class="row">
-
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
 									<span class="form_label"><label for="SireneB2B">Sirene B2B</label></span>
@@ -103,9 +94,7 @@
 										placeholder=""></span>
 								</div>
 							</div>
-						</div>
 
-						<div class="row">
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
 									<span class="form_label"><label for="SirenePro">Sirene Pro</label></span>
@@ -131,9 +120,7 @@
 										placeholder=""></span>
 								</div>
 							</div>
-						</div>
 
-						<div class="row">
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
 									<span class="form_label"><label for="ApporteurAffaireNom">Apporteur
@@ -160,9 +147,7 @@
 										placeholder=""></span>
 								</div>
 							</div>
-						</div>
 
-						<div class="row search_last_row">
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
 									<span class="form_label"><label for="PrestataireSiren">Prestataire
