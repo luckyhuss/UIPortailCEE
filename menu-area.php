@@ -3,7 +3,26 @@
 
 	<div class="nav_area" id="nav_area">
 
-
+<!-- <ul class="nav sidebar-nav"> -->
+<!--                 <li class="nav-menu home"> -->
+<!--                    <h4 class="panel-title"> -->
+<!-- 						<a href="/uiportailcee/index.php"> <span class="glyphicon glyphicon-home" -->
+<!-- 							aria-hidden="true"></span> <span class="menu_title">Accueil</span></a> -->
+<!-- 					</h4> -->
+<!--                 </li> -->
+<!--                 <li class="nav-menu"> -->
+<!--                     <h4 class="panel-title"> -->
+<!-- 						<a href="/uiportailcee/index1.php"><span class="glyphicon glyphicon-signal" -->
+<!-- 							aria-hidden="true"></span> <span class="menu_title">Simuler</span></a> -->
+<!-- 					</h4> -->
+<!--                 </li> -->
+<!--                 <li class="nav-menu"> -->
+<!--                     <h4 class="panel-title"> -->
+<!-- 						<a href="/uiportailcee/index2.php"><span class="glyphicon glyphicon-file" -->
+<!-- 							aria-hidden="true"></span> <span class="menu_title">Créer</span></a> -->
+<!-- 					</h4> -->
+<!--                 </li> -->
+<!--                 </ul> -->
 
 
 		<div class="panel-group menu_item_wrapper">
@@ -123,10 +142,16 @@ function setNavigation() {
 
    	var index = window.location.pathname.split("/").pop();
 
+
+   	$( ".nav-menu" ).click(function() {
+   		
+   		var href = $('a', this).attr('href');
+   		window.location.href = href;
+   	});
+   	
    	
     $(".nav-menu a").each(function () {
         var href = $(this).attr('href');
-        //alert('href ' + href + ' check ' +path.substring(0, href.length));
 
         if (path.substring(0, href.length) === href) {
             $(this).closest('.nav-menu').addClass('active');
