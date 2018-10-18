@@ -189,7 +189,7 @@
 							</div>
 
 							<div class="col-md-12 submit_button_holder">
-								<button type="submit" class="btn btn-primary submit_button">Soumettre</button>
+								<button type="submit" class="btn btn-primary submit_button">Submit</button>
 							</div>
 						</div>
 

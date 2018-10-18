@@ -31,15 +31,13 @@
 					<div class="icon_holder dropdown">
 						<span class="glyphicon glyphicon-th" data-target="#dropdown1"
 							role="button" class="dropdown-toggle" data-toggle="dropdown"
-							aria-hidden="true"> </span> <!-- span class="badge badge-notify">99+</span-->
+							aria-hidden="true" title="Prévu pour le lot 2"> </span> <!-- span class="badge badge-notify">99+</span-->
 					</div>
 
 					<div class="icon_holder">
 						<span class="glyphicon glyphicon-bell" aria-hidden="true"
-							class="btn btn-default" data-container="body"
-							data-toggle="popover" data-placement="bottom"
-							title="Notifications"
-							data-content="--Pour le lot 2--"></span>
+							role="button" class="dropdown-toggle"
+							data-toggle="dropdown" title="Prévu pour le lot 2"></span>
 						<span class="badge badge-notify">3</span>
 					</div>
 
