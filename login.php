@@ -17,7 +17,7 @@
 <body>
 	<!-- ================================================ TEALIUM =========================== -->
 
-<div class="banner_container">
+	<div class="banner_container">
 		<div class="total-logo_container">
 			<img alt="" src="assets/img/trans-back-total.png">
 		</div>
@@ -27,25 +27,25 @@
 
 		<!-- CONTAINER -->
 
-			<!-- CONTENT -->
-			<div class="login_wrapper">
+		<!-- CONTENT -->
+		<div class="login_wrapper">
 
 
-				<!-- Emplacement des différents screenset à intégrer dans les menus sous forme de tab et les popin éventuelles -->
+			<!-- Emplacement des différents screenset à intégrer dans les menus sous forme de tab et les popin éventuelles -->
 
 
-				<form class="login" id="login"></form>
-				<!-- >div id="cee-login-container"></div-->
+			<form class="login" id="login"></form>
+			<!-- >div id="cee-login-container"></div-->
 
-				<!-- gigya.js script should only be included once -->
-				<script type="text/javascript">
+			<!-- gigya.js script should only be included once -->
+			<script type="text/javascript">
                 window.__gigyaConf = {enableSSOToken:true};
                 </script>
 
-				<script type="text/javascript"
-					src="https://cdns.gigya.com/js/gigya.js?apiKey=3_uqyrM6IxD2UABJ48ldLyTKDuY3MxBl53jez4riy1nWRi2FHYav0tt9_Chiohe3OJ">
+			<script type="text/javascript"
+				src="https://cdns.gigya.com/js/gigya.js?apiKey=3_uqyrM6IxD2UABJ48ldLyTKDuY3MxBl53jez4riy1nWRi2FHYav0tt9_Chiohe3OJ">
                 </script>
-				<script>
+			<script>
                 var customLangParamsGigya = {
                     "GIGYA_LOGIN_SCREEN_CAPTION":'Portail CEE',
                     //"this_field_is_required":'login is required'
@@ -68,11 +68,16 @@
                     });
         		</script>
 
-			
 
-			</div>
-		
-</div>
+
+		</div>
+		<div id="footer"><div class="copyright_area">Copyright &copy; 2018. All rights reserved</div></div>
+
+	</div>
+	
+	
+
+<!-- 	<div class="copyright_area">Copyright &copy; 2018. All rights reserved</div> -->
 
 </body>
 

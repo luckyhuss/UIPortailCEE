@@ -52,7 +52,11 @@ keyframes spinner { 0% {
 
 100%{
 transform
+
+
 :rotateZ(359 deg)
+
+
 ;
 }
 }
@@ -411,4 +415,22 @@ form header {
 .gigya-screen .gigya-error-msg-active.gigya-form-error-msg {
 	border: 0px !important;
 	padding: 0px !important;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	min-height: 25px;
+	background: #484848;
+	text-align: center;
+}
+
+.copyright_area {
+	padding: 0px 0px 0px;
+	color: #ffffff;
+	margin-top: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	vertical-align: middle;
 }
