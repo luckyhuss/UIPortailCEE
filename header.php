@@ -7,9 +7,9 @@
 			<div class="header_left">
 				<div class="logo_wrapper">
 					<a href="/uiportailcee/index.php"> <picture>
-						<source srcset="assets/img/CPB-small.png"
+						<source srcset="assets/img/CLMB-small.png"
 							media="(max-width: 1024px)">
-						<img src="assets/img/CPB-large.png"> </picture>
+						<img src="assets/img/CLMB-large.png"> </picture>
 					</a>
 				</div>
 			</div>
@@ -29,16 +29,16 @@
 					</div>
 
 					<div class="icon_holder dropdown">
-						<span class="glyphicon glyphicon-th" data-target="#dropdown1"
-							role="button" class="dropdown-toggle" data-toggle="dropdown"
+						<span class="disabled-icon glyphicon glyphicon-th" data-target="#dropdown1"
+							 class="dropdown-toggle" data-toggle="dropdown"
 							aria-hidden="true" title="Prévu pour le lot 2"> </span> <!-- span class="badge badge-notify">99+</span-->
 					</div>
 
 					<div class="icon_holder">
-						<span class="glyphicon glyphicon-bell" aria-hidden="true"
-							role="button" class="dropdown-toggle"
-							data-toggle="dropdown" title="Prévu pour le lot 2"></span>
-						<span class="badge badge-notify">3</span>
+						<span class="disabled-icon glyphicon glyphicon-bell" aria-hidden="true"
+							 class="dropdown-toggle"
+							data-toggle="dropdown" title="Prévu pour le lot 2" ></span>
+						<!--  -span class="badge badge-notify">3</span-->
 					</div>
 
 					<div class="user_profile_holder">
