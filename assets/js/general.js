@@ -133,6 +133,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#bootstrapModalFullCalendar').fullCalendar({
         lang: 'fr',
+        height: 200,
         header: {
             left: '',
             center: 'prev title next',
@@ -141,6 +142,8 @@ $(document).ready(function() {
         eventRender: function(event, element){
             element.popover({
             animation:true,
+            placement: 'left',
+            container: 'body',
             delay: 300,
             content: event.title,
             trigger: 'hover'

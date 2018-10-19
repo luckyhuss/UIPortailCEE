@@ -600,7 +600,7 @@ caption {
 
 .grc-calendar-legend .list-group {
 	padding-left: 0;
-	margin-bottom: 8px;
+	margin-bottom: 0;
 	display: inline-grid;
 	float: left;
 }
@@ -624,8 +624,12 @@ caption {
 	font-size: 14px;
 }
 
+.fc-basic-view .fc-body .fc-row {
+    min-height: 52px;
+}
+
 #bootstrapModalFullCalendar {
-	min-height: 450px;
+	min-height: 385px;
 }
 
 .service-list {
