@@ -393,7 +393,7 @@ ul, li {
 	width: 100%;
 }
 
-.form_search_bar .form-group .form_input input[type=text],
+.form_search_bar .form-group .form_input input,
 	.form_search_bar .form-group .form_input .datepicker, .form_search_bar .form-group .form_input select
 	{
 	width: 100%;
@@ -411,10 +411,6 @@ ul, li {
 	position: absolute;
 	top: 12px;
 	right: 15px;
-}
-
-#formSearchBar #numAction, #formSearchBar #versionOS {
-	width: 100%;
 }
 
 #resultatRecherche thead, #resultatRecherche tbody,
