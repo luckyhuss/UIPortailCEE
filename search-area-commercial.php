@@ -16,7 +16,7 @@
 
 					<form id="formSearchBar" class="form_search_bar form-inline"
 						action="#" method="POST">
-						<div class="text-danger validation-summary-errors alert-danger" data-valmsg-summary="true"><ul><li>Le No. Action doit être numérique</li><li>La Référence Externe doit être alphanumérique</li><li>Le Code Postal doit être numérique</li><li>La Ville doit être alphanumérique</li></ul></div>
+						<div class="text-danger validation-summary-errors" data-valmsg-summary="true"><ul><li>Le No. Action doit être numérique</li><li>La Référence Externe doit être alphanumérique</li><li>Le Code Postal doit être numérique</li><li>La Ville doit être alphanumérique</li></ul></div>
 						<div class="row">
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
