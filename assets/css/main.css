@@ -939,8 +939,18 @@ ul.cards-container {
 }
 
 /* add close to modal */
-.modal-header .btn {
+.modal-header .btn, .modal-footer .btn {
 	float: right;
+	padding: 1px 6px;
+}
+
+.modal-content{
+	width: 460px;
+    max-width: 100%;
+}
+
+.modal-title {
+	margin-left: 12px;
 }
 
 /* validation error message */

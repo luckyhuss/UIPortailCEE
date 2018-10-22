@@ -76,3 +76,23 @@
 .dropdown-menu-user-profile {
 	background: #576777 !important;
 }
+
+/* modal css */
+.modal-header, .modal-footer {
+	padding: 5px;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	background-color: #576777;
+}
+
+.modal-body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	margin: 8px;
+	padding: 8px;
+}
+
+.modal-header .btn:hover, .modal-footer .btn:hover{
+	background: #01afba;
+}

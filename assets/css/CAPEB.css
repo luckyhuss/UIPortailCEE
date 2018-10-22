@@ -77,3 +77,22 @@
 	background: #484848 !important;
 }
 
+/* modal css */
+.modal-header, .modal-footer {
+	padding: 5px;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	background-color: #484848;
+}
+
+.modal-body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	margin: 8px;
+	padding: 8px;
+}
+
+.modal-header .btn:hover, .modal-footer .btn:hover{
+	background: #df5952;
+}
