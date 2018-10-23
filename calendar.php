@@ -45,7 +45,7 @@
 							<div id="modalBody" class="modal-body"></div>
 							<div class="modal-footer">
 								<button type="button" class="btn js-close btn-default"
-									data-dismiss="modal">Close</button>
+									data-dismiss="modal">Fermer</button>
 							</div>
 						</div>
 					</div>

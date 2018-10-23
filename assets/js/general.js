@@ -142,7 +142,7 @@ $(document).ready(function() {
         eventRender: function(event, element){
             element.popover({
             animation:true,
-            placement: 'left',
+            placement: 'top',
             container: 'body',
             delay: 300,
             content: event.title,
@@ -305,5 +305,12 @@ jQuery(document).ready(function() {
         "info":     false,
         "ordering": false,
         "searching": false,
+        "scrollX": true,
+        "language": {
+            "paginate": {
+              "previous": '<i class="glyphicon glyphicon-chevron-left"></i>',
+              "next": '<i class="glyphicon glyphicon-chevron-right"></i>'
+            }
+          },
     });
-} );
+});

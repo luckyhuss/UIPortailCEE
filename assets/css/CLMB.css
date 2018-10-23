@@ -94,5 +94,6 @@
 }
 
 .modal-header .btn:hover, .modal-footer .btn:hover{
+	color: #ffffff;
 	background: #01afba;
 }
