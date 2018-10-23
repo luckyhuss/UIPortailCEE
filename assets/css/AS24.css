@@ -98,3 +98,8 @@
 	color: #ffffff;
 	background: #004097;
 }
+
+#collapseListeDossiers .pagination>.active>a{
+	background-color:#004097;
+	border-color: #004097;
+}
