@@ -24,6 +24,12 @@
 							<div id="msOperation" class="form-control"></div>
 						</div>
 					</li>
+					<li class="filter-item float-item">
+						<div class="form-group filtre-option-beneficiaire">
+							<label for="Beneficiaire">Bénéficiaires B2B :</label>
+							<div id="msBeneficiaire" class="form-control"></div>
+						</div>
+					</li>
 				</ul>
 
 			</div>
@@ -38,6 +44,10 @@ $(function() {
         });
 
         var msOperation = $('#msOperation').magicSuggest({
+            data: ['B2BOper','CommercialOper','ProfessionalOper','B22BOper','Comm2ercialOper','Pro2fessionalOper']
+          });
+
+        var msBeneficiaire = $('#msBeneficiaire').magicSuggest({
             data: ['B2BOper','CommercialOper','ProfessionalOper','B22BOper','Comm2ercialOper','Pro2fessionalOper']
           });
 
