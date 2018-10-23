@@ -1045,3 +1045,28 @@ ul.message_container li,h1,h3 {
 
 	/*box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);*/
 }
+
+.btn-primary{
+	border-color: none !important;
+}
+
+#collapseListeDossiers .paginate_button{
+	padding:0;
+	border: 0;
+	display: inline;
+}
+
+div.dataTables_wrapper div.dataTables_paginate{
+	float: left;
+	margin-top: 8px;
+    font-size: 12px;
+}
+
+#collapseListeDossiers .submit_button_holder button{
+	position: relative;
+	top: -38px;
+}
+
+.pagination>li>a{
+padding: 5px 10px;
+}

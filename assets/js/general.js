@@ -312,5 +312,6 @@ jQuery(document).ready(function() {
               "next": '<i class="glyphicon glyphicon-chevron-right"></i>'
             }
           },
+          "dom":'<"top"l>rt<"row"<"col-sm-12"<"bottom"fp><"clear">>>'
     });
 });
