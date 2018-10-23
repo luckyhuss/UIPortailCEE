@@ -8,35 +8,45 @@
 <title>TOTAL -</title>
 <link rel="icon" type="image/png" href="assets/img/total-icon.png">
 
+
+<link href="assets/css/main.css" rel="stylesheet">
+
+<!-- layout.css only for error and logout pages -->
+<link href="assets/css/simple-layout.css" rel="stylesheet">
+
 <!-- Bootstrap -->
-<link href="assets/css/error-page.css" rel="stylesheet">
-<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="node_modules/bootstrap/dist/css/bootstrap.min.css"	rel="stylesheet">
 </head>
 <body>
 
-
-
-	<div class="error-page_banner">
-		<div class="error-page_total-logo">
+	<div class="page_banner">
+		<div class="page_total-logo">
 			<img alt="" src="assets/img/trans-back-total.png">
 		</div>
 	</div>
 
-	<div class="error-page_container">
+	<div class="page_container">
 
-		<ul class="error-message_container">
-			<li><h1><span class="error-line_1">KEEP CALM,</span></h1></li>
-			<li><h3><span class="error-line_2">Something went wrong!</span></h3></li>
-			<li><h3><span class="error-line_3">Please proceed to login page again.</span></h3></li>
+		<ul class="message_container">
+			<li><h1>
+					<span class="error-line_1">KEEP CALM,</span>
+				</h1></li>
+			<li><h3>
+					<span class="error-line_2">Something went wrong!</span>
+				</h3></li>
+			<li><h3>
+					<span class="error-line_3">Please proceed to login page again.</span>
+				</h3></li>
 			<li>
-			<div class="submit_button_holder">
-				<button type="submit" class="btn btn-primary submit_button">Login</button>
-			</div>
+				<div class="submit_button_holder">
+					<button type="submit" class="btn btn-primary submit_button">Login</button>
+				</div>
 			</li>
 		</ul>
 
 	</div>
+	
+<?php include ('footer.php'); ?>
 
-<div id="footer"><div class="copyright_area">Copyright &copy; 2018. All rights reserved</div></div>
 </body>
 </html>

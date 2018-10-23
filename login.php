@@ -12,6 +12,7 @@
 	content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="icon" type="image/png" href="assets/img/total-icon.png">
 <link href="assets/css/auth.css" rel="stylesheet">
+<link href="assets/css/simple-layout.css" rel="stylesheet">
 </head>
 
 <body>
@@ -54,6 +55,7 @@
                 
                 gigya.socialize.addEventHandlers({
                     onLogin: function() {
+                        alert('test');
                         console.log("logged");
                     }
                 });
@@ -64,21 +66,27 @@
                         customLang: customLangParamsGigya,
                         //containerID: 'cee-login-container',
                         containerID: 'login',
-                        lang:'fr'
+                        lang:'fr', 
+                        onError: function () { 
+                            //alert('wawa'); 
+                        }
                     });
         		</script>
 
 
 
 		</div>
-		<div id="footer"><div class="copyright_area">Copyright &copy; 2018. All rights reserved</div></div>
-
+		
+		<!-- <div id="footer"><div class="copyright_area">Copyright &copy; 2018. All rights reserved</div></div>
+ -->
 	</div>
-	
+	<?php include ('footer.php'); ?>
 	
 
 <!-- 	<div class="copyright_area">Copyright &copy; 2018. All rights reserved</div> -->
+<script type="text/javascript">
 
+</script>
 </body>
 
 </html>
