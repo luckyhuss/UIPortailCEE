@@ -22,7 +22,7 @@
                     <div class="card card-green">
                         <p class="card-question">(Achat) Operation CEE</p>
                         <div class="card-separator"></div>
-                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
+                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
                     </div>
                 </div>
 
@@ -34,7 +34,7 @@
                     <div class="card card-green">
                         <p class="card-question">(Achat) Operation CEE</p>
                         <div class="card-separator"></div>
-                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
+                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@
                     <div class="card card-green">
                         <p class="card-question">(Achat) Operation CEE</p>
                         <div class="card-separator"></div>
-                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
+                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@
                     <div class="card card-green">
                         <p class="card-question">(Achat) Operation CEE</p>
                         <div class="card-separator"></div>
-                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
+                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@
                     <div class="card card-green">
                         <p class="card-question">(Achat) Operation CEE</p>
                         <div class="card-separator"></div>
-                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
+                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
                     </div>
                 </div>
 
@@ -82,7 +82,7 @@
                     <div class="card card-green">
                         <p class="card-question">(Achat) Operation CEE</p>
                         <div class="card-separator"></div>
-                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
+                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
                     </div>
                 </div>
             </div>
@@ -118,18 +118,34 @@
 
 <div id="collapseDocuments" class="panel-collapse collapse in">
 <div class="panel-body">
-	<div class="row">
 
-        <ol type="1">
-            <li> <span class="col-xs-6 col-md-3">Convention Mandat: </span>
-            <span class="col-xs-6 col-md-9">Qu'est ce que c'est?</span></li>
-            <li> <span class="col-xs-6 col-md-3">AH: </span>
-            <span class="col-xs-6 col-md-9">A quoi ça sert?</span></li>
-            <li> <span class="col-xs-6 col-md-3">ER: </span>
-            <span class="col-xs-6 col-md-9">Pourquoi c'est important?</span></li>
-        </ol>
+    <div class="numberlist">
 
-    </div>
+    <ol>
+        <li>
+            <a class="expand">
+                <h2>Convention Mandat</h2>
+                <span>Qu'est ce que c'est?</span>
+            </a>
+        </li>
+
+        <li>    
+            <a class="expand">
+                <h2>AH</h2>
+                <span>A quoi ça sert?</span>
+            </a>
+        </li>
+
+        <li>
+            <a class="expand">
+                <h2>ER</h2>
+                <span>Pourquoi c'est important?</span>
+            </a>
+        </li>
+    </ol>
+
+</div>
+
 </div>
 </div>
 

@@ -110,3 +110,26 @@
 	background-color:#44b749;
 	border-color: #44b749;
 }
+
+/* numbered list for documents info cee */
+.numberlist a{
+    background: #FFF;
+    color: #272727;
+}
+
+.numberlist a:hover, a:hover span{
+	background:#44b749;
+}
+
+.numberlist a:before{
+    background: #44b749;
+}
+
+.numberlist .expand {
+    border: 1px solid #272727;
+}
+  
+.numberlist span {
+	color: #7f8c8d;
+}
+/* numbered list for documents info cee */

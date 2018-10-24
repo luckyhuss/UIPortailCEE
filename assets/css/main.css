@@ -831,7 +831,7 @@ ul.cards-container {
 	margin: 10px;
 	padding: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 	font-size: 13px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -927,13 +927,13 @@ ul.cards-container {
 }
 
 /* END contact-area */
-#collapseDocuments li {
+/* #collapseDocuments li {
 	list-style: unset;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	margin: 8px;
 	font-size: 14px;
-}
+} */
 
 #collapseConsulterFiche {
 	font-family: 'Open Sans', sans-serif;
@@ -1079,3 +1079,74 @@ padding: 5px 10px;
 .dataTable{
 	width: 100% !important;
 }
+
+  /* css list with number circle background -------------- */
+.numberlist ol{
+    counter-reset: li;
+    list-style: decimal;
+    font: 15px 'Open Sans', sans-serif;
+    padding: 6px;
+    margin-left: 15px;
+}
+
+.numberlist ol ol{
+	margin: 0 0 0 2em;
+}
+
+.numberlist a{
+    position: relative;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    color: #444;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+}
+
+.numberlist a:hover, a:hover span{
+	color: #ffffff;
+}
+
+.numberlist a:before{
+	content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 52%;
+    margin-top: -1.3em;
+    height: 35px;
+    width: 35px;
+    line-height: 25px;
+    border: 5px solid #ddd;
+    text-align: center;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    color: #FFF;
+}
+
+.numberlist .expand {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .numberlist h2 {
+	padding: 0;
+	margin: 0 0 5px 0;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+  }
+  
+  .numberlist span {
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+  }
+
+  .numberlist .icon {
+	height: 40px;
+	width: 40px;
+	float: left;
+	margin: 0 10px 0 0;
+  }
+
+/* End css list with number circle background -------------- */
