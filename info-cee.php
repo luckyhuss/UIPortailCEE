@@ -14,7 +14,7 @@
                 <div class="fiches_area">
                 <div class="row">
 
-                <div class="col-xs-12 col-sm-6 col-md-2">
+                <div class="col-xs-12 col-sm-6 col-md-2 card-test">
                     <div class="stepwizard-step text-center">
                         <a href="#" type="button" class="btn btn-default btn-circle">1</a>
                     </div>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-2">
+                <div class="col-xs-12 col-sm-6 col-md-2 card-test">
                     <div class="stepwizard-step text-center">
                         <a href="#" type="button" class="btn btn-default btn-circle">2</a>
                     </div>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-2">
+                <div class="col-xs-12 col-sm-6 col-md-2 card-test">
                     <div class="stepwizard-step text-center">
                         <a href="#" type="button" class="btn btn-default btn-circle">3</a>
                     </div>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-2">
+                <div class="col-xs-12 col-sm-6 col-md-2 card-test">
                     <div class="stepwizard-step text-center">
                         <a href="#" type="button" class="btn btn-default btn-circle">4</a>
                     </div>
@@ -62,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-2">
+                <div class="col-xs-12 col-sm-6 col-md-2 card-test">
                     <div class="stepwizard-step text-center">
                         <a href="#" type="button" class="btn btn-default btn-circle">5</a>
                     </div>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-2">
+                <div class="col-xs-12 col-sm-6 col-md-2 card-test">
                     <div class="stepwizard-step text-center">
                         <a href="#" type="button" class="btn btn-default btn-circle">6</a>
                     </div>

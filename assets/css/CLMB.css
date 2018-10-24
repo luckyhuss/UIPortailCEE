@@ -126,3 +126,14 @@
 }
 /* numbered list for documents info cee */
 
+/* info cee card hover */
+.card-test:hover .btn-default {
+	color: #fff;
+    background-color: #01afba;
+    border-color: #01afba;
+}
+
+.card-test:hover .card {
+    border-color: #01afba;
+}
+/* info cee card hover */

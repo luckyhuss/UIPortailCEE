@@ -126,3 +126,15 @@
 	color: #7f8c8d;
 }
 /* numbered list for documents info cee */
+
+/* info cee card hover */
+.card-test:hover .btn-default {
+	color: #fff;
+    background-color: #004097;
+    border-color: #004097;
+}
+
+.card-test:hover .card {
+    border-color: #004097;
+}
+/* info cee card hover */
