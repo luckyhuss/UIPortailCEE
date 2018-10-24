@@ -168,7 +168,7 @@
             </table>
 
             <div class="col-md-12 submit_button_holder">
-            <button type="submit" class="btn btn-primary submit_button">Retour</button>
+            <a href="#" class="btn btn-primary submit_button" role="button">Retour</a>
             </div> 
 
 		</div>

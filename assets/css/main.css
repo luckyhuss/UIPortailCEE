@@ -705,7 +705,7 @@ caption {
 }
 
 /*End piloter mon activite*/
-#collapseListeDossiers .submit_button_holder button,
+#collapseListeDossiers .submit_button_holder a,
 	#collapseDossiersPayes .submit_button_holder button,
 	#collapseDossiersEnCours .submit_button_holder button,
 	#collapseDossiersDeposes .submit_button_holder button {
