@@ -164,6 +164,11 @@ $(document).ready(function() {
         openModal();
         });
     },
+    eventClick:  function(event, jsEvent, view) {
+        $('#modalTitle').html(event.title);
+        $('#modalBody').html(event.description);
+        $('#fullCalModal').modal();
+    },
         events:
         [
            {

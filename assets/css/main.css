@@ -528,6 +528,10 @@ caption {
 	margin-bottom: 6px;
 }
 
+#fullCalModal #modalTitle, #modalBody{
+	text-align: left;
+}
+
 /* info importante */
 .info-importante {
 	margin-left: 0px;
@@ -1049,10 +1053,6 @@ ul.message_container li,h1,h3 {
 	/*box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);*/
 }
 
-.btn-primary{
-	border-color: none !important;
-}
-
 #collapseListeDossiers .paginate_button{
 	padding:0;
 	border: 0;
@@ -1153,3 +1153,7 @@ padding: 5px 10px;
   }
 
 /* End css list with number circle background -------------- */
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: none;
+}
