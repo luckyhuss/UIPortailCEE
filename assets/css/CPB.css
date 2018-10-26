@@ -108,6 +108,7 @@
 	border-color: #df5952;
 }
 
+<<<<<<< Updated upstream
 
 /* numbered list for documents info cee */
 .numberlist a{
@@ -146,4 +147,16 @@
 
 .submit_button_holder .btn-primary{
 	border-color: #df5952;
+=======
+.fc-head tr{
+	background: #484848!important;
+}
+
+.fc-right button{
+	background: #df5952!important;
+}
+
+.fc-day-grid{
+	background:#f9f9f9;
+>>>>>>> Stashed changes
 }

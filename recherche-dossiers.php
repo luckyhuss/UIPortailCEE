@@ -6,7 +6,7 @@
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<span class="panel_header_element"><a data-toggle="collapse"
-					href="#resultatMesDossiers">Resultat De La Recherche</a></span> <span
+					href="#resultatMesDossiers">Résultat De La Recherche</a></span> <span
 					class="panel_header_element"><a data-toggle="collapse"
 					href="#resultatMesDossiers"><i class="glyphicon glyphicon-list-alt"></i></a></span>
 			</h4>
@@ -51,7 +51,7 @@
 									<td>500.56</td>
 									<td>10.00</td>
 									<td>500.23</td>
-									<td><a href="#"><i class="glyphicon glyphicon-eye-open"
+									<td><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 								<tr>
@@ -67,7 +67,7 @@
 									<td>500.56</td>
 									<td>10.00</td>
 									<td>500.23</td>
-									<td><a href="#"><i class="glyphicon glyphicon-eye-open"
+									<td><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 								<tr>
@@ -83,7 +83,7 @@
 									<td>500.56</td>
 									<td>10.00</td>
 									<td>500.23</td>
-									<td><a href="#"><i class="glyphicon glyphicon-eye-open"
+									<td ><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 							</tbody>
@@ -102,12 +102,12 @@
 <!-- Resultat de la recherche -->
 
 
-<div class="panel-group">
+<div class="panel-group" id="detailDossier">
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<span class="panel_header_element"><a data-toggle="collapse"
-					href="#collapseDetailDossier">Detail Du Dossier</a></span> <span
+					href="#collapseDetailDossier">Détail Du Dossier</a></span> <span
 					class="panel_header_element"><a data-toggle="collapse"
 					href="#collapseDetailDossier"><i class="glyphicon glyphicon-folder-open"></i></a></span>
 			</h4>
@@ -157,7 +157,7 @@
 								<td>En cours</td>
 								<td>10</td>
 								<td>500</td>
-								<td><a href="#"><i class="glyphicon glyphicon-eye-open"
+								<td style="text-align: center;"><a href="#"><i class="glyphicon glyphicon-eye-open"
 										data-toggle="modal" data-target="#Modal1"></i></a></td>
 							</tr>
 							<tr>
@@ -167,7 +167,7 @@
 								<td>En cours</td>
 								<td>10</td>
 								<td>500</td>
-								<td><a href="#"><i class="glyphicon glyphicon-eye-open"
+								<td style="text-align: center;"><a href="#"><i class="glyphicon glyphicon-eye-open"
 										data-toggle="modal" data-target="#Modal1"></i></a></td>
 							</tr>
 							<tr>
@@ -177,7 +177,7 @@
 								<td>En cours</td>
 								<td>10</td>
 								<td>500</td>
-								<td><a href="#"><i class="glyphicon glyphicon-eye-open"
+								<td style="text-align: center;"><a href="#"><i class="glyphicon glyphicon-eye-open"
 										data-toggle="modal" data-target="#Modal1"></i></a></td>
 							</tr>
 						</tbody>
@@ -254,3 +254,10 @@
 	</div>
 </div>
 <!-- modal detail info -->
+
+
+<script>
+function displayDetailDossier() {
+    document.getElementById("detailDossier").style.display = "block";
+}
+</script>

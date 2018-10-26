@@ -143,3 +143,15 @@
 .submit_button_holder .btn-primary{
 	border-color: #004097;
 }
+.fc-head tr{
+	background: #272727!important;
+}
+
+.fc-right button{
+	background: #004097!important;
+}
+
+
+.fc-day-grid{
+	background:#f9f9f9;
+}

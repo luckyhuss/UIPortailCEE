@@ -516,22 +516,73 @@ caption {
 	display: none;
 }
 
-.fc-event {
-	border: 5px solid #e4043b;
-}
+ .fc-event {
+	border: 5px solid;/*  #e4043b; */
+} 
 
 #collapseCalendrier {
 	text-align: center;
 }
 
-.fc-toolbar.fc-header-toolbar {
-	margin-bottom: 6px;
+.fc-widget-content{
+	cursor:pointer;
 }
 
+.fc-toolbar.fc-header-toolbar {
+	margin-bottom: 10px;
+}
+
+<<<<<<< Updated upstream
 #fullCalModal #modalTitle, #modalBody{
 	text-align: left;
 }
 
+=======
+.fc-head th{
+	height:35px!important;
+	color:#ffffff;
+	text-align: center;
+    vertical-align: middle;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0
+		rgba(0, 0, 0, .12);
+}
+
+
+
+.fc-next-button{
+	margin-left:2px!important;	
+	
+	
+}
+.fc-right button{
+	padding-right:6px;
+	padding-left:6px;
+	color:#ffffff;
+	
+}
+
+.fc button{
+	height:25px!important;
+	top:10px!important;
+}
+
+.fc-left h2{
+	padding-top:10px;
+	font-weight:600;
+}
+
+.fc-today{
+	font-weight:600;
+	background:#dddddd!important;
+}
+
+.fc-sun, .fc-sat{
+	color:red!important;
+	font-weight:600;
+}
+
+
+>>>>>>> Stashed changes
 /* info importante */
 .info-importante {
 	margin-left: 0px;

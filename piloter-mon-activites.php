@@ -1,5 +1,5 @@
 
-    <?php include ('filtre.php'); ?>
+    <?php //include ('filtre.php'); ?>
     
     <?php include 'dossiersEnCours.php'; ?>
 

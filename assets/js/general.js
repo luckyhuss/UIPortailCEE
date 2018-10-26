@@ -3,7 +3,8 @@ $(function () {
   })
 
 // For datepicker in search bar
-// For full parameters please check: https://github.com/eternicode/bootstrap-datepicker
+// For full parameters please check:
+// https://github.com/eternicode/bootstrap-datepicker
 jQuery('.datepicker').datepicker({
     datesDisabled: ['26/09/2018','14/09/2018','12/10/2018'],
     autoclose: true
@@ -12,18 +13,18 @@ jQuery('.datepicker').datepicker({
 });
 
 
-//Trigger mobile menu on and off
+// Trigger mobile menu on and off
 $(function () {
     $('.mobile_nav_trigger').click(function () {
     	$('#sidebar').toggleClass('mob_nav_area');
     	$('.overlay_wrapper').toggleClass('overlay');
     	$('#menu-close').toggleClass('menu-close-wrapper');
-//        $('.nav_area').toggleClass('absolute');
-//        $('.nav_area').toggleClass('center_of_attention');   
-//        $('.content_area').toggleClass('absolute');
-//        // refreshes the table 
-//        var table = document.getElementById ("myTable");
-//        table.refresh ();
+// $('.nav_area').toggleClass('absolute');
+// $('.nav_area').toggleClass('center_of_attention');
+// $('.content_area').toggleClass('absolute');
+// // refreshes the table
+// var table = document.getElementById ("myTable");
+// table.refresh ();
     });
 });
 
@@ -34,17 +35,17 @@ $(function () {
     	$('.overlay_wrapper').toggleClass('overlay');
     });
     
-    //trigger user-profile
+    // trigger user-profile
     $('.dropdown-menu-user-profile').click(function () {
     	$('.dropdown').addClass('open');
-    	//alert('test');
+    	// alert('test');
     	$('.dropdown-menu-user-profile').toggleClass('active');
     });
     
-//    $('.user').click(function () {
-//    	//alert('test');
-//    	$('.arrow-up').toggleClass('display');
-//    });
+// $('.user').click(function () {
+// //alert('test');
+// $('.arrow-up').toggleClass('display');
+// });
 //    
 
     
@@ -55,7 +56,8 @@ $(function () {
 });
 
 
-//For datatable - Note(Tewin): You will need to change the ID if using more than one place and repeat the code.
+// For datatable - Note(Tewin): You will need to change the ID if using more
+// than one place and repeat the code.
 jQuery(document).ready(function() {
     jQuery('#example').DataTable({
     	"paging":   false,
@@ -63,7 +65,7 @@ jQuery(document).ready(function() {
     });
 } );
 
-//Currently used in Suivi de Mon Activite
+// Currently used in Suivi de Mon Activite
 jQuery(document).ready(function() {
     jQuery('#sdma_dossiersEnCours').DataTable({
     	"paging":   false,
@@ -127,17 +129,17 @@ $(document).ready(function() {
 /* Gerer mes Dossiers */
 
 
-/* page d'accueil*/
-//calendar
+/* page d'accueil */
+// calendar
 
 $(document).ready(function() {
     $('#bootstrapModalFullCalendar').fullCalendar({
         lang: 'fr',
         height: 200,
         header: {
-            left: '',
-            center: 'prev title next',
-            right: ''
+            left: 'title',
+            center: '',
+            right: 'prev next'
         },
         eventRender: function(event, element){
             element.popover({
@@ -176,14 +178,32 @@ $(document).ready(function() {
               "allday":"false",
               "description":"<p>Nothing to see!</p>",
               "start":'2018-10-01',
-              "end":'2018-10-01'
+              "end":'2018-10-01',
+              "color":'green'
            },
+           {
+               "title":"Dossier X",
+               "allday":"false",
+               "description":"<p>Nothing to see!</p>",
+               "start":'2018-10-03',
+               "end":'2018-10-03',
+               "color":'#e4043b'
+            },
+            {
+                "title":"Dossier X1",
+                "allday":"false",
+                "description":"<p>Nothing to see!</p>",
+                "start":'2018-10-03',
+                "end":'2018-10-03',
+                "color":'green'
+             },
            {
               "title":"Dossier 2",
               "allday":"false",
               "description":"<p>Nothing to see!</p>",
               "start":moment().subtract('days',10),
               "end":moment().subtract('days',10),
+              "color":'#e4043b'
            },
            {
               "title":"Dossier 3",
@@ -191,6 +211,7 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
               "start":moment().subtract('days',6),
               "end":moment().subtract('days',6),
+              "color":'#e4043b'
            },
            {
               "title":"Dossier 4",
@@ -198,6 +219,7 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
               "start":moment().subtract('days',2),
               "end":moment().subtract('days',2),
+              "color":'#e4043b'
            },
            {
               "title":"Dossier 5",
@@ -205,6 +227,7 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
               "start":moment(),
               "end":moment(),
+              "color":'#e4043b'
            },
            {
               "title":"Dossier 6",
@@ -212,6 +235,7 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
               "start":moment().add('days',3),
               "end":moment().add('days',3),
+              "color":'#e4043b'
            },
            {
               "title":"Dossier 7",
@@ -219,6 +243,7 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
               "start":moment().add('days',5),
               "end":moment().add('days',5),
+              "color":'#e4043b'
            },
            {
               "title":"Dossier 8",
@@ -226,6 +251,7 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
               "start":moment().add('days',9),
               "end":moment().add('days',9),
+              "color":'#e4043b'
            },
            {
               "title":"Dossier 9",
@@ -233,6 +259,7 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
               "start":moment().add('days',11),
               "end":moment().add('days',11),
+              "color":'#e4043b'
            },
            {
               "title":"Dossier 10",
@@ -240,6 +267,7 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
                "start":moment().add('days',15),
               "end":moment().add('days',15),
+              "color":'yellow'
            },
            {
             "title":"Dossier 11",
@@ -247,11 +275,46 @@ $(document).ready(function() {
             "description":"<p>Nothing to see!</p>",
              "start":moment().add('days',15),
             "end":moment().add('days',15),
+            "color":'blue'
          },
            
         ],
     });
 });
+
+
+function setColorDossier(typeDossier){
+	
+	switch(typeDossier) {
+	    case 'echeance':
+	    	//set color to red
+	    	alert('echeance');
+	    	$('.fc-event').css({
+	    	    'color': 'red!important',
+	    	    'border' : '10px solid red',
+	    	    
+	    	});
+	        break;
+	    case 'renouvellement':
+	        // set color to yellow
+	    	alert('renouvellement');
+	    	$('.fc-event').css({
+	    	    'color': 'red!important',
+	    	    'border' : '10px solid red',
+	    	    
+	    	});
+	    	//$('.fc-event').css('border-color', '#e4043b!important');
+	    	//document.getElementsByClassName('fc-event').style.background  = "red";
+	        break;
+	    default:
+	    	$('.fc-event').css({
+	    	    'color': 'red!important',
+	    	    'border' : '10px solid red',
+	    	    
+	    	});
+	        //code block
+	}
+}
 
 function openModal() {
     var title = $('#modalTitle').html();
@@ -271,9 +334,9 @@ $(".js-close").on("click", function (e) {
     CloseCalendarModal();
 })
 
-/* page d'accueil*/
+/* page d'accueil */
 
-/* piloter mon activite*/
+/* piloter mon activite */
 jQuery(document).ready(function() {
     jQuery('#dossiersEnCours').DataTable({
     	"paging":   false,
