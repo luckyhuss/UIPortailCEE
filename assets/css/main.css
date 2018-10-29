@@ -532,12 +532,11 @@ caption {
 	margin-bottom: 10px;
 }
 
-<<<<<<< Updated upstream
 #fullCalModal #modalTitle, #modalBody{
 	text-align: left;
 }
 
-=======
+
 .fc-head th{
 	height:35px!important;
 	color:#ffffff;
@@ -582,7 +581,7 @@ caption {
 }
 
 
->>>>>>> Stashed changes
+
 /* info importante */
 .info-importante {
 	margin-left: 0px;

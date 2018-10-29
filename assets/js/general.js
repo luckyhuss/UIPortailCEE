@@ -179,10 +179,10 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
               "start":'2018-10-01',
               "end":'2018-10-01',
-              "color":'green'
+              "color":'#e4043b'
            },
            {
-               "title":"Dossier X",
+               "title":"Dossier X, Dossier 2",
                "allday":"false",
                "description":"<p>Nothing to see!</p>",
                "start":'2018-10-03',
@@ -190,12 +190,20 @@ $(document).ready(function() {
                "color":'#e4043b'
             },
             {
-                "title":"Dossier X1",
+                "title":"Dossier XI",
                 "allday":"false",
                 "description":"<p>Nothing to see!</p>",
                 "start":'2018-10-03',
                 "end":'2018-10-03',
-                "color":'green'
+                "color":'#82b20d'
+             },
+             {
+                "title":"Dossier XII",
+                "allday":"false",
+                "description":"<p>Nothing to see!</p>",
+                "start":'2018-10-03',
+                "end":'2018-10-03',
+                "color":'#ecae05'
              },
            {
               "title":"Dossier 2",
@@ -235,7 +243,7 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
               "start":moment().add('days',3),
               "end":moment().add('days',3),
-              "color":'#e4043b'
+              "color":'#ecae05'
            },
            {
               "title":"Dossier 7",
@@ -243,7 +251,7 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
               "start":moment().add('days',5),
               "end":moment().add('days',5),
-              "color":'#e4043b'
+              "color":'#82b20d'
            },
            {
               "title":"Dossier 8",
@@ -251,7 +259,7 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
               "start":moment().add('days',9),
               "end":moment().add('days',9),
-              "color":'#e4043b'
+              "color":'#82b20d'
            },
            {
               "title":"Dossier 9",
@@ -259,7 +267,7 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
               "start":moment().add('days',11),
               "end":moment().add('days',11),
-              "color":'#e4043b'
+              "color":'#ecae05'
            },
            {
               "title":"Dossier 10",
@@ -267,7 +275,7 @@ $(document).ready(function() {
               "description":"<p>Nothing to see!</p>",
                "start":moment().add('days',15),
               "end":moment().add('days',15),
-              "color":'yellow'
+              "color":'#ecae05'
            },
            {
             "title":"Dossier 11",
@@ -275,7 +283,7 @@ $(document).ready(function() {
             "description":"<p>Nothing to see!</p>",
              "start":moment().add('days',15),
             "end":moment().add('days',15),
-            "color":'blue'
+            "color":'#82b20d'
          },
            
         ],

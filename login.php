@@ -13,10 +13,17 @@
 <link rel="icon" type="image/png" href="assets/img/total-icon.png">
 <link href="assets/css/auth.css" rel="stylesheet">
 <link href="assets/css/simple-layout.css" rel="stylesheet">
+<link href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<script src="assets/js/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 	<!-- ================================================ TEALIUM =========================== -->
+
+
+	<div id="overlay" style="display: none;"></div>
 
 	<div class="banner_container">
 		<div class="total-logo_container">
@@ -55,8 +62,13 @@
                 
                 gigya.socialize.addEventHandlers({
                     onLogin: function() {
-                        alert('test');
+                        //alert('test');
                         console.log("logged");
+//                         setTimeout(function() {
+//                         	  //your code to be executed after 1 second
+//                         	document.getElementById('overlay').style.display='block';
+//                         	}, 5000);
+                        //document.getElementById('overlay').style.display='block';
                     }
                 });
                     
@@ -68,7 +80,11 @@
                         containerID: 'login',
                         lang:'fr', 
                         onError: function () { 
-                            //alert('wawa'); 
+                        	
+                        		  
+                            		$('#myModal').find(".modal-body").text("Une erreur s'est produite lors de la connexion. Veuillez réessayer ultérieurement.");  
+                        		    $('#myModal').modal('show');
+                        		
                         }
                     });
         		</script>
@@ -76,17 +92,41 @@
 
 
 		</div>
-		
+
 		<!-- <div id="footer"><div class="copyright_area">Copyright &copy; 2018. All rights reserved</div></div>
  -->
 	</div>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel">
+		<div class="modal-dialog errorModal" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+					<h4 class="modal-title" id="myModalLabel"></h4>
+				</div>
+
+				<div class="modal-body">
+					<span>Message a afficher</span>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    
 	<?php include ('footer.php'); ?>
 	
 
 <!-- 	<div class="copyright_area">Copyright &copy; 2018. All rights reserved</div> -->
-<script type="text/javascript">
+	<script type="text/javascript">
 
 </script>
+
+
+
 </body>
 
 </html>
