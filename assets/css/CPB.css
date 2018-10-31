@@ -84,8 +84,12 @@
 	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	/* background-color: #484848; */
+	/* background-color: #484848;  */
 	border:0px!important;
+}
+
+.popin-donnee .modal-header, .popin-donnee .modal-footer {
+	background-color: #484848;
 }
 
 .modal-body {
@@ -95,9 +99,9 @@
 	padding: 8px;
 }
 
-.modal-header .btn:hover, .modal-footer .btn:hover {
-	/* color: #ffffff;
-	background: #df5952; */
+.popin-donnee .modal-header .btn:hover, .popin-donnee .modal-footer .btn:hover {
+	color: #ffffff;
+	background: #df5952;
 }
 
 #collapseListeDossiers .pagination>.active>a {

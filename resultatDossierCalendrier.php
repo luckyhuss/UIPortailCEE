@@ -105,7 +105,7 @@
 
 
 						<!-- Modal -->
-						<div class="modal fade" id="ModalCalendrier" tabindex="-1"
+						<div class="modal fade popin-donnee" id="ModalCalendrier" tabindex="-1"
 							role="dialog" aria-labelledby="myModalLabel">
 							<div class="modal-dialog liste_critere" role="document">
 								<div class="modal-content">

@@ -426,7 +426,8 @@ ul, li {
 	#listesDesDocs thead, #listesDesDocs tbody, #dossiersEnCours thead,
 	#dossiersEnCours tbody, #dossiersDeposes thead, #dossiersDeposes tbody,
 	#dossiersPayes thead, #dossiersPayes tbody, #listeDossiers thead,
-	#listeDossiers tbody, #dossiersCalendrier thead, #dossiersCalendrier tbody
+	#listeDossiers tbody, #dossiersCalendrier thead, #dossiersCalendrier tbody, 
+	#information_autres thead, #information_autres tbody
 	{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
@@ -1043,7 +1044,7 @@ ul.cards-container {
 	padding: 1px 6px;
 }
 
-.modal-footer, .modal-header {
+.popin-info .modal-footer, .popin-info .modal-header , .popin-donnee .modal-footer{
 	height: 30px;
 }
 

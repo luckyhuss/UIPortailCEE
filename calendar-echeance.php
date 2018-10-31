@@ -29,8 +29,8 @@
 
 				</div>
 
-				<div id="fullCalModal" class="modal fade">
-					<div class="modal-dialog popin-info">
+				<div id="fullCalModal" class="modal fade popin-info">
+					<div class="modal-dialog ">
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="btn btn-default js-close"
@@ -40,7 +40,7 @@
 							<div id="modalBody" class="modal-body">
 								<ul class="list-group">
 									<li class="list-group-item"><span class="img-infobulle"><img
-											src="assets/img/infobulle.png" width="72px" height="72px"></span>
+											src="assets/img/infobulle.png" width="60px" height="60px"></span>
 									</li>
 									<li class="list-group-item">Pas de dossier arrivant à échéance
 										ce jour</li>

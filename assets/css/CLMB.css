@@ -83,7 +83,8 @@
 	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	background-color: #576777;
+	/* background-color: #576777; */
+	border:0px!important;
 }
 
 .modal-body{
@@ -93,7 +94,11 @@
 	padding: 8px;
 }
 
-.modal-header .btn:hover, .modal-footer .btn:hover{
+.popin-donnee .modal-header, .popin-donnee .modal-footer {
+	background-color: #576777;
+}
+
+.popin-donnee .modal-header .btn:hover, .popin-donnee .modal-footer .btn:hover {
 	color: #ffffff;
 	background: #01afba;
 }

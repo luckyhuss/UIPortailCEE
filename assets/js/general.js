@@ -259,7 +259,7 @@ $(document).ready(
 							openModal(isModal);
 							isModal = true;
 						},
-						events : [ {
+						events : [ /*{
 							"title" : "Dossier 1",
 							"allday" : "false",
 							"description" : "none",
@@ -288,7 +288,7 @@ $(document).ready(
 							"end" : '2018-10-06',
 							"color" : '#e4043b'
 						}
-
+*/
 						],
 					});
 		});
@@ -318,7 +318,7 @@ jQuery(document).ready(function() {
 		"info" : false,
 		"ordering" : false,
 		"searching" : false,
-		"scrollX" : "400px",
+		"scrollX" : true,
 		"autoWidth" : true,
 	});
 });
