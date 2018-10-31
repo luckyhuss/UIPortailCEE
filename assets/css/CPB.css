@@ -3,10 +3,10 @@
 
 	
 */
-
-.header_left{
+.header_left {
 	background-color: #ffffff;
 }
+
 .header_right {
 	background-color: #ffffff;
 }
@@ -17,40 +17,37 @@
 
 .navbar-fixed-bottom {
 	background-color: #484848;
-	border:0px;
+	border: 0px;
 }
 
 .nav_area .menu_item_wrapper .menu_item {
-    background:#484848!important;
+	background: #484848 !important;
 }
 
-.nav_area .panel-default{
-    border-color:#484848!important; 
-    
+.nav_area .panel-default {
+	border-color: #484848 !important;
 }
 
 .nav-menu {
-    background:#484848!important;
+	background: #484848 !important;
 }
-
 
 /*MENU ON HOVER*/
-.nav_area .nav-menu:hover{
-    background: #df5952!important;
-    
+.nav_area .nav-menu:hover {
+	background: #df5952 !important;
 }
 
-
-.nav_area .menu_item_wrapper .menu_item a:hover, .nav_area .menu_item_wrapper .menu_item a:focus {
-    text-decoration: none;
+.nav_area .menu_item_wrapper .menu_item a:hover, .nav_area .menu_item_wrapper .menu_item a:focus
+	{
+	text-decoration: none;
 }
 
-.active{
-    background-color: #df5952!important;
+.active {
+	background-color: #df5952 !important;
 }
 
-.home{
-    background-color: #df5952!important;
+.home {
+	background-color: #df5952 !important;
 }
 
 .submit_button {
@@ -61,12 +58,12 @@
 	text-transform: uppercase;
 }
 
-.icon_holder .glyphicon{
-	color:#df5952;
+.icon_holder .glyphicon {
+	color: #df5952;
 }
 
-.user_profile{
-	color:#df5952;
+.user_profile {
+	color: #df5952;
 }
 
 .content-user-profile {
@@ -74,13 +71,12 @@
 }
 
 .arrow-up {
-    border-bottom: 10px solid #484848;
+	border-bottom: 10px solid #484848;
 }
 
 .dropdown-menu-user-profile {
 	background: #484848 !important;
 }
-
 
 /* modal css */
 .modal-header, .modal-footer {
@@ -91,43 +87,43 @@
 	background-color: #484848;
 }
 
-.modal-body{
+.modal-body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	margin: 8px;
 	padding: 8px;
 }
 
-.modal-header .btn:hover, .modal-footer .btn:hover{
+.modal-header .btn:hover, .modal-footer .btn:hover {
 	color: #ffffff;
 	background: #df5952;
 }
 
-#collapseListeDossiers .pagination>.active>a{
-	background-color:#df5952;
+#collapseListeDossiers .pagination>.active>a {
+	background-color: #df5952;
 	border-color: #df5952;
 }
 
-<<<<<<< Updated upstream
-
 /* numbered list for documents info cee */
-.numberlist a{
-    background: #FFF;
-    color: #484848;
+.numberlist a {
+	background: #FFF;
+	color: #484848;
 }
 
-.numberlist a:hover, a:hover span{
-	background:#df5952;
+.numberlist a:hover, .numberlist a:hover span {
+	background: #df5952;
 }
 
-.numberlist a:before{
-    background: #df5952;
+
+
+.numberlist a:before {
+	background: #df5952;
 }
 
 .numberlist .expand {
-    border: 1px solid #484848;
+	border: 1px solid #484848;
 }
-  
+
 .numberlist span {
 	color: #7f8c8d;
 }
@@ -136,27 +132,26 @@
 /* info cee card hover */
 .card-test:hover .btn-default {
 	color: #fff;
-    background-color: #df5952;
-    border-color: #df5952;
+	background-color: #df5952;
+	border-color: #df5952;
 }
 
 .card-test:hover .card {
-    border-color: #df5952;
+	border-color: #df5952;
 }
 /* info cee card hover */
-
-.submit_button_holder .btn-primary{
+.submit_button_holder .btn-primary {
 	border-color: #df5952;
-=======
-.fc-head tr{
-	background: #484848!important;
 }
 
-.fc-right button{
-	background: #df5952!important;
+.fc-head tr {
+	background: #484848 !important;
 }
 
-.fc-day-grid{
-	background:#f9f9f9;
->>>>>>> Stashed changes
+.fc-right button {
+	background: #df5952 !important;
+}
+
+.fc-day-grid {
+	background: #f9f9f9;
 }

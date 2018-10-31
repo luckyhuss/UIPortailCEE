@@ -1,5 +1,5 @@
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif!important;
 	font-size: 16px;
 }
 
@@ -30,6 +30,10 @@ h5 {
 
 h6 {
 	font-size: 14px;
+}
+
+.display-none{
+	display:none;
 }
 
 .table {
@@ -422,10 +426,29 @@ ul, li {
 	#listesDesDocs thead, #listesDesDocs tbody, #dossiersEnCours thead,
 	#dossiersEnCours tbody, #dossiersDeposes thead, #dossiersDeposes tbody,
 	#dossiersPayes thead, #dossiersPayes tbody, #listeDossiers thead,
-	#listeDossiers tbody {
+	#listeDossiers tbody, 
+	#dossiersCalendrier thead, #dossiersCalendrier tbody {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #303030;
+}
+
+#dossiersCalendrier thead{
+	background:blue!important;
+}
+
+/* .modal-dialog{
+ position:relative;
+ top:150px;
+ border-radius:0px!important;
+} */
+
+
+
+/* position modal dossier calendrier relative*/
+#ModalCalendrier .modal-dialog{
+ 	/*position:relative!important;
+ 	 float:right; */ 
 }
 
 #detailDossier{
@@ -530,6 +553,7 @@ caption {
 
 .fc-toolbar.fc-header-toolbar {
 	margin-bottom: 10px;
+	margin-top:-5px;
 }
 
 #fullCalModal #modalTitle, #modalBody{
@@ -546,13 +570,36 @@ caption {
 		rgba(0, 0, 0, .12);
 }
 
+#collapseCalendrier .panel-body{
+	padding-bottom:3px;
+	padding-top:10px;
+}
 
+#collapseInfoImportantes .panel-body{
+	height:523px;
+}
+
+
+
+.fc-day-grid-event{
+	width:25px;
+	position:relative;
+	float:right;
+}
+
+
+.fc-basic-view .fc-body .fc-row {
+    height: 62px;
+}
 
 .fc-next-button{
 	margin-left:2px!important;	
-	
-	
 }
+
+.fc-header-toolbar{
+	top:-5px;
+}
+
 .fc-right button{
 	padding-right:6px;
 	padding-left:6px;
@@ -580,7 +627,9 @@ caption {
 	font-weight:600;
 }
 
-
+.fc-event-container{
+	
+}
 
 /* info importante */
 .info-importante {
@@ -620,36 +669,43 @@ caption {
 	margin-right: 15px
 }
 
+.grc-calendar-legend .list-group-item {
+	display: inline-block;
+	padding-top:5px!important;
+	padding-bottom:5px;
+}
+
 .grc-calendar-legend .echeance-change {
 	background-color: #e4043b;
 	width: 50px;
 	height: 20px;
 	display: inline-flex; /* the default for span */
 	margin-right: 10px;
-	padding: 5px;
+	padding-top: 0px;
 }
 
 .grc-calendar-legend .renouvellement-change {
 	background-color: #ecae05;
 	width: 50px;
-	height: 20px;
+	height: 15px;
 	display: inline-flex; /* the default for span */
 	margin-right: 10px;
-	padding: 5px;
+	padding-top: 0px;
 }
 
 .grc-calendar-legend .date-change {
 	background-color: #82b20d;
 	width: 50px;
-	height: 20px;
+	height: 15px;
 	display: inline-flex; /* the default for span */
 	margin-right: 10px;
-	padding: 5px;
+	padding-top: 0px;
 }
 
 .grc-calendar-legend .list-group-item {
 	border: 0px;
 	font-family: 'Sans Open', sans-serif;
+	padding-top:0px;
 }
 
 .grc-calendar-legend .list-group {
@@ -679,7 +735,7 @@ caption {
 }
 
 .fc-basic-view .fc-body .fc-row {
-	min-height: 52px;
+	height: 62px;
 }
 
 #bootstrapModalFullCalendar {
@@ -993,9 +1049,27 @@ ul.cards-container {
 	padding: 1px 6px;
 }
 
+.modal-footer{
+	height:30px;
+}
+.popin-info{
+	max-width:530px;
+}
+
 .modal-content{
-	width: 460px;
-    max-width: 100%;
+    
+    border-radius:0px;
+    display:table-cell;
+}
+
+.modal-dialog{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	display:table;
 }
 
 .modal-title {

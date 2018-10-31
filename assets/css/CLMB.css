@@ -109,7 +109,7 @@
     color: #444;
 }
 
-.numberlist a:hover, a:hover span{
+.numberlist a:hover, .numberlist a:hover span {
 	background:#01afba;
 }
 

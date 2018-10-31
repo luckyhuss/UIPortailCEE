@@ -131,8 +131,17 @@ $(document).ready(function() {
 
 /* page d'accueil */
 // calendar
+/* *********************************
+ * 			Color Code
+ * *********************************
+ * #e4043b => Echeance Dossier
+ * #82b20d => Renouvellement Dossier
+ * #ecae05 => Date Prévue
+ * 
+ * */
 
 $(document).ready(function() {
+	var isModal = true;
     $('#bootstrapModalFullCalendar').fullCalendar({
         lang: 'fr',
         height: 200,
@@ -154,29 +163,33 @@ $(document).ready(function() {
     dayClick: function(date, allDay, jsEvent, view) {
         var eventsCount = 0;
         var date = date.format('YYYY-MM-DD');
-
+        $(".display-none").css("display", "none");
         $('#bootstrapModalFullCalendar').fullCalendar('clientEvents', function(event) {
-          var start = moment(event.start).format("YYYY-MM-DD");
-          var end = moment(event.end).format("YYYY-MM-DD");
-          if(date == start)
-          {
-            $('#modalTitle').html(event.title);
-            $('#modalBody').html(event.description);
+          var start = event.start.format("YYYY-MM-DD");
+          //var end = event.end.format("YYYY-MM-DD");
+          //alert('start ' + start);
+          if(date == start) {
+            isModal = false;
+            $(".display-none").css("display", "block");
           }
-        openModal();
+          
         });
+        
+        openModal(isModal);
+        isModal = true;
     },
     eventClick:  function(event, jsEvent, view) {
-        $('#modalTitle').html(event.title);
-        $('#modalBody').html(event.description);
-        $('#fullCalModal').modal();
+    	isModal =  false
+    	$(".display-none").css("display", "block");
+    	openModal(isModal);
+    	isModal =  true;
     },
         events:
         [
            {
               "title":"Dossier 1",
               "allday":"false",
-              "description":"<p>Nothing to see!</p>",
+              "description":"none",
               "start":'2018-10-01',
               "end":'2018-10-01',
               "color":'#e4043b'
@@ -184,7 +197,7 @@ $(document).ready(function() {
            {
                "title":"Dossier X, Dossier 2",
                "allday":"false",
-               "description":"<p>Nothing to see!</p>",
+               "description":"none",
                "start":'2018-10-03',
                "end":'2018-10-03',
                "color":'#e4043b'
@@ -192,7 +205,7 @@ $(document).ready(function() {
             {
                 "title":"Dossier XI",
                 "allday":"false",
-                "description":"<p>Nothing to see!</p>",
+                "description":"none",
                 "start":'2018-10-03',
                 "end":'2018-10-03',
                 "color":'#82b20d'
@@ -200,137 +213,107 @@ $(document).ready(function() {
              {
                 "title":"Dossier XII",
                 "allday":"false",
-                "description":"<p>Nothing to see!</p>",
+                "description":"none",
                 "start":'2018-10-03',
                 "end":'2018-10-03',
                 "color":'#ecae05'
+             }
+           
+        ],
+    });
+    
+    
+    
+    $('#fullCalendarEcheance').fullCalendar({
+        lang: 'fr',
+        height: 200,
+        header: {
+            left: 'title',
+            center: '',
+            right: 'prev next'
+        },
+        eventRender: function(event, element){
+            element.popover({
+            animation:true,
+            placement: 'top',
+            container: 'body',
+            delay: 300,
+            content: event.title,
+            trigger: 'hover'
+        });
+      },
+    dayClick: function(date, allDay, jsEvent, view) {
+        var eventsCount = 0;
+        var date = date.format('YYYY-MM-DD');
+        $(".display-none").css("display", "none");
+        $('#fullCalendarEcheance').fullCalendar('clientEvents', function(event) {
+          var start = event.start.format("YYYY-MM-DD");
+          //var end = event.end.format("YYYY-MM-DD");
+          //alert('start ' + start);
+          if(date == start) {
+            isModal = false;
+            $(".display-none").css("display", "block");
+          }
+          
+        });
+        
+        openModal(isModal);
+        isModal = true;
+    },
+    eventClick:  function(event, jsEvent, view) {
+    	isModal =  false
+    	$(".display-none").css("display", "block");
+    	openModal(isModal);
+    	isModal =  true;
+    },
+        events:
+        [
+           {
+              "title":"Dossier 1",
+              "allday":"false",
+              "description":"none",
+              "start":'2018-10-01',
+              "end":'2018-10-01',
+              "color":'#e4043b'
+           },
+           {
+               "title":"Dossier X, Dossier 2",
+               "allday":"false",
+               "description":"none",
+               "start":'2018-10-03',
+               "end":'2018-10-03',
+               "color":'#e4043b'
+            },
+            {
+                "title":"Dossier XI",
+                "allday":"false",
+                "description":"none",
+                "start":'2018-10-12',
+                "end":'2018-10-12',
+                "color":'#e4043b'
              },
-           {
-              "title":"Dossier 2",
-              "allday":"false",
-              "description":"<p>Nothing to see!</p>",
-              "start":moment().subtract('days',10),
-              "end":moment().subtract('days',10),
-              "color":'#e4043b'
-           },
-           {
-              "title":"Dossier 3",
-              "allday":"false",
-              "description":"<p>Nothing to see!</p>",
-              "start":moment().subtract('days',6),
-              "end":moment().subtract('days',6),
-              "color":'#e4043b'
-           },
-           {
-              "title":"Dossier 4",
-              "allday":"false",
-              "description":"<p>Nothing to see!</p>",
-              "start":moment().subtract('days',2),
-              "end":moment().subtract('days',2),
-              "color":'#e4043b'
-           },
-           {
-              "title":"Dossier 5",
-              "allday":"false",
-              "description":"<p>Nothing to see!</p>",
-              "start":moment(),
-              "end":moment(),
-              "color":'#e4043b'
-           },
-           {
-              "title":"Dossier 6",
-              "allday":"false",
-              "description":"<p>Nothing to see!</p>",
-              "start":moment().add('days',3),
-              "end":moment().add('days',3),
-              "color":'#ecae05'
-           },
-           {
-              "title":"Dossier 7",
-              "allday":"false",
-              "description":"<p>Nothing to see!</p>",
-              "start":moment().add('days',5),
-              "end":moment().add('days',5),
-              "color":'#82b20d'
-           },
-           {
-              "title":"Dossier 8",
-              "allday":"false",
-              "description":"<p>Nothing to see!</p>",
-              "start":moment().add('days',9),
-              "end":moment().add('days',9),
-              "color":'#82b20d'
-           },
-           {
-              "title":"Dossier 9",
-              "allday":"false",
-              "description":"<p>Nothing to see!</p>",
-              "start":moment().add('days',11),
-              "end":moment().add('days',11),
-              "color":'#ecae05'
-           },
-           {
-              "title":"Dossier 10",
-              "allday":"false",
-              "description":"<p>Nothing to see!</p>",
-               "start":moment().add('days',15),
-              "end":moment().add('days',15),
-              "color":'#ecae05'
-           },
-           {
-            "title":"Dossier 11",
-            "allday":"false",
-            "description":"<p>Nothing to see!</p>",
-             "start":moment().add('days',15),
-            "end":moment().add('days',15),
-            "color":'#82b20d'
-         },
+             {
+                "title":"Dossier XII",
+                "allday":"false",
+                "description":"none",
+                "start":'2018-10-06',
+                "end":'2018-10-06',
+                "color":'#e4043b'
+             }
            
         ],
     });
 });
 
 
-function setColorDossier(typeDossier){
-	
-	switch(typeDossier) {
-	    case 'echeance':
-	    	//set color to red
-	    	alert('echeance');
-	    	$('.fc-event').css({
-	    	    'color': 'red!important',
-	    	    'border' : '10px solid red',
-	    	    
-	    	});
-	        break;
-	    case 'renouvellement':
-	        // set color to yellow
-	    	alert('renouvellement');
-	    	$('.fc-event').css({
-	    	    'color': 'red!important',
-	    	    'border' : '10px solid red',
-	    	    
-	    	});
-	    	//$('.fc-event').css('border-color', '#e4043b!important');
-	    	//document.getElementsByClassName('fc-event').style.background  = "red";
-	        break;
-	    default:
-	    	$('.fc-event').css({
-	    	    'color': 'red!important',
-	    	    'border' : '10px solid red',
-	    	    
-	    	});
-	        //code block
-	}
-}
 
-function openModal() {
-    var title = $('#modalTitle').html();
-    if(title.length == 0){
+function openModal(isModal) {
+    if(isModal){
         $('#modalTitle').html("Pas de dossier arrivant à échéance ce jour");
         $('#modalBody').html("Pas de dossier arrivant à échéance ce jour");
+        $('#fullCalModal').modal();
     }
-    $('#fullCalModal').modal();
+    
 }
 
 function CloseCalendarModal() {
@@ -343,6 +326,17 @@ $(".js-close").on("click", function (e) {
 })
 
 /* page d'accueil */
+jQuery(document).ready(function() {
+    jQuery('#dossiersCalendrier').DataTable({
+    	"paging":   false,
+        "info":     false,
+        "ordering": false,
+        "searching": false,
+        "scrollX": "400px",
+        "autoWidth": true,
+    });
+} );
+
 
 /* piloter mon activite */
 jQuery(document).ready(function() {

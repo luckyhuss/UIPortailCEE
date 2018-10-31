@@ -15,7 +15,7 @@
 				<div class="mois">
 					<div class="row">
 						<div class="col-md-12">
-							<div id="bootstrapModalFullCalendar"></div>
+							<div id="fullCalendarEcheance"></div>
 						</div>
 					</div>
 
@@ -24,12 +24,7 @@
 							<li class="list-group-item">
 								<span class="echeance-change"></span>Echéance Dossier
 							</li>
-							<li class="list-group-item">
-								<span class="renouvellement-change"></span>Renouvellement Convention
-							</li>
-							<li class="list-group-item">
-								<span class="date-change"></span>Date Prévue
-							</li>
+							
 						</ul>
 					</div>
 
