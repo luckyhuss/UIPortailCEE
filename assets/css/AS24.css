@@ -95,8 +95,8 @@
 }
 
 .modal-header .btn:hover, .modal-footer .btn:hover{
-	color: #ffffff;
-	background: #004097;
+	/* color: #ffffff;
+	background: #004097; */
 }
 
 #collapseListeDossiers .pagination>.active>a{
