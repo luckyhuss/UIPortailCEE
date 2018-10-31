@@ -8,7 +8,7 @@
     <?php //include ('piloter-mon-activites.php'); ?>
     
     <?php //include ('listeDossiers.php'); ?>
-    <?php //include ('info-cee.php'); ?>
+    <?php include ('info-cee.php'); ?>
     <?php include ('accueil.php'); ?>
    	
     <?php //include ('contact-area.php'); ?>

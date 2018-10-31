@@ -84,7 +84,8 @@
 	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	background-color: #484848;
+	/* background-color: #484848; */
+	border:0px!important;
 }
 
 .modal-body {
@@ -95,8 +96,8 @@
 }
 
 .modal-header .btn:hover, .modal-footer .btn:hover {
-	color: #ffffff;
-	background: #df5952;
+	/* color: #ffffff;
+	background: #df5952; */
 }
 
 #collapseListeDossiers .pagination>.active>a {

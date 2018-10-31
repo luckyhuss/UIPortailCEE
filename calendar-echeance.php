@@ -21,10 +21,9 @@
 
 					<div class="grc-calendar-legend">
 						<ul class="list-group">
-							<li class="list-group-item">
-								<span class="echeance-change"></span>Echéance Dossier
-							</li>
-							
+							<li class="list-group-item"><span class="echeance-change"></span>Echéance
+								Dossier</li>
+
 						</ul>
 					</div>
 
@@ -34,10 +33,22 @@
 					<div class="modal-dialog popin-info">
 						<div class="modal-content">
 							<div class="modal-header">
-							<button type="button" class="btn btn-default js-close" data-dismiss="modal">x</button>
+								<button type="button" class="btn btn-default js-close"
+									data-dismiss="modal">x</button>
 								<h4 id="modalTitle" class="modal-title"></h4>
 							</div>
-							<div id="modalBody" class="modal-body"></div>
+							<div id="modalBody" class="modal-body">
+								<ul class="list-group">
+									<li class="list-group-item"><span class="img-infobulle"><img
+											src="assets/img/infobulle.png" width="72px" height="72px"></span>
+									</li>
+									<li class="list-group-item">Pas de dossier arrivant à échéance
+										ce jour</li>
+
+								</ul>
+
+
+							</div>
 							<div class="modal-footer">
 								<!-- <button type="button" class="btn js-close btn-default"
 									data-dismiss="modal">Fermer</button> -->
@@ -53,4 +64,4 @@
 </div>
 <!-- Calendar -->
 
- <?php include ('resultatDossierCalendrier.php'); ?>
+<?php include ('resultatDossierCalendrier.php'); ?>

@@ -1,5 +1,5 @@
 body {
-	font-family: 'Open Sans', sans-serif!important;
+	font-family: 'Open Sans', sans-serif !important;
 	font-size: 16px;
 }
 
@@ -32,8 +32,8 @@ h6 {
 	font-size: 14px;
 }
 
-.display-none{
-	display:none;
+.display-none {
+	display: none;
 }
 
 .table {
@@ -426,15 +426,15 @@ ul, li {
 	#listesDesDocs thead, #listesDesDocs tbody, #dossiersEnCours thead,
 	#dossiersEnCours tbody, #dossiersDeposes thead, #dossiersDeposes tbody,
 	#dossiersPayes thead, #dossiersPayes tbody, #listeDossiers thead,
-	#listeDossiers tbody, 
-	#dossiersCalendrier thead, #dossiersCalendrier tbody {
+	#listeDossiers tbody, #dossiersCalendrier thead, #dossiersCalendrier tbody
+	{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #303030;
 }
 
-#dossiersCalendrier thead{
-	background:blue!important;
+#dossiersCalendrier thead {
+	background: blue !important;
 }
 
 /* .modal-dialog{
@@ -443,16 +443,15 @@ ul, li {
  border-radius:0px!important;
 } */
 
-
-
 /* position modal dossier calendrier relative*/
-#ModalCalendrier .modal-dialog{
- 	/*position:relative!important;
- 	 float:right; */ 
+#ModalCalendrier .modal-dialog {
+	/*position:relative!important;
+ 	 float:right; */
+	
 }
 
-#detailDossier{
-    display:none;
+#detailDossier {
+	display: none;
 }
 
 .col-changement, .col-detail-dossier {
@@ -539,95 +538,90 @@ caption {
 	display: none;
 }
 
- .fc-event {
-	border: 5px solid;/*  #e4043b; */
-} 
+.fc-event {
+	border: 5px solid; /*  #e4043b; */
+}
 
 #collapseCalendrier {
 	text-align: center;
 }
 
-.fc-widget-content{
-	cursor:pointer;
+.fc-widget-content {
+	cursor: pointer;
 }
 
 .fc-toolbar.fc-header-toolbar {
 	margin-bottom: 10px;
-	margin-top:-5px;
+	margin-top: -5px;
 }
 
-#fullCalModal #modalTitle, #modalBody{
+#fullCalModal #modalTitle, #modalBody {
 	text-align: left;
 }
 
-
-.fc-head th{
-	height:35px!important;
-	color:#ffffff;
+.fc-head th {
+	height: 35px !important;
+	color: #ffffff;
 	text-align: center;
-    vertical-align: middle;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0
+	vertical-align: middle;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0
 		rgba(0, 0, 0, .12);
 }
 
-#collapseCalendrier .panel-body{
-	padding-bottom:3px;
-	padding-top:10px;
+#collapseCalendrier .panel-body {
+	padding-bottom: 3px;
+	padding-top: 10px;
 }
 
-#collapseInfoImportantes .panel-body{
-	height:523px;
+#collapseInfoImportantes .panel-body {
+	height: 523px;
 }
 
-
-
-.fc-day-grid-event{
-	width:25px;
-	position:relative;
-	float:right;
+.fc-day-grid-event {
+	width: 25px;
+	position: relative;
+	float: right;
 }
-
 
 .fc-basic-view .fc-body .fc-row {
-    height: 62px;
+	height: 62px;
 }
 
-.fc-next-button{
-	margin-left:2px!important;	
+.fc-next-button {
+	margin-left: 2px !important;
 }
 
-.fc-header-toolbar{
-	top:-5px;
+.fc-header-toolbar {
+	top: -5px;
 }
 
-.fc-right button{
-	padding-right:6px;
-	padding-left:6px;
-	color:#ffffff;
-	
+.fc-right button {
+	padding-right: 6px;
+	padding-left: 6px;
+	color: #ffffff;
 }
 
-.fc button{
-	height:25px!important;
-	top:10px!important;
+.fc button {
+	height: 25px !important;
+	top: 10px !important;
 }
 
-.fc-left h2{
-	padding-top:10px;
-	font-weight:600;
+.fc-left h2 {
+	padding-top: 10px;
+	font-weight: 600;
 }
 
-.fc-today{
-	font-weight:600;
-	background:#dddddd!important;
+.fc-today {
+	font-weight: 600;
+	background: #dddddd !important;
 }
 
-.fc-sun, .fc-sat{
-	color:red!important;
-	font-weight:600;
+.fc-sun, .fc-sat {
+	color: red !important;
+	font-weight: 600;
 }
 
-.fc-event-container{
+.fc-event-container {
 	
 }
 
@@ -671,8 +665,8 @@ caption {
 
 .grc-calendar-legend .list-group-item {
 	display: inline-block;
-	padding-top:5px!important;
-	padding-bottom:5px;
+	padding-top: 5px !important;
+	padding-bottom: 5px;
 }
 
 .grc-calendar-legend .echeance-change {
@@ -705,7 +699,7 @@ caption {
 .grc-calendar-legend .list-group-item {
 	border: 0px;
 	font-family: 'Sans Open', sans-serif;
-	padding-top:0px;
+	padding-top: 0px;
 }
 
 .grc-calendar-legend .list-group {
@@ -815,8 +809,7 @@ caption {
 }
 
 /*End piloter mon activite*/
-#collapseListeDossiers .submit_button_holder a,
-	#collapseDossiersPayes .submit_button_holder button,
+#collapseListeDossiers .submit_button_holder a, #collapseDossiersPayes .submit_button_holder button,
 	#collapseDossiersEnCours .submit_button_holder button,
 	#collapseDossiersDeposes .submit_button_holder button {
 	position: inherit;
@@ -851,10 +844,10 @@ caption {
 }
 
 .card-question {
-    margin: 15px 2px 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
+	margin: 15px 2px 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
 }
 
 .card-separator {
@@ -978,8 +971,9 @@ ul.cards-container {
 }
 
 .cards-container li .details a {
-	color: #57893c;
-	transition: color 0.5s ease-in-out;
+	/* color: #57893c;
+	transition: color 0.5s ease-in-out; */
+	
 }
 
 .cards-container li .details .name {
@@ -1049,27 +1043,63 @@ ul.cards-container {
 	padding: 1px 6px;
 }
 
-.modal-footer{
-	height:30px;
-}
-.popin-info{
-	max-width:530px;
+.modal-footer, .modal-header {
+	height: 30px;
 }
 
-.modal-content{
-    
-    border-radius:0px;
-    display:table-cell;
+.popin-info {
+	max-width: 530px;
 }
 
-.modal-dialog{
-	position:fixed;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	margin:auto;
-	display:table;
+.modal-content {
+	Box-shadow: 0px 0px 16x 0px rgba(0, 0, 0, 0.3) !important;
+	border-radius: 0px;
+	display: table-cell;
+}
+
+.modal-dialog {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	display: table;
+}
+
+.img-infobulle {
+	height: 72px;
+}
+
+.js-close {
+	border: 0px !important;
+	color: #333;
+	border-color: #ffffff !important;
+	background: transparent !important;
+}
+
+#fullCalModal .modal-body {
+	font-weight: 600 !important;
+	text-align: center !important;
+	color: #303030;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#fullCalModal .list-group-item {
+	border: 0px !important;
+	padding-top: 0px;
+}
+
+.popin-info .modal-body {
+	margin-left: 52px;
+	margin-right: 52px;
+}
+
+.popin-info #modalBody .list-group{
+	margin-bottom:0px!important;
 }
 
 .modal-title {
@@ -1117,9 +1147,9 @@ ul.cards-container {
 		rgba(0, 0, 0, .12);*/
 }
 
-ul.message_container li,h1,h3 {
+ul.message_container li, h1, h3 {
 	list-style: none;
-	text-align: center!important;
+	text-align: center !important;
 	vertical-align: middle;
 	height: 100%;
 	line-height: 55px;
@@ -1137,14 +1167,16 @@ ul.message_container li,h1,h3 {
 		width: 300px;
 	}
 }
+
 @media ( max-width : 300px) {
 	.page_total-logo img {
 		width: 200px !important;
 	}
 }
+
 @media ( max-width : 340px) {
 	.page_container {
-		top: 120px!important;
+		top: 120px !important;
 	}
 }
 
@@ -1165,25 +1197,25 @@ ul.message_container li,h1,h3 {
 	/*box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);*/
 }
 
-#collapseListeDossiers .paginate_button{
-	padding:0;
+#collapseListeDossiers .paginate_button {
+	padding: 0;
 	border: 0;
 	display: inline;
 }
 
-div.dataTables_wrapper div.dataTables_paginate{
+div.dataTables_wrapper div.dataTables_paginate {
 	float: left;
 	margin-top: 8px;
-    font-size: 12px;
+	font-size: 12px;
 }
 
-#collapseListeDossiers .submit_button_holder button{
+#collapseListeDossiers .submit_button_holder button {
 	position: relative;
 	top: -38px;
 }
 
-.pagination>li>a{
-padding: 5px 10px;
+.pagination>li>a {
+	padding: 5px 10px;
 }
 
 /* datatable responsive */
@@ -1191,79 +1223,78 @@ padding: 5px 10px;
 	width: 100% !important;
 }
 
-.dataTable{
+.dataTable {
 	width: 100% !important;
 }
 
-  /* css list with number circle background -------------- */
-.numberlist ol{
-    counter-reset: li;
-    list-style: decimal;
-    font: 15px 'Open Sans', sans-serif;
-    padding: 6px;
-    margin-left: 15px;
+/* css list with number circle background -------------- */
+.numberlist ol {
+	counter-reset: li;
+	list-style: decimal;
+	font: 15px 'Open Sans', sans-serif;
+	padding: 6px;
+	margin-left: 15px;
 }
 
-.numberlist ol ol{
+.numberlist ol ol {
 	margin: 0 0 0 2em;
 }
 
-.numberlist a{
-    position: relative;
-    padding: .4em .4em .4em 2em;
-    margin: .5em 0;
-   	border-radius: .3em;
+.numberlist a {
+	position: relative;
+	padding: .4em .4em .4em 2em;
+	margin: .5em 0;
+	border-radius: .3em;
 }
 
-.numberlist a:hover, a:hover span{
+.numberlist a:hover, .numberlist a:hover span {
 	color: #ffffff;
 }
 
-.numberlist a:before{
+.numberlist a:before {
 	content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    left: -1.3em;
-    top: 52%;
-    margin-top: -1.3em;
-    height: 35px;
-    width: 35px;
-    line-height: 25px;
-    border: 5px solid #ddd;
-    text-align: center;
-    -moz-border-radius: 2em;
-    -webkit-border-radius: 2em;
-    border-radius: 2em;
-    color: #FFF;
+	counter-increment: li;
+	position: absolute;
+	left: -1.3em;
+	top: 52%;
+	margin-top: -1.3em;
+	height: 35px;
+	width: 35px;
+	line-height: 25px;
+	border: 5px solid #ddd;
+	text-align: center;
+	-moz-border-radius: 2em;
+	-webkit-border-radius: 2em;
+	border-radius: 2em;
+	color: #FFF;
 }
 
 .numberlist .expand {
-    display: block;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .numberlist h2 {
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.numberlist h2 {
 	padding: 0;
 	margin: 0 0 5px 0;
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
-  }
-  
-  .numberlist span {
+}
+
+.numberlist span {
 	font-size: 13px;
 	font-family: 'Open Sans', sans-serif;
-  }
+}
 
-  .numberlist .icon {
+.numberlist .icon {
 	height: 40px;
 	width: 40px;
 	float: left;
 	margin: 0 10px 0 0;
-  }
+}
 
 /* End css list with number circle background -------------- */
-
 .dataTables_wrapper.no-footer .dataTables_scrollBody {
-    border-bottom: none;
+	border-bottom: none;
 }

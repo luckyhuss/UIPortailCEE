@@ -110,9 +110,9 @@
 							<div class="modal-dialog liste_critere" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
-										<button type="button" class="btn btn-default"
+										<button type="button" class="btn btn-default js-close"
 											data-dismiss="modal">x</button>
-										<h4 class="modal-title" id="myModalLabel">Détail dossier</h4>
+										<h4 class="modal-title" id="myModalLabel"></h4>
 									</div>
 
 									<div class="modal-body">
@@ -120,8 +120,8 @@
 									</div>
 
 									<div class="modal-footer">
-										<button type="button" class="btn btn-default"
-											data-dismiss="modal">Fermer</button>
+										<!-- <button type="button" class="btn btn-default"
+											data-dismiss="modal">Fermer</button> -->
 									</div>
 								</div>
 							</div>

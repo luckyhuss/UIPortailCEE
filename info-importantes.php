@@ -3,7 +3,7 @@
 <div class="panel-heading">
   <h4 class="panel-title">
     <span class="panel_header_element"><a data-toggle="collapse" href="#collapseInfoImportantes">Informations Importantes</a></span>
-    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseInfoImportantes"><i class="glyphicon glyphicon-info-sign"></i></a></span>
+    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseInfoImportantes"><i class="glyphicon glyphicon-sort"></i></a></span>
   </h4>
 </div>
 
@@ -96,8 +96,8 @@
     <div class="modal-dialog liste_critere" role="document">
         <div class="modal-content">
         <div class="modal-header">
-            <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
-            <h4 class="modal-title" id="myModalLabel">Detail de l'information</h4>
+            <button type="button" class="btn btn-default js-close" data-dismiss="modal">x</button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
         </div>
 
         <div class="modal-body">
@@ -105,7 +105,7 @@
         </div>
 
         <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button> -->
         </div>
         </div>
     </div>
