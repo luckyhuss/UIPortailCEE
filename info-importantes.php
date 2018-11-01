@@ -21,7 +21,7 @@
             </thead>
             <tbody>
             <tr>
-                <td><a href="#" data-toggle="modal" data-target="#Modal1">Validité de convention</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#infoImportanteModal">Validité de convention</a></td>
             </tr>
             <!-- <tr>
                 <td><a href="#" data-toggle="modal" data-target="#Modal1">Processus 2</a></td>
@@ -46,7 +46,7 @@
             </thead>
             <tbody>
             <tr>
-                <td><a href="#" data-toggle="modal" data-target="#Modal1">Fiche 1</a></td>
+                <td><a href="#" data-toggle="modal" data-target="#infoImportanteModal">Fiche 1</a></td>
             </tr>
             <!-- <tr>
                 <td><a href="#" data-toggle="modal" data-target="#Modal1">Fiche 1</a></td>
@@ -71,7 +71,7 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td><a href="#" data-toggle="modal" data-target="#Modal1">Partenariat 1</a></td>
+                    <td><a href="#" data-toggle="modal" data-target="#infoImportanteModal">Partenariat 1</a></td>
                 </tr>
                 <!-- <tr>
                     <td><a href="#" data-toggle="modal" data-target="#Modal1">Partenariat 2</a></td>
@@ -95,7 +95,7 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td><a href="#" data-toggle="modal" data-target="#Modal1">Autre 1</a></td>
+                    <td><a href="#" data-toggle="modal" data-target="#infoImportanteModal">Autre 1</a></td>
                 </tr>
                 <!-- <tr>
                     <td><a href="#" data-toggle="modal" data-target="#Modal1">Partenariat 2</a></td>
@@ -115,7 +115,7 @@
 
 
 <!-- Modal for changement_partenariat -->
-<div class="modal fade popin-donnee" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade in popin-donnee" id="infoImportanteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog liste_critere" role="document">
         <div class="modal-content">
         <div class="modal-header">

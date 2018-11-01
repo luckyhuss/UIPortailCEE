@@ -228,7 +228,7 @@
 
 
 <!-- modal detail info -->
-<div class="modal fade" id="Modal1" tabindex="-1" role="dialog"
+<div class="modal fade popin-donnee" id="Modal1" tabindex="-1" role="dialog"
 	aria-labelledby="myModalLabel">
 	<div class="modal-dialog liste_critere" role="document">
 		<div class="modal-content">
@@ -248,7 +248,7 @@
 			</div>
 
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+				<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button> -->
 			</div>
 		</div>
 	</div>

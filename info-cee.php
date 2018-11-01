@@ -4,7 +4,7 @@
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<span class="panel_header_element"><a data-toggle="collapse" href="#infoCee">Processus CEE</a></span>
-				<span class="panel_header_element"><a data-toggle="collapse" href="#infoCee"><i class="glyphicon glyphicon-sort"></i></a></span>
+				<!-- <span class="panel_header_element"><a data-toggle="collapse" href="#infoCee"><i class="glyphicon glyphicon-sort"></i></a></span> -->
 			</h4>
 		</div>
 
@@ -22,7 +22,7 @@
                     <div class="card card-green">
                         <p class="card-question">(Achat) Operation CEE</p>
                         <div class="card-separator"></div>
-                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
+                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
                     </div>
                 </div>
 
@@ -34,7 +34,7 @@
                     <div class="card card-green">
                         <p class="card-question">(Achat) Operation CEE</p>
                         <div class="card-separator"></div>
-                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
+                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@
                     <div class="card card-green">
                         <p class="card-question">(Achat) Operation CEE</p>
                         <div class="card-separator"></div>
-                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
+                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@
                     <div class="card card-green">
                         <p class="card-question">(Achat) Operation CEE</p>
                         <div class="card-separator"></div>
-                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
+                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@
                     <div class="card card-green">
                         <p class="card-question">(Achat) Operation CEE</p>
                         <div class="card-separator"></div>
-                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
+                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
                     </div>
                 </div>
 
@@ -82,7 +82,7 @@
                     <div class="card card-green">
                         <p class="card-question">(Achat) Operation CEE</p>
                         <div class="card-separator"></div>
-                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</b></p>
+                        <p style="text-align:center;">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@
 <div class="panel-heading">
   <h4 class="panel-title">
     <span class="panel_header_element"><a data-toggle="collapse" href="#collapseDocuments">Documents</a></span>
-    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseDocuments"><i class="glyphicon glyphicon-info-sign"></i></a></span>
+    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseDocuments"><!-- <i class="glyphicon glyphicon-info-sign"></i> --></a></span>
   </h4>
 </div>
 

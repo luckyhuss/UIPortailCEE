@@ -102,7 +102,7 @@
 
 .popin-donnee .modal-header .btn:hover, .popin-donnee .modal-footer .btn:hover {
 	color: #ffffff;
-	background: #004097; 
+	background: #004097!important; 
 }
 
 #collapseListeDossiers .pagination>.active>a{

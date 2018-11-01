@@ -856,9 +856,13 @@ caption {
 	margin: 5px 0 5px 0;
 }
 
-a {
+/* a {
 	text-decoration: none;
 	color: #7f8c8d;
+} */
+
+.link > a{
+	
 }
 
 .card-green:before {

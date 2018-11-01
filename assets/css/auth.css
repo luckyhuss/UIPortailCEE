@@ -90,7 +90,7 @@ transform
 	padding-top: 0 !important;
 	box-sizing: border-box;
 	/* border: 0px solid red; */
-	width: 100% !important;
+	/* width: 100% !important; */
 }
 
 .login_wrapper {
@@ -486,35 +486,35 @@ footer {
 }
 
 /* Modal*/
- .modal-dialog {
+/*  .modal-dialog {
 	position:relative;
 	width:50%!important;
-	/* left:50%!important; */
+	left:50%!important;
 	top:125px;
 	padding: 19px 20px 20px;
 	margin: 0 auto!important;
-} 
-
+}  */
+/* 
 .modal-header{
 	padding: 5px !important;
 	font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     background-color: #272727;
     
-    /* 
-	padding-top:3px 3px!important; */
-}
+    
+	padding-top:3px 3px!important;
+} */
 
-.modal-content {
+/* .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 15% from the top and centered
     border: 1px solid #888;
-    width: 450px; /* Could be more or less, depending on screen size */
+    width: 450px; Could be more or less, depending on screen size
     border-radius:0px!important;
     max-width: 100%!important;
-}
+} */
 
-.modal-body{
+/* .modal-body{
 	padding:15px!important;
 }
 
@@ -533,7 +533,7 @@ footer {
     font-family: 'Open Sans', sans-serif!important;
     font-size: 15px;
     background-color: #272727;
-}
+} */
 
 .modal-header .btn{
 	width:25px!important;
@@ -565,7 +565,70 @@ footer {
     border-radius: 4px;
 } */
 
-.modal-header .btn, .modal-footer .btn {
-    float: right;
-    padding: 1px 6px;
+
+
+#loginModal .modal-header .btn, #loginModal .modal-footer .btn {
+	float: right;
+	padding: 1px 6px;
+}
+.img-infobulle {
+	height: 72px;
+}
+
+.popin-alerte .modal-footer,  .popin-alerte .modal-header {
+	height: 30px!important;
+	border:0px;
+	padding-right:0px;
+}
+
+#loginModal .modal-content{
+	max-width:530px!important;
+}
+
+#loginModal .modal-content {
+	Box-shadow: 0px 0px 16x 0px rgba(0, 0, 0, 0.3) !important;
+	border-radius: 0px!important;
+	display: table-cell!important;
+}
+
+#loginModal .modal-dialog {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	display: table;
+}
+
+#loginModal .js-close {
+	border: 0px !important;
+	color: #333;
+	border-color: #ffffff !important;
+	background: transparent !important;
+}
+
+
+#loginModal .modal-body {
+	font-weight: 600 !important;
+	text-align: center !important;
+	color: #303030;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+#loginModal .list-group-item {
+	border: 0px !important;
+	padding-top: 0px;
+}
+
+#loginModal .popin-alerte .modal-body {
+	margin-left: 52px;
+	margin-right: 52px;
+}
+
+#loginModal .popin-alerte #modalBody .list-group{
+	margin-bottom:0px!important;
 }

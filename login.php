@@ -82,8 +82,8 @@
                         onError: function () { 
                         	
                         		  
-                            		$('#myModal').find(".modal-body").text("Une erreur s'est produite lors de la connexion. Veuillez réessayer ultérieurement.");  
-                        		    $('#myModal').modal('show');
+                            		//$('#myModal').find(".modal-body").text("Une erreur s'est produite lors de la connexion. Veuillez réessayer ultérieurement.");  
+                        		    $('#loginModal').modal('show');
                         		
                         }
                     });
@@ -95,27 +95,70 @@
 
 		<!-- <div id="footer"><div class="copyright_area">Copyright &copy; 2018. All rights reserved</div></div>
  -->
-	</div>
 
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
-		aria-labelledby="myModalLabel">
-		<div class="modal-dialog errorModal" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn btn-default" data-dismiss="modal">x</button>
-					<h4 class="modal-title" id="myModalLabel"></h4>
-				</div>
+		<div id="loginModal" class="modal fade popin-alerte">
+			<div class="modal-dialog ">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn btn-default js-close"
+							data-dismiss="modal">x</button>
+						<h4 id="modalTitle" class="modal-title"></h4>
+					</div>
+					<div id="modalBody" class="modal-body">
+						<ul class="list-group">
+							<li class="list-group-item"><span class="img-infobulle"><img
+									src="assets/img/popin-alerte.png" width="60px" height="60px"></span>
+							</li>
+							<li class="list-group-item">Une erreur s'est produite lors de la
+								connexion. Veuillez réessayer ultérieurement</li>
 
-				<div class="modal-body">
-					<span>Message a afficher</span>
-				</div>
+						</ul>
 
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+
+					</div>
+					<div class="modal-footer">
+						<!-- <button type="button" class="btn js-close btn-default"
+									data-dismiss="modal">Fermer</button> -->
+					</div>
 				</div>
 			</div>
 		</div>
+
+
+		<!--  <div class="modal fade popin-alerte" id="loginModal" tabindex="-1" -->
+		<!-- 		role="dialog" aria-labelledby="myModalLabel"> -->
+		<!-- 		<div class="modal-dialog errorModal" role="document"> -->
+		<!-- 			<div class="modal-content"> -->
+		<!-- 				<div class="modal-header"> -->
+		<!-- 					<button type="button" class="btn btn-default js-close" -->
+		<!-- 						data-dismiss="modal">x</button> -->
+		<!-- 					<h4 class="modal-title" id="myModalLabel"></h4> -->
+		<!-- 				</div> -->
+
+		<!-- 				<div class="modal-body"> -->
+		<!-- 					<ul class="list-group"> -->
+		<!-- 						<li class="list-group-item"><span class="img-infobulle"><img -->
+		<!-- 								src="assets/img/popin-alerte.png" width="60px" height="60px"></span> -->
+		<!-- 						</li> -->
+		<!-- 						<li class="list-group-item">Une erreur s'est produite lors de la connexion. Veuillez -->
+		<!-- 						réessayer ultérieurement.</li> -->
+
+		<!-- 					</ul> -->
+
+
+		<!-- 				</div> -->
+
+		<!-- 				<div class="modal-footer"> -->
+		<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button> -->
+		<!-- 				</div> -->
+		<!-- 			</div> -->
+		<!-- 		</div> -->
+		<!-- 	</div> -->
+
+
 	</div>
+
+	
     
 	<?php include ('footer.php'); ?>
 	
