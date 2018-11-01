@@ -427,7 +427,11 @@ ul, li {
 	#dossiersEnCours tbody, #dossiersDeposes thead, #dossiersDeposes tbody,
 	#dossiersPayes thead, #dossiersPayes tbody, #listeDossiers thead,
 	#listeDossiers tbody, #dossiersCalendrier thead, #dossiersCalendrier tbody, 
-	#information_autres thead, #information_autres tbody
+	#information_autres thead, #information_autres tbody, #resultatFicheRecapTable 
+	thead, #resultatFicheRecapTable tbody, #InfoSocieteFiche thead, #InfoSocieteFiche
+	tbody, #signatureElectroniqueFiche thead, #signatureElectroniqueFiche tbody,
+	#conventionsFiche thead, #conventionsFiche tbody, #infoActiviteFiche thead,
+	#infoActiviteFiche tbody, #operationsFiche thead, #operationsFiche tbody
 	{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
@@ -622,10 +626,6 @@ caption {
 	font-weight: 600;
 }
 
-.fc-event-container {
-	
-}
-
 /* info importante */
 .info-importante {
 	margin-left: 0px;
@@ -757,7 +757,8 @@ caption {
 /* piloter mon activite */
 #collapseListeDossiers .submit_button_holder, #collapseDossiersPayes .submit_button_holder,
 	#collapseDossiersEnCours .submit_button_holder,
-	#collapseDossiersDeposes .submit_button_holder {
+	#collapseDossiersDeposes .submit_button_holder, 
+	#collapseSearchBarFiche .submit_button_holder {
 	text-align: right;
 }
 
@@ -812,7 +813,7 @@ caption {
 /*End piloter mon activite*/
 #collapseListeDossiers .submit_button_holder a, #collapseDossiersPayes .submit_button_holder button,
 	#collapseDossiersEnCours .submit_button_holder button,
-	#collapseDossiersDeposes .submit_button_holder button {
+	#collapseDossiersDeposes .submit_button_holder button, #collapseSearchBarFiche .submit_button_holder {
 	position: inherit;
 	top: 10px;
 	left: 15px;
@@ -973,12 +974,6 @@ ul.cards-container {
 
 .contacts {
 	font-family: 'Open Sans', sans-serif !important;
-}
-
-.cards-container li .details a {
-	/* color: #57893c;
-	transition: color 0.5s ease-in-out; */
-	
 }
 
 .cards-container li .details .name {

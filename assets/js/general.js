@@ -374,3 +374,65 @@ jQuery(document)
 										"dom" : '<"top"l>rt<"row"<"col-sm-12"<"bottom"fp><"clear">>>'
 									});
 				});
+
+// page rechercher fiche
+	jQuery(document).ready(function() {
+		jQuery('#resultatFicheRecapTable').DataTable({
+			"paging" : false,
+			"info" : false,
+			"ordering" : false,
+			"searching" : false,
+			"scrollX" : true
+		});
+	});
+	
+	/* piloter mon activite */
+	jQuery(document).ready(function() {
+		jQuery('#InfoSocieteFiche').DataTable({
+			"paging" : false,
+			"info" : false,
+			"ordering" : false,
+			"searching" : false,
+			"scrollX" : true
+		});
+	});
+	
+	jQuery(document).ready(function() {
+		jQuery('#signatureElectroniqueFiche').DataTable({
+			"paging" : false,
+			"info" : false,
+			"ordering" : false,
+			"searching" : false,
+			"scrollX" : true
+		});
+	});
+	
+	jQuery(document).ready(function() {
+		jQuery('#conventionsFiche').DataTable({
+			"paging" : false,
+			"info" : false,
+			"ordering" : false,
+			"searching" : false,
+			"scrollX" : true
+		});
+	});
+
+	jQuery(document).ready(function() {
+		jQuery('#infoActiviteFiche').DataTable({
+			"paging" : false,
+			"info" : false,
+			"ordering" : false,
+			"searching" : false,
+			"scrollX" : true
+		});
+	});
+
+	jQuery(document).ready(function() {
+		jQuery('#operationsFiche').DataTable({
+			"paging" : false,
+			"info" : false,
+			"ordering" : false,
+			"searching" : false,
+			"scrollX" : true
+		});
+	});
