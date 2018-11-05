@@ -23,7 +23,12 @@
 	<!-- ================================================ TEALIUM =========================== -->
 
 
-	<div id="overlay" style="display: none;"></div>
+	<div id="overlay" style="display: none;">
+	
+		<div class="loader"></div>
+		<span class="loading-text">Connection in progress</span>
+	
+	</div>
 
 	<div class="banner_container">
 		<div class="total-logo_container">
@@ -68,7 +73,7 @@
 //                         	  //your code to be executed after 1 second
 //                         	document.getElementById('overlay').style.display='block';
 //                         	}, 5000);
-                        //document.getElementById('overlay').style.display='block';
+                        document.getElementById('overlay').style.display='block';
                     }
                 });
                     
@@ -81,9 +86,9 @@
                         lang:'fr', 
                         onError: function () { 
                         	
-                        		  
+                        	document.getElementById('overlay').style.display='block';
                             		//$('#myModal').find(".modal-body").text("Une erreur s'est produite lors de la connexion. Veuillez réessayer ultérieurement.");  
-                        		    $('#loginModal').modal('show');
+                        		    //$('#loginModal').modal('show');
                         		
                         }
                     });

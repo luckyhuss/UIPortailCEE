@@ -426,9 +426,11 @@ ul, li {
 	#listesDesDocs thead, #listesDesDocs tbody, #dossiersEnCours thead,
 	#dossiersEnCours tbody, #dossiersDeposes thead, #dossiersDeposes tbody,
 	#dossiersPayes thead, #dossiersPayes tbody, #listeDossiers thead,
-	#listeDossiers tbody, #dossiersCalendrier thead, #dossiersCalendrier tbody, 
-	#information_autres thead, #information_autres tbody, #resultatFicheRecapTable 
-	thead, #resultatFicheRecapTable tbody, #InfoSocieteFiche thead, #InfoSocieteFiche
+	#listeDossiers tbody, #dossiersCalendrier thead, #dossiersCalendrier tbody,
+	#information_autres thead, #information_autres tbody,
+	#resultatFicheRecapTable 
+	thead, #resultatFicheRecapTable tbody, #InfoSocieteFiche thead,
+	#InfoSocieteFiche
 	tbody, #signatureElectroniqueFiche thead, #signatureElectroniqueFiche tbody,
 	#conventionsFiche thead, #conventionsFiche tbody, #infoActiviteFiche thead,
 	#infoActiviteFiche tbody, #operationsFiche thead, #operationsFiche tbody
@@ -757,8 +759,8 @@ caption {
 /* piloter mon activite */
 #collapseListeDossiers .submit_button_holder, #collapseDossiersPayes .submit_button_holder,
 	#collapseDossiersEnCours .submit_button_holder,
-	#collapseDossiersDeposes .submit_button_holder, 
-	#collapseSearchBarFiche .submit_button_holder {
+	#collapseDossiersDeposes .submit_button_holder, #collapseSearchBarFiche .submit_button_holder
+	{
 	text-align: right;
 }
 
@@ -813,7 +815,8 @@ caption {
 /*End piloter mon activite*/
 #collapseListeDossiers .submit_button_holder a, #collapseDossiersPayes .submit_button_holder button,
 	#collapseDossiersEnCours .submit_button_holder button,
-	#collapseDossiersDeposes .submit_button_holder button, #collapseSearchBarFiche .submit_button_holder {
+	#collapseDossiersDeposes .submit_button_holder button,
+	#collapseSearchBarFiche .submit_button_holder {
 	position: inherit;
 	top: 10px;
 	left: 15px;
@@ -861,8 +864,7 @@ caption {
 	text-decoration: none;
 	color: #7f8c8d;
 } */
-
-.link > a{
+.link>a {
 	
 }
 
@@ -1043,7 +1045,8 @@ ul.cards-container {
 	padding: 1px 6px;
 }
 
-.popin-info .modal-footer, .popin-info .modal-header , .popin-donnee .modal-footer{
+.popin-info .modal-footer, .popin-info .modal-header, .popin-donnee .modal-footer
+	{
 	height: 30px;
 }
 
@@ -1068,7 +1071,7 @@ ul.cards-container {
 }
 
 .img-infobulle {
-	height: 72px;
+	width: 72px;
 }
 
 .js-close {
@@ -1098,8 +1101,8 @@ ul.cards-container {
 	margin-right: 52px;
 }
 
-.popin-info #modalBody .list-group{
-	margin-bottom:0px!important;
+.popin-info #modalBody .list-group {
+	margin-bottom: 0px !important;
 }
 
 .modal-title {
@@ -1298,3 +1301,48 @@ div.dataTables_wrapper div.dataTables_paginate {
 .dataTables_wrapper.no-footer .dataTables_scrollBody {
 	border-bottom: none;
 }
+
+/*********************************************************/
+* TABS Dossier / Fiche Recap
+* /
+
+
+.tabs-rechercher .nav-tabs {
+	
+}
+
+.tabs-rechercher .nav-justified {
+	margin-bottom: -1px;
+}
+
+.tabs-rechercher {
+	padding: 5px 5px 0 5px;
+	border-bottom: 0px !important;
+	font-family:'Open Sans', Sans-serif;
+	font-size:15px;
+	font-weight:600;
+}
+
+/********************************************************************/
+/*** PANEL DEFAULT ***/
+.with-nav-tabs .panel-default .nav-tabs>li>a, .with-nav-tabs .panel-default .nav-tabs>li>a:hover,
+	.with-nav-tabs .panel-default .nav-tabs>li>a:focus {
+	color: #777;
+}
+
+.with-nav-tabs .panel-default .nav-tabs>.open>a, .with-nav-tabs .panel-default .nav-tabs>.open>a:hover,
+	.with-nav-tabs .panel-default .nav-tabs>.open>a:focus, .with-nav-tabs .panel-default .nav-tabs>li>a:hover,
+	.with-nav-tabs .panel-default .nav-tabs>li>a:focus {
+	color: #777 !important;
+	background-color: #ddd !important;
+	border-color: transparent !important;
+}
+
+.with-nav-tabs .panel-default .nav-tabs>li.active>a, .with-nav-tabs .panel-default .nav-tabs>li.active>a:hover,
+	.with-nav-tabs .panel-default .nav-tabs>li.active>a:focus {
+	color: #555 !important;
+	background-color: #fff !important;
+	border-color: #ddd !important;
+	border-bottom-color: transparent;
+}
+

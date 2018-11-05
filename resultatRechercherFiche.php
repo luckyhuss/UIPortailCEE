@@ -253,7 +253,7 @@
 		</div>
 
 	</div>
-</div>
+
 
 <script>
 function displayInfoAdmin() {

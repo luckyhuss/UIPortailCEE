@@ -16,7 +16,7 @@
 				<ul class="cards-container float">
 					<li class="item float-item">
 						<div class="details">
-							<span class="name glyphicon glyphicon-user"><span class="contacts">BO</span></span> <a
+							<span class="name glyphicon glyphicon-user"><span class="contacts">Back Office</span></span> <a
 								class="glyphicon glyphicon-earphone" href="tel:123-456-789"><span class="contacts">123-456-789</span></a>
 							<a class="glyphicon glyphicon-envelope"
 								href="mailto:emilia.jacobs@email.com"><span class="contacts">bo@email.com</span></a>

@@ -29,7 +29,7 @@
 
 				</div>
 
-				<div id="fullCalModal" class="modal fade popin-info">
+				<div id="fullCalModal" class="modal fade in popin-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 					<div class="modal-dialog ">
 						<div class="modal-content">
 							<div class="modal-header">

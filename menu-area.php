@@ -132,7 +132,7 @@ function setNavigation() {
         var href = $(this).attr('href');
 
         if (path.substring(0, href.length) === href) {
-            $(this).closest('.nav-menu').addClass('active');
+            $(this).closest('.nav-menu').addClass('active-link');
             $("div").removeClass('home');
         }
 
