@@ -1307,10 +1307,6 @@ div.dataTables_wrapper div.dataTables_paginate {
 * /
 
 
-.tabs-rechercher .nav-tabs {
-	
-}
-
 .tabs-rechercher .nav-justified {
 	margin-bottom: -1px;
 }
@@ -1332,9 +1328,17 @@ div.dataTables_wrapper div.dataTables_paginate {
 	border:0px;
 }
 
-/* .nav-tabs >li.active{
-	background-color:#01afba!important;
-} */
+.nav-tabs>li>a{
+	color:#fff;
+}
+
+.nav-tabs>li>a:hover {
+    color: #fff!important;
+    background-color: #01afba!important;
+    border: 1px solid #ddd;
+    /* border-bottom-color: transparent; */
+}
+
 
 /********************************************************************/
 /*** PANEL DEFAULT ***/
@@ -1343,7 +1347,7 @@ div.dataTables_wrapper div.dataTables_paginate {
 	color: #777;
 }
 
-.with-nav-tabs .panel-default .nav-tabs>.open>a, .with-nav-tabs .panel-default .nav-tabs>.open>a:hover,
+/* .with-nav-tabs .panel-default .nav-tabs>.open>a, .with-nav-tabs .panel-default .nav-tabs>.open>a:hover,
 	.with-nav-tabs .panel-default .nav-tabs>.open>a:focus, .with-nav-tabs .panel-default .nav-tabs>li>a:hover,
 	.with-nav-tabs .panel-default .nav-tabs>li>a:focus {
 	color: #fff !important;
@@ -1358,11 +1362,10 @@ div.dataTables_wrapper div.dataTables_paginate {
 	border-color: #ddd !important;
 	border-bottom-color: transparent;
 }
-
+ */
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: #fff!important;
-    cursor: default;
     background-color: #01afba!important;
     border: 1px solid #ddd;
     /* border-bottom-color: transparent; */
