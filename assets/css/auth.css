@@ -112,6 +112,7 @@ transform
 	position: relative;
 	padding-bottom: 80px;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+	
 }
 
 @media ( max-width : 840px) {
@@ -798,4 +799,8 @@ footer {
 .msc-action button:hover{
 	background:#e6e6e6;
 	color:#000;
+}
+
+.display{
+	display:none;
 }

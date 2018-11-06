@@ -47,7 +47,7 @@
 			<!-- Emplacement des différents screenset à intégrer dans les menus sous forme de tab et les popin éventuelles -->
 
 
-			<form class="login" id="login"></form>
+			<form class="login display" id="login"></form>
 			<!-- >div id="cee-login-container"></div-->
 
 			<!-- gigya.js script should only be included once -->
@@ -73,7 +73,7 @@
 //                         	}, 5000);
                         //document.getElementById('overlay').style.display='block';
 
-                        mscConfirm("Eta Su", "Une erreur s'est produite lors de la connexion. Veuillez réessayer ultérieurement?\nUne erreur s'est produite lors de la connexion. Veuillez réessayer ultérieurement", function(){
+                        mscConfirm("", "Vous serez connecté automatiquement en tant qu'utilisateur 'test.portail.cee.gfx@yopmail.com'. Cliquez sur OK pour continuer ou sur Annuler pour vous connecter avec un autre compte.", function(){
                   		  alert("Post deleted");
                   		},
                   		function() {
@@ -96,6 +96,9 @@
                             		//$('#myModal').find(".modal-body").text("Une erreur s'est produite lors de la connexion. Veuillez réessayer ultérieurement.");  
                         		    //$('#loginModal').modal('show');
                         		
+                        },
+                        onAfterScreenLoad: function () {
+                            document.getElementById('login').style.display='block';
                         }
                     });
         		</script>
