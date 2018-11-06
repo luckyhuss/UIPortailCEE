@@ -13,7 +13,6 @@
 <link rel="icon" type="image/png" href="assets/img/total-icon.png">
 <link href="assets/css/auth.css" rel="stylesheet">
 <link href="assets/css/simple-layout.css" rel="stylesheet">
-<link href="assets/css/msc-style.css" rel="stylesheet">
 <link href="node_modules/bootstrap/dist/css/bootstrap.min.css"
 	rel="stylesheet">
 <script src="assets/js/jquery.min.js"></script>
@@ -25,10 +24,10 @@
 
 
 	<div id="overlay" style="display: none;">
-	
+
 		<div class="loader"></div>
 		<span class="loading-text">Connection in progress</span>
-	
+
 	</div>
 
 	<div class="banner_container">
@@ -74,7 +73,7 @@
 //                         	}, 5000);
                         //document.getElementById('overlay').style.display='block';
 
-                        mscConfirm("Eta Su", "Ki to envi fer?", function(){
+                        mscConfirm("Eta Su", "Une erreur s'est produite lors de la connexion. Veuillez réessayer ultérieurement?\nUne erreur s'est produite lors de la connexion. Veuillez réessayer ultérieurement", function(){
                   		  alert("Post deleted");
                   		},
                   		function() {
@@ -171,7 +170,19 @@
 	</div>
 
 	<script src="assets/js/msc-script.js"></script>
-   <div class="msc-confirm" style="display: none;"><div class="msc-overlay"><!-- <button class="msc-close">×</button> --></div><div class="msc-content msc-confirm--animate"><h3 class="msc-title">Delete?</h3><div class="msc-body"></div><div class="msc-action"><button class="msc-ok">OK</button><button class="msc-cancel">Annulé</button></div></div></div> 
+	<div class="msc-confirm" style="display: none;">
+		<div class="msc-overlay">
+			<!-- <button class="msc-close">×</button> -->
+		</div>
+		<div class="msc-content msc-confirm--animate">
+			<h3 class="msc-title">Delete?</h3>
+			<div class="msc-body"></div>
+			<div class="msc-action">
+				<button class="msc-ok">OK</button>
+				<button class="msc-cancel">Annulé</button>
+			</div>
+		</div>
+	</div> 
 	
     
 	<?php include ('footer.php'); ?>

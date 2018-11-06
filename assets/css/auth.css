@@ -718,3 +718,84 @@ footer {
 #loginModal .popin-alerte #modalBody .list-group{
 	margin-bottom:0px!important;
 }
+
+
+
+/* popin-confirm Confirm login */
+
+.msc-confirm {
+    display: none;
+    color: #252525;
+    -webkit-font-smoothing: antialiased;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.msc-overlay {
+    position: fixed;
+    top: 150px;
+    height: 90%;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 20;
+}
+
+.msc-content {
+    z-index: 21;
+    background: #fff;
+    opacity: 1.0;
+    max-width: 480px;
+    margin: auto;
+    padding: 20px;
+    padding-top: 20px!important;
+    /* border: 1px solid; */
+    text-align: center;
+   	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	/* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow: 0px 0px 16x 0px rgba(0, 0, 0, 0.3); */
+	border-radius: 0px!important;
+	border: 1px solid rgba(0,0,0,.2);
+	box-shadow: 0 2px 15px rgba(0,0,0,.5);
+}
+
+.msc-body {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #666;
+}
+
+.msc-action button {
+    border: 1px solid #ccc!important;
+    padding: 5px 5px 5px 5px;
+    padding-top:5px!important;
+    border-radius: 10px;
+    min-width: 80px;
+    background: #000;
+    text-decoration: none;
+}
+.msc-confirm button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.msc-action button {
+    background: #fff;
+    cursor: pointer;
+}
+.msc-ok {
+    margin-right: 10px;
+}
+
+.msc-action button:hover{
+	background:#e6e6e6;
+	color:#000;
+}
