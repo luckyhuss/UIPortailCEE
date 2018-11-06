@@ -13,6 +13,7 @@
 <link rel="icon" type="image/png" href="assets/img/total-icon.png">
 <link href="assets/css/auth.css" rel="stylesheet">
 <link href="assets/css/simple-layout.css" rel="stylesheet">
+<link href="assets/css/msc-style.css" rel="stylesheet">
 <link href="node_modules/bootstrap/dist/css/bootstrap.min.css"
 	rel="stylesheet">
 <script src="assets/js/jquery.min.js"></script>
@@ -67,13 +68,19 @@
                 
                 gigya.socialize.addEventHandlers({
                     onLogin: function() {
-                        //alert('test');
                         console.log("logged");
-//                         setTimeout(function() {
-//                         	  //your code to be executed after 1 second
+                    
 //                         	document.getElementById('overlay').style.display='block';
 //                         	}, 5000);
-                        document.getElementById('overlay').style.display='block';
+                        //document.getElementById('overlay').style.display='block';
+
+                        mscConfirm("Eta Su", "Ki to envi fer?", function(){
+                  		  alert("Post deleted");
+                  		},
+                  		function() {
+                  		  alert('Cancelled');
+                  		});
+                        
                     }
                 });
                     
@@ -163,6 +170,8 @@
 
 	</div>
 
+	<script src="assets/js/msc-script.js"></script>
+   <div class="msc-confirm" style="display: none;"><div class="msc-overlay"><!-- <button class="msc-close">×</button> --></div><div class="msc-content msc-confirm--animate"><h3 class="msc-title">Delete?</h3><div class="msc-body"></div><div class="msc-action"><button class="msc-ok">OK</button><button class="msc-cancel">Annulé</button></div></div></div> 
 	
     
 	<?php include ('footer.php'); ?>
@@ -172,6 +181,7 @@
 	<script type="text/javascript">
 
 </script>
+
 
 
 
