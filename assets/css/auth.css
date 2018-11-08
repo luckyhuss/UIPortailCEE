@@ -7,6 +7,7 @@ body {
 	position: absolute;
 	width: 100%;
 	float: left;
+	height: calc(100vh - 220px);
 }
 
 .banner_container {
@@ -37,6 +38,10 @@ body {
 @media ( max-width : 340px) {
 	.login_wrapper {
 		top: 130px !important;
+	}
+	
+	.msc-overlay{
+		top:95px!important;
 	}
 }
 
@@ -768,9 +773,11 @@ footer {
 }
 
 .msc-body {
-    font-size: 1.2em;
+    font-size: 15px;
     margin-bottom: 1em;
     color: #666;
+    font-family:'Open Sans', Sans-serif;
+    
 }
 
 .msc-action button {
@@ -798,9 +805,34 @@ footer {
 
 .msc-action button:hover{
 	background:#e6e6e6;
-	color:#000;
+	color:#0000ff;
 }
 
 .display{
 	display:none;
+}
+
+.msc-popin-alerte{
+	background: url("../img/popin-alerte.png") no-repeat;
+	width: 72px;
+	height:72px;
+    display: inline-block;
+}
+
+/* .msc-utilisateur{
+	cursor: pointer;
+	text-decoration: underline;
+}
+ */
+
+.msc-body>h4 {
+    background:none!important;
+    border:none!important; 
+    padding:0!important;
+    
+    /*optional*/
+    font-family:'Open Sans',sans-serif; /*input has OS specific font-family*/
+    color:#0000ff;
+    text-decoration:underline;
+    /* cursor:pointer; */
 }

@@ -73,12 +73,14 @@
 //                         	}, 5000);
                         //document.getElementById('overlay').style.display='block';
 
-                        mscConfirm("", "Vous serez connecté automatiquement en tant qu'utilisateur 'test.portail.cee.gfx@yopmail.com'. Cliquez sur OK pour continuer ou sur Annuler pour vous connecter avec un autre compte.", function(){
-                  		  alert("Post deleted");
-                  		},
-                  		function() {
-                  		  alert('Cancelled');
-                  		});
+                        mscConfirm("test.portail.cee.gfx@yopmail.com. ", "Vous serez connecté automatiquement en tant qu'utilisateur ","Cliquez sur OK pour continuer ou sur Annuler pour vous connecter avec un autre compte.", 
+                            function()	{
+                      		  alert("Post deleted");
+                      		},
+                      		function() {
+                      		  alert('Cancelled');
+                  			}
+                  		);
                         
                     }
                 });
@@ -104,7 +106,7 @@
         		</script>
 
 
-
+		<?php include ('footer.php'); ?>
 		</div>
 
 		<!-- <div id="footer"><div class="copyright_area">Copyright &copy; 2018. All rights reserved</div></div>
@@ -178,8 +180,13 @@
 			<!-- <button class="msc-close">×</button> -->
 		</div>
 		<div class="msc-content msc-confirm--animate">
-			<h3 class="msc-title">Delete?</h3>
-			<div class="msc-body"></div>
+			<!-- <h3 class="msc-title">TITLE</h3> -->
+			<div class="msc-popin-alerte"></div>
+			<div class="msc-body">
+    			<span class="msc-connect-message"></span>
+    			<h4 class="msc-utilisateur"></h4>
+    			<span class="msc-etape-message"></span>
+			</div>
 			<div class="msc-action">
 				<button class="msc-ok">OK</button>
 				<button class="msc-cancel">Annulé</button>
@@ -188,7 +195,7 @@
 	</div> 
 	
     
-	<?php include ('footer.php'); ?>
+	
 	
 
 <!-- 	<div class="copyright_area">Copyright &copy; 2018. All rights reserved</div> -->
