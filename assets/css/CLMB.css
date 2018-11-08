@@ -103,7 +103,7 @@
 	background: #01afba;
 }
 
-#collapseListeDossiers .pagination>.active>a{
+.pagination>.active>a{
 	background-color:#01afba;
 	border-color: #01afba;
 }

@@ -105,7 +105,7 @@
 	background: #004097!important; 
 }
 
-#collapseListeDossiers .pagination>.active>a{
+.pagination>.active>a{
 	background-color:#004097;
 	border-color: #004097;
 }
