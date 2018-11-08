@@ -2,12 +2,12 @@
 <div class="panel panel-default">
 <div class="panel-heading">
   <h4 class="panel-title">
-    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseSearchBar">Rechercher</a></span>
-    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseSearchBar"><i class="glyphicon glyphicon-search"></i></a></span>
+    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseSearchTypeDossier">Rechercher</a></span>
+    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseSearchTypeDossier"><i class="glyphicon glyphicon-search"></i></a></span>
   </h4>
 </div>
 
-<div id="collapseSearchBar" class="panel-collapse collapse in">
+<div id="collapseSearchTypeDossier" class="panel-collapse collapse in">
 <div class="panel-body">
 <form id="formSearchBar" class="form_search_bar form-inline" action="#" method="POST">
 

@@ -77,30 +77,15 @@
 	background: #576777 !important;
 }
 
-/* modal css */
-.modal-header, .modal-footer {
-	padding: 5px;
-	color: #ffffff;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-	/* background-color: #576777; */
-	border:0px!important;
-}
 
-.modal-body{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	margin: 8px;
-	padding: 8px;
-}
 
 .popin-donnee .modal-header, .popin-donnee .modal-footer {
-	background-color: #576777;
+	/* background-color: #576777; */
 }
 
 .popin-donnee .modal-header .btn:hover, .popin-donnee .modal-footer .btn:hover {
-	color: #ffffff;
-	background: #01afba;
+	/* color: #ffffff;
+	background: #01afba; */
 }
 
 .pagination>.active>a{

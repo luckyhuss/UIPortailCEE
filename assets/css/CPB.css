@@ -79,30 +79,17 @@
 }
 
 /* modal css */
-.modal-header, .modal-footer {
-	padding: 5px;
-	color: #ffffff;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-	/* background-color: #484848;  */
-	border:0px!important;
-}
 
-.popin-donnee .modal-header, .popin-donnee .modal-footer {
+/* .popin-donnee .modal-header, .popin-donnee .modal-footer {
 	background-color: #484848;
 }
+ */
 
-.modal-body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	margin: 8px;
-	padding: 8px;
-}
 
-.popin-donnee .modal-header .btn:hover, .popin-donnee .modal-footer .btn:hover {
+/* .popin-donnee .modal-header .btn:hover, .popin-donnee .modal-footer .btn:hover {
 	color: #ffffff;
 	background: #df5952;
-}
+} */
 
 .pagination>.active>a {
 	background-color: #df5952;
@@ -159,4 +146,23 @@
 
 .fc-day-grid {
 	background: #f9f9f9;
+}
+
+*******************************************************************
+************************ TABS Rechercher **************************
+
+.with-nav-tabs {
+	border-color:#576777;
+}
+
+.panel-default > .tabs-rechercher {
+	background:#484848; /* #01afba; */
+}
+
+.nav-tabs>li>a:hover {
+    background-color: #df5952!important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #df5952!important;
 }

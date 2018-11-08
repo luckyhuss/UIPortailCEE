@@ -380,8 +380,8 @@ ul, li {
 	width: 100%;
 	display: flex;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
-	font-size: 15px;
+	/* font-weight: 600; */
+	font-size: 13px;
 	color: #303030;
 	font-size: 13px;
 	margin-bottom: 10px;
@@ -390,8 +390,15 @@ ul, li {
 .form_search_bar .form-group .form_label {
 	min-width: 145px;
 	text-align: left;
+	
+	margin: auto;
 	margin-right: 10px;
-	vertical-align: center !important;
+}
+
+.form-control {
+	border-radius:23px!important;
+	height:40px!important;
+	padding:15px!important;
 }
 
 .form_search_bar .form-group .form_input {
@@ -1094,6 +1101,25 @@ ul.cards-container {
 #fullCalModal .list-group-item {
 	border: 0px !important;
 	padding-top: 0px;
+}
+
+
+/* modal css */
+.popin-donnee .modal-header, .popin-donnee .modal-footer, .popin-info .modal-header, .popin-info .modal-footer {
+	padding: 5px;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	/* background-color: #576777; */
+	border:0px;
+	
+}
+
+.popin-donnee .modal-body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	margin: 8px;
+	padding: 8px;
 }
 
 .popin-info .modal-body {

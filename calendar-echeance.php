@@ -33,7 +33,7 @@
 					<div class="modal-dialog ">
 						<div class="modal-content">
 							<div class="modal-header">
-								<button type="button" class="btn btn-default js-close"
+								<button type="button" class="btn btn-default"
 									data-dismiss="modal">x</button>
 								<h4 id="modalTitle" class="modal-title"></h4>
 							</div>

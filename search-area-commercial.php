@@ -174,7 +174,7 @@
 							</div>
 
 							<div class="col-md-12 submit_button_holder">
-								<button type="submit" class="btn btn-primary submit_button">Submit</button>
+								<button type="submit" class="btn btn-primary submit_button">Rechercher</button>
 							</div>
 						</div>
 
