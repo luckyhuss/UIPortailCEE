@@ -7,7 +7,7 @@ body {
 	position: absolute;
 	width: 100%;
 	float: left;
-	height: calc(100vh - 220px);
+	height: calc(100vh - 110px);
 }
 
 .banner_container {
@@ -37,7 +37,7 @@ body {
 
 @media ( max-width : 340px) {
 	.login_wrapper {
-		top: 130px !important;
+		top: 110px !important;
 	}
 	
 	.msc-overlay{
@@ -54,7 +54,7 @@ body {
 .login_wrapper {
 	width: 100%;
 	position: relative;
-	top: 220px;
+	top: 110px;
 	/*background-image: linear-gradient(silver, black);*/
 	padding-left: 0px !important;
 	padding-right: 0px !important;
