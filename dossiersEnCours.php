@@ -63,7 +63,7 @@
             </table>
 
             <div class="col-md-12 submit_button_holder">
-            <button type="submit" class="btn btn-primary submit_button">Voir Plus</button>
+                <a href="#" class="btn btn-primary submit_button" role="button">Voir plus</a>
             </div> 
 		</div>
     </div>
