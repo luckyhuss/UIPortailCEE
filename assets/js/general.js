@@ -241,8 +241,7 @@ $(document).ready(
 							$('#fullCalendarEcheance').fullCalendar(
 									'clientEvents',
 									function(event) {
-										var start = event.start
-												.format("YYYY-MM-DD");
+										var start = event.start.format("YYYY-MM-DD");
 										if (date == start) {
 											isModal = false;
 											$(".display-none").css("display",

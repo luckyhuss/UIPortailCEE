@@ -398,8 +398,10 @@ ul, li {
 .form-control {
 	border-radius:23px!important;
 	height:40px!important;
-	padding:15px!important;
+	padding:5px 15px 5px 15px!important;
 }
+
+
 
 .form_search_bar .form-group .form_input {
 	width: 100%;
@@ -1256,10 +1258,10 @@ div.dataTables_wrapper div.dataTables_paginate {
 	width: 100% !important;
 }
 
-.dataTables_scroll
-{
-    overflow:auto;
+.dataTables_scroll{
+	overflow:auto;
 }
+
 
 /* css list with number circle background -------------- */
 .numberlist ol {
@@ -1394,4 +1396,5 @@ div.dataTables_wrapper div.dataTables_paginate {
 	border-bottom-color: transparent;
 }
  */
+ 
 
