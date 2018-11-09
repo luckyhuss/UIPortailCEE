@@ -88,8 +88,8 @@ $(document).ready(function() {
 		"paging" : false,
 		"info" : false,
 		"ordering" : false,
-		"scrollX" : true
 	});
+	jQuery('#resultatRecherche').wrap('<div class="dataTables_scroll" />');			
 });
 
 $(document).ready(function() {
@@ -98,9 +98,9 @@ $(document).ready(function() {
 		"paging" : false,
 		"info" : false,
 		"ordering" : false,
-		"scrollX" : true
 	});
-});
+		jQuery('#detailDossierOperations').wrap('<div class="dataTables_scroll" />');		
+	});
 
 $(document).ready(function() {
 	$('#infoBeneficiaire').DataTable({
@@ -108,9 +108,9 @@ $(document).ready(function() {
 		"paging" : false,
 		"info" : false,
 		"ordering" : false,
-		"scrollX" : true
 	});
-});
+		jQuery('#infoBeneficiaire').wrap('<div class="dataTables_scroll" />');		
+	});
 
 $(document).ready(function() {
 	$('#listesDesDocs').DataTable({
@@ -119,7 +119,8 @@ $(document).ready(function() {
 		"info" : false,
 		"ordering" : false,
 	});
-});
+		jQuery('#listesDesDocs').wrap('<div class="dataTables_scroll" />');		
+	});
 /* Gerer mes Dossiers */
 
 /* page d'accueil */
@@ -318,10 +319,9 @@ jQuery(document).ready(function() {
 		"info" : false,
 		"ordering" : false,
 		"searching" : false,
-		"scrollX" : true,
-		"autoWidth" : true,
 	});
-});
+		jQuery('#dossiersCalendrier').wrap('<div class="dataTables_scroll" />');		
+	});
 
 /* piloter mon activite */
 jQuery(document).ready(function() {
@@ -330,9 +330,9 @@ jQuery(document).ready(function() {
 		"info" : false,
 		"ordering" : false,
 		"searching" : false,
-		"scrollX" : true
 	});
-});
+		jQuery('#dossiersEnCours').wrap('<div class="dataTables_scroll" />');		
+	});
 
 jQuery(document).ready(function() {
 	jQuery('#dossiersDeposes').DataTable({
@@ -340,9 +340,9 @@ jQuery(document).ready(function() {
 		"info" : false,
 		"ordering" : false,
 		"searching" : false,
-		"scrollX" : true
 	});
-});
+		jQuery('#dossiersDeposes').wrap('<div class="dataTables_scroll" />');		
+	});
 
 jQuery(document).ready(function() {
 	jQuery('#dossiersPayes').DataTable({
@@ -350,8 +350,8 @@ jQuery(document).ready(function() {
 		"info" : false,
 		"ordering" : false,
 		"searching" : false,
-		"scrollX" : true
 	});
+	jQuery('#dossiersPayes').wrap('<div class="dataTables_scroll" />');			
 });
 
 jQuery(document)
@@ -382,8 +382,8 @@ jQuery(document)
 			"info" : false,
 			"ordering" : false,
 			"searching" : false,
-			"scrollX" : true
 		});
+		jQuery('#resultatFicheRecapTable').wrap('<div class="dataTables_scroll" />');		
 	});
 	
 	/* piloter mon activite */
@@ -393,8 +393,8 @@ jQuery(document)
 			"info" : false,
 			"ordering" : false,
 			"searching" : false,
-			"scrollX" : true
 		});
+		jQuery('#InfoSocieteFiche').wrap('<div class="dataTables_scroll" />');
 	});
 	
 	jQuery(document).ready(function() {
@@ -403,8 +403,8 @@ jQuery(document)
 			"info" : false,
 			"ordering" : false,
 			"searching" : false,
-			"scrollX" : true
 		});
+		jQuery('#signatureElectroniqueFiche').wrap('<div class="dataTables_scroll" />');
 	});
 	
 	jQuery(document).ready(function() {
@@ -413,19 +413,21 @@ jQuery(document)
 			"info" : false,
 			"ordering" : false,
 			"searching" : false,
-			"scrollX" : true
 		});
+		jQuery('#conventionsFiche').wrap('<div class="dataTables_scroll" />');
 	});
 
 	jQuery(document).ready(function() {
+
 		jQuery('#infoActiviteFiche').DataTable({
 			"paging" : false,
 			"info" : false,
 			"ordering" : false,
 			"searching" : false,
-			"scrollX" : true
 		});
+		jQuery('#infoActiviteFiche').wrap('<div class="dataTables_scroll" />');
 	});
+
 
 	jQuery(document).ready(function() {
 		jQuery('#operationsFiche').DataTable({
@@ -433,6 +435,16 @@ jQuery(document)
 			"info" : false,
 			"ordering" : false,
 			"searching" : false,
-			"scrollX" : true
 		});
+		jQuery('#operationsFiche').wrap('<div class="dataTables_scroll"/>');
+	});
+
+	jQuery(document).ready(function() {
+		jQuery('#resultatRechercherDossier').DataTable({
+			"paging" : false,
+			"info" : false,
+			"ordering" : false,
+			"searching" : false,
+		});
+		jQuery('#resultatRechercherDossier').wrap('<div class="dataTables_scroll" />');
 	});
