@@ -7,7 +7,7 @@ body {
 	position: absolute;
 	width: 100%;
 	float: left;
-	height: calc(100vh - 110px);
+	height: calc(100vh - 60px);
 }
 
 .banner_container {
@@ -37,7 +37,7 @@ body {
 
 @media ( max-width : 340px) {
 	.login_wrapper {
-		top: 110px !important;
+		top: 60px !important;
 	}
 	
 	.msc-overlay{
@@ -54,7 +54,7 @@ body {
 .login_wrapper {
 	width: 100%;
 	position: relative;
-	top: 110px;
+	top: 60px;
 	/*background-image: linear-gradient(silver, black);*/
 	padding-left: 0px !important;
 	padding-right: 0px !important;
@@ -105,31 +105,30 @@ transform
 	justify-content: center;
 	width: 100%;
 	min-height: 100%;
-	padding: 20px;
 }
 
 .login {
 	border-radius: 0px 0px 0px 0px;
 	padding: 10px 0px 10px 0px;
-	width: 45% !important;
-	height: 350px;
+	width: 40% !important;
+	/* height: 350px; */
 	background: #fcfcfc;
 	position: relative;
-	padding-bottom: 80px;
+	padding-bottom: 0px;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
 	
 }
 
 @media ( max-width : 840px) {
 	.login {
-		width: 60% !important;
+		width: 90% !important;
 	}
 }
 
 @media ( max-width : 640px) {
 	.login {
-		height: 370px !important;
-		width: 70% !important;
+		/* height: 370px !important; */
+		width: 90% !important;
 	}
 }
 
@@ -314,10 +313,17 @@ body {
 	display: none;
 }
 
+.gigya-input-text, .gigya-input-password{
+	border-radius:23px!important;
+}
+
 .gigya-input-submit {
 	background: #09509c !important;
 	max-width: 125px !important;
 	margin-left: 0px !important;
+	float:right!important;
+	height:40px!important;
+	margin-bottom:5px!important;
 }
 
 .gigya-composite-control-header {
@@ -342,11 +348,11 @@ body {
 }
 
 .gigya-screen.portrait {
-	width: 100% !important;
-	padding-left: 10px !important;
-	padding-right: 10px !important;
-	padding-top: 10px !important;
-	padding-bottom: 15px !important;
+    width: 100% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 10px !important; 
+    padding-bottom: 5px !important; 
 }
 
 @media ( max-width : 550px) {
@@ -441,12 +447,18 @@ form header {
 }
 
 .gigya-screen .gigya-error-msg {
-	display: flex !important;
+	display: flex !important; 
+	    text-align: left!important;
 }
 
 .gigya-screen .gigya-error-msg-active.gigya-form-error-msg {
-	border: 0px !important;
-	padding: 0px !important;
+	border: 1px solid red!important;
+	padding: 5px !important;
+	display:inline-block!important;
+	position:relative;
+	top:5px;
+	width:100%;
+	text-align: left!important;
 }
 
 .navbar-fixed-bottom {
@@ -635,6 +647,11 @@ footer {
 	width:80px!important;
 }
 
+.modal-header .btn, .modal-footer .btn {
+	float: right;
+	padding: 1px 6px;
+}
+
 /* .btn {
     display: inline-block;
     padding: 6px 12px;
@@ -670,7 +687,7 @@ footer {
 .popin-alerte .modal-footer,  .popin-alerte .modal-header {
 	height: 30px!important;
 	border:0px;
-	padding-right:0px;
+	padding: 5px!important;
 }
 
 #loginModal .modal-content{
@@ -835,4 +852,9 @@ footer {
     color:#0000ff;
     text-decoration:underline;
     /* cursor:pointer; */
+}
+
+.gigya-input-submit::after 
+{ 
+    content: "New text"; 
 }

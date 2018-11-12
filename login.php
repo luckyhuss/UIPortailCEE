@@ -59,6 +59,8 @@
 				src="https://cdns.gigya.com/js/gigya.js?apiKey=3_uqyrM6IxD2UABJ48ldLyTKDuY3MxBl53jez4riy1nWRi2FHYav0tt9_Chiohe3OJ">
                 </script>
 			<script>
+			
+			
                 var customLangParamsGigya = {
                     "GIGYA_LOGIN_SCREEN_CAPTION":'Portail CEE',
                     //"this_field_is_required":'login is required'
@@ -72,13 +74,14 @@
 //                         	document.getElementById('overlay').style.display='block';
 //                         	}, 5000);
                         //document.getElementById('overlay').style.display='block';
-
+						document.getElementById('login').style.display='none';
                         mscConfirm("test.portail.cee.gfx@yopmail.com. ", "Vous serez connecté automatiquement en tant qu'utilisateur ","Cliquez sur OK pour continuer ou sur Annuler pour vous connecter avec un autre compte.", 
                             function()	{
                       		  alert("Post deleted");
                       		},
                       		function() {
                       		  alert('Cancelled');
+                      			document.getElementById('login').style.display='block';
                   			}
                   		);
                         
@@ -94,15 +97,25 @@
                         lang:'fr', 
                         onError: function () { 
                         	
-                        	document.getElementById('overlay').style.display='block';
-                            		//$('#myModal').find(".modal-body").text("Une erreur s'est produite lors de la connexion. Veuillez réessayer ultérieurement.");  
-                        		    //$('#loginModal').modal('show');
+                        	//document.getElementById('overlay').style.display='block';
+                            		$('#myModal').find(".modal-body").text("Une erreur s'est produite lors de la connexion. Veuillez réessayer ultérieurement.");  
+                        		    $('#loginModal').modal('show');
                         		
                         },
+                     
                         onAfterScreenLoad: function () {
                             document.getElementById('login').style.display='block';
+                            //document.getElementById('input.gigya-input-submit').style.display='none'; 
+//                             setTimeout(function(){
+//                             	$("input.gigya-input-submit").val('Login');
+//                             }, 200); 
+                            	//document.getElementById('input.gigya-input-submit').style.display='block'; 
+                            
                         }
                     });
+
+                    
+                  
         		</script>
 
 
@@ -116,21 +129,17 @@
 			<div class="modal-dialog ">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="btn btn-default js-close"
+						<button type="button" class="btn btn-default"
 							data-dismiss="modal">x</button>
 						<h4 id="modalTitle" class="modal-title"></h4>
 					</div>
 					<div id="modalBody" class="modal-body">
 						<ul class="list-group">
-							<li class="list-group-item"><span class="img-infobulle"><img
-									src="assets/img/popin-alerte.png" width="60px" height="60px"></span>
+							<li class="list-group-item"><div class="msc-popin-alerte"></div>
 							</li>
 							<li class="list-group-item">Une erreur s'est produite lors de la
 								connexion. Veuillez réessayer ultérieurement</li>
-
 						</ul>
-
-
 					</div>
 					<div class="modal-footer">
 						<!-- <button type="button" class="btn js-close btn-default"
@@ -139,70 +148,24 @@
 				</div>
 			</div>
 		</div>
-
-
-		<!--  <div class="modal fade popin-alerte" id="loginModal" tabindex="-1" -->
-		<!-- 		role="dialog" aria-labelledby="myModalLabel"> -->
-		<!-- 		<div class="modal-dialog errorModal" role="document"> -->
-		<!-- 			<div class="modal-content"> -->
-		<!-- 				<div class="modal-header"> -->
-		<!-- 					<button type="button" class="btn btn-default js-close" -->
-		<!-- 						data-dismiss="modal">x</button> -->
-		<!-- 					<h4 class="modal-title" id="myModalLabel"></h4> -->
-		<!-- 				</div> -->
-
-		<!-- 				<div class="modal-body"> -->
-		<!-- 					<ul class="list-group"> -->
-		<!-- 						<li class="list-group-item"><span class="img-infobulle"><img -->
-		<!-- 								src="assets/img/popin-alerte.png" width="60px" height="60px"></span> -->
-		<!-- 						</li> -->
-		<!-- 						<li class="list-group-item">Une erreur s'est produite lors de la connexion. Veuillez -->
-		<!-- 						réessayer ultérieurement.</li> -->
-
-		<!-- 					</ul> -->
-
-
-		<!-- 				</div> -->
-
-		<!-- 				<div class="modal-footer"> -->
-		<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button> -->
-		<!-- 				</div> -->
-		<!-- 			</div> -->
-		<!-- 		</div> -->
-		<!-- 	</div> -->
-
-
 	</div>
 
-	<script src="assets/js/msc-script.js"></script>
+	<script src="assets/js/auth.js"></script>
 	<div class="msc-confirm" style="display: none;">
-		<div class="msc-overlay">
-			<!-- <button class="msc-close">×</button> -->
-		</div>
+		<!-- <div class="msc-overlay"></div> -->
 		<div class="msc-content msc-confirm--animate">
-			<!-- <h3 class="msc-title">TITLE</h3> -->
 			<div class="msc-popin-alerte"></div>
 			<div class="msc-body">
-    			<span class="msc-connect-message"></span>
-    			<h4 class="msc-utilisateur"></h4>
-    			<span class="msc-etape-message"></span>
+				<span class="msc-connect-message"></span>
+				<h4 class="msc-utilisateur"></h4>
+				<span class="msc-etape-message"></span>
 			</div>
 			<div class="msc-action">
 				<button class="msc-ok">OK</button>
 				<button class="msc-cancel">Annulé</button>
 			</div>
 		</div>
-	</div> 
-	
-    
-	
-	
-
-<!-- 	<div class="copyright_area">Copyright &copy; 2018. All rights reserved</div> -->
-	<script type="text/javascript">
-
-</script>
-
+	</div>
 
 
 

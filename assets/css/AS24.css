@@ -145,3 +145,23 @@
 .fc-day-grid{
 	background:#f9f9f9;
 }
+
+
+*******************************************************************
+************************ TABS Rechercher **************************
+
+.with-nav-tabs {
+	border-color:#272727;
+}
+
+.panel-default > .tabs-rechercher {
+	background:#272727; /* #01afba; */
+}
+
+.nav-tabs>li>a:hover {
+    background-color: #004097!important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #004097!important;
+}
