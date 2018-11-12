@@ -37,7 +37,7 @@
 	</div>
 </div>
 
-<?php include 'search-area-commercial.php'; ?>
+<?php include 'search-area-dossier-commercial.php'; ?>
 
 <?php include 'resultatRechercherDossier.php'; ?>
 

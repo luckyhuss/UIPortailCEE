@@ -26,8 +26,8 @@
 									<th>Num Action</th>
 									<th>Fiche</th>
 									<th>Statut</th>
-									<th>kWhc</th>
-									<th></th>
+									<th class="numcol">kWhc</th>
+									<th class="numcol">€</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -39,9 +39,9 @@
 									<td>Dossier 1</td>
 									<td>Fiche3</td>
 									<td>En cours</td>
-									<td>50450</td>
-									<td>10.45</td>
-									<td><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
+									<td class="numcol">50450</td>
+									<td class="numcol">10.45</td>
+									<td class="iconCon"><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 								<tr>
@@ -51,9 +51,9 @@
 									<td>Dossier 2</td>
 									<td>Fiche3</td>
 									<td>En cours</td>
-									<td>12345</td>
-									<td>10.45</td>
-									<td><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
+									<td class="numcol">12345</td>
+									<td class="numcol">10.45</td>
+									<td class="iconCon"><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 								<tr>
@@ -63,9 +63,9 @@
 									<td>Dossier 3</td>
 									<td>Fiche3</td>
 									<td>En cours</td>
-									<td>748578</td>
-									<td>10.45</td>
-									<td ><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
+									<td class="numcol">748578</td>
+									<td class="numcol">10.45</td>
+									<td class="iconCon"><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 							</tbody>
@@ -124,7 +124,7 @@
 							<tr>
 								<th>Nom</th>
 								<th>Fiche</th>
-								<th class="numcol">Numéro action</th>
+								<th>Numéro action</th>
 								<th>Statut</th>
 								<th class="numcol">kWhc</th>
 								<th class="numcol">€</th>
@@ -135,7 +135,7 @@
 							<tr>
 								<td>Dossier 1</td>
 								<td>Fiche 1</td>
-								<td class="numcol">23762328</td>
+								<td>23762328</td>
 								<td>En cours</td>
 								<td class="numcol">10</td>
 								<td class="numcol">500</td>
@@ -145,7 +145,7 @@
 							<tr>
 								<td>Dossier 2</td>
 								<td>Fiche 2</td>
-								<td class="numcol">23762328</td>
+								<td>23762328</td>
 								<td>En cours</td>
 								<td class="numcol">10</td>
 								<td class="numcol">500</td>
@@ -155,7 +155,7 @@
 							<tr>
 								<td>Dossier 3</td>
 								<td>Fiche 3</td>
-								<td class="numcol">23762328</td>
+								<td>23762328</td>
 								<td>En cours</td>
 								<td class="numcol">10</td>
 								<td class="numcol">500</td>
