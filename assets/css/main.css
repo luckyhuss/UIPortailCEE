@@ -1502,11 +1502,10 @@ table.dataTable thead th, table.dataTable thead td {
 }
 
 .table>thead>tr>th {
-    /* vertical-align: bottom; */
-    border-bottom: none;
+    border-bottom: 1px solid #ddd;
 }
 
-.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+ .table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td {
     border: none;
 }
 
@@ -1528,6 +1527,14 @@ table.dataTable thead th, table.dataTable thead td {
 .table>tbody>tr>td {
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+table td.numcol, table th.numcol {
+	text-align : right;
+}
+
+table td.iconCol, table th.iconCol {
+	text-align : center;
 }
 
 .custom-select {

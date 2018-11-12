@@ -31,21 +31,21 @@
 									<td>23762328</td>
 									<td>Raison 1</td>
 									<td>123</td>
-									<td><a href="#" onclick="displayInfoAdmin();"><i class="glyphicon glyphicon-eye-open"
+									<td class="iconCol"><a href="#" onclick="displayInfoAdmin();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseInfoAdmin"></i></a></td>
 								</tr>
 								<tr>
                                     <td>23762328</td>
 									<td>Raison 2</td>
 									<td>123</td>
-									<td><a href="#" onclick="displayInfoAdmin();"><i class="glyphicon glyphicon-eye-open"
+									<td class="iconCol"><a href="#" onclick="displayInfoAdmin();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseInfoAdmin"></i></a></td>
 								</tr>
 								<tr>
                                     <td>23762328</td>
 									<td>Raison 3</td>
 									<td>123</td>
-									<td ><a href="#" onclick="displayInfoAdmin();"><i class="glyphicon glyphicon-eye-open"
+									<td class="iconCol"><a href="#" onclick="displayInfoAdmin();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseInfoAdmin"></i></a></td>
 								</tr>
 							</tbody>
@@ -160,17 +160,17 @@
 
 							<tr>
                                 <th>Nom</th>
-                                <th>Signee le</th>
+                                <th class="numcol">Signee le</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>Convention x</td>
-                                <td>10/31/2018</td>
+                                <td class="numcol">10/31/2018</td>
 							</tr>
 							<tr>
                                 <td>Avenant x</td>
-                                <td>10/31/2018</td>
+                                <td class="numcol">10/31/2018</td>
 							</tr>
 						</tbody>
 					</table>
@@ -185,35 +185,35 @@
 
 							<tr>
 								<th>Dossiers</th>
-                                <th>Total</th>
-                                <th>€</th>
-                                <th>kWhc</th>
+                                <th class="numcol">Total</th>
+                                <th class="numcol">€</th>
+                                <th class="numcol">kWhc</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>En cours</td>
-                                <td>45</td>
-                                <td>244</td>
-                                <td>544</td>
+                                <td class="numcol">45</td>
+                                <td class="numcol">244</td>
+                                <td class="numcol">544</td>
 							</tr>
 							<tr>
                                 <td>Deposés</td>
-                                <td>45</td>
-                                <td>244</td>
-                                <td>544</td>
+                                <td class="numcol">45</td>
+                                <td class="numcol">244</td>
+                                <td class="numcol">544</td>
                             </tr>
                             <tr>
 								<td>Payés (Ben)</td>
-                                <td>45</td>
-                                <td>244</td>
-                                <td>544</td>
+                                <td class="numcol">45</td>
+                                <td class="numcol">244</td>
+                                <td class="numcol">544</td>
 							</tr>
 							<tr>
                                 <td>Payés (Pro)</td>
-                                <td>45</td>
-                                <td>244</td>
-                                <td>544</td>
+                                <td class="numcol">45</td>
+                                <td class="numcol">244</td>
+                                <td class="numcol">544</td>
 							</tr>
 						</tbody>
 					</table>

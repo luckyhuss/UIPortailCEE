@@ -16,47 +16,47 @@
             <table id="dossiersDeposes" class="table table-striped table-bordered nowrap" style="width:100%">
             <thead>
             <tr>
-                <th>Num Dossier</th>
-                <th>Total</th>
-                <th>kWhc</th>
-                <th>€</th>
+                <th class="numcol">Numéro dossier</th>
+                <th class="numcol">Total</th>
+                <th class="numcol">kWhc</th>
+                <th class="numcol">€</th>
                 <th></th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td>4543451</td>
-                <td>14854</td>
-                <td>645</td>
-                <td>545</td>
+                <td class="numcol">4543451</td>
+                <td class="numcol">14854</td>
+                <td class="numcol">645</td>
+                <td class="numcol">545</td>
                 <td class="col-md-1 text-center"><a href="#"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
             </tr>
             <tr>
-                <td>4543452</td>
-                <td>14854</td>
-                <td>645</td>
-                <td>545</td>
+                <td class="numcol">4543451</td>
+                <td class="numcol">14854</td>
+                <td class="numcol">645</td>
+                <td class="numcol">545</td>
                 <td class="col-md-1 text-center"><a href="#"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
             </tr>
             <tr>
-                <td>4543453</td>
-                <td>14854</td>
-                <td>645</td>
-                <td>545</td>
+                <td class="numcol">4543451</td>
+                <td class="numcol">14854</td>
+                <td class="numcol">645</td>
+                <td class="numcol">545</td>
                 <td class="col-md-1 text-center"><a href="#"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
             </tr>
             <tr>
-                <td>4543452</td>
-                <td>14854</td>
-                <td>645</td>
-                <td>545</td>
+                <td class="numcol">4543451</td>
+                <td class="numcol">14854</td>
+                <td class="numcol">645</td>
+                <td class="numcol">545</td>
                 <td class="col-md-1 text-center"><a href="#"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
             </tr>
             <tr>
-                <td>4543453</td>
-                <td>14854</td>
-                <td>645</td>
-                <td>545</td>
+                <td class="numcol">4543451</td>
+                <td class="numcol">14854</td>
+                <td class="numcol">645</td>
+                <td class="numcol">545</td>
                 <td class="col-md-1 text-center"><a href="#"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
             </tr>
             </tbody>

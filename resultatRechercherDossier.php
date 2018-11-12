@@ -102,17 +102,17 @@
 							<legend class="the-legend">Dossier</legend>
 							<div class="row">
 						<div class="col-md-6 js-date-engagement">
-							<h5><span class="enteteDossier">Date Engagement:</span> @Model.DateEngagement</h5>
+							<h5><span class="enteteDossier">Date Engagement : </span> @Model.DateEngagement</h5>
 						</div>
 						<div class="col-md-6 js-aide">
-						<h5><span class="enteteDossier">Aide: </span> @Model.Aide</h5>
+						<h5><span class="enteteDossier">Aide : </span> @Model.Aide</h5>
 						</div>
 
 						<div class="col-md-6 js-date-fin-traveau">
-						<h5><span class="enteteDossier">Date Fin Travaux: </span> @Model.DateFinTravaux</h5>
+						<h5><span class="enteteDossier">Date Fin Travaux : </span> @Model.DateFinTravaux</h5>
 						</div>
 						<div class="col-md-6 js-date-premier-contact">
-						<h5><span class="enteteDossier">Date Premier Contact: </span> @Model.DatePremierContact</h5>
+						<h5><span class="enteteDossier">Date Premier Contact : </span> @Model.DatePremierContact</h5>
 						</div>
 					</div>
 
@@ -124,10 +124,10 @@
 							<tr>
 								<th>Nom</th>
 								<th>Fiche</th>
-								<th>Num Action</th>
+								<th class="numcol">Numéro action</th>
 								<th>Statut</th>
-								<th>kWhc</th>
-								<th>€</th>
+								<th class="numcol">kWhc</th>
+								<th class="numcol">€</th>
 								<th></th>
 							</tr>
 						</thead>
@@ -135,30 +135,30 @@
 							<tr>
 								<td>Dossier 1</td>
 								<td>Fiche 1</td>
-								<td>23762328</td>
+								<td class="numcol">23762328</td>
 								<td>En cours</td>
-								<td>10</td>
-								<td>500</td>
+								<td class="numcol">10</td>
+								<td class="numcol">500</td>
 								<td style="text-align: center;"><a href="#"><i class="glyphicon glyphicon-eye-open"
 										data-toggle="modal" data-target="#ModalDossier"></i></a></td>
 							</tr>
 							<tr>
 								<td>Dossier 2</td>
 								<td>Fiche 2</td>
-								<td>23762328</td>
+								<td class="numcol">23762328</td>
 								<td>En cours</td>
-								<td>10</td>
-								<td>500</td>
+								<td class="numcol">10</td>
+								<td class="numcol">500</td>
 								<td style="text-align: center;"><a href="#"><i class="glyphicon glyphicon-eye-open"
 										data-toggle="modal" data-target="#ModalDossier"></i></a></td>
 							</tr>
 							<tr>
 								<td>Dossier 3</td>
 								<td>Fiche 3</td>
-								<td>23762328</td>
+								<td class="numcol">23762328</td>
 								<td>En cours</td>
-								<td>10</td>
-								<td>500</td>
+								<td class="numcol">10</td>
+								<td class="numcol">500</td>
 								<td style="text-align: center;"><a href="#"><i class="glyphicon glyphicon-eye-open"
 										data-toggle="modal" data-target="#ModalDossier"></i></a></td>
 							</tr>
@@ -175,21 +175,21 @@
 
 							<tr>
 								<th>ID</th>
-								<th class="col-md-6 text-center">Nom</th>
+								<th>Nom</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>1</td>
-								<td class="col-md-6 text-center">Test 1</td>
+								<td>Test 1</td>
 							</tr>
 							<tr>
 								<td>2</td>
-								<td class="col-md-6 text-center">Test 2</td>
+								<td>Test 2</td>
 							</tr>
 							<tr>
 								<td>3</td>
-								<td class="col-md-6 text-center">Test 3</td>
+								<td>Test 3</td>
 							</tr>
 						</tbody>
 					</table>

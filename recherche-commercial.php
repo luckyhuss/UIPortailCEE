@@ -3,7 +3,7 @@
 	<div class="panel-heading tabs-rechercher">
 		<ul class="nav nav-tabs">
 			<li class="tabs-pane active"><a href="#tab1default" data-toggle="tab">Dossier</a></li>
-			<li class="tabs-pane"><a href="#tab2default" data-toggle="tab">Fiche Récapulatif Pro/B2B</a></li>
+			<li class="tabs-pane"><a href="#tab2default" data-toggle="tab">Fiche Récapitulatif Pro/B2B</a></li>
 		</ul>
 	</div>
 	<div class="panel-body">

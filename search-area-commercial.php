@@ -28,7 +28,7 @@
 						<div class="row">
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
-									<span class="form_label"><label for="NumAction">Num Action</label></span>
+									<span class="form_label"><label for="NumAction">Numéro action</label></span>
 									<span class="form_input"><input type="text"
 										class="form-control input-validation-error" id="numAction"
 										placeholder=""></span>
@@ -37,16 +37,16 @@
 
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
-									<span class="form_label"><label for="NumDossier">Reference
+									<span class="form_label"><label for="Référence">Référence
 											Externe</label></span> <span class="form_input"><input
-										type="text" class="form-control" id="numDossier"
+										type="text" class="form-control" id="référence"
 										placeholder=""></span>
 								</div>
 							</div>
 
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
-									<span class="form_label"><label for="NomB2C">Nom B2C</label></span>
+									<span class="form_label"><label for="NomB2C">Nom du particulier</label></span>
 									<span class="form_input"><input type="text"
 										class="form-control" id="nomB2C" placeholder=""></span>
 								</div>
@@ -88,7 +88,7 @@
 
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
-									<span class="form_label"><label for="SireneB2B">Sirene B2B</label></span>
+									<span class="form_label"><label for="SireneB2B">Sirene client</label></span>
 									<span class="form_input"><input type="text"
 										class="form-control" id="sireneB2B" placeholder=""></span>
 								</div>
@@ -97,7 +97,7 @@
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
 									<span class="form_label"><label for="RaisonSocialeB2B">Raison
-											Sociale B2B</label></span> <span class="form_input"><input
+											sociale client</label></span> <span class="form_input"><input
 										type="text" class="form-control" id="raisonSocialeB2B"
 										placeholder=""></span>
 								</div>
@@ -106,7 +106,7 @@
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
 									<span class="form_label"><label for="ChargeAffaireB2B">Charge
-											Affaire B2B</label></span> <span class="form_input"><input
+										affaire client</label></span> <span class="form_input"><input
 										type="text" class="form-control" id="chargeAffaireB2B"
 										placeholder=""></span>
 								</div>
@@ -176,7 +176,7 @@
 
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
-									<span class="form_label"><label for="ReferenceOS">Reference OS</label></span>
+									<span class="form_label"><label for="ReferenceOS">Reference opération standardisée</label></span>
 									<span class="form_input"><input type="text"
 										class="form-control" id="referenceOS" placeholder=""></span>
 								</div>
@@ -184,7 +184,7 @@
 
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
-									<span class="form_label"><label for="VersionOS">Version OS</label></span>
+									<span class="form_label"><label for="VersionOS">Version opération standardisée</label></span>
 									<span class="form_input"><input type="number"
 										class="form-control" id="versionOS" placeholder=""></span>
 								</div>

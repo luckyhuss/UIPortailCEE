@@ -23,79 +23,79 @@
 							style="width: 100%">
 							<thead>
 								<tr>
-									<th>Num Dossier</th>
+									<th class="numcol">Num Dossier</th>
 									<th>Fiche</th>
 									<th>Ref.</th>
 									<th>Nom Bénéficiaire</th>
-									<th>&nbsp;&nbsp; Date &nbsp;&nbsp;</th>
-									<th>&nbsp;&nbsp; Travaux &nbsp;&nbsp;</th>
-									<th>&nbsp;&nbsp; kWhc &nbsp;&nbsp;</th>
-									<th>&nbsp;&nbsp;&nbsp;&nbsp; € &nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th class="numcol">Date</th>
+									<th>Travaux</th>
+									<th class="numcol">kWhc</th>
+									<th class="numcol">€</th>
 									<th></th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>4543451</td>
+									<td class="numcol">4543451</td>
 									<td>14854</td>
 									<td>645</td>
 									<td>Pierre Michel Dupont</td>
-									<td>10/30/2018</td>
+									<td class="numcol">10/30/2018</td>
 									<td>Test</td>
-									<td>545</td>
-									<td>645</td>
+									<td class="numcol">545</td>
+									<td class="numcol">645</td>
 									<td class="col-md-1 text-center"><a href="#"><i
 											class="glyphicon glyphicon-eye-open" data-toggle="modal"
 											data-target="#ModalCalendrier"></i></a></td>
 								</tr>
 								<tr>
-									<td>4543451</td>
+									<td class="numcol">4543451</td>
 									<td>14854</td>
 									<td>645</td>
 									<td>Pierre Michel Dupont</td>
-									<td>10/30/2018</td>
+									<td class="numcol">10/30/2018</td>
 									<td>Test</td>
-									<td>545</td>
-									<td>645</td>
+									<td class="numcol">545</td>
+									<td class="numcol">645</td>
 									<td class="col-md-1 text-center"><a href="#"><i
 											class="glyphicon glyphicon-eye-open" data-toggle="modal"
 											data-target="#ModalCalendrier"></i></a></td>
 								</tr>
 								<tr>
-									<td>4543451</td>
+									<td class="numcol">4543451</td>
 									<td>14854</td>
 									<td>645</td>
 									<td>Pierre Michel Dupont</td>
-									<td>10/30/2018</td>
+									<td class="numcol">10/30/2018</td>
 									<td>Test</td>
-									<td>545</td>
-									<td>645</td>
+									<td class="numcol">545</td>
+									<td class="numcol">645</td>
 									<td class="col-md-1 text-center"><a href="#"><i
 											class="glyphicon glyphicon-eye-open" data-toggle="modal"
 											data-target="#ModalCalendrier"></i></a></td>
 								</tr>
 								<tr>
-									<td>4543451</td>
+									<td class="numcol">4543451</td>
 									<td>14854</td>
 									<td>645</td>
 									<td>Pierre Michel Dupont</td>
-									<td>10/30/2018</td>
+									<td class="numcol">10/30/2018</td>
 									<td>Test</td>
-									<td>545</td>
-									<td>64saasd5</td>
+									<td class="numcol">545</td>
+									<td class="numcol">645</td>
 									<td class="col-md-1 text-center"><a href="#"><i
 											class="glyphicon glyphicon-eye-open" data-toggle="modal"
 											data-target="#ModalCalendrier"></i></a></td>
 								</tr>
 								<tr>
-									<td>4543451</td>
+									<td class="numcol">4543451</td>
 									<td>14854</td>
 									<td>645</td>
 									<td>Pierre Michel Dupont</td>
-									<td>10/30/2018</td>
+									<td class="numcol">10/30/2018</td>
 									<td>Test</td>
-									<td>545</td>
-									<td>645</td>
+									<td class="numcol">545</td>
+									<td class="numcol">645</td>
 									<td class="col-md-1 text-center"><a href="#"><i
 											class="glyphicon glyphicon-eye-open" data-toggle="modal"
 											data-target="#ModalCalendrier"></i></a></td>
