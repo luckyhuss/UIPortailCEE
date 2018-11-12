@@ -14,7 +14,7 @@
 				<ul class="filter-container">
 					<li class="filter-item float-item">
 						<div class="form-group filtre-option-filiales">
-							<label for="filiales">Filiales :</label>
+							<label for="filiales">Filiales1 :</label>
 							<div id="msFiliale" class="form-control"></div>
 						</div>
 					</li>

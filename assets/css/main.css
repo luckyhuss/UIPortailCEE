@@ -397,7 +397,7 @@ ul, li {
 
 .form-control {
 	border-radius:23px!important;
-	height:40px!important;
+	
 	padding:5px 15px 5px 15px!important;
 }
 
@@ -800,6 +800,18 @@ caption {
 	padding: 0;
 }
 
+.ms-ctn .ms-trigger {
+    border-bottom-right-radius: 23px!important;
+    border-top-right-radius: 23px!important;
+}
+
+.ms-ctn .ms-trigger:hover {
+    width: 24px;
+    right: 1px;
+    /* border-radius: 0 3px 3px 0; */
+    border-bottom-right-radius: 23px!important;
+    border-top-right-radius: 23px!important;
+}
 .filter-item {
 	padding: 5px;
 	width: 500px;
@@ -1408,6 +1420,69 @@ div.dataTables_wrapper div.dataTables_paginate {
 }
  */
  
+ 
+
+/*  .custom-select {
+  position: relative;
+  font-family: 'Open Sans', Sans-serif;
+  border-radius:23px!important;
+  width:202px;
+}
+.custom-select select {
+  display: none; hide original SELECT element:
+  
+}
+
+.select-selected {
+  background-color: #fff;
+  color:#000;
+}
+
+style the arrow inside the select element:
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+
+point the arrow upwards when the select box is open (active):
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #000 transparent;
+  top: 7px;
+}
+style the items (options), including the selected item:
+.select-items div,.select-selected {
+  color: #000;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+style items (options):
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  color:#000;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+ hide the items when the select box is closed:
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0);
+}
+ */
 
  .table-striped>tbody>tr:nth-of-type(odd) {
     background-color: #f9f8f7;
@@ -1449,3 +1524,89 @@ table.dataTable thead th, table.dataTable thead td {
 	.glyphicon-eye-open{
 		color: #5b91e7;
 	}
+.custom-select {
+  position: relative;
+  font-family: 'Open Sans', Sans-serif;
+  z-index:20;
+  
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  background:#fff;
+  border-radius: 23px;
+  height:34px!important;
+  border:1px solid #ccc!important;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: relative;
+  content: "";
+  top: 4px;
+  float:right;
+  right:1px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #000 transparent;
+  top: 0px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+    color: #000;
+    padding: 8px 5px 15px 15px;
+    border: 1px solid transparent;
+    /* border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+    cursor: pointer;
+    user-select: none;
+    height:34px;
+}
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 23px!important;
+    /* border-bottom-right-radius: 23px; */
+    border: 1px solid #ccc;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  	display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  	background-color: #5b91e7;
+  	color: #fff;
+}
+
+.same-as-selected{
+	color:#fff!important;
+}
+
+div.selected-items{
+	border-radius:23px;
+}
+
+.select-items div.solast, .select-items div:last-child {
+	border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+}
+
+.select-items div.sofirst, .select-items div:first-child {
+	border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+  }
+  
+.same-as-selected div:last-child{
+  	border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+}
