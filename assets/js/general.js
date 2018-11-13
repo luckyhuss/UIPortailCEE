@@ -364,13 +364,14 @@ jQuery(document)
 										"ordering" : false,
 										"searching" : false,
 										"scrollX" : true,
+										"lengthChange": false,
 										"language" : {
 											"paginate" : {
 												"previous" : '<i class="glyphicon glyphicon-chevron-left"></i>',
 												"next" : '<i class="glyphicon glyphicon-chevron-right"></i>'
 											}
 										},
-										"dom" : '<"top"l>rt<"row"<"col-sm-12"<"bottom"fp><"clear">>>'
+										// "dom" : '<"top"l>rt<"row"<"col-sm-12"<"bottom"fp><"clear">>>'
 									});
 				});
 

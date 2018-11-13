@@ -1257,10 +1257,15 @@ ul.message_container li, h1, h3 {
 	display: inline;
 }
 
-div.dataTables_wrapper div.dataTables_paginate {
-	float: left;
+.dataTables_wrapper .dataTables_paginate {
+	/* float: left; */
 	margin-top: 8px;
 	font-size: 12px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+	background: none;
+	border: none;
 }
 
 #collapseListeDossiers .submit_button_holder button {
