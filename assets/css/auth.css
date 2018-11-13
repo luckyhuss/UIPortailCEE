@@ -322,8 +322,14 @@ body {
 	max-width: 125px !important;
 	margin-left: 0px !important;
 	float:right!important;
-	height:40px!important;
-	margin-bottom:5px!important;
+	height:32px!important;
+	
+	border-radius:4px!important;
+	font-family:'Open Sans', Sans-serif!important;
+	font-size:18px!important;
+    margin-bottom: 5px!important;
+    padding: 0px!important;
+	
 }
 
 .gigya-composite-control-header {
@@ -854,12 +860,3 @@ footer {
     /* cursor:pointer; */
 }
 
-.gigya-input-submit::after 
-{ 
-    content: "New text"; 
-}
-
-.gigya-input-submit:after {
-    content: 'Enter your phone number to receive a code';
-    color: blue;
-}
