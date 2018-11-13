@@ -80,6 +80,8 @@
         											<option value='2'>Statut 2</option>
         											<option value='3'>Statut 3</option>
         											<option value='4'>Statut 4</option>
+        											<option value='5'>Statut 5</option>
+        											<option value='6'>Statut 6</option>
             									</select>
             									</div>
 								</div>

@@ -63,8 +63,11 @@
 			
                 var customLangParamsGigya = {
                     "GIGYA_LOGIN_SCREEN_CAPTION":'Portail CEE',
+                    "data-gigya-placeholder":'Rod',
                     //"this_field_is_required":'login is required'
                 };
+
+                var customButtons= [];
                 
                 
                 gigya.socialize.addEventHandlers({

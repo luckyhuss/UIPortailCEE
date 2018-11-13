@@ -408,9 +408,9 @@ body {
 h1.gigya-screen-caption {
 	font-size: 30px !important;
 	padding-left: 15px !important;
-	padding-top: 15px !important;
-	margin-left: 0px !important;
-	margin-top: -10px !important;
+	padding-top: 5px !important;
+	/* margin-left: 0px !important;
+	margin-top: -10px !important; */
 	border: 0px solid blue;
 	border-top-right-radius: 0px !important;
 	border-top-left-radius: 0px !important;
@@ -857,4 +857,9 @@ footer {
 .gigya-input-submit::after 
 { 
     content: "New text"; 
+}
+
+.gigya-input-submit:after {
+    content: 'Enter your phone number to receive a code';
+    color: blue;
 }
