@@ -1601,14 +1601,7 @@ table td.iconCol, table th.iconCol {
   	display: none;
 }
 
-.select-items div:hover, .same-as-selected {
-  	background-color: #df5952;
-  	color: #fff;
-}
 
-.same-as-selected {
-	color:#fff!important;
-}
 
 div.selected-items {
 	border-radius:23px;
@@ -1631,9 +1624,9 @@ div.selected-items {
 
 
 input[type=checkbox], input[type=radio] {
-	margin-left:15px;
 	margin-top: -1px;
   	vertical-align: middle;
+  	width: 0%!important;
 }
 
 input[type='radio']:after {
@@ -1661,10 +1654,43 @@ input[type='radio']:checked:after {
         content: '';
         display: inline-block;
         visibility: visible;
-        border: 6px solid #df5952;
 }
 
-label[for=Dossier],label[for=Action] {
-	width:80px;
-	padding:2px 2px;
+input[type='checkbox']:after {
+        width: 17px;
+        height: 17px;
+        top: -1px;
+        left: -1px;
+        position: relative;
+        background-color: #fff;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 1px solid #cacaca;
+    }
+
+input[type='radio']:checked:after, input[type='checkbox']:after {
+        width: 17px;
+        height: 17px;
+        top: -1px;
+        left: -1px;
+        position: relative;
+        background-color: #fff;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        
 }
+
+
+.form_label>label,.form_label>label {
+	width:145px;
+	height:40px;
+	padding:2px 2px;
+	margin-right:10px;
+}
+
+.form-group {
+	display: inline-flex;
+}
+

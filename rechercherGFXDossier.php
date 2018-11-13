@@ -17,20 +17,16 @@
 					<li class="filter-item float-item">
 						<div class="form-group">
 							<span class="form_label"><label for="Dossier">Dossier</label></span>
-							<span>:</span>
-							<span class="form_input"><input type="radio" name="type-dossier_rad"
-								placeholder=""></span>
+							<span class="form_input"><input type="radio" name="type-dossier-rad"></span>
 						</div>
 					</li>
 					<li class="filter-item float-item">
 						<div class="form-group">
 							<span class="form_label"><label for="Action">Action</label></span>
-							<span>:</span>
-							<span class="form_input"><input type="radio" name="type-dossier_rad"
-								style="width:17px"></span>
+							<span class="form_input"><input type="radio" name="type-dossier-rad"></span>
 						</div>
 					</li>
-
+					
 				</ul>
 
 			</div>

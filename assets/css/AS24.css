@@ -165,3 +165,26 @@
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     background-color: #004097!important;
 }
+
+
+**************************************************************************************
+
+
+.select-items .same-as-selected div {
+  	background-color: #004097!important;
+  	color: blue!important;
+}
+
+
+.select-items div:hover,.same-as-selected {
+  	background-color: #004097!important;
+  	color: #fff!important;
+}
+
+input[type='radio']:checked:after {
+        border: 6px solid #004097;
+}
+
+input[type='checkbox']:checked:after {
+        border: 6px solid #004097;
+}

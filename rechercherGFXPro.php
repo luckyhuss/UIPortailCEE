@@ -28,7 +28,7 @@
             <div class="col-md-6 input_holder">
                 <div class="form-group">
                 <span class="form_label"><label for="Groupe">Groupe</label></span>
-                <span class="form_input"><input type="checkbox" id="groupe" placeholder=""></span>
+                <span class="form_input"><input type="checkbox" id="groupe" name="critere-groupe-check"></span>
                 </div>
             </div>
 
