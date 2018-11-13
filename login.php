@@ -63,7 +63,8 @@
 			
                 var customLangParamsGigya = {
                     "GIGYA_LOGIN_SCREEN_CAPTION":'Portail CEE',
-                    "data-gigya-placeholder":'Rod',
+                    "PASSWORD_145545960497275740_PLACEHOLDER":"Mot de passe",
+                    "SUBMIT_1050490235864925_VALUE":"Login"
                     //"this_field_is_required":'login is required'
                 };
 
