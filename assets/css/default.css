@@ -42,7 +42,7 @@
 	text-decoration: none;
 }
 
-.active-link {
+.active{
 	background-color: #e00032 !important;
 }
 
@@ -183,4 +183,9 @@
 
 input[type='radio']:checked:after {
         border: 6px solid #e00032;
+}
+
+.numberlist .nav-pills>li.active>a {
+    color: #fff;
+    background-color: #44b749;
 }

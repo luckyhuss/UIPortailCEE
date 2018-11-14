@@ -460,10 +460,6 @@ ul, li {
 	color: #838383;
 }
 
-#dossiersCalendrier thead {
-	background: blue !important;
-}
-
 /* .modal-dialog{
  position:relative;
  top:150px;
@@ -1252,26 +1248,20 @@ ul.message_container li, h1, h3 {
 	/*box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);*/
 }
 
-.dataTables_wrapper .dataTables_paginate .paginate_button {
-	padding: 0;
-	border: 0;
-	display: inline;
+.detailDossier .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0;
+    border: 0;
+    display: inline;
 }
 
-.dataTables_wrapper .dataTables_paginate {
-	/* float: left; */
+div.dataTables_wrapper div.dataTables_paginate {	
 	margin-top: 8px;
 	font-size: 12px;
 }
 
-.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
-	background: none;
-	border: none;
-}
-
-#collapseListeDossiers .submit_button_holder button {
-	position: relative;
-	top: -38px;
+.detailDossier .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: none;
+    border: none;
 }
 
 .pagination>li>a {
