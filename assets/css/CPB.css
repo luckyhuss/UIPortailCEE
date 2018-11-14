@@ -189,3 +189,7 @@ input[type='radio']:checked:after {
     color: #fff;
     background-color: #df5952;
 }
+
+.tab-content{
+	border: 1px solid #df5952;
+}

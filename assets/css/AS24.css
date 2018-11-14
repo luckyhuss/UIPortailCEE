@@ -193,3 +193,7 @@ input[type='checkbox']:checked:after {
     color: #fff;
     background-color: #004097;
 }
+
+.tab-content{
+	border: 1px solid #004097;
+}

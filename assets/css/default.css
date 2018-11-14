@@ -187,5 +187,9 @@ input[type='radio']:checked:after {
 
 .numberlist .nav-pills>li.active>a {
     color: #fff;
-    background-color: #44b749;
+    background-color: #e00032;
+}
+
+.tab-content{
+	border: 1px solid #e00032;
 }
