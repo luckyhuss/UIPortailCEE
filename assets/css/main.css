@@ -639,6 +639,11 @@ caption {
 	font-weight: 600;
 }
 
+.fc .fc-row .fc-content-skeleton table, .fc .fc-row .fc-content-skeleton td, .fc .fc-row .fc-helper-skeleton td {
+    background: 0 0;
+    border-color: #ddd;
+}
+
 /* info importante */
 .info-importante {
 	margin-left: 0px;
