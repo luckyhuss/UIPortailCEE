@@ -976,6 +976,7 @@ ul.cards-container {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 	font-size: 13px;
 	font-family: 'Open Sans', sans-serif;
+	border-radius: 10px;
 }
 
 .cards-container li .details {

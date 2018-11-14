@@ -41,7 +41,7 @@
 									<td>En cours</td>
 									<td class="numcol">50450</td>
 									<td class="numcol">10.45</td>
-									<td class="iconCon"><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
+									<td class="iconCol"><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 								<tr>
@@ -53,7 +53,7 @@
 									<td>En cours</td>
 									<td class="numcol">12345</td>
 									<td class="numcol">10.45</td>
-									<td class="iconCon"><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
+									<td class="iconCol"><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 								<tr>
@@ -65,7 +65,7 @@
 									<td>En cours</td>
 									<td class="numcol">748578</td>
 									<td class="numcol">10.45</td>
-									<td class="iconCon"><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
+									<td class="iconCol"><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 							</tbody>

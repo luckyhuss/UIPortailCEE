@@ -121,9 +121,9 @@
 
     <div class="numberlist">
 
-    <ol>
-        <li>
-            <a class="expand">
+    <!-- <ol class="col-md-6">
+        <li role="presentation" class="empty">
+            <a class="expand" href="#tab_a" data-toggle="tab" aria-controls="tab_a" role='tab'>
                 <h2>Convention Mandat</h2>
                 <span>Qu'est ce que c'est?</span>
             </a>
@@ -142,7 +142,46 @@
                 <span>Pourquoi c'est important?</span>
             </a>
         </li>
-    </ol>
+    </ol> -->
+
+<ol class="nav nav-pills nav-stacked col-sm-2 col-md-7" role="tablist">
+    <li role="presentation" class="empty"><a class="expand" href="#tab_a" data-toggle="tab" aria-controls="tab_a" role='tab'><h2>Convention Mandat</h2></a></li>
+    <li role="presentation" class="empty"><a class="expand" href="#tab_b" data-toggle="tab" aria-controls="tab_b" role='tab'><h2>AH</h2></a></li>
+    <li role="presentation" class="empty"><a class="expand" href="#tab_c" data-toggle="tab" aria-controls="tab_c" role='tab'><h2>ER</h2></a></li>
+    <!-- <li role="presentation" class='active empty  visible-xs hidden-xs' ><a href="#null" data-toggle="tab" aria-controls="null" role='tab'>Null</a></li> -->
+</ol>
+
+  <div class="tab-content col-md-4 New-Fade">
+    <div class="tab-pane active" id="null" role="tabpanel">
+    </div>
+    <div class="tab-pane" id="tab_a" role="tabpanel">
+      <span>Qu'est ce que c'est?</span>
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+        ac turpis egestas.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+        ac turpis egestas.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+        ac turpis egestas.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+        ac turpis egestas.
+      </p>
+    </div>
+    <div class="tab-pane" id="tab_b" role="tabpanel">
+      <h4>Pane B</h4>
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada 
+        fames ac turpis egestas.
+      </p>
+    </div>
+    <div class="tab-pane" id="tab_c" role="tabpanel">
+      <h4>Pane C</h4>
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+        ac turpis egestas.
+      </p>
+    </div>
+  </div>
 
 </div>
 
