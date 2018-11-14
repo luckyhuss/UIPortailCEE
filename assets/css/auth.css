@@ -831,7 +831,7 @@ footer {
 	color:#0000ff;
 }
 
-.display{
+.display {
 	display:none;
 }
 
@@ -852,11 +852,11 @@ footer {
     background:none!important;
     border:none!important; 
     padding:0!important;
-    
-    /*optional*/
-    font-family:'Open Sans',sans-serif; /*input has OS specific font-family*/
-    color:#0000ff;
-    text-decoration:underline;
+
+    font-family:'Open Sans',sans-serif; 
+    color:#000000;
+    text-decoration:none;
+    font-weight:600;
     /* cursor:pointer; */
 }
 
