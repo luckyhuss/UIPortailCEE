@@ -64,7 +64,7 @@
 <!-- Resultat de la recherche -->
 
 
-<div class="panel-group display-none" id="infoAdmin">
+<div class="panel-group displayed" id="infoAdmin">
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h4 class="panel-title">

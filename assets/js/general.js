@@ -156,7 +156,7 @@ $(document).ready(
 						dayClick : function(date, allDay, jsEvent, view) {
 							var eventsCount = 0;
 							var date = date.format('YYYY-MM-DD');
-							$(".display-none").css("display", "none");
+							$(".displayed").css("display", "none");
 							$('#bootstrapModalFullCalendar').fullCalendar(
 									'clientEvents',
 									function(event) {
@@ -167,7 +167,7 @@ $(document).ready(
 										// alert('start ' + start);
 										if (date == start) {
 											isModal = false;
-											$(".display-none").css("display",
+											$(".displayed").css("display",
 													"block");
 										}
 
@@ -178,7 +178,7 @@ $(document).ready(
 						},
 						eventClick : function(event, jsEvent, view) {
 							isModal = false
-							$(".display-none").css("display", "block");
+							$(".displayed").css("display", "block");
 							openModal(isModal);
 							isModal = true;
 						},
@@ -237,14 +237,14 @@ $(document).ready(
 						dayClick : function(date, allDay, jsEvent, view) {
 							var eventsCount = 0;
 							var date = date.format('YYYY-MM-DD');
-							$(".display-none").css("display", "none");
+							$(".displayed").css("display", "none");
 							$('#fullCalendarEcheance').fullCalendar(
 									'clientEvents',
 									function(event) {
 										var start = event.start.format("YYYY-MM-DD");
 										if (date == start) {
 											isModal = false;
-											$(".display-none").css("display",
+											$(".displayed").css("display",
 													"block");
 										}
 
@@ -255,7 +255,7 @@ $(document).ready(
 						},
 						eventClick : function(event, jsEvent, view) {
 							isModal = false
-							$(".display-none").css("display", "block");
+							$(".displayed").css("display", "block");
 							openModal(isModal);
 							isModal = true;
 						},
