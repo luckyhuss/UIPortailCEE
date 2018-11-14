@@ -80,7 +80,7 @@
 //                         	}, 5000);
                         //document.getElementById('overlay').style.display='block';
 						document.getElementById('login').style.display='none';
-                        mscConfirm("test.portail.cee.gfx@yopmail.com. ", "Vous serez connecté automatiquement en tant qu'utilisateur ","Cliquez sur OK pour continuer ou sur Annuler pour vous connecter avec un autre compte.", 
+                        mscConfirm("test.portail.cee.gfx@yopmail.com. ", "Vous serez connecté automatiquement en tant que l'utilisateur ","Cliquez sur OK pour continuer ou sur Annuler pour vous connecter avec un autre compte.", 
                             function()	{
                       		  alert("Post deleted");
                       		},
