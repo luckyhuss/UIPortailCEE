@@ -1293,7 +1293,7 @@ ul.message_container li, h1, h3 {
 
 
 /* css list with number circle background -------------- */
-.numberlist ol {
+.numberlist ul {
 	counter-reset: li;
 	list-style: decimal;
 	font: 15px 'Open Sans', sans-serif;
@@ -1301,7 +1301,7 @@ ul.message_container li, h1, h3 {
 	margin-left: 15px;
 }
 
-.numberlist ol ol {
+.numberlist ul ul {
 	margin: 0 0 0 2em;
 }
 
@@ -1342,7 +1342,7 @@ ul.message_container li, h1, h3 {
 
 .numberlist h2 {
 	padding: 0;
-	margin: 0 0 5px 0;
+	margin: 0 0 5px 8px;
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -1695,3 +1695,25 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 	display: inline-flex;
 }
 
+
+.tab-content>.active {
+    display: block;
+    height: 119px;
+    overflow: auto;
+    padding: 15px;
+    padding-top: 2px;
+    margin-top: 12px;
+    margin-left: -15px;
+    font: 13px 'Open Sans', sans-serif;
+	margin-right: -15px;
+}
+
+.tab-content{
+	border: 1px solid #01afba;
+	border-radius: 10px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	margin-top: 15px;
+	margin-left: 4px;
+	height: 143px;
+}
