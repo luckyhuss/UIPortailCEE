@@ -1480,16 +1480,12 @@ style items (options):
 }
 
 table.dataTable.no-footer {
-	border-bottom: none;
+	border-bottom: 1px solid #ddd;
 }
 
 table.dataTable thead th, table.dataTable thead td {
     /* padding: 10px 18px; */
 	border-bottom: none;
-}
-
-.table-bordered {
-	border: none;
 }
 
 .table>thead>tr>th {
@@ -1508,17 +1504,17 @@ table.dataTable thead th, table.dataTable thead td {
 }
 
 .table>tbody>tr {
-	height: 50px; 
-	}
+	height: 40px; 
+}
 
 .glyphicon-eye-open{
 	color: #5b91e7;
 }
 
-.table>tbody>tr>td {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
+ .table>tbody>tr>td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+} 
 
 table td.numcol, table th.numcol {
 	text-align : right;
