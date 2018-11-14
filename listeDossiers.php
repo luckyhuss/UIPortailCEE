@@ -9,7 +9,7 @@
 			</h4>
 		</div>
 
-		<div id="collapseListeDossiers" class="panel-collapse collapse in">
+		<div id="collapseListeDossiers" class="detailDossier panel-collapse collapse in">
 			<div class="panel-body">
 
 				<!-- Data table liste Dossiers-->
@@ -20,10 +20,10 @@
 							style="width: 100%">
 							<thead>
 								<tr>
-									<th>Num Dossier</th>
-									<th>Total</th>
-									<th>kWhc</th>
-									<th>€</th>
+									<th class="numcol">Numero dossier</th>
+									<th class="numcol">Total</th>
+									<th class="numcol">kWhc</th>
+									<th class="numcol">€</th>
 									<th></th>
 								</tr>
 							</thead>

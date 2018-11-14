@@ -31,21 +31,21 @@
 									<td>23762328</td>
 									<td>Raison 1</td>
 									<td>123</td>
-									<td class="iconCol"><a href="#" onclick="displayInfoAdmin();"><i class="glyphicon glyphicon-eye-open"
+									<td class="iconCol"><a href="javascript:void(0)" onclick="displayInfoAdmin();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseInfoAdmin"></i></a></td>
 								</tr>
 								<tr>
                                     <td>23762328</td>
 									<td>Raison 2</td>
 									<td>123</td>
-									<td class="iconCol"><a href="#" onclick="displayInfoAdmin();"><i class="glyphicon glyphicon-eye-open"
+									<td class="iconCol"><a href="javascript:void(0)" onclick="displayInfoAdmin();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseInfoAdmin"></i></a></td>
 								</tr>
 								<tr>
                                     <td>23762328</td>
 									<td>Raison 3</td>
 									<td>123</td>
-									<td class="iconCol"><a href="#" onclick="displayInfoAdmin();"><i class="glyphicon glyphicon-eye-open"
+									<td class="iconCol"><a href="javascript:void(0)" onclick="displayInfoAdmin();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseInfoAdmin"></i></a></td>
 								</tr>
 							</tbody>

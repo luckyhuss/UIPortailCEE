@@ -634,13 +634,8 @@ caption {
 	font-weight: 600;
 }
 
-.fc-today {
-	font-weight: 600;
-	background: #dddddd !important;
-}
-
 .fc-sun, .fc-sat {
-	color: red !important;
+	color: #ddd !important;
 	font-weight: 600;
 }
 

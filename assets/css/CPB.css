@@ -193,3 +193,9 @@ input[type='radio']:checked:after {
 .tab-content{
 	border: 1px solid #df5952;
 }
+
+.fc-today {
+	font-weight: 600;
+	background: #df5952 !important;
+	color: #ffff;
+}

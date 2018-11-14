@@ -51,7 +51,7 @@
 									<td>500.56</td>
 									<td>10.00</td>
 									<td>500.23</td>
-									<td><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
+									<td><a href="javascript:void(0)" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 								<tr>
@@ -67,7 +67,7 @@
 									<td>500.56</td>
 									<td>10.00</td>
 									<td>500.23</td>
-									<td><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
+									<td><a href="javascript:void(0)" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 								<tr>
@@ -83,7 +83,7 @@
 									<td>500.56</td>
 									<td>10.00</td>
 									<td>500.23</td>
-									<td ><a href="#" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
+									<td ><a href="javascript:void(0)" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
 											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 							</tbody>
@@ -157,7 +157,7 @@
 								<td>En cours</td>
 								<td>10</td>
 								<td>500</td>
-								<td style="text-align: center;"><a href="#"><i class="glyphicon glyphicon-eye-open"
+								<td style="text-align: center;"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open"
 										data-toggle="modal" data-target="#Modal1"></i></a></td>
 							</tr>
 							<tr>
@@ -167,7 +167,7 @@
 								<td>En cours</td>
 								<td>10</td>
 								<td>500</td>
-								<td style="text-align: center;"><a href="#"><i class="glyphicon glyphicon-eye-open"
+								<td style="text-align: center;"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open"
 										data-toggle="modal" data-target="#Modal1"></i></a></td>
 							</tr>
 							<tr>
@@ -177,7 +177,7 @@
 								<td>En cours</td>
 								<td>10</td>
 								<td>500</td>
-								<td style="text-align: center;"><a href="#"><i class="glyphicon glyphicon-eye-open"
+								<td style="text-align: center;"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open"
 										data-toggle="modal" data-target="#Modal1"></i></a></td>
 							</tr>
 						</tbody>
@@ -214,6 +214,9 @@
 					</table>
 					<!-- Info Beneficiaire -->
 
+
+	<?php include 'resultatRechercherDossier.php'; ?>
+	
 					<!-- Documents Recu -->
     <?php include 'piece-jointe-commercial.php'; ?>
 <!-- Documents Recu -->

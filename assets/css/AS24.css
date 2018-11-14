@@ -197,3 +197,9 @@ input[type='checkbox']:checked:after {
 .tab-content{
 	border: 1px solid #004097;
 }
+
+.fc-today {
+	font-weight: 600;
+	background: #004097 !important;
+	color: #ffff;
+}

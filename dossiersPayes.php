@@ -29,35 +29,35 @@
                 <td class="numcol">14854</td>
                 <td class="numcol">645</td>
                 <td class="numcol">545</td>
-                <td class="col-md-1 text-center"><a href="#"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
+                <td class="col-md-1 text-center"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
             </tr>
             <tr>
                 <td class="numcol">4543451</td>
                 <td class="numcol">14854</td>
                 <td class="numcol">645</td>
                 <td class="numcol">545</td>
-                <td class="col-md-1 text-center"><a href="#"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
+                <td class="col-md-1 text-center"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
             </tr>
             <tr>
                 <td class="numcol">4543451</td>
                 <td class="numcol">14854</td>
                 <td class="numcol">645</td>
                 <td class="numcol">545</td>
-                <td class="col-md-1 text-center"><a href="#"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
+                <td class="col-md-1 text-center"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
             </tr>
             <tr>
                 <td class="numcol">4543451</td>
                 <td class="numcol">14854</td>
                 <td class="numcol">645</td>
                 <td class="numcol">545</td>
-                <td class="col-md-1 text-center"><a href="#"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
+                <td class="col-md-1 text-center"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
             </tr>
             <tr>
                 <td class="numcol">4543451</td>
                 <td class="numcol">14854</td>
                 <td class="numcol">645</td>
                 <td class="numcol">545</td>
-                <td class="col-md-1 text-center"><a href="#"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
+                <td class="col-md-1 text-center"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#Modal1"></i></a></td>
             </tr>
             </tbody>
             </table>

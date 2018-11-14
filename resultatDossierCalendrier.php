@@ -44,7 +44,7 @@
 									<td>Test</td>
 									<td class="numcol">545</td>
 									<td class="numcol">645</td>
-									<td class="col-md-1 text-center"><a href="#"><i
+									<td class="col-md-1 text-center"><a href="javascript:void(0)"><i
 											class="glyphicon glyphicon-eye-open" data-toggle="modal"
 											data-target="#ModalCalendrier"></i></a></td>
 								</tr>
@@ -57,7 +57,7 @@
 									<td>Test</td>
 									<td class="numcol">545</td>
 									<td class="numcol">645</td>
-									<td class="col-md-1 text-center"><a href="#"><i
+									<td class="col-md-1 text-center"><a href="javascript:void(0)"><i
 											class="glyphicon glyphicon-eye-open" data-toggle="modal"
 											data-target="#ModalCalendrier"></i></a></td>
 								</tr>
@@ -70,7 +70,7 @@
 									<td>Test</td>
 									<td class="numcol">545</td>
 									<td class="numcol">645</td>
-									<td class="col-md-1 text-center"><a href="#"><i
+									<td class="col-md-1 text-center"><a href="javascript:void(0)"><i
 											class="glyphicon glyphicon-eye-open" data-toggle="modal"
 											data-target="#ModalCalendrier"></i></a></td>
 								</tr>
@@ -83,7 +83,7 @@
 									<td>Test</td>
 									<td class="numcol">545</td>
 									<td class="numcol">645</td>
-									<td class="col-md-1 text-center"><a href="#"><i
+									<td class="col-md-1 text-center"><a href="javascript:void(0)"><i
 											class="glyphicon glyphicon-eye-open" data-toggle="modal"
 											data-target="#ModalCalendrier"></i></a></td>
 								</tr>
@@ -96,7 +96,7 @@
 									<td>Test</td>
 									<td class="numcol">545</td>
 									<td class="numcol">645</td>
-									<td class="col-md-1 text-center"><a href="#"><i
+									<td class="col-md-1 text-center"><a href="javascript:void(0)"><i
 											class="glyphicon glyphicon-eye-open" data-toggle="modal"
 											data-target="#ModalCalendrier"></i></a></td>
 								</tr>
