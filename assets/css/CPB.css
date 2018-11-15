@@ -189,6 +189,11 @@ input[type='radio']:checked:after {
         border: 6px solid #df5952;
 }
 
+input[type='checkbox']:checked:after {
+        border: 6px solid #df5952;
+}
+
+
 .numberlist .nav-pills>li.active>a {
     color: #fff;
     background-color: #df5952;
