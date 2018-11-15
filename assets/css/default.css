@@ -131,6 +131,10 @@
 .card-test:hover .card {
 	border-color: #e00032;
 }
+
+.card .glyphicon {
+	color: #df5952;
+}
 /* info cee card hover */
 .submit_button_holder .btn-primary {
 	border-color: #e00032;

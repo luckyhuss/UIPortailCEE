@@ -127,6 +127,10 @@
 .card-test:hover .card {
     border-color: #004097;
 }
+
+.card .glyphicon {
+	color: #004097;
+}
 /* info cee card hover */
 
 

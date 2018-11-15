@@ -246,7 +246,7 @@ $(document).ready(
 											isModal = false;
 											$(".displayed").css("display",
 													"block");
-											$("html,body").animate({scrollTop: $("table#dossiersCalendrier").offset().top}, 2000)
+											$("html,body").animate({scrollTop: $("table#dossiersCalendrier").offset().top}, 2000);
 													
 										}
 
@@ -258,12 +258,12 @@ $(document).ready(
 						eventClick : function(event, jsEvent, view) {
 							isModal = false
 							$(".displayed").css("display", "block");
-							$("html,body").animate({scrollTop: $("table#dossiersCalendrier").offset().top}, 2000)
+							$("html,body").animate({scrollTop: $("table#dossiersCalendrier").offset().top}, 2000);
 							
 							openModal(isModal);
 							isModal = true;
 						},
-						events : [ /*{
+						events : [{
 							"title" : "Dossier 1",
 							"allday" : "false",
 							"description" : "none",
@@ -277,7 +277,7 @@ $(document).ready(
 							"start" : '2018-10-03',
 							"end" : '2018-10-03',
 							"color" : '#e4043b'
-						}, {
+						},  /*{
 							"title" : "Dossier XI",
 							"allday" : "false",
 							"description" : "none",

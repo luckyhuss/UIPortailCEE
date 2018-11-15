@@ -21,6 +21,7 @@
 							</div>
 
 							<div class="card card-green">
+                            <div class='icon-header glyphicon glyphicon-search'></div>
 								<p class="card-question">(Achat) Operation CEE</p>
 								<div class="card-separator"></div>
 								<p style="text-align: center;">This is basic card with image on
@@ -35,6 +36,7 @@
 							</div>
 
 							<div class="card card-green">
+                                <div class='icon-header glyphicon glyphicon-sort'></div>
 								<p class="card-question">(Achat) Operation CEE</p>
 								<div class="card-separator"></div>
 								<p style="text-align: center;">This is basic card with image on
@@ -49,6 +51,7 @@
 							</div>
 
 							<div class="card card-green">
+                                <div class='icon-header glyphicon glyphicon-file'></div>
 								<p class="card-question">(Achat) Operation CEE</p>
 								<div class="card-separator"></div>
 								<p style="text-align: center;">This is basic card with image on
@@ -63,6 +66,7 @@
 							</div>
 
 							<div class="card card-green">
+                                <div class='icon-header glyphicon glyphicon-print'></div>
 								<p class="card-question">(Achat) Operation CEE</p>
 								<div class="card-separator"></div>
 								<p style="text-align: center;">This is basic card with image on
@@ -77,6 +81,7 @@
 							</div>
 
 							<div class="card card-green">
+                                <div class='icon-header glyphicon glyphicon-phone'></div>
 								<p class="card-question">(Achat) Operation CEE</p>
 								<div class="card-separator"></div>
 								<p style="text-align: center;">This is basic card with image on
@@ -91,6 +96,7 @@
 							</div>
 
 							<div class="card card-green">
+                                <div class='icon-header glyphicon glyphicon-envelope'></div>
 								<p class="card-question">(Achat) Operation CEE</p>
 								<div class="card-separator"></div>
 								<p style="text-align: center;">This is basic card with image on

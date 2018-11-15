@@ -927,8 +927,6 @@ caption {
 }
 
 .card-green:before {
-	content: "\f007";
-	font-family: 'FontAwesome';
 	top: 45px;
 }
 
@@ -1738,4 +1736,23 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
     color: #000;
 }
 
+<<<<<<< Updated upstream
 
+=======
+.icon-header {
+	border-bottom: 1px solid #e6e6e6;
+  }
+
+.card .glyphicon {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -18px;
+    padding: 8px 5px;
+    background-color: #ddd;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  } 
+>>>>>>> Stashed changes
