@@ -76,9 +76,9 @@
 											<div class="form_input custom-select" > 
     											<select class="form-control" style="display:none;">
     												<option value='0'></option>
-        											<option value='1'>Statut 1</option>
+        											<option value='1'>Statut 1 dasd </option>
         											<option value='2'>Statut 2</option>
-        											<option value='3'>Statut 3</option>
+        											<option value='3'>Statut 3  asdas</option>
         											<option value='4'>Statut 4</option>
         											<option value='5'>Statut 5</option>
         											<option value='6'>Statut 6</option>
