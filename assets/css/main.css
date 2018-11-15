@@ -1759,7 +1759,7 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
    top: 45%;
    left: 50%;
    transform: translate(-45%, -55%);
-   font-size: 15px;
+   font-size: 10px;
    width: 1em;
    height: 1em;
    border-radius: 50%;
