@@ -190,7 +190,7 @@ input[type='radio']:checked:after {
     background-color: #df5952;
 }
 
-.tab-content{
+.numberlist .tab-content{
 	border: 1px solid #df5952;
 }
 

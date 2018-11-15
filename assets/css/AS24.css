@@ -194,7 +194,7 @@ input[type='checkbox']:checked:after {
     background-color: #004097;
 }
 
-.tab-content{
+.numberlist .tab-content{
 	border: 1px solid #004097;
 }
 

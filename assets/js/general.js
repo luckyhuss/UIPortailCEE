@@ -246,6 +246,8 @@ $(document).ready(
 											isModal = false;
 											$(".displayed").css("display",
 													"block");
+											$("html,body").animate({scrollTop: $("table#dossiersCalendrier").offset().top}, 2000)
+													
 										}
 
 									});
@@ -256,6 +258,8 @@ $(document).ready(
 						eventClick : function(event, jsEvent, view) {
 							isModal = false
 							$(".displayed").css("display", "block");
+							$("html,body").animate({scrollTop: $("table#dossiersCalendrier").offset().top}, 2000)
+							
 							openModal(isModal);
 							isModal = true;
 						},
@@ -298,6 +302,7 @@ function openModal(isModal) {
 		// $('#modalTitle').html("Pas de dossier arrivant à échéance ce jour");
 		// $('#modalBody').html("Pas de dossier arrivant à échéance ce jour");
 		$('#fullCalModal').modal();
+		// $("html,body").animate({scrollTop: $("table#dossiersCalendrier").offset().top}, 2000);
 	}
 
 }

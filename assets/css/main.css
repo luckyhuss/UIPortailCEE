@@ -1682,7 +1682,7 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 }
 
 
-.tab-content>.active {
+.numberlist .tab-content>.active {
     display: block;
     height: 119px;
     overflow: auto;
@@ -1694,7 +1694,7 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 	margin-right: -15px;
 }
 
-.tab-content{
+.numberlist .tab-content{
 	border: 1px solid #01afba;
 	border-radius: 10px;
 	padding-top: 0px;
