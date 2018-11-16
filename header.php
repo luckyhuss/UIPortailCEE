@@ -7,9 +7,9 @@
 			<div class="header_left">
 				<div class="logo_wrapper">
 					<a href="/uiportailcee/index.php"> <picture>
-						<source srcset="assets/img/CLMB-small.png"
+						<source srcset="assets/img/<?php echo $cssLoaded?>-small.png"
 							media="(max-width: 1024px)">
-						<img src="assets/img/CLMB-large.png"> </picture>
+						<img src="assets/img/<?php echo $cssLoaded?>-large.png"> </picture>
 					</a>
 				</div>
 			</div>

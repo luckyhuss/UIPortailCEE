@@ -34,7 +34,15 @@
 <link href="assets/css/CAPEB.css" rel="stylesheet">
 --->
 
-<link href="assets/css/CLMB.css" rel="stylesheet">
+<?php 
+$cssLoaded = "GFX";
+
+$persona = ($cssLoaded == "AS24") ? "-AS24": "";
+
+
+?>
+
+<link href="assets/css/<?php echo $cssLoaded?>.css" rel="stylesheet">
 
 
 <link href="node_modules/magicsuggest/css/magicsuggest.css" rel="stylesheet" type="text/css">
@@ -56,7 +64,61 @@ body { background-color: #fafafa; }
 </head>
 
 <body>
-<div class="overlay_wrapper"></div>
+
+	<?php 
+	   $pageLoaded = "accueil";
+	   $activeHome = "";
+	   $activeSimuler = "";
+	   $activeRechercher = "";
+	   $activeCreer = "";
+	   $activeDossier = "";
+	   $activePiloter = "";
+	   $activeInfo = "";
+	   
+	   if (isset($_GET) && $_GET != null) {
+	      
+	       switch ($_GET['pageLoaded']) {
+	           case 'Simuler':
+	               $activeSimuler = "active-link";
+	               $pageLoaded = "under-construction";
+	               break;
+	           
+	           case 'Creer':
+	               $activeCreer = "active-link";
+	               $pageLoaded = "under-construction";
+	               break;
+	               
+	           case 'Rechercher':
+	               $activeRechercher = "active-link";
+	               $pageLoaded = "rechercher-commercial".$persona;
+	               break;
+	           
+	           case 'Dossiers':
+	               $activeDossier = "active-link";
+	               $pageLoaded = "recherche-dossiers";
+	               break;
+	           
+	           case 'Piloter':
+	               $activePiloter = "active-link";
+	               $pageLoaded = "piloter-mon-activites";
+	               break;
+	            
+	           case 'Info':
+	               $activeInfo = "active-link";
+	               $pageLoaded = "info-cee";
+	               break;
+	               
+	           default:
+                   $activeHome = "active-link";
+                   $pageLoaded = "accueil";
+	       }
+	       
+	   }else{
+	       $activeHome = "active-link";
+	       $pageLoaded = "accueil";
+	   }
+	?>
+
    <?php include("header.php"); ?>
    <script src="assets/js/jquery.min.js"></script>
    <!-- script src="assets/js/jquery.js"></script-->
@@ -64,7 +126,7 @@ body { background-color: #fafafa; }
    
    <?php include("footer.php"); ?>
 
-
+   
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     
     <!-- Include all compiled plugins (below), or include individual files as needed  -->
