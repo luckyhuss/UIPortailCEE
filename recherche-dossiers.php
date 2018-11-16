@@ -140,13 +140,11 @@
 						<caption class="tbl-caption">Operations</caption>
 						<thead>
 							<tr>
-								<th>Nom</th>
-								<th>Fiche</th>
-								<th>Num Action</th>
+								<th>Réference opération standardisée</th>
+								<th>mWhc classique</th>
+								<th>mWhc précartité</th>
 								<th>Statut</th>
-								<th>kWhc</th>
-								<th>€</th>
-								<th></th>
+								<th class="listeCriteres">Liste des criteres</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -155,8 +153,6 @@
 								<td>Fiche 1</td>
 								<td>23762328</td>
 								<td>En cours</td>
-								<td>10</td>
-								<td>500</td>
 								<td style="text-align: center;"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open"
 										data-toggle="modal" data-target="#Modal1"></i></a></td>
 							</tr>
@@ -165,8 +161,6 @@
 								<td>Fiche 2</td>
 								<td>23762328</td>
 								<td>En cours</td>
-								<td>10</td>
-								<td>500</td>
 								<td style="text-align: center;"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open"
 										data-toggle="modal" data-target="#Modal1"></i></a></td>
 							</tr>
@@ -175,8 +169,6 @@
 								<td>Fiche 3</td>
 								<td>23762328</td>
 								<td>En cours</td>
-								<td>10</td>
-								<td>500</td>
 								<td style="text-align: center;"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open"
 										data-toggle="modal" data-target="#Modal1"></i></a></td>
 							</tr>
@@ -215,7 +207,7 @@
 					<!-- Info Beneficiaire -->
 
 
-	<?php include 'resultatRechercherDossier.php'; ?>
+	<?php //include 'resultatRechercherDossier.php'; ?>
 	
 					<!-- Documents Recu -->
     <?php include 'piece-jointe-commercial.php'; ?>
