@@ -1296,6 +1296,15 @@ div.dataTables_wrapper div.dataTables_paginate {
 	padding: 5px 10px;
 }
 
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    background-color: #ddd;
+    border-color: #ddd;
+}
+
+.pagination a:focus {
+    outline: none;
+}
+
 /* datatable responsive */
 .dataTables_scrollHeadInner {
 	width: 100% !important;
@@ -1513,7 +1522,7 @@ style items (options):
 }
 
 table.dataTable.no-footer {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #ddd !important;
 }
 
 table.dataTable thead th, table.dataTable thead td {
@@ -1548,6 +1557,11 @@ table.dataTable thead th, table.dataTable thead td {
 	padding-top: 10px;
 	padding-bottom: 10px;
 } 
+
+.table.dataTable thead th, .table.dataTable thead td {
+    padding: 10px 18px;
+    border-bottom: 1px solid #ddd;
+}
 
 table td.numcol, table th.numcol {
 	text-align : right;
