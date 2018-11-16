@@ -30,7 +30,7 @@
 
 		<div class="panel-group menu_item_wrapper">
 			<div class="panel panel-default menu_item">
-				<div class="panel-heading nav-menu <?php echo $activeCreer ?>"">
+				<div class="panel-heading nav-menu <?php echo $activeCreer ?>">
 					<h4 class="panel-title">
 						<a href="javascript:void()" id="Creer"><span class="glyphicon glyphicon-file"
 							aria-hidden="true"></span> <span class="menu_title">Créer</span></a>
@@ -42,7 +42,7 @@
 		
 		<div class="panel-group menu_item_wrapper">
 			<div class="panel panel-default menu_item">
-				<div class="panel-heading nav-menu <?php echo $activeRechercher ?>"">
+				<div class="panel-heading nav-menu <?php echo $activeRechercher ?>">
 					<h4 class="panel-title">
 						<a href="javascript:void()" id="Rechercher"><span class="glyphicon glyphicon-search"
 							aria-hidden="true"></span> <span class="menu_title">Rechercher</span></a>
@@ -55,7 +55,7 @@
 
 		<div class="panel-group menu_item_wrapper">
 			<div class="panel panel-default menu_item">
-				<div class="panel-heading nav-menu <?php echo $activeDossier ?>"">
+				<div class="panel-heading nav-menu <?php echo $activeDossier ?>">
 					<h4 class="panel-title">
 						<a href="javascript:void()" id="Dossiers"><span class="glyphicon glyphicon-list-alt"
 							aria-hidden="true"></span> <span class="menu_title">Gérer Mes
@@ -69,7 +69,7 @@
 
 		<div class="panel-group menu_item_wrapper">
 			<div class="panel panel-default menu_item">
-				<div class="panel-heading nav-menu <?php echo $activePiloter ?>"">
+				<div class="panel-heading nav-menu <?php echo $activePiloter ?>">
 					<h4 class="panel-title">
 						<a href="javascript:void()" id="Piloter"><span class="glyphicon glyphicon-tasks"
 							aria-hidden="true"></span> <span class="menu_title">Piloter Mon
@@ -82,7 +82,7 @@
 		
 		<div class="panel-group menu_item_wrapper">
 			<div class="panel panel-default menu_item">
-				<div class="panel-heading nav-menu <?php echo $activeInfo ?>"">
+				<div class="panel-heading nav-menu <?php echo $activeInfo ?>">
 					<h4 class="panel-title">
 						<a href="javascript:void()" id="Info"><span class="glyphicon glyphicon-tasks"
 							aria-hidden="true"></span> <span class="menu_title">Info CEE</span></a>
