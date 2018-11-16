@@ -128,7 +128,7 @@
 
 					<div class="row">
 
-						<div class="apporteur-prestataire-container col-md-12">
+						<div class="apporteur-prestataire-container col-md-11">
 
 							<ul class="apporteur-prestataire-wrapper">
 								<li class="filter-item float-item">
@@ -166,7 +166,7 @@
 
 					<div class="row">
 
-						<div class="date-contrainer col-md-12">
+						<div class="date-container col-md-11">
 
 							<ul class="date-wrapper">
 								<li class="filter-item float-item">
@@ -202,9 +202,6 @@
 						</div>
 
 					</div>
-							
-							
-							
 
 					<table id="detailDossierOperations"
 						class="table table-striped table-bordered nowrap"
