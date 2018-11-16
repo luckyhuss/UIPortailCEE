@@ -100,7 +100,10 @@
 	}
 }
 
-@media ( max-width : 800px) {
+@media ( max-width : 880px) {
+	.date-wrapper .header_label>label,  .date-wrapper .float-item {
+		min-width:150px!important;
+	}
 }
 
 @media ( max-width : 640px) {
@@ -217,6 +220,9 @@
 	.filter-item {
 		width: 280px !important;
 	}
+	
+	
+	
 }
 
 @media ( max-width : 350px) {

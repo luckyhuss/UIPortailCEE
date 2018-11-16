@@ -487,6 +487,60 @@ div.each-row{
 	display: none;
 }
 
+
+.header_numDossier, .apporteur-prestataire-wrapper {
+	border:0px solid red;
+	font-family: 'Open Sans', Sans-serif;
+	
+}
+
+.header_numDossier {
+	margin-bottom:10px;	
+}
+
+
+div.detailDossier {
+	padding: 0px;
+}
+
+.apporteur-prestataire-container, .date-contrainer {
+	padding-left:10px;
+}
+
+.date-contrainer {
+	
+}
+
+.date-contrainer {
+	margin-top:20px;
+}
+
+.date-wrapper .header_label>label {
+	min-width:250px;
+}
+
+label[for=dateEngagement], label[for=dateRAI]
+{
+    min-width:150px!important;
+}
+
+.apporteur-prestataire-wrapper .float-item, .date-wrapper .float-item {
+	margin-right:0px!important;
+}
+
+.header_label>label {
+	width:150px;
+	height:20px;
+	padding:2px 2px;
+	font-weight:600;
+}
+
+.header_output {
+	font-weight: 500!important;
+	vertical-align:top;
+}
+
+
 .col-changement, .col-detail-dossier {
 	width: 90%;
 }

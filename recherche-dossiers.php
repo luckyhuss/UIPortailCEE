@@ -117,22 +117,94 @@
 			<div class="panel-body">
 
 				<div class="detailDossier">
-							<legend class="the-legend">Dossier</legend>
-							<div class="row">
-						<div class="col-md-6 js-date-engagement">
-							<h5><span class="enteteDossier">Date Engagement:</span> @Model.DateEngagement</h5>
-						</div>
-						<div class="col-md-6 js-aide">
-						<h5><span class="enteteDossier">Aide: </span> @Model.Aide</h5>
+							
+							<div class="header_numDossier">
+						<div class="header-group">
+							<span class="header_label"><label for="numDossier">Numéro Dossier</label></span>
+							<span class="header_output">1390</span>
 						</div>
 
-						<div class="col-md-6 js-date-fin-traveau">
-						<h5><span class="enteteDossier">Date Fin Travaux: </span> @Model.DateFinTravaux</h5>
-						</div>
-						<div class="col-md-6 js-date-premier-contact">
-						<h5><span class="enteteDossier">Date Premier Contact: </span> @Model.DatePremierContact</h5>
-						</div>
 					</div>
+
+					<div class="row">
+
+						<div class="apporteur-prestataire-container col-md-12">
+
+							<ul class="apporteur-prestataire-wrapper">
+								<li class="filter-item float-item">
+									<div class="header-group">
+										<span class="header_label"><label for="nomApporteur">Nom
+												Apporteur</label></span> <span class="header_output">LOGISTA</span>
+									</div>
+								</li>
+								<li class="filter-item float-item">
+									<div class="header-group">
+										<span class="header_label"><label for="sirenApporteur">Siren
+												Apporteur</label></span> <span class="header_output">394629125</span>
+									</div>
+								</li>
+
+								<li class="filter-item float-item">
+									<div class="header-group">
+										<span class="header_label"><label for="nomPrestataire">Nom
+												Prestataire</label></span> <span class="header_output">Indéfini</span>
+									</div>
+								</li>
+
+								<li class="filter-item float-item">
+									<div class="header-group">
+										<span class="header_label"><label for="sirenPrestataire">Siren
+												Prestataire</label></span> <span class="header_output">111222333</span>
+									</div>
+								</li>
+
+							</ul>
+
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="date-contrainer col-md-12">
+
+							<ul class="date-wrapper">
+								<li class="filter-item float-item">
+									<div class="header-group">
+										<span class="header_label"><label for="dateAchevement">Date
+												Achèvement</label></span> <span class="header_output">20/04/2018</span>
+									</div>
+								</li>
+								<li class="filter-item float-item">
+									<div class="header-group">
+										<span class="header_label"><label for="dateEngagement">Date
+												Engagement</label></span> <span class="header_output">14/12/2017</span>
+									</div>
+								</li>
+
+								<li class="filter-item float-item">
+									<div class="header-group">
+										<span class="header_label"><label for="datePrevisionnelle">Date
+												Prévisionnelle de Travaux</label></span> <span
+											class="header_output">10/05/2018</span>
+									</div>
+								</li>
+
+								<li class="filter-item float-item">
+									<div class="header-group">
+										<span class="header_label"><label for="dateRAI">Date RAI</label></span>
+										<span class="header_output">11/12/2017</span>
+									</div>
+								</li>
+
+							</ul>
+
+						</div>
+
+					</div>
+							
+							
+							
 
 					<table id="detailDossierOperations"
 						class="table table-striped table-bordered nowrap"
