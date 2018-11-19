@@ -504,12 +504,12 @@ div.detailDossier {
 	padding: 0px;
 }
 
-.apporteur-prestataire-container, .date-contrainer {
+.apporteur-prestataire-container {
 	padding-left:10px;
 }
-
-.date-container {
+.apporteur-prestataire-container, .date-container {
 	
+	max-width:1100px;
 }
 
 .date-container {
@@ -1629,9 +1629,6 @@ table.dataTable thead th, table.dataTable thead td {
 	height: 40px; 
 }
 
-.glyphicon-eye-open{
-	color: #5b91e7;
-}
 
  .table>tbody>tr>td {
 	padding-top: 10px;
@@ -1847,6 +1844,9 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
     border: 3px solid #fff;
   } 
 
+/**************************************************
+* 			spinner on loading after search
+***************************************************/
 .loader {
    margin: 0;
    position: absolute!important;
