@@ -1,7 +1,7 @@
 <!-- Documents Recu -->
 
 <table id="listesDesDocs"
-	class="table table-striped table-bordered dt-responsive nowrap"
+	class="table table-striped table-bordered dt-responsive nowrap displayed"
 	style="width: 100%">
 	<caption class="caption">Listes des documents reçu</caption>
 	<thead>

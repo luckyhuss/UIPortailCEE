@@ -1167,7 +1167,7 @@ ul.cards-container {
 }
 
 .popin-info, .popin-donnee {
-	 min-width: 530px; 
+	 /* min-width: 530px;  */
 }
 
 .img-popin-info {
@@ -1182,7 +1182,7 @@ ul.cards-container {
 	border-radius: 0px;
 	display: table-cell;
 	z-index: 21;
-    max-width: 530px;
+    width: 540px!important;
     margin: auto;
    	position: absolute;
     top: 50%;
@@ -1927,4 +1927,11 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 
 .glyphicon-eye-open {
 	color: #303030;
+}
+
+
+.btn-retour {
+	top: -32px;
+    padding: 0px;
+    margin-bottom: -30px;
 }

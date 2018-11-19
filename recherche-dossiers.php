@@ -243,12 +243,16 @@
 							</tr>
 						</tbody>
 					</table>
+					
+					<div class="col-md-2 submit_button_holder btn-retour">
+								<button type="submit" class="btn btn-primary submit_button">Retour</button>
+							</div>
 
 					<!-- Info Beneficiaire -->
 
 
 					<table id="infoBeneficiaire"
-						class="table table-striped table-bordered nowrap"
+						class="table table-striped table-bordered nowrap displayed"
 						style="width: 100%">
 						<caption class="tbl-caption">Informations Beneficiaire</caption>
 						<thead>

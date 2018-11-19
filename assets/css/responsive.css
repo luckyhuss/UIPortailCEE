@@ -214,6 +214,10 @@
 	.filter-item {
 		width: 350px !important;
 	}
+	
+	.modal-content {
+		width:100%!important;
+	}
 }
 
 @media ( max-width : 480px) {
