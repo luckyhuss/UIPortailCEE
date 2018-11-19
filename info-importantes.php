@@ -124,7 +124,7 @@
         </div>
 
         <div class="modal-body">
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            <span>Information à fournir par la MOA this is a test this is a test this is a test this is a test this is a test</span>
         </div>
 
         <div class="modal-footer">

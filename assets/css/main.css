@@ -396,9 +396,9 @@ ul, li {
 }
 
 .form-control {
-	border-radius:23px!important;
+	border-radius:10px!important;
 	
-	padding:5px 15px 5px 15px!important;
+	padding:5px 10px 5px 10px!important;
 }
 
 .form_label>label {
@@ -517,7 +517,7 @@ div.detailDossier {
 }
 
 .date-wrapper .header_label>label {
-	min-width:250px;
+	min-width:150px;
 }
 
 label[for=dateEngagement], label[for=dateRAI]
@@ -529,10 +529,14 @@ label[for=dateEngagement], label[for=dateRAI]
 	margin-right:0px!important;
 }
 
+.date-wrapper .float-item {
+	padding-left:0px!important;
+}
+
 .header_label>label {
 	width:150px;
 	height:20px;
-	padding:2px 2px;
+	padding:0px 2px;
 	font-weight:600;
 }
 
@@ -865,17 +869,17 @@ caption {
 }
 
 .ms-ctn .ms-trigger {
-    border-bottom-right-radius: 23px!important;
-    border-top-right-radius: 23px!important;
+    border-bottom-right-radius: 10px!important;
+    border-top-right-radius: 10px!important;
     width:20px!important;
 }
 
 .ms-ctn .ms-trigger:hover {
-    width: 24px;
-    right: 1px;
+    width: 20px!important;
+    right: 0px!important;
     /* border-radius: 0 3px 3px 0; */
-    border-bottom-right-radius: 23px!important;
-    border-top-right-radius: 23px!important;
+    border-bottom-right-radius: 10px!important;
+    border-top-right-radius: 10px!important;
 }
 
 
@@ -1158,22 +1162,36 @@ ul.cards-container {
 }
 
 .popin-info .modal-footer, .popin-info .modal-header, .popin-donnee .modal-footer
-	{
+{
 	height: 30px;
 }
 
 .popin-info, .popin-donnee {
-	max-width: 530px;
+	 min-width: 530px; 
+}
+
+.img-popin-info {
+	background: url("../img/popin-info.png") no-repeat;
+	width: 72px;
+	height:72px;
+    display: inline-block;
 }
 
 .modal-content {
 	Box-shadow: 0px 0px 16x 0px rgba(0, 0, 0, 0.3) !important;
 	border-radius: 0px;
 	display: table-cell;
+	z-index: 21;
+    max-width: 530px;
+    margin: auto;
+   	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal-dialog {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -1182,7 +1200,14 @@ ul.cards-container {
 	display: table;
 }
 
-.img-infobulle {
+
+.modal-dialog {
+    
+    width: 100%!important;
+}
+
+
+.popin-info img{
 	width: 72px;
 }
 
@@ -1227,9 +1252,9 @@ ul.cards-container {
 	padding: 8px;
 }
 
-.popin-info .modal-body {
-	margin-left: 52px;
-	margin-right: 52px;
+.popin-info .modal-body, .popin-donnee .modal-body {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .popin-info #modalBody .list-group {

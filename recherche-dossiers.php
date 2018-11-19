@@ -139,7 +139,7 @@
 								</li>
 								<li class="filter-item float-item">
 									<div class="header-group">
-										<span class="header_label"><label for="sirenApporteur">Siren
+										<span class="header_label"><label for="sirenApporteur">SIREN
 												Apporteur</label></span> <span class="header_output">394629125</span>
 									</div>
 								</li>
@@ -153,7 +153,7 @@
 
 								<li class="filter-item float-item">
 									<div class="header-group">
-										<span class="header_label"><label for="sirenPrestataire">Siren
+										<span class="header_label"><label for="sirenPrestataire">SIREN
 												Prestataire</label></span> <span class="header_output">111222333</span>
 									</div>
 								</li>

@@ -25,7 +25,7 @@
 				<div class="icon_container">
 
 					<div class="icon_holder">
-						<a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span></a>
+						<a href="#" ><span class="glyphicon glyphicon-off" aria-hidden="true" title="Déconnexion"></span></a>
 					</div>
 
 					<div class="icon_holder dropdown">

@@ -39,8 +39,8 @@
 							</div>
 							<div id="modalBody" class="modal-body">
 								<ul class="list-group">
-									<li class="list-group-item"><span class="img-infobulle"><img
-											src="assets/img/infobulle.png" width="60px" height="60px"></span>
+									<li class="list-group-item"><img
+											src="assets/img/popin-info.png" >
 									</li>
 									<li class="list-group-item">Pas de dossier arrivant à échéance
 										ce jour</li>

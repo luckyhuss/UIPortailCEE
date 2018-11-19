@@ -35,7 +35,7 @@
 --->
 
 <?php 
-$cssLoaded = "AS24";
+$cssLoaded = "default";
 
 $persona = ($cssLoaded == "AS24") ? "-AS24": "";
 
