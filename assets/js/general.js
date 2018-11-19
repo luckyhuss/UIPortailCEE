@@ -55,72 +55,72 @@ $(function() {
 
 // For datatable - Note(Tewin): You will need to change the ID if using more
 // than one place and repeat the code.
-jQuery(document).ready(function() {
-	jQuery('#example').DataTable({
-		"paging" : false,
-		"info" : false
-	});
-});
+// jQuery(document).ready(function() {
+// 	jQuery('#example').DataTable({
+// 		"paging" : false,
+// 		"info" : false
+// 	});
+// });
 
-// Currently used in Suivi de Mon Activite
-jQuery(document).ready(function() {
-	jQuery('#sdma_dossiersEnCours').DataTable({
-		"paging" : false,
-		"info" : false,
-		"ordering" : false,
-		"searching" : false
-	});
-});
+// // Currently used in Suivi de Mon Activite
+// jQuery(document).ready(function() {
+// 	jQuery('#sdma_dossiersEnCours').DataTable({
+// 		"paging" : false,
+// 		"info" : false,
+// 		"ordering" : false,
+// 		"searching" : false
+// 	});
+// });
 
-jQuery(document).ready(function() {
-	jQuery('#sdma_dossiersDeposes').DataTable({
-		"paging" : false,
-		"info" : false,
-		"ordering" : false,
-		"searching" : false
-	});
-});
+// jQuery(document).ready(function() {
+// 	jQuery('#sdma_dossiersDeposes').DataTable({
+// 		"paging" : false,
+// 		"info" : false,
+// 		"ordering" : false,
+// 		"searching" : false
+// 	});
+// });
 
-/* Gerer mes Dossiers */
-$(document).ready(function() {
-	$('#resultatRecherche').DataTable({
-		"searching" : false,
-		"paging" : false,
-		"info" : false,
-		"ordering" : false,
-	});
-	jQuery('#resultatRecherche').wrap('<div class="dataTables_scroll" />');			
-});
+// /* Gerer mes Dossiers */
+// $(document).ready(function() {
+// 	$('#resultatRecherche').DataTable({
+// 		"searching" : false,
+// 		"paging" : false,
+// 		"info" : false,
+// 		"ordering" : false,
+// 	});
+// 	jQuery('#resultatRecherche').wrap('<div class="dataTables_scroll" />');			
+// });
 
-$(document).ready(function() {
-	$('#detailDossierOperations').DataTable({
-		"searching" : false,
-		"paging" : false,
-		"info" : false,
-		"ordering" : false,
-	});
-		jQuery('#detailDossierOperations').wrap('<div class="dataTables_scroll" />');		
-	});
+// $(document).ready(function() {
+// 	$('#detailDossierOperations').DataTable({
+// 		"searching" : false,
+// 		"paging" : false,
+// 		"info" : false,
+// 		"ordering" : false,
+// 	});
+// 		jQuery('#detailDossierOperations').wrap('<div class="dataTables_scroll" />');		
+// 	});
 
-$(document).ready(function() {
-	$('#infoBeneficiaire').DataTable({
-		"searching" : false,
-		"paging" : false,
-		"info" : false,
-		"ordering" : false,
-	});
-		jQuery('#infoBeneficiaire').wrap('<div class="dataTables_scroll" />');		
-	});
+// $(document).ready(function() {
+// 	$('#infoBeneficiaire').DataTable({
+// 		"searching" : false,
+// 		"paging" : false,
+// 		"info" : false,
+// 		"ordering" : false,
+// 	});
+// 		jQuery('#infoBeneficiaire').wrap('<div class="dataTables_scroll" />');		
+// 	});
 
-$(document).ready(function() {
-	$('#listesDesDocs').DataTable({
-		"searching" : false,
-		"paging" : false,
-		"info" : false,
-		"ordering" : false,
-	});
-		jQuery('#listesDesDocs').wrap('<div class="dataTables_scroll" />');		
-	});
+// $(document).ready(function() {
+// 	$('#listesDesDocs').DataTable({
+// 		"searching" : false,
+// 		"paging" : false,
+// 		"info" : false,
+// 		"ordering" : false,
+// 	});
+// 		jQuery('#listesDesDocs').wrap('<div class="dataTables_scroll" />');		
+// 	});
 /* Gerer mes Dossiers */
 
 /* page d'accueil */
@@ -317,139 +317,154 @@ $(".js-close").on("click", function(e) {
 })
 
 /* page d'accueil */
-jQuery(document).ready(function() {
-	jQuery('#dossiersCalendrier').DataTable({
-		"paging" : false,
-		"info" : false,
-		"ordering" : false,
-		"searching" : false,
-	});
-		jQuery('#dossiersCalendrier').wrap('<div class="dataTables_scroll" />');		
-	});
+// jQuery(document).ready(function() {
+// 	jQuery('#dossiersCalendrier').DataTable({
+// 		"paging" : false,
+// 		"info" : false,
+// 		"ordering" : false,
+// 		"searching" : false,
+// 	});
+// 		jQuery('#dossiersCalendrier').wrap('<div class="dataTables_scroll" />');		
+// 	});
 
 /* piloter mon activite */
-jQuery(document).ready(function() {
-	jQuery('#dossiersEnCours').DataTable({
-		"paging" : false,
-		"info" : false,
-		"ordering" : false,
-		"searching" : false,
-	});
-		jQuery('#dossiersEnCours').wrap('<div class="dataTables_scroll" />');		
-	});
+// jQuery(document).ready(function() {
+// 	jQuery('#dossiersEnCours').DataTable({
+// 		"paging" : false,
+// 		"info" : false,
+// 		"ordering" : false,
+// 		"searching" : false,
+// 	});
+// 		jQuery('#dossiersEnCours').wrap('<div class="dataTables_scroll" />');		
+// 	});
 
-jQuery(document).ready(function() {
-	jQuery('#dossiersDeposes').DataTable({
-		"paging" : false,
-		"info" : false,
-		"ordering" : false,
-		"searching" : false,
-	});
-		jQuery('#dossiersDeposes').wrap('<div class="dataTables_scroll" />');		
-	});
+// jQuery(document).ready(function() {
+// 	jQuery('#dossiersDeposes').DataTable({
+// 		"paging" : false,
+// 		"info" : false,
+// 		"ordering" : false,
+// 		"searching" : false,
+// 	});
+// 		jQuery('#dossiersDeposes').wrap('<div class="dataTables_scroll" />');		
+// 	});
 
-jQuery(document).ready(function() {
-	jQuery('#dossiersPayes').DataTable({
-		"paging" : false,
-		"info" : false,
-		"ordering" : false,
-		"searching" : false,
-	});
-	jQuery('#dossiersPayes').wrap('<div class="dataTables_scroll" />');			
-});
+// jQuery(document).ready(function() {
+// 	jQuery('#dossiersPayes').DataTable({
+// 		"paging" : false,
+// 		"info" : false,
+// 		"ordering" : false,
+// 		"searching" : false,
+// 	});
+// 	jQuery('#dossiersPayes').wrap('<div class="dataTables_scroll" />');			
+// });
 
-jQuery(document)
-		.ready(
-				function() {
-					jQuery('#listeDossiers')
-							.DataTable(
-									{
-										"paging" : true,
-										"info" : false,
-										"ordering" : false,
-										"searching" : false,
-										"scrollX" : true,
-										"lengthChange": false,
-										"language" : {
-											"paginate" : {
-												"previous" : '<i class="glyphicon glyphicon-chevron-left"></i>',
-												"next" : '<i class="glyphicon glyphicon-chevron-right"></i>'
-											}
-										},
-										// "dom" : '<"top"l>rt<"row"<"col-sm-12"<"bottom"fp><"clear">>>'
-									});
-				});
 
 // page rechercher fiche
-	jQuery(document).ready(function() {
-		jQuery('#resultatFicheRecapTable').DataTable({
-			"paging" : false,
-			"info" : false,
-			"ordering" : false,
-			"searching" : false,
-		});
-		jQuery('#resultatFicheRecapTable').wrap('<div class="dataTables_scroll" />');		
-	});
+	// jQuery(document).ready(function() {
+	// 	jQuery('#resultatFicheRecapTable').DataTable({
+	// 		"paging" : false,
+	// 		"info" : false,
+	// 		"ordering" : false,
+	// 		"searching" : false,
+	// 	});
+	// 	jQuery('#resultatFicheRecapTable').wrap('<div class="dataTables_scroll" />');		
+	// });
 	
 	/* piloter mon activite */
-	jQuery(document).ready(function() {
-		jQuery('#InfoSocieteFiche').DataTable({
-			"paging" : false,
-			"info" : false,
-			"ordering" : false,
-			"searching" : false,
-		});
-		jQuery('#InfoSocieteFiche').wrap('<div class="dataTables_scroll" />');
-	});
+	// jQuery(document).ready(function() {
+	// 	jQuery('#InfoSocieteFiche').DataTable({
+	// 		"paging" : false,
+	// 		"info" : false,
+	// 		"ordering" : false,
+	// 		"searching" : false,
+	// 	});
+	// 	jQuery('#InfoSocieteFiche').wrap('<div class="dataTables_scroll" />');
+	// });
 	
-	jQuery(document).ready(function() {
-		jQuery('#signatureElectroniqueFiche').DataTable({
-			"paging" : false,
-			"info" : false,
-			"ordering" : false,
-			"searching" : false,
-		});
-		jQuery('#signatureElectroniqueFiche').wrap('<div class="dataTables_scroll" />');
-	});
+	// jQuery(document).ready(function() {
+	// 	jQuery('#signatureElectroniqueFiche').DataTable({
+	// 		"paging" : false,
+	// 		"info" : false,
+	// 		"ordering" : false,
+	// 		"searching" : false,
+	// 	});
+	// 	jQuery('#signatureElectroniqueFiche').wrap('<div class="dataTables_scroll" />');
+	// });
 	
-	jQuery(document).ready(function() {
-		jQuery('#conventionsFiche').DataTable({
-			"paging" : false,
-			"info" : false,
-			"ordering" : false,
-			"searching" : false,
+	// jQuery(document).ready(function() {
+	// 	jQuery('#conventionsFiche').DataTable({
+	// 		"paging" : false,
+	// 		"info" : false,
+	// 		"ordering" : false,
+	// 		"searching" : false,
+	// 	});
+	// 	jQuery('#conventionsFiche').wrap('<div class="dataTables_scroll" />');
+	// });
+
+	// jQuery(document).ready(function() {
+
+	// 	jQuery('#infoActiviteFiche').DataTable({
+	// 		"paging" : false,
+	// 		"info" : false,
+	// 		"ordering" : false,
+	// 		"searching" : false,
+	// 	});
+	// 	jQuery('#infoActiviteFiche').wrap('<div class="dataTables_scroll" />');
+	// });
+
+
+	// jQuery(document).ready(function() {
+	// 	jQuery('#operationsFiche').DataTable({
+	// 		"paging" : false,
+	// 		"info" : false,
+	// 		"ordering" : false,
+	// 		"searching" : false,
+	// 	});
+	// 	jQuery('#operationsFiche').wrap('<div class="dataTables_scroll"/>');
+	// });
+
+	// jQuery(document).ready(function() {
+	// 	jQuery('#resultatRechercherDossier').DataTable({
+	// 		"paging" : false,
+	// 		"info" : false,
+	// 		"ordering" : false,
+	// 		"searching" : false,
+	// 	});
+	// 	jQuery('#resultatRechercherDossier').wrap('<div class="dataTables_scroll" />');
+	// });
+
+
+	
+$(document).ready(function() {
+	$('#resultatRecherche, #detailDossierOperations, #infoBeneficiaire, #listesDesDocs, #dossiersEnCours, #dossiersDeposes, #dossiersPayes, #resultatFicheRecapTable, #InfoSocieteFiche, #signatureElectroniqueFiche, #conventionsFiche, #infoActiviteFiche, #operationsFiche, #resultatRechercherDossier')
+		.DataTable();
+	//jQuery('#detailDossierOperations').wrap('<div class="dataTables_scroll" />');		
+	$('#listeDossiers')
+		.DataTable({paging: true});	
+	jQuery('.table').wrap('<div class="dataTables_scroll" />');			
+});
+
+	$.extend(true, $.fn.DataTable.defaults, {
+		info: false,
+		paging: false,
+		sorting: false,
+		ordering: false,
+		processing: true,
+		searching: false,
+		lengthChange: false,
+		language: {
+		"lengthMenu": "Afficher MENU lignes par page",
+		"zeroRecords": "Pas de donn&eacutees",
+		"info": "page PAGE de _PAGES_",
+		"infoEmpty": "Pas de donn&eacutees",
+		"infoFiltered": "(filtrés de MAX entr&eacutees)",
+		"emptyTable": "Pas de donn&eacutees",
+		"loadingRecords": "Chargement en cours...",
+		"processing": '<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span> ',
+		"paginate": {
+		"previous": '<i class="glyphicon glyphicon-chevron-left"></i>',
+		"next": '<i class="glyphicon glyphicon-chevron-right"></i>'
+		}
+		},
+		"dom": '<"top"l>rt<"row"<"col-sm-12"<"bottom"fp><"clear">>>'
 		});
-		jQuery('#conventionsFiche').wrap('<div class="dataTables_scroll" />');
-	});
-
-	jQuery(document).ready(function() {
-
-		jQuery('#infoActiviteFiche').DataTable({
-			"paging" : false,
-			"info" : false,
-			"ordering" : false,
-			"searching" : false,
-		});
-		jQuery('#infoActiviteFiche').wrap('<div class="dataTables_scroll" />');
-	});
-
-
-	jQuery(document).ready(function() {
-		jQuery('#operationsFiche').DataTable({
-			"paging" : false,
-			"info" : false,
-			"ordering" : false,
-			"searching" : false,
-		});
-		jQuery('#operationsFiche').wrap('<div class="dataTables_scroll"/>');
-	});
-
-	jQuery(document).ready(function() {
-		jQuery('#resultatRechercherDossier').DataTable({
-			"paging" : false,
-			"info" : false,
-			"ordering" : false,
-			"searching" : false,
-		});
-		jQuery('#resultatRechercherDossier').wrap('<div class="dataTables_scroll" />');
-	});

@@ -148,11 +148,11 @@ body { background-color: #fafafa; }
     <!-- Other JS scripts -->
     <script src="assets/js/bootstrap-datepicker.js"></script>
     <script src="assets/js/mygraphs.js"></script>
-    <script src="assets/js/general.js"></script>
-    
+
     <script type="text/javascript" src="node_modules/datatables/DataTables/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="node_modules/datatables/DataTables/js/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript" src="node_modules/responsive/js/dataTables.responsive.min.js"></script>
+	<script type="text/javascript" src="node_modules/responsive/js/dataTables.responsive.min.js"></script>
+	<script src="assets/js/general.js"></script>
     <script type="text/javascript" src="node_modules/responsive/js/responsive.bootstrap.min.js"></script>
     
 
