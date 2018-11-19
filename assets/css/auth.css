@@ -314,7 +314,7 @@ body {
 }
 
 .gigya-input-text, .gigya-input-password{
-	border-radius:23px!important;
+	border-radius:10px!important;
 }
 
 .gigya-input-submit {
