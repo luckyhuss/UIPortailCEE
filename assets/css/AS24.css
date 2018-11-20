@@ -215,3 +215,8 @@ input[type='checkbox']:checked:after {
 	background: #004097 !important;
 	color: #ffff;
 }
+
+/* couleur par filiale */
+.aLink, .aLink:hover, .aLink:focus {
+	color: #004097;
+}

@@ -216,3 +216,10 @@ input[type='checkbox']:checked:after {
 	background: #e00032 !important;
 	color: #ffff;
 }
+
+
+/* couleur par filiale */
+.aLink, .aLink:hover, .aLink:focus {
+	color: #e00032;
+}
+

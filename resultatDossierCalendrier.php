@@ -105,24 +105,19 @@
 
 
 						<!-- Modal -->
-						<div class="modal fade popin-donnee" id="ModalCalendrier" tabindex="-1"
-							role="dialog" aria-labelledby="myModalLabel">
-							<div class="modal-dialog liste_critere" role="document">
+						<div class="modal fade popin-donnee" id="ModalCalendrier" tabindex="-1"	role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
-										<button type="button" class="btn btn-default"
-											data-dismiss="modal">x</button>
-										<h4 class="modal-title" id="myModalLabel"></h4>
+										<button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+										<h4 class="modal-title" id="myModalLabel">Header Section</h4>
 									</div>
 
 									<div class="modal-body">
 										<span>INFORMATION INCOMPLETE</span>
 									</div>
 
-									<div class="modal-footer">
-										<!-- <button type="button" class="btn btn-default"
-											data-dismiss="modal">Fermer</button> -->
-									</div>
+									<div class="modal-footer"></div>
 								</div>
 							</div>
 						</div>

@@ -114,7 +114,7 @@
 
         <div id="collapseConsulterFiche" class="panel-collapse collapse in">
             <div class="panel-body">
-                <span>Consulter les fiches : <a target="_blank" href="http://calculateur-cee.ademe.fr/user/fiches/BAR">ADEME CEE</a></span>
+                <span>Consulter les fiches : <a class="aLink" target="_blank" href="http://calculateur-cee.ademe.fr/user/fiches/BAR">ADEME CEE</a></span>
             </div>
         </div>
 

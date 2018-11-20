@@ -1,5 +1,5 @@
 // Sample graphs (barchart) 1
-/*
+
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',

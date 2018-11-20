@@ -114,23 +114,21 @@
 </div>
 
 
-<!-- Modal for changement_partenariat -->
+<!-- Modal  -->
 <div class="modal fade in popin-donnee" id="infoImportanteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog liste_critere" role="document">
         <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
-            <h4 class="modal-title" id="myModalLabel">Détail de l'information</h4>
-        </div>
-
-        <div class="modal-body">
-            <span>Information à fournir par la MOA this is a test this is a test this is a test this is a test this is a test</span>
-        </div>
-
-        <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button> -->
-        </div>
+            <div class="modal-header">
+                <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+                <h4 class="modal-title" id="myModalLabel">Détail de l'information</h4>
+            </div>
+    
+            <div class="modal-body">
+                <span>Information à fournir par la MOA this is a test this is a test this is a test this is a test this is a test</span>
+            </div>
+    
+            <div class="modal-footer"></div>
         </div>
     </div>
 </div>
-<!-- Modal for changement_partenariat -->
+<!-- Modal  -->

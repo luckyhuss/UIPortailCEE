@@ -77,7 +77,7 @@
 <script>
 $(function() {
         var msFiliale = $('#msFiliale').magicSuggest({
-          data: ['B2B','Commercial','Professional','B22B','Comm2ercial','Pro2fessional']
+          data: [{"id":"value","name":"Professional"},{"id":"value 2","name":"Professional 2"}, 'Commercial','Professional','B22B','Comm2ercial','Pro2fessional']
         });
 
         var msOperation = $('#msOperation').magicSuggest({
@@ -88,8 +88,8 @@ $(function() {
             data: ['B2BOper','CommercialOper','ProfessionalOper','B22BOper','Comm2ercialOper','Pro2fessionalOper']
           });
 
-        $(msFiliale).on('selectionchange', function(){
-        	  //alert(JSON.stringify(this.getSelection()));
+        $(msBeneficiaire).on('selectionchange', function(){
+        	  alert(JSON.stringify(this.getSelection()));
         	});
       });
 </script>
