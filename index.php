@@ -38,7 +38,7 @@
 $cssLoaded = "default";
 
 $persona = ($cssLoaded == "AS24") ? "-AS24": "";
-
+$isGraph = false;
 
 ?>
 
@@ -101,13 +101,17 @@ body { background-color: #fafafa; }
 	           case 'Piloter':
 	               $activePiloter = "active-link";
 	               $pageLoaded = "piloter-mon-activites";
+	               $isGraph = "true";
 	               break;
 	            
 	           case 'Info':
 	               $activeInfo = "active-link";
 	               $pageLoaded = "info-cee";
 	               break;
-	               
+	           case 'Admin':
+	               $activeAdmin = "active-link";
+	               $pageLoaded = "administration";
+	               break;
 	           default:
                    $activeHome = "active-link";
                    $pageLoaded = "accueil";
@@ -147,8 +151,14 @@ body { background-color: #fafafa; }
     
     <!-- Other JS scripts -->
     <script src="assets/js/bootstrap-datepicker.js"></script>
+    
+    <?php
+    if($isGraph) {
+    ?>
     <script src="assets/js/mygraphs.js"></script>
-
+    <?php 
+    }
+    ?>
     <script type="text/javascript" src="node_modules/datatables/DataTables/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="node_modules/datatables/DataTables/js/dataTables.bootstrap.min.js"></script>
 	<script type="text/javascript" src="node_modules/responsive/js/dataTables.responsive.min.js"></script>

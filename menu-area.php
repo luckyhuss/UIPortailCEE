@@ -92,6 +92,20 @@
 			</div>
 		</div>
 
+		<div class="panel-group menu_item_wrapper">
+			<div class="panel panel-default menu_item">
+				<div class="panel-heading nav-menu <?php echo $activeAdmin ?>">
+					<h4 class="panel-title">
+						<a href="javascript:void()" id="Admin"><span class="glyphicon glyphicon-cog"
+							aria-hidden="true"></span> <span class="menu_title">Administration</span></a>
+					</h4>
+				</div>
+
+			</div>
+		</div>
+		
+		
+		
 		<!-- div class="panel-group menu_item_wrapper">
 			<div class="panel panel-default menu_item">
 				<div class="panel-heading nav-menu">
