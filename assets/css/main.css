@@ -1242,12 +1242,16 @@ ul.cards-container {
 	border:0px;
 	
 }
+.popin-donnee .modal-header {
+	border-bottom:1px solid #ccc;
+}
 
 .popin-donnee .modal-body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	margin: 8px;
 	padding: 8px;
+	
 }
 
 .popin-info .modal-body, .popin-donnee .modal-body {
@@ -1262,6 +1266,7 @@ ul.cards-container {
 .modal-title {
 	margin-left: 12px;
 	color:#000;
+	
 	
 }
 
