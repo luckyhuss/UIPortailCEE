@@ -152,6 +152,14 @@
                             <a class="expand"
                                href="#tab_c" data-toggle="tab" aria-controls="tab_c" role='tab'><h2>ER</h2></a>
                         </li>
+                        <li role="presentation" class='empty'>
+                            <a class="expand"
+                               href="#tab_d" data-toggle="tab" aria-controls="tab_d" role='tab'><h2>AH</h2></a>
+                        </li>
+                        <li role="presentation" class='empty'>
+                            <a class="expand"
+                               href="#tab_e" data-toggle="tab" aria-controls="tab_e" role='tab'><h2>ER</h2></a>
+                        </li>
                         <!-- <li role="presentation" class='active empty  visible-xs hidden-xs' ><a href="#null" data-toggle="tab" aria-controls="null" role='tab'>Null</a></li> -->
                     </ul>
 
@@ -189,6 +197,28 @@
                                 Pourquoi c'est important ?
                             </p>
                         </div>
+                        <div class="tab-pane" id="tab_d" role="tabpanel">
+                            <h4>ER</h4>
+                            <p>
+                                <i>Information à fournir par la MOA</i><br /><br />
+                                Qu'est ce que c'est ?
+                                <br />
+                                A quoi ça sert ?
+                                <br />
+                                Pourquoi c'est important ?
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="tab_e" role="tabpanel">
+                            <h4>ER</h4>
+                            <p>
+                                <i>Information à fournir par la MOA</i><br /><br />
+                                Qu'est ce que c'est ?
+                                <br />
+                                A quoi ça sert ?
+                                <br />
+                                Pourquoi c'est important ?
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -202,6 +232,16 @@
 $( ".expand" ).click(function() {
 	$(".tab-content").css("display", "block");
 });
+
+var $menu = $('.tab-content');
+
+$(document).mouseup(function (e) {
+   if (!$menu.is(e.target) // if the target of the click isn't the container...
+   && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+   {
+     $menu.hide();
+  }
+ });
 </script>
 
 <?php include ('contact-area.php'); ?>
