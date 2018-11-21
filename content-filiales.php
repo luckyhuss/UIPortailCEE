@@ -4,28 +4,28 @@
 		<div class="panel-body">
 
 			<div class="filiales-container">
-			
-				<form id="form_content" class="form_admin_filiales" action="#"	method="POST">
-					
+
+				<form id="form_content" class="form_admin_filiales" action="#"
+					method="POST">
+
 					<div class="form-group">
-					
-    					<span class="form_label"> <label for="choisirFiliales">Filiales</label></span> 
-        					
-        					<span class="form_input"> 
-        						<select class="form-control">
-        							<option value="0"></option>
-        							<option value="1">Filiale test test test maintenantisa test 1</option>
-        							<option value="2">Filiale 2</option>
-        							<option value="3">Filiale 3</option>
-        							<option value="4">Filiale 4</option>
-        						</select>
-        					</span>
-					
+
+						<span class="form_label"> <label for="choisirFiliales">Filiales</label></span>
+
+						<span class="form_input"> <select class="form-control">
+								<option value="0"></option>
+								<option value="1">Filiale test test test maintenantisa test 1</option>
+								<option value="2">Filiale 2</option>
+								<option value="3">Filiale 3</option>
+								<option value="4">Filiale 4</option>
+						</select>
+						</span>
+
 					</div>
 
 				</form>
 			</div>
-			
+
 
 		</div>
 
@@ -63,8 +63,7 @@
 								<div class="form-group">
 									<span class="form_label"><label for="pages">Pages</label></span>
 
-									<span class="form_input"> <select
-										class="form-control">
+									<span class="form_input"> <select class="form-control">
 											<option value='0'></option>
 											<option value='1'>Page 1</option>
 											<option value='2'>Page 2</option>
@@ -94,15 +93,16 @@
 							</div>
 
 
-							<!-- <div class="col-lg-6 input_holder">
+
+							<div class="col-md-12 input_holder">
 								<div class="form-group">
-									<span class="form_label"><label for="texte">Texte</label></span> 
-											
-											<span class="form_input" > <textarea rows="10"></textarea>
-            									</span>
-        									
+									<span class="form_label"><label for="texte">Texte</label></span>
+
+									<span class="form_input"> <textarea class="form-textarea" rows="5" ></textarea> </span>
+
 								</div>
-							</div> -->
+							</div>
+
 
 
 							<div class="col-md-12 submit_button_holder admin-btn-holder">

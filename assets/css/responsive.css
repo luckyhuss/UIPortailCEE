@@ -218,6 +218,10 @@
 	.modal-content {
 		width:100%!important;
 	}
+	
+	.filiales-container .form_input, .secteurs-container .form_input, .content-container .form_input {
+		width:100%!important;
+	}
 }
 
 @media ( max-width : 480px) {
@@ -225,7 +229,9 @@
 		width: 280px !important;
 	}
 	
-	
+	.form_admin_filiales .form-group .form_label, .form_admin_secteurs .form-group .form_label, .form_admin_content .form-group .form_label {
+		width:115px!important;
+	}
 	
 }
 

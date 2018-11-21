@@ -363,7 +363,7 @@ ul, li {
 .search_area {
 	float: left;
 	width: 100%;
-	padding: 5px;
+	padding: 0px;
 	border-radius: 10px;
 	padding-bottom: 40px;
 }
@@ -376,7 +376,7 @@ ul, li {
 	margin-bottom: 0;
 }
 
-.form_search_bar .form-group, .form_admin_content .form-group, .form_admin_filiales .form-group {
+.form_search_bar .form-group, .form_admin_content .form-group, .form_admin_filiales .form-group, .form_admin_secteurs .form-group {
 	width: 100%;
 	display: flex;
 	font-family: 'Open Sans', sans-serif;
@@ -1972,12 +1972,12 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 }
 
 
-.filiales-container {
+.filiales-container, .secteurs-container {
 	padding: 10px 0px 10px 15px;
     height: 60px;
 }
 
-.filiales-container .form_input, .content-container .form_input {
+.filiales-container .form_input, .secteurs-container .form_input, .content-container .form_input {
 	padding-left: 0; 
 	padding-right: 10px; 
 	width: 50%; 
@@ -1985,11 +1985,7 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 }
 
 
-.filiales-container .header_label {
-	padding-left: 10px; width: 150px;
-}
-
-.filiales-container .form-group {
+.filiales-container .form-group, .secteurs-container .form-group {
 	margin-bottom: 0px;
 }
 
@@ -1997,7 +1993,7 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 	width: auto;
 }
 
-#tabFiliale>.panel-group .panel-default>.panel-body {
+#tabFiliale>.panel-group .panel-default>.panel-body , #tabSecteur>.panel-group .panel-default>.panel-body{
 	padding: 0px;
 }
  
@@ -2014,4 +2010,9 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 
 .form_admin_content .input_holder {
 	padding-right:0px;
+}
+
+.form-textarea {
+	border-radius:10px;
+	width:100%;	
 }
