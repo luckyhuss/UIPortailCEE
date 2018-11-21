@@ -20,8 +20,8 @@
 							style="width: 100%">
 							<thead>
 								<tr>
-                                    <th>Siren</th>
-                                    <th>Raison Sociale</th>
+                                    <th>SIREN</th>
+                                    <th>Raison sociale</th>
 									<th>Maison mere</th>
 									<th></th>
 								</tr>
@@ -69,7 +69,7 @@
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<span class="panel_header_element"><a data-toggle="collapse"
-					href="#collapseInfoAdmin">Informations Administratives</a></span> <span
+					href="#collapseInfoAdmin">Information administrative</a></span> <span
 					class="panel_header_element"><a data-toggle="collapse"
 					href="#collapseInfoAdmin"><i class="glyphicon glyphicon-folder-open"></i></a></span>
 			</h4>
@@ -78,170 +78,208 @@
 		<div id="collapseInfoAdmin" class="panel-collapse collapse in">
 			<div class="panel-body">
 
-					<table id="InfoSocieteFiche"
-						class="table table-striped table-bordered nowrap"
-						style="width: 100%">
-						<caption class="tbl-caption">Société</caption>
-						<thead>
-							<tr>
-								<th>Raison Sociale</th>
-								<th>Siren</th>
-								<th>Filiale/ Maison mere</th>
-								<th>Tel</th>
-								<th>Couriel</th>
-								<th>Adresse</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Raison 1</td>
-								<td>Siren 1</td>
-								<td>23762328</td>
-								<td>5856325</td>
-								<td>test@total.mu</td>
-								<td>123</td>
-							</tr>
-							<tr>
-                                <td>Raison 2</td>
-								<td>Siren 2</td>
-								<td>23762328</td>
-								<td>5856325</td>
-								<td>test@total.mu</td>
-								<td>123</td>
-							</tr>
-						</tbody>
-					</table>
+			<div class="panel-group" id="infoSociete">
+				<div class="panel panel-default">
+				<div class="panel-body">
+					<span class="tbl-caption col-md-12">Société</span>
+					<div class="header-group col-md-4">
+						<span class="header_label"><label for="raisonSociale">Raison sociale</label></span>
+						<span class="header_output">LOGISTA</span>
+					</div>
+
+					<div class="header-group col-md-4">
+						<span class="header_label"><label for="Siren">SIREN</label></span>
+						<span class="header_output">394629125</span>
+					</div>
+
+					<div class="header-group col-md-4">
+						<span class="header_label"><label for="Filiale">Filiale</label></span>
+						<span class="header_output">Indéfini</span>
+					</div>
+
+					<div class="header-group col-md-4">
+						<span class="header_label"><label for="Tel">Téléphone</label></span>
+						<span class="header_output">111222333</span>
+					</div>
+
+					<div class="header-group col-md-4">
+						<span class="header_label"><label for="Couriel">Couriel</label></span>
+						<span class="header_output">111222333</span>
+					</div>
+
+					<div class="header-group col-md-4">
+						<span class="header_label"><label for="Adresse">Adresse</label></span>
+						<span class="header_output">111222333</span>
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<div class="panel-group" id="infoSignature">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<span class="tbl-caption col-md-12">Signature Electronique</span>
+						<div class="col-md-12">
+							<span><h6>Dirigeant</h6></span>
+							<div class="header-group col-md-4">
+								<span class="header_label"><label for="nom">Nom</label></span>
+								<span class="header_output">LOGISTA</span>
+							</div>
+
+							<div class="header-group col-md-4">
+								<span class="header_label"><label for="prenom">Prénom</label></span>
+								<span class="header_output">394629125</span>
+							</div>
+
+							<div class="header-group col-md-4">
+								<span class="header_label"><label for="Tel">Téléphone</label></span>
+								<span class="header_output">111222333</span>
+							</div>
+
+							<div class="header-group col-md-4">
+								<span class="header_label"><label for="mail">Mail</label></span>
+								<span class="header_output">111222333</span>
+							</div>
+
+							<div class="header-group col-md-4">
+								<span class="header_label"><label for="statut">Statut</label></span>
+								<span class="header_output">Indéfini</span>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+						<span><h6>Responsable CEE</h6></span>
+							<div class="header-group col-md-4">
+								<span class="header_label"><label for="nom">Nom</label></span>
+								<span class="header_output">LOGISTA</span>
+							</div>
+
+							<div class="header-group col-md-4">
+								<span class="header_label"><label for="prenom">Prénom</label></span>
+								<span class="header_output">394629125</span>
+							</div>
+
+							<div class="header-group col-md-4">
+								<span class="header_label"><label for="Tel">Téléphone</label></span>
+								<span class="header_output">111222333</span>
+							</div>
+
+							<div class="header-group col-md-4">
+								<span class="header_label"><label for="mail">Mail</label></span>
+								<span class="header_output">111222333</span>
+							</div>
+
+							<div class="header-group col-md-4">
+								<span class="header_label"><label for="statut">Statut</label></span>
+								<span class="header_output">Indéfini</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel-group" id="infoConvention">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<span class="tbl-caption col-md-12">Convention</span>
+						<div class="header-group col-md-6">
+							<span class="header_label"><label for="Convention">Convention </label></span>
+							<span class="header_output">Signee le xxx</span>
+						</div>
+
+						<div class="header-group col-md-6">
+							<span class="header_label"><label for="Avenant">Avenant</label></span>
+							<span class="header_output">Signee le xxx</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
-					<!-- Signature Electronique -->
-					<table id="signatureElectroniqueFiche"
-						class="table table-striped table-bordered nowrap"
-						style="width: 100%">
-						<caption class="tbl-caption">Signature Electronique</caption>
-						<thead>
+<!-- Info Activite -->
+<div class="panel-group displayed" id="infoActivite">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<span class="panel_header_element"><a data-toggle="collapse"
+					href="#collapseInfoActivite">Information activité</a></span>
+					 <!-- <span class="panel_header_element"><a data-toggle="collapse" href="#collapseInfoActivite"><i class="glyphicon glyphicon-folder-open"></i></a></span> -->
+			</h4>
+		</div>
 
-							<tr>
-								<th></th>
-                                <th>Nom</th>
-                                <th>Prénom</th>
-                                <th>Tel</th>
-                                <th>Mail</th>
-                                <th>Statut</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Dirigeant</td>
-                                <td>Nom</td>
-                                <td>Prenom</td>
-                                <td>54445654</td>
-                                <td>Mail</td>
-                                <td>-</td>
-							</tr>
-							<tr>
-                                <td>Responsable CEE</td>
-                                <td>Nom</td>
-                                <td>Prenom</td>
-                                <td>54445654</td>
-                                <td>Mail</td>
-                                <td>Statut</td>
-							</tr>
-						</tbody>
-					</table>
-					<!-- Signature Electronique -->
+		<div id="collapseInfoActivite" class="panel-collapse collapse in">
+			<div class="panel-body">
+					<div class="header-group col-md-6">
+						<span class="header_label col-md-6"><label for="docEnCours">Total dossiers en cours </label></span>
+						<span class="header_output col-md-6">2124 € kWhc</span>
+					</div>
 
+					<div class="header-group col-md-6">
+						<span class="header_label col-md-6"><label for="docDeposes">Total dossiers deposés</label></span>
+						<span class="header_output col-md-6">153 € kWhc</span>
+					</div>
 
-					<!-- Conventions -->
-					<table id="conventionsFiche"
-						class="table table-striped table-bordered nowrap"
-						style="width: 100%">
-						<caption class="tbl-caption">Conventions</caption>
-						<thead>
+					<div class="header-group col-md-6">
+						<span class="header_label col-md-6"><label for="docPayes">Total dossiers payés (BEN) </label></span>
+						<span class="header_output col-md-6">2124 € kWhc</span>
+					</div>
 
-							<tr>
-                                <th>Nom</th>
-                                <th class="numcol">Signee le</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Convention x</td>
-                                <td class="numcol">10/31/2018</td>
-							</tr>
-							<tr>
-                                <td>Avenant x</td>
-                                <td class="numcol">10/31/2018</td>
-							</tr>
-						</tbody>
-					</table>
-					<!-- Conventions -->
+					<div class="header-group col-md-6">
+						<span class="header_label col-md-6"><label for="docPayes">Total dossiers payés (PRO)</label></span>
+						<span class="header_output col-md-6">153 € kWhc</span>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Info Activite -->
 
-					<!-- Info Activite -->
-					<table id="infoActiviteFiche"
-						class="table table-striped table-bordered nowrap"
-						style="width: 100%">
-						<caption class="tbl-caption">Informations Activité</caption>
-						<thead>
+<!-- Top 10 operations -->
+<div class="panel-group displayed" id="infoOperation">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<span class="panel_header_element"><a data-toggle="collapse"
+					href="#collapseInfoOpe">Top 10 opérations </a></span> 
+					<!-- <span class="panel_header_element"><a data-toggle="collapse" href="#collapseInfoOpe"><i class="glyphicon glyphicon-folder-open"></i></a></span> -->
+			</h4>
+		</div>
 
-							<tr>
-								<th>Dossiers</th>
-                                <th class="numcol">Total</th>
-                                <th class="numcol">€</th>
-                                <th class="numcol">kWhc</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>En cours</td>
-                                <td class="numcol">45</td>
-                                <td class="numcol">244</td>
-                                <td class="numcol">544</td>
-							</tr>
-							<tr>
-                                <td>Deposés</td>
-                                <td class="numcol">45</td>
-                                <td class="numcol">244</td>
-                                <td class="numcol">544</td>
-                            </tr>
-                            <tr>
-								<td>Payés (Ben)</td>
-                                <td class="numcol">45</td>
-                                <td class="numcol">244</td>
-                                <td class="numcol">544</td>
-							</tr>
-							<tr>
-                                <td>Payés (Pro)</td>
-                                <td class="numcol">45</td>
-                                <td class="numcol">244</td>
-                                <td class="numcol">544</td>
-							</tr>
-						</tbody>
-					</table>
-                    <!-- Info Activite -->
-
-                    <!-- Top 10 operations -->
+		<div id="collapseInfoOpe" class="panel-collapse collapse in">
+			<div class="panel-body">
 					<table id="operationsFiche"
 						class="table table-striped table-bordered nowrap"
 						style="width: 100%">
-						<caption class="tbl-caption">Top 10 opérations</caption>
 						<thead>
-
 							<tr>
-								<th>Nom</th>
+								<th>Réference opération standardisée</th>
+								<th>mWhc classique</th>
+								<th>mWhc précartité</th>
+								<th>Statut</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Operation 1</td>
+								<td>Dossier 1</td>
+								<td class="numcol">0,000</td>
+								<td class="numcol">0,000</td>
+								<td>En cours</td>
 							</tr>
 							<tr>
-                                <td>Operation 2</td>
-                            </tr>
-                            <tr>
-								<td>Operation 3</td>
+								<td>Dossier 2</td>
+								<td class="numcol">0,000</td>
+								<td class="numcol">0,000</td>
+								<td>En cours</td>
 							</tr>
 							<tr>
-                                <td>Operation 4</td>
+								<td>Dossier 3</td>
+								<td class="numcol">0,000</td>
+								<td class="numcol">0,000</td>
+								<td>En cours</td>
 							</tr>
 						</tbody>
 					</table>
@@ -251,12 +289,13 @@
 				<!-- Closing collapsible wrapper -->
 			</div>
 		</div>
-
-	</div>
+</div>
 
 
 <script>
 function displayInfoAdmin() {
     document.getElementById("infoAdmin").style.display = "block";
+	document.getElementById("infoOperation").style.display = "block";
+	document.getElementById("infoActivite").style.display = "block";	
 }
 </script>
