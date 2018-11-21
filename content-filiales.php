@@ -5,7 +5,7 @@
 
 			<div class="filiales-container">
 			
-				<form id="form_content" class="form_admin_content" action="#"	method="POST">
+				<form id="form_content" class="form_admin_filiales" action="#"	method="POST">
 					
 					<div class="form-group">
 					
@@ -26,28 +26,6 @@
 				</form>
 			</div>
 			
-			
-			
-			<!-- <ul class="type-dossier-container">
-					<li class="filter-item float-item">
-						<div class="form-group">
-							<span class="form_label"><label for="Dossier">Dossier</label></span>
-							
-						</div>
-					</li>
-					<li class="filter-item float-item">
-						<div class="form-group">
-							<span class="form_input"><select class="form-control">
-        							<option value="0"></option>
-        							<option value="1">Filiale test test test maintenantisa test 1</option>
-        							<option value="2">Filiale 2</option>
-        							<option value="3">Filiale 3</option>
-        							<option value="4">Filiale 4</option>
-        						</select></span>
-						</div>
-					</li>
-					
-				</ul> -->
 
 		</div>
 

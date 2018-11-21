@@ -376,7 +376,7 @@ ul, li {
 	margin-bottom: 0;
 }
 
-.form_search_bar .form-group, .form_admin_content .form-group {
+.form_search_bar .form-group, .form_admin_content .form-group, .form_admin_filiales .form-group {
 	width: 100%;
 	display: flex;
 	font-family: 'Open Sans', sans-serif;
