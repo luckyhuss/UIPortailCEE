@@ -14,10 +14,12 @@
 
 						<span class="form_input"> <select class="form-control">
 								<option value="0"></option>
-								<option value="1">Secteurs test test test maintenantisa test 1</option>
-								<option value="2">Secteurs 2</option>
-								<option value="3">Secteurs 3</option>
-								<option value="4">Secteurs 4</option>
+								<option value="AGRI">Agriculture [AGRI]</option>
+								<option value="BAR">Bâtiment Résidentiel [BAR]</option>
+								<option value="BAT">Bâtiment Tertiaire [BAT]</option>
+								<option value="IND">Industrie [IND]</option>
+								<option value="RES">Réseaux [RES]</option>
+								<option value="TRA">Transport [TRA]</option>
 						</select>
 						</span>
 
@@ -93,6 +95,21 @@
 							</div>
 
 
+							<div class="col-md-12 input_holder">
+								<div class="form-group">
+									<span class="form_label"><label for="personas">Personas</label></span>
+
+									<span class="form_input"> <select class="form-control">
+											<option value='0'></option>
+											<option value='1'>Personas 1</option>
+											<option value='2'>Personas 2</option>
+											<option value='3'>Personas 3</option>
+											<option value='4'>Personas 4</option>
+									</select>
+									</span>
+
+								</div>
+							</div>
 
 							<div class="col-md-12 input_holder">
 								<div class="form-group">

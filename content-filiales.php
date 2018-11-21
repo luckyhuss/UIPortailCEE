@@ -92,7 +92,21 @@
 								</div>
 							</div>
 
+							<div class="col-md-12 input_holder">
+								<div class="form-group">
+									<span class="form_label"><label for="personas">Personas</label></span>
 
+									<span class="form_input"> <select class="form-control">
+											<option value='0'></option>
+											<option value='1'>Personas 1</option>
+											<option value='2'>Personas 2</option>
+											<option value='3'>Personas 3</option>
+											<option value='4'>Personas 4</option>
+									</select>
+									</span>
+
+								</div>
+							</div>
 
 							<div class="col-md-12 input_holder">
 								<div class="form-group">

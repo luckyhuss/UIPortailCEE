@@ -60,6 +60,9 @@ body { background-color: #fafafa; }
 .container { margin-top: 150px; max-width: 350px; }
 </style>
 
+<!-- include summernote css/js -->
+<link href="node_modules/summernote/dist/summernote.css" rel="stylesheet">
+
 
 </head>
 
@@ -110,7 +113,8 @@ body { background-color: #fafafa; }
 	               break;
 	           case 'Admin':
 	               $activeAdmin = "active-link";
-	               $pageLoaded = "administration";
+	               $pageLoaded = "admin-contenu";
+	               //$pageLoaded = "admin-utilisateur";
 	               break;
 	           default:
                    $activeHome = "active-link";

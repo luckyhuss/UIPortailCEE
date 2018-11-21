@@ -20,3 +20,5 @@
 		</div>
 	</div>
 </div>
+
+<script src="node_modules/summernote/dist/summernote.js"></script>
