@@ -19,7 +19,7 @@
 			<div class="panel panel-default menu_item">
 				<div class="panel-heading nav-menu <?php echo $activeSimuler ?>">
 					<h4 class="panel-title">
-						<a href="javascript:void()" id="Simuler"><span class="glyphicon glyphicon-signal"
+						<a href="javascript:void()" id="Simuler" alt="Simuler"><span class="glyphicon glyphicon-signal"
 							aria-hidden="true"></span> <span class="menu_title">Simuler</span></a>
 					</h4>
 				</div>
@@ -92,11 +92,12 @@
 			</div>
 		</div>
 
+		<?php if($cssLoaded == "ADMIN") {?>
 		<div class="panel-group menu_item_wrapper">
 			<div class="panel panel-default menu_item">
 				<div class="panel-heading nav-menu <?php echo $activeAdmin ?>">
 					<h4 class="panel-title">
-						<a href="javascript:void()" id="Admin"><span class="glyphicon glyphicon-cog"
+						<a href="javascript:void()" id="Admin" alt="Administration"><span class="glyphicon glyphicon-cog"
 							aria-hidden="true"></span> <span class="menu_title">Administration</span></a>
 					</h4>
 				</div>
@@ -104,7 +105,7 @@
 			</div>
 		</div>
 		
-		
+		<?php }?>
 		
 		<!-- div class="panel-group menu_item_wrapper">
 			<div class="panel panel-default menu_item">

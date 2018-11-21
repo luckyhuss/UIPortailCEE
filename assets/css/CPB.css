@@ -167,7 +167,7 @@
 	border-color:#484848;
 }
 
-.panel-default > .tabs-rechercher {
+.panel-default > .tabs-rechercher, .panel-default > .tabs-administration {
 	background:#484848; /* #01afba; */
 }
 

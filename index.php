@@ -35,7 +35,7 @@
 --->
 
 <?php 
-$cssLoaded = "default";
+$cssLoaded = "ADMIN";
 
 $persona = ($cssLoaded == "AS24") ? "-AS24": "";
 $isGraph = false;
