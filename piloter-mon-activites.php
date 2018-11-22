@@ -23,6 +23,14 @@
 		<div id="suiviAnnuel" class="panel-collapse collapse in"
 			aria-expanded="true" style="">
 			<div class="panel-body">
+
+				<div class="text-danger isa_error" data-valmsg-summary="true">
+					<ul>
+						<li>This is a test message</li>
+						<li>This is a test message</li>
+					</ul>
+				</div>
+
 				<div class="row">
 
 
@@ -52,16 +60,16 @@
 						<div class="col-md-6 form-group">
 							<span class="form_label"><label for="statut">Statut</label></span>
 
-							<span class="form_input">
-    							<select class="form-control">
+							<span class="form_input"> <select class="form-control">
 									<option value="1">En cours</option>
 									<option value="2">Deposé</option>
 									<option value="4">Payé</option>
-								</select>
+							</select>
 							</span>
 						</div>
 						<h6 class="col-md-6" style="color: red">
-							<i>** Pas de webservices O<sub>2</sub> **</i>
+							<i>** Pas de webservices O<sub>2</sub> **
+							</i>
 						</h6>
 					</div>
 

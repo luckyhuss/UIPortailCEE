@@ -42,7 +42,7 @@
 					</div>
 
 					<div class="user_profile_holder">
-						<div class="user_profile"><span class="user-name-holder">Pierre Michel Dupont</span><span class="filiale-ID-holder">(CPB)</span></div>
+						<div class="user_profile"><span class="user-name-holder">Pierre Michel Dupont</span><span class="filiale-ID-holder">(<?php echo $cssLoaded ?>)</span></div>
 					</div>
 
 					<div class="icon_holder">
@@ -57,7 +57,7 @@
 									<li class="divider"></li>
 									<li>
 										<div class="content-user-profile">
-										<span class="user-name-holder">Pierre Michel Dupont</span><span class="filiale-ID-holder">(CPB)</span>
+										<span class="user-name-holder">Pierre Michel Dupont</span><span class="filiale-ID-holder">(<?php echo $cssLoaded ?>)</span>
 											<!-- div class="row">
 
 												<div class="col-lg-8">

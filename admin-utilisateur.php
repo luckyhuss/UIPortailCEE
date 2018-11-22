@@ -12,7 +12,33 @@
 		<div id="infoCee" class="panel-collapse collapse in">
 			<div class="panel-body">
 			
-			
+			<div class="row">
+					<div class="col-md-12 data_table_holder">
+						<table id="resultatRecherche"
+							class="table table-striped table-bordered nowrap"
+							style="width: 100%">
+							<thead>
+								<tr>
+                                    <th>Prénom</th>
+									<th>Nom</th>
+									<th>Email</th>
+									<th>ID Gigya</th>
+									<th>ID Oxygène</th>
+									<th>Filiale</th>
+									<th class="numcol">Actif</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+							
+								<?php include("listeutilisateur.php"); ?>
+								
+								
+							</tbody>
+						</table>
+
+					</div>
+				</div>
 			
 			
 			</div>

@@ -2098,7 +2098,18 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	border: 2px solid #004097;
 	border-radius: 2px;
 }
+
 .form-input-textarea {
 	width:100%!important;
 }
+
+.isa_error {
+    color: #D8000C;
+    background-color: #FFD2D2;
+    border-color: #ebccd1;
+	margin-bottom: 20px;
+	padding:10px;
+	border-radius: 4px;
+}
+
 
