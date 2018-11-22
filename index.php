@@ -80,6 +80,7 @@ body { background-color: #fafafa; }
 	   $activeAdminUtilisateur = "";
 	   $activeAdminContenu = "";
 	   $openAdmin = "";
+	   $activeAdmin = "";
 	   
 	   if (isset($_GET) && $_GET != null) {
 	      

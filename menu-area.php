@@ -109,18 +109,20 @@
 
 						<a data-toggle="collapse" href="#admin" class="collapsed"
 							aria-expanded="true"><span class="glyphicon glyphicon-cog"
-							aria-hidden="true"></span> <span class="menu_title">Administration</span><span
-							class="caret"></span></a>
+							aria-hidden="true"></span> <span class="menu_title">Administration<span
+							class="caret"></span></span></a>
 					</h4>
 				</div>
 
-				<div id="admin" class="panel-collapse sub_menu_items collapse <?php echo $openAdmin ?>"
+				<div id="admin"
+					class="panel-collapse sub_menu_items collapse <?php echo $openAdmin ?>"
 					aria-expanded="true">
 					<div
 						class="panel-heading nav-menu sous-menu <?php echo $activeAdminContenu ?>">
 						<h4 class="panel-title">
 							<a href="javascript:void()" id="AdminContenu"><span
-								class="glyphicon glyphicon" aria-hidden="true"></span> <span
+								class="glyphicon glyphicon" aria-hidden="true"></span><span class="glyphicon glyphicon-list"
+							aria-hidden="true"></span> <span
 								class="menu_title">Gestion Contenu</span></a>
 						</h4>
 					</div>
@@ -128,7 +130,8 @@
 						class="panel-heading nav-menu sous-menu <?php echo $activeAdminUtilisateur ?>">
 						<h4 class="panel-title">
 							<a href="javascript:void()" id="AdminUtilisateur"><span
-								class="glyphicon glyphicon" aria-hidden="true"></span> <span
+								class="glyphicon glyphicon" aria-hidden="true"></span><span class="glyphicon glyphicon-user"
+							aria-hidden="true"></span> <span
 								class="menu_title">Gestion Utilisateur</span></a>
 						</h4>
 					</div>
@@ -201,18 +204,11 @@ function setNavigation() {
    		if(id != undefined) {
    			window.location.href = '/uiportailcee?pageLoaded=' + id,true;
    	    }
-//    		alert('test' + id);
-    	    if(id == undefined) {
-    	    	$( "div #admin" ).toggleClass( "in" );
-//    	    	$( "div #admin" ).addClass( "in" );
-    	    }
 
-//    	    if(id == 'AdminContenu') {
-//    	    	$( "div #admin" ).addClass( "in" );
-//    	   	    }
-   		//var post_data = {'account_type':"Free"}
-   		//return $.post("/uiportailcee/", post_data);
-   		//form.submit();
+	    if(id == undefined) {
+    	    $( "div #admin" ).toggleClass( "in" );
+  	    }
+
    	});
    	
 }
