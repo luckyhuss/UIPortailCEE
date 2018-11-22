@@ -228,3 +228,21 @@ input[type='checkbox']:checked:after {
 .aLink, .aLink:hover, .aLink:focus {
 	color: #44b749;
 }
+
+.stat_icon_wrapper .glyphicon-stats{
+	color: #44b749;
+}
+
+#collapseHistoSim .searchTerm {
+    border: 2px solid #44b749;
+}
+  
+  #collapseHistoSim .form-control:focus {
+    border-color: #44b749;
+    box-shadow: none;
+}
+  
+#collapseHistoSim .searchButton {
+    border: 1px solid #44b749;
+    background: #44b749;
+}
