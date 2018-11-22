@@ -77,6 +77,9 @@ body { background-color: #fafafa; }
 	   $activeDossier = "";
 	   $activePiloter = "";
 	   $activeInfo = "";
+	   $activeAdminUtilisateur = "";
+	   $activeAdminContenu = "";
+	   $openAdmin = "";
 	   
 	   if (isset($_GET) && $_GET != null) {
 	      
@@ -111,10 +114,17 @@ body { background-color: #fafafa; }
 	               $activeInfo = "active-link";
 	               $pageLoaded = "info-cee";
 	               break;
-	           case 'Admin':
+	           case 'AdminContenu':
 	               $activeAdmin = "active-link";
+	               $activeAdminContenu = "active-link";
 	               $pageLoaded = "admin-contenu";
-	               //$pageLoaded = "admin-utilisateur";
+	               $openAdmin = "in";
+	               break;
+	           case 'AdminUtilisateur':
+	               $activeAdmin = "active-link";
+	               $activeAdminUtilisateur = "active-link";
+	               $pageLoaded = "admin-utilisateur";
+	               $openAdmin = "in";
 	               break;
 	           default:
                    $activeHome = "active-link";

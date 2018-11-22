@@ -38,6 +38,14 @@
 	.icon_holder .glyphicon {
 		top: 5px;
 	}
+	
+	.filiales-container .form_input, .secteurs-container .form_input, .content-container .form_input {
+		width:55%!important;
+	}
+	
+	.form-input-textarea {
+		width:100%!important;
+	}
 }
 
 @media screen and (max-width: 1024px) {
@@ -98,6 +106,8 @@
 	.calendar {
 		padding-left: 0px;
 	}
+	
+	
 }
 
 @media ( max-width : 880px) {
@@ -208,6 +218,14 @@
 	.cards li .details span:before, .cards li .details a:before {
 		display: none;
 	}
+	
+	.filiales-container .form_input, .secteurs-container .form_input, .content-container .form_input {
+		width:80%!important;
+	}
+	
+	.form-input-textarea {
+		width:100%!important;
+	}
 }
 
 @media ( max-width : 550px) {
@@ -222,6 +240,10 @@
 	.filiales-container .form_input, .secteurs-container .form_input, .content-container .form_input {
 		width:100%!important;
 	}
+	
+	.form-input-textarea {
+		width:100%!important;
+	}
 }
 
 @media ( max-width : 480px) {
@@ -233,6 +255,9 @@
 		width:115px!important;
 	}
 	
+	.form-input-textarea {
+		width:100%!important;
+	}
 }
 
 @media ( max-width : 350px) {

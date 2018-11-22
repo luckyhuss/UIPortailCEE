@@ -115,7 +115,7 @@
 								<div class="form-group">
 									<span class="form_label"><label for="texte">Texte</label></span>
 
-									<span class="form_input"> <textarea class="form-textarea" rows="5" ></textarea> </span>
+									<span class="form_input" style="width:100%!important"> <textarea id="summernote-secteur" class="form-textarea" rows="5"  ></textarea> </span>
 
 								</div>
 							</div>
@@ -140,5 +140,4 @@
 		</div>
 	</div>
 </div>
-
 

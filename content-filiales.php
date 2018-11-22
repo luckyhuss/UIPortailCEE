@@ -14,7 +14,7 @@
 
 						<span class="form_input"> <select class="form-control">
 								<option value="0"></option>
-								<option value="1">Filiale test test test maintenantisa test 1</option>
+								<option value="1">Filiale test test </option>
 								<option value="2">Filiale 2</option>
 								<option value="3">Filiale 3</option>
 								<option value="4">Filiale 4</option>
@@ -112,7 +112,7 @@
 								<div class="form-group">
 									<span class="form_label"><label for="texte">Texte</label></span>
 
-									<span class="form_input"> <textarea class="form-textarea" rows="5" ></textarea> </span>
+									<span class="form_input" style="width:100%!important"> <textarea id="summernote-filiale" class="form-textarea" rows="5" ></textarea> </span>
 
 								</div>
 							</div>
@@ -137,5 +137,7 @@
 		</div>
 	</div>
 </div>
+
+
 
 

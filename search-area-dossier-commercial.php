@@ -26,7 +26,7 @@
 							</ul>
 						</div>
 
-						<div class="row">
+						<!-- div class="row">
 
 							<div class="col-md-4 input_holder">
 								<div class="form-group">
@@ -44,7 +44,7 @@
 								</div>
 							</div>
 
-						</div>
+						</div -->
 
 						<div class="row">
 							<div class="col-md-4 input_holder">

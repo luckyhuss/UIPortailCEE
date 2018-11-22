@@ -77,7 +77,7 @@
 <script>
 $(function() {
         var msFiliale = $('#msFiliale').magicSuggest({
-          data: [{"id":"value","name":"Professional"},{"id":"value 2","name":"Professional 2"}, 'Commercial','Professional','B22B','Comm2ercial','Pro2fessional']
+          data: [{"id":"367","name":"IND-UT-117"},{"id":"373","name":"IND-UT-116"},{"id":"405","name":"IND-UT-113"},{"id":"443","name":"IND-BA-112"},{"id":"445","name":"IND-UT-117"},{"id":"457","name":"IND-UT-115"},{"id":"462","name":"IND-UT-102"},{"id":"464","name":"BAT-TH-112"},{"id":"479","name":"BAT-TH-134"},{"id":"481","name":"BAT-TH-145"},{"id":"499","name":"BAT-EQ-130"}]
         });
 
         var msOperation = $('#msOperation').magicSuggest({
@@ -88,7 +88,7 @@ $(function() {
             data: ['B2BOper','CommercialOper','ProfessionalOper','B22BOper','Comm2ercialOper','Pro2fessionalOper']
           });
 
-        $(msBeneficiaire).on('selectionchange', function(){
+        $(msFiliale).on('selectionchange', function(){
         	  alert(JSON.stringify(this.getSelection()));
         	});
       });
