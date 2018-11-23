@@ -430,7 +430,7 @@ div.each-row{
 	text-align: right;
 }
 
-.search_area .submit_button_holder button {
+.search_area .submit_button_holder button, .critereAsaisirPanel .submit_button_holder button{
 	position: absolute;
 	top: 12px;
 	right: 15px;
@@ -2049,7 +2049,7 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 }
 
 @media ( min-width : 992px) {
-	.dateEstimeeCommande, .stat {
+	.dateEstimeeCommande, .RemunerationRefEstiméePanel {
 		margin-left: 0px;
 		padding-left: 0px;
 		margin-bottom: 25px;
@@ -2093,10 +2093,24 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
     font-size: 20px;
   }
 
-.ajouter_operation .submit_button{
-	background-color: #ddd !important;
-	border: 2px solid #004097;
-	border-radius: 2px;
+.ajouter_operation .btn-circle{
+    background-color: #e00032 !important;
+    border: 3px solid #ddd;
+    color: white;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+}
+
+.ajouter_operation .btn_operation{
+    background-color: white !important;
+    border: 1px solid #e00032;
+    width: 50%;
+    text-align: left;
+}
+
+.ajouter_operation{
+	margin-bottom: 15px;
 }
 
 .form-input-textarea {
@@ -2113,3 +2127,69 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 }
 
 
+.choisirOperationPanel{
+	padding:0px;
+}
+
+.resultatOperationPanel, .critereAsaisirPanel{
+	padding: 0px 0px 2px 0px;
+}
+
+.RemunerationRefEstiméePanel, .dateEstimeeCommande{
+	padding: 0px 0px 0px 10px;
+}
+
+.datepicker,
+.table-condensed {
+    width: 100%;
+}
+
+.ajouter_operation .btn:before {
+    position: absolute;
+    left: -1.3em;
+    top: 52%;
+    margin-top: -1.3em;
+    height: 35px;
+    width: 35px;
+    line-height: 25px;
+    border: 5px solid #ddd;
+    text-align: center;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    color: #FFF;
+}
+
+ .ajouter_operation .btn:active:focus, .ajouter_operation .btn:focus {
+    outline: none;
+}
+
+#infoImportanteModal .modal-dialog{
+    overflow-y: initial !important
+}
+
+#infoImportanteModal .modal-body {
+    max-height: 85px;
+    overflow-y: auto;
+}
+
+#infoImportanteModal .modal-footer .submit_button {
+	background-color: #ccc !important;
+	margin-bottom: 5px;
+	font-size: 10px;
+}
+
+#infoImportanteModal .btn:active:focus, #infoImportanteModal .btn:focus{
+	outline: none;
+}
+
+#infoImportanteModal .btn-circle {
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    padding: 2px 0;
+}
+
+#infoImportanteModal .modal-plus{
+	margin-top: 3px;
+}

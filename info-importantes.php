@@ -120,15 +120,27 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
-                <h4 class="modal-title" id="myModalLabel">Détail de l'information</h4>
+                <h4 class="modal-title" id="myModalLabel">Signature électronique – modification du mail via UNIVERSIGN</h4>
             </div>
     
             <div class="modal-body">
-                <span>Information à fournir par la MOA this is a test this is a test this is a test this is a test this is a test</span>
+                <span>Désormais, lors de l’envoi de l’attestation sur l’honneur via UNIVERSIGN, l’objet mentionnera le nom et le logo de la filiale. </span>
+                <div class="modal-plus displayed">
+                    <span>Détail de la nouvelle fiche</span>
+                </div>
             </div>
     
-            <div class="modal-footer"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn submit_button btn-circle btn-lg add" title="" style=float:right><i class="glyphicon glyphicon-plus"></i></button>
+            </div>
         </div>
     </div>
 </div>
 <!-- Modal  -->
+
+<script>
+    $('button.add').on('click', function(){
+        $("#infoImportanteModal .displayed").toggleClass("display", "block");
+        $(this).find('i').toggleClass('glyphicon glyphicon-plus glyphicon glyphicon-minus')
+    });
+</script>
