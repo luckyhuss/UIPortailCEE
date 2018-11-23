@@ -906,15 +906,24 @@ caption {
 }
 
 
-#msBeneficiaire, #msOperation, #msFiliale , #selectFiliales{
+#selectFiliales {
 	width:100%;
  	height:100%;
 }
 
-#recherchePiloterActivite .row .input_holder .form-group .form-control {
+#recherchePiloterActivite .form-control {
 	width:100%;
  	height:100%;
 }
+
+#recherchePiloterActivite .submit_button_holder {
+	margin-top : -10px; 
+}
+
+#collapseFiltre .panel-body {
+	padding-bottom : 10px;
+}
+
 
 
 .ms-ctn .ms-trigger .ms-trigger-ico {    
@@ -1302,11 +1311,11 @@ ul.cards-container {
 	border-color: red !important;
 }
 
-#formSearchBar ul {
+#formSearchBar ul, #recherchePiloterActivite ul {
 	padding-left: 30px;
 }
 
-#formSearchBar li {
+#formSearchBar li, #recherchePiloterActivite li {
 	list-style: circle;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;

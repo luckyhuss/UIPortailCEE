@@ -26,25 +26,6 @@
 							</ul>
 						</div>
 
-						<!-- div class="row">
-
-							<div class="col-md-4 input_holder">
-								<div class="form-group">
-									<span class="form_label"><label for="Dossier">Dossier</label></span>
-									<span class="form_input"><input type="radio"
-										name="type-dossier-rad"></span>
-								</div>
-							</div>
-
-							<div class="col-md-4 input_holder" style="padding-bottom: 0px">
-								<div class="form-group">
-									<span class="form_label"><label for="Action">Action</label></span>
-									<span class="form_input"><input type="radio"
-										name="type-dossier-rad"></span>
-								</div>
-							</div>
-
-						</div -->
 
 						<div class="row">
 							<div class="col-md-4 input_holder">

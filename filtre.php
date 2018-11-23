@@ -14,15 +14,17 @@
 
 				<div class="search_area">
 
-					<form id="formSearchBar" class="form_search_bar form-inline"
-						action="#" method="POST">
+					<form id="recherchePiloterActivite"
+						class="form_search_bar form-inline" action="#" method="POST">
 						<div class="text-danger validation-summary-errors"
 							data-valmsg-summary="true">
 							<ul>
 								<li>Choisir au moins un filtre</li>
 							</ul>
 						</div>
-						<div class="row each-row">
+
+
+						<div class="row">
 							<div class="col-md-6 input_holder">
 								<div class="form-group">
 									<span class="form_label"><label for="Filiales">Filiales</label></span>
@@ -36,8 +38,8 @@
 									<div id="msOperation" class="form-control"></div>
 								</div>
 							</div>
-						</div>
-						<div class="row each-row">
+
+
 							<div class="col-md-6 input_holder">
 								<div class="form-group">
 									<span class="form_label"><label for="Beneficiaires">Bénéficiaires</label></span>
@@ -45,26 +47,14 @@
 								</div>
 							</div>
 
-
-
-							<!-- <div class="col-md-6 graph_swap">
-                                <div class="form-group">
-                                    <span class="form_label"><label for="SirenB2B">Change Graph</label></span>
-                                    <span class="form_input">
-                                    <select class="form-control select-chart">
-                                            <option value="1">En Cours</option>
-                                            <option value="2">Deposés</option>
-                                            <option value="4">Payé</option>
-                                        </select>
-                                    </span>
-                                </div>
-                            </div> -->
-
+							
 
 							<div class="col-md-12 submit_button_holder">
 								<button type="submit" class="btn btn-primary submit_button">Rechercher</button>
 							</div>
+
 						</div>
+
 
 					</form>
 				</div>
@@ -85,6 +75,10 @@ $(function() {
           });
 
         var msBeneficiaire = $('#msBeneficiaire').magicSuggest({
+            data: ['B2BOper','CommercialOper','ProfessionalOper','B22BOper','Comm2ercialOper','Pro2fessionalOper']
+          });
+
+        var msfiltre = $('#msfiltre').magicSuggest({
             data: ['B2BOper','CommercialOper','ProfessionalOper','B22BOper','Comm2ercialOper','Pro2fessionalOper']
           });
 
