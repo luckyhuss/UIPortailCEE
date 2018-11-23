@@ -446,6 +446,7 @@ div.each-row{
 	#dossiersEnCours tbody,  #dossiersDeposes tbody,
 	 #dossiersPayes tbody, 
 	#listeDossiers tbody, #dossiersCalendrier tbody,
+	#listUtilisateur tbody, #listUtilisateur tbody,
 	 #information_autres tbody,
 	 #resultatFicheRecapTable tbody, 
 	#InfoSocieteFiche
@@ -466,7 +467,7 @@ div.each-row{
 	#dossiersDeposes thead, #dossiersPayes thead,  #listeDossiers thead, #dossiersCalendrier thead,
 	#information_autres thead, #resultatFicheRecapTable thead, #InfoSocieteFiche thead, #signatureElectroniqueFiche thead, 
 	#conventionsFiche thead,  #infoActiviteFiche thead, #operationsFiche thead, #resultatRechercherDossier thead,
-	#simulationEnregistree thead, #resultatRechercheSim thead {
+	#simulationEnregistree thead, #resultatRechercheSim thead, #listUtilisateur thead {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #838383;
@@ -906,6 +907,11 @@ caption {
 
 
 #msBeneficiaire, #msOperation, #msFiliale , #selectFiliales{
+	width:100%;
+ 	height:100%;
+}
+
+#recherchePiloterActivite .row .input_holder .form-group .form-control {
 	width:100%;
  	height:100%;
 }
@@ -2001,7 +2007,7 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 .filiales-container .form_input, .secteurs-container .form_input, .content-container .form_input {
 	padding-left: 0; 
 	padding-right: 10px; 
-	width: 30%; 
+	width: 80%; 
 	padding-bottom: 10px;
 }
 
@@ -2192,4 +2198,9 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 
 #infoImportanteModal .modal-plus{
 	margin-top: 3px;
+}
+/******************************/
+/*      Exporting Excel 	  */
+#collapseReportingXLS .panel-body {
+	padding-left : 10px;
 }

@@ -52,7 +52,7 @@
 
 <script>
     $(document).ready(function() {
-        $('#summernote-filiale,#summernote-secteur').summernote({
+        $('#summernote-filiales, #summernote-secteurs').summernote({
         	height: 200, 
         	toolbar: [
                 ["style", ["style"]],

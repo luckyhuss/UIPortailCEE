@@ -250,7 +250,7 @@ input[type='checkbox']:checked:after {
 }    
 
 .sous-menu.active-link, #admin .sous-menu:hover {
-	background: #fb416b!important;
+	background: #4b96cd!important;
 }
 
 .sous-menu .menu_title {
@@ -288,4 +288,9 @@ input[type='checkbox']:checked:after {
 	margin-left:20px;
 }
 
-
+/* 
+.dataTables_filter {
+   width: 50%;
+   float: right;
+   text-align: right;
+} */

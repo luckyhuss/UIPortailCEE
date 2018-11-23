@@ -11,15 +11,15 @@
 
 		<div id="infoCee" class="panel-collapse collapse in">
 			<div class="panel-body">
-			
-			<div class="row">
+
+				<div class="row">
 					<div class="col-md-12 data_table_holder">
-						<table id="resultatRecherche"
+						<table id="listUtilisateur"
 							class="table table-striped table-bordered nowrap"
 							style="width: 100%">
 							<thead>
 								<tr>
-                                    <th>Prénom</th>
+									<th>Prénom</th>
 									<th>Nom</th>
 									<th>Email</th>
 									<th>ID Gigya</th>
@@ -31,7 +31,31 @@
 							</thead>
 							<tbody>
 							
-								<?php include("listeutilisateur.php"); ?>
+								<?php
+                                for ($n = 0; $n <= 23; $n ++) {
+                        
+                                    ?>
+
+								<tr>
+									<td>John <?=$n?></td>
+									<td>Smith</td>
+									<td>jjohn@test.com</td>
+									<td>dr-23-3e-das-67</td>
+									<td>dr-23-3e-das-67</td>
+									<td>GFX</td>
+									<td class="numcol">Oui</td>
+									<td class="iconCol"><a href="javascript:void(0)"
+										onclick="displayDetailDossier();"><i
+											class="glyphicon glyphicon-edit" data-toggle="collapse"
+											data-target="#collapseDetailDossier"></i></a></td>
+								</tr>
+
+
+								<?php }
+								
+								include("listeUtilisateur.php"); 
+								?>
+
 								
 								
 							</tbody>
@@ -39,8 +63,8 @@
 
 					</div>
 				</div>
-			
-			
+
+
 			</div>
 		</div>
 	</div>

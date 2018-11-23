@@ -188,12 +188,6 @@ $(function () {
 
 function setNavigation() {
 
-    var path = window.location.pathname;
-    path = path.replace(/\/$/, "");
-    path = decodeURIComponent(path);
-
-   	var index = window.location.pathname.split("/").pop();
-
 
    	$( ".nav-menu" ).click(function(e) {
    		e.preventDefault();
@@ -201,13 +195,13 @@ function setNavigation() {
    		
    		var href = $('a', this).attr('href');
    		var id = $('a', this).attr('id');
-   		if(id != undefined) {
-   			window.location.href = '/uiportailcee?pageLoaded=' + id,true;
-   	    }
+   		
 
 	    if(id == undefined) {
     	    $( "div #admin" ).toggleClass( "in" );
-  	    }
+  	    }else {
+   			window.location.href = '/uiportailcee?pageLoaded=' + id,true;
+   	    }
 
    	});
    	
