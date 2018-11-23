@@ -40,7 +40,8 @@
 					method="POST">
 	<?php 
 	$summernote = "filiales";
-	include ('admin-content-detail.php'); ?>
+	include ('admin-content-detail.php'); 
+	?>
     
 
 	<div class="row">

@@ -5,7 +5,7 @@
 			<li class="tabs-pane"><a href="#tabFiliale" data-toggle="tab">Filiales</a></li>
 		</ul>
 	</div>
-	<div class="panel-body">
+	<div class="panel-body tabs-gest-contenu">
 		<div class="tab-content">
 			
 			<div class="tab-pane fade in active" id="tabSecteur">

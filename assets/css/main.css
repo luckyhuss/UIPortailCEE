@@ -2029,6 +2029,7 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 	display:flex;
   	justify-content:flex-end;
   	align-items:center; 
+  	margin-top:10px;
 }
 
 button[name='btn-sauvegarder'], button[name='btn-annuler'] {
@@ -2042,6 +2043,10 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 .form-textarea {
 	border-radius:10px;
 	width:100%;	
+}
+
+.tabs-gest-contenu {
+	padding-bottom:0px;		
 }
 
 
