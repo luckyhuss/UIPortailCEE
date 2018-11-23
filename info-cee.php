@@ -111,14 +111,40 @@
 <!-- DOCUMENTS -->
 <div class="panel-group">
     <div class="panel panel-default">
-
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <span class="panel_header_element"><a data-toggle="collapse" href="#collapseConsulterFiche">Fiches</a></span>
+            <span class="panel_header_element"><a data-toggle="collapse" href="#collapseConsulterFiche"><i class="glyphicon glyphicon-save-file"></i></a></span>
+        </h4>
+    </div>
         <div id="collapseConsulterFiche" class="panel-collapse collapse in">
             <div class="panel-body">
-                <span>Consulter les fiches : <a class="aLink" target="_blank" href="http://calculateur-cee.ademe.fr/user/fiches/BAR">ADEME CEE</a></span>
-            </div>
-        </div>
+                <span class="consulterFiche">Consulter les fiches : <a class="aLink" target="_blank" href="http://calculateur-cee.ademe.fr/user/fiches/BAR">ADEME CEE</a></span>
 
+            <div class="kits">
+                <div class="col-md-4 input_holder">
+                    <div class="form-group">
+                        <span class="form_label"><label for="ChoisirKits">Kits</label></span> 
+                        <span class="form_input" > 
+                            <select class="form-control">
+                                <option value='0'>Choisir opération/ fiche</option>
+                                <option value='1'>Kits 1</option>
+                                <option value='2'>Kits 2</option>
+                                <option value='3'>Kits 3</option>
+                                <option value='4'>Kits 4</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-4 visualiserKit">
+                    <span class="panel_header_element"><a>Kits</a></span>
+                    <span class="panel_header_element"><a><i class="glyphicon glyphicon-download-alt" rel="tooltip" title="Télécharger kit"></i></a></span>
+                </div>
+            </div>
+
+        </div>
     </div>
+</div>
 </div>
 
 <div class="panel-group">

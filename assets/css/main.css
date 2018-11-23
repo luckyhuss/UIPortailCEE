@@ -1177,7 +1177,6 @@ ul.cards-container {
 #collapseConsulterFiche {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
-	margin: 8px;
 	font-size: 16px;
 }
 
@@ -2226,4 +2225,12 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 
 .critere-form-group {
 width: 100%;
+}
+
+#collapseConsulterFiche .consulterFiche{
+	margin: 17px;
+}
+
+#collapseConsulterFiche .kits{
+	margin-top: 25px;
 }
