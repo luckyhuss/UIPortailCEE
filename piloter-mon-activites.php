@@ -29,28 +29,6 @@
 				<div class="row">
 
 
-					<!-- /*
-<div class="col-md-4 input_holder">
-								<div class="form-group">
-									<span class="form_label"><label for="StatutPortail">Statut Portail</label></span> 
-											
-											<span class="form_input"> 
-    											<select class="form-control">
-    												<option value="0"></option>
-        											<option value="1">Statut 1</option>
-        											<option value="2">Statut 2</option>
-        											<option value="3">Statut 3</option>
-        											<option value="4">Statut 4</option>
-            									</select>
-            									</span>
-        									
-								</div>
-							</div>
-
-*/ -->
-
-
-
 					<div class="col-md-12 graphHeader">
 						<div class="col-md-6 form-group">
 							<span class="form_label"><label for="statut">Statut</label></span>
@@ -71,9 +49,6 @@
 					<div id="chartContainer" class="col-md-8">
 						<canvas id="myChart"></canvas>
 					</div>
-
-
-
 
 				</div>
 
@@ -109,11 +84,10 @@
 					method="POST">
 
 					<ul class="exporter-container">
-						<li class="filter-item float-item"
-							style="margin-right: 0px; height: 50px">
-							<div class="form-group" style="width: 100%">
+						<li class="filter-item float-item label-critere_holder">
+							<div class="form-group critere-form-group" >
 								<span class="form_label"><label for="critere">Critères</label></span>
-								<div class="form_input" style="width: 100%">
+								<div class="form_input critere-form_input">
 									<select class="form-control">
 										<option value='0'></option>
 										<option value='1'>Critères 1</option>
@@ -124,8 +98,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="filter-item float-item"
-							style="margin-right: 0px; width: 120px !important">
+						<li class="filter-item float-item btn-exporter-container">
 							<div class="submit_button_holder">
 								<button type="submit" class="btn btn-primary submit_button"
 									name="btn-exporter">Exporter</button>

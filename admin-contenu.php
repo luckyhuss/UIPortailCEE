@@ -1,20 +1,4 @@
-<div class="panel-group">
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h4 class="panel-title">
-				<span class="panel_header_element"><a data-toggle="collapse"
-					href="#infoCee">Gestion Contenu</a></span> <span
-					class="panel_header_element"><a data-toggle="collapse"
-					href="#infoCee"><i class="glyphicon glyphicon-list"></i></a></span>
-			</h4>
-		</div>
-
-		<div id="infoCee" class="panel-collapse collapse in">
-			<div class="panel-body">
-
-
 <div class="panel with-nav-tabs panel-default">
-   
 	<div class="panel-heading tabs-administration">
 		<ul class="nav nav-tabs">
 			<li class="tabs-pane active"><a href="#tabSecteur" data-toggle="tab">Secteurs</a></li>
@@ -37,11 +21,6 @@
 			</div>
 		</div>
 	</div>
-</div>
-
-</div>
-</div>
-</div>
 </div>
 
 

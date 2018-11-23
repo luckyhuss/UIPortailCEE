@@ -73,7 +73,7 @@
 						
 						<div class="col-md-6 input_holder">
 							<div class="form-group">
-								<span class="form_label"><label for="zones">Sous blocs</label></span>
+								<span class="form_label"><label for="zones">Sous-blocs</label></span>
 
 								<span class="form_input"> <select class="form-control">
 										<option value='0'></option>

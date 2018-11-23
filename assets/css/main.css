@@ -2204,3 +2204,21 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 #collapseReportingXLS .panel-body {
 	padding-left : 10px;
 }
+
+.btn-exporter-container {
+	margin-right: 0px; 
+	width: 120px !important
+}
+
+.label-critere_holder {
+	margin-right: 0px; 
+	height: 50px
+}
+
+.critere-form_input {
+	width:100%;
+}
+
+.critere-form-group {
+width: 100%;
+}
