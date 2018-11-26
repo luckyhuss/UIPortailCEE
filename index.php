@@ -78,6 +78,7 @@ body { background-color: #fafafa; }
 	   $activePiloter = "";
 	   $activeInfo = "";
 	   $activeAdminUtilisateur = "";
+	   $activeAdminPermission = "";
 	   $activeAdminContenu = "";
 	   $openAdmin = "";
 	   $activeAdmin = "";
@@ -127,14 +128,20 @@ body { background-color: #fafafa; }
 	               $pageLoaded = "admin-utilisateur";
 	               $openAdmin = "in";
 	               break;
+	           case 'AdminPermission':
+	               $activeAdmin = "active-link";
+	               $activeAdminPermission = "active-link";
+	               $pageLoaded = "admin-permission";
+	               $openAdmin = "in";
+	               break;
 	           default:
                    $activeHome = "active-link";
-                   $pageLoaded = "accueil";
+                   $pageLoaded = ($cssLoaded == 'ADMIN') ? "admin-accueil":"accueil";
 	       }
 	       
 	   }else{
 	       $activeHome = "active-link";
-	       $pageLoaded = "accueil";
+	       $pageLoaded = ($cssLoaded == 'ADMIN') ? "admin-accueil":"accueil";
 	   }
 	?>
 

@@ -5,7 +5,7 @@
 			<span class="panel_header_element"><a data-toggle="collapse"
 				href="#collapseContent">Contenu</a></span> <span
 				class="panel_header_element"><a data-toggle="collapse"
-				href="#collapseContent"><i class="glyphicon glyphicon-list"></i></a></span>
+				href="#collapseContent"><i class="glyphicon glyphicon-leaf"></i></a></span>
 		</h4>
 	</div>
 
@@ -13,6 +13,7 @@
 		<div class="panel-body">
 
 			<!-- Content of block Content -->
+
 
 
 			<div class="content-container">
@@ -91,10 +92,21 @@
 
 						<div class="col-md-12 input_holder">
 							<div class="form-group">
-								<span class="form_label"><label for="texte">Texte</label></span>
+								<span class="form_label"><label for="texte">Corps</label></span>
 
 								<span class="form_input" style="width: 100% !important"> <textarea
 										id="summernote-<?=$summernote ?>" class="form-textarea" rows="5"></textarea>
+								</span>
+
+							</div>
+						</div>
+						
+						<div class="col-md-12 input_holder">
+							<div class="form-group">
+								<span class="form_label"><label for="texte">CorpsPlus</label></span>
+
+								<span class="form_input" style="width: 100% !important"> <textarea
+										id="summernoteplus-<?=$summernote ?>" class="form-textarea" rows="5"></textarea>
 								</span>
 
 							</div>

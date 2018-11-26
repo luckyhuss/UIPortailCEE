@@ -365,9 +365,12 @@ ul, li {
 	width: 100%;
 	padding: 0px;
 	border-radius: 10px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 
+.user_area {
+	padding-bottom:15px;	
+}
 .search_area .row {
 	margin-bottom: 10px;
 }
@@ -376,7 +379,8 @@ ul, li {
 	margin-bottom: 0;
 }
 
-.form_search_bar .form-group, .form_admin_content .form-group, .form_admin_filiales .form-group, .form_admin_secteurs .form-group {
+.form_search_bar .form-group, .form_admin_content .form-group, .form_admin_filiales .form-group, 
+.form_admin_secteurs .form-group, .form_user_bar .form-group {
 	width: 100%;
 	display: flex;
 	font-family: 'Open Sans', sans-serif;
@@ -430,10 +434,24 @@ div.each-row{
 	text-align: right;
 }
 
-.search_area .submit_button_holder button, .critereAsaisirPanel .submit_button_holder button{
+.search_area .submit_button_holder button, .critereAsaisirPanel .submit_button_holder button {
 	position: absolute;
 	top: 12px;
 	right: 15px;
+}
+
+#gestUtilisateur .submit_button_holder button, #gestAddEditUtilisateur .submit_button_holder button, #gestAddEditPermission .submit_button_holder button {
+	position: relative;
+	float:right;
+	margin-right:0px;
+}
+
+#gestUtilisateur .submit_button_holder button, #gestPermission .submit_button_holder button {
+	margin-bottom:5px;
+}
+
+#gestAddEditUtilisateur .panel-body, #gestAddEditPermission .panel-body {
+	padding-bottom:0px;
 }
 
  #resultatRecherche tbody,
@@ -911,7 +929,7 @@ caption {
  	height:100%;
 }
 
-#recherchePiloterActivite .form-control {
+#recherchePiloterActivite .form-control, #gestPermission_content .form-control {
 	width:100%;
  	height:100%;
 }
@@ -1311,11 +1329,13 @@ ul.cards-container {
 	border-color: red !important;
 }
 
-#formSearchBar ul, #recherchePiloterActivite ul {
+#formSearchBar ul, #recherchePiloterActivite ul, #formUser ul, #form_content ul, .form_admin_contenu ul, 
+#gestPermission_content ul, #gestUtilisateur_content ul {
 	padding-left: 30px;
 }
 
-#formSearchBar li, #recherchePiloterActivite li {
+#formSearchBar li, #recherchePiloterActivite li , #formUser li, #form_content li, .form_admin_contenu li, 
+#gestPermission_content li, #gestUtilisateur_content li {
 	list-style: circle;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
@@ -1328,6 +1348,7 @@ ul.cards-container {
 	border-color: #ebccd1;
 	margin-bottom: 20px;
 	border-radius: 4px;
+	font-weight:500;
 }
 
 .disabled-icon {
@@ -2048,14 +2069,14 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 
 
 .filiales-container, .secteurs-container {
-	padding: 10px 0px 10px 15px;
+	padding: 10px 15px 10px 15px;
     height: 60px;
 }
 
 .filiales-container .form_input, .secteurs-container .form_input, .content-container .form_input {
-	padding-left: 0; 
-	padding-right: 10px; 
-	width: 80%; 
+	/* padding-left: 0; 
+	padding-right: 15px;  */
+	width: 100%; 
 	padding-bottom: 10px;
 }
 
@@ -2080,13 +2101,21 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
   	margin-top:10px;
 }
 
+.admin-btn-newuser {
+	padding-left: 15px;
+	display:flex;
+  	justify-content:flex-end;
+  	align-items:center; 
+  	margin-top:10px;
+}
+
 button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	margin-right:10px;
 }
 
-.form_admin_content .input_holder {
-	padding-right:0px;
-}
+/* .form_admin_content .input_holder {
+	padding-right:15px!important;
+} */
 
 .form-textarea {
 	border-radius:10px;
@@ -2094,8 +2123,13 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 }
 
 .tabs-gest-contenu {
-	padding-bottom:0px;		
+	padding-bottom:0px;
+	background:#fff;
+	margin-right:-5px;
+	margin-left:-5px;		
 }
+
+
 
 
 /* Page Rechercher */
@@ -2290,3 +2324,22 @@ width: 100%;
 #collapseConsulterFiche .kits{
 	margin-top: 25px;
 }
+
+#listUtilisateur_paginate {
+	margin-right:-20px!important;
+	padding-right:5px!important;
+}
+
+.listUtilisateur_processing {
+	border:1px solid red;
+}
+
+
+/*******************************************************************/
+***************************    All forms   **************************
+#gestPermission_content .form_input , #gestUtilisateur_content .form_input {
+	width:100%!important;
+	padding-right:0px;
+}
+
+

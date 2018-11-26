@@ -135,6 +135,15 @@
 								class="menu_title">Gestion Utilisateur</span></a>
 						</h4>
 					</div>
+					<div
+						class="panel-heading nav-menu sous-menu <?php echo $activeAdminPermission ?>">
+						<h4 class="panel-title">
+							<a href="javascript:void()" id="AdminPermission"><span
+								class="glyphicon glyphicon" aria-hidden="true"></span><span class="glyphicon glyphicon-wrench"
+							aria-hidden="true"></span> <span
+								class="menu_title">Gestion Permission</span></a>
+						</h4>
+					</div>
 				</div>
 			</div>
 		</div>

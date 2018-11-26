@@ -1,3 +1,11 @@
+<div class="form_admin_contenu">
+	<div class="text-danger validation-summary-errors"
+		data-valmsg-summary="true">
+		<ul>
+			<li>Text to be defined</li>
+		</ul>
+	</div>
+</div>
 <div class="panel-group">
 	<div class="panel panel-default">
 
