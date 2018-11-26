@@ -1468,7 +1468,7 @@ div.dataTables_wrapper div.dataTables_paginate {
 	color: #ffffff;
 }
 
-.numberlist a:before {
+.numberlist li a:before {
 	content: counter(li);
 	counter-increment: li;
 	position: absolute;
@@ -1509,6 +1509,47 @@ div.dataTables_wrapper div.dataTables_paginate {
 	width: 40px;
 	float: left;
 	margin: 0 10px 0 0;
+}
+
+.numberlist .tabs-view .panel {
+    display: none;
+    max-height: 215px;
+	overflow-y: auto;
+	box-shadow: none;
+}
+.numberlist .tabs-view .panel.current {
+  display: block !important;
+}
+
+.numberlist .accordion-view #navlist > li > a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.numberlist #navlist > li > a:focus {
+    outline: none;
+}
+
+.numberlist .accordion-view #panels {
+  display: none;
+}
+
+.numberlist .accordion-view .panel {
+    display: none;
+    width: 100%;
+    border: 1px solid #004097;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 18px;
+	border-radius: 10px;
+	height: 180px;
+    overflow-x: auto;
+}
+
+.numberlist .accordion-view .panel.current {
+  display: block;
 }
 
 /* End css list with number circle background -------------- */
@@ -1865,7 +1906,7 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 	padding-bottom: 2px;
 	margin-top: 15px;
 	margin-left: 4px;
-	height: 143px;
+	height: 222px;
 }
 
 .numberlist .nav-pills a:hover {
@@ -2193,9 +2234,10 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 }
 
 #infoImportanteModal .modal-footer .submit_button {
-	background-color: #ccc !important;
-	margin-bottom: 5px;
-	font-size: 10px;
+    background-color: #ccc !important;
+    margin-bottom: 5px;
+    font-size: 10px;
+    margin-top: 10px;
 }
 
 #infoImportanteModal .btn:active:focus, #infoImportanteModal .btn:focus{
@@ -2203,10 +2245,16 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 }
 
 #infoImportanteModal .btn-circle {
-    width: 23px;
+	width: 23px;
     height: 23px;
     text-align: center;
-    padding: 2px 0;
+    padding: 4px 6px;
+}
+
+#infoImportanteModal .btn-circle:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
 }
 
 #infoImportanteModal .modal-plus{
