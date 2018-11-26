@@ -239,3 +239,7 @@ input[type='checkbox']:checked:after {
     border: 1px solid #df5952;
     background: #df5952;
 }
+
+.numberlist .accordion-view .panel {
+	border: 1px solid #df5952;
+}

@@ -294,3 +294,15 @@ input[type='checkbox']:checked:after {
    float: right;
    text-align: right;
 } */
+.ajouter_operation .btn:hover {
+    color: #ffffff;
+    background: #e00032;
+}
+
+.ajouter_operation .btn:before {
+    background: #e00032;
+}
+
+.numberlist .accordion-view .panel {
+	border: 1px solid #e00032;
+}

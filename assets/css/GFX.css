@@ -246,3 +246,7 @@ input[type='checkbox']:checked:after {
     border: 1px solid #44b749;
     background: #44b749;
 }
+
+.numberlist .accordion-view .panel {
+	border: 1px solid #44b749;
+}

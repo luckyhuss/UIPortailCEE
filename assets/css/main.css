@@ -1539,7 +1539,6 @@ div.dataTables_wrapper div.dataTables_paginate {
 .numberlist .accordion-view .panel {
     display: none;
     width: 100%;
-    border: 1px solid #004097;
     box-sizing: border-box;
     padding: 10px;
     font-size: 18px;
