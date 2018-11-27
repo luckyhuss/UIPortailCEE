@@ -2037,9 +2037,7 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 
 
 .btn-retour {
-	top: -32px;
-    padding: 0px;
-    margin-bottom: -30px;
+   padding-left:0px;
 }
 
 /* Hiding process loader */
@@ -2099,6 +2097,15 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
   	justify-content:flex-end;
   	align-items:center; 
   	margin-top:10px;
+  	padding-right: 15px;
+}
+
+.admin-btn-voir {
+	margin-top:10px;
+}
+
+.add_margin_right {
+	margin-right:10px;
 }
 
 .admin-btn-newuser {
@@ -2194,15 +2201,33 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	width:100%!important;
 }
 
-.isa_error {
+.isa_error li {
     color: #D8000C;
     background-color: #FFD2D2;
     border-color: #ebccd1;
 	margin-bottom: 20px;
 	padding:10px;
 	border-radius: 4px;
+	list-style: none!important;
 }
 
+.isa_error ul {
+	padding-left:0px;
+}
+
+.isa_success li {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+	margin-bottom: 20px;
+	padding:10px;
+	border-radius: 4px;
+	list-style: none!important;
+}
+
+.isa_success ul {
+	padding-left:0px;
+}
 
 .choisirOperationPanel{
 	padding:0px;

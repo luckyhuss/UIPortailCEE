@@ -51,8 +51,10 @@
 									<td>500.56</td>
 									<td>10.00</td>
 									<td>500.23</td>
-									<td><a href="javascript:void(0)" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
-											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
+									<td><a href="javascript:void(0)"
+										onclick="displayDetailDossier();"><i
+											class="glyphicon glyphicon-eye-open" data-toggle="collapse"
+											data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 								<tr>
 									<td>23762328</td>
@@ -67,8 +69,10 @@
 									<td>500.56</td>
 									<td>10.00</td>
 									<td>500.23</td>
-									<td><a href="javascript:void(0)" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
-											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
+									<td><a href="javascript:void(0)"
+										onclick="displayDetailDossier();"><i
+											class="glyphicon glyphicon-eye-open" data-toggle="collapse"
+											data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 								<tr>
 									<td>23762328</td>
@@ -83,8 +87,10 @@
 									<td>500.56</td>
 									<td>10.00</td>
 									<td>500.23</td>
-									<td ><a href="javascript:void(0)" onclick="displayDetailDossier();"><i class="glyphicon glyphicon-eye-open"
-											data-toggle="collapse" data-target="#collapseDetailDossier"></i></a></td>
+									<td><a href="javascript:void(0)"
+										onclick="displayDetailDossier();"><i
+											class="glyphicon glyphicon-eye-open" data-toggle="collapse"
+											data-target="#collapseDetailDossier"></i></a></td>
 								</tr>
 							</tbody>
 						</table>
@@ -109,7 +115,8 @@
 				<span class="panel_header_element"><a data-toggle="collapse"
 					href="#collapseDetailDossier">Détail Du Dossier</a></span> <span
 					class="panel_header_element"><a data-toggle="collapse"
-					href="#collapseDetailDossier"><i class="glyphicon glyphicon-folder-open"></i></a></span>
+					href="#collapseDetailDossier"><i
+						class="glyphicon glyphicon-folder-open"></i></a></span>
 			</h4>
 		</div>
 
@@ -117,8 +124,8 @@
 			<div class="panel-body">
 
 				<div class="detailDossier">
-							
-							<div class="header_numDossier">
+
+					<div class="header_numDossier">
 						<div class="header-group">
 							<span class="header_label"><label for="numDossier">Numéro Dossier</label></span>
 							<span class="header_output">1390</span>
@@ -222,31 +229,32 @@
 								<td>Fiche 1</td>
 								<td>23762328</td>
 								<td>En cours</td>
-								<td style="text-align: center;"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open"
-										data-toggle="modal" data-target="#Modal1"></i></a></td>
+								<td style="text-align: center;"><a href="javascript:void(0)"><i
+										class="glyphicon glyphicon-eye-open" data-toggle="modal"
+										data-target="#Modal1"></i></a></td>
 							</tr>
 							<tr>
 								<td>Dossier 2</td>
 								<td>Fiche 2</td>
 								<td>23762328</td>
 								<td>En cours</td>
-								<td style="text-align: center;"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open"
-										data-toggle="modal" data-target="#Modal1"></i></a></td>
+								<td style="text-align: center;"><a href="javascript:void(0)"><i
+										class="glyphicon glyphicon-eye-open" data-toggle="modal"
+										data-target="#Modal1"></i></a></td>
 							</tr>
 							<tr>
 								<td>Dossier 3</td>
 								<td>Fiche 3</td>
 								<td>23762328</td>
 								<td>En cours</td>
-								<td style="text-align: center;"><a href="javascript:void(0)"><i class="glyphicon glyphicon-eye-open"
-										data-toggle="modal" data-target="#Modal1"></i></a></td>
+								<td style="text-align: center;"><a href="javascript:void(0)"><i
+										class="glyphicon glyphicon-eye-open" data-toggle="modal"
+										data-target="#Modal1"></i></a></td>
 							</tr>
 						</tbody>
 					</table>
-					
-					<div class="col-md-2 submit_button_holder btn-retour">
-								<button type="submit" class="btn btn-primary submit_button">Retour</button>
-							</div>
+
+
 
 					<!-- Info Beneficiaire -->
 
@@ -295,13 +303,19 @@
 </div>
 
 
+	<div class="col-md-2 submit_button_holder btn-retour">
+		<button type="submit" class="btn btn-primary submit_button">Retour</button>
+	</div>
+
+
+
 <!-- modal detail info -->
-<div class="modal fade popin-donnee" id="Modal1" tabindex="-1" role="dialog"
-	aria-labelledby="myModalLabel">
+<div class="modal fade popin-donnee" id="Modal1" tabindex="-1"
+	role="dialog" aria-labelledby="myModalLabel">
 	<div class="modal-dialog liste_critere" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-			<button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">x</button>
 				<h4 class="modal-title" id="myModalLabel">Liste Criteres</h4>
 			</div>
 
