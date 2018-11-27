@@ -571,6 +571,10 @@ label[for=docEnCours]
     width:100%!important;
 }
 
+.form_label>label[for=ChoisirKits]{
+	width: 75px;
+}
+
 .header_output {
 	font-weight: 500!important;
 	vertical-align:top;
@@ -1493,8 +1497,8 @@ div.dataTables_wrapper div.dataTables_paginate {
 	content: counter(li);
 	counter-increment: li;
 	position: absolute;
-	left: -1.3em;
-	top: 52%;
+    left: -23px;
+    top: 56%;
 	margin-top: -1.3em;
 	height: 35px;
 	width: 35px;

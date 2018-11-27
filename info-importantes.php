@@ -125,13 +125,13 @@
     
             <div class="modal-body">
                 <span>Désormais, lors de l’envoi de l’attestation sur l’honneur via UNIVERSIGN, l’objet mentionnera le nom et le logo de la filiale. </span>
-                <div class="modal-plus displayed">
-                    <span>Détail de la nouvelle fiche</span>
+                <div id= "#infoImportanteCorpsPlus" class="modal-plus displayed">
+                    <span>Détail plus</span>
                 </div>
             </div>
     
             <div class="modal-footer">
-                <button type="button" class="btn submit_button btn-circle btn-lg add" title="" style=float:right><i class="glyphicon glyphicon-plus"></i></button>
+                <button type="button" class="btn submit_button btn-circle btn-default btn-lg add" title=""><i class="glyphicon glyphicon-plus"></i></button>
             </div>
         </div>
     </div>
@@ -140,7 +140,8 @@
 
 <script>
     $('button.add').on('click', function(){
-        $("#infoImportanteModal .displayed").toggleClass("display", "block");
-        $(this).find('i').toggleClass('glyphicon glyphicon-plus glyphicon glyphicon-minus')
+        $("#infoImportanteCorpsPlus").toggleClass("displayed");
+        $(this).find('i').toggleClass('glyphicon glyphicon-plus glyphicon glyphicon-minus');
     });
+
 </script>
