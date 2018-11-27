@@ -2355,4 +2355,7 @@ width: 100%;
 	padding-right:0px;
 }
 
-
+.admin-content h1 {
+	text-align: left !important;
+	padding-left:10px;
+}
