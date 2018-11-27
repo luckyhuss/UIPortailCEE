@@ -393,6 +393,12 @@
         .removeClass('tabs-view')
         .addClass('accordion-view');
 
+        $("#panels").css("display", "none");
+
+        $( ".expand" ).click(function() {
+            $("#panels").css("display", "none");
+        });
+
         // fix the markup to be more suited for accordions
         $panels.find('.panel').each(function () {
         var panelID = this.id;
@@ -401,7 +407,7 @@
             $(assocLink.parentNode).append(this);
         }
         });
-        
+
         isAccordionView = true;
         isTabsView = false;
 
