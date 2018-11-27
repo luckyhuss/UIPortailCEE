@@ -124,9 +124,9 @@
             </div>
     
             <div class="modal-body">
-                <span>Désormais, lors de l’envoi de l’attestation sur l’honneur via UNIVERSIGN, l’objet mentionnera le nom et le logo de la filiale. </span>
-                <div id= "#infoImportanteCorpsPlus" class="modal-plus displayed">
-                    <span>Détail plus</span>
+                <span>Désormais, lors de l’envoi de l’attestation sur l’honneur via UNIVERSIGN, l’objet mentionnera le nom et le logo de la filiale. Désormais, lors de l’envoi de l’attestation sur l’honneur via UNIVERSIGN, l’objet mentionnera le nom et le logo de la filiale.</span>
+                <div id="infoImportanteCorpsPlus" class="modal-plus displayed">
+                    <span>Détail plus Désormais, lors de l’envoi de l’attestation sur l’honneur via UNIVERSIGN, l’objet mentionnera le nom et le logo de la filiale.</span>
                 </div>
             </div>
     
@@ -142,6 +142,18 @@
     $('button.add').on('click', function(){
         $("#infoImportanteCorpsPlus").toggleClass("displayed");
         $(this).find('i').toggleClass('glyphicon glyphicon-plus glyphicon glyphicon-minus');
+    });
+
+    var $menu = $('#infoImportanteModal');
+
+    $(document).mouseup(function (e) {
+    if (!$menu.is(e.target)
+    && $menu.has(e.target).length === 0)
+    {
+        $("#infoImportanteCorpsPlus").addClass("displayed");
+        $("button.add").find('i').removeClass("glyphicon glyphicon-minus");
+        $("button.add").find('i').addClass("glyphicon glyphicon-plus");
+    }
     });
 
 </script>

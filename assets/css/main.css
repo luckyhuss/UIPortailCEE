@@ -1324,8 +1324,8 @@ ul.cards-container {
 .modal-title {
 	margin-left: 12px;
 	color:#000;
-	
-	
+	font-size: 16px;
+    font-weight: 600;
 }
 
 /* validation error message */
@@ -2275,15 +2275,21 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 }
 
 #infoImportanteModal .modal-body {
-    max-height: 85px;
+    max-height: 116px;
     overflow-y: auto;
 }
 
 #infoImportanteModal .modal-footer .submit_button {
-    background-color: #ccc !important;
-    margin-bottom: 5px;
-    font-size: 10px;
+    margin-bottom: 7px;
     margin-top: 10px;
+    background-color: #fff !important;
+    border-color: #ccc;
+}
+
+#infoImportanteModal .modal-footer .btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6 !important;
+    border-color: #adadad;
 }
 
 #infoImportanteModal .btn:active:focus, #infoImportanteModal .btn:focus{
@@ -2294,7 +2300,7 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	width: 23px;
     height: 23px;
     text-align: center;
-    padding: 4px 6px;
+    padding: 1px 5px;
 }
 
 #infoImportanteModal .btn-circle:hover {
@@ -2305,6 +2311,10 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 
 #infoImportanteModal .modal-plus{
 	margin-top: 3px;
+}
+
+#infoImportanteModal .btn-circle .glyphicon {
+	font: 17px 'Open Sans', sans-serif;
 }
 /******************************/
 /*      Exporting Excel 	  */
@@ -2327,15 +2337,20 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 }
 
 .critere-form-group {
-width: 100%;
-}
-
-#collapseConsulterFiche .consulterFiche{
-	margin: 17px;
+	width: 100%;
 }
 
 #collapseConsulterFiche .kits{
 	margin-top: 25px;
+    margin-left: -15px;
+}
+
+.kits .form-group, .kits .form_input{
+	width: 100%;
+}
+
+.kits .form-group{
+	margin-bottom: 0px;
 }
 
 #listUtilisateur_paginate {

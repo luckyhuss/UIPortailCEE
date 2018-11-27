@@ -137,7 +137,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 visualiserKit">
-                    <span class="panel_header_element"><a>Kits</a></span>
+                    <span class="panel_header_element"><a>Télécharger Kit</a></span>
                     <span class="panel_header_element"><a><i class="glyphicon glyphicon-download-alt" rel="tooltip" title="Télécharger kit"></i></a></span>
                 </div>
             </div>
@@ -227,6 +227,21 @@
                                 <h4>Autre</h4>
                                 <p>
                                     <i>Information à fournir par la MOA</i><br /><br />
+                                    Qu'est ce que c'est ?
+                                    <br />
+                                    A quoi ça sert ?
+                                    <br />
+                                    Pourquoi c'est important ?
+                                    Qu'est ce que c'est ?
+                                    <br />
+                                    A quoi ça sert ?
+                                    <br />
+                                    Pourquoi c'est important ?
+                                    Qu'est ce que c'est ?
+                                    <br />
+                                    A quoi ça sert ?
+                                    <br />
+                                    Pourquoi c'est important ?
                                     Qu'est ce que c'est ?
                                     <br />
                                     A quoi ça sert ?
@@ -386,9 +401,11 @@
             $(assocLink.parentNode).append(this);
         }
         });
-
+        
         isAccordionView = true;
         isTabsView = false;
+
+
     } else if (winWidth > 991 && !isTabsView) { // SHOW TABS VIEW
         var wasAccordion = $tabContainer.hasClass('accordion-view');
         // switch to the tabs view
@@ -407,15 +424,12 @@
 
         
         $( ".expand" ).click(function() {
-        $("#panels").css("display", "block");
+            $("#panels").css("display", "block");
         });
 
         $("#panels").css({'height':($("#navlist").height()+'px')});
-
-        $(".numberlist .tabs-view .panel.current").css({'height':($("#panels").height()+'px')});
+        }
     }
-    }
-
 
 
 var $menu = $('#panels');

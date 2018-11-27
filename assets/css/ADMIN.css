@@ -322,3 +322,8 @@ input[type='checkbox']:checked:after {
     width: 50%;
     text-align: left;
 }
+
+.visualiserKit .glyphicon-download-alt{
+	color: #e00032;
+}
+

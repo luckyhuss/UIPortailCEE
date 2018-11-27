@@ -263,3 +263,7 @@ input[type='checkbox']:checked:after {
 	background-color: #004097;
 	background-image: none;
 }
+
+.visualiserKit .glyphicon-download-alt{
+	color: #004097;
+}
