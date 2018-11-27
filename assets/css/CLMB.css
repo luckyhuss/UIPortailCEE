@@ -239,3 +239,24 @@ input[type='checkbox']:checked:after {
 .numberlist .accordion-view .panel {
 	border: 1px solid #01afba;
 }
+
+.ajouter_operation .btn-circle{
+    background-color: #01afba !important;
+    border: 3px solid #ddd;
+    color: white;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+}
+
+.ajouter_operation .btn_operation{
+    background-color: white !important;
+    border: 1px solid #01afba;
+    width: 50%;
+    text-align: left;
+}
+
+.dateEstimeeCommande .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active {
+	background-color: #01afba;
+	background-image: none;
+}
