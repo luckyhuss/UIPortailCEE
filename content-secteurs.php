@@ -1,5 +1,5 @@
 <div class="form_admin_contenu">
-	<div class="text-danger validation-summary-errors"
+	<div class="isa_success"
 		data-valmsg-summary="true">
 		<ul>
 			<li>Text to be defined</li>
