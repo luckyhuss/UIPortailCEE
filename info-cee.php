@@ -409,6 +409,10 @@
         $( ".expand" ).click(function() {
         $("#panels").css("display", "block");
         });
+
+        $("#panels").css({'height':($("#navlist").height()+'px')});
+
+        $(".numberlist .tabs-view .panel.current").css({'height':($("#panels").height()+'px')});
     }
     }
 
