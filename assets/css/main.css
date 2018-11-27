@@ -2100,12 +2100,15 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 	display:flex;
   	justify-content:flex-end;
   	align-items:center; 
-  	margin-top:10px;
-  	padding-right: 15px;
+  	margin-top:0px;
+  	padding-right: 0px;
+  	margin-bottom: 10px;
 }
 
 .admin-btn-voir {
-	margin-top:10px;
+	margin-top:0px;
+	padding-left:0px;
+	margin-bottom: 10px;
 }
 
 .add_margin_right {
@@ -2373,4 +2376,25 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 .admin-content h1 {
 	text-align: left !important;
 	padding-left:10px;
+}
+
+
+legend {
+    display: block;
+    width: 190px;
+    padding: 0 10px 0px;
+    margin-bottom: 5px;
+    line-height: inherit;
+    border: 0;
+    color: #777;
+    font-size: 15px;
+    font-weight: 600;
+    /* border-bottom: 1px solid #e5e5e5; */
+}
+
+fieldset {
+    padding: .35em .625em .75em!important;
+    margin: 0 2px!important;
+    border: 1px solid silver!important;
+    border-radius:4px!important;
 }

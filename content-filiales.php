@@ -51,18 +51,18 @@
 $summernote = "filiales";
 include ('admin-content-detail.php');
 ?>
-    
 
-	<div class="row">
-				<div class="col-md-6 submit_button_holder admin-btn-voir">
-					<a class="btn btn-primary submit_button">Voir Tout</a>
 
-				</div>
-				<div class="col-md-6 submit_button_holder admin-btn-holder">
-					<a class="btn btn-primary submit_button add_margin_right">Sauvegarder</a>
-					<a class="btn btn-primary submit_button">Annuler</a>
-				</div>
+		<!-- <div class="row">
+			<div class="col-md-6 submit_button_holder admin-btn-voir">
+				<a class="btn btn-primary submit_button">Voir Tout</a>
+
 			</div>
+			<div class="col-md-6 submit_button_holder admin-btn-holder">
+				<a class="btn btn-primary submit_button add_margin_right">Sauvegarder</a>
+				<a class="btn btn-primary submit_button">Annuler</a>
+			</div>
+		</div> -->
 
 	</form>
 
