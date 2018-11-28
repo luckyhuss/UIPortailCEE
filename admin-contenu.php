@@ -20,16 +20,16 @@
 			
 			</div>
 			</div>
-			
-			<div class="col-md-6 submit_button_holder admin-btn-voir">
-                <a class="btn btn-primary submit_button">Voir Tout</a>
-            </div>
-            <div class="col-md-6 submit_button_holder admin-btn-holder">
-                <a id="save" class="btn btn-primary submit_button add_margin_right">Sauvegarder</a>
-                <a id="cancel" class="btn btn-primary submit_button">Annuler</a>
-            </div>
-			
-			
+
+			<div class="col-md-6 submit_button_holder admin-btn-voir ">
+				<a class="btn btn-primary not-active">Voir Tout</a>
+			</div>
+			<div class="col-md-6 submit_button_holder admin-btn-holder">
+				<a id="save" class="btn btn-primary submit_button add_margin_right">Sauvegarder</a>
+				<a id="cancel" class="btn btn-primary submit_button">Annuler</a>
+			</div>
+
+
 		</div>
 	</div>
 </div>
@@ -69,8 +69,8 @@
 
     $('#save').click(function() {
     	var top = document.body.getBoundingClientRect().top;
-        $("html,body").animate({ scrollTop: ((top == 0) ? 2 : 0) }, 100);
-        }); 
+        $("html,body").animate({ scrollTop: 0 }, 100);
+    }); 
     
 
     $("#contenuTabs").tabs({

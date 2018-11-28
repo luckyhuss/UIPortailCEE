@@ -75,7 +75,7 @@
 									<span class="form_label"><label for="StatutPortail">Statut
 											Portail</label></span>
 
-									<div class="form_input custom-select">
+									<div class="form_input">
 										<select class="form-control">
 											<option value='0'></option>
 											<option value='1'>Statut 1 dasd</option>

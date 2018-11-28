@@ -384,7 +384,7 @@ ul, li {
 	width: 100%;
 	display: flex;
 	font-family: 'Open Sans', sans-serif;
-	/* font-weight: 600; */
+	font-weight: normal;
 	font-size: 13px;
 	color: #303030;
 	font-size: 14px;
@@ -403,6 +403,7 @@ ul, li {
 	border-radius:10px!important;
 	
 	padding:5px 10px 5px 10px!important;
+	font-weight:600px!important;
 }
 
 .form_label>label {
@@ -2381,15 +2382,19 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 
 legend {
     display: block;
-    width: 190px;
     padding: 0 10px 0px;
     margin-bottom: 5px;
     line-height: inherit;
-    border: 0;
+    width:190px;
     color: #777;
     font-size: 15px;
     font-weight: 600;
     /* border-bottom: 1px solid #e5e5e5; */
+    
+    padding: 0.2em 0.5em;
+  	border:1px solid #ccc;
+  	text-align:left;
+  	background:#fff;
 }
 
 fieldset {
@@ -2397,4 +2402,44 @@ fieldset {
     margin: 0 2px!important;
     border: 1px solid silver!important;
     border-radius:4px!important;
+    
+    
 }
+
+.fieldset-margin-bottom {
+	margin-bottom:20px!important;
+}
+
+fieldset .header-group {
+	padding-left:0px;
+	padding-right:0px;
+	margin-bottom:10px;
+	}
+
+fieldset span.header_output {
+	max-width: 350px;
+	display: inline-block;
+ 	max-height: 50px;
+  	padding:0px;
+}
+
+
+fieldset .header_label {
+	/* width:120px!important; */
+}
+
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: #fff;
+  background:#dddddd;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border:0px;
+}	
+
+
