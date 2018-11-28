@@ -268,3 +268,11 @@ input[type='checkbox']:checked:after {
 .visualiserKit .glyphicon-download-alt{
 	color: #df5952;
 }
+
+select option {
+	background: #df5952;
+}
+
+option:not(:checked) { 
+	background-color: #FFF; 
+}

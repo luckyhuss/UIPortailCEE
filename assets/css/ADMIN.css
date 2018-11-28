@@ -327,3 +327,11 @@ input[type='checkbox']:checked:after {
 	color: #e00032;
 }
 
+select option {
+	background: #e00032;
+}
+
+option:not(:checked) { 
+	background-color: #FFF; 
+}
+
