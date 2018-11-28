@@ -2428,6 +2428,26 @@ fieldset .header_label {
 	/* width:120px!important; */
 }
 
+fieldset .signature-section, .signature-container {
+	padding:0px;
+}
+
+.signature-section {
+	margin-bottom:15px;
+}
+
+.signature-section .header-group {
+	padding-left:10px;
+}
+
+.signature-section-header {
+	margin-bottom:10px;
+	text-decoration: underline;
+	font-weight:500;
+	display:block;
+}
+
+
 
 .not-active {
   pointer-events: none;
@@ -2441,5 +2461,7 @@ fieldset .header_label {
   text-transform: uppercase;
   border:0px;
 }	
+
+
 
 
