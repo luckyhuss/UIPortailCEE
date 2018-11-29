@@ -8,8 +8,7 @@
 
 	<div class="alert fade in alert-dismissible isa_error">
 		<a href="#" class="close-alert" data-dismiss="alert"
-			aria-label="close" title="Fermer">×</a> Ceci est un exemple de
-		succès.
+			aria-label="close" title="Fermer">×</a> Ceci est un exemple d'erreur.
 	</div>
 </div>
 
