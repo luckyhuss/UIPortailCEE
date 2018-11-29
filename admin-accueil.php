@@ -1,7 +1,7 @@
-<div class="panel" style="min-height: 60vh;">
+<div class="panel" style="min-height: calc(100vh - 170px);">
 
 	<div class="admin-content">
-		<h1>Bienvenue en tant qu'administrateur</h1>
+		<h1>Bienvenue dans votre espace d'administrateur</h1>
 	</div>
 
 </div>

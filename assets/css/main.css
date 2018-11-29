@@ -2219,7 +2219,7 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	width:100%!important;
 }
 
-.isa_error li {
+.isa_error  {
     color: #D8000C;
     background-color: #FFD2D2;
     border-color: #ebccd1;
@@ -2229,11 +2229,11 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	list-style: none!important;
 }
 
-.isa_error ul {
-	padding-left:0px;
+.isa_error, .isa_success  {
+	padding-left:10px;
 }
 
-.isa_success li {
+.isa_success  {
     color: #3c763d;
     background-color: #dff0d8;
     border-color: #d6e9c6;
@@ -2243,8 +2243,8 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	list-style: none!important;
 }
 
-.isa_success ul {
-	padding-left:0px;
+a.close-alert {
+	text-decoration: none;
 }
 
 .choisirOperationPanel{
@@ -2389,9 +2389,13 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	padding-right:0px;
 }
 
-.admin-content h1 {
-	text-align: left !important;
-	padding-left:10px;
+.admin-content {
+	width: 90%;
+    position: absolute;
+    float: left;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -2478,5 +2482,14 @@ fieldset .signature-section, .signature-container {
 }	
 
 
-
+.close-alert {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
 

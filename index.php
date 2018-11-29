@@ -27,12 +27,6 @@
 <link href="assets/css/main.css" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
 
-<!-- Load css per filiale 
-<link href="assets/css/GFX.css" rel="stylesheet"> 
-<link href="assets/css/AS24.css" rel="stylesheet">
-<link href="assets/css/CLMB.css" rel="stylesheet">
-<link href="assets/css/CAPEB.css" rel="stylesheet">
---->
 
 <?php 
 $cssLoaded = "ADMIN";

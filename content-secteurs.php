@@ -1,10 +1,10 @@
 <div class="form_admin_contenu">
-	<div class="isa_success" data-valmsg-summary="true">
-		<ul>
-			<li>Text to be defined</li>
-		</ul>
+	<div class="alert fade in alert-dismissible isa_success">
+	<a href="#" class="close-alert" data-dismiss="alert" aria-label="close" title="Fermer">×</a>
+		Ceci est un exemple de succès.
 	</div>
 </div>
+
 <div class="panel-group">
 	<div class="panel panel-default">
 

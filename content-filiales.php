@@ -1,8 +1,15 @@
 <div class="form_admin_contenu">
-	<div class="text-danger validation-summary-errors"	data-valmsg-summary="true">
+	<div class="text-danger validation-summary-errors"
+		data-valmsg-summary="true">
 		<ul>
 			<li>Text to be defined</li>
 		</ul>
+	</div>
+
+	<div class="alert fade in alert-dismissible isa_error">
+		<a href="#" class="close-alert" data-dismiss="alert"
+			aria-label="close" title="Fermer">×</a> Ceci est un exemple de
+		succès.
 	</div>
 </div>
 
