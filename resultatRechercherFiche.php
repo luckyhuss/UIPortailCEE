@@ -307,28 +307,28 @@
 
 		<div id="collapseInfoActivite" class="panel-collapse collapse in">
 			<div class="panel-body">
-				<div class="header-group col-md-6">
-					<span class="header_label col-md-6"><label for="docEnCours">Total
+				<div class="header-group">
+					<span class="header_label"><label for="docEnCours">Total
 							dossiers en cours </label></span> <span
-						class="header_output col-md-6">2124 € kWhc</span>
+						class="header_output">2124 € kWhc</span>
 				</div>
 
-				<div class="header-group col-md-6">
-					<span class="header_label col-md-6"><label for="docDeposes">Total
+				<div class="header-group">
+					<span class="header_label"><label for="docDeposes">Total
 							dossiers deposés</label></span> <span
-						class="header_output col-md-6">153 € kWhc</span>
+						class="header_output">153 € kWhc</span>
 				</div>
 
-				<div class="header-group col-md-6">
-					<span class="header_label col-md-6"><label for="docPayes">Total
+				<div class="header-group">
+					<span class="header_label"><label for="docPayes">Total
 							dossiers payés (BEN) </label></span> <span
-						class="header_output col-md-6">2124 € kWhc</span>
+						class="header_output">2124 € kWhc</span>
 				</div>
 
-				<div class="header-group col-md-6">
-					<span class="header_label col-md-6"><label for="docPayes">Total
+				<div class="header-group">
+					<span class="header_label"><label for="docPayes">Total
 							dossiers payés (PRO)</label></span> <span
-						class="header_output col-md-6">153 € kWhc</span>
+						class="header_output">153 € kWhc</span>
 				</div>
 			</div>
 		</div>

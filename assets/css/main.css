@@ -566,10 +566,16 @@ label[for=dateEngagement], label[for=dateRAI]
 
 label[for=dateEstimeeCommande], label[for=simEnregistree], 
 label[for=RemunerationRefEstimée], label[for=ResultatOperation],
-label[for=ResultatCumule], label[for=docDeposes], label[for=docPayes],
-label[for=docEnCours]
+label[for=ResultatCumule], /* label[for=docDeposes], label[for=docPayes],
+label[for=docEnCours] */
 {
     width:100%!important;
+}
+
+label[for=docDeposes], label[for=docPayes],
+label[for=docEnCours]
+{
+    width:200px!important;
 }
 
 .form_label>label[for=ChoisirKits]{
@@ -2410,13 +2416,13 @@ fieldset {
 	margin-bottom:20px!important;
 }
 
-fieldset .header-group {
+fieldset .header-group, #collapseInfoActivite .header-group {
 	padding-left:0px;
 	padding-right:0px;
 	margin-bottom:10px;
 	}
 
-fieldset span.header_output {
+fieldset span.header_output , #collapseInfoActivite span.header_output {
 	max-width: 350px;
 	display: inline-block;
  	max-height: 50px;
