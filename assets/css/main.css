@@ -1353,6 +1353,10 @@ ul.cards-container {
 	padding: 5px;
 }
 
+.form_exporter li {
+	list-style: none!important;
+}
+
 .validation-summary-errors {
 	color: #a94442;
 	background-color: #f2dede;
@@ -2332,6 +2336,11 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	padding-left : 10px;
 }
 
+
+.exporter-container {
+	padding:0px!important;	
+}
+
 .btn-exporter-container {
 	margin-right: 0px; 
 	width: 120px !important
@@ -2422,7 +2431,7 @@ fieldset .header-group, #collapseInfoActivite .header-group {
 	margin-bottom:10px;
 	}
 
-fieldset span.header_output , #collapseInfoActivite span.header_output {
+fieldset span.header_output , #collapseInfoActivite span.header_output, .form_exporter span.header_output {
 	max-width: 350px;
 	display: inline-block;
  	max-height: 50px;

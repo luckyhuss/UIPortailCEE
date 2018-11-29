@@ -83,30 +83,20 @@
 				<form id="form_content" class="form_exporter" action="#"
 					method="POST">
 
-					<ul class="exporter-container">
-						<li class="filter-item float-item label-critere_holder">
-							<div class="form-group critere-form-group" >
-								<span class="form_label"><label for="critere">Critères</label></span>
-								<div class="form_input critere-form_input">
-									<select class="form-control">
-										<option value='0'></option>
-										<option value='1'>Critères 1</option>
-										<option value='2'>Critères 2</option>
-										<option value='3'>Critères 3</option>
-										<option value='4'>Critères 4</option>
-									</select>
-								</div>
-							</div>
-						</li>
-						<li class="filter-item float-item btn-exporter-container">
-							<div class="submit_button_holder">
-								<button type="submit" class="btn btn-primary submit_button"
-									name="btn-exporter">Exporter</button>
+					<div class="header-group">
+						<span class="header_label"><label for="critere">Critères</label></span>
+						<span class="header_output form_input critere-form_input"> <select
+							class="form-control">
+								<option value='0'></option>
+								<option value='1'>Critères 1</option>
+								<option value='2'>Critères 2</option>
+								<option value='3'>Critères 3</option>
+								<option value='4'>Critères 4</option>
+						</select>
+						</span> <span class="submit_button_holder"><button type="submit"
+								class="btn btn-primary submit_button" name="btn-exporter">Exporter</button></span>
+					</div>
 
-							</div>
-						</li>
-
-					</ul>
 
 				</form>
 			</div>
