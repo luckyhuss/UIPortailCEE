@@ -49,7 +49,7 @@
 			method="POST">
 			
         	<?php
-        $gestion = "secteurs";
+        $gestion = "secteur";
         include ('admin-content-detail.php');
         ?>
     

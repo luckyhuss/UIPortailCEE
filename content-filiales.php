@@ -54,7 +54,7 @@
 		method="POST">
 	
 	<?php
-	$gestion = "filiales";
+	$gestion = "filiale";
 include ('admin-content-detail.php');
 ?>
 

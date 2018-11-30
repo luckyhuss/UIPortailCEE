@@ -466,7 +466,8 @@ div.each-row{
 	 #dossiersPayes tbody, 
 	#listeDossiers tbody, #dossiersCalendrier tbody,
 	#listUtilisateur tbody, #listUtilisateur tbody,
-	#listContent tbody,
+	#listContent-secteur tbody,
+	#listContent-filiale tbody,
 	 #information_autres tbody,
 	 #resultatFicheRecapTable tbody, 
 	#InfoSocieteFiche
@@ -2521,6 +2522,6 @@ option:checked {
 }
 
 
-#listContent {
+#listContent-secteur, #listContent-filiale {
 	font-weight:normal!important;
 }

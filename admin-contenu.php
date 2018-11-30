@@ -44,7 +44,7 @@
 
 <script>
     $(document).ready(function() {
-        $('#summernote-filiales, #summernote-secteurs, #summernoteplus-filiales, #summernoteplus-secteurs').summernote({
+        $('#summernote-filiale, #summernote-secteur, #summernoteplus-filiale, #summernoteplus-secteur').summernote({
             height: 200,
             toolbar: [
                 //["style", ["style"]],
