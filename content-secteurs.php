@@ -12,8 +12,7 @@
 
 			<div class="secteurs-container  col-md-6">
 
-				<form id="form_content" class="form_admin_secteurs" action="#"
-					method="POST">
+				<div id="form_content" class="form_admin_secteurs">
 
 					<div class="form-group">
 
@@ -32,7 +31,7 @@
 
 					</div>
 
-				</form>
+				</div>
 			</div>
 
 

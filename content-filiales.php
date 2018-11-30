@@ -19,8 +19,7 @@
 
 			<div class="filiales-container col-md-6">
 
-				<form id="form_content" class="form_admin_filiales" action="#"
-					method="POST">
+				<div id="form_content" class="form_admin_filiales">
 
 
 					<div class="form-group">
