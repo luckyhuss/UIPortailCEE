@@ -44,12 +44,12 @@
 
 
 
-	<div class="panel-group">
+	
 		<form id="form_content" class="form_admin_content" action="#"
 			method="POST">
 			
         	<?php
-        $summernote = "secteurs";
+        $gestion = "secteurs";
         include ('admin-content-detail.php');
         ?>
     
@@ -65,6 +65,6 @@
 				</div>
 			</div> -->
 		</form>
-	</div>
+	
 
 

@@ -12,7 +12,7 @@
 		<div id="gestUtilisateur" class="panel-collapse collapse in">
 			<div class="panel-body">
 				<div class="row">
-					<div class="col-md-12 submit_button_holder admin-btn-newuser">
+					<div class="col-md-12 submit_button_holder admin-btn-new">
 						<a href="javascript:void(0)" class="btn btn-primary submit_button newUser" onclick="javascript:displayDetailUser('new');">Nouvel Utilisateur</a>
 
 					</div>

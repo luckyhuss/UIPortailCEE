@@ -466,6 +466,7 @@ div.each-row{
 	 #dossiersPayes tbody, 
 	#listeDossiers tbody, #dossiersCalendrier tbody,
 	#listUtilisateur tbody, #listUtilisateur tbody,
+	#listContent tbody,
 	 #information_autres tbody,
 	 #resultatFicheRecapTable tbody, 
 	#InfoSocieteFiche
@@ -486,7 +487,7 @@ div.each-row{
 	#dossiersDeposes thead, #dossiersPayes thead,  #listeDossiers thead, #dossiersCalendrier thead,
 	#information_autres thead, #resultatFicheRecapTable thead, #InfoSocieteFiche thead, #signatureElectroniqueFiche thead, 
 	#conventionsFiche thead,  #infoActiviteFiche thead, #operationsFiche thead, #resultatRechercherDossier thead,
-	#simulationEnregistree thead, #resultatRechercheSim thead, #listUtilisateur thead {
+	#simulationEnregistree thead, #resultatRechercheSim thead, #listUtilisateur thead, #listContent thead {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #838383;
@@ -2126,7 +2127,7 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 	margin-right:10px;
 }
 
-.admin-btn-newuser {
+.admin-btn-new {
 	padding-left: 15px;
 	display:flex;
   	justify-content:flex-end;
@@ -2493,3 +2494,7 @@ fieldset .signature-section, .signature-container {
     opacity: .2;
 }
 
+
+#listContent {
+	font-weight:normal!important;
+}

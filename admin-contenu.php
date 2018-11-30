@@ -82,5 +82,9 @@
         }
     });
 
-    
+    function displayDetailContent(gestion, id) {
+    	$("#panel-detail-contenu").css("display", "block");
+    	//alert('gestion ' + gestion);
+    	$("html,body").animate({scrollTop: $("#collapseDetailContenu-"+gestion).offset().top}, 2000);
+    }
   </script>

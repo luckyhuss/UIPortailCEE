@@ -436,12 +436,12 @@ $(".js-close").on("click", function(e) {
 
 	
 $(document).ready(function() {
-	$('#resultatRecherche, #infoBeneficiaire, #listesDesDocs, #dossiersEnCours, #dossiersDeposes, #dossiersPayes, #resultatFicheRecapTable, #InfoSocieteFiche, #signatureElectroniqueFiche, #conventionsFiche, #infoActiviteFiche, #operationsFiche, #resultatRechercherDossier')
+	$('#listContent, #resultatRecherche, #infoBeneficiaire, #listesDesDocs, #dossiersEnCours, #dossiersDeposes, #dossiersPayes, #resultatFicheRecapTable, #InfoSocieteFiche, #signatureElectroniqueFiche, #conventionsFiche, #infoActiviteFiche, #operationsFiche, #resultatRechercherDossier')
 		.DataTable();
 	//jQuery('#detailDossierOperations').wrap('<div class="dataTables_scroll" />');		
 	$('#listeDossiers, #detailDossierOperations')
 		.DataTable({paging: true});	
-	$('#listUtilisateur').DataTable({
+	$('#listUtilisateur, #listContent').DataTable({
 		paging: true, 
 		/*searching:true,
 		"dom": '<"top"f>rt<"bottom"flp><"clear">'*/
