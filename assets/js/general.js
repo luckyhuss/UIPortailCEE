@@ -234,18 +234,18 @@ $(document).ready(
 								trigger : 'hover'
 							});
 						},
+
 						dayClick : function(date, allDay, jsEvent, view) {
 							var eventsCount = 0;
 							var date = date.format('YYYY-MM-DD');
-							$(".displayed").css("display", "none");
+							// $(".displayed").css("display", "none");
 							$('#fullCalendarEcheance').fullCalendar(
 									'clientEvents',
 									function(event) {
 										var start = event.start.format("YYYY-MM-DD");
 										if (date == start) {
 											isModal = false;
-											$(".displayed").css("display",
-													"block");
+											$("#dossier-calendrier").css("display", "block");
 											$("html,body").animate({scrollTop: $("table#dossiersCalendrier").offset().top}, 2000);
 													
 										}
@@ -257,7 +257,7 @@ $(document).ready(
 						},
 						eventClick : function(event, jsEvent, view) {
 							isModal = false
-							$(".displayed").css("display", "block");
+							$("#dossier-calendrier").css("display", "block");
 							$("html,body").animate({scrollTop: $("table#dossiersCalendrier").offset().top}, 2000);
 							
 							openModal(isModal);

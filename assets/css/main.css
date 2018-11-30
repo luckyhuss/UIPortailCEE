@@ -435,7 +435,7 @@ div.each-row{
 	text-align: right;
 }
 
-.search_area .submit_button_holder button, .critereAsaisirPanel .submit_button_holder button {
+.search_area .submit_button_holder button {
 	position: absolute;
 	top: 12px;
 	right: 15px;
@@ -579,7 +579,7 @@ label[for=docEnCours]
     width:200px!important;
 }
 
-.form_label>label[for=ChoisirKits]{
+.form_label>label[for=ChoisirKits], .form_label>label[for=NomBrouillon]{
 	width: 75px;
 }
 
@@ -769,7 +769,7 @@ caption {
 }
 
 /* info importante */
-.info-importante, .operation, .resultatCumule{
+.info-importante, .operation{
 	margin-left: 0px;
 	padding-left: 0px;
 	padding-right: 5px;
@@ -1308,6 +1308,11 @@ ul.cards-container {
 	border:0px;
 	
 }
+
+.popin-donnee .modal-footer, .popin-info .modal-footer{
+	margin-bottom: 10px;
+}
+
 .popin-donnee .modal-header {
 	border-bottom:1px solid #ccc;
 }
@@ -2087,7 +2092,7 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
     height: 60px;
 }
 
-.filiales-container .form_input, .secteurs-container .form_input, .content-container .form_input {
+.filiales-container .form_input, .secteurs-container .form_input, .content-container .form_input, #brouillonModal .form_input{
 	/* padding-left: 0; 
 	padding-right: 15px;  */
 	width: 100%; 
@@ -2295,7 +2300,7 @@ a.close-alert {
 }
 
 #infoImportanteModal .modal-footer .submit_button {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     margin-top: 10px;
     background-color: #fff !important;
     border-color: #ccc;
@@ -2315,7 +2320,8 @@ a.close-alert {
 	width: 23px;
     height: 23px;
     text-align: center;
-    padding: 1px 5px;
+	padding: 1px 5px;
+	position: relative;
 }
 
 #infoImportanteModal .btn-circle:hover {
@@ -2328,8 +2334,9 @@ a.close-alert {
 	margin-top: 3px;
 }
 
-#infoImportanteModal .btn-circle .glyphicon {
+#infoImportanteModal .btn-circle .glyphicon{
 	font: 17px 'Open Sans', sans-serif;
+	top: 0px;
 }
 /******************************/
 /*      Exporting Excel 	  */
@@ -2480,7 +2487,26 @@ fieldset .signature-section, .signature-container {
   font-weight: 700;
   text-transform: uppercase;
   border:0px;
-}	
+}
+
+.resultatCumule{
+	margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+#brouillonModal .form-group{
+	margin-left: -14px;
+	margin-top: 8px;
+}
+
+.tbodyClone .panel-heading .btn-danger{
+float: right;
+}
+
+option:checked { 
+	color: #FFF; 
+}
 
 
 .close-alert {

@@ -119,7 +119,7 @@
     <div class="modal-dialog liste_critere" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+                <button type="button" class="btn btn-default custom-close">x</button>
                 <h4 class="modal-title" id="myModalLabel">Signature électronique – modification du mail via UNIVERSIGN</h4>
             </div>
     
@@ -139,21 +139,22 @@
 <!-- Modal  -->
 
 <script>
+
+    $(function () {
+    $(".custom-close").on('click', function() {
+        $('#infoImportanteModal').modal('hide');
+    });
+});
+
     $('button.add').on('click', function(){
         $("#infoImportanteCorpsPlus").toggleClass("displayed");
         $(this).find('i').toggleClass('glyphicon glyphicon-plus glyphicon glyphicon-minus');
     });
 
-    var $menu = $('#infoImportanteModal');
-
-    $(document).mouseup(function (e) {
-    if (!$menu.is(e.target)
-    && $menu.has(e.target).length === 0)
-    {
+    $("#infoImportanteModal").on("hidden.bs.modal", function(){
         $("#infoImportanteCorpsPlus").addClass("displayed");
         $("button.add").find('i').removeClass("glyphicon glyphicon-minus");
         $("button.add").find('i').addClass("glyphicon glyphicon-plus");
-    }
     });
 
 </script>

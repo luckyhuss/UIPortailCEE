@@ -33,8 +33,8 @@
 					<div class="modal-dialog ">
 						<div class="modal-content">
 							<div class="modal-header">
-								<button type="button" class="btn btn-default"
-									data-dismiss="modal">x</button>
+								<button type="button" class="btn btn-default close-popup"
+									>x</button>
 								<h4 id="modalTitle" class="modal-title"></h4>
 							</div>
 							<div id="modalBody" class="modal-body">
@@ -65,3 +65,11 @@
 <!-- Calendar -->
 
 <?php include ('resultatDossierCalendrier.php'); ?>
+
+<script>
+	    $(function () {
+    $(".close-popup").on('click', function() {
+        $('#fullCalModal').modal('hide');
+    });
+});
+</script>
