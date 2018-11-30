@@ -224,16 +224,16 @@ $(document).ready(
 							center : '',
 							right : 'prev next'
 						},
-						eventRender : function(event, element) {
-							element.popover({
-								animation : true,
-								placement : 'top',
-								container : 'body',
-								delay : 300,
-								content : event.title,
-								trigger : 'hover'
-							});
-						},
+						// eventRender : function(event, element) {
+						// 	element.popover({
+						// 		animation : true,
+						// 		placement : 'top',
+						// 		container : 'body',
+						// 		delay : 300,
+						// 		content : event.title,
+						// 		trigger : 'hover'
+						// 	});
+						// },
 
 						dayClick : function(date, allDay, jsEvent, view) {
 							var eventsCount = 0;
