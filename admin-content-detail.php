@@ -155,7 +155,7 @@
 	</div>
 </div>
 
-<div class="panel-group displayed" id="panel-detail-contenu">
+<div class="panel-group displayed" id="panel-detail-contenu-<?=$gestion ?>">
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h4 class="panel-title">
