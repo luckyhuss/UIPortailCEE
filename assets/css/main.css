@@ -1419,7 +1419,7 @@ ul.message_container li, h1, h3 {
 
 @media ( max-width : 340px) {
 	.page_container {
-		top: 120px !important;
+		/* top: 120px !important; */
 	}
 }
 
