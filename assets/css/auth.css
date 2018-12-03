@@ -502,7 +502,7 @@ footer {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #fff;
+	/* background-color: #fff; */
 	/* Black background with opacity */
 	z-index: 2;
 }
@@ -517,6 +517,8 @@ footer {
     font-size:15px;
     font-weight: 700;
     font-family:'Open Sans', Sans-serif;
+    width:100%;
+    text-align:center;
 }
 
 
