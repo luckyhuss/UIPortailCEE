@@ -722,7 +722,7 @@ caption {
 }
 
 #collapseInfoImportantes .panel-body {
-	/* height: 523px; */
+	 /* min-height: 523px;  */
 }
 
 .fc-day-grid-event {

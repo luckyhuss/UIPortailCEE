@@ -29,7 +29,7 @@
 
 
 <?php 
-$cssLoaded = "ADMIN";
+$cssLoaded = "CPB";
 
 $persona = ($cssLoaded == "AS24") ? "-AS24": "";
 $isGraph = false;
