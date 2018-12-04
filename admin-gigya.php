@@ -35,7 +35,7 @@
 						<div class="content-container">
 							<div class="row">
 
-								<div class="col-md-12 input_holder">
+								<div class="col-md-6 input_holder">
 									<div class="form-group">
 										<span class="form_label"><label for="Username">Username</label></span>
 										<span class="form_input"><input type="text"
@@ -44,7 +44,7 @@
 									</div>
 								</div>
 
-								<div class="col-md-12 input_holder">
+								<div class="col-md-6 input_holder">
 									<div class="form-group">
 										<span class="form_label"><label for="email">Email</label></span>
 										<span class="form_input"><input type="text"
@@ -52,7 +52,7 @@
 									</div>
 								</div>
 
-								<div class="col-md-12 input_holder">
+								<div class="col-md-6 input_holder">
 									<div class="form-group">
 										<span class="form_label"><label for="password">Mot de passe</label></span>
 										<span class="form_input"><input type="password"
