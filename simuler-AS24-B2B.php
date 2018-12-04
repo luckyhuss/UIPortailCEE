@@ -19,16 +19,33 @@
         <div class="modal-content">
         <div class="modal-header">
             <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
-            <h4 class="modal-title" id="myModalLabel">Demande</h4>
+            <h4 class="modal-title" id="CreerDossierLabel">Saisir information beneficiare</h4>
         </div>
 
         <div class="modal-body">
-            <span>Votre demande a bien été envoyée au BO. Elle sera etudiée dans les meilleurs delais.</span>
+            <div class="col-md-12 col-xs-12 form-group">
+                <span class="form_label"><label for="SirenDossier">Siren</label></span>
+                <span class="form_input"><input type="text" class="form-control" id="sirenDossier" placeholder=""></span>
+            </div>
+
+            <div class="col-md-12 col-xs-12 form-group">
+                <span class="form_label"><label for="RaisonSocialeDossier">Raison sociale</label></span>
+                <span class="form_input"><input type="text" class="form-control" id="raisonSocialeDossier" placeholder=""></span>
+            </div>
+
+            <div class="col-md-12 col-xs-12 form-group">
+                <span class="form_label"><label for="AutreDossier">Autre</label></span>
+                <span class="form_input"><input type="text" class="form-control" id="autreDossier" placeholder=""></span>
+            </div>
+
+            <div id="saisirDossier" class="modal-msg displayed">
+                <span>Votre demande a bien été envoyée au BO. Elle sera etudiée dans les meilleurs delais.</span>
+            </div>
         </div>
 
-        <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal" id="first">Fermer</button>
-        </div> -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" id="modal-btn-ok">OK</button>
+        </div>
         </div>
     </div>
 </div>
@@ -103,5 +120,19 @@ $("#brouillonModal").on("hidden.bs.modal", function(){
     $("#refDossier").css("display", "none");
     $("#brouillonModal .modal-body .form-group").css("display", "block");
     $("#brouillonModal .modal-footer #modal-btn-ok").css("display", "block");
+});
+
+$( "#CreerDossierModal .modal-footer #modal-btn-ok" ).click(function() {
+    $("#CreerDossierModal").find('.modal-title').text("Dossier sauvegardé");
+    $("#saisirDossier").css("display", "block");
+    $("#CreerDossierModal .modal-body .form-group").css("display", "none");
+    $("#CreerDossierModal .modal-footer").css("display", "none");
+});
+
+$("#CreerDossierModal").on("hidden.bs.modal", function(){
+    $("#CreerDossierModal").find('.modal-title').text("Saisir information beneficiare");
+    $("#saisirDossier").css("display", "none");
+    $("#CreerDossierModal .modal-body .form-group").css("display", "block");
+    $("#CreerDossierModal .modal-footer #modal-btn-ok").css("display", "block");
 });
 </script>

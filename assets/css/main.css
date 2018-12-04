@@ -2526,3 +2526,13 @@ option:checked {
 #listContent-secteur, #listContent-filiale {
 	font-weight:normal!important;
 }
+
+.tbodyClone .remove{
+margin-top: -8px;
+font-size: 12px;
+margin-right: -1px;
+}
+
+#supprimerSimModal #modal-btn-non{
+	margin-left: 5px;
+}

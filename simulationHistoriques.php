@@ -14,7 +14,7 @@
                     <button type="submit" class="searchButton"><i class="glyphicon glyphicon-search"></i></button>
             </div>
 
-            <span class="header_label"><label for="simEnregistree">Dernieres simulations enregistrée </label></span>
+            <span class="header_label"><label for="simEnregistree">Dernières simulations enregistrée </label></span>
                 <div class="row">
                     <div class="col-md-12 data_table_holder">
                         <table id="simulationEnregistree" class="table table-striped table-bordered nowrap" style="width:100%">
@@ -215,12 +215,17 @@ $(document).ready(function() {
 	$('#simulationEnregistree, #resultatRechercheSim')
 		.DataTable();
 
-        $( "#supprimerSimModal .modal-footer button" ).click(function() {
+$( "#supprimerSimModal .modal-footer #modal-btn-oui" ).click(function() {
     $("#supprimerSimModalMsg").css("display", "block");
+    $("#supprimerSimModal #modal_body, #supprimerSimModal .modal-footer").css("display", "none");
+});
+
+$( "#supprimerSimModal .modal-footer #modal-btn-non" ).click(function() {
+    $('#supprimerSimModal').modal('hide'); 
 });
 
 $("#supprimerSimModal").on("hidden.bs.modal", function(){
-    $("#modal_body").css("display", "block");
+    $("#supprimerSimModal #modal_body, #supprimerSimModal .modal-footer").css("display", "block");
     $("#supprimerSimModalMsg").css("display", "none");
 });
 

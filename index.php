@@ -29,7 +29,7 @@
 
 
 <?php 
-$cssLoaded = "CPB";
+$cssLoaded = "AS24";
 
 $persona = ($cssLoaded == "AS24") ? "-AS24": "";
 $isGraph = false;
@@ -82,7 +82,7 @@ body { background-color: #fafafa; }
 	       switch ($_GET['pageLoaded']) {
 	           case 'Simuler':
 	               $activeSimuler = "active-link";
-	               $pageLoaded = "under-construction";
+	               $pageLoaded = "simuler-AS24-B2B";
 	               break;
 	           
 	           case 'Creer':
