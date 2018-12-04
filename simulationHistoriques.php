@@ -2,7 +2,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <span class="panel_header_element"><a data-toggle="collapse" href="#collapseHistoSim">Historiques Simulations</a></span>
+                <span class="panel_header_element"><a data-toggle="collapse" href="#collapseHistoSim">Historiques simulations</a></span>
                 <!-- <span class="panel_header_element"><a data-toggle="collapse" href="#collapseInfoImportantes"><i class="glyphicon glyphicon-info-sign"></i></a></span> -->
             </h4>
         </div>
@@ -64,8 +64,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <span class="panel_header_element"><a data-toggle="collapse" href="#collapseResultatRecherche">Resultat Recherché</a></span>
-                <!-- <span class="panel_header_element"><a data-toggle="collapse" href="#collapseInfoImportantes"><i class="glyphicon glyphicon-info-sign"></i></a></span> -->
+                <span class="panel_header_element"><a data-toggle="collapse" href="#collapseResultatRecherche">Resultat</a></span>
             </h4>
         </div>
 
@@ -119,8 +118,7 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h4 class="panel-title">
-                <span class="panel_header_element"><a data-toggle="collapse" href="#collapseDetailSimulation">Détail simulation</a></span>
-                <!-- <span class="panel_header_element"><a data-toggle="collapse" href="#collapseInfoImportantes"><i class="glyphicon glyphicon-info-sign"></i></a></span> -->
+                <span class="panel_header_element"><a data-toggle="collapse" href="#collapseDetailSimulation">Détail</a></span>
             </h4>
         </div>
 
@@ -195,7 +193,7 @@
             </span>
 
             <div id="supprimerSimModalMsg" class="modal-msg displayed">
-                <span>Détail plus Désormais, lors de l’envoi de l’attestation sur l’honneur via UNIVERSIGN, l’objet mentionnera le nom et le logo de la filiale.</span>
+                <span>Supprimer</span>
             </div>
         </div>
 

@@ -568,7 +568,7 @@ label[for=dateEngagement], label[for=dateRAI]
 
 label[for=dateEstimeeCommande], label[for=simEnregistree], 
 label[for=RemunerationRefEstimée], label[for=ResultatOperation],
-label[for=ResultatCumule], /* label[for=docDeposes], label[for=docPayes],
+label[for=ResultatCumule], label[for=simEnregistree] /* label[for=docDeposes], label[for=docPayes],
 label[for=docEnCours] */
 {
     width:100%!important;
@@ -2219,7 +2219,8 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
   }
 
 .ajouter_operation{
-	margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .form-input-textarea {
