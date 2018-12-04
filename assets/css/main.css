@@ -1918,6 +1918,8 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
 }
 
 
+
+
 .form_label>label,.form_label>label {
 	width:140px;
 	height:45px;
@@ -2565,4 +2567,16 @@ option:checked {
 
 .panel-date{
 	padding: 0px;
+}
+
+input[name='optradio'] {
+	margin-right:10px;
+}
+
+.choisirSecteur .input_holder {
+	padding-left:20px;
+}
+
+.choisirSecteurPanel .panel-body {
+	padding-bottom:0px;
 }
