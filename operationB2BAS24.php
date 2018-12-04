@@ -14,6 +14,37 @@
 		<div id="CollapseOperation" class="panel-collapse collapse in">
 			<div class="panel-body">
 
+                <div class="col-md-12 panel-group choisirSecteurPanel">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="choisirSecteur">
+                                <span class="col-md-12 col-sm-12 col-xs-12 header_label"><label for="choisirSecteur">Choisir secteur </label></span>
+                                <span class="col-md-12 col-sm-12 col-xs-12 form_input">
+                                <div class="col-md-3 input_holder">
+                                    <div class="form-group">
+                                        <label class="form_label radio-inline"><input type="radio" name="optradio" checked>Bat</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 input_holder">
+                                    <div class="form-group">
+                                        <label class="form_label radio-inline"><input type="radio" name="optradio">Bar</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 input_holder">
+                                    <div class="form-group">
+                                        <label class="form_label radio-inline"><input type="radio" name="optradio">Industrie</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 input_holder">
+                                    <div class="form-group">
+                                        <label class="form_label radio-inline"><input type="radio" name="optradio">Agri</label>
+                                    </div>
+                                </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-md-12 panel-group choisirOperationPanel">
                     <div class="panel panel-default">

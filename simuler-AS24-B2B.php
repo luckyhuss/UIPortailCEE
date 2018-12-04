@@ -40,6 +40,11 @@
 
             <div id="saisirDossier" class="modal-msg displayed">
                 <span>Votre demande a bien été envoyée au BO. Elle sera etudiée dans les meilleurs delais.</span>
+                
+                <div class="header-group">
+                    <span class="header_label"><label for="saisirDossierRef">Reference</label></span>
+                    <span class="header_output"><a><i class="glyphicon glyphicon-download-alt" rel="tooltip" title="Télécharger dossier"></i></a></span>
+                </div>
             </div>
         </div>
 
@@ -80,28 +85,6 @@
         </div>
     </div>
 </div>
-
-
-<!-- <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog liste_critere" role="document">
-        <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
-            <h4 class="modal-title" id="myModalLabel">Dossier Sauvegardé</h4>
-        </div>
-
-        <div class="modal-body">
-            <span>Ref: <a href="http://kmmc.in/wp-content/uploads/2014/01/lesson2.pdf" download="processus_2" target="_blank">31252</a></span>
-        </div>
-
-        <div class="modal-footer">
-            <a href="http://kmmc.in/wp-content/uploads/2014/01/lesson2.pdf" download="processus_2" target="_blank">
-          <button type="button" class="btn"><i class="glyphicon glyphicon-download-alt"></i></button>
-        </a>
-        </div>
-        </div>
-    </div>
-</div> -->
 
 <script>
     $('#first').click(function() {
