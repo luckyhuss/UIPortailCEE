@@ -29,7 +29,9 @@
 
 
 <?php 
-$cssLoaded = "AS24";
+
+$cssLoaded = "ADMIN";
+
 
 $persona = ($cssLoaded == "AS24") ? "-AS24": "";
 $isGraph = false;
@@ -72,6 +74,7 @@ body { background-color: #fafafa; }
 	   $activePiloter = "";
 	   $activeInfo = "";
 	   $activeAdminUtilisateur = "";
+	   $activeAdminGigya = "";
 	   $activeAdminPermission = "";
 	   $activeAdminContenu = "";
 	   $openAdmin = "";
@@ -87,7 +90,7 @@ body { background-color: #fafafa; }
 	           
 	           case 'Creer':
 	               $activeCreer = "active-link";
-	               $pageLoaded = "under-construction";
+	               $pageLoaded = "creer";
 	               break;
 	               
 	           case 'Rechercher':
@@ -120,6 +123,12 @@ body { background-color: #fafafa; }
 	               $activeAdmin = "active-link";
 	               $activeAdminUtilisateur = "active-link";
 	               $pageLoaded = "admin-utilisateur";
+	               $openAdmin = "in";
+	               break;
+	           case 'AdminGigya':
+	               $activeAdmin = "active-link";
+	               $activeAdminGigya = "active-link";
+	               $pageLoaded = "admin-gigya";
 	               $openAdmin = "in";
 	               break;
 	           case 'AdminPermission':

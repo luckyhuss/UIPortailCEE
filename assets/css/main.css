@@ -2235,6 +2235,7 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	padding:10px;
 	border-radius: 4px;
 	list-style: none!important;
+	font-weight: bold;
 }
 
 .isa_error, .isa_success  {
@@ -2249,6 +2250,7 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	padding:10px;
 	border-radius: 4px;
 	list-style: none!important;
+	font-weight: bold;
 }
 
 a.close-alert {

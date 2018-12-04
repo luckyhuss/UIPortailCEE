@@ -136,6 +136,15 @@
 						</h4>
 					</div>
 					<div
+						class="panel-heading nav-menu sous-menu <?php echo $activeAdminGigya ?>">
+						<h4 class="panel-title">
+							<a href="javascript:void()" id="AdminGigya"><span
+								class="glyphicon glyphicon" aria-hidden="true"></span><span class="glyphicon glyphicon-user"
+							aria-hidden="true"></span> <span
+								class="menu_title">Gestion Gigya</span></a>
+						</h4>
+					</div>
+					<div
 						class="panel-heading nav-menu sous-menu <?php echo $activeAdminPermission ?>">
 						<h4 class="panel-title">
 							<a href="javascript:void()" id="AdminPermission"><span
