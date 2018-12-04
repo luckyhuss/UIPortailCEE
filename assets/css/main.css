@@ -2259,11 +2259,11 @@ a.close-alert {
 	padding:0px;
 }
 
-.resultatOperationPanel, .critereAsaisirPanel{
+.resultatOperationPanel, .critereAsaisirPanel, .mentionDevis{
 	padding: 0px 0px 2px 0px;
 }
 
-.RemunerationRefEstiméePanel, .dateEstimeeCommande{
+.RemunerationRefEstiméePanel, .dateEstimeeCommande, .mentionFacture{
 	padding: 0px 0px 0px 10px;
 }
 
@@ -2491,7 +2491,7 @@ fieldset .signature-section, .signature-container {
   border:0px;
 }
 
-.resultatCumule{
+.resultatCumule, .mentionDevis_Facture{
 	margin-left: 0px;
     padding-left: 0px;
     padding-right: 5px;
@@ -2503,7 +2503,7 @@ fieldset .signature-section, .signature-container {
 }
 
 .tbodyClone .panel-heading .btn-danger{
-float: right;
+	float: right;
 }
 
 option:checked { 
@@ -2528,9 +2528,9 @@ option:checked {
 }
 
 .tbodyClone .remove{
-margin-top: -8px;
-font-size: 12px;
-margin-right: -1px;
+	margin-top: -8px;
+	font-size: 12px;
+	margin-right: -1px;
 }
 
 #supprimerSimModal #modal-btn-non{
@@ -2539,4 +2539,11 @@ margin-right: -1px;
 
 #CollapseOperation .choisirSecteur .header_label{
 	margin-bottom: 10px;
+}
+
+.choisirSecteurPanel .panel-body, .choisirOperationPanel .panel-body, .resultatCumule .panel-body,
+.resultatOperationPanel .panel-body, .critereAsaisirPanel .panel-body, 
+.RemunerationRefEstiméePanel .panel-body, .dateEstimeeCommande .panel-body, .mentionDevis .panel-body,
+.mentionFacture .panel-body{
+	padding-left: 0px;
 }

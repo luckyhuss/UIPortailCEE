@@ -69,7 +69,7 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <div class="critere">
-                                <span class="header_label"><label for="critereAsaisir">Criteres a saisir </label></span>
+                                <span class="col-md-12 header_label"><label for="critereAsaisir">Criteres a saisir </label></span>
                                 <form id="formCritereSim" class="form_search_bar form-inline" action="#" method="POST">
                                         <div class="col-md-12 input_holder">
                                             <div class="form-group">
@@ -111,7 +111,7 @@
                 <div class="col-md-5 panel-group dateEstimeeCommande">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <span class="header_label"><label for="dateEstimeeCommande">Date estimée commande </label></span>
+                            <span class="col-md-12 header_label"><label for="dateEstimeeCommande">Date estimée commande </label></span>
 
                             <div class="datepicker"></div>
                         </div>
@@ -140,7 +140,7 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <div class="stat__data col-md-8">
-                                <span class="header_label"><label for="RemunerationRefEstimée">Remuneration Reference/estimée</label></span>
+                                <span class="header_label"><label for="RemunerationRefEstimée">Remuneration reference/estimée</label></span>
                                 <p class="header_output">10 €/MWh</p>
                             </div>
                             <div class="stat_icon_wrapper col-md-4">
@@ -167,10 +167,6 @@
 
 <!-- button ajouter -->
 
-
-
-<br class="clearfix" />
-
 <div class="col-md-12 panel-group resultatCumule">
     <div class="panel panel-default">
         <div class="resultatCumule">
@@ -184,6 +180,39 @@
                         <i class="glyphicon glyphicon-stats"></i>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- mention devis -->
+<div class="col-md-12 panel-group mentionDevis_Facture">
+    <div class="panel panel-default">
+        <div class="mentionDevisOuFacture">
+            <div class="panel-body">
+
+                <div class="col-md-6 panel-group mentionDevis">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="mentionDevis">
+                                <span class="col-md-12 header_label"><label for="mentionDevis">Mention devis</label></span>
+                                <span class="col-md-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 panel-group mentionFacture">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="mentionFacture">
+                                <span class="col-md-12 header_label"><label for="mentionFacture">Mention facture</label></span>
+                                <span class="col-md-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
