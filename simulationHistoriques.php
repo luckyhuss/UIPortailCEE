@@ -230,10 +230,4 @@ $("#supprimerSimModal").on("hidden.bs.modal", function(){
 });
 
 });
-
-
-
-
-
-
 </script>

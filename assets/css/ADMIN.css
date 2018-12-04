@@ -295,7 +295,6 @@ input[type='checkbox']:checked:after {
    text-align: right;
 } */
 .ajouter_operation .btn:hover {
-    color: #ffffff;
     background: #e00032;
 }
 
@@ -333,5 +332,14 @@ select option {
 
 option:not(:checked) { 
 	background-color: #FFF; 
+}
+
+.dateEstimeeCommande .input_holder .form-control{
+	border: 2px solid #e00032;
+	margin-left: 10px;
+}
+
+.dateEstimeeCommande .calendar_button{
+	color: #e00032;
 }
 

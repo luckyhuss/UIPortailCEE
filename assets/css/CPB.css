@@ -276,3 +276,13 @@ select option {
 option:not(:checked) { 
 	background-color: #FFF; 
 }
+
+.dateEstimeeCommande .input_holder .form-control{
+	border: 2px solid #df5952;
+	margin-left: 10px;
+}
+
+.dateEstimeeCommande .calendar_button{
+	color: #df5952;
+}
+

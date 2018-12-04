@@ -65,37 +65,51 @@
                     </div>
                 </div>
 
-                <div class="col-md-7 panel-group critereAsaisirPanel">
+                <div class="col-md-9 panel-group critereAsaisirPanel">
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <div class="critere">
                                 <span class="col-md-12 header_label"><label for="critereAsaisir">Criteres a saisir </label></span>
                                 <form id="formCritereSim" class="form_search_bar form-inline" action="#" method="POST">
-                                        <div class="col-md-12 input_holder">
+                                        <div class="col-md-6 input_holder">
                                             <div class="form-group">
                                                 <span class="form_label"><label for="NumAction">Critere 1</label></span>
                                                 <span class="form_input"><input type="checkbox" id="numAction" placeholder=""></span>
                                             </div>
                                         </div>
 
-                                        <div class="col-md-12 input_holder">
+                                        <div class="col-md-6 input_holder">
                                             <div class="form-group">
-                                                <span class="form_label"><label for="NumAction">Critere 2</label></span>
-                                                <span class="form_input"><input type="checkbox" id="numAction" placeholder=""></span>
+                                                <span class="form_label"><label for="Critere">Critere 2</label></span>
+                                                <span class="form_input"><input type="checkbox" id="Critere" placeholder=""></span>
                                             </div>
                                         </div>
                                         
-                                        <div class="col-md-12 input_holder">
+                                        <div class="col-md-6 input_holder">
                                             <div class="form-group">
-                                                <span class="form_label"><label for="NumAction">Critere 3</label></span>
-                                                <span class="form_input"><input type="checkbox" id="numAction" placeholder=""></span>
+                                                <span class="form_label"><label for="Critere">Critere 3</label></span>
+                                                <span class="form_input"><input type="checkbox" id="Critere" placeholder=""></span>
                                             </div>
                                         </div>
 
-                                        <div class="col-md-12 input_holder">
+                                        <div class="col-md-6 input_holder">
                                             <div class="form-group">
-                                                <span class="form_label"><label for="NumAction">Critere 4</label></span>
-                                                <span class="form_input"><input type="checkbox" id="numAction" placeholder=""></span>
+                                                <span class="form_label"><label for="Critere">Critere 4</label></span>
+                                                <span class="form_input"><input type="checkbox" id="Critere" placeholder=""></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 input_holder">
+                                            <div class="form-group">
+                                                <span class="form_label"><label for="Critere">Critere 5</label></span>
+                                                <span class="form_input"><input type="checkbox" id="Critere" placeholder=""></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 input_holder">
+                                            <div class="form-group">
+                                                <span class="form_label"><label for="Critere">Critere 6</label></span>
+                                                <span class="form_input"><input type="checkbox" id="Critere" placeholder=""></span>
                                             </div>
                                         </div>
 
@@ -108,35 +122,22 @@
                     </div>
                 </div>
 
-                <div class="col-md-5 panel-group dateEstimeeCommande">
+            <div class= "col-md-3 panel-date">
+                <div class="panel-group dateEstimeeCommande">
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <span class="col-md-12 header_label"><label for="dateEstimeeCommande">Date estimée commande </label></span>
-
-                            <div class="datepicker"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-7 panel-group resultatOperationPanel">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <div class="resultatOperation">
-                                <div class="stat">
-                                    <div class="stat__data col-md-8">
-                                        <span class="header_label"><label for="ResultatOperation">Resultat pour l'operation</label></span>
-                                        <p class="header_output">10 kWhc 600 €</p>
-                                    </div>
-                                    <div class="stat_icon_wrapper col-md-4">
-                                        <i class="glyphicon glyphicon-stats"></i>
+                                <div class="date">
+                                    <div class="input_holder">
+                                        <input class="form-control datepicker" placeholder="mm/dd/yyyy"/>
+                                        <span class="calendar_button"><i class="glyphicon glyphicon-calendar"></i></span>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-5 panel-group RemunerationRefEstiméePanel">
+                <div class="panel-group RemunerationRefEstiméePanel">
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <div class="stat__data col-md-8">
@@ -149,6 +150,38 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+                <div class="col-md-12 panel-group resultatOperationPanel">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="resultatOperation">
+                                <!-- <div class="stat"> -->
+                                    <!-- <div class="stat__data col-md-8"> -->
+                                        <span class="header_label"><label for="ResultatOperation">Resultat pour l'operation</label></span>
+                                       <!--  <span class="header_label"><label for="ResultatOperationCL">CL</label></span>
+                                        <p class="header_output">10 kWhc 600 €</p>
+                                        <span class="header_label"><label for="ResultatOperationPR">PR</label></span>
+                                        <p class="header_output">10 kWhc 600 €</p> -->
+
+                                        <div class="header-group">
+                                            <span class="header_label"><label for="ResultatOperationCL">CL</label></span>
+                                            <span class="header_output">10 kWhc</span>
+                                            <span class="header_output">600 €</span>
+                                        </div>
+                                        
+                                        <div class="header-group">
+                                            <span class="header_label"><label for="ResultatOperationPR">PR</label></span>
+                                            <span class="header_output">10 kWhc</span>
+                                            <span class="header_output">600 €</span>
+                                        </div>
+                                    <!-- </div> -->
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -219,16 +252,6 @@
 </div>
 
 <script>
-    //duplicate
-    // $('button.add, button.btn_operation').on('click', function(){
-
-    // //clone
-    // var row = $('.duplicate').clone();
-    // $(row).insertAfter('.ajouter_operation');
-    // $(row).show();
-    // var r= $('<button type="button" class="btn submit_button btn-circle btn-lg add" title="Ajouter operation"><i class="glyphicon glyphicon-minus"></i></button>');
-    //     $(".duplicate .panel-heading .panel-title").append(r);
-    // });
 
     var regex = /^(.*)(\d)+$/i;
     var cloneIndex = $(".clonedInput").length;
@@ -253,8 +276,6 @@
             .on('click', 'clone', clone)
             .on('click', 'remove', remove);
 
-        cloneIndex++;
-      
         if ($(".clonedInput").length == 1) {
             $('.remove').hide();
         } else {
@@ -275,4 +296,5 @@
 
     $(document).on("click", ".clone", clone);
     $(document).on("click", ".remove", remove);
+
 </script>

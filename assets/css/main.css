@@ -584,6 +584,10 @@ label[for=docEnCours]
 	width: 75px;
 }
 
+label[for=ResultatOperationCL], label[for=ResultatOperationPR]{
+	width: 135px;
+}
+
 .header_output {
 	font-weight: 500!important;
 	vertical-align:top;
@@ -1203,10 +1207,6 @@ ul.cards-container {
 	height: 0;
 	clear: both;
 	visibility: hidden;
-}
-
-.float-item {
-	float: left;
 }
 
 .contact-container {
@@ -2171,6 +2171,7 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 
 #button_operation .submit_button_holder{
 	text-align: center;
+	margin-bottom: 35px;
 }
 
 @media ( min-width : 992px) {
@@ -2269,10 +2270,10 @@ a.close-alert {
 	padding: 0px 0px 0px 10px;
 }
 
-.datepicker,
+/* .datepicker,
 .table-condensed {
     width: 100%;
-}
+} */
 
 .ajouter_operation .btn:before {
     position: absolute;
@@ -2544,8 +2545,24 @@ option:checked {
 }
 
 .choisirSecteurPanel .panel-body, .choisirOperationPanel .panel-body, .resultatCumule .panel-body,
-.resultatOperationPanel .panel-body, .critereAsaisirPanel .panel-body, 
+ .critereAsaisirPanel .panel-body, 
 .RemunerationRefEstiméePanel .panel-body, .dateEstimeeCommande .panel-body, .mentionDevis .panel-body,
 .mentionFacture .panel-body{
 	padding-left: 0px;
+}
+
+.dateEstimeeCommande .calendar_button{
+	position: absolute;
+    right: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    top: 47px;
+    background: none;
+	border: none;
+}
+
+.panel-date{
+	padding: 0px;
 }
