@@ -63,9 +63,9 @@
 						<div class="panel panel-default">
 							<div class="panel-body">
 								<div class="choisirOperation">
-									<span class="col-md-3 col-sm-6 col-xs-12 header_label"><label
+									<span class="col-md-3 col-sm-3 col-xs-12 header_label"><label
 										for="choisirOperation">Choisir operation </label></span> <span
-										class="col-md-9 col-sm-6 col-xs-12 form_input"> <select
+										class="col-md-9 col-sm-9 col-xs-12 form_input"> <select
 										class="form-control">
 											<option value="1">#1 - Fiche 1</option>
 											<option value="2">#2 - Fiche 2</option>
@@ -87,7 +87,7 @@
 										for="critereAsaisir">Criteres a saisir </label></span>
 									<form id="formCritereSim" class="form_search_bar form-inline"
 										action="#" method="POST">
-										<div class="col-md-6 input_holder">
+										<div class="col-md-6 col-sm-6 col-xs-12 input_holder">
 											<div class="form-group">
 												<span class="form_label"><label for="NumAction">Critere 1</label></span>
 												<span class="form_input"><input type="checkbox"
@@ -95,7 +95,7 @@
 											</div>
 										</div>
 
-										<div class="col-md-6 input_holder">
+										<div class="col-md-6 col-sm-6 col-xs-12 input_holder">
 											<div class="form-group">
 												<span class="form_label"><label for="Critere">Critere 2</label></span>
 												<span class="form_input"><input type="checkbox" id="Critere"
@@ -103,7 +103,7 @@
 											</div>
 										</div>
 
-										<div class="col-md-6 input_holder">
+										<div class="col-md-6 col-sm-6 col-xs-12 input_holder">
 											<div class="form-group">
 												<span class="form_label"><label for="Critere">Critere 3</label></span>
 												<span class="form_input"><input type="checkbox" id="Critere"
@@ -111,7 +111,7 @@
 											</div>
 										</div>
 
-										<div class="col-md-6 input_holder">
+										<div class="col-md-6 col-sm-6 col-xs-12 input_holder">
 											<div class="form-group">
 												<span class="form_label"><label for="Critere">Critere 4</label></span>
 												<span class="form_input"><input type="checkbox" id="Critere"
@@ -119,7 +119,7 @@
 											</div>
 										</div>
 
-										<div class="col-md-6 input_holder">
+										<div class="col-md-6 col-sm-6 col-xs-12 input_holder">
 											<div class="form-group">
 												<span class="form_label"><label for="Critere">Critere 5</label></span>
 												<span class="form_input"><input type="checkbox" id="Critere"
@@ -127,7 +127,7 @@
 											</div>
 										</div>
 
-										<div class="col-md-6 input_holder">
+										<div class="col-md-6 col-sm-6 col-xs-12 input_holder">
 											<div class="form-group">
 												<span class="form_label"><label for="Critere">Critere 6</label></span>
 												<span class="form_input"><input type="checkbox" id="Critere"
@@ -257,31 +257,23 @@
 		<div class="mentionDevisOuFacture">
 			<div class="panel-body">
 
-				<div class="col-md-6 panel-group mentionDevis">
+				<div class="col-md-6 panel-group mentionDevisPanel">
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<div class="mentionDevis">
-								<span class="col-md-12 header_label"><label for="mentionDevis">Mention
-										devis</label></span> <span class="col-md-12">Lorem ipsum dolor
-									sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing
-									elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit
-									amet, consectetur adipiscing elit.</span>
+                                <span class="header_label"><label for="mentionDevis">Mention devis</label></span>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-md-6 panel-group mentionFacture">
+				<div class="col-md-6 panel-group mentionFacturePanel">
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<div class="mentionFacture">
-								<span class="col-md-12 header_label"><label for="mentionFacture">Mention
-										facture</label></span> <span class="col-md-12">Lorem ipsum
-									dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-									tempor incididunt. Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum
-									dolor sit amet, consectetur adipiscing elit.</span>
+								<span class="header_label"><label for="mentionFacture">Mention facture</label></span> 
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
 							</div>
 						</div>
 					</div>

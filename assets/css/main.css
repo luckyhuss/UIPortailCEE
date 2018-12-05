@@ -568,8 +568,8 @@ label[for=dateEngagement], label[for=dateRAI]
 
 label[for=dateEstimeeCommande], label[for=simEnregistree], 
 label[for=RemunerationRefEstimée], label[for=ResultatOperation],
-label[for=ResultatCumule], label[for=simEnregistree] /* label[for=docDeposes], label[for=docPayes],
-label[for=docEnCours] */
+label[for=ResultatCumule], label[for=simEnregistree], label[for=mentionDevis], label[for=docPayes],
+label[for=mentionFacture]
 {
     width:100%!important;
 }
@@ -2264,12 +2264,12 @@ a.close-alert {
 	padding:0px;
 }
 
-.resultatOperationPanel, .critereAsaisirPanel, .mentionDevis{
+.resultatOperationPanel, .critereAsaisirPanel, .mentionDevisPanel{
 	padding: 0px 0px 2px 0px;
 }
 
-.RemunerationRefEstiméePanel, .dateEstimeeCommande, .mentionFacture{
-	padding: 0px 0px 0px 10px;
+.RemunerationRefEstiméePanel, .dateEstimeeCommande, .mentionFacturePanel{
+	padding: 0px 0px 0px 0px;
 }
 
 /* .datepicker,
