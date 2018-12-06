@@ -2438,11 +2438,10 @@ legend {
 }
 
 fieldset {
-    padding: .35em .625em .75em!important;
+    padding: .35em .325em .75em!important;
     margin: 0 2px!important;
     border: 1px solid silver!important;
     border-radius:2px!important;
-    
     
 }
 
@@ -2543,7 +2542,7 @@ option:checked {
 .tbodyClone .remove{
 	margin-top: -8px;
 	font-size: 12px;
-	margin-right: -1px;
+	/* margin-right: -1px; */
 }
 
 #supprimerSimModal #modal-btn-non{
@@ -2617,9 +2616,27 @@ input[name='optradio'] {
 	width:220px;
 }
 
+.choisirProspectPartenaire legend {
+	width:230px;
+}
+
+.fieldset-container {
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.choisirProspectPartenaire .input_holder {
+	height:40px;
+	padding-left:5px;
+}
 
 
+.choisirProspectPartenaire .fieldset-container {
+	display:inline-block;
+}
 
-
+.choisirProspectPartenaire .fieldset-container .input_holder {
+	margin-right:65px;
+}
 
 

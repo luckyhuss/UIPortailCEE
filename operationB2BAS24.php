@@ -20,7 +20,7 @@
 					<fieldset class="fieldset-margin-bottom choisirSecteurPanel">
 						<legend>Secteur</legend>
 
-							<div class="choisirSecteur">
+							<div class="fieldset-container">
 							<span class="form_input"> <select class="form-control">
 									<option value="1">#1 - Secteur 1</option>
 									<option value="2">#2 - Secteur 2</option>
@@ -72,7 +72,7 @@
 
 					<fieldset class="fieldset-margin-bottom choisirOperationPanel">
 						<legend>Opération</legend>
-						<div class="choisirOperation">
+						<div class="fieldset-container">
 							<span class="form_input"> <select class="form-control">
 									<option value="1">#1 - Fiche 1</option>
 									<option value="2">#2 - Fiche 2</option>

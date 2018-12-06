@@ -3,13 +3,13 @@
 
 
 
-<div class="col-md-7 operation">
+<div class="col-md-12 operation">
     <?php include 'operationB2BAS24.php'; ?>
 </div>
 
-<div class="col-md-5 simulationHistoriques">
-    <?php include 'simulationHistoriques.php'; ?>
-</div>
+<!--  div class="col-md-5 simulationHistoriques"-->
+    <?php //include 'simulationHistoriques.php'; ?>
+<!-- /div-->
 
 <div id="button_operation">
     <div class="col-md-12 submit_button_holder">

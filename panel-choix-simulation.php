@@ -4,29 +4,73 @@
 
 		<div class="panel-body">
 
-			<div class="secteurs-container  col-md-6">
 
-				<div id="form_content" class="form_admin_secteurs">
 
-					<!-- <div class="form-group">
 
-						<span class="form_label"> <label for="choisirSecteurs">Secteurs</label></span>
+			<fieldset class="choisirProspectPartenaire">
+				<legend>Prospect/Partenaire Existant</legend>
+				<div class="fieldset-container">
 
-						<span class="form_input"> <select class="form-control">
-								<option value="0"></option>
-								<option value="AGRI">Agriculture [AGRI]</option>
-								<option value="BAR">Bâtiment Résidentiel [BAR]</option>
-								<option value="BAT">Bâtiment Tertiaire [BAT]</option>
-								<option value="IND">Industrie [IND]</option>
-								<option value="RES">Réseaux [RES]</option>
-								<option value="TRA">Transport [TRA]</option>
-						</select>
-						</span>
 
-					</div> -->
+
+					<div class="col-sm-3 col-md-3 input_holder">
+						<div class="form-group">
+							<span class="form_input"><input type="radio" name="optradio"
+								value="prospect"></span> <span class="form_label"><label
+								for="prospect">Prospect</label></span>
+						</div>
+					</div>
+
+					<div class="col-sm-3 col-md-3 input_holder">
+						<div class="form-group">
+							<span class="form_input"><input type="radio" name="optradio"
+								value="partenaire"></span> <span class="form_label"><label
+								for="partenaire">Partenaire existant</label></span>
+						</div>
+					</div>
+
+
+
 
 				</div>
-			</div>
+
+				<div class="col-md-12">
+
+					<div class="row">
+						<div class="col-ms-8 col-md-4 input_holder" >
+							<div class="form-group">
+								<span class="form_label"><label for="RaisonSociale">Raison
+										sociale</label></span> <span class="form_input"><input
+									type="text" class="form-control" id="raisonSocial"
+									placeholder=""></span>
+							</div>
+						</div>
+
+						<div class="col-ms-8 col-md-4 input_holder" >
+							<div class="form-group">
+								<span class="form_label"><label for="Siren">SIREN</label></span>
+								<span class="form_input"><input type="text" class="form-control"
+									id="siren" placeholder=""></span>
+							</div>
+						</div>
+
+						<div class="col-ms-8 col-md-4 input_holder" >
+							<div class="form-group">
+								<span class="form_label"><label for="Contact">Contact</label></span>
+								<span class="form_input" style="width:100%"><input type="text" class="form-control"
+									id="contact" placeholder="" ></span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+
+			</fieldset>
+
+
 
 
 		</div>
