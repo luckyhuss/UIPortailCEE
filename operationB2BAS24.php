@@ -6,8 +6,8 @@
 					<span class="panel_header_element"><a data-toggle="collapse"
 						href="#CollapseOperation">Operation</a></span>
 					<button id="btnDel_0" name="btnDel_0" type="button"
-						class="remove btn btn-danger">
-						<i class="glyphicon glyphicon-trash"></i>
+						class="remove btn btn-circle btn-danger">
+						<i class="glyphicon glyphicon-minus"></i>
 					</button>
 
 					<!-- <span class="panel_header_element"><a data-toggle="collapse" href="#resultatMesDossiers"><i class="glyphicon glyphicon-list-alt"></i></a></span> -->
@@ -322,9 +322,10 @@
     }
 
     function clone() {
-        $(this).parents(".clonedInput").clone()
+        if($('.clonedInput').length < 5) { 
+        $(this).parents(".clonedInput").clone() 
             .appendTo(".tbodyClone")
-            .attr("id", "clonedInput" + cloneIndex)
+            .attr("id", "clonedInput" + $(".clonedInput").length)
             .find("*")
             .each(function () {
                 var id = this.id || "";
@@ -336,23 +337,30 @@
             .on('click', 'clone', clone)
             .on('click', 'remove', remove);
 
+            $( "#clonedInput" + cloneIndex + " div.col-md-12.ajouter_operation button:nth-of-type(1), #clonedInput" + cloneIndex + " div.col-md-12.ajouter_operation button:nth-of-type(2)" ).hide();
+
+            cloneIndex++;
+
         if ($(".clonedInput").length == 1) {
             $('.remove').hide();
         } else {
             $('.remove').show();
         }
-
+        $("#clonedInput1 .remove").hide();
     }
-    function remove() {        
+}
+    function remove() {
         $(this).parents(".clonedInput").remove();
-
+ 
         if ($(".clonedInput").length == 1) {
             $('.remove').hide();
         } else {
             $('.remove').show();
         }
 
-    }    
+        $( "#clonedInput" + (cloneIndex-1) + " div.col-md-12.ajouter_operation button:nth-of-type(1), #clonedInput" + (cloneIndex-1)  + " div.col-md-12.ajouter_operation button:nth-of-type(2)").show();
+        cloneIndex--;
+    }
 
     $(document).on("click", ".clone", clone);
     $(document).on("click", ".remove", remove);
