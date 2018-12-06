@@ -1,11 +1,10 @@
 <?php include 'panel-choix-simulation.php'; ?>
 
 
+<?php include 'operationB2BAS24.php'; ?>
 
 
-<div class="col-md-12 operation">
-    <?php include 'operationB2BAS24.php'; ?>
-</div>
+
 
 <!--  div class="col-md-5 simulationHistoriques"-->
     <?php //include 'simulationHistoriques.php'; ?>
