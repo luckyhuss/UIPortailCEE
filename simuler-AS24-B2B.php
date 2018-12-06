@@ -1,3 +1,8 @@
+<?php include 'panel-choix-simulation.php'; ?>
+
+
+
+
 <div class="col-md-7 operation">
     <?php include 'operationB2BAS24.php'; ?>
 </div>

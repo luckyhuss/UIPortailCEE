@@ -862,3 +862,9 @@ footer {
     /* cursor:pointer; */
 }
 
+.forget-link {
+	position:relative;
+	color:red;
+	top: -30px;
+    left: -50px;
+}

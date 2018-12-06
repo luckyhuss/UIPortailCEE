@@ -9,7 +9,7 @@
 			<div class="panel panel-default menu_item">
 				<div class="panel-heading nav-menu <?php echo $activeHome ?>">
 					<h4 class="panel-title">
-						<a href="javascript:void()" id="Accueil"> <span
+						<a href="javascript:void(0)" id="Accueil"> <span
 							class="glyphicon glyphicon-home" aria-hidden="true"></span> <span
 							class="menu_title">Accueil</span></a>
 					</h4>
@@ -22,7 +22,7 @@
 			<div class="panel panel-default menu_item">
 				<div class="panel-heading nav-menu <?php echo $activeSimuler ?>">
 					<h4 class="panel-title">
-						<a href="javascript:void()" id="Simuler" alt="Simuler"><span
+						<a href="javascript:void(0)" id="Simuler" alt="Simuler"><span
 							class="glyphicon glyphicon-signal" aria-hidden="true"></span> <span
 							class="menu_title">Simuler</span></a>
 					</h4>
@@ -36,7 +36,7 @@
 			<div class="panel panel-default menu_item">
 				<div class="panel-heading nav-menu <?php echo $activeCreer ?>">
 					<h4 class="panel-title">
-						<a href="javascript:void()" id="Creer"><span
+						<a href="javascript:void(0)" id="Creer"><span
 							class="glyphicon glyphicon-file" aria-hidden="true"></span> <span
 							class="menu_title">Créer</span></a>
 					</h4>
@@ -49,7 +49,7 @@
 			<div class="panel panel-default menu_item">
 				<div class="panel-heading nav-menu <?php echo $activeRechercher ?>">
 					<h4 class="panel-title">
-						<a href="javascript:void()" id="Rechercher"><span
+						<a href="javascript:void(0)" id="Rechercher"><span
 							class="glyphicon glyphicon-search" aria-hidden="true"></span> <span
 							class="menu_title">Rechercher</span></a>
 					</h4>
@@ -63,7 +63,7 @@
 			<div class="panel panel-default menu_item">
 				<div class="panel-heading nav-menu <?php echo $activeDossier ?>">
 					<h4 class="panel-title">
-						<a href="javascript:void()" id="Dossiers"><span
+						<a href="javascript:void(0)" id="Dossiers"><span
 							class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> <span
 							class="menu_title">Gérer Mes Dossiers</span></a>
 					</h4>
@@ -77,7 +77,7 @@
 			<div class="panel panel-default menu_item">
 				<div class="panel-heading nav-menu <?php echo $activePiloter ?>">
 					<h4 class="panel-title">
-						<a href="javascript:void()" id="Piloter"><span
+						<a href="javascript:void(0)" id="Piloter"><span
 							class="glyphicon glyphicon-tasks" aria-hidden="true"></span> <span
 							class="menu_title">Piloter Mon Activité</span></a>
 					</h4>
@@ -90,7 +90,7 @@
 			<div class="panel panel-default menu_item">
 				<div class="panel-heading nav-menu <?php echo $activeInfo ?>">
 					<h4 class="panel-title">
-						<a href="javascript:void()" id="Info"><span
+						<a href="javascript:void(0)" id="Info"><span
 							class="glyphicon glyphicon-tasks" aria-hidden="true"></span> <span
 							class="menu_title">Info CEE</span></a>
 					</h4>
@@ -104,7 +104,7 @@
 			<div class="panel panel-default menu_item">
 				<div class="panel-heading nav-menu <?php echo $activeAdmin ?>">
 					<h4 class="panel-title">
-						<!-- <a href="javascript:void()" id="Admin" alt="Administration"><span class="glyphicon glyphicon-cog"
+						<!-- <a href="javascript:void(0)" id="Admin" alt="Administration"><span class="glyphicon glyphicon-cog"
 							aria-hidden="true"></span> <span class="menu_title">Administration</span></a> -->
 
 						<a data-toggle="collapse" href="#admin" class="collapsed"
@@ -120,7 +120,7 @@
 					<div
 						class="panel-heading nav-menu sous-menu <?php echo $activeAdminContenu ?>">
 						<h4 class="panel-title">
-							<a href="javascript:void()" id="AdminContenu"><span
+							<a href="javascript:void(0)" id="AdminContenu"><span
 								class="glyphicon glyphicon" aria-hidden="true"></span><span class="glyphicon glyphicon-list"
 							aria-hidden="true"></span> <span
 								class="menu_title">Gestion Contenu</span></a>
@@ -129,7 +129,7 @@
 					<div
 						class="panel-heading nav-menu sous-menu <?php echo $activeAdminUtilisateur ?>">
 						<h4 class="panel-title">
-							<a href="javascript:void()" id="AdminUtilisateur"><span
+							<a href="javascript:void(0)" id="AdminUtilisateur"><span
 								class="glyphicon glyphicon" aria-hidden="true"></span><span class="glyphicon glyphicon-user"
 							aria-hidden="true"></span> <span
 								class="menu_title">Gestion Utilisateur</span></a>
@@ -138,7 +138,7 @@
 					<div
 						class="panel-heading nav-menu sous-menu <?php echo $activeAdminGigya ?>">
 						<h4 class="panel-title">
-							<a href="javascript:void()" id="AdminGigya"><span
+							<a href="javascript:void(0)" id="AdminGigya"><span
 								class="glyphicon glyphicon" aria-hidden="true"></span><span class="glyphicon glyphicon-user"
 							aria-hidden="true"></span> <span
 								class="menu_title">Gestion Gigya</span></a>
@@ -147,7 +147,7 @@
 					<div
 						class="panel-heading nav-menu sous-menu <?php echo $activeAdminPermission ?>">
 						<h4 class="panel-title">
-							<a href="javascript:void()" id="AdminPermission"><span
+							<a href="javascript:void(0)" id="AdminPermission"><span
 								class="glyphicon glyphicon" aria-hidden="true"></span><span class="glyphicon glyphicon-wrench"
 							aria-hidden="true"></span> <span
 								class="menu_title">Gestion Permission</span></a>

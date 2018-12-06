@@ -286,3 +286,9 @@ option:not(:checked) {
 	color: #df5952;
 }
 
+
+legend {
+	background:#df5952;
+	color:#fff;
+}
+

@@ -281,3 +281,8 @@ option:not(:checked) {
 .dateEstimeeCommande .calendar_button{
 	color: #01afba;
 }
+
+legend {
+	background:#01afba;
+	color:#fff;
+}
