@@ -1,5 +1,5 @@
 <div class="tbodyClone">
-	<div class="panel-group clonedInput" id="clonedInput1">
+	<div class="panel-group clonedOP" id="clonedOP1">
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -21,7 +21,7 @@
 						<legend>Secteur</legend>
 
 							<div class="fieldset-container">
-							<span class="form_input"> <select class="form-control">
+							<span class="form_input"> <select id="secteur_OP0" name="secteur_OP0" class="form-control">
 									<option value="1">#1 - Secteur 1</option>
 									<option value="2">#2 - Secteur 2</option>
 									<option value="3">#3 - Secteur 3</option>
@@ -73,7 +73,7 @@
 					<fieldset class="fieldset-margin-bottom choisirOperationPanel">
 						<legend>Opération</legend>
 						<div class="fieldset-container">
-							<span class="form_input"> <select class="form-control">
+							<span class="form_input"> <select id="operation_op0" name="operation_op0" class="form-control">
 									<option value="1">#1 - Fiche 1</option>
 									<option value="2">#2 - Fiche 2</option>
 									<option value="3">#3 - Fiche 3</option>
@@ -148,27 +148,17 @@
 
 					<div class="col-md-12 panel-date">
 
-
-
-
 						<fieldset class="fieldset-margin-bottom dateEstimeeCommande">
 							<legend>Date estimée commande</legend>
 
-
-
 							<div class="date">
 								<div class="input_holder">
-									<input class="form-control datepicker" placeholder="mm/dd/yyyy" />
+									<input  id="date_op0" name="date_op0" class="form-control datepicker" placeholder="mm/dd/yyyy" />
 									<span class="calendar_button"><i
 										class="glyphicon glyphicon-calendar"></i></span>
 								</div>
 							</div>
-
 						</fieldset>
-
-
-
-
 
 						<div class="panel-group RemunerationRefEstiméePanel">
 							<div class="panel panel-default">
@@ -184,8 +174,6 @@
 								</div>
 							</div>
 						</div>
-
-
 
 					</div>
 
@@ -314,18 +302,18 @@
 <script>
 
     var regex = /^(.*)(\d)+$/i;
-    var cloneIndex = $(".clonedInput").length;
-    if ($(".clonedInput").length == 1) {
+    var cloneIndex = $(".clonedOP").length;
+    if ($(".clonedOP").length == 1) {
         $('.remove').hide();
     } else {
         $('.remove').show();
     }
 
     function clone() {
-        if($('.clonedInput').length < 5) { 
-        $(this).parents(".clonedInput").clone() 
+        $(this).parents(".clonedOP").clone()
+            .find("input:checkbox").val("").end()
             .appendTo(".tbodyClone")
-            .attr("id", "clonedInput" + $(".clonedInput").length)
+            .attr("id", "clonedOP" + $(".clonedOP").length)
             .find("*")
             .each(function () {
                 var id = this.id || "";
@@ -337,29 +325,34 @@
             .on('click', 'clone', clone)
             .on('click', 'remove', remove);
 
-            $( "#clonedInput" + cloneIndex + " div.col-md-12.ajouter_operation button:nth-of-type(1), #clonedInput" + cloneIndex + " div.col-md-12.ajouter_operation button:nth-of-type(2)" ).hide();
+            $(".tbodyClone .clone").hide();
 
             cloneIndex++;
 
-        if ($(".clonedInput").length == 1) {
+            var obj = $( ".tbodyClone .clonedOP:last-child" ).attr('id');
+    
+            $( "#" + obj + " div.col-md-12.ajouter_operation button").show();
+
+        if ($(".clonedOP").length == 1) {
             $('.remove').hide();
         } else {
             $('.remove').show();
         }
-        $("#clonedInput1 .remove").hide();
-    }
+        $("#clonedOP1 .remove").hide();
 }
     function remove() {
-        $(this).parents(".clonedInput").remove();
+        $(this).parents(".clonedOP").hide();
  
-        if ($(".clonedInput").length == 1) {
+        if ($(".clonedOP").length == 1) {
             $('.remove').hide();
         } else {
             $('.remove').show();
         }
+        $("#clonedOP1 .remove").hide();
 
-        $( "#clonedInput" + (cloneIndex-1) + " div.col-md-12.ajouter_operation button:nth-of-type(1), #clonedInput" + (cloneIndex-1)  + " div.col-md-12.ajouter_operation button:nth-of-type(2)").show();
-        cloneIndex--;
+        $(".tbodyClone .clone").hide();
+        var obj = $( ".tbodyClone .clonedOP:last-child" ).attr('id');
+        $( "#" + obj + " div.col-md-12.ajouter_operation button").show();
     }
 
     $(document).on("click", ".clone", clone);
