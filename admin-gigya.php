@@ -1,3 +1,4 @@
+
 <div class="panel-group">
 	<div class="panel panel-default">
 		<div class="panel-heading">
@@ -25,7 +26,6 @@
 							style="width: 100%">
 							<thead>
 								<tr>
-									<th>Username</th>
 									<th>Email</th>
 									<th></th>
 								</tr>
@@ -33,21 +33,23 @@
 							<tbody>
 							
 								<?php
-                                    for ($n = 0; $n <= 50; $n ++) {
-                                        ?>
+        for ($n = 0; $n <= 50; $n ++) {
+            ?>
                             
-                            								<tr>
-                            									<td>John <?=$n?></td>
-                            									<td>jjohn@test.com</td>
-                            									<td class="iconCol"><a href="javascript:void(0)"
-                            										onclick="displayDetailUser();"><i
-                            											class="glyphicon glyphicon-edit" data-toggle="collapse"
-                            											data-target="#collapseDetailUser"></i></a></td>
-                            								</tr>
+                            	<tr>
+									<td>jjohnasdasd<?=$n?>@testasdsa.com</td>
+									<td class="iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0)" onclick="displayDetailUser();"><i
+												class="glyphicon glyphicon-edit" data-toggle="collapse"
+												data-target="#collapseDetailUser"></i></a></span><span
+										class="icon-holder"> <a href="javascript:void(0)"
+											onclick="deleteUser('jjohnasdasd<?=$n?>@testasdsa.com');"><i
+												class="glyphicon glyphicon-trash"></i></a></span></td>
+								</tr>
                             
-                            								<?php
-                                    }
-                                    ?>
+                            	<?php
+        }
+        ?>
 							</tbody>
 						</table>
 
@@ -139,14 +141,46 @@
 	</div>
 </div>
 
+
+<script src="assets/js/msconfirm.js"></script>
 <script>
 
 
 function displayDetailUser(id) {
-	$("#add-edit-panel").css("display", "block");
+	$("#add-edit-panel").removeClass("displayed");
 	$("html,body").animate({scrollTop: $("#gestAddEditUtilisateur").offset().top}, 2000);
 }
 
 
+function deleteUser(email) {
+	$("#add-edit-panel").addClass("displayed");
+	mscConfirm(email, " sera supprimé définitivement de Gigya ","Cliquez sur OK pour confirmer la suppression ou sur Annuler.", 
+            function()	{
+      		  alert("User deleted");
+      		},
+      		function() {
+      		  alert('Cancelled');
+      			
+  			}
+  	); 
+
+	
+}
+
 </script>
 
+<div class="msc-confirm displayed">
+	<!-- <div class="msc-overlay"></div> -->
+	<div class="msc-content msc-confirm--animate">
+		<div class="msc-popin-alerte"></div>
+		<div class="msc-body">
+			<h4 class="msc-utilisateur"></h4>
+			<span class="msc-connect-message"></span> <span
+				class="msc-etape-message"></span>
+		</div>
+		<div class="msc-action">
+			<button class="msc-ok">OK</button>
+			<button class="msc-cancel">Annulé</button>
+		</div>
+	</div>
+</div>
