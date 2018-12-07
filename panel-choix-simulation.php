@@ -41,7 +41,7 @@
 							<div class="form-group">
 								<span class="form_label"><label for="RaisonSociale">Raison
 										sociale</label></span> <span class="form_input"><input
-									type="text" class="form-control" style="width: 100% !important"
+									type="text" class="form-control" 
 									id="raisonSocial" placeholder=""></span>
 							</div>
 						</div>
@@ -57,7 +57,7 @@
 						<div class="col-sm-6 col-md-4 input_holder choix-partenaire">
 							<div class="form-group">
 								<span class="form_label"><label for="Contact">Contact</label></span>
-								<span class="form_input" style="width: 100%"><input type="text"
+								<span class="form_input" ><input type="text"
 									class="form-control" id="contact" placeholder=""></span>
 							</div>
 						</div>
