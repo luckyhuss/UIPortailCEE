@@ -34,19 +34,19 @@
 
 				</div>
 
-				<div class="col-md-12">
+				<div class="col-md-12 choix-container displayed">
 
-					<div class="row">
-						<div class="col-ms-8 col-md-4 input_holder" >
+					<div class="row prospect-container">
+						<div class="col-sm-6 col-md-4 input_holder">
 							<div class="form-group">
 								<span class="form_label"><label for="RaisonSociale">Raison
 										sociale</label></span> <span class="form_input"><input
-									type="text" class="form-control" id="raisonSocial"
-									placeholder=""></span>
+									type="text" class="form-control" style="width: 100% !important"
+									id="raisonSocial" placeholder=""></span>
 							</div>
 						</div>
 
-						<div class="col-ms-8 col-md-4 input_holder" >
+						<div class="col-sm-6 col-md-4 input_holder">
 							<div class="form-group">
 								<span class="form_label"><label for="Siren">SIREN</label></span>
 								<span class="form_input"><input type="text" class="form-control"
@@ -54,14 +54,16 @@
 							</div>
 						</div>
 
-						<div class="col-ms-8 col-md-4 input_holder" >
+						<div class="col-sm-6 col-md-4 input_holder choix-partenaire">
 							<div class="form-group">
 								<span class="form_label"><label for="Contact">Contact</label></span>
-								<span class="form_input" style="width:100%"><input type="text" class="form-control"
-									id="contact" placeholder="" ></span>
+								<span class="form_input" style="width: 100%"><input type="text"
+									class="form-control" id="contact" placeholder=""></span>
 							</div>
 						</div>
 					</div>
+					
+					
 
 				</div>
 
@@ -77,3 +79,21 @@
 
 	</div>
 </div>
+
+<script>
+ $(document).ready(function() {
+	 
+	 $( "input[name='optradio']" ).click(function(e) {
+		 	$('.choix-partenaire').removeClass('displayed');
+	   		var checkedValue = $("input[name='optradio']:checked").val();
+	   		//alert('checked ' + checkedValue);
+	   		if(checkedValue == 'partenaire') {
+		   		$('.choix-partenaire').addClass('displayed');
+	   		}
+
+	   		$('.choix-container').removeClass('displayed');
+	 });
+	
+	 });
+
+</script>
