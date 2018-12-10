@@ -17,7 +17,7 @@
 			<div id="CollapseOperation" class="panel-collapse collapse in">
 				<div class="panel-body">
 
-					<div class="col-md-6 choisirSecteurContainer">
+					<div class="choisirSecteurContainer">
 						<fieldset class="fieldset-margin-bottom choisirSecteurPanel">
 							<legend>Secteur</legend>
 
@@ -25,8 +25,8 @@
 
 								<div class="header-group col-md-12">
 									<span class="form_label"><label for="Critere">Secteur</label></span>
-									<span class="header_output"><select id="selectSecteur_OP0"
-										name="secteur_OP0" class="form-control">
+									<span class="header_output"><select id="selectSecteur_OP0" 
+										name="secteur_OP0" class="form-control secteur">
 											<option value="0"></option>
 											<option value="1">#1 - Industrie</option>
 											<option value="2">#2 - bâtiment résidentiel (BAR)</option>
@@ -38,7 +38,7 @@
 								<div class="header-group col-md-12">
 									<span class="form_label"><label for="Critere">Type de bénéficiaire</label></span>
 									<span class="header_output"><select id="beneficiaire_OP0"
-										name="beneficiaire_OP0" class="form-control">
+										name="beneficiaire_OP0" class="form-control beneficiaire">
 											<option value="0"></option>
 											<option value="1">#1 - un logement</option>
 											<option value="2">#2 - plusieurs logements</option>
@@ -52,7 +52,7 @@
 					</div>
 
 
-					<div class="col-md-6 choisirOperationContainer">
+					<div class="choisirOperationContainer">
 						<fieldset class="fieldset-margin-bottom choisirOperationPanel">
 							<legend>Opération</legend>
 							<div class="fieldset-container">
@@ -311,7 +311,7 @@
     }
 
     function clone() {
-        $(this).parents(".clonedOP").clone()
+        $(this).parents(".clonedOP").clone(true, true)
             .find("input:checkbox").val("").end()
             .appendTo(".tbodyClone")
             .attr("id", "clonedOP" + (cloneIndex+1))
@@ -361,4 +361,53 @@
     $(document).on("click", ".clone", clone);
     $(document).on("click", ".remove", remove);
 
-</script>
+
+
+
+  </script>
+  
+  <script>
+
+//$(document).ready(function(){
+	
+
+  
+//	 $('.beneficiaire').click(function () {
+//	 var benef =  $('.beneficiaire').val();
+//	 alert(benef);
+//	})
+//	});
+
+//$(document).ready(function() {
+ 
+//	 $( "input[name='optradio']" ).click(function(e) {
+//		 	$('.choix-partenaire').removeClass('displayed');
+//	   		var checkedValue = $("input[name='optradio']:checked").val();
+//	   		//alert('checked ' + checkedValue);
+//	   		if(checkedValue == 'partenaire') {
+//		   		$('.choix-partenaire').addClass('displayed');
+//	   		}
+
+//	   		$('.choix-container').removeClass('displayed');
+//	 });
+
+//	 });
+
+
+
+
+// $(".secteur option:selected").each(function () {
+//     //alert($(this).text());
+//     console.log($(this).text()); 
+// });
+$('select[id^="selectSecteur"]').change(function () {
+	$('select[id^="selectSecteur"]').each(function () {
+		
+	    console.log(this.id);
+		});
+	});
+	
+
+
+  </script>
+    
