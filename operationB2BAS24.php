@@ -17,153 +17,133 @@
 			<div id="CollapseOperation" class="panel-collapse collapse in">
 				<div class="panel-body">
 
-					<fieldset class="fieldset-margin-bottom choisirSecteurPanel">
-						<legend>Secteur</legend>
+					<div class="col-md-6 choisirSecteurContainer">
+						<fieldset class="fieldset-margin-bottom choisirSecteurPanel">
+							<legend>Secteur</legend>
 
 							<div class="fieldset-container">
-							<span class="form_input"> <select id="secteur_OP0" name="secteur_OP0" class="form-control">
-									<option value="1">#1 - Secteur 1</option>
-									<option value="2">#2 - Secteur 2</option>
-									<option value="3">#3 - Secteur 3</option>
-									<option value="4">#4 - Secteur 4</option>
-									<option value="5">#5 - Secteur 5</option>
-							</select>
-							</span>
-						</div>
 
-						<!-- <div class="col-xs-6 col-sm-3 col-md-3 input_holder">
-							<div class="form-group">
-								<span class="form_input"><input type="radio" name="optradio"
-									checked></span> <span class="form_label"><label for="Bat">Batiment</label></span>
-							</div>
-						</div>
-
-						<div class="col-sm-3 col-md-3 input_holder">
-							<div class="form-group">
-								<span class="form_input"><input type="radio" name="optradio"></span>
-								<span class="form_label"><label for="Bar">Bar</label></span>
-
-							</div>
-						</div>
-
-						<div class="col-xs-6 col-sm-3 col-md-3 input_holder">
-							<div class="form-group">
-								<span class="form_input"><input type="radio" name="optradio"></span>
-								<span class="form_label"><label for="Industrie">Industrie</label></span>
-							</div>
-						</div>
-
-						<div class="col-sm-3 col-md-3 input_holder">
-							<div class="form-group">
-								<span class="form_input"><input type="radio" name="optradio"></span>
-								<span class="form_label"><label for="Agri">Agriculture</label></span>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-3 col-md-3 input_holder">
-							<div class="form-group">
-								<span class="form_input"><input type="radio" name="optradio"></span>
-								<span class="form_label"><label for="Industrie">Industrie</label></span>
-							</div>
-						</div> -->
-
-					</fieldset>
-
-
-
-					<fieldset class="fieldset-margin-bottom choisirOperationPanel">
-						<legend>Opération</legend>
-						<div class="fieldset-container">
-							<span class="form_input"> <select id="operation_op0" name="operation_op0" class="form-control">
-									<option value="1">#1 - Fiche 1</option>
-									<option value="2">#2 - Fiche 2</option>
-									<option value="3">#3 - Fiche 3</option>
-									<option value="4">#4 - Fiche 4</option>
-									<option value="5">#5 - Fiche 5</option>
-							</select>
-							</span>
-						</div>
-					</fieldset>
-
-
-					<fieldset class="fieldset-margin-bottom critereAsaisirPanel">
-						<legend>Critères</legend>
-
-
-						<div class="critere">
-
-
-							<div class="col-sm-6 col-md-6 input_holder">
-								<div class="form-group">
-									<span class="form_label"><label for="Critere1">Critère 1</label></span>
-									<span class="form_input"><input type="checkbox" id="numAction"
-										placeholder=""></span>
-								</div>
-							</div>
-
-							<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
-								<div class="form-group">
-									<span class="form_label"><label for="Critere2">Critère 2</label></span>
-									<span class="form_input"><input type="text" class="form-control" id="critere2" placeholder=""></span>
-								</div>
-
-							</div>
-
-							<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
-								<div class="form-group">
-									<span class="form_label"><label for="Critere3">Critère 3</label></span>
-									<span class="form_input"> 
-										<select id="critere3" name="critere3" class="form-control">
-											<option value="1">H1</option>
-											<option value="2">H2</option>
-											<option value="3">H3</option>
-										</select>
-									</span>
-								</div>
-							</div>
-
-							<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
-								<div class="form-group">
-									<span class="form_label"><label for="Critere4">Critère 4</label></span>
-									<span class="form_input"><input type="checkbox" id="Critere"
-										placeholder=""></span>
-								</div>
-							</div>
-
-							<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
-								<div class="form-group">
-									<span class="form_label"><label for="Critere5">Critère 5</label></span>
-									<span class="form_input"><input type="text" class="form-control" id="critere5" placeholder=""></span>
-								</div>
-							</div>
-
-							<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
-								<div class="form-group">
-									<span class="form_label"><label for="Critere6">Critère 6</label></span>
-									<span class="form_input"> 
-										<select id="critere6" name="critere6" class="form-control">
-											<option value="1">H1</option>
-											<option value="2">H2</option>
-											<option value="3">H3</option>
-										</select>
-									</span>
+								<div class="header-group">
+									<span class="form_label"><label for="Critere">Secteur</label></span>
+									<span class="header_output"><select id="secteur_OP0"
+										name="secteur_OP0" class="form-control">
+											<option value="0"></option>
+											<option value="1">#1 - Industrie</option>
+											<option value="2">#2 - bâtiment résidentiel (BAR)</option>
+											<option value="3">#3 - Agriculture</option>
+											<option value="4">#4 - Secteur 4</option>
+											<option value="5">#5 - Secteur 5</option>
+									</select></span>
 								</div>
 							</div>
 
 
+						</fieldset>
+					</div>
 
-						</div>
 
-					</fieldset>
+					<div class="col-md-6 choisirOperationContainer">
+						<fieldset class="fieldset-margin-bottom choisirOperationPanel">
+							<legend>Opération</legend>
+							<div class="fieldset-container">
+								<div class="header-group">
+									<span class="form_label"><label for="Critere">Opération</label></span>
+									<span class="header_output"><select id="secteur_OP0"
+										name="secteur_OP0" class="form-control">
+											<option value="0"></option>
+											<option value="1">#1 - Operation 1</option>
+											<option value="2">#2 - Operation 2</option>
+											<option value="3">#3 - Operation 3</option>
+											<option value="4">#4 - Operation 4</option>
+											<option value="5">#5 - Operation 5</option>
+									</select></span>
+								</div>
+							</div>
+						</fieldset>
+					</div>
 
-					<div class="col-md-12 panel-date">
+
+
+
+
+
+
+
+
+					<div class="col-md-12 choisirCritereContainer">
+						<fieldset class="fieldset-margin-bottom critereAsaisirPanel">
+							<legend>Critères</legend>
+
+
+							<div class="critere">
+
+
+								<div class="col-sm-6 col-md-6 input_holder">
+									<div class="form-group">
+										<span class="form_label"><label for="Critere">Critere 1</label></span>
+										<span class="form_input"><input type="checkbox" id="numAction"
+											placeholder=""></span>
+									</div>
+								</div>
+
+								<div class="col-sm-6 col-md-6 input_holder">
+									<div class="form-group">
+										<span class="form_label"><label for="Critere">Critere 2</label></span>
+										<span class="form_input"><input type="checkbox" id="Critere"
+											placeholder=""></span>
+									</div>
+								</div>
+
+								<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
+									<div class="form-group">
+										<span class="form_label"><label for="Critere">Critere 3</label></span>
+										<span class="form_input"><input type="checkbox" id="Critere"
+											placeholder=""></span>
+									</div>
+								</div>
+
+								<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
+									<div class="form-group">
+										<span class="form_label"><label for="Critere">Critere 4</label></span>
+										<span class="form_input"><input type="checkbox" id="Critere"
+											placeholder=""></span>
+									</div>
+								</div>
+
+								<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
+									<div class="form-group">
+										<span class="form_label"><label for="Critere">Critere 5</label></span>
+										<span class="form_input"><input type="checkbox" id="Critere"
+											placeholder=""></span>
+									</div>
+								</div>
+
+								<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
+									<div class="form-group">
+										<span class="form_label"><label for="Critere">Critere 6</label></span>
+										<span class="form_input"><input type="checkbox" id="Critere"
+											placeholder=""></span>
+									</div>
+								</div>
+
+
+
+							</div>
+
+						</fieldset>
+
+					</div>
+
+					<div class="col-md-12 panel-date displayed">
 
 						<fieldset class="fieldset-margin-bottom dateEstimeeCommande">
 							<legend>Date estimée commande</legend>
 
 							<div class="date">
 								<div class="input_holder">
-									<input  id="date_op0" name="date_op0" class="form-control datepicker" placeholder="mm/dd/yyyy" />
-									<span class="calendar_button"><i
+									<input id="date_op0" name="date_op0"
+										class="form-control datepicker" placeholder="mm/dd/yyyy" /> <span
+										class="calendar_button"><i
 										class="glyphicon glyphicon-calendar"></i></span>
 								</div>
 							</div>

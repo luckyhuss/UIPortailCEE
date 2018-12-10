@@ -2596,8 +2596,12 @@ input[name='optradio'] {
 	display:inline-block;
 }
 
-.choisirSecteurPanel .form_label>label {
+.choisirSecteurPanel .form_label>label, .choisirOperationPanel .form_label>label {
 	height:35px!important;
+}
+
+.choisirSecteurPanel .header_output, .choisirOperationPanel .header_output  {
+	width:50%;
 }
 
  .critereAsaisirPanel {
@@ -2625,6 +2629,10 @@ input[name='optradio'] {
 	padding-right:5px;
 }
 
+.choisirSecteurPanel .fieldset-container span {
+	/* display:inline-block;	 */
+}
+
 
 .choix-container .form-group, .choix-container .form_input{
 	width:100%!important;
@@ -2648,6 +2656,27 @@ input[name='optradio'] {
 .choisirProspectPartenaire .fieldset-container .input_holder {
 	margin-right:65px;
 }
+
+
+
+.choisirSecteurContainer {
+	padding-left:0px;	
+}
+
+.choisirOperationContainer {
+	padding-right:0px;
+}
+
+.choisirCritereContainer {
+	padding-left:0px;	
+	padding-right:0px;
+}
+/******************************************************************/
+
+
+
+
+
 
 .icon-holder {
 	padding-left:10px;

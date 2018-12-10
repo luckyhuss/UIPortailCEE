@@ -117,7 +117,13 @@
 		width:14%important;
 	} */
 	
+	.choisirSecteurContainer {
+		padding-right: 0px;
+	}
 	
+	.choisirOperationContainer {
+		padding-left: 0px;
+	}
 }
 
 @media ( max-width : 880px) {
@@ -273,6 +279,14 @@
 @media ( max-width : 350px) {
 	.filter-item {
 		width: 250px !important;
+	}
+	
+}
+
+@media ( max-width : 374px) {
+
+	.choisirSecteurPanel .header_output, .choisirOperationPanel .header_output  {
+		width:100%;
 	}
 }
 
