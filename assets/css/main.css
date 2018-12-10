@@ -2585,7 +2585,7 @@ input[name='optradio'] {
 }
 
 .choisirSecteurPanel .input_holder,  .critereAsaisirPanel  .input_holder{
-	padding-left:10px;
+	padding-left:5px;
 }
 
 .choisirSecteurPanel .panel-body {
@@ -2596,12 +2596,12 @@ input[name='optradio'] {
 	display:inline-block;
 }
 
-.choisirSecteurPanel .form_label>label, .choisirOperationPanel .form_label>label {
+.choisirSecteurPanel .form_label>label, .choisirOperationPanel .form_label>label, .critereAsaisirPanel .form_label>label {
 	height:35px!important;
 }
 
-.choisirSecteurPanel .header_output, .choisirOperationPanel .header_output  {
-	width:50%;
+.choisirSecteurPanel .header_output, .choisirOperationPanel .header_output, .critereAsaisirPanel .header_output  {
+	width:55%;
 }
 
  .critereAsaisirPanel {

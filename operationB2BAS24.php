@@ -63,13 +63,6 @@
 					</div>
 
 
-
-
-
-
-
-
-
 					<div class="col-md-12 choisirCritereContainer">
 						<fieldset class="fieldset-margin-bottom critereAsaisirPanel">
 							<legend>Critères</legend>
@@ -77,61 +70,65 @@
 
 							<div class="critere">
 
-
 								<div class="col-sm-6 col-md-6 input_holder">
-									<div class="form-group">
-										<span class="form_label"><label for="Critere">Critere 1</label></span>
-										<span class="form_input"><input type="checkbox" id="numAction"
-											placeholder=""></span>
+									<div class="header-group">
+										<span class="form_label"><label for="Critere1">Critère 1</label></span>
+										<span class="header_output"><input type="text" class="form-control" id="critere1" placeholder=""></span>
 									</div>
 								</div>
 
 								<div class="col-sm-6 col-md-6 input_holder">
-									<div class="form-group">
-										<span class="form_label"><label for="Critere">Critere 2</label></span>
-										<span class="form_input"><input type="checkbox" id="Critere"
-											placeholder=""></span>
+									<div class="header-group">
+										<span class="form_label"><label for="Critere2">Critère 2</label></span>
+										<span class="header_output"><input type="text" class="form-control" id="critere2" placeholder=""></span>
 									</div>
 								</div>
 
-								<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
-									<div class="form-group">
-										<span class="form_label"><label for="Critere">Critere 3</label></span>
-										<span class="form_input"><input type="checkbox" id="Critere"
-											placeholder=""></span>
+								<div class="col-sm-6 col-md-6 input_holder">
+									<div class="header-group">
+									<span class="form_label"><label for="Critere3">Critère 3</label></span>
+									<span class="header_output">											
+										<select id="critere3" name="critere3" class="form-control">
+												<option value="1">H1</option>
+												<option value="2">H2</option>
+												<option value="3">H3</option>
+										</select>
+									</span>
 									</div>
 								</div>
 
-								<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
-									<div class="form-group">
-										<span class="form_label"><label for="Critere">Critere 4</label></span>
-										<span class="form_input"><input type="checkbox" id="Critere"
-											placeholder=""></span>
+								<div class="col-sm-6 col-md-6 input_holder">
+									<div class="header-group">
+									<span class="form_label"><label for="Critere4">Critère 4</label></span>
+									<span class="header_output">											
+										<select id="critere4" name="critere4" class="form-control">
+												<option value="1">H1</option>
+												<option value="2">H2</option>
+												<option value="3">H3</option>
+										</select>
+									</span>
 									</div>
 								</div>
 
-								<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
+								<div class="col-sm-6 col-md-6 input_holder">
 									<div class="form-group">
-										<span class="form_label"><label for="Critere">Critere 5</label></span>
-										<span class="form_input"><input type="checkbox" id="Critere"
+										<span class="form_label"><label for="Critere5">Critère 5</label></span>
+										<span class="header_output"><input type="checkbox" id="Critere5"
 											placeholder=""></span>
 									</div>
 								</div>
-
-								<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
+								
+								<div class="col-sm-6 col-md-6 input_holder">
 									<div class="form-group">
-										<span class="form_label"><label for="Critere">Critere 6</label></span>
-										<span class="form_input"><input type="checkbox" id="Critere"
+										<span class="form_label"><label for="Critere6">Critère 6</label></span>
+										<span class="header_output"><input type="checkbox" id="Critere6"
 											placeholder=""></span>
 									</div>
 								</div>
-
-
 
 							</div>
 
 						</fieldset>
-
 					</div>
 
 					<div class="col-md-12 panel-date displayed">
@@ -303,6 +300,7 @@
         $('.remove').show();
     }
 
+	// var count = 0;
     function clone() {
         $(this).parents(".clonedOP").clone()
             .find("input:checkbox").val("").end()
@@ -315,18 +313,18 @@
                 if (match.length == 3) {
                     this.id = match[1] + (cloneIndex);
                 }
+				// $(this).attr("id", "clonedOP" + count);
+				// count++;
             })
             .on('click', 'clone', clone)
             .on('click', 'remove', remove);
 
             $(".tbodyClone .clone").hide();
 
-			// $(".tbodyClone .clonedOP" + $(".clonedOP").length).find('.panel-title').text("Opération" + $(".clonedOP").length);
-
             cloneIndex++;
 
             var obj = $( ".tbodyClone .clonedOP:last-child" ).attr('id');
-			//console.log(obj);
+			console.log(obj);
             $( "#" + obj + " div.col-md-12.ajouter_operation button").show();
 
         if ($(".clonedOP").length == 1) {
@@ -337,7 +335,7 @@
         $("#clonedOP1 .remove").hide();
 }
     function remove() {
-        $(this).parents(".clonedOP").hide();
+        $(this).parents(".clonedOP").remove();
  
         if ($(".clonedOP").length == 1) {
             $('.remove').hide();
@@ -348,11 +346,10 @@
 
         $(".tbodyClone .clone").hide();
         var obj = $( ".tbodyClone .clonedOP:last-child" ).attr('id');
-		//console.log(obj);
+		console.log(obj);
 
-		// if (document.getElementById(obj).style.display = "block"){
-        	$( "#" + obj + " div.col-md-12.ajouter_operation button").show();
-		// }
+		$( "#" + obj + " div.col-md-12.ajouter_operation button").show();
+
     }
 
     $(document).on("click", ".clone", clone);
