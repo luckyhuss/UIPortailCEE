@@ -206,7 +206,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-12 ajouter_operation ">
+			<div class="col-xs-12 col-md-12 ajouter_operation ">
 				<button type="button" id="btnAdd_0"
 					class="clone btn submit_button btn-circle btn-lg add"
 					title="Ajouter operation">
