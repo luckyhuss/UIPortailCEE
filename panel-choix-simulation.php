@@ -36,7 +36,7 @@
 
 				<div class="col-md-12 choix-container displayed">
 
-					<div class="row prospect-container">
+					<div class="row prospect-container displayed">
 						<div class="col-sm-6 col-md-4 input_holder">
 							<div class="form-group">
 								<span class="form_label"><label for="RaisonSociale">Raison
@@ -64,6 +64,28 @@
 					</div>
 					
 					
+					<div class="row partenaire-container displayed">
+						<div class="col-sm-6 col-md-4 input_holder">
+							<div class="form-group">
+								<span class="form_label"><label for="RaisonSociale">Raison
+										sociale</label></span> 
+										<!-- <span class="form_input"><input
+									type="text" class="form-control" 
+									id="raisonSocial" placeholder=""></span> -->
+									<div id="msRaisonSociale" class="form-control"></div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-4 input_holder">
+							<div class="form-group">
+								<span class="form_label"><label for="Siren">SIREN</label></span>
+								<!-- <span class="form_input"><input type="text" class="form-control"
+									id="siren" placeholder=""></span> -->
+									<div id="msSiren" class="form-control"></div>
+							</div>
+						</div>
+
+					</div>
 
 				</div>
 
@@ -81,19 +103,51 @@
 </div>
 
 <script>
+//  $(document).ready(function() {
+	 
+// 	 $( "input[name='optradio']" ).click(function(e) {
+// 		 	$('.choix-partenaire').removeClass('displayed');
+// 	   		var checkedValue = $("input[name='optradio']:checked").val();
+// 	   		alert('checked ' + checkedValue);
+// 	   		if(checkedValue == 'partenaire') {
+// 		   		$('.choix-partenaire').addClass('displayed');
+// 	   		}
+
+// 	   		$('.choix-container').removeClass('displayed');
+// 	 });
+	
+// 	 });
+
  $(document).ready(function() {
 	 
 	 $( "input[name='optradio']" ).click(function(e) {
-		 	$('.choix-partenaire').removeClass('displayed');
+		 	$('.choix-container').removeClass('displayed');
 	   		var checkedValue = $("input[name='optradio']:checked").val();
-	   		//alert('checked ' + checkedValue);
+	   		// alert('checked ' + checkedValue);
 	   		if(checkedValue == 'partenaire') {
-		   		$('.choix-partenaire').addClass('displayed');
+		   		$('.prospect-container').addClass('displayed');
+				$('.partenaire-container').removeClass('displayed');
 	   		}
-
-	   		$('.choix-container').removeClass('displayed');
+			else{
+	   			$('.prospect-container').removeClass('displayed');
+				$('.partenaire-container').addClass('displayed');
+			}
 	 });
 	
 	 });
+
+	$(function() {
+	var msRaisonSociale = $('#msRaisonSociale').magicSuggest({
+		data: ["GALLIANCE DINDE","GARTAL", "DELABLI", "ENERGEL"]
+	});
+
+	var msSiren = $('#msSiren').magicSuggest({
+		data: ['111222333','111222331','114222331','114222931','114222939']
+		});
+
+	// $(msRaisonSociale).on('selectionchange', function(){
+	// 		alert(JSON.stringify(this.getSelection()));
+	// 	});
+	});
 
 </script>
