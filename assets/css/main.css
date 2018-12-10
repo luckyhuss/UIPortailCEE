@@ -2795,3 +2795,13 @@ input[name='optradio'] {
 .msc-etape-message {
 	display:inline-block;
 }
+
+.simuler_btn_calculate {
+	padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}

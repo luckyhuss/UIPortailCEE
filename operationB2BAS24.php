@@ -23,7 +23,7 @@
 
 							<div class="fieldset-container">
 
-								<div class="header-group">
+								<div class="header-group col-md-12">
 									<span class="form_label"><label for="Critere">Secteur</label></span>
 									<span class="header_output"><select id="secteur_OP0"
 										name="secteur_OP0" class="form-control">
@@ -33,6 +33,16 @@
 											<option value="3">#3 - Agriculture</option>
 											<option value="4">#4 - Secteur 4</option>
 											<option value="5">#5 - Secteur 5</option>
+									</select></span>
+								</div>
+								<div class="header-group col-md-12">
+									<span class="form_label"><label for="Critere">Type de bénéficiaire</label></span>
+									<span class="header_output"><select id="beneficiaire_OP0"
+										name="beneficiaire_OP0" class="form-control">
+											<option value="0"></option>
+											<option value="1">#1 - un logement</option>
+											<option value="2">#2 - plusieurs logements</option>
+											<option value="3">#3 - Bailleur social</option>
 									</select></span>
 								</div>
 							</div>
@@ -219,7 +229,7 @@
 
 <!-- button ajouter -->
 
-<div class="col-md-12 submit_button_holder">
+<div class="col-md-12 submit_button_holder simuler_btn_calculate">
 	<button type="submit" class="btn btn-primary submit_button">Calculer</button>
 </div>
 
