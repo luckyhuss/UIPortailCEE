@@ -135,6 +135,9 @@
     </div>
 </div>
 
+<div class="col-md-2 submit_button_holder btn-retour">
+    <a class="btn btn-primary submit_button">Retour</a>
+</div>
 <!-- <div class="panel-group">
     <div class="panel panel-default">
         <div class="panel-heading">
