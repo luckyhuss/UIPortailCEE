@@ -4,7 +4,7 @@
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<span class="panel_header_element"><a data-toggle="collapse"
-						href="#CollapseOperation">Operation</a></span>
+						href="#CollapseOperation">Opération</a></span>
 					<button id="btnDel_0" name="btnDel_0" type="button"
 						class="remove btn btn-circle btn-danger">
 						<i class="glyphicon glyphicon-minus"></i>
@@ -94,15 +94,36 @@
 
 							<div class="col-sm-6 col-md-6 input_holder">
 								<div class="form-group">
-									<span class="form_label"><label for="Critere">Critere 1</label></span>
+									<span class="form_label"><label for="Critere1">Critère 1</label></span>
 									<span class="form_input"><input type="checkbox" id="numAction"
 										placeholder=""></span>
 								</div>
 							</div>
 
-							<div class="col-sm-6 col-md-6 input_holder">
+							<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
 								<div class="form-group">
-									<span class="form_label"><label for="Critere">Critere 2</label></span>
+									<span class="form_label"><label for="Critere2">Critère 2</label></span>
+									<span class="form_input"><input type="text" class="form-control" id="critere2" placeholder=""></span>
+								</div>
+
+							</div>
+
+							<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
+								<div class="form-group">
+									<span class="form_label"><label for="Critere3">Critère 3</label></span>
+									<span class="form_input"> 
+										<select id="critere3" name="critere3" class="form-control">
+											<option value="1">H1</option>
+											<option value="2">H2</option>
+											<option value="3">H3</option>
+										</select>
+									</span>
+								</div>
+							</div>
+
+							<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
+								<div class="form-group">
+									<span class="form_label"><label for="Critere4">Critère 4</label></span>
 									<span class="form_input"><input type="checkbox" id="Critere"
 										placeholder=""></span>
 								</div>
@@ -110,33 +131,21 @@
 
 							<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
 								<div class="form-group">
-									<span class="form_label"><label for="Critere">Critere 3</label></span>
-									<span class="form_input"><input type="checkbox" id="Critere"
-										placeholder=""></span>
+									<span class="form_label"><label for="Critere5">Critère 5</label></span>
+									<span class="form_input"><input type="text" class="form-control" id="critere5" placeholder=""></span>
 								</div>
 							</div>
 
 							<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
 								<div class="form-group">
-									<span class="form_label"><label for="Critere">Critere 4</label></span>
-									<span class="form_input"><input type="checkbox" id="Critere"
-										placeholder=""></span>
-								</div>
-							</div>
-
-							<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
-								<div class="form-group">
-									<span class="form_label"><label for="Critere">Critere 5</label></span>
-									<span class="form_input"><input type="checkbox" id="Critere"
-										placeholder=""></span>
-								</div>
-							</div>
-
-							<div class="col-xs-10 col-sm-6 col-md-6 input_holder">
-								<div class="form-group">
-									<span class="form_label"><label for="Critere">Critere 6</label></span>
-									<span class="form_input"><input type="checkbox" id="Critere"
-										placeholder=""></span>
+									<span class="form_label"><label for="Critere6">Critère 6</label></span>
+									<span class="form_input"> 
+										<select id="critere6" name="critere6" class="form-control">
+											<option value="1">H1</option>
+											<option value="2">H2</option>
+											<option value="3">H3</option>
+										</select>
+									</span>
 								</div>
 							</div>
 
@@ -164,8 +173,7 @@
 							<div class="panel panel-default">
 								<div class="panel-body">
 									<div class="stat__data col-md-8">
-										<span class="header_label"><label for="RemunerationRefEstimée">Remuneration
-												reference/estimée</label></span>
+										<span class="header_label"><label for="RemunerationRefEstimée">Rémunération référence/estimée</label></span>
 										<p class="header_output">10 €/MWh</p>
 									</div>
 									<div class="stat_icon_wrapper col-md-4">
@@ -183,21 +191,21 @@
 								<div class="resultatOperation">
 									<!-- <div class="stat"> -->
 									<!-- <div class="stat__data col-md-8"> -->
-									<span class="header_label"><label for="ResultatOperation">Resultat
-											pour l'operation</label></span>
+									<span class="header_label"><label for="ResultatOperation">Résultat
+											pour l'opération</label></span>
 									<!--  <span class="header_label"><label for="ResultatOperationCL">CL</label></span>
                                         <p class="header_output">10 kWhc 600 €</p>
                                         <span class="header_label"><label for="ResultatOperationPR">PR</label></span>
                                         <p class="header_output">10 kWhc 600 €</p> -->
 
 									<div class="header-group">
-										<span class="header_label"><label for="ResultatOperationCL">CL</label></span>
+										<span class="header_label"><label for="ResultatOperationCL">Classique</label></span>
 										<span class="header_output">10 kWhc</span> <span
 											class="header_output">600 €</span>
 									</div>
 
 									<div class="header-group">
-										<span class="header_label"><label for="ResultatOperationPR">PR</label></span>
+										<span class="header_label"><label for="ResultatOperationPR">Précarité</label></span>
 										<span class="header_output">10 kWhc</span> <span
 											class="header_output">600 €</span>
 									</div>
@@ -245,12 +253,18 @@
 			<div class="panel-body">
 				<div class="resultatCumule">
 					<div class="stat__data col-md-8">
-						<span class="header_label"><label for="ResultatCumule">Resultat
-								cumulé</label></span>
-						<p class="header_output">10 kWhc 600</p>
-					</div>
-					<div class="stat_icon_wrapper col-md-4">
-						<i class="glyphicon glyphicon-stats"></i>
+						<span class="header_label"><label for="ResultatCumule">Résultat cumulé</label></span>
+						<div class="header-group">
+							<span class="header_label"><label for="ResultatCumulerCL">Classique</label></span>
+							<span class="header_output">10 kWhc</span> <span
+								class="header_output">600 €</span>
+						</div>
+
+						<div class="header-group">
+							<span class="header_label"><label for="ResultatCumulerPR">Précarité</label></span>
+							<span class="header_output">10 kWhc</span> <span
+								class="header_output">600 €</span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -327,10 +341,12 @@
 
             $(".tbodyClone .clone").hide();
 
+			// $(".tbodyClone .clonedOP" + $(".clonedOP").length).find('.panel-title').text("Opération" + $(".clonedOP").length);
+
             cloneIndex++;
 
             var obj = $( ".tbodyClone .clonedOP:last-child" ).attr('id');
-    
+			//console.log(obj);
             $( "#" + obj + " div.col-md-12.ajouter_operation button").show();
 
         if ($(".clonedOP").length == 1) {
@@ -352,7 +368,11 @@
 
         $(".tbodyClone .clone").hide();
         var obj = $( ".tbodyClone .clonedOP:last-child" ).attr('id');
-        $( "#" + obj + " div.col-md-12.ajouter_operation button").show();
+		//console.log(obj);
+
+		// if (document.getElementById(obj).style.display = "block"){
+        	$( "#" + obj + " div.col-md-12.ajouter_operation button").show();
+		// }
     }
 
     $(document).on("click", ".clone", clone);
