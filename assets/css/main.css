@@ -2506,7 +2506,12 @@ fieldset .signature-section, .signature-container {
 .resultatCumule, .mentionDevis_Facture{
 	margin-left: 0px;
     padding-left: 0px;
-    padding-right: 5px;
+    padding-right: 0px;
+}
+
+.resultatCumulePanel {
+	padding-right:0px;
+	padding-left:0px;
 }
 
 #brouillonModal .form-group{
@@ -2796,8 +2801,8 @@ input[name='optradio'] {
 	display:inline-block;
 }
 
-.simuler_btn_calculate {
-	padding-right: 5px;
+.simuler_btn_holder {
+	padding-right: 0;
     padding-bottom: 15px;
     padding-left: 15px;
     display: flex;

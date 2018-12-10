@@ -229,12 +229,12 @@
 
 <!-- button ajouter -->
 
-<div class="col-md-12 submit_button_holder simuler_btn_calculate">
+<div class="col-md-12 submit_button_holder simuler_btn_holder">
 	<button type="submit" class="btn btn-primary submit_button">Calculer</button>
 </div>
 
 
-<div class="col-md-12 panel-group resultatCumule">
+<div class="col-md-12 panel-group resultatCumulePanel">
 	<div class="panel panel-default">
 		<div class="resultatCumule">
 			<div class="panel-body">
