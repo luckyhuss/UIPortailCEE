@@ -25,7 +25,7 @@
 
 								<div class="header-group col-md-12">
 									<span class="form_label"><label for="Critere">Secteur</label></span>
-									<span class="header_output"><select id="secteur_OP0"
+									<span class="header_output"><select id="selectSecteur_OP0"
 										name="secteur_OP0" class="form-control">
 											<option value="0"></option>
 											<option value="1">#1 - Industrie</option>
@@ -58,7 +58,7 @@
 							<div class="fieldset-container">
 								<div class="header-group">
 									<span class="form_label"><label for="Critere">Opération</label></span>
-									<span class="header_output"><select id="secteur_OP0"
+									<span class="header_output"><select id="selectOperation_OP0"
 										name="secteur_OP0" class="form-control">
 											<option value="0"></option>
 											<option value="1">#1 - Operation 1</option>
@@ -310,12 +310,11 @@
         $('.remove').show();
     }
 
-	// var count = 0;
     function clone() {
         $(this).parents(".clonedOP").clone()
             .find("input:checkbox").val("").end()
             .appendTo(".tbodyClone")
-            .attr("id", "clonedOP" + $(".clonedOP").length)
+            .attr("id", "clonedOP" + (cloneIndex+1))
             .find("*")
             .each(function () {
                 var id = this.id || "";
@@ -323,8 +322,6 @@
                 if (match.length == 3) {
                     this.id = match[1] + (cloneIndex);
                 }
-				// $(this).attr("id", "clonedOP" + count);
-				// count++;
             })
             .on('click', 'clone', clone)
             .on('click', 'remove', remove);
@@ -334,7 +331,7 @@
             cloneIndex++;
 
             var obj = $( ".tbodyClone .clonedOP:last-child" ).attr('id');
-			console.log(obj);
+
             $( "#" + obj + " div.col-md-12.ajouter_operation button").show();
 
         if ($(".clonedOP").length == 1) {
@@ -356,7 +353,6 @@
 
         $(".tbodyClone .clone").hide();
         var obj = $( ".tbodyClone .clonedOP:last-child" ).attr('id');
-		console.log(obj);
 
 		$( "#" + obj + " div.col-md-12.ajouter_operation button").show();
 
