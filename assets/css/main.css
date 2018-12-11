@@ -2824,3 +2824,8 @@ input[name='optradio'] {
 	padding-left: 0px;
     padding-top: 10px;
 }
+
+.BAR-error-message {
+	font-weight:bold; 
+	padding-left:10px;
+}

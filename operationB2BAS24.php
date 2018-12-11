@@ -34,6 +34,7 @@
 											<option value="4">#4 - Secteur 4</option>
 											<option value="5">#5 - Secteur 5</option>
 									</select></span>
+									<span class="BAR-error-message text-danger displayed" id="sectionBarErrorMsg_OP0">Vous ne pouvez saisir BAR qu'une seule fois...</span>
 								</div>
 								<div class="header-group col-md-12 displayed"
 									id="sectionBenef_OP0">
@@ -93,33 +94,29 @@
 											
 												<div class="col-sm-6 col-md-6 input_holder">
 													<div class="header-group">
-														<span class="header_label"><label for="ClassiquePro">Nombre de logement Classique</label></span>
+														<span class="header_label"><label for="Classique">Nombre de logement Classique</label></span>
 														<span class="header_output"><input type="text"
-															class="form-control" id="classiquePro" placeholder=""></span>
+															class="form-control" id="classique_OP0" placeholder=""></span>
 													</div>
 												</div>
 
 												<div class="col-sm-6 col-md-6 input_holder">
 													<div class="header-group">
-														<span class="header_label"><label for="PrecaritePro">Nombre de logement Précarité</label></span>
+														<span class="header_label"><label for="Precarite">Nombre de logement Précarité</label></span>
 														<span class="header_output"><input type="text"
-															class="form-control" id="precaritePro" placeholder=""></span>
+															class="form-control" id="precarite_OP0" placeholder=""></span>
 													</div>
 												</div>
 												
 												<div class="col-sm-6 col-md-6 input_holder">
 													<div class="header-group">
-														<span class="header_label"><label for="PrecaritePro">Nombre de logement Grand Précarité</label></span>
+														<span class="header_label"><label for="GrandPrecarite">Nombre de logement Grand Précarité</label></span>
 														<span class="header_output"><input type="text"
-															class="form-control" id="precaritePro" placeholder=""></span>
+															class="form-control" id="grandprecarite_OP0" placeholder=""></span>
 													</div>
 												</div>
-
 										</div>
-
 									</fieldset>
-
-
 								</div>
 
 
@@ -174,30 +171,24 @@
 
 										<div class="col-sm-6 col-md-6 input_holder">
 											<div class="header-group">
-												<span class="header_label"><label for="ClassiquePro">Professionnel</label></span>
+												<span class="header_label"><label for="remunPro">Professionnel</label></span>
 												<span class="header_output"><input type="text"
-													class="form-control" id="classiquePro" placeholder=""></span>
+													class="form-control" id="renumPro_OP0" placeholder=""></span>
 											</div>
 										</div>
 
 										<div class="col-sm-6 col-md-6 input_holder">
 											<div class="header-group">
-												<span class="header_label"><label for="PrecaritePro">Bénéficiaire</label></span>
+												<span class="header_label"><label for="renumBenef">Bénéficiaire</label></span>
 												<span class="header_output"><input type="text"
-													class="form-control" id="precaritePro" placeholder=""></span>
+													class="form-control" id="renumBenef_OP0" placeholder=""></span>
 											</div>
 										</div>
 										</div>
 
 									</fieldset>
-
 								</div>
-
-
 							</div>
-
-
-
 
 						</fieldset>
 					</div>
@@ -557,6 +548,9 @@
     	$('#sectionLogements_OP' + (cloneIndex - 1 )).addClass('displayed');
     	$('#sectionPlusLogements_OP' + (cloneIndex - 1 )).addClass('displayed');
     	$('#sectionSocial_OP' + (cloneIndex - 1 )).addClass('displayed');
+
+    	$('#sectionBarErrorMsg_OP' + (cloneIndex - 1 )).addClass('displayed');
+    	$('#selectSecteur_OP' + (cloneIndex - 1 )).removeClass('input-validation-error');
 }
     function remove() {
         $(this).parents(".clonedOP").remove();
@@ -584,7 +578,7 @@
   </script>
 
 <script>
-
+//$('#' + idClicked).removeClass('input-validation-error');
 	
 $('select[id^="selectSecteur"]').change(function () {
 
@@ -594,15 +588,19 @@ $('select[id^="selectSecteur"]').change(function () {
 
 	var idClicked = $(this).attr('id');
 	console.log('isBar ' + isBar + ' idClicked=> ' + idClicked);
-
+	$('#' + idClicked).removeClass('input-validation-error');
+	var idSecteurClicked = idClicked.split("_")[1];
+	$('#sectionBarErrorMsg_' + idSecteurClicked).addClass('displayed');
     if(isBar < 2) {
     	$('select[id^="selectSecteur"]').each(function () {
+        	
     		var valueChecked = $('#' + this.id).val();
     		var str = this.id;
     		var idSelected = str.split("_")[1];
     		if(valueChecked == '2') {
     			
     			console.log('id selected BAR ' + this.id + ', => Id= ' + idSelected);
+    			$('#selectBenef_' + idSecteurClicked).prop("selectedIndex", 0);
     			$('#sectionBenef_' + idSelected).removeClass('displayed');
     		}
     		else {
@@ -618,6 +616,8 @@ $('select[id^="selectSecteur"]').change(function () {
     }
     else{
     	$('#' + idClicked).prop("selectedIndex", 0);
+    	$('#' + idClicked).addClass('input-validation-error');
+    	$('#sectionBarErrorMsg_' + idSecteurClicked).removeClass('displayed');
     }
 	
 	
@@ -641,9 +641,14 @@ $('select[id^="selectBenef"]').change(function () {
 	    break;
 	  case '2':
 		  $('#sectionPlusLogements_' + idTypeSelected).removeClass('displayed');
+		  $('#classique_' + idTypeSelected).val('');
+		  $('#precarite_' + idTypeSelected).val('');
+		  $('#grandprecarite_' + idTypeSelected).val('');
 	    break;
 	  case '3':
 		  $('#sectionSocial_' + idTypeSelected).removeClass('displayed');
+		  $('#renumPro_' + idTypeSelected).val('');
+		  $('#renumBenef_' + idTypeSelected).val('');
 	    break;
 	  default:
 	    //no code
