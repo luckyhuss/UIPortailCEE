@@ -647,6 +647,7 @@ $('select[id^="selectBenef"]').change(function () {
 	    break;
 	  default:
 	    //no code
+		break;
 	}
 	
 	/* if(typeSelected == '2') {
