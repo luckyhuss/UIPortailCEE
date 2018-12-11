@@ -39,7 +39,7 @@
 									id="sectionBenef_OP0">
 									<span class="form_label"><label for="Critere">Type de
 											bénéficiaire</label></span> <span class="header_output"><select
-										id="beneficiaire_OP0" name="beneficiaire_OP0"
+										id="selectBenef_OP0" name="selectBenef_OP0"
 										class="form-control beneficiaire">
 											<option value="0"></option>
 											<option value="1">#1 - un logement</option>
@@ -47,6 +47,14 @@
 											<option value="3">#3 - Bailleur social</option>
 									</select></span>
 								</div>
+								
+								<div class="header-group col-md-12 displayed" id="sectionPlusLogements_OP0">
+								
+								TEST
+								
+								</div>
+								
+								
 							</div>
 
 
@@ -444,20 +452,8 @@ $('select[id^="selectSecteur"]').change(function () {
     			
     			console.log('id selected BAR ' + this.id + ', => Id= ' + idSelected);
     			$('#sectionBenef_' + idSelected).removeClass('displayed');
-
-    			
     		}
     		else {
-//     			if(valueChecked == '2' && isBar > 1) {
-//     				//clear secteur field and add message
-//     				console.log('id to reset ' + this.id);
-//     				$('#' + this.id).prop("selectedIndex", 0);
-//     			}
-
-    // $('#' + this.id).on('click', function(){
-//         var idclicked = $(this).attr('id');
-//         console.log('idclicked ' + idclicked);
-    // });
     	    	console.log(this.id);
     	    	$('#sectionBenef_' + idSelected).addClass('displayed');
     		}
@@ -470,7 +466,42 @@ $('select[id^="selectSecteur"]').change(function () {
     }
 	
 	
+});
+
+
+$('select[id^="selectBenef"]').change(function () {
+	console.log("id selected Type " + this.id);
+
+	var typeSelected =  $('#' + this.id).val();
+	var strType = this.id;
+	var idTypeSelected = strType.split("_")[1];
+
+	$('#sectionPlusLogements_' + idTypeSelected).addClass('displayed');
+	$('#sectionPlusLogements_' + idTypeSelected).addClass('displayed');
+	$('#sectionSocial_' + idTypeSelected).addClass('displayed');
 	
+	switch(typeSelected) {
+	  case '1':
+		  $('#sectionLogements_' + idTypeSelected).removeClass('displayed');
+	    break;
+	  case '2':
+		  $('#sectionPlusLogements_' + idTypeSelected).removeClass('displayed');
+	    break;
+	  case '3':
+		  $('#sectionSocial_' + idTypeSelected).removeClass('displayed');
+	    break;
+	  default:
+	    //no code
+	}
+	
+	/* if(typeSelected == '2') {
+		$('#sectionPlusLogements_' + idTypeSelected).removeClass('displayed');
+	}
+	else {
+    	$('#sectionPlusLogements_' + idTypeSelected).addClass('displayed');
+	}
+	 */
+		
 });
 	
 
