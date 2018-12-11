@@ -183,7 +183,7 @@
 							<div class="form-group">
 								<span class="form_label"><label for="texte">Contenu</label></span>
 
-								<span class="form_input" style="width: 100% !important"> <textarea
+								<span class="form_input corps" style="width: 100% !important"> <textarea
 										id="summernote-<?=$gestion ?>" class="form-textarea"
 										rows="5"></textarea>
 								</span>
@@ -195,7 +195,7 @@
 							<div class="form-group">
 								<span class="form_label"><label for="texte">Plus d'info</label></span>
 
-								<span class="form_input" style="width: 100% !important"> <textarea
+								<span class="form_input corpsplus" style="width: 100% !important"> <textarea
 										id="summernoteplus-<?=$gestion ?>" class="form-textarea"
 										rows="5"></textarea>
 								</span>
@@ -212,5 +212,8 @@
 </div>
 
 <script>
+$(document).ready(function() {
 
+	$("span.corps").addClass('summernote-validation-error');	
+});
 </script>

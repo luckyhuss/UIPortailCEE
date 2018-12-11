@@ -1344,7 +1344,7 @@ ul.cards-container {
 
 /* validation error message */
 .input-validation-error {
-	border-color: red !important;
+	border:1px solid red !important;
 }
 
 #formSearchBar ul, #recherchePiloterActivite ul, #formUser ul, #form_content ul, .form_admin_contenu ul, 
@@ -2829,3 +2829,10 @@ input[name='optradio'] {
 	font-weight:bold; 
 	padding-left:10px;
 }
+
+.summernote-validation-error {
+	border:1px solid red;
+	padding-bottom:0px!important;
+	border-radius:4px;
+}
+
