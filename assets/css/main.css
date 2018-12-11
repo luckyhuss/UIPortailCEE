@@ -2469,19 +2469,19 @@ fieldset .header_label {
 	/* width:120px!important; */
 }
 
-fieldset .signature-section, .signature-container {
+fieldset .signature-section, .signature-container, fieldset .repartition-section, .repartition-container {
 	padding:0px;
 }
 
-.signature-section {
+.signature-section, .repartition-section {
 	margin-bottom:15px;
 }
 
-.signature-section .header-group {
+.signature-section .header-group, .repartition-section .header-group {
 	padding-left:10px;
 }
 
-.signature-section-header {
+.signature-section-header, .repartition-section-header {
 	margin-bottom:10px;
 	text-decoration: underline;
 	font-weight:500;
@@ -2810,3 +2810,8 @@ input[name='optradio'] {
     align-items: center;
     margin-top: 10px;
 }
+
+#repartitionFieldset legend{
+	background:none;
+	color: black;
+} 
