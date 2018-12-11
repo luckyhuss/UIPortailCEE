@@ -2811,7 +2811,7 @@ input[name='optradio'] {
     margin-top: 10px;
 }
 
-#repartitionFieldset legend{
+#repartitionFieldset legend, #RAIFieldset legend, #paiementFieldset legend{
 	background:none;
 	color: black;
 } 

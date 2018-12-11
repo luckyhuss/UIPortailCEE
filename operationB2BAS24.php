@@ -49,7 +49,37 @@
 								</div>
 
 								<div class="header-group col-md-12 displayed"
-									id="sectionLogements_OP0"><b style="color:red">A ETRE DEFINIT....</b></div>
+									id="sectionLogements_OP0">
+									<!-- <b style="color:red">A ETRE DEFINIT....</b> -->
+
+									<!-- Type de logement -->
+									<fieldset class="fieldset-margin-bottom" id="repartitionFieldset">
+										<legend> Logement</legend>
+										<div class="col-sm-3 col-md-3 input_holder">
+											<div class="form-group">
+												<span class="form_input"><input type="radio" name="optradio"
+													value="logClassique"></span> <span class="form_label"><label
+													for="logClassique">Classique</label></span>
+											</div>
+										</div>
+
+										<div class="col-sm-3 col-md-3 input_holder">
+											<div class="form-group">
+												<span class="form_input"><input type="radio" name="optradio"
+													value="logPrecarite"></span> <span class="form_label"><label
+													for="logPrecarite">Précarité</label></span>
+											</div>
+										</div>
+
+										<div class="col-sm-3 col-md-3 input_holder">
+											<div class="form-group">
+												<span class="form_input"><input type="radio" name="optradio"
+													value="logGrPrecarite"></span> <span class="form_label"><label
+													for="logGrPrecarite">Grande précarité</label></span>
+											</div>
+										</div>
+									</fieldset>
+								</div>
 
 
 								<div class="header-group col-md-12 displayed"
@@ -85,9 +115,6 @@
 													</div>
 												</div>
 
-									
-
-											
 										</div>
 
 									</fieldset>
@@ -105,7 +132,7 @@
 										<legend> Répartition de la rémunération</legend>
 
 										<div class="repartition-container col-md-12">
-											<div class="repartition-section col-md-6">
+											<!-- <div class="repartition-section col-md-6">
 												<span class="repartition-section-header">Professionnel</span>
 
 												<div class="col-sm-6 col-md-12 input_holder">
@@ -143,7 +170,23 @@
 															class="form-control" id="precariteBen" placeholder=""></span>
 													</div>
 												</div>
+											</div> -->
+
+										<div class="col-sm-6 col-md-6 input_holder">
+											<div class="header-group">
+												<span class="header_label"><label for="ClassiquePro">Professionnel</label></span>
+												<span class="header_output"><input type="text"
+													class="form-control" id="classiquePro" placeholder=""></span>
 											</div>
+										</div>
+
+										<div class="col-sm-6 col-md-6 input_holder">
+											<div class="header-group">
+												<span class="header_label"><label for="PrecaritePro">Bénéficiaire</label></span>
+												<span class="header_output"><input type="text"
+													class="form-control" id="precaritePro" placeholder=""></span>
+											</div>
+										</div>
 										</div>
 
 									</fieldset>
@@ -314,6 +357,58 @@
 						</div>
 					</div>
 
+												<!-- to cross check -->
+							<!-- Type de Paiement -->
+							<fieldset class="fieldset-margin-bottom" id="paiementFieldset">
+								<legend> Type de paiement</legend>
+								<div class="col-sm-3 col-md-3 input_holder">
+									<div class="form-group">
+										<span class="form_input"><input type="radio" name="optradio"
+											value="mandatPaie" checked ></span> <span class="form_label"><label
+											for="mandatPaie">Mandat de paiement </label></span>
+									</div>
+								</div>
+
+								<div class="col-sm-3 col-md-3 input_holder">
+									<div class="form-group">
+										<span class="form_input"><input type="radio" name="optradio"
+											value="versementBenef"></span> <span class="form_label"><label
+											for="versementBenef">Versement au bénéficiaire</label></span>
+									</div>
+								</div>
+
+							</fieldset>
+
+							<!-- Type de RAI -->
+							<fieldset class="fieldset-margin-bottom" id="RAIFieldset">
+								<legend> Type de RAI</legend>
+								<div class="col-sm-3 col-md-3 input_holder">
+									<div class="form-group">
+										<span class="form_input"><input type="radio" name="optradio"
+											value="mentionSD"></span> <span class="form_label"><label
+											for="mentionSD">Mention sur devis</label></span>
+									</div>
+								</div>
+
+								<div class="col-sm-3 col-md-3 input_holder">
+									<div class="form-group">
+										<span class="form_input"><input type="radio" name="optradio"
+											value="courierOffre"></span> <span class="form_label"><label
+											for="courierOffre">Courrier d'offre</label></span>
+									</div>
+								</div>
+
+								<div class="col-sm-3 col-md-3 input_holder">
+									<div class="form-group">
+										<span class="form_input"><input type="radio" name="optradio"
+											value="convention" checked="checked"></span> <span class="form_label"><label
+											for="convention">Convention</label></span>
+									</div>
+								</div>
+							</fieldset>
+
+						<!-- to cross check -->
+
 				</div>
 			</div>
 
@@ -343,7 +438,6 @@
 <div class="col-md-12 submit_button_holder simuler_btn_holder">
 	<button type="submit" class="btn btn-primary submit_button">Calculer</button>
 </div>
-
 
 <div class="col-md-12 panel-group resultatCumulePanel">
 	<div class="panel panel-default">
