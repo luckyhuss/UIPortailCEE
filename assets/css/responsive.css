@@ -290,6 +290,13 @@
 	}
 }
 
+@media ( max-width : 345px) {
+
+	#repartitionFieldset legend {
+		width:200px;
+	}
+}
+
 /* RESPONSIVE */
 
 /* END RESPONSIVE */

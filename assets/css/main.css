@@ -2815,3 +2815,12 @@ input[name='optradio'] {
 	background:none;
 	color: black;
 } 
+
+#repartitionFieldset legend {
+	width:250px;
+}
+
+.plusLogement-container {
+	padding-left: 0px;
+    padding-top: 10px;
+}

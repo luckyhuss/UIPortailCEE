@@ -47,64 +47,114 @@
 											<option value="3">#3 - Bailleur social</option>
 									</select></span>
 								</div>
-								
-								<div class="header-group col-md-12 displayed" id="sectionPlusLogements_OP0">
-								
-								TEST
-								
+
+								<div class="header-group col-md-12 displayed"
+									id="sectionLogements_OP0"><b style="color:red">A ETRE DEFINIT....</b></div>
+
+
+								<div class="header-group col-md-12 displayed"
+									id="sectionPlusLogements_OP0">
+
+									<fieldset class="fieldset-margin-bottom"
+										id="repartitionFieldset">
+										
+
+										<div class="plusLogement-container col-md-12">
+											
+												<div class="col-sm-6 col-md-6 input_holder">
+													<div class="header-group">
+														<span class="header_label"><label for="ClassiquePro">Nombre de logement Classique</label></span>
+														<span class="header_output"><input type="text"
+															class="form-control" id="classiquePro" placeholder=""></span>
+													</div>
+												</div>
+
+												<div class="col-sm-6 col-md-6 input_holder">
+													<div class="header-group">
+														<span class="header_label"><label for="PrecaritePro">Nombre de logement Précarité</label></span>
+														<span class="header_output"><input type="text"
+															class="form-control" id="precaritePro" placeholder=""></span>
+													</div>
+												</div>
+												
+												<div class="col-sm-6 col-md-6 input_holder">
+													<div class="header-group">
+														<span class="header_label"><label for="PrecaritePro">Nombre de logement Grand Précarité</label></span>
+														<span class="header_output"><input type="text"
+															class="form-control" id="precaritePro" placeholder=""></span>
+													</div>
+												</div>
+
+									
+
+											
+										</div>
+
+									</fieldset>
+
+
 								</div>
-								
-								
+
+
+								<div class="header-group col-md-12 displayed"
+									id="sectionSocial_OP0">
+
+									<!-- repartition -->
+									<fieldset class="fieldset-margin-bottom"
+										id="repartitionFieldset">
+										<legend> Répartition de la rémunération</legend>
+
+										<div class="repartition-container col-md-12">
+											<div class="repartition-section col-md-6">
+												<span class="repartition-section-header">Professionnel</span>
+
+												<div class="col-sm-6 col-md-12 input_holder">
+													<div class="header-group">
+														<span class="header_label"><label for="ClassiquePro">Classique</label></span>
+														<span class="header_output"><input type="text"
+															class="form-control" id="classiquePro" placeholder=""></span>
+													</div>
+												</div>
+
+												<div class="col-sm-6 col-md-12 input_holder">
+													<div class="header-group">
+														<span class="header_label"><label for="PrecaritePro">Précarité</label></span>
+														<span class="header_output"><input type="text"
+															class="form-control" id="precaritePro" placeholder=""></span>
+													</div>
+												</div>
+
+											</div>
+
+											<div class="repartition-section col-md-6">
+												<span class="repartition-section-header">Bénéficiaire</span>
+												<div class="col-sm-6 col-md-12 input_holder">
+													<div class="header-group">
+														<span class="header_label"><label for="ClassiqueBen">Classique</label></span>
+														<span class="header_output"><input type="text"
+															class="form-control" id="classiqueBen" placeholder=""></span>
+													</div>
+												</div>
+
+												<div class="col-sm-6 col-md-12 input_holder">
+													<div class="header-group">
+														<span class="header_label"><label for="PrecariteBen">Précarité</label></span>
+														<span class="header_output"><input type="text"
+															class="form-control" id="precariteBen" placeholder=""></span>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</fieldset>
+
+								</div>
+
+
 							</div>
 
 
-<!-- repartition -->
-				<fieldset class="fieldset-margin-bottom" id="repartitionFieldset">
-					<legend> Répartition de la rémunération</legend>
 
-					<div class="repartition-container col-md-12">
-						<div class="repartition-section col-md-6">
-							<span class="repartition-section-header">Professionnel</span>
-
-							<div class="col-sm-6 col-md-12 input_holder">
-								<div class="header-group">
-									<span class="header_label"><label for="ClassiquePro">Classique</label></span>
-									<span class="header_output"><input type="text"
-										class="form-control" id="classiquePro" placeholder=""></span>
-								</div>
-							</div>
-
-							<div class="col-sm-6 col-md-12 input_holder">
-								<div class="header-group">
-									<span class="header_label"><label for="PrecaritePro">Précarité</label></span>
-									<span class="header_output"><input type="text"
-										class="form-control" id="precaritePro" placeholder=""></span>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="repartition-section col-md-6">
-							<span class="repartition-section-header">Bénéficiaire</span>
-							<div class="col-sm-6 col-md-12 input_holder">
-								<div class="header-group">
-									<span class="header_label"><label for="ClassiqueBen">Classique</label></span>
-									<span class="header_output"><input type="text"
-										class="form-control" id="classiqueBen" placeholder=""></span>
-								</div>
-							</div>
-
-							<div class="col-sm-6 col-md-12 input_holder">
-								<div class="header-group">
-									<span class="header_label"><label for="PrecariteBen">Précarité</label></span>
-									<span class="header_output"><input type="text"
-										class="form-control" id="precariteBen" placeholder=""></span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</fieldset>
 
 						</fieldset>
 					</div>
@@ -405,6 +455,14 @@
             $('.remove').show();
         }
         $("#clonedOP1 .remove").hide();
+
+
+        //console.log('next index:- ' + cloneIndex);
+
+        $('#sectionBenef_OP' + (cloneIndex - 1 )).addClass('displayed');
+    	$('#sectionLogements_OP' + (cloneIndex - 1 )).addClass('displayed');
+    	$('#sectionPlusLogements_OP' + (cloneIndex - 1 )).addClass('displayed');
+    	$('#sectionSocial_OP' + (cloneIndex - 1 )).addClass('displayed');
 }
     function remove() {
         $(this).parents(".clonedOP").remove();
@@ -456,6 +514,9 @@ $('select[id^="selectSecteur"]').change(function () {
     		else {
     	    	console.log(this.id);
     	    	$('#sectionBenef_' + idSelected).addClass('displayed');
+    	    	$('#sectionLogements_' + idSelected).addClass('displayed');
+    	    	$('#sectionPlusLogements_' + idSelected).addClass('displayed');
+    	    	$('#sectionSocial_' + idSelected).addClass('displayed');
     		}
     		
     	});
@@ -476,7 +537,7 @@ $('select[id^="selectBenef"]').change(function () {
 	var strType = this.id;
 	var idTypeSelected = strType.split("_")[1];
 
-	$('#sectionPlusLogements_' + idTypeSelected).addClass('displayed');
+	$('#sectionLogements_' + idTypeSelected).addClass('displayed');
 	$('#sectionPlusLogements_' + idTypeSelected).addClass('displayed');
 	$('#sectionSocial_' + idTypeSelected).addClass('displayed');
 	
