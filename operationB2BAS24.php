@@ -312,11 +312,12 @@
 
     function clone() {
         $(this).parents(".clonedOP").clone(true, true)
-            .find("input:checkbox").val("").end()
             .appendTo(".tbodyClone")
             .attr("id", "clonedOP" + (cloneIndex+1))
-            .find("*")
+            .find("input, input[type='checkbox']")
             .each(function () {
+				$(this).val('');
+				$(this).prop("checked", false);
                 var id = this.id || "";
                 var match = id.match(regex) || [];
                 if (match.length == 3) {
