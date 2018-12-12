@@ -283,7 +283,7 @@
 	
 }
 
-@media ( max-width : 374px) {
+@media ( max-width : 417px) {
 
 	.choisirSecteurPanel .header_output, .choisirOperationPanel .header_output, .critereAsaisirPanel .header_output {
 		width:100%;

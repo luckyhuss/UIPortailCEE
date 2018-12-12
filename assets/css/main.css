@@ -2656,6 +2656,10 @@ input[name='optradio'] {
 	padding-left:5px;
 }
 
+.partenaire-container .input_holder {
+	height: auto;
+}
+
 
 .choisirProspectPartenaire .fieldset-container {
 	display:inline-block;
@@ -2843,3 +2847,14 @@ input[name='optradio'] {
 	border-radius:4px;
 }
 
+@media (min-width: 992px){
+	.mentionDevisPanel {
+		padding: 0px 5px 2px 0px;
+	}
+}
+
+@media (max-width: 410px){
+	#button_operation #btn_historique {
+		margin-top: 10px;
+	}
+}
