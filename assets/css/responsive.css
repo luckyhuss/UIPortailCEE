@@ -297,6 +297,12 @@
 	}
 }
 
+@media ( max-width : 300px) {
+	.form_label>label, .form_label>label {
+	    width: 130px!important;
+	}
+}
+
 /* RESPONSIVE */
 
 /* END RESPONSIVE */

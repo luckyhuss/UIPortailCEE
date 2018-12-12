@@ -549,6 +549,9 @@ label[for=dateEngagement], label[for=dateRAI]
     min-width:150px!important;
 }
 
+label[for=versementBenef] {
+	min-width:180px!important;
+}
 
 
 .apporteur-prestataire-wrapper .float-item, .date-wrapper .float-item {
@@ -2812,12 +2815,16 @@ input[name='optradio'] {
 }
 
 #repartitionFieldset legend, #RAIFieldset legend, #paiementFieldset legend{
-	background:none;
+	background:#fff;
 	color: black;
 } 
 
 #repartitionFieldset legend {
 	width:250px;
+}
+
+#paiementFieldset legend {
+	width:160px;
 }
 
 .plusLogement-container {

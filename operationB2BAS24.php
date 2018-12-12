@@ -169,25 +169,69 @@
 												</div>
 											</div>
 
-										<!-- <div class="col-sm-6 col-md-6 input_holder">
-											<div class="header-group">
-												<span class="header_label"><label for="remunPro">Professionnel</label></span>
-												<span class="header_output"><input type="text"
-													class="form-control" id="renumPro_OP0" placeholder=""></span>
-											</div>
-										</div>
-
-										<div class="col-sm-6 col-md-6 input_holder">
-											<div class="header-group">
-												<span class="header_label"><label for="renumBenef">Bénéficiaire</label></span>
-												<span class="header_output"><input type="text"
-													class="form-control" id="renumBenef_OP0" placeholder=""></span>
-											</div>
-										</div> -->
+										
 										</div>
 
 									</fieldset>
 								</div>
+								
+								
+								<div class="paiement-rai displayed" id="sectionPaiementRAI_OP0">
+								<!-- Type de Paiement -->
+							<fieldset class="fieldset-margin-bottom" id="paiementFieldset">
+								<legend> Type de paiement</legend>
+								<div class="col-sm-3 col-md-3 input_holder">
+									<div class="form-group">
+										<span class="form_input"><input type="radio" name="optradio"
+											value="mandatPaie" checked ></span> <span class="form_label"><label
+											for="mandatPaie">Mandat de paiement </label></span>
+									</div>
+								</div>
+
+								<div class="col-sm-3 col-md-3 input_holder">
+									<div class="form-group">
+										<span class="form_input"><input type="radio" name="optradio"
+											value="versementBenef"></span> <span class="form_label"><label
+											for="versementBenef">Versement au bénéficiaire</label></span>
+									</div>
+								</div>
+
+							</fieldset>
+
+							<!-- Type de RAI -->
+							<fieldset class="fieldset-margin-bottom" id="RAIFieldset">
+								<legend> Type de RAI</legend>
+								<div class="col-sm-3 col-md-3 input_holder">
+									<div class="form-group">
+										<span class="form_input"><input type="radio" name="optradio"
+											value="mentionSD"></span> <span class="form_label"><label
+											for="mentionSD">Mention sur devis</label></span>
+									</div>
+								</div>
+
+								<div class="col-sm-3 col-md-3 input_holder">
+									<div class="form-group">
+										<span class="form_input"><input type="radio" name="optradio"
+											value="courierOffre"></span> <span class="form_label"><label
+											for="courierOffre">Courrier d'offre</label></span>
+									</div>
+								</div>
+
+								<div class="col-sm-3 col-md-3 input_holder">
+									<div class="form-group">
+										<span class="form_input"><input type="radio" name="optradio"
+											value="convention" checked="checked"></span> <span class="form_label"><label
+											for="convention">Convention</label></span>
+									</div>
+								</div>
+							</fieldset>
+
+						<!-- to cross check -->
+								
+								</div>
+								
+								
+								
 							</div>
 
 						</fieldset>
@@ -349,56 +393,7 @@
 					</div>
 
 												<!-- to cross check -->
-							<!-- Type de Paiement -->
-							<fieldset class="fieldset-margin-bottom" id="paiementFieldset">
-								<legend> Type de paiement</legend>
-								<div class="col-sm-3 col-md-3 input_holder">
-									<div class="form-group">
-										<span class="form_input"><input type="radio" name="optradio"
-											value="mandatPaie" checked ></span> <span class="form_label"><label
-											for="mandatPaie">Mandat de paiement </label></span>
-									</div>
-								</div>
-
-								<div class="col-sm-3 col-md-3 input_holder">
-									<div class="form-group">
-										<span class="form_input"><input type="radio" name="optradio"
-											value="versementBenef"></span> <span class="form_label"><label
-											for="versementBenef">Versement au bénéficiaire</label></span>
-									</div>
-								</div>
-
-							</fieldset>
-
-							<!-- Type de RAI -->
-							<fieldset class="fieldset-margin-bottom" id="RAIFieldset">
-								<legend> Type de RAI</legend>
-								<div class="col-sm-3 col-md-3 input_holder">
-									<div class="form-group">
-										<span class="form_input"><input type="radio" name="optradio"
-											value="mentionSD"></span> <span class="form_label"><label
-											for="mentionSD">Mention sur devis</label></span>
-									</div>
-								</div>
-
-								<div class="col-sm-3 col-md-3 input_holder">
-									<div class="form-group">
-										<span class="form_input"><input type="radio" name="optradio"
-											value="courierOffre"></span> <span class="form_label"><label
-											for="courierOffre">Courrier d'offre</label></span>
-									</div>
-								</div>
-
-								<div class="col-sm-3 col-md-3 input_holder">
-									<div class="form-group">
-										<span class="form_input"><input type="radio" name="optradio"
-											value="convention" checked="checked"></span> <span class="form_label"><label
-											for="convention">Convention</label></span>
-									</div>
-								</div>
-							</fieldset>
-
-						<!-- to cross check -->
+							
 
 				</div>
 			</div>
@@ -548,6 +543,7 @@
     	$('#sectionLogements_OP' + (cloneIndex - 1 )).addClass('displayed');
     	$('#sectionPlusLogements_OP' + (cloneIndex - 1 )).addClass('displayed');
     	$('#sectionSocial_OP' + (cloneIndex - 1 )).addClass('displayed');
+    	$('#sectionPaiementRAI_OP' + (cloneIndex - 1 )).addClass('displayed');
 
     	$('#sectionBarErrorMsg_OP' + (cloneIndex - 1 )).addClass('displayed');
     	$('#selectSecteur_OP' + (cloneIndex - 1 )).removeClass('input-validation-error');
@@ -584,13 +580,12 @@ $('select[id^="selectSecteur"]').change(function () {
 
 	var isBar = isAnyBarSelected();
 
-	
-
 	var idClicked = $(this).attr('id');
 	console.log('isBar ' + isBar + ' idClicked=> ' + idClicked);
 	$('#' + idClicked).removeClass('input-validation-error');
 	var idSecteurClicked = idClicked.split("_")[1];
 	$('#sectionBarErrorMsg_' + idSecteurClicked).addClass('displayed');
+	
     if(isBar < 2) {
     	$('select[id^="selectSecteur"]').each(function () {
         	
@@ -602,6 +597,7 @@ $('select[id^="selectSecteur"]').change(function () {
     			console.log('id selected BAR ' + this.id + ', => Id= ' + idSelected);
     			$('#selectBenef_' + idSecteurClicked).prop("selectedIndex", 0);
     			$('#sectionBenef_' + idSelected).removeClass('displayed');
+    			$('#sectionPaiementRAI_' + idSelected).removeClass('displayed');
     		}
     		else {
     	    	console.log(this.id);
@@ -609,6 +605,7 @@ $('select[id^="selectSecteur"]').change(function () {
     	    	$('#sectionLogements_' + idSelected).addClass('displayed');
     	    	$('#sectionPlusLogements_' + idSelected).addClass('displayed');
     	    	$('#sectionSocial_' + idSelected).addClass('displayed');
+    	    	$('#sectionPaiementRAI_' + idSelected).addClass('displayed');
     		}
     		
     	});
@@ -634,25 +631,24 @@ $('select[id^="selectBenef"]').change(function () {
 	$('#sectionLogements_' + idTypeSelected).addClass('displayed');
 	$('#sectionPlusLogements_' + idTypeSelected).addClass('displayed');
 	$('#sectionSocial_' + idTypeSelected).addClass('displayed');
+	//$('#sectionPaiementRAI_' + idTypeSelected).addClass('displayed');
 	
 	switch(typeSelected) {
 	  case '1':
-		  $('#sectionLogements_' + idTypeSelected).removeClass('displayed');
+		  	$('#sectionLogements_' + idTypeSelected).removeClass('displayed');
 	    break;
 	  case '2':
-		  $('#sectionPlusLogements_' + idTypeSelected).removeClass('displayed');
-		  $('#classique_' + idTypeSelected).val('');
-		  $('#precarite_' + idTypeSelected).val('');
-		  $('#grandprecarite_' + idTypeSelected).val('');
+		  	$('#sectionPlusLogements_' + idTypeSelected).removeClass('displayed');
+		  	$('#classique_' + idTypeSelected).val('');
+		  	$('#precarite_' + idTypeSelected).val('');
+		  	$('#grandprecarite_' + idTypeSelected).val('');
 	    break;
 	  case '3':
-		  $('#sectionSocial_' + idTypeSelected).removeClass('displayed');
-		//   $('#renumPro_' + idTypeSelected).val('');
-		//   $('#renumBenef_' + idTypeSelected).val('');
+		  	$('#sectionSocial_' + idTypeSelected).removeClass('displayed');
 			$('#precariteBen_' + idTypeSelected).val('');
-		  	$('#classiqueBen_' + idTypeSelected).val('');
+	  		$('#classiqueBen_' + idTypeSelected).val('');
 			$('#precaritePro_' + idTypeSelected).val('');
-		  	$('#classiquePro_' + idTypeSelected).val('');
+	  		$('#classiquePro_' + idTypeSelected).val('');
 
 		
 	    break;
