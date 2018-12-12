@@ -129,14 +129,14 @@
 										<legend> Répartition de la rémunération</legend>
 
 										<div class="repartition-container col-md-12">
-											<!-- <div class="repartition-section col-md-6">
+											<div class="repartition-section col-md-6">
 												<span class="repartition-section-header">Professionnel</span>
 
 												<div class="col-sm-6 col-md-12 input_holder">
 													<div class="header-group">
 														<span class="header_label"><label for="ClassiquePro">Classique</label></span>
 														<span class="header_output"><input type="text"
-															class="form-control" id="classiquePro" placeholder=""></span>
+															class="form-control" id="classiquePro_OP0" placeholder=""></span>
 													</div>
 												</div>
 
@@ -144,7 +144,7 @@
 													<div class="header-group">
 														<span class="header_label"><label for="PrecaritePro">Précarité</label></span>
 														<span class="header_output"><input type="text"
-															class="form-control" id="precaritePro" placeholder=""></span>
+															class="form-control" id="precaritePro_OP0" placeholder=""></span>
 													</div>
 												</div>
 
@@ -156,7 +156,7 @@
 													<div class="header-group">
 														<span class="header_label"><label for="ClassiqueBen">Classique</label></span>
 														<span class="header_output"><input type="text"
-															class="form-control" id="classiqueBen" placeholder=""></span>
+															class="form-control" id="classiqueBen_OP0" placeholder=""></span>
 													</div>
 												</div>
 
@@ -164,12 +164,12 @@
 													<div class="header-group">
 														<span class="header_label"><label for="PrecariteBen">Précarité</label></span>
 														<span class="header_output"><input type="text"
-															class="form-control" id="precariteBen" placeholder=""></span>
+															class="form-control" id="precariteBen_OP0" placeholder=""></span>
 													</div>
 												</div>
-											</div> -->
+											</div>
 
-										<div class="col-sm-6 col-md-6 input_holder">
+										<!-- <div class="col-sm-6 col-md-6 input_holder">
 											<div class="header-group">
 												<span class="header_label"><label for="remunPro">Professionnel</label></span>
 												<span class="header_output"><input type="text"
@@ -183,7 +183,7 @@
 												<span class="header_output"><input type="text"
 													class="form-control" id="renumBenef_OP0" placeholder=""></span>
 											</div>
-										</div>
+										</div> -->
 										</div>
 
 									</fieldset>
@@ -647,8 +647,14 @@ $('select[id^="selectBenef"]').change(function () {
 	    break;
 	  case '3':
 		  $('#sectionSocial_' + idTypeSelected).removeClass('displayed');
-		  $('#renumPro_' + idTypeSelected).val('');
-		  $('#renumBenef_' + idTypeSelected).val('');
+		//   $('#renumPro_' + idTypeSelected).val('');
+		//   $('#renumBenef_' + idTypeSelected).val('');
+			$('#precariteBen_' + idTypeSelected).val('');
+		  	$('#classiqueBen_' + idTypeSelected).val('');
+			$('#precaritePro_' + idTypeSelected).val('');
+		  	$('#classiquePro_' + idTypeSelected).val('');
+
+		
 	    break;
 	  default:
 	    //no code
