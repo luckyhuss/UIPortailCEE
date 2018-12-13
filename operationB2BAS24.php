@@ -666,6 +666,7 @@ $('select[id^="selectBenef"]').change(function () {
 		  	$('#grandprecarite_' + idTypeSelected).val('');
 	    break;
 	  case '3':
+		  	$('#sectionPlusLogements_' + idTypeSelected).removeClass('displayed');
 		  	$('#sectionSocial_' + idTypeSelected).removeClass('displayed');
 			$('#precariteBen_' + idTypeSelected).val('');
 	  		$('#classiqueBen_' + idTypeSelected).val('');
