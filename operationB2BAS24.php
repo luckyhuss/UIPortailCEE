@@ -505,12 +505,12 @@
 
     
     function clone() {
-    	//console.log('cloneIndex ' + cloneIndex + ', numOP at Clone : ' + numOperation() );
-    	if(numOperation < 2) {
-			cloneIndex = 0;
-			//console.log('reset here at clone');
-		}
-    	//console.log('cloneIndex after ' + cloneIndex);
+//     	console.log('cloneIndex ' + cloneIndex + ', numOP at Clone : ' + numOperation() );
+//     	if(numOperation < 2) {
+// 			cloneIndex = 0;
+// 			console.log('reset here at clone');
+// 		}
+//     	console.log('cloneIndex after ' + cloneIndex);
     	
         $(this).parents(".clonedOP").clone(true, true)
             .appendTo(".tbodyClone")
