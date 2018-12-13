@@ -2205,7 +2205,8 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 
 #collapseHistoSim .input_holder {
 	width: 100%;
-	position: relative
+	position: relative;
+	margin-left: -15px;
   }
   
   #collapseHistoSim .searchTerm {
@@ -2213,9 +2214,15 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
     width: 100%;
     padding: 5px;
     height: 20px;
-    border-radius: 5px;
+	border-radius: 10px 0px 0px 10px !important;
     outline: none;
     margin-bottom: 15px;
+  }
+
+  #collapseHistoSim .submit_button {
+	border-radius: 0px 10px 10px 0px;
+	margin-left: -15px;
+	font-size: 14px;
   }
   
 #collapseHistoSim .searchButton {

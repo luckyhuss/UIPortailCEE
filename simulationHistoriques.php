@@ -10,8 +10,8 @@
 <div id="collapseHistoSim" class="panel-collapse collapse in">
         <div class="panel-body">
             <div class="input_holder">
-                    <span class="form_input"><input type="text" class="form-control searchTerm" id="searchSim" placeholder="Search"></span>
-                    <button type="submit" class="searchButton"><i class="glyphicon glyphicon-search"></i></button>
+                <span class="col-xs-10 col-sm-8 col-md-6  form_input"><input type="text" class="form-control searchTerm" id="searchSim" placeholder="Search"></span>
+                <span class="submit_button_holder"><button type="submit" class="btn btn-primary submit_button" name="btn-serach"><i class="glyphicon glyphicon-search"></i></button></span>
             </div>
 
             <span class="header_label"><label for="simEnregistree">Dernières simulations enregistrée </label></span>
@@ -122,7 +122,7 @@
             </h4>
         </div>
 
-        <div id="collapseDetailSimulation" class="panel-collapse collapse in">
+        <div id="collapseDetailSimulation" class="panel-collapse collapse">
             <div class="panel-body">
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                 
