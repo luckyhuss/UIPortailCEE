@@ -2846,15 +2846,3 @@ input[name='optradio'] {
 	padding-bottom:0px!important;
 	border-radius:4px;
 }
-
-@media (min-width: 992px){
-	.mentionDevisPanel {
-		padding: 0px 5px 2px 0px;
-	}
-}
-
-@media (max-width: 410px){
-	#button_operation #btn_historique {
-		margin-top: 10px;
-	}
-}
