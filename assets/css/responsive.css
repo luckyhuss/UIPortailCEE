@@ -289,8 +289,13 @@
 		width:100%;
 	}
 	
-	.partenaire-container .input_holder .form-group, #recherchePiloterActivite .input_holder .form-group {
+	.partenaire-container .input_holder .form-group, #recherchePiloterActivite .input_holder .form-group,
+	.prospect-container .input_holder .form-group {
 		display: block;
+	}
+
+	.prospect-container .input_holder{
+		height: auto;
 	}
 }
 
