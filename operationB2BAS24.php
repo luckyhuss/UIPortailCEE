@@ -4,7 +4,7 @@
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<span class="panel_header_element"><a data-toggle="collapse"
-						href="#CollapseOperation">Opération</a></span>
+						href="#CollapseOperation">Opération &#x2116; <span id="numId_OP0">1</span></a></span>
 					<button id="btnDel_0" name="btnDel_0" type="button"
 						class="remove btn btn-circle btn-danger">
 						<i class="glyphicon glyphicon-minus"></i>
@@ -497,6 +497,7 @@
 //=======
     var regex = /^(.*)(\d)+$/i;
     var cloneIndex = $(".clonedOP").length;
+    console.log('cloneIndex ' + cloneIndex);
     if ($(".clonedOP").length == 1) {
         $('.remove').hide();
     } else {
@@ -547,6 +548,9 @@
 
     	$('#sectionBarErrorMsg_OP' + (cloneIndex - 1 )).addClass('displayed');
     	$('#selectSecteur_OP' + (cloneIndex - 1 )).removeClass('input-validation-error');
+
+
+    	$('#numId_OP' + (cloneIndex - 1 )).html(cloneIndex );
 }
     function remove() {
         $(this).parents(".clonedOP").remove();

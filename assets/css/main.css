@@ -2846,3 +2846,9 @@ input[name='optradio'] {
 	padding-bottom:0px!important;
 	border-radius:4px;
 }
+
+.partenaire-container label[for=RaisonSociale], .partenaire-container label[for=Siren]
+{
+   height:30px!important;
+}
+
