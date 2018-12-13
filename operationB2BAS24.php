@@ -497,14 +497,21 @@
 //=======
     var regex = /^(.*)(\d)+$/i;
     var cloneIndex = $(".clonedOP").length;
-    console.log('cloneIndex ' + cloneIndex);
     if ($(".clonedOP").length == 1) {
         $('.remove').hide();
     } else {
         $('.remove').show();
     }
 
+    
     function clone() {
+    	//console.log('cloneIndex ' + cloneIndex + ', numOP at Clone : ' + numOperation() );
+    	if(numOperation < 2) {
+			cloneIndex = 0;
+			//console.log('reset here at clone');
+		}
+    	//console.log('cloneIndex after ' + cloneIndex);
+    	
         $(this).parents(".clonedOP").clone(true, true)
             .appendTo(".tbodyClone")
             .attr("id", "clonedOP" + (cloneIndex+1))
@@ -550,8 +557,12 @@
     	$('#selectSecteur_OP' + (cloneIndex - 1 )).removeClass('input-validation-error');
 
 
+    	
     	$('#numId_OP' + (cloneIndex - 1 )).html(cloneIndex );
-}
+
+    	
+
+    }
     function remove() {
         $(this).parents(".clonedOP").remove();
  
@@ -567,7 +578,14 @@
 
 		$( "#" + obj + " div.col-md-12.ajouter_operation button").show();
 
-    }
+		//console.log('numOP at Removal : ' + numOperation() );
+
+		var numOP = numOperation();
+		if(numOP == 1) {
+			cloneIndex = 1;
+			//console.log('reset here at removal');
+		}
+	}
 
     $(document).on("click", ".clone", clone);
     $(document).on("click", ".remove", remove);
@@ -670,7 +688,16 @@ $('select[id^="selectBenef"]').change(function () {
 	 */
 		
 });
-	
+
+function numOperation() {
+	var numOP = 0;
+
+	$('span[id^="numId"]').each(function () {
+		numOP++;
+	}); 
+
+	return numOP;
+}
 
 function isAnyBarSelected() {
 	var isBar = 0;
