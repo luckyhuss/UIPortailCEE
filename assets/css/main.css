@@ -2875,3 +2875,9 @@ input[name='optradio'] {
 	padding-left:0px!important;
 }
 
+.ajouter_operation .submit_button .glyphicon-plus{
+    top: -1px;
+    left: 0.5px;
+
+}
+
