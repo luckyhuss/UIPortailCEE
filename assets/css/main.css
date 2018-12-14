@@ -2825,7 +2825,7 @@ input[name='optradio'] {
     margin-top: 10px;
 }
 
-#repartitionFieldset legend, #RAIFieldset legend, #paiementFieldset legend{
+#repartitionFieldset legend, #RAIFieldset legend, #paiementFieldset legend , #calculReelFieldset legend{
 	background:#fff;
 	color: black;
 } 
@@ -2835,10 +2835,14 @@ input[name='optradio'] {
 }
 
 #paiementFieldset legend {
-	width:160px;
+	width:145px;
 }
 
-.plusLogement-container {
+#calculReelFieldset legend {
+	width:145px;
+}
+
+.plusLogement-container , #sectionDepartement {
 	padding-left: 0px;
     padding-top: 10px;
 }
@@ -2857,5 +2861,17 @@ input[name='optradio'] {
 .partenaire-container label[for=RaisonSociale], .partenaire-container label[for=Siren]
 {
    height:30px!important;
+}
+
+#departementFieldset {
+	margin-bottom:0px!important;
+}
+
+ .calculReelCheck {
+	width:25px!important;	
+}
+
+.calculReel {
+	padding-left:0px!important;
 }
 
