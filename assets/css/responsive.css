@@ -336,6 +336,12 @@
 	}
 }
 
+@media ( min-width : 315px) {
+	label[for=versementBenef] {
+		min-width:180px!important;
+	}
+}
+
 /* RESPONSIVE */
 
 /* END RESPONSIVE */

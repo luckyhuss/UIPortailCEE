@@ -549,11 +549,6 @@ label[for=dateEngagement], label[for=dateRAI]
     min-width:150px!important;
 }
 
-label[for=versementBenef] {
-	min-width:180px!important;
-}
-
-
 .apporteur-prestataire-wrapper .float-item, .date-wrapper .float-item {
 	margin-right:0px!important;
 }
