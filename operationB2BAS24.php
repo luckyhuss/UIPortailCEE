@@ -61,21 +61,13 @@
 
 									<div class="header-group col-md-12 displayed"
 										id="sectionDepartement_OP0">
-
 										
 													<span class="form_label"><label for="Departement">Département
 															des travaux</label></span> <span class="header_output"><input
 														type="text" class="form-control"
 														id="departementTravaux_OP0" placeholder=""></span>
-											
 										
 									</div>
-
-
-
-
-
-
 
 								</div>
 
@@ -90,7 +82,7 @@
 										<legend> Logement</legend>
 										<div class="col-sm-3 col-md-3 input_holder">
 											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optradio"
+												<span class="form_input"><input type="radio" name="optLogement"
 													value="logClassique"></span> <span class="form_label"><label
 													for="logClassique">Classique</label></span>
 											</div>
@@ -98,7 +90,7 @@
 
 										<div class="col-sm-3 col-md-3 input_holder">
 											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optradio"
+												<span class="form_input"><input type="radio" name="optLogement"
 													value="logPrecarite"></span> <span class="form_label"><label
 													for="logPrecarite">Précarité</label></span>
 											</div>
@@ -106,7 +98,7 @@
 
 										<div class="col-sm-3 col-md-3 input_holder">
 											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optradio"
+												<span class="form_input"><input type="radio" name="optLogement"
 													value="logGrPrecarite"></span> <span class="form_label"><label
 													for="logGrPrecarite">Grande précarité</label></span>
 											</div>
@@ -218,7 +210,7 @@
 										<legend> Type de paiement</legend>
 										<div class="col-sm-3 col-md-3 input_holder">
 											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optradio"
+												<span class="form_input"><input type="radio" name="optPaiement"
 													value="mandatPaie" checked></span> <span class="form_label"><label
 													for="mandatPaie">Mandat de paiement </label></span>
 											</div>
@@ -226,7 +218,7 @@
 
 										<div class="col-sm-3 col-md-3 input_holder">
 											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optradio"
+												<span class="form_input"><input type="radio" name="optPaiement"
 													value="versementBenef"></span> <span class="form_label"><label
 													for="versementBenef">Versement au bénéficiaire</label></span>
 											</div>
@@ -239,7 +231,7 @@
 										<legend> Type de RAI</legend>
 										<div class="col-sm-3 col-md-3 input_holder">
 											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optradio"
+												<span class="form_input"><input type="radio" name="optRAI"
 													value="mentionSD"></span> <span class="form_label"><label
 													for="mentionSD">Mention sur devis</label></span>
 											</div>
@@ -247,7 +239,7 @@
 
 										<div class="col-sm-3 col-md-3 input_holder">
 											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optradio"
+												<span class="form_input"><input type="radio" name="optRAI"
 													value="courierOffre"></span> <span class="form_label"><label
 													for="courierOffre">Courrier d'offre</label></span>
 											</div>
@@ -255,7 +247,7 @@
 
 										<div class="col-sm-3 col-md-3 input_holder">
 											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optradio"
+												<span class="form_input"><input type="radio" name="optRAI"
 													value="convention" checked="checked"></span> <span
 													class="form_label"><label for="convention">Convention</label></span>
 											</div>
@@ -541,7 +533,7 @@
 
     
     function clone() {
-//     	console.log('cloneIndex ' + cloneIndex + ', numOP at Clone : ' + numOperation() );
+     	console.log('cloneIndex ' + cloneIndex + ', numOP at Clone : ' + numOperation() );
 //     	if(numOperation < 2) {
 // 			cloneIndex = 0;
 // 			console.log('reset here at clone');
@@ -581,7 +573,7 @@
         $("#clonedOP1 .remove").hide();
 
 
-        //console.log('next index:- ' + cloneIndex);
+        console.log('next index:- ' + cloneIndex);
 
         $('#sectionBenef_OP' + (cloneIndex - 1 )).addClass('displayed');
     	$('#sectionLogements_OP' + (cloneIndex - 1 )).addClass('displayed');
@@ -620,15 +612,20 @@
 		var numOP = numOperation();
 		if(numOP == 1) {
 			cloneIndex = 1;
-			//console.log('reset here at removal');
+			console.log('reset here at removal');
 		}
+
+		//get last id after removal
+		console.log('Reset ID @ ' + getLastOperationId(obj) + ' Last child ' + obj);
+
+		//cloneIndex = getLastOperationId(obj);
 	}
 
     $(document).on("click", ".clone", clone);
     $(document).on("click", ".remove", remove);
 
 
-
+    
 
   </script>
 
@@ -653,13 +650,13 @@ $('select[id^="selectSecteur"]').change(function () {
     		var idSelected = str.split("_")[1];
     		if(valueChecked == '2') {
     			
-    			console.log('id selected BAR ' + this.id + ', => Id= ' + idSelected);
+    			//console.log('id selected BAR ' + this.id + ', => Id= ' + idSelected);
     			$('#selectBenef_' + idSecteurClicked).prop("selectedIndex", 0);
     			$('#sectionBenef_' + idSelected).removeClass('displayed');
     			$('#sectionPaiementRAI_' + idSelected).removeClass('displayed');
     		}
     		else {
-    	    	console.log(this.id);
+    	    	//console.log(this.id);
     	    	$('#sectionBenef_' + idSelected).addClass('displayed');
     	    	$('#sectionLogements_' + idSelected).addClass('displayed');
     	    	$('#sectionPlusLogements_' + idSelected).addClass('displayed');
@@ -682,7 +679,7 @@ $('select[id^="selectSecteur"]').change(function () {
 
 
 $('select[id^="selectBenef"]').change(function () {
-	console.log("id selected Type " + this.id);
+	//console.log("id selected Type " + this.id);
 
 	var typeSelected =  $('#' + this.id).val();
 	var strType = this.id;
@@ -734,7 +731,7 @@ $(document).ready(function() {
 		var idCalculReel = strCalcul.split("_")[1];
 		$('#sectionDepartement_'+idCalculReel).addClass('displayed');
 		if($('#'+this.id).is(':checked')) {
-			console.log('log checked is ' + $('#'+this.id).val() );
+			//console.log('log checked is ' + $('#'+this.id).val() );
 			$('#sectionDepartement_'+idCalculReel).removeClass('displayed');
 		}
 	});
@@ -742,6 +739,11 @@ $(document).ready(function() {
 	
 });
 
+function getLastOperationId(obj) {
+	var lastOperationId = 0;
+	lastOperationId = obj.substr(8);
+	return lastOperationId;
+}
 
 function numOperation() {
 	var numOP = 0;
