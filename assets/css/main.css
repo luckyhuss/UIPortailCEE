@@ -2876,3 +2876,7 @@ input[name='optradio'] {
 
 }
 
+.tbodyClone #btnDel_0 {
+	display: none;
+}
+
