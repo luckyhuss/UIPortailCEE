@@ -69,45 +69,48 @@
         </div>
 
         <div class="modal-body">
-            <div class="col-md-12 col-xs-12 form-group">
+            <!-- <div class="col-md-12 col-xs-12 form-group">
                 <span class="form_label"><label for="NomBrouillon">Nom</label></span>
                 <span class="form_input"><input type="text" class="form-control" id="nomDossier" placeholder=""></span>
-            </div>
+            </div> -->
+
+            <!-- <div class="col-sm-6 col-md-12 input_holder"> -->
+                <div class="header-group" id="brouillonName">
+                    <!-- <span class="header_label"><label for="NomBrouillon">Nom</label></span> -->
+                    <span class="header_output"><input type="text" class="form-control" id="nomDossier" placeholder=""></span>
+                </div>
+            <!-- </div> -->
 
             <div id="refDossier" class="modal-msg displayed">
                 <div class="header-group">
-                    <span class="header_label"><label for="Ref">Ref</label></span>
+                    <span class="header_label"><label for="Ref">Référence</label></span>
                     <span class="header_output">Indéfini</span>
-                    <span class="header_output"><a><i class="glyphicon glyphicon-download-alt" rel="tooltip" title="Télécharger dossier"></i></a></span>
+                    <!-- <span class="header_output"><a><i class="glyphicon glyphicon-download-alt" rel="tooltip" title="Télécharger dossier"></i></a></span> -->
                 </div>
             </div>
         </div>
 
         <div class="modal-footer">
             <!-- <a href="#"><i class="btn btn-default glyphicon glyphicon-ok" data-toggle="" data-target="" data-dismiss="modal"></i></a> -->
-            <button type="button" class="btn btn-default" id="modal-btn-ok">OK</button>
+            <button type="button" class="btn btn-default" id="modal-btn-ok">ok</button>
         </div>
         </div>
     </div>
 </div>
 
 <script>
-    $('#first').click(function() {
-    $('#Modal1').html('your content');
-});
 
 $( "#brouillonModal .modal-footer #modal-btn-ok" ).click(function() {
     $("#brouillonModal").find('.modal-title').text("Dossier sauvegardé");
     $("#refDossier").css("display", "block");
-    $("#brouillonModal .modal-body .form-group").css("display", "none");
+    $("#brouillonModal .modal-body #brouillonName").css("display", "none");
     $("#brouillonModal .modal-footer").css("display", "none");
 });
 
 $("#brouillonModal").on("hidden.bs.modal", function(){
     $("#brouillonModal").find('.modal-title').text("Nommer");
+    $("#brouillonModal .modal-body #brouillonName, #brouillonModal .modal-footer").css("display", "block");
     $("#refDossier").css("display", "none");
-    $("#brouillonModal .modal-body .form-group").css("display", "block");
-    $("#brouillonModal .modal-footer #modal-btn-ok").css("display", "block");
 });
 
 $( "#CreerDossierModal .modal-footer #modal-btn-ok" ).click(function() {
