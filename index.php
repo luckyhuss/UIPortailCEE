@@ -68,6 +68,8 @@ body { background-color: #fafafa; }
 	   $pageLoaded = "accueil";
 	   $activeHome = "";
 	   $activeSimuler = "";
+	   $activeNouvelleSimulation = "";
+	   $activeHistoriqueSimulation = "";
 	   $activeRechercher = "";
 	   $activeCreer = "";
 	   $activeDossier = "";
@@ -88,6 +90,20 @@ body { background-color: #fafafa; }
 	               $pageLoaded = "simuler-AS24-B2B";
 	               break;
 	           
+	           case 'NouvelleSimulation':
+	               $activeSimulation = "active-link";
+	               $activeNouvelleSimulation = "active-link";
+	               $pageLoaded = "simuler-AS24-B2B";
+	               $openNouvelleSimulation = "in";
+	               break;
+	               
+	           case 'HistoriqueSimulation':
+	                $activeSimulation = "active-link";
+	               $activeHistoriqueSimulation = "active-link";
+	               $pageLoaded = "simulationHistoriques";
+	               $openSimulation = "in";
+	               break;
+	               
 	           case 'Creer':
 	               $activeCreer = "active-link";
 	               $pageLoaded = "creer";

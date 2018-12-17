@@ -669,9 +669,9 @@
 		}
 
 		//get last id after removal
-		console.log('obj value: ' , obj , ' Reset ID @ ' + getLastOperationId(obj) + ' Last child ' + obj);
+		console.log('obj value: ' , obj , ' Reset ID @ ' + getLastOperationId(obj) + ' Last child ' + obj + " cloneIndex: ", cloneIndex);
 
-		cloneIndex = getLastOperationId(obj);
+		cloneIndex = parseInt(getLastOperationId(obj));
 	}
 
     $(document).on("click", ".clone", clone);
