@@ -204,6 +204,61 @@
 								</div>
 
 
+								<div class="header-group col-md-12 displayed"
+									id="sectionRepartition_OP0">
+
+									<!-- repartition -->
+									<fieldset class="fieldset-margin-bottom"
+										id="repartitionFieldset">
+										<legend> Répartition</legend>
+
+										<div class="repartition-container col-md-12">
+											<div class="repartition-section col-md-6">
+												<span class="repartition-section-header">Professionnel</span>
+
+												<div class="col-sm-6 col-md-12 input_holder">
+													<div class="header-group">
+														<span class="header_label"><label for="IndiceProHP">Indice Hors précarité</label></span>
+														<span class="header_output"><input type="text"
+															class="form-control" id="indiceProHP_OP0" placeholder=""></span>
+													</div>
+												</div>
+
+												<div class="col-sm-6 col-md-12 input_holder">
+													<div class="header-group">
+														<span class="header_label"><label for="IndiceProP">Indice précarité</label></span>
+														<span class="header_output"><input type="text"
+															class="form-control" id="indiceProP_OP0" placeholder=""></span>
+													</div>
+												</div>
+
+											</div>
+
+											<div class="repartition-section col-md-6">
+												<span class="repartition-section-header">Bénéficiaire</span>
+												<div class="col-sm-6 col-md-12 input_holder">
+													<div class="header-group">
+														<span class="header_label"><label for="IndiceBenHP">Indice Hors précarité</label></span>
+														<span class="header_output"><input type="text"
+															class="form-control" id="indiceBenHP_OP0" placeholder=""></span>
+													</div>
+												</div>
+
+												<div class="col-sm-6 col-md-12 input_holder">
+													<div class="header-group">
+														<span class="header_label"><label for="IndiceBenP">Indice précarité</label></span>
+														<span class="header_output"><input type="text"
+															class="form-control" id="indiceBenP_OP0" placeholder=""></span>
+													</div>
+												</div>
+											</div>
+
+
+										</div>
+
+									</fieldset>
+								</div>
+
 								<div class="paiement-rai displayed" id="sectionPaiementRAI_OP0">
 									<!-- Type de Paiement -->
 									<fieldset class="fieldset-margin-bottom" id="paiementFieldset">
@@ -581,6 +636,7 @@
     	$('#sectionCalculReel_OP' + (cloneIndex - 1 )).addClass('displayed');
     	$('#sectionSocial_OP' + (cloneIndex - 1 )).addClass('displayed');
     	$('#sectionPaiementRAI_OP' + (cloneIndex - 1 )).addClass('displayed');
+		$('#sectionRepartition_OP0' + (cloneIndex - 1 )).addClass('displayed');
 
     	$('#sectionBarErrorMsg_OP' + (cloneIndex - 1 )).addClass('displayed');
     	$('#selectSecteur_OP' + (cloneIndex - 1 )).removeClass('input-validation-error');
@@ -654,6 +710,8 @@ $('select[id^="selectSecteur"]').change(function () {
     			$('#selectBenef_' + idSecteurClicked).prop("selectedIndex", 0);
     			$('#sectionBenef_' + idSelected).removeClass('displayed');
     			$('#sectionPaiementRAI_' + idSelected).removeClass('displayed');
+				$('#sectionRepartition_' + idSelected).removeClass('displayed');
+				
     		}
     		else {
     	    	//console.log(this.id);
@@ -663,6 +721,7 @@ $('select[id^="selectSecteur"]').change(function () {
     	    	$('#sectionCalculReel_' + idSelected).addClass('displayed');
     	    	$('#sectionSocial_' + idSelected).addClass('displayed');
     	    	$('#sectionPaiementRAI_' + idSelected).addClass('displayed');
+				$('#sectionRepartition_' + idSelected).addClass('displayed');
     		}
     		
     	});
