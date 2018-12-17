@@ -4,7 +4,7 @@
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<span class="panel_header_element"><a data-toggle="collapse"
-						href="#CollapseOperation">Opération &#x2116; <span id="numId_OP0">1</span></a></span>
+						href="#CollapseOperation">Opération &#x2116; <span id="numId_OP0" class="numId">1</span></a></span>
 					<button id="btnDel_0" name="btnDel_0" type="button"
 						class="remove btn btn-circle btn-danger">
 						<i class="glyphicon glyphicon-minus"></i>
@@ -578,7 +578,7 @@
 <script>
 //.find("input, input[type='checkbox']")
 //=======
-    var regex = /^(.*)(\d)+$/i;
+    var regex = /^(.+?)(\d+)$/i;
     var cloneIndex = $(".clonedOP").length;
     if ($(".clonedOP").length == 1) {
         $('.remove').hide();
@@ -588,17 +588,12 @@
 
     
     function clone() {
-     	console.log('cloneIndex ' + cloneIndex + ', numOP at Clone : ' + numOperation() );
-//     	if(numOperation < 2) {
-// 			cloneIndex = 0;
-// 			console.log('reset here at clone');
-// 		}
-//     	console.log('cloneIndex after ' + cloneIndex);
-    	
+     	//console.log('cloneIndex ' + cloneIndex + ', numOP at Clone : ' + numOperation() );
+
         $(this).parents(".clonedOP").clone(true, true)
             .appendTo(".tbodyClone")
-            .attr("id", "clonedOP" + (cloneIndex+1))
-            .attr("name", "clonedOP" + (cloneIndex+1))
+            .attr("id", "clonedOP" + ( cloneIndex + 1 ))
+            //.attr("name", "clonedOP" + ( cloneIndex + 1 ))
             .find("*")
             .each(function () {
 				//$(this).val('');
@@ -607,6 +602,7 @@
                 var match = id.match(regex) || [];
                 if (match.length == 3) {
                     this.id = match[1] + (cloneIndex);
+                    //console.log('match[1]: ', match[1], " cloneIndex: ", cloneIndex );
                 }
             })
             .on('click', 'clone', clone)
@@ -628,7 +624,7 @@
         $("#clonedOP1 .remove").hide();
 
 
-        console.log('next index:- ' + cloneIndex);
+        //console.log('next index:- ' + cloneIndex);
 
         $('#sectionBenef_OP' + (cloneIndex - 1 )).addClass('displayed');
     	$('#sectionLogements_OP' + (cloneIndex - 1 )).addClass('displayed');
@@ -642,6 +638,7 @@
     	$('#selectSecteur_OP' + (cloneIndex - 1 )).removeClass('input-validation-error');
 
     	$('#calculReel').prop('checked',false);
+
     	
     	$('#numId_OP' + (cloneIndex - 1 )).html(cloneIndex );
 
@@ -672,9 +669,9 @@
 		}
 
 		//get last id after removal
-		console.log('Reset ID @ ' + getLastOperationId(obj) + ' Last child ' + obj);
+		console.log('obj value: ' , obj , ' Reset ID @ ' + getLastOperationId(obj) + ' Last child ' + obj);
 
-		//cloneIndex = getLastOperationId(obj);
+		cloneIndex = getLastOperationId(obj);
 	}
 
     $(document).on("click", ".clone", clone);
@@ -693,7 +690,7 @@ $('select[id^="selectSecteur"]').change(function () {
 	var isBar = isAnyBarSelected();
 
 	var idClicked = $(this).attr('id');
-	//console.log('isBar ' + isBar + ' idClicked=> ' + idClicked);
+	console.log('isBar ' + isBar + ' idClicked=> ' + idClicked);
 	$('#' + idClicked).removeClass('input-validation-error');
 	var idSecteurClicked = idClicked.split("_")[1];
 	$('#sectionBarErrorMsg_' + idSecteurClicked).addClass('displayed');
@@ -800,6 +797,8 @@ $(document).ready(function() {
 
 function getLastOperationId(obj) {
 	var lastOperationId = 0;
+	var lastNumId = $( ".tbodyClone .numId:last-child" ).attr('id');
+	//console.log('last id: ' , lastNumId);
 	lastOperationId = obj.substr(8);
 	return lastOperationId;
 }
