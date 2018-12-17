@@ -903,7 +903,7 @@ caption {
 #collapseListeDossiers .submit_button_holder, #collapseDossiersPayes .submit_button_holder,
 	#collapseDossiersEnCours .submit_button_holder,
 	#collapseDossiersDeposes .submit_button_holder, #collapseSearchBarFiche .submit_button_holder,
-	#formCritereSim .submit_button_holder, #collapseDetailSimulation .submit_button_holder
+	#formCritereSim .submit_button_holder, #collapseDetailSimulation .submit_button_holder, #collapseHistoSim .submit_button_holder
 	{
 	text-align: right;
 }
@@ -1003,7 +1003,8 @@ caption {
 #collapseListeDossiers .submit_button_holder a, #collapseDossiersPayes .submit_button_holder a,
 	#collapseDossiersEnCours .submit_button_holder a,
 	#collapseDossiersDeposes .submit_button_holder a,
-	#collapseSearchBarFiche .submit_button_holder {
+	#collapseSearchBarFiche .submit_button_holder, #collapseHistoSim .submit_button_holder a, 
+	#collapseDetailSimulation .submit_button_holder a{
 	position: inherit;
 	top: 10px;
 	left: 15px;
@@ -2214,7 +2215,7 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
     margin-bottom: 15px;
   }
 
-  #collapseHistoSim .submit_button {
+  #collapseHistoSim .submit_button[name="btn-search"] {
 	border-radius: 0px 10px 10px 0px;
 	margin-left: -15px;
 	font-size: 14px;
