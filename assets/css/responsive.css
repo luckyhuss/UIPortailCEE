@@ -342,6 +342,12 @@
 	}
 }
 
+@media (max-width: 296px){
+	#collapseDetailSimulation #btn_supprimer {
+		margin-top: 10px;
+	}
+}
+
 /* RESPONSIVE */
 
 /* END RESPONSIVE */
