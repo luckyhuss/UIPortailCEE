@@ -94,7 +94,7 @@
                 });
                     
                     gigya.accounts.showScreenSet({
-                        screenSet: 'CoreModel-Custom-RegistrationLogin',
+                        screenSet: 'CEE-Custom-RegistrationLogin', //'CoreModel-Custom-RegistrationLogin',
                         startScreen:'gigya-login-screen',
                         customLang: customLangParamsGigya,
                         //containerID: 'cee-login-container',
@@ -115,6 +115,9 @@
 //                             	$("input.gigya-input-submit").val('Login');
 //                             }, 200); 
                             	//document.getElementById('input.gigya-input-submit').style.display='block'; 
+
+                        	//$('.gigya-layout-row.with-divider').addClass("blockDisplay");
+                        	//$('.gigya-screen.landscape .gigya-layout-row.with-divider').css("display","");
                             
                         }
                     });

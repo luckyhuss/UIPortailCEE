@@ -380,11 +380,15 @@ body {
 }
 
 .with-divider {
-	display: none !important;
+	display: block !important;
 }
 
 .gigya-screen.landscape .gigya-layout-row.with-divider {
-	display: none !important;
+	display: block !important;
+}
+
+.gigya-layout-cell.responsive.with-divider {
+	display:none!important;
 }
 
 .gigya-screen.portrait.mobile {
@@ -867,4 +871,10 @@ footer {
 	color:red;
 	top: -30px;
     left: -50px;
+}
+
+/*******************************/
+/*        Forget password*/      
+.blockDisplay {
+    display: block!important;
 }
