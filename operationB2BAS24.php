@@ -17,308 +17,7 @@
 			<div id="CollapseOperation" class="panel-collapse collapse in">
 				<div class="panel-body">
 
-					<div class="choisirSecteurContainer">
-						<fieldset class="fieldset-margin-bottom choisirSecteurPanel">
-							<legend>Secteur</legend>
-
-							<div class="fieldset-container">
-
-								<div class="header-group col-md-12">
-									<span class="form_label"><label for="Critere">Secteur</label></span>
-									<span class="header_output"><select id="selectSecteur_OP0"
-										name="selectSecteur_OP0" class="form-control secteur">
-											<option value="0"></option>
-											<option value="1">#1 - Industrie</option>
-											<option value="2">#2 - bâtiment résidentiel (BAR)</option>
-											<option value="3">#3 - Agriculture</option>
-											<option value="4">#4 - Secteur 4</option>
-											<option value="5">#5 - Secteur 5</option>
-									</select></span> <span
-										class="BAR-error-message text-danger displayed"
-										id="sectionBarErrorMsg_OP0">Vous ne pouvez saisir BAR qu'une
-										seule fois...</span>
-								</div>
-								<div class="header-group col-md-12 displayed"
-									id="sectionBenef_OP0">
-									<span class="form_label"><label for="Critere">Type de
-											bénéficiaire</label></span> <span class="header_output"><select
-										id="selectBenef_OP0" name="selectBenef_OP0"
-										class="form-control beneficiaire">
-											<option value="0"></option>
-											<option value="1">#1 - un logement</option>
-											<option value="2">#2 - plusieurs logements</option>
-											<option value="3">#3 - Bailleur social</option>
-									</select></span>
-								</div>
-
-								<div class="header-group col-md-12 displayed"
-									id="sectionCalculReel_OP0">
-
-									<span class="form_label"><label for="CalculReel">Calcul au réel</label></span>
-									<span class="header_output calculReelCheck"><input
-										type="checkbox" id="calculReel_OP0" class="calculReel"></span>
-
-
-									<div class="header-group col-md-12 displayed"
-										id="sectionDepartement_OP0">
-										
-													<span class="form_label"><label for="Departement">Département
-															des travaux</label></span> <span class="header_output"><input
-														type="text" class="form-control"
-														id="departementTravaux_OP0" placeholder=""></span>
-										
-									</div>
-
-								</div>
-
-
-								<div class="header-group col-md-12 displayed"
-									id="sectionLogements_OP0">
-									<!-- <b style="color:red">A ETRE DEFINIT....</b> -->
-
-									<!-- Type de logement -->
-									<fieldset class="fieldset-margin-bottom"
-										id="repartitionFieldset">
-										<legend> Logement</legend>
-										<div class="col-sm-3 col-md-3 input_holder">
-											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optLogement"
-													value="logClassique"></span> <span class="form_label"><label
-													for="logClassique">Classique</label></span>
-											</div>
-										</div>
-
-										<div class="col-sm-3 col-md-3 input_holder">
-											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optLogement"
-													value="logPrecarite"></span> <span class="form_label"><label
-													for="logPrecarite">Précarité</label></span>
-											</div>
-										</div>
-
-										<div class="col-sm-3 col-md-3 input_holder">
-											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optLogement"
-													value="logGrPrecarite"></span> <span class="form_label"><label
-													for="logGrPrecarite">Grande précarité</label></span>
-											</div>
-										</div>
-									</fieldset>
-								</div>
-
-
-								<div class="header-group col-md-12 displayed"
-									id="sectionPlusLogements_OP0">
-
-									<fieldset class="fieldset-margin-bottom"
-										id="repartitionFieldset">
-
-
-										<div class="plusLogement-container col-md-12">
-
-											<div class="col-sm-6 col-md-6 input_holder">
-												<div class="header-group">
-													<span class="header_label"><label for="Classique">Nombre de
-															logement Classique</label></span> <span
-														class="header_output"><input type="text"
-														class="form-control" id="classique_OP0" placeholder=""></span>
-												</div>
-											</div>
-
-											<div class="col-sm-6 col-md-6 input_holder">
-												<div class="header-group">
-													<span class="header_label"><label for="Precarite">Nombre de
-															logement Précarité</label></span> <span
-														class="header_output"><input type="text"
-														class="form-control" id="precarite_OP0" placeholder=""></span>
-												</div>
-											</div>
-
-											<div class="col-sm-6 col-md-6 input_holder">
-												<div class="header-group">
-													<span class="header_label"><label for="GrandPrecarite">Nombre
-															de logement Grand Précarité</label></span> <span
-														class="header_output"><input type="text"
-														class="form-control" id="grandprecarite_OP0"
-														placeholder=""></span>
-												</div>
-											</div>
-										</div>
-									</fieldset>
-								</div>
-
-
-								<div class="header-group col-md-12 displayed"
-									id="sectionSocial_OP0">
-
-									<!-- repartition -->
-									<fieldset class="fieldset-margin-bottom"
-										id="repartitionFieldset">
-										<legend> Répartition de la rémunération</legend>
-
-										<div class="repartition-container col-md-12">
-											<div class="repartition-section col-md-6">
-												<span class="repartition-section-header">Professionnel</span>
-
-												<div class="col-sm-6 col-md-12 input_holder">
-													<div class="header-group">
-														<span class="header_label"><label for="ClassiquePro">Classique</label></span>
-														<span class="header_output"><input type="text"
-															class="form-control" id="classiquePro_OP0" placeholder=""></span>
-													</div>
-												</div>
-
-												<div class="col-sm-6 col-md-12 input_holder">
-													<div class="header-group">
-														<span class="header_label"><label for="PrecaritePro">Précarité</label></span>
-														<span class="header_output"><input type="text"
-															class="form-control" id="precaritePro_OP0" placeholder=""></span>
-													</div>
-												</div>
-
-											</div>
-
-											<div class="repartition-section col-md-6">
-												<span class="repartition-section-header">Bénéficiaire</span>
-												<div class="col-sm-6 col-md-12 input_holder">
-													<div class="header-group">
-														<span class="header_label"><label for="ClassiqueBen">Classique</label></span>
-														<span class="header_output"><input type="text"
-															class="form-control" id="classiqueBen_OP0" placeholder=""></span>
-													</div>
-												</div>
-
-												<div class="col-sm-6 col-md-12 input_holder">
-													<div class="header-group">
-														<span class="header_label"><label for="PrecariteBen">Précarité</label></span>
-														<span class="header_output"><input type="text"
-															class="form-control" id="precariteBen_OP0" placeholder=""></span>
-													</div>
-												</div>
-											</div>
-
-
-										</div>
-
-									</fieldset>
-								</div>
-
-
-								<div class="header-group col-md-12 displayed"
-									id="sectionRepartition_OP0">
-
-									<!-- repartition -->
-									<fieldset class="fieldset-margin-bottom"
-										id="repartitionFieldset">
-										<legend> Répartition</legend>
-
-										<div class="repartition-container col-md-12">
-											<div class="repartition-section col-md-6">
-												<span class="repartition-section-header">Professionnel</span>
-
-												<div class="col-sm-6 col-md-12 input_holder">
-													<div class="header-group">
-														<span class="header_label"><label for="IndiceProHP">Indice Hors précarité</label></span>
-														<span class="header_output"><input type="text"
-															class="form-control" id="indiceProHP_OP0" placeholder=""></span>
-													</div>
-												</div>
-
-												<div class="col-sm-6 col-md-12 input_holder">
-													<div class="header-group">
-														<span class="header_label"><label for="IndiceProP">Indice précarité</label></span>
-														<span class="header_output"><input type="text"
-															class="form-control" id="indiceProP_OP0" placeholder=""></span>
-													</div>
-												</div>
-
-											</div>
-
-											<div class="repartition-section col-md-6">
-												<span class="repartition-section-header">Bénéficiaire</span>
-												<div class="col-sm-6 col-md-12 input_holder">
-													<div class="header-group">
-														<span class="header_label"><label for="IndiceBenHP">Indice Hors précarité</label></span>
-														<span class="header_output"><input type="text"
-															class="form-control" id="indiceBenHP_OP0" placeholder=""></span>
-													</div>
-												</div>
-
-												<div class="col-sm-6 col-md-12 input_holder">
-													<div class="header-group">
-														<span class="header_label"><label for="IndiceBenP">Indice précarité</label></span>
-														<span class="header_output"><input type="text"
-															class="form-control" id="indiceBenP_OP0" placeholder=""></span>
-													</div>
-												</div>
-											</div>
-
-
-										</div>
-
-									</fieldset>
-								</div>
-
-								<div class="paiement-rai displayed" id="sectionPaiementRAI_OP0">
-									<!-- Type de Paiement -->
-									<fieldset class="fieldset-margin-bottom" id="paiementFieldset">
-										<legend> Type de paiement</legend>
-										<div class="col-sm-3 col-md-3 input_holder">
-											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optPaiement"
-													value="mandatPaie" checked></span> <span class="form_label"><label
-													for="mandatPaie">Mandat de paiement </label></span>
-											</div>
-										</div>
-
-										<div class="col-sm-3 col-md-3 input_holder">
-											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optPaiement"
-													value="versementBenef"></span> <span class="form_label"><label
-													for="versementBenef">Versement au bénéficiaire</label></span>
-											</div>
-										</div>
-
-									</fieldset>
-
-									<!-- Type de RAI -->
-									<fieldset class="fieldset-margin-bottom" id="RAIFieldset">
-										<legend> Type de RAI</legend>
-										<div class="col-sm-3 col-md-3 input_holder">
-											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optRAI"
-													value="mentionSD"></span> <span class="form_label"><label
-													for="mentionSD">Mention sur devis</label></span>
-											</div>
-										</div>
-
-										<div class="col-sm-3 col-md-3 input_holder">
-											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optRAI"
-													value="courierOffre"></span> <span class="form_label"><label
-													for="courierOffre">Courrier d'offre</label></span>
-											</div>
-										</div>
-
-										<div class="col-sm-3 col-md-3 input_holder">
-											<div class="form-group">
-												<span class="form_input"><input type="radio" name="optRAI"
-													value="convention" checked="checked"></span> <span
-													class="form_label"><label for="convention">Convention</label></span>
-											</div>
-										</div>
-									</fieldset>
-
-									<!-- to cross check -->
-
-								</div>
-
-
-
-							</div>
-
-						</fieldset>
-					</div>
+					
 
 
 					<div class="choisirOperationContainer">
@@ -342,7 +41,7 @@
 					</div>
 
 
-					<div class="col-md-12 choisirCritereContainer">
+					<div class="col-md-12 choisirCritereContainer displayed" id="sectionCritere_OP0">
 						<fieldset class="fieldset-margin-bottom critereAsaisirPanel">
 							<legend>Critères</legend>
 
@@ -626,19 +325,19 @@
 
         //console.log('next index:- ' + cloneIndex);
 
-        $('#sectionBenef_OP' + (cloneIndex - 1 )).addClass('displayed');
-    	$('#sectionLogements_OP' + (cloneIndex - 1 )).addClass('displayed');
-    	$('#sectionPlusLogements_OP' + (cloneIndex - 1 )).addClass('displayed');
-    	$('#sectionCalculReel_OP' + (cloneIndex - 1 )).addClass('displayed');
-    	$('#sectionSocial_OP' + (cloneIndex - 1 )).addClass('displayed');
-    	$('#sectionPaiementRAI_OP' + (cloneIndex - 1 )).addClass('displayed');
-		$('#sectionRepartition_OP0' + (cloneIndex - 1 )).addClass('displayed');
+        //$('#sectionBenef_OP' + (cloneIndex - 1 )).addClass('displayed');
+    	//$('#sectionLogements_OP' + (cloneIndex - 1 )).addClass('displayed');
+    	//$('#sectionPlusLogements_OP' + (cloneIndex - 1 )).addClass('displayed');
+    	//$('#sectionCalculReel_OP' + (cloneIndex - 1 )).addClass('displayed');
+    	//$('#sectionSocial_OP' + (cloneIndex - 1 )).addClass('displayed');
+    	//$('#sectionPaiementRAI_OP' + (cloneIndex - 1 )).addClass('displayed');
+		//$('#sectionRepartition_OP0' + (cloneIndex - 1 )).addClass('displayed');
 
-    	$('#sectionBarErrorMsg_OP' + (cloneIndex - 1 )).addClass('displayed');
-    	$('#selectSecteur_OP' + (cloneIndex - 1 )).removeClass('input-validation-error');
+    	//$('#sectionBarErrorMsg_OP' + (cloneIndex - 1 )).addClass('displayed');
+    	//$('#selectSecteur_OP' + (cloneIndex - 1 )).removeClass('input-validation-error');
 
-    	$('#calculReel').prop('checked',false);
-
+    	//$('#calculReel').prop('checked',false);
+		$('#sectionCritere_OP' + (cloneIndex - 1 )).addClass('displayed');
     	
     	$('#numId_OP' + (cloneIndex - 1 )).html(cloneIndex );
 
@@ -678,13 +377,33 @@
     $(document).on("click", ".remove", remove);
 
 
+
+
+    // Select operation - onchange display critere
     
+    $('select[id^="selectOperation"]').change(function () {
+    	$('select[id^="selectOperation"]').each(function () {
+    		var valueChecked = $('#' + this.id).val();
+    		var str = this.id;
+    		var idSelected = str.split("_")[1];
+
+			console.log('id Selected : ' , idSelected, " valueChecked: ", valueChecked);
+
+			$('#sectionCritere_' + idSelected).addClass('displayed');
+
+			if(valueChecked != 0) {
+				$('#sectionCritere_' + idSelected).removeClass('displayed');
+			}
+        });
+    	
+    });
+     
 
   </script>
 
 <script>
 //$('#' + idClicked).removeClass('input-validation-error');
-	
+/*	
 $('select[id^="selectSecteur"]').change(function () {
 
 	var isBar = isAnyBarSelected();
@@ -793,7 +512,7 @@ $(document).ready(function() {
 	});
 	
 	
-});
+});*/
 
 function getLastOperationId(obj) {
 	var lastOperationId = 0;

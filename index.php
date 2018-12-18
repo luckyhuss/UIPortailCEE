@@ -79,6 +79,7 @@ body { background-color: #fafafa; }
 	   $activeAdminGigya = "";
 	   $activeAdminPermission = "";
 	   $activeAdminContenu = "";
+	   $openSimulation = "";
 	   $openAdmin = "";
 	   $activeAdmin = "";
 	   
@@ -94,7 +95,7 @@ body { background-color: #fafafa; }
 	               $activeSimulation = "active-link";
 	               $activeNouvelleSimulation = "active-link";
 	               $pageLoaded = "simuler-AS24-B2B";
-	               $openNouvelleSimulation = "in";
+	               $openSimulation = "in";
 	               break;
 	               
 	           case 'HistoriqueSimulation':
