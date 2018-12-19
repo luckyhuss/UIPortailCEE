@@ -1,5 +1,5 @@
 
-<div class="col-md-12 panel-group resultatCumulePanel">
+<div class="col-md-12 panel-group resultatCumulePanel displayed" id="resultatCumulePanel">
 	<div class="panel panel-default">
 
 		<div class="panel-body">

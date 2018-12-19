@@ -307,6 +307,9 @@
 		console.log('obj value: ' , obj , ' Reset ID @ ' + getLastOperationId(obj) + ' Last child ' + obj + " cloneIndex: ", cloneIndex);
 
 		cloneIndex = parseInt(getLastOperationId(obj));
+
+		//hide resultatCumulePanel on each removal
+		$('#resultatCumulePanel').addClass('displayed');
 	}
 
     $(document).on("click", ".clone", clone);
@@ -481,5 +484,35 @@ function isAnyBarSelected() {
 
 	return isBar;
 }
+
+
+
+$('#calculateCumac').click(function() {
+	displayResultatOperation();
+	displayResultatCumule();
+
+	
+
+});
+
+function displayResultatOperation() {
+	//TO DO
+}
+
+function displayResultatCumule() {
+	// get number of operations
+	var totalNumOperation = numOperation();
+
+	console.log('numOP: ', totalNumOperation);
+	$('#resultatCumulePanel').addClass('displayed');
+	if(parseInt(totalNumOperation) > 1) {
+		//display panel resultat cumuler
+		$('#resultatCumulePanel').removeClass('displayed');
+		//display total number of operations for the calculation
+		$('#numOperation').html(totalNumOperation );
+	}
+
+}
+
 
   </script>
