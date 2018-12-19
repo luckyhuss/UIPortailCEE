@@ -2623,7 +2623,8 @@ input[name='optradio'] {
 	padding-left:15px;
 }
 
-.choisirSecteurPanel legend, .choisirOperationPanel legend, .critereAsaisirPanel legend {
+/* .choisirSecteurPanel legend,  */
+.choisirOperationPanel legend, .critereAsaisirPanel legend {
 	width:130px;
 }
 
