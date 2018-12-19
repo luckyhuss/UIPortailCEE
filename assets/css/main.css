@@ -2611,7 +2611,8 @@ input[name='optradio'] {
 	height:35px!important;
 }
 
-.choisirSecteurPanel .header_output, .choisirOperationPanel .header_output, .critereAsaisirPanel .header_output  {
+.choisirSecteurPanel .header_output, .choisirOperationPanel .header_output, .critereAsaisirPanel .header_output,
+.choisirInfoGeneralPanel .header_output, .choisirIndicePanel .header_output  {
 	width:55%;
 }
 
