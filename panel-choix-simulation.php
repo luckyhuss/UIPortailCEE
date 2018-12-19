@@ -215,7 +215,7 @@
 
 					<div class="header-group col-md-12 displayed" id="sectionCalculReel">
 						<span class="form_label"><label for="CalculReel">Calcul au réel</label></span>
-						<span class="header_output calculReelCheck"><input type="checkbox" id="calculReel_OP0" class="calculReel"></span>
+						<span class="header_output calculReelCheck"><input type="checkbox" id="calculReel" class="calculReel"></span>
 					</div>
 
 					<div class="header-group col-md-12 displayed" id="sectionPlusLogements">
@@ -378,6 +378,7 @@
 			$('#sectionPlusLogements').addClass('displayed');
 			$('#sectionCalculReel' ).addClass('displayed');
 			$('#sectionStatistiques' ).addClass('displayed');
+			$('#CodePostalTravaux' ).val('');
 	    break;
 	  default:
 	    //no code
