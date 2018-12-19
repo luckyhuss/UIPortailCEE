@@ -4,7 +4,7 @@
 <?php include 'operationB2BAS24.php'; ?>
 
 
-
+<?php include 'resultat-cumule.php'; ?>
 
 <!--  div class="col-md-5 simulationHistoriques"-->
     <?php //include 'simulationHistoriques.php'; ?>

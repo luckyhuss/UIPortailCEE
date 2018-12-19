@@ -2629,6 +2629,10 @@ input[name='optradio'] {
 	width:130px;
 }
 
+.resultatCumulerPanel legend {
+	width:150px;
+}
+
 .dateEstimeeCommande legend {
 	width:220px;
 }
@@ -2881,6 +2885,10 @@ input[name='optradio'] {
 
 .tbodyClone #btnDel_0 {
 	display: none;
+}
+
+.sectionResultatCumule {
+	padding:0px;
 }
 
 

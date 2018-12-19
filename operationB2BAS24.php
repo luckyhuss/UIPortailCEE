@@ -4,7 +4,8 @@
 			<div class="panel-heading">
 				<h4 class="panel-title">
 					<span class="panel_header_element"><a data-toggle="collapse"
-						href="#CollapseOperation">Opération &#x2116; <span id="numId_OP0" class="numId">1</span></a></span>
+						href="#CollapseOperation">Opération &#x2116; <span id="numId_OP0"
+							class="numId">1</span></a></span>
 					<button id="btnDel_0" name="btnDel_0" type="button"
 						class="remove btn btn-circle btn-danger">
 						<i class="glyphicon glyphicon-minus"></i>
@@ -16,8 +17,6 @@
 
 			<div id="CollapseOperation" class="panel-collapse collapse in">
 				<div class="panel-body">
-
-					
 
 
 					<div class="choisirOperationContainer">
@@ -41,7 +40,8 @@
 					</div>
 
 
-					<div class="col-md-12 choisirCritereContainer displayed" id="sectionCritere_OP0">
+					<div class="col-md-12 choisirCritereContainer displayed"
+						id="sectionCritere_OP0">
 						<fieldset class="fieldset-margin-bottom critereAsaisirPanel">
 							<legend>Critères</legend>
 
@@ -204,75 +204,11 @@
 <!-- button ajouter -->
 
 <div class="col-md-12 submit_button_holder simuler_btn_holder">
-	<button type="submit" class="btn btn-primary submit_button">Calculer</button>
+	<a href="javascript:void(0)"  id="calculateCumac"  class="btn btn-primary submit_button" role="button">Calculer</a>
 </div>
 
-<div class="col-md-12 panel-group resultatCumulePanel">
-	<div class="panel panel-default">
-		<div class="resultatCumule">
-			<div class="panel-body">
-				<div class="resultatCumule">
-					<div class="stat__data col-md-8">
-						<span class="header_label"><label for="ResultatCumule">Résultat
-								cumulé</label></span>
-						<div class="header-group">
-							<span class="header_label"><label for="ResultatCumulerCL">Classique</label></span>
-							<span class="header_output">10 kWhc</span> <span
-								class="header_output">600 €</span>
-						</div>
 
-						<div class="header-group">
-							<span class="header_label"><label for="ResultatCumulerPR">Précarité</label></span>
-							<span class="header_output">10 kWhc</span> <span
-								class="header_output">600 €</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 
-<!-- mention devis -->
-<div class="col-md-12 panel-group mentionDevis_Facture">
-	<div class="panel panel-default">
-		<div class="mentionDevisOuFacture">
-			<div class="panel-body">
-
-				<div class="col-md-6 panel-group mentionDevisPanel">
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<div class="mentionDevis">
-								<span class="header_label"><label for="mentionDevis">Mention
-										devis</label></span> <span>Lorem ipsum dolor sit amet,
-									consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-									eiusmod tempor incididunt. Lorem ipsum dolor sit amet,
-									consectetur adipiscing elit.</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6 panel-group mentionFacturePanel">
-					<div class="panel panel-default">
-						<div class="panel-body">
-							<div class="mentionFacture">
-								<span class="header_label"><label for="mentionFacture">Mention
-										facture</label></span> <span>Lorem ipsum dolor sit amet,
-									consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-									eiusmod tempor incididunt. Lorem ipsum dolor sit amet,
-									consectetur adipiscing elit.</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-</div>
 
 <script>
 //.find("input, input[type='checkbox']")
