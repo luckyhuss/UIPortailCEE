@@ -144,17 +144,13 @@
 					</div>
 
 					<div class="col-md-12 panel-group resultatOperationPanel">
-						<div class="panel panel-default">
+						<!-- <div class="panel panel-default">
 							<div class="panel-body">
 								<div class="resultatOperation">
-									<!-- <div class="stat"> -->
-									<!-- <div class="stat__data col-md-8"> -->
+
 									<span class="header_label"><label for="ResultatOperation">Résultat
 											pour l'opération</label></span>
-									<!--  <span class="header_label"><label for="ResultatOperationCL">CL</label></span>
-                                        <p class="header_output">10 kWhc 600 €</p>
-                                        <span class="header_label"><label for="ResultatOperationPR">PR</label></span>
-                                        <p class="header_output">10 kWhc 600 €</p> -->
+
 
 									<div class="header-group">
 										<span class="header_label"><label for="ResultatOperationCL">Classique</label></span>
@@ -167,11 +163,95 @@
 										<span class="header_output">10 kWhc</span> <span
 											class="header_output">600 €</span>
 									</div>
-									<!-- </div> -->
-									<!-- </div> -->
+
+								</div>
+							</div>
+						</div> -->
+
+						<!-- <fieldset class="fieldset-margin-bottom" id="resultatOpe">
+							<legend>Résultat</legend>
+							<div class="fieldset-container">
+								<div class="resultatOperation">
+									<div class="header-group">
+										<span class="header_label"><label for="ResultatOperationCL">Classique</label></span>
+										<span class="header_output">10 kWhc</span> <span
+											class="header_output">600 €</span>
+									</div>
+
+									<div class="header-group">
+										<span class="header_label"><label for="ResultatOperationPR">Précarité</label></span>
+										<span class="header_output">10 kWhc</span> <span
+											class="header_output">600 €</span>
+									</div>
+
+								</div>
+							</div>
+						</fieldset> -->
+
+			<fieldset class="fieldset-margin-bottom choisirIndicePanel">
+				<legend>Résultat</legend>
+
+				<div class="fieldset-container">
+					<div class="header-group col-md-12" id="sectionRepartitionIndice">
+
+						<div class="repartition-section">
+							<span class="repartition-section-header">Calcul CUMAC</span>
+
+							<div class="col-sm-6 col-md-6 input_holder">
+								<div class="header-group">
+									<span class="header_label"><label for="resultatCumulePanel">Classique</label></span>
+									<span class="header_output" id="resultatCumuleCL_cumac">10 kWhc</span>
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-md-6 input_holder">
+								<div class="header-group">
+									<span class="header_label"><label for="ResultatCumulerPR">Précarité</label></span>
+									<span class="header_output" id="resultatCumulePR_cumac">10 kWhc</span>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="repartition-section col-md-6">
+							<span class="repartition-section-header">Calcul AIDE Beneficiare</span>
+							<div class="col-sm-6 col-md-12 input_holder">
+								<div class="header-group">
+									<span class="header_label"><label for="ResultatBenHP_aide">Hors précarité</label></span>
+									<span class="header_output" id="resultatBenHP_aide">10 kWhc</span>
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-md-12 input_holder">
+								<div class="header-group">
+									<span class="header_label"><label for="ResultatBenP_aide">Précarité</label></span>
+									<span class="header_output" id="resultatBenP_aide">10 kWhc</span>
 								</div>
 							</div>
 						</div>
+
+						<div class="repartition-section col-md-6">
+							<span class="repartition-section-header">Calcul AIDE Pro</span>
+
+							<div class="col-sm-6 col-md-12 input_holder">
+								<div class="header-group">
+									<span class="header_label"><label for="ResultatProHP_aide"> Hors précarité</label></span>
+									<span class="header_output" id="resultatProHP_aide">10 kWhc</span>
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-md-12 input_holder">
+								<div class="header-group">
+									<span class="header_label"><label for="ResultatProP_aide"> Précarité</label></span>
+									<span class="header_output" id="resultatProP_aide">10 kWhc</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</fieldset>
+
 					</div>
 
 					<!-- to cross check -->
