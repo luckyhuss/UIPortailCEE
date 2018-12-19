@@ -188,11 +188,11 @@
 							</div>
 						</fieldset> -->
 
-			<fieldset class="fieldset-margin-bottom choisirIndicePanel">
+			<fieldset class="fieldset-margin-bottom choisirResultatOpePanel">
 				<legend>Résultat</legend>
 
 				<div class="fieldset-container">
-					<div class="header-group col-md-12" id="sectionRepartitionIndice">
+					<div class="header-group col-md-12" id="sectionResultatParOperation">
 
 						<div class="repartition-section">
 							<span class="repartition-section-header">Calcul CUMAC</span>
