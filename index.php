@@ -30,7 +30,7 @@
 
 <?php 
 
-$cssLoaded = "ADMIN";
+$cssLoaded = "GFX";
 
 
 $persona = ($cssLoaded == "AS24") ? "-AS24": "";

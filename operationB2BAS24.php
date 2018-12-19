@@ -568,7 +568,10 @@ function isAnyBarSelected() {
 
 
 $('#calculateCumac').click(function() {
+	//display results per operation
 	displayResultatOperation();
+
+	//display only if num OP > 1
 	displayResultatCumule();
 
 	

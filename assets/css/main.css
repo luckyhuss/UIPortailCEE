@@ -2625,7 +2625,7 @@ input[name='optradio'] {
 }
 
 /* .choisirSecteurPanel legend,  */
-.choisirOperationPanel legend, .critereAsaisirPanel legend {
+.choisirOperationPanel legend, .critereAsaisirPanel legend, .choisirIndicePanel legend, .choisirResultatOpePanel legend {
 	width:130px;
 }
 
@@ -2892,4 +2892,6 @@ input[name='optradio'] {
 }
 
 
-
+.sous-menu.active-link, #simulation .sous-menu:hover {
+    background: #4b96cd!important;
+}
