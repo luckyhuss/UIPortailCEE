@@ -2840,7 +2840,7 @@ input[name='optradio'] {
 	width:145px;
 }
 
-#calculReelFieldset legend {
+#calculReelFieldset legend, #sectionLogements legend {
 	width:145px;
 }
 
@@ -2901,7 +2901,19 @@ input[name='optradio'] {
 	padding-left:0px;
 }
 
-.repartition-section .input_holder {
+.repartition-section .input_holder,  #sectionPlusLogements .input_holder {
 	padding-left:10px;
 }
 
+#sectionLogements .input_holder {
+	padding-left:10px;
+	height: 40px;
+}
+
+#sectionPlusLogements legend {
+	width: 180px;
+}
+
+#sectionLogements .form_input {
+	padding-right:5px;
+}
