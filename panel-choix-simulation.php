@@ -155,9 +155,15 @@
 
 					<div class="header-group col-md-12" id="sectionCodePostalTravaux">
 						
-						<span class="form_label"><label for="CodePostalTravaux">Code postal des travaux</label></span> 
+						<span class="form_label"><label for="DepartmentdesTravaux">Département des travaux</label></span> 
 						<span class="header_output">
-							<input type="text" class="form-control" id="CodePostalTravaux" placeholder=""></span>
+							<select id="selectDeptTravaux" name="selectDeptTravaux" class="form-control">
+								<option value="0"></option>
+								<option value="1">#1</option>
+								<option value="2">#2</option>
+								<option value="3">#3</option>
+							</select>
+						</span>
 					</div>
 
 					<div class="header-group col-md-12 " id="sectionBenef">
@@ -369,7 +375,7 @@
 	  		$('#informationsgeneralesPanel').removeClass('displayed');
 			$('#sectionBenef').removeClass('displayed');
 			$('#selectBenef' ).val('');
-			$('#CodePostalTravaux' ).val('');
+			$('#selectDeptTravaux' ).val('');
 	    break;
 	  case '4':
 	 		$('#informationsgeneralesPanel').removeClass('displayed');
@@ -378,7 +384,7 @@
 			$('#sectionPlusLogements').addClass('displayed');
 			$('#sectionCalculReel' ).addClass('displayed');
 			$('#sectionStatistiques' ).addClass('displayed');
-			$('#CodePostalTravaux' ).val('');
+			$('#selectDeptTravaux' ).val('');
 	    break;
 	  default:
 	    //no code
