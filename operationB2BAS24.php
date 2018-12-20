@@ -188,11 +188,11 @@
 							</div>
 						</fieldset> -->
 
-			<fieldset class="fieldset-margin-bottom choisirResultatOpePanel">
+			<fieldset class="fieldset-margin-bottom choisirResultatOpePanel displayed" id="resultatOperationPanel_OP0">
 				<legend>Résultat</legend>
 
 				<div class="fieldset-container">
-					<div class="header-group col-md-12" id="sectionResultatParOperation">
+					<div class="header-group col-md-12" id="sectionResultatParOperation_OP0">
 
 						<div class="repartition-section">
 							<span class="repartition-section-header">Calcul CUMAC</span>
@@ -200,14 +200,14 @@
 							<div class="col-sm-6 col-md-6 input_holder">
 								<div class="header-group">
 									<span class="header_label"><label for="resultatCumulePanel">Classique</label></span>
-									<span class="header_output" id="resultatCumuleCL_cumac">10 kWhc</span>
+									<span class="header_output" id="resultatCumuleCL_cumac_OP0">10 kWhc</span>
 								</div>
 							</div>
 
 							<div class="col-sm-6 col-md-6 input_holder">
 								<div class="header-group">
 									<span class="header_label"><label for="ResultatCumulerPR">Précarité</label></span>
-									<span class="header_output" id="resultatCumulePR_cumac">10 kWhc</span>
+									<span class="header_output" id="resultatCumulePR_cumac_OP0">10 kWhc</span>
 								</div>
 							</div>
 
@@ -218,14 +218,14 @@
 							<div class="col-sm-6 col-md-12 input_holder">
 								<div class="header-group">
 									<span class="header_label"><label for="ResultatBenHP_aide">Hors précarité</label></span>
-									<span class="header_output" id="resultatBenHP_aide">10 kWhc</span>
+									<span class="header_output" id="resultatBenHPAide_OP0">10 kWhc</span>
 								</div>
 							</div>
 
 							<div class="col-sm-6 col-md-12 input_holder">
 								<div class="header-group">
 									<span class="header_label"><label for="ResultatBenP_aide">Précarité</label></span>
-									<span class="header_output" id="resultatBenP_aide">10 kWhc</span>
+									<span class="header_output" id="resultatBenPAide_OP0">10 kWhc</span>
 								</div>
 							</div>
 						</div>
@@ -236,14 +236,14 @@
 							<div class="col-sm-6 col-md-12 input_holder">
 								<div class="header-group">
 									<span class="header_label"><label for="ResultatProHP_aide"> Hors précarité</label></span>
-									<span class="header_output" id="resultatProHP_aide">10 kWhc</span>
+									<span class="header_output" id="resultatProHPAide_OP0">10 kWhc</span>
 								</div>
 							</div>
 
 							<div class="col-sm-6 col-md-12 input_holder">
 								<div class="header-group">
 									<span class="header_label"><label for="ResultatProP_aide"> Précarité</label></span>
-									<span class="header_output" id="resultatProP_aide">10 kWhc</span>
+									<span class="header_output" id="resultatProPAide_OP0">10 kWhc</span>
 								</div>
 							</div>
 						</div>
@@ -357,7 +357,8 @@
     	
     	$('#numId_OP' + (cloneIndex - 1 )).html(cloneIndex );
 
-    	
+    	// hide all results if another panel is added
+		hideResultatOperation();
 
     }
     function remove() {
@@ -390,6 +391,9 @@
 
 		//hide resultatCumulePanel on each removal
 		$('#resultatCumulePanel').addClass('displayed');
+
+		// hide all results if one panel is removed
+		hideResultatOperation();
 	}
 
     $(document).on("click", ".clone", clone);
@@ -579,7 +583,21 @@ $('#calculateCumac').click(function() {
 });
 
 function displayResultatOperation() {
+
+	$('fieldset[id^="resultatOperationPanel"]').each(function () {
+		var fieldsetId = this.id;
+		console.log('panel resultat ', fieldsetId);
+
+		$('#' + fieldsetId).removeClass('displayed');
+	});
 	//TO DO
+}
+
+function hideResultatOperation() {
+	$('fieldset[id^="resultatOperationPanel"]').each(function () {
+		var fieldsetId = this.id;
+		$('#' + fieldsetId).addClass('displayed');
+	});
 }
 
 function displayResultatCumule() {
