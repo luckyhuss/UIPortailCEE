@@ -354,6 +354,18 @@
 	}
 }
 
+@media (max-width: 452px){
+	#repartitionRemFieldset .header_output{
+		width: 100%;
+	}
+}
+
+@media (max-width: 992px){
+	#mentionFigurerPanel{
+		margin-top: 23px
+	}
+}
+
 /* RESPONSIVE */
 
 /* END RESPONSIVE */

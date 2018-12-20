@@ -567,7 +567,8 @@ label[for=dateEngagement], label[for=dateRAI]
 label[for=dateEstimeeCommande], label[for=simEnregistree], 
 label[for=RemunerationRefEstimée], label[for=ResultatOperation],
 label[for=ResultatCumule], label[for=simEnregistree], label[for=mentionDevis], label[for=docPayes],
-label[for=mentionFacture]
+label[for=mentionFacture], #repartitionMSDFieldset label[for=repartitionMSD], #repartitionRemFieldset label[for=repartitionRem],
+label[for=PaiementAuBen]
 {
     width:100%!important;
 }
@@ -2235,7 +2236,7 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 
 .ajouter_operation{
     margin-bottom: 20px;
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 .form-input-textarea {
@@ -2916,4 +2917,22 @@ input[name='optradio'] {
 
 #sectionLogements .form_input {
 	padding-right:5px;
+}
+.choisirCadreContributionPanel .input_holder {
+	padding-left: 2px;
+}
+
+.choisirCadreContributionPanel .header_output{
+	width: 100%;
+}
+
+
+#btn_mentionSurDevis {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: -14px;
+}
+
+#mentionFigurerPanel {
+	margin-top: 210px;
 }
