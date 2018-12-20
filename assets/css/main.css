@@ -2895,3 +2895,13 @@ input[name='optradio'] {
 .sous-menu.active-link, #simulation .sous-menu:hover {
     background: #4b96cd!important;
 }
+
+
+.repartition-section .header-group {
+	padding-left:0px;
+}
+
+.repartition-section .input_holder {
+	padding-left:10px;
+}
+
