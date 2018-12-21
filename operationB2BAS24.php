@@ -188,69 +188,69 @@
 							</div>
 						</fieldset> -->
 
-			<fieldset class="fieldset-margin-bottom choisirResultatOpePanel displayed" id="resultatOperationPanel_OP0">
-				<legend>Résultat</legend>
+						<fieldset class="fieldset-margin-bottom choisirResultatOpePanel displayed" id="resultatOperationPanel_OP0">
+							<legend>Résultat</legend>
 
-				<div class="fieldset-container">
-					<div class="header-group col-md-12" id="sectionResultatParOperation_OP0">
+							<div class="fieldset-container">
+								<div class="header-group col-md-12" id="sectionResultatParOperation_OP0">
 
-						<div class="repartition-section">
-							<span class="repartition-section-header">Calcul CUMAC</span>
+									<div class="repartition-section">
+										<span class="repartition-section-header">Calcul CUMAC</span>
 
-							<div class="col-sm-6 col-md-6 input_holder">
-								<div class="header-group">
-									<span class="header_label"><label for="resultatCumulePanel">Classique</label></span>
-									<span class="header_output" id="resultatCumuleCL_cumac_OP0">10 kWhc</span>
+										<div class="col-sm-6 col-md-6 input_holder">
+											<div class="header-group">
+												<span class="header_label"><label for="ResultatOperationCL">Classique</label></span>
+												<span class="header_output" id="resultatOperationCL_cumac_OP0">10 kWhc</span>
+											</div>
+										</div>
+
+										<div class="col-sm-6 col-md-6 input_holder">
+											<div class="header-group">
+												<span class="header_label"><label for="ResultatOperationPR">Précarité</label></span>
+												<span class="header_output" id="resultatOperationP_cumac_OP0">10 kWhc</span>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="repartition-section col-md-6">
+										<span class="repartition-section-header">Calcul AIDE Beneficiare</span>
+										<div class="col-sm-6 col-md-12 input_holder">
+											<div class="header-group">
+												<span class="header_label"><label for="ResultatBenHP_aide">Hors précarité</label></span>
+												<span class="header_output" id="resultatBenHPAide_OP0">10 kWhc</span>
+											</div>
+										</div>
+
+										<div class="col-sm-6 col-md-12 input_holder">
+											<div class="header-group">
+												<span class="header_label"><label for="ResultatBenP_aide">Précarité</label></span>
+												<span class="header_output" id="resultatBenPAide_OP0">10 kWhc</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="repartition-section col-md-6">
+										<span class="repartition-section-header">Calcul AIDE Pro</span>
+
+										<div class="col-sm-6 col-md-12 input_holder">
+											<div class="header-group">
+												<span class="header_label"><label for="ResultatProHP_aide"> Hors précarité</label></span>
+												<span class="header_output" id="resultatProHPAide_OP0">10 kWhc</span>
+											</div>
+										</div>
+
+										<div class="col-sm-6 col-md-12 input_holder">
+											<div class="header-group">
+												<span class="header_label"><label for="ResultatProP_aide"> Précarité</label></span>
+												<span class="header_output" id="resultatProPAide_OP0">10 kWhc</span>
+											</div>
+										</div>
+									</div>
+
 								</div>
 							</div>
-
-							<div class="col-sm-6 col-md-6 input_holder">
-								<div class="header-group">
-									<span class="header_label"><label for="ResultatCumulerPR">Précarité</label></span>
-									<span class="header_output" id="resultatCumulePR_cumac_OP0">10 kWhc</span>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="repartition-section col-md-6">
-							<span class="repartition-section-header">Calcul AIDE Beneficiare</span>
-							<div class="col-sm-6 col-md-12 input_holder">
-								<div class="header-group">
-									<span class="header_label"><label for="ResultatBenHP_aide">Hors précarité</label></span>
-									<span class="header_output" id="resultatBenHPAide_OP0">10 kWhc</span>
-								</div>
-							</div>
-
-							<div class="col-sm-6 col-md-12 input_holder">
-								<div class="header-group">
-									<span class="header_label"><label for="ResultatBenP_aide">Précarité</label></span>
-									<span class="header_output" id="resultatBenPAide_OP0">10 kWhc</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="repartition-section col-md-6">
-							<span class="repartition-section-header">Calcul AIDE Pro</span>
-
-							<div class="col-sm-6 col-md-12 input_holder">
-								<div class="header-group">
-									<span class="header_label"><label for="ResultatProHP_aide"> Hors précarité</label></span>
-									<span class="header_output" id="resultatProHPAide_OP0">10 kWhc</span>
-								</div>
-							</div>
-
-							<div class="col-sm-6 col-md-12 input_holder">
-								<div class="header-group">
-									<span class="header_label"><label for="ResultatProP_aide"> Précarité</label></span>
-									<span class="header_output" id="resultatProPAide_OP0">10 kWhc</span>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</fieldset>
+						</fieldset>
 
 					</div>
 

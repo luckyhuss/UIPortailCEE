@@ -6,24 +6,68 @@
 			<fieldset class="resultatCumulerPanel">
 				<legend>Resultat Cumulé</legend>
 				<div class="fieldset-container">
-					<div class="sectionResultatCumule col-md-8">
+
+					<div class="sectionResultatCumule col-md-12">
+						
 						<div class="header-group">
 							<span class="header_label"><label for="ResultatCumulerCL">Nombre
 									d'opération</label></span> <span class="header_output"
 								id="numOperation">10</span>
 						</div>
-						<div class="header-group">
-							<span class="header_label"><label for="ResultatCumulerCL">Classique</label></span>
-							<span class="header_output">10 kWhc</span> <span
-								class="header_output">600 €</span>
+					</div>
+					<div class="repartition-section">
+						<span class="repartition-section-header">Calcul CUMAC</span>
+						<div class="col-sm-6 col-md-6 input_holder">
+							<div class="header-group">
+								<span class="header_label"><label for="ResultatCumulerCL">Classique</label></span>
+								<span class="header_output" id="resultatCumuleCL_cumac">10 kWhc</span> 
+							</div>
 						</div>
 
-						<div class="header-group">
-							<span class="header_label"><label for="ResultatCumulerPR">Précarité</label></span>
-							<span class="header_output">10 kWhc</span> <span
-								class="header_output">600 €</span>
+						<div class="col-sm-6 col-md-6 input_holder">
+							<div class="header-group">
+								<span class="header_label"><label for="ResultatCumulerPR">Précarité</label></span>
+								<span class="header_output" id="resultatCumulePR_cumac">10 kWhc</span>
+							</div>
 						</div>
 					</div>
+
+
+					<div class="repartition-section col-md-6">
+						<span class="repartition-section-header">Calcul AIDE Beneficiare</span>
+						<div class="col-sm-6 col-md-12 input_holder">
+							<div class="header-group">
+								<span class="header_label"><label for="ResultatCumuleBenHP_aide">Hors précarité</label></span>
+								<span class="header_output" id="resultatCumuleBenHPAide_OP0">10 kWhc</span>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-12 input_holder">
+							<div class="header-group">
+								<span class="header_label"><label for="ResultatCumuleBenP_aide">Précarité</label></span>
+								<span class="header_output" id="resultatCumuleBenPAide_OP0">10 kWhc</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="repartition-section col-md-6">
+						<span class="repartition-section-header">Calcul AIDE Pro</span>
+
+						<div class="col-sm-6 col-md-12 input_holder">
+							<div class="header-group">
+								<span class="header_label"><label for="ResultatCumuleProHP_aide"> Hors précarité</label></span>
+								<span class="header_output" id="resultatCumuleProHPAide_OP0">10 kWhc</span>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-12 input_holder">
+							<div class="header-group">
+								<span class="header_label"><label for="ResultatCumuleProP_aide"> Précarité</label></span>
+								<span class="header_output" id="resultatCumuleProPAide_OP0">10 kWhc</span>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</fieldset>
 		</div>
@@ -80,6 +124,14 @@
 							<span class="header_label"><label for="RemunerationBen">Bénéficiaire</label></span> <span
 								class="header_output"><input type="text"
 								class="form-control" id="remunerationBen" placeholder=""></span>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-3 input_holder">
+						<div class="header-group">
+							<span class="header_label"><label for="RemunerationAA">Apporteur affaire</label></span> <span
+								class="header_output"><input type="text"
+								class="form-control" id="remunerationAA" placeholder=""></span>
 						</div>
 					</div>
 					
@@ -203,11 +255,9 @@
 </div>
 
 <script>
-	$(document).ready(function() {
 
 $('#btn_mentionSurDevis').click(function () {
 	$('#mentionFigurerPanel').removeClass('displayed');
 });
 
-});
 </script>
