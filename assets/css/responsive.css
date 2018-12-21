@@ -366,6 +366,12 @@
 	}
 }
 
+@media (max-width: 767px){
+	#repartitionRemFieldset .header_output{
+		width: 100%;
+	}
+}
+
 /* RESPONSIVE */
 
 /* END RESPONSIVE */

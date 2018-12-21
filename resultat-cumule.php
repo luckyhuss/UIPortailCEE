@@ -35,7 +35,7 @@
 		<a href="javascript:void(0)"  id="msd_cc"  class="btn btn-primary submit_button" role="button">Recuperer la mention a faire figurer et le cadre contribution</a>
 	</div>
 
-<div class="panel-group mentionFigurerPanel" id="mentionFigurerPanel">
+<div class="panel-group mentionFigurerPanel displayed" id="mentionFigurerPanel">
 	<div class="panel panel-default">
 
 		<div class="panel-body">
@@ -201,3 +201,13 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	$(document).ready(function() {
+
+$('#btn_mentionSurDevis').click(function () {
+	$('#mentionFigurerPanel').removeClass('displayed');
+});
+
+});
+</script>
