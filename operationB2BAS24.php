@@ -143,7 +143,7 @@
 
 					</div>
 
-					<div class="col-md-12 panel-group resultatOperationPanel">
+					<div class="col-md-12 resultatOperationPanel">
 						<!-- <div class="panel panel-default">
 							<div class="panel-body">
 								<div class="resultatOperation">
@@ -256,6 +256,29 @@
 
 					<!-- to cross check -->
 
+					<div class="criteresEligibilitePanel">
+
+						<fieldset class="fieldset-margin-bottom choisirCriteresEligibilitePanel displayed" id="criteresEligibilitePanel_OP0">
+							<legend>Critères d'éligibilité</legend>
+
+							<div class="fieldset-container" id="sectionCriEliParOperation_OP0">
+
+								<div class="input_holder">
+									<div class="header-group">
+										<span class="header_output" id="Critere_eligibilite_OP0">Critères d'éligibilité 1</span>
+									</div>
+								</div>
+
+								<div class="input_holder">
+									<div class="header-group">
+									<span class="header_output" id="Critere_eligibilite_OP0">Critères d'éligibilité 2</span>
+									</div>
+								</div>
+
+							</div>
+						</fieldset>
+
+					</div>
 
 				</div>
 			</div>
@@ -357,8 +380,8 @@
     	
     	$('#numId_OP' + (cloneIndex - 1 )).html(cloneIndex );
 
-    	// hide all results if another panel is added
-		hideResultatOperation();
+    	// hide results for added panel
+		hideResultatOperation(cloneIndex-1);
 
     }
     function remove() {
@@ -385,7 +408,7 @@
 		}
 
 		//get last id after removal
-		console.log('obj value: ' , obj , ' Reset ID @ ' + getLastOperationId(obj) + ' Last child ' + obj + " cloneIndex: ", cloneIndex);
+		// console.log('obj value: ' , obj , ' Reset ID @ ' + getLastOperationId(obj) + ' Last child ' + obj + " cloneIndex: ", cloneIndex);
 
 		cloneIndex = parseInt(getLastOperationId(obj));
 
@@ -393,7 +416,7 @@
 		$('#resultatCumulePanel').addClass('displayed');
 
 		// hide all results if one panel is removed
-		hideResultatOperation();
+		// hideResultatOperation();
 	}
 
     $(document).on("click", ".clone", clone);
@@ -410,7 +433,7 @@
     		var str = this.id;
     		var idSelected = str.split("_")[1];
 
-			console.log('id Selected : ' , idSelected, " valueChecked: ", valueChecked);
+			// console.log('id Selected : ' , idSelected, " valueChecked: ", valueChecked);
 
 			$('#sectionCritere_' + idSelected).addClass('displayed');
 
@@ -586,25 +609,45 @@ function displayResultatOperation() {
 
 	$('fieldset[id^="resultatOperationPanel"]').each(function () {
 		var fieldsetId = this.id;
-		console.log('panel resultat ', fieldsetId);
+		// console.log('panel resultat ', fieldsetId);
 
 		$('#' + fieldsetId).removeClass('displayed');
 	});
-	//TO DO
+
+	$('fieldset[id^="criteresEligibilitePanel"]').each(function () {
+		var fieldsetId = this.id;
+		// console.log('panel resultat ', fieldsetId);
+
+		$('#' + fieldsetId).removeClass('displayed');
+	});
+
 }
 
-function hideResultatOperation() {
-	$('fieldset[id^="resultatOperationPanel"]').each(function () {
-		var fieldsetId = this.id;
-		$('#' + fieldsetId).addClass('displayed');
-	});
+function hideResultatOperation(fieldsetId) {
+	// $('fieldset[id^="resultatOperationPanel"]').each(function () {
+	// 	var fieldsetId = this.id;
+	// 	$('#' + fieldsetId).addClass('displayed');
+	// });
+
+	// $('fieldset[id^="criteresEligibilitePanel"]').each(function () {
+	// 	var fieldsetId = this.id;
+	// 	console.log('panel resultat ', fieldsetId);
+
+	// 	$('#' + fieldsetId).addClass('displayed');
+	// });
+	// console.log('#resultatOperationPanel_OP' + fieldsetId);
+	$('#resultatOperationPanel_OP' + fieldsetId).addClass('displayed');
+	$('#criteresEligibilitePanel_OP' + fieldsetId).addClass('displayed');
+	$('#resultatCumulePanel').addClass('displayed');
 }
+
+
 
 function displayResultatCumule() {
 	// get number of operations
 	var totalNumOperation = numOperation();
 
-	console.log('numOP: ', totalNumOperation);
+	// console.log('numOP: ', totalNumOperation);
 	$('#resultatCumulePanel').addClass('displayed');
 	if(parseInt(totalNumOperation) > 1) {
 		//display panel resultat cumuler
