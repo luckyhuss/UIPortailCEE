@@ -2937,7 +2937,7 @@ input[name='optradio'] {
 }
 
 #mentionFigurerPanel {
-	margin-top: 210px;
+	margin-top: 70px;
 }
 
 #btn_mentionSurDevis .btn{
@@ -2946,4 +2946,9 @@ input[name='optradio'] {
 
 .choisirMentionSurDevisPanel .fieldset-container span{
 	padding-left: 5px;
+}
+
+.mentionSurDevisSection {
+	padding-left: 0px;
+	padding-right: 0px;
 }
