@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <span class="brouillon-error-message text-danger" id="sectionErrorMsg"> Votre brouillon n'a pas pu être sauvegarder.</span>
+            <span class="brouillon-error-message text-danger displayed" id="sectionErrorMsg"> Votre brouillon n'a pas pu être sauvegarder.</span>
         </div>
 
         <div class="modal-footer">
@@ -103,11 +103,28 @@
 <script>
 
 $( "#brouillonModal .modal-footer #modal-btn-ok" ).click(function() {
+    // success
+    saveBrouillonSuccess();
+    hideButtonOk();
+
+    // fail
+    // saveBrouillonFail();
+});
+
+function saveBrouillonSuccess(){
     $("#brouillonModal").find('.modal-title').text("Dossier sauvegardé");
     $("#refDossier").css("display", "block");
+}
+
+function saveBrouillonFail(){
+    $("#sectionErrorMsg").css("display", "block");
+    $("#brouillonModal .modal-footer").css("display", "none");
+}
+
+function hideButtonOk(){
     $("#brouillonModal .modal-body #brouillonName").css("display", "none");
     $("#brouillonModal .modal-footer").css("display", "none");
-});
+}
 
 $("#brouillonModal").on("hidden.bs.modal", function(){
     $("#brouillonModal").find('.modal-title').text("Nommer");
