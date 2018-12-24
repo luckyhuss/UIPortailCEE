@@ -2828,7 +2828,8 @@ input[name='optradio'] {
     margin-top: 10px;
 }
 
-#repartitionFieldset legend, #RAIFieldset legend, #paiementFieldset legend , #calculReelFieldset legend{
+#repartitionFieldset legend, #RAIFieldset legend, #paiementFieldset legend , #calculReelFieldset legend,
+#resultatRepartitionFieldset legend{
 	background:#fff;
 	color: black;
 } 
@@ -2902,7 +2903,7 @@ input[name='optradio'] {
 	padding-left:0px;
 }
 
-.repartition-section .input_holder,  #sectionPlusLogements .input_holder {
+.repartition-section .input_holder,  #sectionPlusLogements .input_holder, #sectionResultatRepartition .input_holder {
 	padding-left:10px;
 }
 

@@ -262,6 +262,36 @@
 							</div>
 						</fieldset>
 					</div>
+
+
+					<div class="header-group col-md-12" id="sectionResultatRepartition">
+						<fieldset class="fieldset-margin-bottom" id="resultatRepartitionFieldset">
+							<legend>Résultat répartition</legend>
+
+							<div class="col-sm-6 col-md-4 input_holder">
+								<div class="header-group">
+									<span class="header_label"><label for="ResultatRepCL">Classique</label></span>
+									<span class="header_output" id="resultatRepCL">10 %</span> 
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-md-4 input_holder">
+								<div class="header-group">
+									<span class="header_label"><label for="ResultatRepPR">Précarité</label></span>
+									<span class="header_output" id="resultatRepPR">10 %</span>
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-md-4 input_holder">
+								<div class="header-group">
+									<span class="header_label"><label for="ResultatRepGPR">Grande précarité</label></span>
+									<span class="header_output" id="resultatRepGPR">10 %</span>
+								</div>
+							</div>
+						
+						</fieldset>
+					</div>
+
 				</div>
 
 			</fieldset>
