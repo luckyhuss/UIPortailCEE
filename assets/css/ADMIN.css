@@ -242,47 +242,7 @@ input[type='checkbox']:checked:after {
 }
 
 
-.sous-menu {
-	height: 40px!important;
-    padding-top: 10px!important;
-    padding-left: 25px!important;
-    border-top:1px solid #ccc!important;
-}    
 
-.sous-menu.active-link, #admin .sous-menu:hover {
-	background: #4b96cd!important;
-}
-
-.sous-menu .menu_title {
-	font-size:13px!important;
-}
-
-
-@media ( max-width : 1024px) {
-	.sous-menu .panel-title {
-		margin-top: -5px!important;
-	}
-	
-	.sous-menu .glyphicon {
-		top: -10px!important;
-	}
-}
-
-@media ( max-width : 640px) {
-	.sous-menu .panel-title {
-		margin-top: 10px!important;
-    	margin-left: 10px!important;
-	}
-	
-	.sous-menu .glyphicon {
-		top: -10px!important;
-	}
-	
-	.sous-menu .menu_title {
-		margin-top:-25px!important;
-		padding-left:10px;
-	}
-}
 
 .caret {
 	margin-left:20px;
