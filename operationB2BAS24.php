@@ -376,7 +376,9 @@
     	//$('#selectSecteur_OP' + (cloneIndex - 1 )).removeClass('input-validation-error');
 
     	//$('#calculReel').prop('checked',false);
-		$('#sectionCritere_OP' + (cloneIndex - 1 )).addClass('displayed');
+		// $('#sectionCritere_OP' + (cloneIndex - 1 )).addClass('displayed');
+
+		 $('#clonedOP' + cloneIndex).find('.choisirCritereContainer').addClass('displayed');
     	
     	$('#numId_OP' + (cloneIndex - 1 )).html(cloneIndex );
 
