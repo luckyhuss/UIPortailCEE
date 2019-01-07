@@ -3005,3 +3005,7 @@ input[name='optradio'] {
 		padding-left:10px;
 	}
 }
+
+.criteresEligibilitePanel fieldset span.header_output {
+	max-height: 100%;
+}
