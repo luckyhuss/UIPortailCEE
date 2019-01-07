@@ -2458,7 +2458,7 @@ fieldset {
 	margin-bottom:20px!important;
 }
 
-fieldset .header-group, #collapseInfoActivite .header-group {
+fieldset .header-group, #collapseInfoActivite .header-group, #formSearchBrouillon .header-group {
 	padding-left:0px;
 	padding-right:0px;
 	margin-bottom:10px;
@@ -2610,7 +2610,8 @@ input[name='optradio'] {
 	display:inline-block;
 }
 
-.choisirSecteurPanel .form_label>label, .choisirOperationPanel .form_label>label, .critereAsaisirPanel .form_label>label {
+.choisirSecteurPanel .form_label>label, .choisirOperationPanel .form_label>label, .critereAsaisirPanel .form_label>label, 
+#formSearchBrouillon .form_label>label  {
 	height:35px!important;
 }
 
