@@ -2200,10 +2200,11 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	text-decoration: underline;
 }
 
+ /*
 #collapseHistoSim .input_holder {
-	width: 100%;
-	position: relative;
-	margin-left: -15px;
+	width: 100%; 
+	position: relative; 
+	margin-left: -15px; 
   }
   
   #collapseHistoSim .searchTerm {
@@ -2214,14 +2215,15 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	border-radius: 10px 0px 0px 10px !important;
     outline: none;
     margin-bottom: 15px;
-  }
+  } 
 
-  #collapseHistoSim .submit_button[name="btn-search"] {
+ #collapseHistoSim .submit_button[name="btn-search"] {
 	border-radius: 0px 10px 10px 0px;
 	margin-left: -15px;
 	font-size: 14px;
   }
   
+
 #collapseHistoSim .searchButton {
     position: absolute;
     right: 2px;
@@ -2232,7 +2234,7 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
-  }
+  } */
 
 .ajouter_operation{
     margin-bottom: 20px;
@@ -2951,4 +2953,8 @@ input[name='optradio'] {
 .mentionSurDevisSection {
 	padding-left: 0px;
 	padding-right: 0px;
+}
+
+#formSearchBrouillon .form-control[id=nomDuBrouillon]{
+	width: 55%;
 }

@@ -318,9 +318,7 @@
 	}
 	
 	.mentionSurDevisSection {
-		padding-left: 0px;
 		margin-top: -20px;
-		padding-right: 0px;
 	}
 }
 
@@ -370,10 +368,19 @@
 	#mentionFigurerPanel{
 		margin-top: 23px
 	}
+
+	#formSearchBrouillon .submit_button_holder {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
 }
 
 @media (max-width: 767px){
 	#repartitionRemFieldset .header_output{
+		width: 100%;
+	}
+
+	#formSearchBrouillon .form-control[id=nomDuBrouillon] {
 		width: 100%;
 	}
 }

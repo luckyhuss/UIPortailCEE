@@ -9,10 +9,38 @@
 
 <div id="collapseHistoSim" class="panel-collapse collapse in">
         <div class="panel-body">
-            <div class="input_holder">
+            <!-- <div class="input_holder">
                 <span class="col-xs-10 col-sm-8 col-md-6  form_input"><input type="text" class="form-control searchTerm" id="searchSim" placeholder="Rechercher par le nom ou la date du brouillon"></span>
                 <span class="submit_button_holder"><button type="submit" class="btn btn-primary submit_button" name="btn-search"><i class="glyphicon glyphicon-search"></i></button></span>
+            </div> -->
+
+
+        <form id="formSearchBrouillon" class="form_search_bar form-inline" action="#" method="POST">
+            <div class="row">
+                <div class="col-md-6 input_holder">
+                    <div class="header-group">
+                    <span class="form_label"><label for="NomDuBrouillon">Nom du brouillon</label></span>
+                    <span class="header_output"><input type="text" class="form-control" id="nomDuBrouillon" placeholder=""></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 input_holder">
+                    <div class="header-group">
+                    <span class="form_label"><label for="DateDuBrouillon">Date du brouillon</label></span>
+                    <!-- <span class="form_input"><input type="text" class="form-control" id="dateDuBrouillon" placeholder=""></span> -->
+                    <span class="header_output">
+                        <input class="datepicker form-control" date-format="d/MM/yyyy" placeholder="Choisissez une date" id="dateDuBrouillon">
+                    </span>
+                </div>
+
+                </div>
+
+                <div class="col-md-12 submit_button_holder">
+                    <button type="submit" class="btn btn-primary submit_button">Rechercher</button>
+                </div>
+
             </div>
+        </form>
 
             <span class="header_label"><label for="simEnregistree">Dernières simulations enregistrée </label></span>
                 <div class="row">
