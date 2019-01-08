@@ -320,6 +320,10 @@
 	.mentionSurDevisSection {
 		margin-top: -20px;
 	}
+
+	.row #processusCard .col-md-2:nth-child(6n+1){
+		clear:left;
+	}
 }
 
 @media (max-width: 410px){
@@ -382,6 +386,16 @@
 
 	#formSearchBrouillon .form-control[id=nomDuBrouillon] {
 		width: 100%;
+	}
+
+	.row #processusCard .col-sm-6:nth-child(odd){
+		clear:left;
+	}
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .row #processusCard .col-sm-6:nth-child(odd){
+		clear:left;
 	}
 }
 

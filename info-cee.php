@@ -26,7 +26,9 @@
                                     <div class='icon-header glyphicon glyphicon-fire'></div>
                                     <p class="card-question">Convention</p>
                                     <div class="card-separator"></div>
-                                    <p style="text-align:center;">Étape 1 à fournir par la MOA</p>
+                                    <p style="text-align:center;">Dans le cadre du dispositif des CEE, il est indispensable de prouver que Total Marketing France est à l’initiative des travaux. Cette preuve peut prendre trois formes :
+
+- La Mention Sur Devis : le professionnel appose une mention sur son devis indiquant la nature et le montant de la contribution de Total Marketing France</p>
                                 </div>
                             </div>
                             <!-- ./processus_card member -->
@@ -39,9 +41,12 @@
                                     <div class='icon-header glyphicon glyphicon-folder-open'></div>
                                     <p class="card-question">Dépôt de documents</p>
                                     <div class="card-separator"></div>
-                                    <p style="text-align:center;">Étape 2 à fournir par la MOA</p>
+                                    <p style="text-align:center;">Après contractualisation, les travaux peuvent être engagés.
+
+En général, la date d’engagement des opérations correspond à la date du</p>
                                 </div>
                             </div>
+
                             <!-- ./processus_card member -->
                             <!-- processus_card member -->
                             <div class="col-xs-12 col-sm-6 col-md-2 card-test">
@@ -52,7 +57,9 @@
                                     <div class='icon-header glyphicon glyphicon-file'></div>
                                     <p class="card-question">Évaluation du dossier</p>
                                     <div class="card-separator"></div>
-                                    <p style="text-align:center;">Étape 3 à fournir par la MOA</p>
+                                    <p style="text-align:center;">Pour justifier des opérations auprès des autorités compétentes, l’envoi des Modes de Preuves à notre équipe administrative est impératif.
+
+Ces Modes de Preuve (ex : bon de commande, facture, convention, Attestation sur l’Honneur…)</p>
                                 </div>
                             </div>
                             <!-- ./processus_card member -->
@@ -66,9 +73,12 @@
                                     <div class='icon-header glyphicon glyphicon-check'></div>
                                     <p class="card-question">Approbation du dossier</p>
                                     <div class="card-separator"></div>
-                                    <p style="text-align:center;">Étape 4 à fournir par la MOA</p>
+                                    <p style="text-align:center;">Une fois l’ensemble des Modes de Preuve reçu, l’équipe administrative étudie l’éligibilité du dossier.
+
+En cas de doute sur l’éligibilité des travaux, des éléments de preuve complémentaires peuvent vous être demandés. </p>
                                 </div>
                             </div>
+
                             <!-- ./processus_card member -->
                             <!-- processus_card member -->
                             <div class="col-xs-12 col-sm-6 col-md-2 card-test">
@@ -80,7 +90,7 @@
                                     <div class='icon-header glyphicon glyphicon-wrench'></div>
                                     <p class="card-question">Exécution des travaux</p>
                                     <div class="card-separator"></div>
-                                    <p style="text-align:center;">Étape 5 à fournir par la MOA</p>
+                                    <p style="text-align:center;">Une fois le dossier d’opérations validé par notre  équipe administrative celui-ci est transmis à Total Marketing France pour dépôt sur le Registre National (EMMY) et instruction par le Pôle National des CEE (PNCEE). </p>
                                 </div>
                             </div>
                             <!-- ./processus_card member -->
@@ -94,9 +104,103 @@
                                     <div class='icon-header glyphicon glyphicon-eur'></div>
                                     <p class="card-question">Paiement</p>
                                     <div class="card-separator"></div>
-                                    <p style="text-align:center;">Étape 6 à fournir par la MOA</p>
+                                    <p style="text-align:center;">Le PNCEE instruit le dossier dans les deux mois après réception.
+
+Dès la conformité du dossier établie, celui-ci est validé par le PNCEE.</p>
                                 </div>
                             </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-2 card-test">
+                                <div class="stepwizard-step text-center">
+                                    <a href="javascript:void(0);" type="button" class="btn btn-default btn-circle">7</a>
+                                </div>
+
+                                <div class="card card-green">
+                                    <div class='icon-header glyphicon glyphicon-eur'></div>
+                                    <p class="card-question">Paiement</p>
+                                    <div class="card-separator"></div>
+                                    <p style="text-align:center;">Le paiement est réalisé selon les conditions et délais définis dans votre contrat, soit à validation du dossier par le PNCEE, soit au dépôt. </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-2 card-test">
+                                <div class="stepwizard-step text-center">
+                                    <a href="javascript:void(0);" type="button" class="btn btn-default btn-circle">8</a>
+                                </div>
+
+                                <div class="card card-green">
+                                    <div class='icon-header glyphicon glyphicon-eur'></div>
+                                    <p class="card-question">Paiement</p>
+                                    <div class="card-separator"></div>
+                                    <p style="text-align:center;">Dans le cadre du dispositif des CEE, il est indispensable de prouver que Total Marketing France est à l’initiative des travaux. Cette preuve peut prendre trois formes : - La Mention Sur Devis : le professionnel appose une mention sur son devis indiquant la nature et le montant de la contribution de Total Marketing France</p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-2 card-test">
+                                <div class="stepwizard-step text-center">
+                                    <a href="javascript:void(0);" type="button" class="btn btn-default btn-circle">9</a>
+                                </div>
+
+                                <div class="card card-green">
+                                    <div class='icon-header glyphicon glyphicon-eur'></div>
+                                    <p class="card-question">Paiement</p>
+                                    <div class="card-separator"></div>
+                                    <p style="text-align:center;">Le paiement est réalisé selon les conditions et délais définis dans votre contrat. </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-2 card-test">
+                                <div class="stepwizard-step text-center">
+                                    <a href="javascript:void(0);" type="button" class="btn btn-default btn-circle">10</a>
+                                </div>
+
+                                <div class="card card-green">
+                                    <div class='icon-header glyphicon glyphicon-eur'></div>
+                                    <p class="card-question">Paiement</p>
+                                    <div class="card-separator"></div>
+                                    <p style="text-align:center;">Le paiement est réalisé selon les conditions et délais définis dans votre contrat, soit à validation du dossier par le PNCEE, soit au dépôt. </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-2 card-test">
+                                <div class="stepwizard-step text-center">
+                                    <a href="javascript:void(0);" type="button" class="btn btn-default btn-circle">11</a>
+                                </div>
+
+                                <div class="card card-green">
+                                    <div class='icon-header glyphicon glyphicon-eur'></div>
+                                    <p class="card-question">Paiement</p>
+                                    <div class="card-separator"></div>
+                                    <p style="text-align:center;">Dans le cadre du dispositif des CEE, il est indispensable de prouver que Total Marketing France est à l’initiative des travaux. Cette preuve peut prendre trois formes : - La Mention Sur Devis : le professionnel appose une mention sur son devis indiquant la nature et le montant de la contribution de Total Marketing France</p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-2 card-test">
+                                <div class="stepwizard-step text-center">
+                                    <a href="javascript:void(0);" type="button" class="btn btn-default btn-circle">12</a>
+                                </div>
+
+                                <div class="card card-green">
+                                    <div class='icon-header glyphicon glyphicon-eur'></div>
+                                    <p class="card-question">Paiement</p>
+                                    <div class="card-separator"></div>
+                                    <p style="text-align:center;">Le paiement est réalisé selon les conditions et délais définis dans votre contrat. </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-2 card-test">
+                                <div class="stepwizard-step text-center">
+                                    <a href="javascript:void(0);" type="button" class="btn btn-default btn-circle">13</a>
+                                </div>
+
+                                <div class="card card-green">
+                                    <div class='icon-header glyphicon glyphicon-eur'></div>
+                                    <p class="card-question">Paiement</p>
+                                    <div class="card-separator"></div>
+                                    <p style="text-align:center;">Le paiement est réalisé selon les conditions et délais définis dans votre contrat. </p>
+                                </div>
+                            </div>
+
                             <!-- ./processus_card member -->
                         </section>
                     </div>
