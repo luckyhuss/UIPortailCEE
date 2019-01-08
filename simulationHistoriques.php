@@ -248,6 +248,11 @@
 </div>
 
 <script>
+
+    $('#dateDuBrouillon').datepicker({
+        language: 'fr'
+});
+
 function displayDetailSimulation() {
     document.getElementById("detailSimulation").style.display = "block";
     // $("html,body").animate({scrollTop: $("#collapseDetailSimulation").offset().top}, 2000);
