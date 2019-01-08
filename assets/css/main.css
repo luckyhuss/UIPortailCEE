@@ -1004,7 +1004,7 @@ caption {
 #collapseListeDossiers .submit_button_holder a, #collapseDossiersPayes .submit_button_holder a,
 	#collapseDossiersEnCours .submit_button_holder a,
 	#collapseDossiersDeposes .submit_button_holder a,
-	#collapseSearchBarFiche .submit_button_holder, #collapseHistoSim .submit_button_holder a, 
+	#collapseSearchBarFiche .submit_button_holder,
 	#collapseDetailSimulation .submit_button_holder a{
 	position: inherit;
 	top: 10px;
@@ -2198,6 +2198,12 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 
 #infoSignature h6{
 	text-decoration: underline;
+}
+
+#collapseHistoSim #voirPlusButton{
+	position: inherit;
+	top: 10px;
+	left: 15px;
 }
 
  /*

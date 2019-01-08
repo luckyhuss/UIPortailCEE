@@ -29,7 +29,7 @@
                     <span class="form_label"><label for="DateDuBrouillon">Date du brouillon</label></span>
                     <!-- <span class="form_input"><input type="text" class="form-control" id="dateDuBrouillon" placeholder=""></span> -->
                     <span class="header_output">
-                        <input class="datepicker form-control" date-format="d/MM/yyyy" placeholder="Choisissez une date" id="dateDuBrouillon">
+                        <input class="datepicker form-control" data-date-format="dd-mm-yyyy" placeholder="Choisissez une date" id="dateDuBrouillon" name="DateSimulation">
                     </span>
                 </div>
 
@@ -79,7 +79,7 @@
                         </table>
 
                         <div class="col-md-12 submit_button_holder">
-                            <a href="#" class="btn btn-primary submit_button" role="button">Voir plus</a>
+                            <button type="submit" class="btn btn-primary submit_button" id="voirPlusButton">Voir plus</button>
                         </div> 
                     </div>
                 </div>
