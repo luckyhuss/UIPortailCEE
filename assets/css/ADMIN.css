@@ -74,7 +74,7 @@
 	border-bottom: 10px solid #666666;
 }
 
-.dropdown-menu-user-profile {
+.dropdown-menu-user-profile, .dropdown-alerte-notification { 
 	background: #666666 !important;
 }
 
@@ -160,8 +160,8 @@
 	background: #f9f9f9;
 }
 
-*******************************************************************
-************************ TABS Rechercher **************************
+/*******************************************************************
+************************ TABS Rechercher **************************/
 
 .with-nav-tabs {
 	border-color:#666666;
@@ -304,4 +304,11 @@ option:not(:checked) {
 legend {
 	background:#e00032;
 	color:#fff;
+}
+
+/******************************************/
+/*   			notification  			  */
+/******************************************/
+.dropdown-alerte-notification {
+	border:1px solid #272727 !important;
 }

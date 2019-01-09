@@ -194,7 +194,7 @@ footer {
 .glyphicon-refresh {
 	display:block;
     text-align:center;
-	padding:1px;
+	padding:5px;
 	float: none!important;
 	color:#fff!important;
 }
@@ -236,7 +236,7 @@ div .content-alerte-notification {
 .badge-notify {
 	background: red;
 	position: absolute;
-	margin-top: -10px;
+	margin-top: -12px;
 	margin-left: -10px;
 	float: left;
 }
@@ -3045,32 +3045,6 @@ input[name='optradio'] {
 	font-size:13px!important;
 }
 
-
-@media ( max-width : 1024px) {
-	.sous-menu .panel-title {
-		margin-top: -5px!important;
-	}
-	
-	.sous-menu .glyphicon {
-		top: -10px!important;
-	}
-}
-
-@media ( max-width : 640px) {
-	.sous-menu .panel-title {
-		margin-top: 10px!important;
-    	margin-left: 10px!important;
-	}
-	
-	.sous-menu .glyphicon {
-		top: -10px!important;
-	}
-	
-	.sous-menu .menu_title {
-		margin-top:-25px!important;
-		padding-left:10px;
-	}
-}
 
 .caret {
 	margin-left:20px;

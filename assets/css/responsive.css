@@ -3,7 +3,7 @@
 
 /* Main css file for responsive styles */
 @media ( max-width : 1919px) {
-	f/* ieldset .col-md-2 { {
+	/* fieldset .col-md-2 { 
 		width:12%!important;
 	} */
 }
@@ -57,6 +57,16 @@
 		left:-63px!important;
 		top:52px!important;
 	}
+	
+	.glyphicon-refresh {
+		display:block;
+	    text-align:center;
+		padding:2px;
+	}
+	
+	.badge-notify {
+		margin-top: -8px!important;
+	}
 }
 
 @media screen and (max-width: 1024px) {
@@ -108,6 +118,15 @@
 	.nav_area .panel-title {
 		padding-left: 10px;
 	}
+	
+	.sous-menu .panel-title {
+		margin-top: -5px!important;
+	}
+	
+	.sous-menu .glyphicon {
+		top: -10px!important;
+	}
+
 }
 
 @media ( max-width : 991px) {
@@ -250,6 +269,20 @@
 	
 	.dropdown-alerte-notification {
 		top:47px!important;
+	}
+	
+	.sous-menu .panel-title {
+		margin-top: 10px!important;
+    	margin-left: 10px!important;
+	}
+	
+	.sous-menu .glyphicon {
+		top: -10px!important;
+	}
+	
+	.sous-menu .menu_title {
+		margin-top:-25px!important;
+		padding-left:10px;
 	}
 }
 
