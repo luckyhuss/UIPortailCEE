@@ -52,6 +52,11 @@
 	.form-input-textarea {
 		width:100%!important;
 	}
+	
+	.dropdown-alerte-notification {
+		left:-63px!important;
+		top:52px!important;
+	}
 }
 
 @media screen and (max-width: 1024px) {
@@ -241,6 +246,10 @@
 	
 	.form-input-textarea {
 		width:100%!important;
+	}
+	
+	.dropdown-alerte-notification {
+		top:47px!important;
 	}
 }
 

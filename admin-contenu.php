@@ -43,19 +43,92 @@
 <script src="assets/js/jquery-ui.min.js"></script>
 
 <script>
+
+function registerSummernote(element, max, callbackMax) {
+	$(element).summernote({
+        height: 200,
+        toolbar: [
+            //["style", ["style"]],
+            ["font", ["bold", "italic", "underline", "clear"]],
+            //["fontname", ["fontname"]],
+            ["color", ["color"]],
+            ["para", [/*"ul", "ol",*/ "paragraph"]],
+            ["view", ["fullscreen", "codeview", "help"]]
+        ],
+        lang: 'fr-FR',
+      	callbacks: {
+            onKeydown: function(e) {
+              var t = e.currentTarget.innerText;
+              if (t.trim().length >= max) {
+                //delete key
+                if (e.keyCode != 8)
+                  e.preventDefault();
+                // add other keys ...
+              }
+            },
+            onKeyup: function(e) {
+              var t = e.currentTarget.innerText;
+              if (typeof callbackMax == 'function') {
+                callbackMax(max - t.trim().length);
+              }
+            },
+            onPaste: function(e) {
+            	var t = e.currentTarget.innerText;
+                var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
+                e.preventDefault();
+                var maxPaste = bufferText.length;
+                
+                if(t.length + bufferText.length > max){
+                    maxPaste = max - t.length;
+                }
+                if(maxPaste > 0){
+                    document.execCommand('insertText', false, bufferText.substring(0, maxPaste));
+                }
+              	if (typeof callbackMax == 'function') {
+                	callbackMax(max - t.length);
+              	}
+            }
+      }
+    });
+  }
+
     $(document).ready(function() {
-        $('#summernote-filiale, #summernote-secteur, #summernoteplus-filiale, #summernoteplus-secteur').summernote({
+    	  registerSummernote('#summernote-filiale', 1000, function(maxFiliale) {
+    		$('#max-filiale').text(maxFiliale)
+    		
+    	  });
+
+    	  registerSummernote('#summernote-secteur', 1000, function(maxSecteur) {
+      		$('#max-secteur').text(maxSecteur)
+      		
+      	  });
+
+    	  registerSummernote('#summernoteplus-secteur', 1000, function(maxplusSecteur) {
+        		$('#maxplus-secteur').text(maxplusSecteur)
+        		
+       	  });
+
+    	  registerSummernote('#summernoteplus-filiale', 1000, function(maxplusFiliale) {
+      		$('#maxplus-filiale').text(maxplusFiliale)
+      		
+     	  });
+        	  
+
+    	  
+     /*    $('#summernote-filiale, #summernote-secteur, #summernoteplus-filiale, #summernoteplus-secteur').summernote({
             height: 200,
             toolbar: [
                 //["style", ["style"]],
                 ["font", ["bold", "italic", "underline", "clear"]],
                 //["fontname", ["fontname"]],
                 ["color", ["color"]],
-                ["para", [/*"ul", "ol",*/ "paragraph"]],
+                ["para", [/*"ul", "ol",*/ /*"paragraph"]],
                 ["view", ["fullscreen", "codeview", "help"]]
             ],
             lang: 'fr-FR'
         });
+ */
+        
 
     });
 

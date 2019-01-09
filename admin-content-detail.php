@@ -180,8 +180,9 @@
 
 
 						<div class="col-md-12 input_holder">
+						
 							<div class="form-group">
-								<span class="form_label"><label for="texte">Contenu</label></span>
+								<span class="form_label"><label for="texte">Contenu [ <span id="max-<?=$gestion ?>">400</span> ]</label> </span>
 
 								<span class="form_input corps" style="width: 100% !important"> <textarea
 										id="summernote-<?=$gestion ?>" class="form-textarea"
@@ -193,7 +194,7 @@
 
 						<div class="col-md-12 input_holder">
 							<div class="form-group">
-								<span class="form_label"><label for="texte">Plus d'info</label></span>
+								<span class="form_label"><label for="texte">Plus d'info [ <span id="maxplus-<?=$gestion ?>">400</span> ]</label></span>
 
 								<span class="form_input corpsplus" style="width: 100% !important"> <textarea
 										id="summernoteplus-<?=$gestion ?>" class="form-textarea"

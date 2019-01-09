@@ -173,7 +173,55 @@ footer {
 	color: black;
 }
 
-.content-user-profile {
+
+.dropdown-alerte-notification {
+	margin: 4px 0 1px;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	z-index:1000;
+	width:250px;
+	top:47px;
+	position:absolute;
+	height:305px;
+	left:-91px;
+}
+
+.header-alerte-notification, .refresh-alerte-notification {
+	height:26px;
+}
+
+.glyphicon-refresh {
+	display:block;
+    text-align:center;
+	padding:1px;
+	float: none!important;
+	color:#fff!important;
+}
+
+.notification-list a {
+	color:#000!important;
+}
+
+.notification-list hr {
+	margin:5px 0 5px;
+}
+
+div .content-alerte-notification {
+	height:250px;
+	font-size: 10pt;
+	font-family: 'Open Sans', sans-serif;
+	z-index:1001;
+	overflow:auto;
+    background:#fff;
+    padding:10px 12px 5px;
+}
+
+#dropdown-alerte-notification .arrow-up {
+	left:129px!important;	
+}
+
+.content-user-profile, .content-notification {
 	padding: 15px;
 	margin: 10px;
 	font-weight: 700;
@@ -629,6 +677,18 @@ label[for=ResultatOperationCL], label[for=ResultatOperationPR]{
 	position: absolute;
 	top: -10px;
 	left: 63px;
+	display: block;
+}
+
+.arrow-notification {
+	width: 0;
+	height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid green;
+	position: absolute;
+	top: -10px;
+	left: 130px;
 	display: block;
 }
 

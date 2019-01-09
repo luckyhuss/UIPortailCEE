@@ -165,10 +165,12 @@ body { background-color: #fafafa; }
 	   }
 	?>
 
+	<script src="assets/js/jquery.min.js"></script>
    <?php include("header.php"); ?>
-   <script src="assets/js/jquery.min.js"></script>
+   <!-- <script src="assets/js/jquery.min.js"></script> -->
    <script src="assets/js/bootstrap-datepicker.js"></script>
 	<script src="assets/js/bootstrap-datepicker.fr.js" charset="UTF-8"></script>
+   
    <!-- script src="assets/js/jquery.js"></script-->
    <?php include("page-content.php"); ?>
    
@@ -194,7 +196,7 @@ body { background-color: #fafafa; }
     <script src="assets/js/Chart.bundle.min.js"></script>	
     
     <!-- Other JS scripts -->
-	<script src="assets/js/bootstrap-datepicker.js"></script>
+	<!-- <script src="assets/js/bootstrap-datepicker.js"></script> -->
 
     <?php
     if($isGraph) {

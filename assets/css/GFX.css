@@ -81,7 +81,7 @@
     border-bottom: 10px solid #272727;
 }
 
-.dropdown-menu-user-profile {
+.dropdown-menu-user-profile, .dropdown-alerte-notification {
 	background: #272727 !important;
 }
 
@@ -296,4 +296,11 @@ option:not(:checked) {
 legend {
 	background:#44b749;
 	color:#fff;
+}
+
+/******************************************/
+/*   			notification  			  */
+/******************************************/
+.dropdown-alerte-notification {
+	border:1px solid #272727 !important;
 }
