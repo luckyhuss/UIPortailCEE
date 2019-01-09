@@ -3072,6 +3072,14 @@ input[name='optradio'] {
 	}
 }
 
+.caret {
+	margin-left:20px;
+}
+
+
+/******************************************************/
+
 .criteresEligibilitePanel fieldset span.header_output {
 	max-height: 100%;
 }
+
