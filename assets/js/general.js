@@ -302,6 +302,7 @@ function openModal(isModal) {
 		// $('#modalTitle').html("Pas de dossier arrivant à échéance ce jour");
 		// $('#modalBody').html("Pas de dossier arrivant à échéance ce jour");
 		$('#fullCalModal').modal();
+		$("#dossier-calendrier").css("display", "none");
 		// $("html,body").animate({scrollTop: $("table#dossiersCalendrier").offset().top}, 2000);
 	}
 
