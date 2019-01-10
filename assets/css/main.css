@@ -2998,7 +2998,7 @@ input[name='optradio'] {
 }
 
 
-#btn_mentionSurDevis {
+#btn_mentionSurDevis, #btn_mentionSurDevis_cc {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-left: -14px;
@@ -3009,7 +3009,7 @@ input[name='optradio'] {
 	margin-top: 70px;
 }
 
-#btn_mentionSurDevis .btn{
+#btn_mentionSurDevis .btn, #btn_mentionSurDevis_cc .btn{
 	white-space: normal;
 }
 

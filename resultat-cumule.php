@@ -77,7 +77,7 @@
 <div class="col-md-12 mentionSurDevisSection">
 
 	<div class="col-md-12 submit_button_holder" id="btn_mentionSurDevis">
-		<a href="javascript:void(0)"  id="msd_cc"  class="btn btn-primary submit_button" role="button">Recuperer la mention a faire figurer et le cadre contribution</a>
+		<a href="javascript:void(0)"  id="msd_cc"  class="btn btn-primary submit_button" role="button">Récupérer la mention à faire figurer et le cadre contribution</a>
 	</div>
 
 	<div class="panel-group mentionFigurerPanel displayed" id="mentionFigurerPanel">
