@@ -85,7 +85,7 @@
                 <div class="header-group">
                     <span class="header_label"><label for="Ref">Référence</label></span>
                     <span class="header_output">Indéfini</span>
-                    <span class="header_output"><a><i class="glyphicon glyphicon-download-alt" rel="tooltip" title="Télécharger dossier"></i></a></span>
+                    <span class="header_output"><a><i class="disabled-icon glyphicon glyphicon-download-alt" rel="tooltip" title="Télécharger dossier"></i></a></span>
                 </div>
             </div>
 
