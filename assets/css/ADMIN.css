@@ -74,7 +74,7 @@
 	border-bottom: 10px solid #666666;
 }
 
-.dropdown-menu-user-profile, .dropdown-alerte-notification { 
+.dropdown-menu-user-profile, #dropdown-alerte-notification, #dropdown-user-profile { 
 	background: #666666 !important;
 }
 
@@ -180,7 +180,7 @@
 }
 
 
-**************************************************************************************
+/**************************************************************************************/
 
 .select-items .same-as-selected div {
   	background-color: #e00032!important;
@@ -309,6 +309,6 @@ legend {
 /******************************************/
 /*   			notification  			  */
 /******************************************/
-.dropdown-alerte-notification {
-	border:1px solid #272727 !important;
+.dropdown-alerte-notification, .dropdown-user-profile {
+	border:1px solid #666666 !important;
 }

@@ -73,7 +73,7 @@
     border-bottom: 10px solid #576777;
 }
 
-.dropdown-menu-user-profile, .dropdown-alerte-notification {
+.dropdown-menu-user-profile, #dropdown-alerte-notification, #dropdown-user-profile {
 	background: #576777 !important;
 }
 
@@ -290,7 +290,7 @@ legend {
 /******************************************/
 /*   			notification  			  */
 /******************************************/
-.dropdown-alerte-notification {
+.dropdown-alerte-notification, .dropdown-user-profile{
 	border:1px solid #576777 !important;
 }
 

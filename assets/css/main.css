@@ -173,6 +173,9 @@ footer {
 	color: black;
 }
 
+.glyphicon-user {
+	display:none;
+}
 
 .dropdown-alerte-notification {
 	margin: 4px 0 1px;
@@ -187,7 +190,20 @@ footer {
 	left:-91px;
 }
 
-.header-alerte-notification, .refresh-alerte-notification {
+.dropdown-user-profile {
+	margin: 4px 0 1px;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	z-index:1000;
+	width:250px;
+	top:47px;
+	position:absolute;
+	height:104px;
+	left:-68px;
+}
+
+.header-alerte-notification, .refresh-alerte-notification, .header-user-profile, .footer-user-profile {
 	height:26px;
 }
 
@@ -218,17 +234,19 @@ div .content-alerte-notification {
 }
 
 #dropdown-alerte-notification .arrow-up {
-	left:129px!important;	
+	left:128px!important;	
+}
+
+#dropdown-user-profile .arrow-up {
+	left:80px!important;	
 }
 
 .content-user-profile, .content-notification {
 	padding: 15px;
-	margin: 10px;
 	font-weight: 700;
 	display: flex;
 	background: #ffffff !important;
-	margin-top: -10px;
-	margin-bottom: -10px;
+	height:52px;
 	margin-left: 0px;
 	margin-right: 0px;
 }

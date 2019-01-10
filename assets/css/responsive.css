@@ -26,10 +26,21 @@
 	}
 }
 
+@media ( min-width : 1180px) {
+	#dropdown-user-profile {
+		display: none !important;
+	}
+}
+
 @media ( max-width : 1180px) {
 	.icon_holder .user {
 		display: block !important;
 	}
+	
+	.glyphicon-user {
+		display:block!important;
+	}
+	
 	.user_profile {
 		display: none !important;
 	}
@@ -54,8 +65,8 @@
 	}
 	
 	.dropdown-alerte-notification {
-		left:-63px!important;
-		top:52px!important;
+		left:-68px!important;
+		top:47px!important;
 	}
 	
 	.glyphicon-refresh {
@@ -267,8 +278,8 @@
 		width:100%!important;
 	}
 	
-	.dropdown-alerte-notification {
-		top:47px!important;
+	#dropdown-user-profile, #dropdown-alerte-notification {
+		top:42px!important;
 	}
 	
 	.sous-menu .panel-title {

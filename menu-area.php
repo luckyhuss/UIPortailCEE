@@ -36,7 +36,7 @@
 				<div class="panel-heading nav-menu <?php echo $activeSimulation ?>">
 					<h4 class="panel-title">
 						<a data-toggle="collapse" href="#simulation" id="simulation" class="collapsed"
-							aria-expanded="true"><span class="glyphicon glyphicon-signal"
+							aria-expanded="true"><span class="glyphicon glyphicon-stats"
 							aria-hidden="true"></span> <span class="menu_title">Simulation<span
 								class="caret"></span></span></a>
 					</h4>
@@ -50,7 +50,7 @@
 						<h4 class="panel-title">
 							<a href="javascript:void(0)" id="NouvelleSimulation"><span
 								class="glyphicon glyphicon" aria-hidden="true"></span><span
-								class="glyphicon glyphicon-list" aria-hidden="true"></span> <span
+								class="glyphicon glyphicon-plus" aria-hidden="true"></span> <span
 								class="menu_title">Nouvelle Simulation</span></a>
 						</h4>
 					</div>
@@ -59,7 +59,7 @@
 						<h4 class="panel-title">
 							<a href="javascript:void(0)" id="HistoriqueSimulation"><span
 								class="glyphicon glyphicon" aria-hidden="true"></span><span
-								class="glyphicon glyphicon-list" aria-hidden="true"></span> <span
+								class="glyphicon glyphicon-time" aria-hidden="true"></span> <span
 								class="menu_title">Historiques</span></a>
 						</h4>
 					</div>

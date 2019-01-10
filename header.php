@@ -41,7 +41,7 @@
 						<span class="glyphicon glyphicon-bell" title="Notification"></span>
 						<span class="badge badge-notify">9+</span>
 
-						
+
 						<div class="dropdown-alerte-notification displayed"
 							id="dropdown-alerte-notification">
 							<div class="arrow-up"></div>
@@ -52,52 +52,40 @@
 								<ul class="notification-list">
 									<li><a href="#">Messaggio di notifica un po più lungo del
 											normale</a>
-										<hr>
-									</li>
+										<hr></li>
 									<li><a href="#">Messaggio di notifica un po più lungo del
 											normale</a>
-										<hr>
-									</li>
+										<hr></li>
 									<li><a href="#">Messaggio di notifica un po più lungo del
 											normale</a>
-										<hr>
-									</li>
+										<hr></li>
 									<li><a href="#">Messaggio di notifica un po più lungo del
 											normale</a>
-										<hr>
-									</li>
+										<hr></li>
 									<li><a href="#">Messaggio di notifica un po più lungo del
 											normale</a>
-										<hr>
-									</li>
+										<hr></li>
 									<li><a href="#">Messaggio di notifica un po più lungo del
 											normale</a>
-										<hr>
-									</li>
+										<hr></li>
 									<li><a href="#">Messaggio di notifica un po più lungo del
 											normale</a>
-										<hr>
-									</li>
+										<hr></li>
 									<li><a href="#">Messaggio di notifica un po più lungo del
 											normale</a>
-										<hr>
-									</li>
+										<hr></li>
 									<li><a href="#">Messaggio di notifica un po più lungo del
 											normale</a>
-										<hr>
-									</li>
+										<hr></li>
 									<li><a href="#">Messaggio di notifica un po più lungo del
 											normale</a>
-										<hr>
-									</li>
+										<hr></li>
 									<li><a href="#">Messaggio di notifica un po più lungo del
 											normale</a>
-										<hr>
-									</li>
+										<hr></li>
 									<li><a href="#">Messaggio di notifica un po più lungo del
 											normale</a>
-										<hr>
-									</li>
+										<hr></li>
 								</ul>
 							</div>
 
@@ -108,17 +96,6 @@
 
 						</div>
 
-
-						<!-- <ul class="dropdown-menu-notification">
-							<li class="arrow-notification"></li>
-							<li class="divider"></li>
-							<li>
-								<div class="content-notification">
-									<span>Notification is here</span> 
-								</div>
-							</li>
-							<li class="divider"></li>
-						</ul> -->
 
 
 					</div>
@@ -131,33 +108,43 @@
 					</div>
 
 					<div class="icon_holder">
+						<span class="glyphicon glyphicon-user displayed" title="Profile"></span>
 
-						<ul>
-							<li class="dropdown user"><a href="#" class="dropdown-toggle"
-								data-toggle="dropdown"> <span class="glyphicon glyphicon-user"></span> 
-							</a>
+						<div class="dropdown-user-profile displayed"
+							id="dropdown-user-profile">
+							<div class="arrow-up"></div>
 
-								<ul class="dropdown-menu dropdown-menu-user-profile">
+							<div class="header-user-profile"></div>
+							<div class="content-user-profile">
+								<span class="user-name-holder">Pierre Michel Dupont</span><span
+									class="filiale-ID-holder">(<?php echo $cssLoaded ?>)</span>
+							</div>
+							<div class="footer-user-profile"></div>
+
+						</div>
+
+						<ul class="displayed">
+							<li class="dropdown user">
+								<!-- 							<a href="#" class="dropdown-toggle" --> <!-- 								data-toggle="dropdown"> <span class="glyphicon glyphicon-user"></span>  -->
+								<!-- 							</a> -->
+
+								<ul class="dropdown-menu-user-profile displayed"
+									id="dropdown-menu-user-profile">
 									<li class="arrow-up"></li>
 									<li class="divider"></li>
 									<li>
 										<div class="content-user-profile">
 											<span class="user-name-holder">Pierre Michel Dupont</span><span
 												class="filiale-ID-holder">(<?php echo $cssLoaded ?>)</span>
-											<!-- div class="row">
-
-												<div class="col-lg-8">
-													<p class="text-center">
-														<strong>Pierre Michel Dupont</strong>
-													</p>
-
-												</div>
-											</div-->
 										</div>
 									</li>
 									<li class="divider"></li>
-								</ul></li>
+								</ul>
+							</li>
 						</ul>
+
+
+
 					</div>
 
 					<div class="notifications_area"></div>
@@ -177,18 +164,41 @@
 </header>
 <script>
 $(document).on('click', function (e) {
-    if ($(e.target).closest(".glyphicon-bell").length === 0  
-    	    && (!$("#dropdown-alerte-notification").is(e.target) && $("#dropdown-alerte-notification").has(e.target).length === 0)) {
-        console.log("removed : " + $("#dropdown-alerte-notification").has(e.target).length);
+    if (($(e.target).closest(".glyphicon-bell").length === 0  
+    	    && (!$("#dropdown-alerte-notification").is(e.target) && $("#dropdown-alerte-notification").has(e.target).length === 0))) {
+        //console.log("removed : " + $("#dropdown-alerte-notification").has(e.target).length);
+       
         $("#dropdown-alerte-notification").addClass("displayed");
+    }
+
+    if (($(e.target).closest(".glyphicon-user").length === 0  
+    	    	    && (!$("#dropdown-user-profile").is(e.target) && $("#dropdown-user-profile").has(e.target).length === 0))) {
+        //console.log("removed : " + $("#dropdown-alerte-notification").has(e.target).length);
+        $("#dropdown-user-profile").addClass("displayed");
+        
     }
 });
 
+
+// On clicking on User [ user profile ]
+$('.glyphicon-user').on('click', function(e) {
+	console.log('user clicked');
+	$('.dropdown-user-profile').toggleClass("displayed");
+	e.preventDefault();
+	  
+});
+
+
+// On clicking on bell [ alerte notification ] 
 $('.glyphicon-bell').on('click', function(e) {
 	console.log('bell clicked');
-  $('.dropdown-alerte-notification').toggleClass("displayed"); //you can list several class names 
-  e.preventDefault();
-  //elementClicked =  true;
+
+  	// close user profile if already open
+  	//$('.dropdown-menu-user-profile').addClass("displayed");	
+
+  	$('.dropdown-alerte-notification').toggleClass("displayed"); //you can list several class names 
+  	e.preventDefault();
+  
 });
 
 
