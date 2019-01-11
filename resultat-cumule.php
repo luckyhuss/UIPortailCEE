@@ -15,7 +15,7 @@
 								id="numOperation">10</span>
 						</div>
 					</div>
-					<div class="repartition-section">
+					<div class="repartition-section col-md-12">
 						<span class="repartition-section-header">Calcul CUMAC</span>
 						<div class="col-sm-6 col-md-6 input_holder">
 							<div class="header-group">

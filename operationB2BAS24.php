@@ -194,7 +194,7 @@
 							<div class="fieldset-container">
 								<div class="header-group col-md-12" id="sectionResultatParOperation_OP0">
 
-									<div class="repartition-section">
+									<div class="repartition-section col-md-12">
 										<span class="repartition-section-header">Calcul CUMAC</span>
 
 										<div class="col-sm-6 col-md-6 input_holder">
@@ -328,7 +328,7 @@
     function clone() {
      	//console.log('cloneIndex ' + cloneIndex + ', numOP at Clone : ' + numOperation() );
 
-        $(this).parents(".clonedOP").clone(true, true)
+        $('#clonedOP1').clone(true, true)
             .appendTo(".tbodyClone")
             .attr("id", "clonedOP" + ( cloneIndex + 1 ))
             //.attr("name", "clonedOP" + ( cloneIndex + 1 ))
