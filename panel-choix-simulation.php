@@ -263,6 +263,9 @@
 						</fieldset>
 					</div>
 
+					<div class="col-md-12 submit_button_holder simuler_btn_holder" id="sectionCalculPreca">
+    					<button type="submit" class="btn btn-primary submit_button displayed" id="calculateRepartition">Calcul Répartition</button>
+					</div>
 
 					<div class="header-group col-md-12" id="sectionResultatRepartition">
 						<fieldset class="fieldset-margin-bottom" id="resultatRepartitionFieldset">
@@ -412,6 +415,7 @@
 			$('#sectionBenef').addClass('displayed');
 			$('#sectionLogements').addClass('displayed');
 			$('#sectionPlusLogements').addClass('displayed');
+			$('#sectionCalculPreca #calculateRepartition').addClass('displayed');
 			$('#sectionCalculReel' ).addClass('displayed');
 			$('#sectionStatistiques' ).addClass('displayed');
 			$('#selectDeptTravaux' ).val('');
@@ -430,6 +434,7 @@ $('select[id^="selectBenef"]').change(function () {
 	$('#sectionLogements').addClass('displayed');
 	$('#sectionPlusLogements').addClass('displayed');
 	$('#sectionCalculReel' ).addClass('displayed');
+	$('#sectionCalculPreca #calculateRepartition').addClass('displayed');
 	$('#sectionStatistiques' ).addClass('displayed');
 	
 	switch(typeSelected) {
@@ -463,8 +468,10 @@ $(document).ready(function() {
 
 	$('input[id^="calculReel"]').click(function () {
 		$('#sectionPlusLogements').addClass('displayed');
+		$('#sectionCalculPreca #calculateRepartition').addClass('displayed');
 		if($('#'+this.id).is(':checked')) {
 			$('#sectionPlusLogements').removeClass('displayed');
+			$('#sectionCalculPreca #calculateRepartition').removeClass('displayed');
 		}
 	});
 
