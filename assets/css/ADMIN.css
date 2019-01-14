@@ -367,3 +367,10 @@ legend {
 .grecaptcha-badge {
 	bottom:30px!important;
 }
+
+.gigya-screen .gigya-error-msg.gigya-error-msg-active {
+	display: flex !important; 
+	text-align: left!important;
+	margin-top: -5px!important;
+    padding-bottom: 10px!important;
+}
