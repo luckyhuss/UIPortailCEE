@@ -312,3 +312,58 @@ legend {
 .dropdown-alerte-notification, .dropdown-user-profile {
 	border:1px solid #666666 !important;
 }
+
+/******************************************************/
+/*                     Gestion Gigya                  */
+/******************************************************/
+#screensetContainer_content_caption, .gigya-composite-control-header, .gigya-layout-row .with-divider {
+	display:none;	
+}
+
+
+.gigya-input-text, .gigya-input-password {
+    border-radius: 10px!important;
+}
+
+#gigya-register-screen {
+ margin: 0px!important;
+ padding: 5px 15px 5px 15px!important;	
+}
+
+
+.gigya-screen.portrait {
+	width: 80% !important;
+}
+
+.gigya-screen-content div.gigya-screen.landscape {
+	width: 80% !important;
+	padding-top: 30px;
+}
+
+.gigya-layout-row .with-divider {
+	
+}
+
+.gigya-input-submit {
+	background: #e00032 !important;
+	max-width: 125px !important;
+	margin-left: 0px !important;
+	float:right!important;
+	height:32px!important;
+	
+	border-radius:4px!important;
+	font-family:'Open Sans', Sans-serif!important;
+	font-size:18px!important;
+    margin-bottom: 5px!important;
+    padding: 0px!important;
+	
+}
+
+
+.gigya-screen.landscape .gigya-layout-row.with-divider {
+    padding-bottom: 0px; 
+}
+
+.grecaptcha-badge {
+	bottom:30px!important;
+}
