@@ -93,22 +93,22 @@ function registerSummernote(element, max, callbackMax) {
   }
 
     $(document).ready(function() {
-    	  registerSummernote('#summernote-filiale', 1000, function(maxFiliale) {
+    	  registerSummernote('#summernote-filiale', 950, function(maxFiliale) {
     		$('#max-filiale').text(maxFiliale)
     		
     	  });
 
-    	  registerSummernote('#summernote-secteur', 1000, function(maxSecteur) {
+    	  registerSummernote('#summernote-secteur', 950, function(maxSecteur) {
       		$('#max-secteur').text(maxSecteur)
       		
       	  });
 
-    	  registerSummernote('#summernoteplus-secteur', 1000, function(maxplusSecteur) {
+    	  registerSummernote('#summernoteplus-secteur', 950, function(maxplusSecteur) {
         		$('#maxplus-secteur').text(maxplusSecteur)
         		
        	  });
 
-    	  registerSummernote('#summernoteplus-filiale', 1000, function(maxplusFiliale) {
+    	  registerSummernote('#summernoteplus-filiale', 950, function(maxplusFiliale) {
       		$('#maxplus-filiale').text(maxplusFiliale)
       		
      	  });
