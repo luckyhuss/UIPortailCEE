@@ -316,7 +316,7 @@
 					<div class="header-group col-md-12" id="sectionRepartitionIndice">
 
 					<div class="repartition-container col-md-12">
-						<div class="repartition-section col-md-6">
+						<div class="repartition-section col-sm-12 col-md-6">
 							<span class="repartition-section-header">Professionnel</span>
 
 							<div class="col-sm-6 col-md-12 input_holder">
@@ -337,7 +337,7 @@
 
 						</div>
 
-						<div class="repartition-section col-md-6">
+						<div class="repartition-section col-sm-12 col-md-6">
 							<span class="repartition-section-header">Bénéficiaire</span>
 							<div class="col-sm-6 col-md-12 input_holder">
 								<div class="header-group">

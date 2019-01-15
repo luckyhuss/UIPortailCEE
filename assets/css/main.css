@@ -1425,12 +1425,12 @@ ul.cards-container {
 	border:1px solid red !important;
 }
 
-#formSearchBar ul, #recherchePiloterActivite ul, #formUser ul, #form_content ul, .form_admin_contenu ul, 
+.form_search_bar ul, #recherchePiloterActivite ul, #formUser ul, #form_content ul, .form_admin_contenu ul, 
 #gestPermission_content ul, #gestUtilisateur_content ul {
 	padding-left: 30px;
 }
 
-#formSearchBar li, #recherchePiloterActivite li , #formUser li, #form_content li, .form_admin_contenu li, 
+.form_search_bar li, #recherchePiloterActivite li , #formUser li, #form_content li, .form_admin_contenu li, 
 #gestPermission_content li, #gestUtilisateur_content li {
 	list-style: circle;
 	font-family: 'Open Sans', sans-serif;
