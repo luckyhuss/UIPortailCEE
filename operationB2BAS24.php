@@ -197,14 +197,14 @@
 									<div class="repartition-section col-md-12">
 										<span class="repartition-section-header">Calcul CUMAC</span>
 
-										<div class="col-sm-6 col-md-6 input_holder">
+										<div class="col-sm-6 col-md-4 input_holder">
 											<div class="header-group">
 												<span class="header_label"><label for="ResultatOperationCL">Classique</label></span>
 												<span class="header_output" id="resultatOperationCL_cumac_OP0">10 kWhc</span>
 											</div>
 										</div>
 
-										<div class="col-sm-6 col-md-6 input_holder">
+										<div class="col-sm-6 col-md-4 input_holder">
 											<div class="header-group">
 												<span class="header_label"><label for="ResultatOperationPR">Précarité</label></span>
 												<span class="header_output" id="resultatOperationP_cumac_OP0">10 kWhc</span>
@@ -213,7 +213,7 @@
 
 									</div>
 
-									<div class="repartition-section col-md-6">
+									<div class="repartition-section col-md-4">
 										<span class="repartition-section-header">Calcul AIDE Beneficiare</span>
 										<div class="col-sm-6 col-md-12 input_holder">
 											<div class="header-group">
@@ -230,7 +230,7 @@
 										</div>
 									</div>
 
-									<div class="repartition-section col-md-6">
+									<div class="repartition-section col-md-4">
 										<span class="repartition-section-header">Calcul AIDE Pro</span>
 
 										<div class="col-sm-6 col-md-12 input_holder">
@@ -244,6 +244,24 @@
 											<div class="header-group">
 												<span class="header_label"><label for="ResultatProP_aide"> Précarité</label></span>
 												<span class="header_output" id="resultatProPAide_OP0">10 kWhc</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="repartition-section col-md-4">
+										<span class="repartition-section-header">Calcul AIDE Apporteur affaire</span>
+
+										<div class="col-sm-6 col-md-12 input_holder">
+											<div class="header-group">
+												<span class="header_label"><label for="ResultatAAHP_aide"> Hors précarité</label></span>
+												<span class="header_output" id="resultatAAHPAide_OP0">10 kWhc</span>
+											</div>
+										</div>
+
+										<div class="col-sm-6 col-md-12 input_holder">
+											<div class="header-group">
+												<span class="header_label"><label for="ResultatAAP_aide"> Précarité</label></span>
+												<span class="header_output" id="resultatAAPAide_OP0">10 kWhc</span>
 											</div>
 										</div>
 									</div>

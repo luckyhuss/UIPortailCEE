@@ -355,6 +355,26 @@
 								</div>
 							</div>
 						</div>
+
+						<div class="repartition-section col-sm-12 col-md-6">
+							<span class="repartition-section-header">Apporteur affaire</span>
+							<div class="col-sm-6 col-md-12 input_holder">
+								<div class="header-group">
+									<span class="header_label"><label for="IndiceAAHP">Indice Hors précarité</label></span>
+									<span class="header_output"><input type="text"
+										class="form-control" id="indiceAAHP" placeholder=""></span>
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-md-12 input_holder">
+								<div class="header-group">
+									<span class="header_label"><label for="IndiceAAP">Indice précarité</label></span>
+									<span class="header_output"><input type="text"
+										class="form-control" id="indiceAAP" placeholder=""></span>
+								</div>
+							</div>
+						</div>
+
 					</div>
 
 					</div>
