@@ -191,9 +191,9 @@
     </div>
 </div>
 
-<div class="col-md-2 submit_button_holder btn-retour">
+<!-- <div class="col-md-2 submit_button_holder btn-retour">
     <a class="btn btn-primary submit_button">Retour</a>
-</div>
+</div> -->
 
 
 <!-- modal surrpimer simulation -->
