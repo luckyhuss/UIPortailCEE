@@ -3084,3 +3084,13 @@ input[name='optradio'] {
 	max-height: 100%;
 }
 
+#simulationError .validation-summary-errors li{
+	list-style: circle;
+	margin-left: 20px;
+	padding: 2px;
+}
+
+#simulationError .validation-summary-errors{
+	margin-bottom: 0px;
+}
+

@@ -1,3 +1,18 @@
+<div class="panel-group" id="simulationError">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="text-danger validation-summary-errors" data-valmsg-summary="true">
+                <ul>
+                    <li>Le No. Action doit être numérique</li>
+                    <li>La Référence Externe doit être alphanumérique</li>
+                    <li>Le Code Postal doit être numérique</li>
+                    <li>La Ville doit être alphanumérique</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php include 'panel-choix-simulation.php'; ?>
 
 
