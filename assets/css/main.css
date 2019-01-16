@@ -1525,7 +1525,8 @@ ul.message_container li, h1, h3 {
 .dataTables_wrapper .dataTables_paginate .paginate_button {
     padding: 0;
     border: 0;
-    display: inline;
+	display: inline;
+	margin-left: 0px;
 }
 
 div.dataTables_wrapper div.dataTables_paginate {	
@@ -1536,6 +1537,14 @@ div.dataTables_wrapper div.dataTables_paginate {
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
     background: none;
     border: none;
+}
+
+#form_content .dataTables_paginate .pagination li {
+	padding: 0px;
+}
+
+.dataTables_paginate .pagination li {
+	padding: 0px;
 }
 
 .pagination>li>a {

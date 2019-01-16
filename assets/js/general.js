@@ -434,7 +434,7 @@ $(".js-close").on("click", function(e) {
 	// 	jQuery('#resultatRechercherDossier').wrap('<div class="dataTables_scroll" />');
 	// });
 
-
+	$.fn.DataTable.ext.pager.numbers_length = 4;
 	
 $(document).ready(function() {
 	$('#listContent, #resultatRecherche, #infoBeneficiaire, #listesDesDocs, #dossiersEnCours, #dossiersDeposes, #dossiersPayes, #resultatFicheRecapTable, #InfoSocieteFiche, #signatureElectroniqueFiche, #conventionsFiche, #infoActiviteFiche, #operationsFiche, #resultatRechercherDossier')
