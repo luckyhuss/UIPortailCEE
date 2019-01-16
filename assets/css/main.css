@@ -2925,7 +2925,7 @@ input[name='optradio'] {
 }
 
 #repartitionFieldset legend, #RAIFieldset legend, #paiementFieldset legend , #calculReelFieldset legend,
-#resultatRepartitionFieldset legend{
+#resultatRepartitionFieldset legend, #societeFieldset legend, #sectionSigElec legend, #sectionConvention legend {
 	background:#fff;
 	color: black;
 } 

@@ -462,6 +462,12 @@
 }
 
 }
+
+@media ( mix-width : 350px) {
+	#infoLegend {
+		width: 250px;
+	}
+}
 /* RESPONSIVE */
 
 /* END RESPONSIVE */
