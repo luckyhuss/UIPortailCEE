@@ -22,6 +22,12 @@
 								<li>Text to be defined</li>
 							</ul>
 						</div>
+						
+						<div class="alert fade in alert-dismissible isa_error">
+							<a href="#" class="close-alert" data-dismiss="alert"
+								aria-label="close" title="Fermer">×</a> Ceci est un exemple
+							d'erreur.
+						</div>
 
 						<div class="content-container">
 							<div class="row">
@@ -51,25 +57,11 @@
 									</div>
 								</div>
 
-								<div class="col-md-6 input_holder">
-									<div class="form-group">
-										<span class="form_label"><label for="idGigya">IDGigya</label></span>
-										<span class="form_input"><input type="text"
-											class="form-control" id="idGigya" placeholder=""></span>
-									</div>
-								</div>
+								
 
 								<div class="col-md-6 input_holder">
 									<div class="form-group">
-										<span class="form_label"><label for="IDOxygene">ID Oxygène</label></span>
-										<span class="form_input"><input type="text"
-											class="form-control" id="IDOxygene" placeholder=""></span>
-									</div>
-								</div>
-
-								<div class="col-md-6 input_holder">
-									<div class="form-group">
-										<span class="form_label"><label for="filiales">filiales</label></span>
+										<span class="form_label"><label for="filiales">Filiales</label></span>
 
 										<span class="form_input"> <select class="form-control">
 												<option value='0'></option>
@@ -82,11 +74,34 @@
 
 									</div>
 								</div>
+								
+								<div class="col-md-6 input_holder">
+									<div class="form-group">
+										<span class="form_label"><label for="persona">Persona</label></span>
+
+										<span class="form_input"> <select class="form-control">
+												<option value='0'></option>
+												<option value='1'>Persona 1</option>
+												<option value='2'>Persona 2</option>
+												<option value='3'>Persona 3</option>
+												<option value='4'>Persona 4</option>
+										</select>
+										</span>
+
+									</div>
+								</div>
+
+								<div class="col-md-6 input_holder">
+									<div class="form-group">
+										<span class="form_label"><label for="denumSIREN">Dénomination / SIREN</label></span>
+										<span class="form_input"><input type="text"
+											class="form-control" id="denumSIREN" placeholder=""></span>
+									</div>
+								</div>
 
 
-								<div class="col-md-12 submit_button_holder">
-									<button type="submit" class="btn btn-primary submit_button"
-										name="btn-sauvegarder">Sauvegarder</button>
+								<div class="col-md-12 submit_button_holder btn-save-user">
+									<a href="#" class="btn btn-primary submit_button">Sauvegarder</a>
 
 								</div>
 
