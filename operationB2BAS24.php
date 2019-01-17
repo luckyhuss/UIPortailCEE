@@ -404,8 +404,19 @@
 		hideResultatOperation(cloneIndex-1);
 
     }
-    function remove() {
-        $(this).parents(".clonedOP").remove();
+    function remove(all = false) {
+		if(!all){
+			$(this).parents(".clonedOP").remove();
+		}else{
+			$(".clonedOP").each(function(index, val){
+				if (index == 0) {
+					$('.remove').hide();
+					$(this).parent().addClass('displayed');
+				} else {
+					$(this).remove();
+				}
+			})
+		}
  
         if ($(".clonedOP").length == 1) {
             $('.remove').hide();

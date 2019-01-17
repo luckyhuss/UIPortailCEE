@@ -387,6 +387,21 @@
 
 <script>
 
+$(document).ready(function() {
+	var secteur = $('#selectSecteur');
+	var type = $('#selectType');
+	var dept = $('#selectDeptTravaux');
+
+	if (secteur.val() === '0' || type.val() === '0' || dept.val() === '0') {
+		$('.tbodyClone').addClass('displayed');
+		$('#calculateCumac').addClass('displayed');
+	}
+	else {
+		$('.tbodyClone').removeClass('displayed');
+		$('#calculateCumac').removeClass('displayed');
+	}
+});
+
  $(document).ready(function() {
 	 
 	 $( "input[name='optradio']" ).click(function(e) {
@@ -497,4 +512,17 @@ $(document).ready(function() {
 
 });
 
+
+$('select[id^="selectSecteur"], select[id^="selectType"]').change(function () {
+
+var secteur = $('#selectSecteur');
+var type = $('#selectType');
+
+remove(true);
+if (secteur.val() !== '0' && type.val() !== '0'){
+	$('.tbodyClone').removeClass('displayed');
+	$('#calculateCumac').removeClass('displayed');
+}
+
+});
 </script>
