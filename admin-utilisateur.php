@@ -13,7 +13,7 @@
 			<div class="panel-body">
 				<div class="row">
 					<div class="col-md-12 submit_button_holder admin-btn-new">
-						<a href="javascript:void(0)" class="btn btn-primary submit_button newUser" onclick="javascript:displayDetailUser('new');">Nouvel Utilisateur</a>
+						<a href="javascript:void(0)" class="btn btn-primary submit_button newUser" onclick="javascript:displayDetailUser('new', null);">Nouvel Utilisateur</a>
 
 					</div>
 			
@@ -48,7 +48,7 @@
 									<td>GFX</td>
 									<td>Oui</td>
 									<td class="iconCol"><a href="javascript:void(0)"
-										onclick="displayDetailUser();"><i
+										onclick="displayDetailUser('edit', <?=$n?>);"><i
 											class="glyphicon glyphicon-edit" data-toggle="collapse"
 											data-target="#collapseDetailUser"></i></a></td>
 								</tr>
@@ -77,8 +77,16 @@
 <script>
 
 
-function displayDetailUser(id) {
+function displayDetailUser(ecran, id) {
+	$('#email, [for="email"]').removeAttr('disabled').removeClass('disabled');
+
+	if(ecran == 'edit') {
+		$('#email, [for="email"]').attr('disabled','disabled').addClass('disabled');
+		
+	}
+
 	$("#add-edit-panel").css("display", "block");
+	
 	$("html,body").animate({scrollTop: $("#gestAddEditUtilisateur").offset().top}, 2000);
 }
 

@@ -1455,6 +1455,10 @@ ul.cards-container {
 	color: #dddddd !important;
 }
 
+.disabled {
+	color: #999 !important;
+}
+
 /* layout error-page and logout */
 .page_banner {
 	position: absolute;
@@ -3094,3 +3098,9 @@ input[name='optradio'] {
 	margin-bottom: 0px;
 }
 
+
+.btn-save-user {
+    padding-left: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
