@@ -183,11 +183,11 @@ footer {
 	font-family: 'Open Sans', sans-serif;
 	color: black;
 	z-index:1000;
-	width:250px;
+	width:270px;
 	top:47px;
 	position:absolute;
-	height:305px;
-	left:-91px;
+	height:335px;
+	left:-111px;
 }
 
 .dropdown-user-profile {
@@ -196,11 +196,11 @@ footer {
 	font-family: 'Open Sans', sans-serif;
 	color: black;
 	z-index:1000;
-	width:250px;
+	width:270px;
 	top:47px;
 	position:absolute;
 	height:104px;
-	left:-68px;
+	left:-87px;
 }
 
 .header-alerte-notification, .refresh-alerte-notification, .header-user-profile, .footer-user-profile {
@@ -224,7 +224,7 @@ footer {
 }
 
 div .content-alerte-notification {
-	height:250px;
+	height:280px;
 	font-size: 10pt;
 	font-family: 'Open Sans', sans-serif;
 	z-index:1001;
@@ -234,11 +234,11 @@ div .content-alerte-notification {
 }
 
 #dropdown-alerte-notification .arrow-up {
-	left:128px!important;	
+	left:148px!important;	
 }
 
 #dropdown-user-profile .arrow-up {
-	left:80px!important;	
+	left:100px!important;	
 }
 
 .content-user-profile, .content-notification {
@@ -249,6 +249,11 @@ div .content-alerte-notification {
 	height:52px;
 	margin-left: 0px;
 	margin-right: 0px;
+}
+
+.notification-list>li, .notification-list a:hover, .notification-list span:hover {
+	cursor:pointer;
+	color:#9A1A4A;
 }
 
 .badge-notify {

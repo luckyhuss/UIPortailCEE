@@ -50,42 +50,23 @@
 
 							<div class="content-alerte-notification">
 								<ul class="notification-list">
-									<li><a href="#">Messaggio di notifica un po più lungo del
-											normale</a>
-										<hr></li>
-									<li><a href="#">Messaggio di notifica un po più lungo del
-											normale</a>
-										<hr></li>
-									<li><a href="#">Messaggio di notifica un po più lungo del
-											normale</a>
-										<hr></li>
-									<li><a href="#">Messaggio di notifica un po più lungo del
-											normale</a>
-										<hr></li>
-									<li><a href="#">Messaggio di notifica un po più lungo del
-											normale</a>
-										<hr></li>
-									<li><a href="#">Messaggio di notifica un po più lungo del
-											normale</a>
-										<hr></li>
-									<li><a href="#">Messaggio di notifica un po più lungo del
-											normale</a>
-										<hr></li>
-									<li><a href="#">Messaggio di notifica un po più lungo del
-											normale</a>
-										<hr></li>
-									<li><a href="#">Messaggio di notifica un po più lungo del
-											normale</a>
-										<hr></li>
-									<li><a href="#">Messaggio di notifica un po più lungo del
-											normale</a>
-										<hr></li>
-									<li><a href="#">Messaggio di notifica un po più lungo del
-											normale</a>
-										<hr></li>
-									<li><a href="#">Messaggio di notifica un po più lungo del
-											normale</a>
-										<hr></li>
+									
+									<?php 
+									for($i=0; $i<50;$i++) {
+									?>
+									<li>
+										<a href="/uiportailcee?pageLoaded=Dossiers&id=<?=$i ?>">
+										<span class="form_label"><label for="numDossiers">&#x2116; Dossiers</label></span>
+										<span class="form_label"><label for="nature-piece">Nature de la pièce</label></span>
+										<span class="form_label"><label for="statut">Statut</label></span>
+										
+										</a>
+										<hr>
+									</li>
+									
+									<?php 
+                                    }   
+									?>
 								</ul>
 							</div>
 

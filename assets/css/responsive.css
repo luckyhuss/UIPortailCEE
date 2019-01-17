@@ -46,7 +46,7 @@
 	}
 	.header_right {
 		max-width: 400px;
-		min-width: 200px;
+		min-width: 190px;
 	}
 	.user_profile_holder {
 		width: 55px;
@@ -65,9 +65,14 @@
 	}
 	
 	.dropdown-alerte-notification {
-		left:-68px!important;
+		left:-87px!important;
 		top:47px!important;
 	}
+	
+	#dropdown-alerte-notification .arrow-up {
+		left:146px!important;	
+	}
+	
 	
 	.glyphicon-refresh {
 		display:block;
