@@ -14,15 +14,15 @@
 
 				<div class="user_area">
 
-					<form id="gestUtilisateur_content" class="form_admin_content" action="#"
-						method="POST">
+					<form id="gestUtilisateur_content" class="form_admin_content"
+						action="#" method="POST">
 						<div class="text-danger validation-summary-errors"
 							data-valmsg-summary="true">
 							<ul>
 								<li>Text to be defined</li>
 							</ul>
 						</div>
-						
+
 						<div class="alert fade in alert-dismissible isa_error">
 							<a href="#" class="close-alert" data-dismiss="alert"
 								aria-label="close" title="Fermer">×</a> Ceci est un exemple
@@ -57,7 +57,14 @@
 									</div>
 								</div>
 
-								
+								<div class="col-md-6 input_holder">
+									<div class="form-group">
+										<span class="form_label"><label for="denumSIREN">Dénomination
+												/ SIREN</label></span> <span class="form_input"><input
+											type="text" class="form-control" id="denumSIREN"
+											placeholder=""></span>
+									</div>
+								</div>
 
 								<div class="col-md-6 input_holder">
 									<div class="form-group">
@@ -74,7 +81,7 @@
 
 									</div>
 								</div>
-								
+
 								<div class="col-md-6 input_holder">
 									<div class="form-group">
 										<span class="form_label"><label for="persona">Persona</label></span>
@@ -91,19 +98,24 @@
 									</div>
 								</div>
 
+
 								<div class="col-md-6 input_holder">
 									<div class="form-group">
-										<span class="form_label"><label for="denumSIREN">Dénomination / SIREN</label></span>
-										<span class="form_input"><input type="text"
-											class="form-control" id="denumSIREN" placeholder=""></span>
+										<span class="form_label"><label for="actif">Actif</label></span>
+										<span class="form_input"><input type="checkbox" id="user-actif"
+											name="user-actif"></span>
+
+
 									</div>
 								</div>
 
-
 								<div class="col-md-12 submit_button_holder btn-save-user">
-									<a href="#" class="btn btn-primary submit_button">Sauvegarder</a>
-
+									<a id="save"
+										class="btn btn-primary submit_button add_margin_right">Sauvegarder</a>
+									<a id="cancel" class="btn btn-primary submit_button">Annuler</a>
 								</div>
+
+
 
 
 							</div>

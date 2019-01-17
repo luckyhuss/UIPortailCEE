@@ -26,9 +26,9 @@
 									<th>Prénom</th>
 									<th>Nom</th>
 									<th>Email</th>
-									<th>ID Gigya</th>
-									<th>ID Oxygène</th>
+									<th>Dénomination / SIREN</th>
 									<th>Filiale</th>
+									<th>Persona</th>
 									<th>Actif</th>
 									<th></th>
 								</tr>
@@ -90,9 +90,5 @@ function displayDetailUser(ecran, id) {
 	$("html,body").animate({scrollTop: $("#gestAddEditUtilisateur").offset().top}, 2000);
 }
 
-/* $(document).ready(
-		function() {
-			$("html,body").animate({scrollTop: $("#gestAddEditUtilisateur").offset().top}, 2000);
-			})); */
 
 </script>
