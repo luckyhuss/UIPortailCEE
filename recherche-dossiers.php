@@ -254,7 +254,7 @@
 						</tbody>
 					</table>
 
-
+					<?php include 'listes-pieces.php'; ?>
 
 					<!-- Info Beneficiaire -->
 

@@ -545,7 +545,8 @@ div.each-row{
 	tbody, #signatureElectroniqueFiche tbody,
 	 #conventionsFiche tbody, 
 	#infoActiviteFiche tbody,  #operationsFiche tbody, #resultatRechercherDossier tbody,
-	#simulationEnregistree tbody, #resultatRechercheSim tbody
+	#simulationEnregistree tbody, #resultatRechercheSim tbody, #docEngagementTable tbody,
+	#docAchevementTable tbody
 	{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
@@ -559,7 +560,8 @@ div.each-row{
 	#dossiersDeposes thead, #dossiersPayes thead,  #listeDossiers thead, #dossiersCalendrier thead,
 	#information_autres thead, #resultatFicheRecapTable thead, #InfoSocieteFiche thead, #signatureElectroniqueFiche thead, 
 	#conventionsFiche thead,  #infoActiviteFiche thead, #operationsFiche thead, #resultatRechercherDossier thead,
-	#simulationEnregistree thead, #resultatRechercheSim thead, #listUtilisateur thead, #listContent thead {
+	#simulationEnregistree thead, #resultatRechercheSim thead, #listUtilisateur thead, #listContent thead,
+	#docEngagementTable thead, #docAchevementTable thead {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #838383;
@@ -2718,7 +2720,7 @@ input[name='optradio'] {
 }
 
 .choisirSecteurPanel .header_output, .choisirOperationPanel .header_output, .critereAsaisirPanel .header_output,
-.choisirInfoGeneralPanel .header_output, .choisirIndicePanel .header_output  {
+.choisirInfoGeneralPanel .header_output, .choisirIndicePanel .header_output, .listesPiecesContainer .header_output  {
 	width:55%;
 }
 
@@ -2934,7 +2936,8 @@ input[name='optradio'] {
 }
 
 #repartitionFieldset legend, #RAIFieldset legend, #paiementFieldset legend , #calculReelFieldset legend,
-#resultatRepartitionFieldset legend, #societeFieldset legend, #sectionSigElec legend, #sectionConvention legend {
+#resultatRepartitionFieldset legend, #societeFieldset legend, #sectionSigElec legend, #sectionConvention legend,
+#docEngagementFieldset legend, #docAchevementFieldset legend {
 	background:#fff;
 	color: black;
 } 
@@ -3108,4 +3111,13 @@ input[name='optradio'] {
     padding-left: 15px;
     display: flex;
     justify-content: flex-end;
+}
+
+.listesPiecesContainer .submit_button_holder{
+	text-align: right;
+    margin-bottom: 10px;
+}
+
+#docAchevementFieldset #fileToUpload, #docEngagementFieldset #fileToUpload {
+	height: 34px;
 }

@@ -424,6 +424,11 @@
 	#repartitionRemFieldset .header_output{
 		width: 100%;
 	}
+
+	.listesPiecesContainer .header_output{
+		width : 100%;
+	}
+	
 }
 
 @media (max-width: 992px){
