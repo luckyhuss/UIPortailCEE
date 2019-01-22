@@ -96,50 +96,71 @@
 					</div>
 
 
-					<form id="gestUtilisateur_content" class="form_admin_content"
-						action="#" method="POST">
-
-						<div class="content-container">
-							<div class="row">
-
-								<div class="col-md-6 input_holder">
-									<div class="form-group">
-										<span class="form_label"><label for="Username">Username</label></span>
-										<span class="form_input"><input type="text"
-											class="form-control input-validation-error" id="username"
-											placeholder=""></span>
-									</div>
-								</div>
-
-								<div class="col-md-6 input_holder">
-									<div class="form-group">
-										<span class="form_label"><label for="email">Email</label></span>
-										<span class="form_input"><input type="text"
-											class="form-control" id="email" placeholder=""></span>
-									</div>
-								</div>
-
-								<div class="col-md-6 input_holder">
-									<div class="form-group">
-										<span class="form_label"><label for="password">Mot de passe</label></span>
-										<span class="form_input"><input type="password"
-											class="form-control" id="password" placeholder=""></span>
-									</div>
-								</div>
-
-								<div class="col-md-12 submit_button_holder btn-save-user">
-									<a id="save" class="btn btn-primary submit_button">Sauvegarder</a>
-								</div>
-
-
-							</div>
+					<div class="content-container">
+						<div class="row">
+							<div class="screensetContainer" id="screensetContainer"></div>
 						</div>
-					</form>
+					</div>
+					<script type="text/javascript">
+                window.__gigyaConf = { enableSSOToken: true };
+            </script>
+            					<script>
+                var customLangParamsGigya = {
+                    "GIGYA_LOGIN_SCREEN_CAPTION": 'Portail CEE',
+                    "HEADER_131443300282291300_LABEL": "Connectez-vous au portail CEE"
+                };
+            
+                $(document).ready(function () {
+                    gigya.socialize.addEventHandlers({
+                        callback: function (res) {
+                            //alert('callback');
+                            console.log(res);
+                        }
+                    });
+            
+                    gigya.accounts.showScreenSet({
+                        screenSet: 'CEE-Custom-RegistrationLogin',
+                        startScreen: 'gigya-register-screen',
+                        customLang: customLangParamsGigya,
+                        containerID: 'screensetContainer',
+                        lang: 'fr',
+                        //onAfterScreenLoad: function () {
+                        //    //checkGigyaSession();
+                        //}
+                        onAfterSubmit: function (data) {
+                            console.log(data);
+                        }                                         
+            
+                    });
+                });
+            
+            </script>
+            
+            					<script type="text/javascript"
+            						src="https://cdns.gigya.com/js/gigya.js?apiKey=3_uqyrM6IxD2UABJ48ldLyTKDuY3MxBl53jez4riy1nWRi2FHYav0tt9_Chiohe3OJ"></script>
+            
+            					<script>
+                    var customLangParamsGigya = {
+                        "GIGYA_LOGIN_SCREEN_CAPTION": 'Portail CEE',
+                        "HEADER_131443300282291300_LABEL": "Connectez-vous au portail CEE"
+                    };
+            
+                    $(document).ready(function () {
+                        gigya.accounts.showScreenSet({
+                            screenSet: 'CEE-Custom-RegistrationLogin',
+                            startScreen: 'gigya-register-screen',
+                            customLang: customLangParamsGigya,
+                            containerID: 'screensetContainer',
+                            lang: 'fr'
+                        });
+                    });
+            
+                </script>
+
 
 
 
 				</div>
-				<!-- End User Area -->
 
 
 			</div>
