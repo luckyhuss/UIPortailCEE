@@ -559,8 +559,7 @@ div.each-row{
 	tbody, #signatureElectroniqueFiche tbody,
 	 #conventionsFiche tbody, 
 	#infoActiviteFiche tbody,  #operationsFiche tbody, #resultatRechercherDossier tbody,
-	#simulationEnregistree tbody, #resultatRechercheSim tbody, #docEngagementTable tbody,
-	#docAchevementTable tbody
+	#simulationEnregistree tbody, #resultatRechercheSim tbody, #listePiecesTable tbody
 	{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
@@ -575,7 +574,7 @@ div.each-row{
 	#information_autres thead, #resultatFicheRecapTable thead, #InfoSocieteFiche thead, #signatureElectroniqueFiche thead, 
 	#conventionsFiche thead,  #infoActiviteFiche thead, #operationsFiche thead, #resultatRechercherDossier thead,
 	#simulationEnregistree thead, #resultatRechercheSim thead, #listUtilisateur thead, #listContent thead,
-	#docEngagementTable thead, #docAchevementTable thead {
+	#listePiecesTable thead{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #838383;
@@ -2950,8 +2949,7 @@ input[name='optradio'] {
 }
 
 #repartitionFieldset legend, #RAIFieldset legend, #paiementFieldset legend , #calculReelFieldset legend,
-#resultatRepartitionFieldset legend, #societeFieldset legend, #sectionSigElec legend, #sectionConvention legend,
-#docEngagementFieldset legend, #docAchevementFieldset legend {
+#resultatRepartitionFieldset legend, #societeFieldset legend, #sectionSigElec legend, #sectionConvention legend{
 	background:#fff;
 	color: black;
 } 
@@ -3135,4 +3133,8 @@ input[name='optradio'] {
 
 #docAchevementFieldset #fileToUpload, #docEngagementFieldset #fileToUpload {
 	height: 34px;
+}
+
+.glyphicon-th-list {
+	color : black;
 }

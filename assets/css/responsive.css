@@ -473,7 +473,7 @@
 
 }
 
-@media ( mix-width : 350px) {
+@media ( max-width : 350px) {
 	#infoLegend {
 		width: 250px;
 	}
