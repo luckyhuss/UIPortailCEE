@@ -49,25 +49,66 @@
 							<div class="header-alerte-notification"></div>
 
 							<div class="content-alerte-notification">
+							
+							
 								<ul class="notification-list">
 									
-									<?php 
-									for($i=0; $i<50;$i++) {
-									?>
+									<?php
+                                    for ($i = 0; $i < 5; $i ++) {
+                                    ?>
 									<li>
-										<a href="/uiportailcee?pageLoaded=Dossiers&id=<?=$i ?>">
-										<span class="form_label"><label for="numDossiers">&#x2116; Dossiers</label></span>
-										<span class="form_label"><label for="nature-piece">Nature de la pièce</label></span>
-										<span class="form_label"><label for="statut">Statut</label></span>
-										
-										</a>
+									
+    									<a href="/uiportailcee?pageLoaded=Dossiers&id=<?=$i ?>"> 
+    									
+    									
+    									<span class="form_label"><label for="numDossiers">&#x2116; Dossiers</label>23</span>
+    											
+    								    <span class="form_label"><label for="nature-piece">Statut de la pièce</label></span> 
+    												
+    									<span class="form_label"><label for="nature-piece">Nature de la pièce</label></span>
+    									<span class="descripAlerte">Bon de commandeas asdas asdas</span>
+    
+    									</a>
 										<hr>
 									</li>
 									
-									<?php 
-                                    }   
-									?>
+									<?php
+                                    }
+                                    ?>
+                                    
+                                    
+                                    <?php
+                                    for ($i = 0; $i < 5; $i ++) {
+                                    ?>
+									<li>
+									
+    									<a href="/uiportailcee?pageLoaded=Dossiers&id=<?=$i ?>"> 
+    									
+    									
+    									<span class="form_label"><label for="numDossiers">&#x2116; Dossiers</label></span>
+    											
+    								    <span class="form_label"><label for="nature-piece">Statut de
+    													la pièce</label></span> 
+    													
+    									<span class="form_label"><label
+    												for="statut">Raison d'inégibilité</label></span>
+    												
+    									</a>
+										<hr>
+									</li>
+									
+									<?php
+                                    }
+                                    ?>
+                                    
+                                    
 								</ul>
+								
+								<div class="submit_button_holder">
+											<a href="/uiportailcee?pageLoaded=HistoriqueAlertes" class="btn btn-primary submit_button btn-voir-alerte"
+												role="button">Voir plus</a>
+										</div>
+								
 							</div>
 
 							<div class="refresh-alerte-notification">
