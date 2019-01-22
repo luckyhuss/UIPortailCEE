@@ -30,7 +30,7 @@
 
 <?php 
 
-$cssLoaded = "AS24";
+$cssLoaded = "ADMIN";
 
 
 $persona = ($cssLoaded == "AS24") ? "-AS24": "";
@@ -99,7 +99,7 @@ body { background-color: #fafafa; }
 	               break;
 	               
 	           case 'HistoriqueSimulation':
-	                $activeSimulation = "active-link";
+	               $activeSimulation = "active-link";
 	               $activeHistoriqueSimulation = "active-link";
 	               $pageLoaded = "simulationHistoriques";
 	               $openSimulation = "in";
@@ -153,6 +153,9 @@ body { background-color: #fafafa; }
 	               $activeAdminPermission = "active-link";
 	               $pageLoaded = "admin-permission";
 	               $openAdmin = "in";
+	               break;
+	           case 'HistoriqueAlertes':
+	               $pageLoaded = "historique-alertes";
 	               break;
 	           default:
                    $activeHome = "active-link";
