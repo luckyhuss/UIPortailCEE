@@ -35,7 +35,7 @@
 		<div class="reset_wrapper">
 
 
-			<form class="login" id="login"></form>
+			<form class="reset" id="reset"></form>
 
 		
 			<script type="text/javascript">
@@ -55,7 +55,7 @@
 							screenSet: 'CEE-Custom-RegistrationLogin',
 							startScreen: 'gigya-reset-password-screen',
 							customLang: customLangParamsGigya,
-							containerID: 'login',
+							containerID: 'reset',
 							lang:'fr'
 						});
 
