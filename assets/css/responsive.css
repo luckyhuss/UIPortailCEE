@@ -440,6 +440,14 @@
 		margin-bottom: 10px;
 		margin-top: 10px;
 	}
+
+	.choisirResultatOpePanel .input_holder{
+		width: 100%;
+	}
+
+	#resultatCumulePanel .input_holder {
+		width : 100%;
+	}
 }
 
 @media (max-width: 767px){
@@ -455,9 +463,6 @@
 		clear:left;
 	}
 
-	.choisirResultatOpePanel .input_holder{
-		width: 100%;
-	}
 }
 
 @media (min-width:768px) and (max-width:992px) {
