@@ -65,7 +65,8 @@
                     "GIGYA_LOGIN_SCREEN_CAPTION":'Portail CEE',
                     "LOGINID_100164167086612030_PLACEHOLDER" : "Saisissez votre Email",
                     "PASSWORD_145545960497275740_PLACEHOLDER":"Saisissez votre Mot de passe",
-                    "SUBMIT_1050490235864925_VALUE":"Se connecter"
+                    //"SUBMIT_1050490235864925_VALUE":"Se connecter"
+                    "SUBMIT_142674579108303380_VALUE":"Se connecter"
                     //"this_field_is_required":'login is required'
                 };
 

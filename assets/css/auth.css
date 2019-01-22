@@ -25,7 +25,7 @@ body {
 
 .total-logo_container img {
 	border: 0px solid red;
-	width: 400px !important;
+	width: 300px !important;
 	position: relative !important;
 }
 
@@ -270,63 +270,26 @@ body {
 	margin: 0px 0px 0px 0px;
 }
 
-/*
-#global {
-	margin: 0px;
-	height: 100vh;
-	width: 100%;
-	border: 1px solid blue;
-	display: inline-flex;
-}
 
-#cee-login-container_content {
-	border: 1px solid red;
-	margin: 0px;
-	display:block!important;
-	margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-#gigya-login-screen {
-	padding-right: 0px;
-	padding-left: 0px;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
-}
-
-#cee-login-container {
-	display:block!important;
-	margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-.gigya-composite-control {
-	display: flex !important;
-}*/
 #cee-login-container_content_caption {
 	display: none;
 }
 
 .gigya-input-text, .gigya-input-password{
 	border-radius:10px!important;
+	height:34px!important
 }
 
 .gigya-input-submit {
 	background: #09509c !important;
-	max-width: 125px !important;
+	max-width: 120px !important;
 	margin-left: 0px !important;
 	float:right!important;
-	height:32px!important;
+	height:30px!important;
 	
 	border-radius:4px!important;
 	font-family:'Open Sans', Sans-serif!important;
-	font-size:18px!important;
+	font-size:16px!important;
     margin-bottom: 5px!important;
     padding: 0px!important;
 	
@@ -340,9 +303,6 @@ body {
 	height: 100vh;
 }
 
-.gigya-screen.portrait {
-	width: 100% !important;
-}
 
 .gigya-screen-content div.gigya-screen.landscape {
 	width: 100% !important;
@@ -359,6 +319,10 @@ body {
     padding-right: 10px !important;
     padding-top: 10px !important; 
     padding-bottom: 5px !important; 
+}
+
+.gigya-screen {
+	
 }
 
 @media ( max-width : 550px) {
@@ -416,9 +380,9 @@ body {
 }
 
 h1.gigya-screen-caption {
-	font-size: 30px !important;
-	padding-left: 15px !important;
-	padding-top: 5px !important;
+	padding-left: 10px !important;
+	padding-top: 1px !important;
+	padding-bottom: 1px !important;
 	/* margin-left: 0px !important;
 	margin-top: -10px !important; */
 	border: 0px solid blue;
@@ -440,13 +404,12 @@ form header {
 
 #login_content_caption {
 	border: 0px solid yellow;
-	margin-right: -10px !important;
+	margin-right: 0px !important;
+	font-family:'Open Sans', Sans-serif;
+	font-size: 16pt!important;
 }
 
-#login_content_caption {
-	border: 0px solid blue;
-	margin-right: 0px !important;
-}
+
 
 .gig-tfa-button-submit {
 	border-color: transparent !important;
@@ -601,55 +564,6 @@ footer {
 }
 
 
-/* Modal*/
-/*  .modal-dialog {
-	position:relative;
-	width:50%!important;
-	left:50%!important;
-	top:125px;
-	padding: 19px 20px 20px;
-	margin: 0 auto!important;
-}  */
-/* 
-.modal-header{
-	padding: 5px !important;
-	font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    background-color: #272727;
-    
-    
-	padding-top:3px 3px!important;
-} */
-
-/* .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; 15% from the top and centered
-    border: 1px solid #888;
-    width: 450px; Could be more or less, depending on screen size
-    border-radius:0px!important;
-    max-width: 100%!important;
-} */
-
-/* .modal-body{
-	padding:15px!important;
-}
-
-.btn-default {
-    color: #333;
-    background-color: #fff;
-    border-color: #ccc;
-}
-
-.modal-footer{
-    padding-bottom: 5px!important;
-    padding-top: 5px!important;
-    margin-top: 3px;
-    padding-left: 0px!important;
-    padding-right: 5px!important;
-    font-family: 'Open Sans', sans-serif!important;
-    font-size: 15px;
-    background-color: #272727;
-} */
 
 .modal-header .btn{
 	width:25px!important;
@@ -663,29 +577,6 @@ footer {
 	float: right;
 	padding: 1px 6px;
 }
-
-/* .btn {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-} */
-
 
 
 #loginModal .modal-header .btn, #loginModal .modal-footer .btn {
@@ -881,5 +772,35 @@ footer {
 
 
 .gigya-screen .gigya-composite-control.gigya-composite-control-label.main-text, .gigya-screen.portrait div.gigya-tfa .gig-tfa-container .gig-tfa-header-text {
-    padding-bottom: 20px!important;
+    padding-bottom: 15px!important;
+    font-weight: bold!important;
+}
+
+
+#gigya-reset-password-form .gigya-composite-control-link {
+	display:none!important;
+}
+
+.gigya-screen.landscape .gigya-layout-row.with-divider {
+    padding-bottom: 5px!important;
+}
+
+.gigya-screen {
+	padding-bottom: 5px!important;
+}
+
+.gigya-screen a, .gigya-screen a:active, .gigya-screen a:link, .gigya-screen a:visited {
+	font-family: 'Open Sans',sans-serif!important; 
+	font-size:12px!important;
+	display: flex;
+    justify-content: flex-end;
+}
+
+.gigya-screen .gigya-layout-cell {
+	width:100%!important;
+}
+
+.gigya-label-text {
+	font-family: 'Open Sans',sans-serif!important; 
+	font-size:14px!important;
 }

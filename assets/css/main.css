@@ -179,7 +179,7 @@ footer {
 
 .dropdown-alerte-notification {
 	margin: 4px 0 1px;
-	font-size: 14px;
+	font-size: 9pt;
 	font-family: 'Open Sans', sans-serif;
 	color: black;
 	z-index:1000;
@@ -225,12 +225,10 @@ footer {
 
 div .content-alerte-notification {
 	height:280px;
-	font-size: 10pt;
-	font-family: 'Open Sans', sans-serif;
 	z-index:1001;
 	overflow:auto;
     background:#fff;
-    padding:10px 12px 5px;
+    padding:10px 8px 5px;
 }
 
 #dropdown-alerte-notification .arrow-up {
@@ -254,6 +252,22 @@ div .content-alerte-notification {
 .notification-list>li, .notification-list a:hover, .notification-list span:hover {
 	cursor:pointer;
 	color:#9A1A4A;
+}
+
+.btn-voir-alerte {
+	font-size: 7pt!important;
+    padding: 4px 8px 4px;
+}
+
+.dropdown-alerte-notification .submit_button_holder {
+	display: flex;
+    justify-content: flex-end;
+}
+
+.content-alerte-notification .form_label>label {
+    width: 125px;
+    height: 25px;
+    padding: 2px 2px;
 }
 
 .badge-notify {
@@ -3112,6 +3126,7 @@ input[name='optradio'] {
     display: flex;
     justify-content: flex-end;
 }
+
 
 .listesPiecesContainer .submit_button_holder{
 	text-align: right;
