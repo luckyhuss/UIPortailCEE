@@ -14,7 +14,7 @@
 				<div class="row">
 			
 					<div class="col-md-12 data_table_holder">
-						<table id="listUtilisateur"
+						<table id="listPermission"
 							class="table table-striped table-bordered nowrap"
 							style="width: 100%">
 							<thead>
@@ -71,12 +71,9 @@
 
 function displayPermision(id) {
 	$("#add-edit-panel").css("display", "block");
-	$("html,body").animate({scrollTop: $("#gestAddEditPermission").offset().top}, 2000);
+	$("html,body").animate({scrollTop: $("#gestAddEditPermission").offset().top}, 1000);
 }
 
-/* $(document).ready(
-		function() {
-			$("html,body").animate({scrollTop: $("#gestAddEditUtilisateur").offset().top}, 2000);
-			})); */
+
 
 </script>

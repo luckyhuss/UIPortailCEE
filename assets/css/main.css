@@ -574,7 +574,8 @@ div.each-row{
 	tbody, #signatureElectroniqueFiche tbody,
 	 #conventionsFiche tbody, 
 	#infoActiviteFiche tbody,  #operationsFiche tbody, #resultatRechercherDossier tbody,
-	#simulationEnregistree tbody, #resultatRechercheSim tbody, #listePiecesTable tbody
+	#simulationEnregistree tbody, #resultatRechercheSim tbody, #listePiecesTable tbody, 
+	#listPermission tbody, #listRefusPieces tbody, #listRefusDossiers tbody
 	{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
@@ -589,7 +590,8 @@ div.each-row{
 	#information_autres thead, #resultatFicheRecapTable thead, #InfoSocieteFiche thead, #signatureElectroniqueFiche thead, 
 	#conventionsFiche thead,  #infoActiviteFiche thead, #operationsFiche thead, #resultatRechercherDossier thead,
 	#simulationEnregistree thead, #resultatRechercheSim thead, #listUtilisateur thead, #listContent thead,
-	#listePiecesTable thead{
+	#listePiecesTable thead, 
+	#listPermission thead, #listRefusPieces thead, #listRefusDossiers thead {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #838383;
@@ -1734,7 +1736,7 @@ div.dataTables_wrapper div.dataTables_paginate {
 	margin-bottom: -1px;
 }
 
-.panel-default > .tabs-rechercher , .panel-default > .tabs-administration{
+.panel-default > .tabs-rechercher , .panel-default > .tabs-administration .nav-tabs {
 	padding: 5px 5px 0 5px;
 	border-bottom: 0px !important;
 	font-family:'Open Sans', Sans-serif;
@@ -2295,6 +2297,12 @@ button[name='btn-sauvegarder'], button[name='btn-annuler'] {
 	margin-left:-5px;		
 }
 
+.tabs-gestion {
+	padding-bottom:0px;
+	background:#fff;
+	margin-right:-5px;
+	margin-left:-5px;		
+}
 
 
 
