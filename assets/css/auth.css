@@ -15,23 +15,29 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	max-height: 125.56px;
+	height: 70px;
 	background-image: linear-gradient(to right, #ffffff, #484848);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 	/*background-image: linear-gradient(to right, white, #e6e6e6);
 	
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0
 		rgba(0, 0, 0, .12);*/
 }
 
+.total-logo_container {
+	height:100%!important;
+}
+
 .total-logo_container img {
 	border: 0px solid red;
-	width: 300px !important;
+	width: 220px !important;
 	position: relative !important;
+	height:100%!important;
 }
 
 @media ( max-width : 640px) {
 	.total-logo_container img {
-		width: 300px !important;
+		width: 220px !important;
 	}
 }
 

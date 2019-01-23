@@ -215,6 +215,12 @@ footer {
 	color:#fff!important;
 }
 
+.descriptAlerte {
+	display: inline-flex;
+    width: 108px;
+    vertical-align: top;
+}
+
 .notification-list a {
 	color:#000!important;
 }
@@ -223,12 +229,20 @@ footer {
 	margin:5px 0 5px;
 }
 
+.notification-list li {
+	padding-top: 3px;
+    padding-bottom: 0px;
+    background: #f5f5f5;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
 div .content-alerte-notification {
 	height:280px;
 	z-index:1001;
 	overflow:auto;
-    background:#fff;
-    padding:10px 8px 5px;
+    background:#fff;/* #ebe9e5; */
+    padding:5px 0px 5px;
 }
 
 #dropdown-alerte-notification .arrow-up {
@@ -266,8 +280,9 @@ div .content-alerte-notification {
 
 .content-alerte-notification .form_label>label {
     width: 125px;
-    height: 25px;
+    height: 20px;
     padding: 2px 2px;
+    margin-right:0px!important;
 }
 
 .badge-notify {

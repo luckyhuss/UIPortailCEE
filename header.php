@@ -61,12 +61,14 @@
     									<a href="/uiportailcee?pageLoaded=Dossiers&id=<?=$i ?>"> 
     									
     									
-    									<span class="form_label"><label for="numDossiers">&#x2116; Dossiers</label>23</span>
+    									<span class="form_label"><label for="numDossiers">&#x2116; Dossiers</label></span>
+    									<span class="descriptAlerte">45678102</span>
     											
-    								    <span class="form_label"><label for="nature-piece">Statut de la pièce</label></span> 
+    								    <span class="form_label"><label for="nature-piece">Statut de la pièce</label></span>
+    								    <span class="descriptAlerte">En attente</span>
     												
     									<span class="form_label"><label for="nature-piece">Nature de la pièce</label></span>
-    									<span class="descripAlerte">Bon de commandeas asdas asdas</span>
+    									<span class="descriptAlerte">Bon de commandes test here also</span>
     
     									</a>
 										<hr>
@@ -86,12 +88,14 @@
     									
     									
     									<span class="form_label"><label for="numDossiers">&#x2116; Dossiers</label></span>
+    									<span class="descriptAlerte">321548836</span>
     											
     								    <span class="form_label"><label for="nature-piece">Statut de
     													la pièce</label></span> 
+    													<span class="descriptAlerte">Rejeté</span>
     													
-    									<span class="form_label"><label
-    												for="statut">Raison d'inégibilité</label></span>
+    									<span class="form_label"><label for="statut">Raison d'inégibilité</label></span>
+    									<span class="descriptAlerte">Bon de commandes test here also</span>
     												
     									</a>
 										<hr>
