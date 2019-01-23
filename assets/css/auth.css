@@ -173,7 +173,7 @@ transform
 	padding: 0px 0px;
 	margin-bottom: 10px;
 	width: 100%;
-	border: 1px solid #ddd;
+	border: 0px solid #ddd;
 	transition: border-width 0.2s ease;
 	border-radius: 2px;
 	color: #ccc;
@@ -286,7 +286,7 @@ body {
 	height:34px!important
 }
 
-.gigya-input-submit {
+input.gigya-input-submit {
 	background: #e00032 !important;
 	max-width: 120px !important;
 	margin-left: 0px !important;
