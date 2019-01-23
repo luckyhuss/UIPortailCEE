@@ -23,7 +23,7 @@
 
 	<div class="page_banner">
 		<div class="page_total-logo">
-			<img alt="" src="assets/img/trans-back-total.png">
+			<img alt="" src="assets/img/total-logo_280.png">
 		</div>
 	</div>
 

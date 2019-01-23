@@ -1502,7 +1502,9 @@ ul.cards-container {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-image: linear-gradient(to right, #ffffff, #484848);
+	height: 70px;
+	background-image: linear-gradient(to right, #ffffff, #666666);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 	/*background-image: linear-gradient(to right, white, #e6e6e6);
 	
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0
@@ -1518,15 +1520,20 @@ ul.message_container li, h1, h3 {
 	padding: 0px 0px 0px 0px;
 }
 
+.page_total-logo {
+	height:100%!important;
+}
+
 .page_total-logo img {
 	border: 0px solid red;
-	width: 400px;
+	width: 220px;
 	position: relative;
+	height:100%!important;
 }
 
 @media ( max-width : 640px) {
 	.page_total-logo img {
-		width: 300px;
+		width: 220px;
 	}
 }
 
