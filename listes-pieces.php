@@ -114,7 +114,7 @@
 	<div class="modal-dialog liste_critere" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="btn btn-default custom-close">x</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">x</button>
 				<h4 class="modal-title" id="myModalLabel">Critères d'éligibilité</h4>
 			</div>
 
@@ -138,7 +138,7 @@
 	<div class="modal-dialog liste_critere" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="btn btn-default custom-close">x</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">x</button>
 				<h4 class="modal-title" id="myModalLabel">Commentaires</h4>
 			</div>
 
