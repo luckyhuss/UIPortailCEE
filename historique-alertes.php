@@ -5,7 +5,7 @@
 			<li class="tabs-pane"><a href="#tabNotification" data-toggle="tab">Notifications</a></li>
 		</ul>
 
-		<div class="panel-body tabs-gest-contenu">
+		<div class="panel-body tabs-gestion">
 			<div class="tab-content">
 
 				<div class="tab-pane fade in active" id="tabAlerte">
@@ -45,11 +45,5 @@
         }
     });
 
-    function displayDetailContent(gestion, id) {
-    	
-    	//alert('gestion ' + gestion);
-    	$("#panel-detail-contenu-" + gestion).css("display", "block");
-    	$("html,body").animate({scrollTop: $("#collapseDetailContenu-" + gestion).offset().top}, 2000);
-    	
-    }
+    
   </script>

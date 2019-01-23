@@ -442,7 +442,7 @@ $(document).ready(function() {
 	//jQuery('#detailDossierOperations').wrap('<div class="dataTables_scroll" />');		
 	$('#listeDossiers, #detailDossierOperations')
 		.DataTable({paging: true});	
-	$('#listUtilisateur, #listContent-secteur, #listContent-filiale').DataTable({
+	$('#listUtilisateur, #listContent-secteur, #listContent-filiale, #listRefusDossiers, #listRefusPieces, #listPermission').DataTable({
 		paging: true, 
 		/*searching:true,
 		"dom": '<"top"f>rt<"bottom"flp><"clear">'*/
