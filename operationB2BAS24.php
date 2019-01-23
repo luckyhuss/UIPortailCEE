@@ -404,14 +404,16 @@
 		hideResultatOperation(cloneIndex-1);
 
     }
-    function remove(all = false) {
+    function remove(all = false, object = null) {
 		if(!all){
-			$(this).parents(".clonedOP").remove();
+			object = object !== null ? object : $(this);
+			object.parents(".clonedOP").remove();
 		}else{
 			$(".clonedOP").each(function(index, val){
 				if (index == 0) {
 					$('.remove').hide();
 					$(this).parent().addClass('displayed');
+					$(this).find('.choisirCritereContainer, .criteresEligibilitePanel, .resultatOperationPanel').addClass('displayed');
 				} else {
 					$(this).remove();
 				}
@@ -423,23 +425,16 @@
         } else {
             $('.remove').show();
         }
-        $("#clonedOP1 .remove").hide();
+        $("#clonedOP1 .remove, .tbodyClone .clone").hide();
 
-        $(".tbodyClone .clone").hide();
-        var obj = $( ".tbodyClone .clonedOP:last-child" ).attr('id');
-
-		$( "#" + obj + " div.col-md-12.ajouter_operation button").show();
-
-		//console.log('numOP at Removal : ' + numOperation() );
+		var obj = $( ".tbodyClone .clonedOP:last-child" ).attr('id');
+		
+		$( `#${obj} div.col-md-12.ajouter_operation button`).show();
 
 		var numOP = numOperation();
 		if(numOP == 1) {
 			cloneIndex = 1;
-			console.log('reset here at removal');
 		}
-
-		//get last id after removal
-		// console.log('obj value: ' , obj , ' Reset ID @ ' + getLastOperationId(obj) + ' Last child ' + obj + " cloneIndex: ", cloneIndex);
 
 		cloneIndex = parseInt(getLastOperationId(obj));
 
@@ -451,7 +446,10 @@
 	}
 
     $(document).on("click", ".clone", clone);
-    $(document).on("click", ".remove", remove);
+    //$(document).on("click", ".remove", remove);
+    $(document).on("click", ".remove", function(){
+		remove(false, $(this));
+	});
 
 
 
