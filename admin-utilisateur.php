@@ -50,13 +50,14 @@
 									
 											
 									
-									<td class="iconCol col-action-btn">
+									<td class="iconCol col-action-btn" style="width:8%!important">
+									<span class="icon-holder"> <a href="javascript:void(0)"><i data-toggle="modal" data-target="#Modal1"
+												class="glyphicon glyphicon-eye-open"></i></a></span>
 									    <span class="icon-holder"><a
 											href="javascript:void(0)" onclick="displayDetailUser('edit', <?=$n?>);"><i
 												class="glyphicon glyphicon-edit" data-toggle="collapse"
 												data-target="#collapseDetailUser"></i></a></span>
-										<span class="icon-holder"> <a href="javascript:void(0)"><i data-toggle="modal" data-target="#Modal1"
-												class="glyphicon glyphicon-eye-open"></i></a></span>
+										
 									</td>
 												
 									
