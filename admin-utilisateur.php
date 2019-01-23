@@ -47,10 +47,19 @@
 									<td>dr-23-3e-das-67</td>
 									<td>GFX</td>
 									<td>Oui</td>
-									<td class="iconCol"><a href="javascript:void(0)"
-										onclick="displayDetailUser('edit', <?=$n?>);"><i
-											class="glyphicon glyphicon-edit" data-toggle="collapse"
-											data-target="#collapseDetailUser"></i></a></td>
+									
+											
+									
+									<td class="iconCol col-action-btn">
+									    <span class="icon-holder"><a
+											href="javascript:void(0)" onclick="displayDetailUser('edit', <?=$n?>);"><i
+												class="glyphicon glyphicon-edit" data-toggle="collapse"
+												data-target="#collapseDetailUser"></i></a></span>
+										<span class="icon-holder"> <a href="javascript:void(0)"><i data-toggle="modal" data-target="#Modal1"
+												class="glyphicon glyphicon-eye-open"></i></a></span>
+									</td>
+												
+									
 								</tr>
 
 								<?php
@@ -67,7 +76,32 @@
 		</div>
 	</div>
 	
-	
+<!-- modal detail info -->
+<div class="modal fade popin-donnee" id="Modal1" tabindex="-1"
+	role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog liste_critere" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+				<h4 class="modal-title" id="myModalLabel">Détail Utilisateur</h4>
+			</div>
+
+			<div class="modal-body">
+				<ul>
+					<li>Info 1: Val1</li>
+					<li>Info 2: Val2</li>
+					<li>Info 3: Val3</li>
+					<li>Info 4: Val4</li>
+					<li>Info 5: Val5</li>
+				</ul>
+			</div>
+
+			<div class="modal-footer">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- modal detail info -->	
 	
 	
 	
@@ -78,6 +112,7 @@
 
 
 function displayDetailUser(ecran, id) {
+ 
 	$('#email, [for="email"]').removeAttr('disabled').removeClass('disabled');
 
 	if(ecran == 'edit') {
@@ -87,7 +122,8 @@ function displayDetailUser(ecran, id) {
 
 	$("#add-edit-panel").css("display", "block");
 	
-	$("html,body").animate({scrollTop: $("#gestAddEditUtilisateur").offset().top}, 2000);
+	$("html,body").animate({scrollTop: $("#gestAddEditUtilisateur").offset().top}, 1000);
+
 }
 
 
