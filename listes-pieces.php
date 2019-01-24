@@ -155,20 +155,44 @@
                 <div class="col-md-12 input_holder">
                     <div class="header-group">
                         <span class="header_label"><label for="listeCritères">Critères d'éligibilité</label></span>
-                        <span class="header_output"><a href="javascript:void(0)" onclick=""><i class="glyphicon glyphicon-th-list" data-toggle="modal" data-target="#listeCriteresDocModal"></i></a></span>
+                        <span class="header_output"><a href="javascript:void(0)" onclick="displayCriterePanel();"><i class="glyphicon glyphicon-th-list" data-toggle="collapse" href="#critereEliPanelGroup"></i></a></span>
                     </div>
                 </div>
 
-                    <div class="col-md-12 input_holder">
-                        <div class="header-group">
-                            <span class="header_label"><label for="choisirDoc">Document</label></span>
-                            <span class="header_output">
-                                <input type=file style="display: none" id=choose>
-                                <input type=button onClick=getFile.simulate() value="Choisir un fichier">
-                                <label id=selected>Pas de fichier</label>
-                            </span>
+                <div class="col-md-12 input_holder">
+                    <div class="panel-group displayed" id="critereEliPanelGroup">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseCritereEli">Critères d'éligibilité</a></span>
+                                    <span class="panel_header_element"><a data-toggle="collapse" href="#collapseCritereEli"></a></span>
+                                </h4>
+                            </div>
+
+                            <div id="collapseCritereEli" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>Refusé</li>
+                                        <li>Voir les critères d'éligibilité</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+
+
+                <div class="col-md-12 input_holder">
+                    <div class="header-group">
+                        <span class="header_label"><label for="choisirDoc">Document</label></span>
+                        <span class="header_output">
+                            <input type=file style="display: none" id=choose>
+                            <input type=button onClick=getFile.simulate() value="Choisir un fichier">
+                            <label id=selected>Pas de fichier</label>
+                        </span>
+                    </div>
+                </div>
+
 			</div>
 
 			<div class="modal-footer">
@@ -179,7 +203,6 @@
 		</div>
 	</div>
 </div>
-
 
 <script>
 
@@ -232,4 +255,9 @@
 
 var getFile = new selectFile;
 getFile.targets('choose','selected');
+
+function displayCriterePanel() {
+    $("#critereEliPanelGroup").toggleClass("displayed");
+}
+
 </script>

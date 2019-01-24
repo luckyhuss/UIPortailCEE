@@ -2612,8 +2612,7 @@ fieldset .header-group, #collapseInfoActivite .header-group, #formSearchBrouillo
 	margin-bottom:10px;
 	}
 
-fieldset span.header_output , #collapseInfoActivite span.header_output, .form_exporter span.header_output,
-#uploadFileModal span.header_output {
+fieldset span.header_output , #collapseInfoActivite span.header_output, .form_exporter span.header_output {
 	max-width: 350px;
 	display: inline-block;
  	max-height: 50px;
@@ -2765,8 +2764,7 @@ input[name='optradio'] {
 }
 
 .choisirSecteurPanel .header_output, .choisirOperationPanel .header_output, .critereAsaisirPanel .header_output,
-.choisirInfoGeneralPanel .header_output, .choisirIndicePanel .header_output, .listesPiecesContainer .header_output,
- #uploadFileModal .header_output {
+.choisirInfoGeneralPanel .header_output, .choisirIndicePanel .header_output, .listesPiecesContainer .header_output{
 	width:55%;
 }
 
@@ -3218,4 +3216,14 @@ input[name='optradio'] {
 #listUtilisateur .highlighted a:link, #listUtilisateur .highlighted a:visited {
     font-weight: bold;
     color: #e00032;
+}
+
+#uploadFileModal .header_output {
+	width: 65%;
+}
+
+#uploadFileModal span.header_output {
+	display: inline-block;
+ 	max-height: 50px;
+  	padding:0px;
 }
