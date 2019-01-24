@@ -1019,7 +1019,8 @@ caption {
 #collapseListeDossiers .submit_button_holder, #collapseDossiersPayes .submit_button_holder,
 	#collapseDossiersEnCours .submit_button_holder,
 	#collapseDossiersDeposes .submit_button_holder, #collapseSearchBarFiche .submit_button_holder,
-	#formCritereSim .submit_button_holder, #collapseDetailSimulation .submit_button_holder, #collapseHistoSim .submit_button_holder
+	#formCritereSim .submit_button_holder, #collapseDetailSimulation .submit_button_holder, #collapseHistoSim .submit_button_holder,
+	#uploadFileModal .submit_button_holder
 	{
 	text-align: right;
 }
@@ -2611,7 +2612,8 @@ fieldset .header-group, #collapseInfoActivite .header-group, #formSearchBrouillo
 	margin-bottom:10px;
 	}
 
-fieldset span.header_output , #collapseInfoActivite span.header_output, .form_exporter span.header_output {
+fieldset span.header_output , #collapseInfoActivite span.header_output, .form_exporter span.header_output,
+#uploadFileModal span.header_output {
 	max-width: 350px;
 	display: inline-block;
  	max-height: 50px;
@@ -2763,7 +2765,8 @@ input[name='optradio'] {
 }
 
 .choisirSecteurPanel .header_output, .choisirOperationPanel .header_output, .critereAsaisirPanel .header_output,
-.choisirInfoGeneralPanel .header_output, .choisirIndicePanel .header_output, .listesPiecesContainer .header_output  {
+.choisirInfoGeneralPanel .header_output, .choisirIndicePanel .header_output, .listesPiecesContainer .header_output,
+ #uploadFileModal .header_output {
 	width:55%;
 }
 
@@ -3167,4 +3170,52 @@ input[name='optradio'] {
 
 .glyphicon-th-list {
 	color : black;
+}
+
+#listUtilisateur .alert {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.vendor_logo_hide {
+	display: inline !important;
+	color: transparent;
+	width: 99px;
+  }
+  
+  .vendor_logo {
+	display: block !important;
+	color: black;
+	width: 100%;
+  }
+
+  #uploadFileModal .header-group{
+	padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  #uploadFileModal .header_label>label{
+	width: 200px;
+  }
+
+  #uploadFileModal .modal-footer .btn {
+	padding: 6px 12px;
+	margin-bottom: 10px;
+  }
+
+  #listUtilisateur .alert {
+    padding: 5px;
+    font-weight: bold;
+}
+
+#listUtilisateur .highlighted {
+    font-weight: bold;
+    color: #e00032;
+}
+
+#listUtilisateur .highlighted, #listUtilisateur .highlighted a, #listUtilisateur .highlighted a:active,
+#listUtilisateur .highlighted a:link, #listUtilisateur .highlighted a:visited {
+    font-weight: bold;
+    color: #e00032;
 }

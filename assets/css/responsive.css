@@ -425,9 +425,9 @@
 		width: 100%;
 	}
 
-	.listesPiecesContainer .header_output{
+	/* .listesPiecesContainer .header_output{
 		width : 100%;
-	}
+	} */
 	
 }
 
@@ -481,6 +481,18 @@
 @media ( max-width : 350px) {
 	#infoLegend {
 		width: 250px;
+	}
+}
+
+@media ( max-width : 1488px) {
+	#uploadFileModal .header_output {
+		width: 100%;
+	}
+}
+
+@media ( min-width : 1488px) {
+	#uploadFileModal .modal-content {
+		width: 35%!important;
 	}
 }
 /* RESPONSIVE */
