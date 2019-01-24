@@ -32,7 +32,7 @@
 
 	<div class="banner_container">
 		<div class="total-logo_container">
-			<img alt="" src="assets/img/total-logo_280.png">   <!-- trans-back-total.png total-logo_280.png -->
+			<img alt="" src="assets/img/total-logo.png">   <!-- trans-back-total.png total-logo_280.png -->
 		</div>
 	</div>
 
