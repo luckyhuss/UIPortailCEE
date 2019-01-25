@@ -1,0 +1,165 @@
+<style>
+
+    .email_wrapper {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        min-width: 620px;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+    
+    /* Basic */
+    .border {
+        background-color: #e0e0e0;
+        width: 1px;
+        font-size: 1px;
+        line-height: 1px;
+    }
+    
+    .padded {
+        padding: 0 24px;
+    }
+    
+    img {
+        border: 0;
+        -ms-interpolation-mode: bicubic;
+    }
+    
+    strong, .strong {
+        font-weight: 700;
+    }
+    
+    .email_btn {
+        background-color: #e00032 !important;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-color: #e00032;
+        padding: 6px 12px;
+        color: #fff;
+        border-radius: 4px;
+    }
+    
+    /* Main */
+    .main_email {
+        -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+        -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    }
+    
+    /* Content */
+    .column {
+        text-align: left;
+        background-color: #ffffff;
+        font-size: 14px;
+    }
+    
+    .column-top {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    
+    .column-bottom {
+        font-size: 8px;
+        line-height: 8px;
+    }
+    
+    .email_content p {
+        margin-top: 0;
+        margin-bottom: 16px;
+        color: #212121;
+        font-family: 'Open Sans', Sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    
+    /* Footer */
+    .email_signature {
+        vertical-align: bottom;
+        width: 300px;
+        padding-top: 8px;
+        margin-bottom: 16px;
+        text-align: left;
+        width: 300px;
+        padding-left: 10px;
+    }
+    
+    .email_signature p {
+        margin-top: 0;
+        margin-bottom: 8px;
+        color: #212121;
+        font-family: 'Open Sans', Sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+    .url_link
+    {  
+        width: 100%;
+        height: 100%;
+        border-color: Transparent;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+        font-weight: 600;
+    }
+    
+    .logo-image img{
+        width: 8%;
+    }
+    
+    </style>
+    
+    <left class="email_wrapper">
+        <table class="main_email" width="700" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr>
+                <td class="column">
+                    <div class="column-top">&nbsp;</div>
+                    <table class="email_content" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                        <tr>
+                            <td class="padded">
+                              <p>Bonjour <strong>[PRENOM] [NOM] </strong>,</p>
+                              <p>Vous venez d’effectuer une demande de mot de passe. Veuillez cliquer sur ce lien pour le réinitialiser : </p>
+                              <p style="text-align:center;"><a href="#" class="email_btn">REINITIALISER MOT DE PASSE</a></p>
+                              <p>Si le lien ne fonctionne pas, copiez-collez l’adresse ci-dessous dans la barre d’adresse de votre navigateur : </p>
+                              <p>
+                                <div class="url_link">
+                                    <span>https://rec.totalcee.fr/Account/Reset?apiKey=3_uqyrM6IxD2UABJ48ldLyTKDuY3MxBl53jez4riy1nWRi2FHYav0tt9_Chiohe3OJ&pwrt=PR1_stD_aD~02045353544b073830333232313401946c~QDMgbatpjA5hTJGBnHhUidcYIZK6SBzVc_27RBYCWdmS6bz8RQqStlwIvKFs85mckqfWcQJ8_kT9vbJdYj7WXyoQZPNQ9lxpVplfcl4YUNvMeA~</span>
+                                </div>
+                              </p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="column-bottom">&nbsp;</div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    
+        <table class="footer" width="700" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr>
+                <td class="border" colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="email_signature">
+                    <div class="logo-image">
+                        <img src="https://rec.totalcee.fr/Content/assets/img/ADMIN-small.png">
+                    </div>
+                    <p>
+                        Cordialement, <br>
+                        L’équipe Total CEE <br>
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </left>    
