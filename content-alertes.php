@@ -15,7 +15,7 @@
 				<div class="row">
 					<div class="col-md-12 data_table_holder">
 						<table id="listRefusPieces"
-							class="table table-striped table-bordered nowrap"
+							class="table table-striped table-bordered nowrap listDataTable"
 							style="width: 100%">
 							<thead>
 								<tr>
@@ -76,7 +76,7 @@
 				<div class="row">
 					<div class="col-md-12 data_table_holder">
 						<table id="listRefusDossiers"
-							class="table table-striped table-bordered nowrap"
+							class="table table-striped table-bordered nowrap listDataTable"
 							style="width: 100%">
 							<thead>
 								<tr>

@@ -13,44 +13,265 @@
 		<div id="gestUtilisateurGigya" class="panel-collapse collapse in">
 			<div class="panel-body">
 				<div class="row">
-					<div class="col-md-12 submit_button_holder admin-btn-new">
-						<a href="javascript:void(0)"
-							class="btn btn-primary submit_button newUser"
-							onclick="javascript:displayDetailUser('new');">Nouvel Utilisateur</a>
-
-					</div>
+					
 
 					<div class="col-md-12 data_table_holder">
-						<table id="listUtilisateur"
-							class="table table-striped table-bordered nowrap"
+						<table id="listUtilisateurGigya"
+							class="table table-striped table-bordered nowrap listDataTable"
 							style="width: 100%">
 							<thead>
 								<tr>
-									<th>Email</th>
-									<th></th>
-								</tr>
+                                    <th>Nom</th>
+                                    <th>Prénom</th>
+                                    <th>Email</th>
+                                    <th>Synchroniser Gigya</th>
+                                    <th>Synchroniser O<sub>2</sub></th>
+                                </tr>
 							</thead>
 							<tbody>
+
+
 							
-								<?php
-        for ($n = 0; $n <= 50; $n ++) {
-            ?>
-                            
-                            	<tr>
-									<td>jjohnasdasd<?=$n?>@testasdsa.com</td>
-									<td class="iconCol col-action-btn"><span class="icon-holder"><a
-											href="javascript:void(0)" onclick="displayDetailUser();"><i
-												class="glyphicon glyphicon-edit" data-toggle="collapse"
-												data-target="#collapseDetailUser"></i></a></span><span
-										class="icon-holder"> <a href="javascript:void(0)"
-											onclick="deleteUser('jjohnasdasd<?=$n?>@testasdsa.com');"><i
-												class="glyphicon glyphicon-trash"></i></a></span></td>
+							<tbody>
+								
+								<tr class="highlighted odd" role="row">
+									
+									<td>Admin</td>
+									
+									<td>Super</td>
+									
+									<td>test.portail.cee.super@yopmail.com</td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);"
+											onclick="synchroniseWithGigyaAccount('Admin','Super','test.portail.cee.super@yopmail.com','3c5f5f924d4d4c25b2ac07cae5ec47bd');"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span></td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);" onclick="synchroniseWithO2(6);"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span><span
+										class="icon-holder"><i title="Pas d'Id Recherche O2"
+											class="glyphicon glyphicon-alert"
+											style="font-size: 20px; color: #ff9966"
+											data-toggle="collapse" data-target="#collapseDetailUser"></i></span></td>
+								
 								</tr>
-                            
-                            	<?php
-        }
-        ?>
-							</tbody>
+								
+								
+								<tr role="row" class="even">
+									
+									<td>AS24</td>
+									
+									<td>Test</td>
+									
+									<td>test.portail.cee.as24@yopmail.com</td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);"
+											onclick="synchroniseWithGigyaAccount('AS24','Test','test.portail.cee.as24@yopmail.com','754e1ec3ac3b4922a20f414d03eca221');"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span></td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);" onclick="synchroniseWithO2(3);"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span></td>
+								
+								</tr>
+								
+								
+								<tr role="row" class="odd">
+									
+									<td>CAPEB</td>
+									
+									<td>Test</td>
+									
+									<td>test.portail.cee.capeb@yopmail.com</td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);"
+											onclick="synchroniseWithGigyaAccount('CAPEB','Test','test.portail.cee.capeb@yopmail.com','d67b34ddbe924367b36d12cc78ceaa78');"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span></td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);" onclick="synchroniseWithO2(4);"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span></td>
+								
+								</tr>
+								
+								
+								<tr role="row" class="even">
+									
+									<td>CEE</td>
+									
+									<td>Admin</td>
+									
+									<td>test.portail.cee@yopmail.com</td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);"
+											onclick="synchroniseWithGigyaAccount('CEE','Admin','test.portail.cee@yopmail.com','bd95b1d85d844832bf7c915c37ecc400');"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span></td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);" onclick="synchroniseWithO2(1);"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span><span
+										class="icon-holder"><i title="Pas d'Id Recherche O2"
+											class="glyphicon glyphicon-alert"
+											style="font-size: 20px; color: #ff9966"
+											data-toggle="collapse" data-target="#collapseDetailUser"></i></span></td>
+								
+								</tr>
+								
+								
+								<tr role="row" class="odd">
+									
+									<td>CLMB</td>
+									
+									<td>Test</td>
+									
+									<td>test.portail.cee.clmb@yopmail.com</td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);"
+											onclick="synchroniseWithGigyaAccount('CLMB','Test','test.portail.cee.clmb@yopmail.com','958e6ba0b6ff41ffba298c3932af4877');"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span></td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);" onclick="synchroniseWithO2(5);"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span></td>
+								
+								</tr>
+								
+								
+								<tr role="row" class="even">
+									
+									<td>Filiale</td>
+									
+									<td>Admin</td>
+									
+									<td>test.portail.cee.f@yopmail.com</td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);"
+											onclick="synchroniseWithGigyaAccount('Filiale','Admin','test.portail.cee.f@yopmail.com','6865b4a275144e7dab90d130dfd9ebeb');"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span></td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);" onclick="synchroniseWithO2(9);"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span><span
+										class="icon-holder"><i title="Pas d'Id Recherche O2"
+											class="glyphicon glyphicon-alert"
+											style="font-size: 20px; color: #ff9966"
+											data-toggle="collapse" data-target="#collapseDetailUser"></i></span></td>
+								
+								</tr>
+								
+								
+								<tr role="row" class="odd">
+									
+									<td>GFX</td>
+									
+									<td>Test</td>
+									
+									<td>test.portail.cee.gfx@yopmail.com</td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);"
+											onclick="synchroniseWithGigyaAccount('GFX','Test','test.portail.cee.gfx@yopmail.com','3a8cefef7a1a4af8a177974fde6b5f16');"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span></td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);" onclick="synchroniseWithO2(2);"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span></td>
+								
+								</tr>
+								
+								
+								<tr role="row" class="even">
+									
+									<td>Groupe</td>
+									
+									<td>Admin</td>
+									
+									<td>test.portail.cee.sf@yopmail.com</td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);"
+											onclick="synchroniseWithGigyaAccount('Groupe','Admin','test.portail.cee.sf@yopmail.com','90096b0478fb44ecb28c18dcc409135c');"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span></td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);" onclick="synchroniseWithO2(7);"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span><span
+										class="icon-holder"><i title="Pas d'Id Recherche O2"
+											class="glyphicon glyphicon-alert"
+											style="font-size: 20px; color: #ff9966"
+											data-toggle="collapse" data-target="#collapseDetailUser"></i></span></td>
+								
+								</tr>
+								
+								
+								<tr role="row" class="odd">
+									
+									<td>Secteur</td>
+									
+									<td>Admin</td>
+									
+									<td>test.portail.cee.s@yopmail.com</td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);"
+											onclick="synchroniseWithGigyaAccount('Secteur','Admin','test.portail.cee.s@yopmail.com','5699206974be4ed39d7111e41fc139c9');"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span></td>
+									
+									<td class=" iconCol col-action-btn"><span class="icon-holder"><a
+											href="javascript:void(0);" onclick="synchroniseWithO2(8);"><i
+												class="glyphicon glyphicon-retweet"
+												style="font-size: 20px; color: #337ab7"
+												data-toggle="collapse" data-target="#collapseDetailUser"></i></a></span><span
+										class="icon-holder"><i title="Pas d'Id Recherche O2"
+											class="glyphicon glyphicon-alert"
+											style="font-size: 20px; color: #ff9966"
+											data-toggle="collapse" data-target="#collapseDetailUser"></i></span></td>
+								
+								</tr>
+							
+							</tbody></tbody>
+
+
 						</table>
 
 					</div>

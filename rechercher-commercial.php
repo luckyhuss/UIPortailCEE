@@ -1,4 +1,3 @@
-
 <div class="panel with-nav-tabs panel-default">
 	<div class="panel-heading tabs-rechercher">
 		<ul class="nav nav-tabs">

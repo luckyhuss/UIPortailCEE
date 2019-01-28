@@ -1744,7 +1744,7 @@ div.dataTables_wrapper div.dataTables_paginate {
 	margin-bottom: -1px;
 }
 
-.panel-default > .tabs-rechercher , .panel-default > .tabs-administration .nav-tabs {
+.panel-default > .tabs-rechercher , .panel-default > .tabs-administration {
 	padding: 5px 5px 0 5px;
 	border-bottom: 0px !important;
 	font-family:'Open Sans', Sans-serif;
@@ -3227,3 +3227,19 @@ input[name='optradio'] {
  	max-height: 50px;
   	padding:0px;
 }
+
+.listDataTable {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	
+}
+
+.listDataTable tbody {
+	color: #303030;
+}
+
+.listDataTable thead {
+	color: #838383;
+}
+
+

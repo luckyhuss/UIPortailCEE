@@ -1,4 +1,4 @@
-<div class="panel with-nav-tabs panel-default">
+<div class="panel with-nav-tabs panel-default ">
 	<div class="panel-heading tabs-administration" id="contenuTabs">
 		<ul class="nav nav-tabs">
 			<li class="tabs-pane active"><a href="#tabSecteur" data-toggle="tab">Secteurs</a></li>
