@@ -3,7 +3,7 @@
         <div class="fieldset-container">
 
             <div class="col-md-12 submit_button_holder">
-                <a href="javascript:void(0)" id="ajouterUnDoc" class="btn btn-primary submit_button" role="button" data-toggle="modal"
+                <a href="javascript:void(0)" id="btn_ajouterUnDoc" class="btn btn-primary submit_button" role="button" data-toggle="modal"
                                     data-target="#uploadFileModal">Ajouter un document</a>
             </div>
 
