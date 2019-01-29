@@ -253,6 +253,34 @@ div .content-alerte-notification {
 	left:100px!important;	
 }
 
+
+.content-alerte-notification fieldset {
+	margin-left: 1px!important;
+    margin-right: 1px!important;    
+    padding: 2px 0 5px 0 !important;
+}
+
+.content-alerte-notification legend {
+	margin-bottom: 2px;
+    width: 100px!important;
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+
+.fieldset-notifications {
+    margin-top: 10px!important;
+}
+
+.content-alerte-notification .fieldset-container {
+	padding-left: 1px !important;
+    padding-right: 1px !important;
+}
+
+#dropdown-alerte-notification .submit_button_holder {
+	padding-right: 2px;
+}
+
 .content-user-profile, .content-notification {
 	padding: 15px;
 	font-weight: 700;
@@ -3227,6 +3255,7 @@ input[name='optradio'] {
 .listDataTable {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
+	width:100%;
 	
 }
 
@@ -3247,3 +3276,6 @@ input[name='optradio'] {
     font-size: 18px !important;
     color: #337ab7 !important;
 }
+
+
+

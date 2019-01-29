@@ -3,7 +3,7 @@
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<span class="panel_header_element"><a data-toggle="collapse"
-					href="#listeRefusPieces">Refus Pièces</a></span> <span
+					href="#listeRefusPieces">Refus Pièces  Alerte</a></span> <span
 					class="panel_header_element"><a data-toggle="collapse"
 					href="#listeRefusPieces"><i class="glyphicon glyphicon-list-alt"></i></a></span>
 			</h4>
