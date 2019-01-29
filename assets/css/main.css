@@ -1749,7 +1749,7 @@ div.dataTables_wrapper div.dataTables_paginate {
 	border-bottom: 0px !important;
 	font-family:'Open Sans', Sans-serif;
 	font-size:15px;
-	font-weight:600;
+	/* font-weight:600; */
 }
 
 .nav-tabs{
@@ -3197,25 +3197,21 @@ input[name='optradio'] {
 	width: 200px;
   }
 
-  #uploadFileModal .modal-footer .btn {
+#uploadFileModal .modal-footer .btn {
 	padding: 6px 12px;
 	margin-bottom: 10px;
-  }
+}
 
-  #listUtilisateur .alert {
+#listUtilisateur .alert {
     padding: 5px;
     font-weight: bold;
 }
 
-#listUtilisateur .highlighted {
-    font-weight: bold;
-    color: #e00032;
-}
 
-#listUtilisateur .highlighted, #listUtilisateur .highlighted a, #listUtilisateur .highlighted a:active,
-#listUtilisateur .highlighted a:link, #listUtilisateur .highlighted a:visited {
-    font-weight: bold;
-    color: #e00032;
+.highlighted, .highlighted a, .highlighted a:active,
+.highlighted a:link, .highlighted a:visited {
+        font-weight: bold;
+        color: #e00032;
 }
 
 #uploadFileModal .header_output {
@@ -3247,3 +3243,7 @@ input[name='optradio'] {
 }
 
 
+.glyphicon-eye-open, .glyphicon-edit, a > .glyphicon-edit {
+    font-size: 18px !important;
+    color: #337ab7 !important;
+}
