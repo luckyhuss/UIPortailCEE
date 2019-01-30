@@ -5,7 +5,7 @@
         <fieldset class="fieldset-margin-bottom choisirModeDePaiementPanel">
             <legend>Informations paiement</legend>
 
-            <div class="fieldset-container">
+            <div class="fieldset-container" id="repartitionMDPFieldset">
 
                 <div class="col-sm-6 col-md-3 input_holder">
                     <div class="form-group">
@@ -51,7 +51,7 @@
 
                 <div class="col-sm-6 col-md-3 input_holder">
                     <div class="header-group">
-                        <span class="header_label"><label for="RemunerationPro">Professionel</label></span> <span
+                        <span class="form_label"><label for="RemunerationPro">Professionel</label></span> <span
                             class="header_output"><input type="text"
                             class="form-control" id="remunerationPro" placeholder=""></span>
                     </div>
@@ -59,7 +59,7 @@
 
                 <div class="col-sm-6 col-md-3 input_holder">
                     <div class="header-group">
-                        <span class="header_label"><label for="RemunerationBen">Bénéficiaire</label></span> <span
+                        <span class="form_label"><label for="RemunerationBen">Bénéficiaire</label></span> <span
                             class="header_output"><input type="text"
                             class="form-control" id="remunerationBen" placeholder=""></span>
                     </div>
@@ -67,7 +67,7 @@
 
                 <div class="col-sm-6 col-md-3 input_holder">
                     <div class="header-group">
-                        <span class="header_label"><label for="RemunerationAA">Apporteur affaire</label></span> <span
+                        <span class="form_label"><label for="RemunerationAA">Apporteur affaire</label></span> <span
                             class="header_output"><input type="text"
                             class="form-control" id="remunerationAA" placeholder=""></span>
                     </div>

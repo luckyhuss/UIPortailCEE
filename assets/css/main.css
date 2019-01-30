@@ -2796,7 +2796,8 @@ input[name='optradio'] {
 }
 
 .choisirSecteurPanel .header_output, .choisirOperationPanel .header_output, .critereAsaisirPanel .header_output,
-.choisirInfoGeneralPanel .header_output, .choisirIndicePanel .header_output, .listesPiecesContainer .header_output{
+.choisirInfoGeneralPanel .header_output, .choisirIndicePanel .header_output, .listesPiecesContainer .header_output,
+.choisirInfoBenefPanel .header_output, .choisirInfoProPanel .header_output{
 	width:55%;
 }
 
@@ -2821,7 +2822,7 @@ input[name='optradio'] {
 	width:220px;
 }
 
-.choisirProspectPartenaire legend {
+.choisirProspectPartenaire legend, .choisirInfoBenefPanel legend, .choisirInfoProPanel legend {
 	width:230px;
 }
 
@@ -2844,7 +2845,7 @@ input[name='optradio'] {
 	padding-right:15px;
 }
 
-.choisirProspectPartenaire .input_holder, .choisirModeDePaiementPanel .input_holder, #repartitionMSDFieldset .input_holder {
+.choisirProspectPartenaire .input_holder, #repartitionMDPFieldset .input_holder, #repartitionMSDFieldset .input_holder {
 	height:40px;
 	padding-left:5px;
 }
@@ -3103,7 +3104,7 @@ input[name='optradio'] {
 	padding-right:5px;
 }
 .choisirCadreContributionPanel .input_holder, .choisirRepartitionMSDPanel .input_holder, #repartitionMSDFieldset .form_label,
-#repartitionRemFieldset .form_label {
+#repartitionRemFieldset .form_label, .choisirInfoProPanel .input_holder, .choisirInfoBenefPanel {
 	padding-left: 5px;
 }
 
@@ -3279,6 +3280,14 @@ input[name='optradio'] {
 .glyphicon-eye-open, .glyphicon-edit, a > .glyphicon-edit {
     font-size: 18px !important;
     color: #337ab7 !important;
+}
+
+.choisirInfoBenefPanel .infoBenefFields {
+	padding: 0px;
+}
+
+.choisirInfoBenefPanel .input_holder {
+	padding-left: 5px;
 }
 
 

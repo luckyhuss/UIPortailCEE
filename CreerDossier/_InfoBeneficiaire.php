@@ -7,7 +7,7 @@
 
 				<div class="fieldset-container">
 
-                    <div class="col-sm-3 col-md-3 input_holder">
+                    <div class="col-sm-6 col-md-3 input_holder">
 						<div class="form-group">
 							<span class="form_input"><input type="radio" name="optradio"
 								value="creerDossierB2B"></span> <span class="form_label"><label
@@ -15,7 +15,7 @@
 						</div>
 					</div>
 
-					<div class="col-sm-3 col-md-3 input_holder">
+					<div class="col-sm-6 col-md-3 input_holder">
 						<div class="form-group">
 							<span class="form_input"><input type="radio" name="optradio"
 								value="creerDossierB2C"></span> <span class="form_label"><label

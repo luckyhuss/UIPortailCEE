@@ -472,9 +472,9 @@
 }
 
 @media ( max-width : 422px) {
-.choisirCritereContainer .header-group .header_output{
-	width: 100%;
-}
+	.choisirCritereContainer .header-group .header_output{
+		width: 100%;
+	}
 
 }
 
@@ -493,6 +493,27 @@
 @media ( min-width : 1488px) {
 	#uploadFileModal .modal-content {
 		width: 35%!important;
+	}
+}
+
+@media ( max-width : 427px) {
+	.choisirInfoProPanel .header-group .header_output{
+		width: 100%;
+	}
+
+	.choisirInfoProPanel .header-group label {
+		width: 100%;
+	}
+
+}
+
+@media ( max-width : 437px) {
+	.choisirInfoBenefPanel .header_output{
+		width: 100%;
+	}
+
+	.choisirInfoBenefPanel .header-group label{
+		width: 100%;
 	}
 }
 /* RESPONSIVE */
