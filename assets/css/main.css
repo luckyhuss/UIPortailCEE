@@ -2599,9 +2599,13 @@ a.close-alert {
 	width: 90%;
     position: absolute;
     float: left;
-    top: 20%;
+    top: 140px;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.admin-content h1{
+	font-size:34px!important;
 }
 
 
