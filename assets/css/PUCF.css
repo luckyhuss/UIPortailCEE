@@ -1,0 +1,301 @@
+/*
+	Load css for ROZO
+
+	
+*/
+.header_left {
+	background-color: #ffffff;
+}
+
+.header_right {
+	background-color: #ffffff;
+}
+
+.sidebar {
+	background-color: #020942;
+}
+
+.navbar-fixed-bottom {
+	background-color: #020942;
+	border: 0px;
+}
+
+.nav_area .menu_item_wrapper .menu_item {
+	background: #020942 !important;
+}
+
+.nav_area .panel-default {
+	border-color: #020942 !important;
+}
+
+.nav-menu {
+	background: #020942 !important;
+}
+
+/*MENU ON HOVER*/
+.nav_area .nav-menu:hover {
+	background: #e61a3b !important;
+}
+
+.nav_area .menu_item_wrapper .menu_item a:hover, .nav_area .menu_item_wrapper .menu_item a:focus
+	{
+	text-decoration: none;
+}
+
+.active-link {
+	background-color: #e61a3b !important;
+}
+
+.home {
+	background-color: #e61a3b !important;
+}
+
+.submit_button {
+	background-color: #e61a3b !important;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.icon_holder .glyphicon {
+	color: #e61a3b;
+}
+
+.user_profile {
+	color: #e61a3b;
+}
+
+.content-user-profile {
+	color: #e61a3b;
+}
+
+.arrow-up {
+	border-bottom: 10px solid #020942;
+}
+
+.dropdown-menu-user-profile, #dropdown-alerte-notification, #dropdown-user-profile {
+	background: #020942 !important;
+}
+
+/* modal css */
+
+/* .popin-donnee .modal-header, .popin-donnee .modal-footer {
+	background-color: #020942;
+}
+ */
+
+
+/* .popin-donnee .modal-header .btn:hover, .popin-donnee .modal-footer .btn:hover {
+	color: #ffffff;
+	background: #e61a3b;
+} */
+
+.pagination>.active>a {
+	background-color: #e61a3b;
+	border-color: #e61a3b;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #e61a3b;
+    border-color: #e61a3b;
+}
+
+/* numbered list for documents info cee */
+.numberlist a {
+	background: #FFF;
+	color: #020942;
+}
+
+.numberlist a:hover, .numberlist a:hover span {
+	background: #e61a3b;
+}
+
+
+
+.numberlist a:before {
+	background: #e61a3b;
+}
+
+.numberlist .expand {
+	border: 1px solid #020942;
+}
+
+.numberlist span {
+	color: #7f8c8d;
+}
+/* numbered list for documents info cee */
+
+/* info cee card hover */
+.card-test:hover .btn-default {
+	color: #fff;
+	background-color: #e61a3b;
+	border-color: #e61a3b;
+}
+
+.card-test:hover .card {
+	border-color: #e61a3b;
+}
+
+.card .glyphicon {
+	color: #e61a3b;
+}
+/* info cee card hover */
+.submit_button_holder .btn-primary {
+	border-color: #e61a3b;
+}
+
+.fc-head tr {
+	background: #020942 !important;
+}
+
+.fc-right button {
+	background: #e61a3b !important;
+}
+
+.fc-day-grid {
+	background: #f9f9f9;
+}
+
+/*******************************************************************
+************************ TABS Rechercher **************************/
+
+.with-nav-tabs {
+	border-color:#020942;
+}
+
+.panel-default > .tabs-rechercher, .panel-default > .tabs-administration {
+	background:#020942; /* #01afba; */
+}
+
+.nav-tabs>li>a:hover {
+    background-color: #e61a3b!important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #e61a3b!important;
+}
+
+
+/**************************************************************************************/
+
+.select-items .same-as-selected div {
+  	background-color: #e61a3b!important;
+  	color: blue!important;
+}
+
+
+.select-items div:hover,.same-as-selected {
+  	background-color: #e61a3b!important;
+  	color: #fff!important;
+}
+
+input[type='radio']:checked:after {
+        border: 6px solid #e61a3b;
+}
+
+input[type='checkbox']:checked:after {
+        border: 6px solid #e61a3b;
+}
+
+
+.numberlist .nav-pills>li.active>a {
+    color: #fff;
+    background-color: #e61a3b;
+}
+
+.numberlist .tab-content{
+	border: 1px solid #e61a3b;
+}
+
+.fc-today {
+	font-weight: 600;
+	background: #e61a3b !important;
+	color: #ffff;
+}
+
+/* couleur par filiale */
+.aLink, .aLink:hover, .aLink:focus {
+	color: #e61a3b;
+}
+
+.stat_icon_wrapper .glyphicon-stats{
+	color: #e61a3b;
+}
+
+#collapseHistoSim .searchTerm {
+    border: 2px solid #e61a3b;
+}
+  
+  #collapseHistoSim .form-control:focus {
+    border-color: #e61a3b;
+    box-shadow: none;
+}
+  
+#collapseHistoSim .searchButton {
+    border: 1px solid #e61a3b;
+    background: #e61a3b;
+}
+
+.numberlist .accordion-view .panel {
+	border: 1px solid #e61a3b;
+}
+
+.ajouter_operation .btn-circle{
+    background-color: #e61a3b !important;
+    border: 3px solid #ddd;
+    color: white;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+}
+
+.ajouter_operation .btn_operation{
+    background-color: white !important;
+    border: 1px solid #e61a3b;
+    /* width: 50%; */
+    text-align: left;
+}
+
+.dateEstimeeCommande .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active {
+	background-color: #e61a3b;
+	background-image: none;
+}
+
+.visualiserKit .glyphicon-download-alt{
+	color: #e61a3b;
+}
+
+select option {
+	background: #e61a3b;
+}
+
+option:not(:checked) { 
+	background-color: #FFF; 
+}
+
+.dateEstimeeCommande .input_holder .form-control{
+	border: 2px solid #e61a3b;
+	margin-left: 10px;
+}
+
+.dateEstimeeCommande .calendar_button{
+	color: #e61a3b;
+}
+
+
+legend {
+	background:#e61a3b;
+	color:#fff;
+}
+
+
+/******************************************/
+/*   			notification  			  */
+/******************************************/
+.dropdown-alerte-notification, .dropdown-user-profile {
+	border:1px solid #020942 !important;
+}
