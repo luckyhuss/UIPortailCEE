@@ -12,29 +12,29 @@
 }
 
 .sidebar {
-	background-color: #00307c;
+	background-color: #263980;
 }
 
 .navbar-fixed-bottom {
-	background-color: #00307c;
+	background-color: #263980;
 	border: 0px;
 }
 
 .nav_area .menu_item_wrapper .menu_item {
-	background: #00307c !important;
+	background: #263980 !important;
 }
 
 .nav_area .panel-default {
-	border-color: #00307c !important;
+	border-color: #263980 !important;
 }
 
 .nav-menu {
-	background: #00307c !important;
+	background: #263980 !important;
 }
 
 /*MENU ON HOVER*/
 .nav_area .nav-menu:hover {
-	background: #df8144 !important;
+	background: #ea7724 !important;
 }
 
 .nav_area .menu_item_wrapper .menu_item a:hover, .nav_area .menu_item_wrapper .menu_item a:focus
@@ -43,15 +43,15 @@
 }
 
 .active-link {
-	background-color: #df8144 !important;
+	background-color: #ea7724 !important;
 }
 
 .home {
-	background-color: #df8144 !important;
+	background-color: #ea7724 !important;
 }
 
 .submit_button {
-	background-color: #df8144 !important;
+	background-color: #ea7724 !important;
 	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
 	font-weight: 700;
@@ -59,69 +59,69 @@
 }
 
 .icon_holder .glyphicon {
-	color: #df8144;
+	color: #ea7724;
 }
 
 .user_profile {
-	color: #df8144;
+	color: #ea7724;
 }
 
 .content-user-profile {
-	color: #df8144;
+	color: #ea7724;
 }
 
 .arrow-up {
-	border-bottom: 10px solid #00307c;
+	border-bottom: 10px solid #263980;
 }
 
 .dropdown-menu-user-profile, #dropdown-alerte-notification, #dropdown-user-profile {
-	background: #00307c !important;
+	background: #263980 !important;
 }
 
 /* modal css */
 
 /* .popin-donnee .modal-header, .popin-donnee .modal-footer {
-	background-color: #00307c;
+	background-color: #263980;
 }
  */
 
 
 /* .popin-donnee .modal-header .btn:hover, .popin-donnee .modal-footer .btn:hover {
 	color: #ffffff;
-	background: #df8144;
+	background: #ea7724;
 } */
 
 .pagination>.active>a {
-	background-color: #df8144;
-	border-color: #df8144;
+	background-color: #ea7724;
+	border-color: #ea7724;
 }
 
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
     z-index: 3;
     color: #fff;
     cursor: default;
-    background-color: #df8144;
-    border-color: #df8144;
+    background-color: #ea7724;
+    border-color: #ea7724;
 }
 
 /* numbered list for documents info cee */
 .numberlist a {
 	background: #FFF;
-	color: #00307c;
+	color: #263980;
 }
 
 .numberlist a:hover, .numberlist a:hover span {
-	background: #df8144;
+	background: #ea7724;
 }
 
 
 
 .numberlist a:before {
-	background: #df8144;
+	background: #ea7724;
 }
 
 .numberlist .expand {
-	border: 1px solid #00307c;
+	border: 1px solid #263980;
 }
 
 .numberlist span {
@@ -132,28 +132,28 @@
 /* info cee card hover */
 .card-test:hover .btn-default {
 	color: #fff;
-	background-color: #df8144;
-	border-color: #df8144;
+	background-color: #ea7724;
+	border-color: #ea7724;
 }
 
 .card-test:hover .card {
-	border-color: #df8144;
+	border-color: #ea7724;
 }
 
 .card .glyphicon {
-	color: #df8144;
+	color: #ea7724;
 }
 /* info cee card hover */
 .submit_button_holder .btn-primary {
-	border-color: #df8144;
+	border-color: #ea7724;
 }
 
 .fc-head tr {
-	background: #00307c !important;
+	background: #263980 !important;
 }
 
 .fc-right button {
-	background: #df8144 !important;
+	background: #ea7724 !important;
 }
 
 .fc-day-grid {
@@ -164,88 +164,88 @@
 ************************ TABS Rechercher **************************/
 
 .with-nav-tabs {
-	border-color:#00307c;
+	border-color:#263980;
 }
 
 .panel-default > .tabs-rechercher, .panel-default > .tabs-administration {
-	background:#00307c; /* #01afba; */
+	background:#263980; /* #01afba; */
 }
 
 .nav-tabs>li>a:hover {
-    background-color: #df8144!important;
+    background-color: #ea7724!important;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    background-color: #df8144!important;
+    background-color: #ea7724!important;
 }
 
 
 /**************************************************************************************/
 
 .select-items .same-as-selected div {
-  	background-color: #df8144!important;
+  	background-color: #ea7724!important;
   	color: blue!important;
 }
 
 
 .select-items div:hover,.same-as-selected {
-  	background-color: #df8144!important;
+  	background-color: #ea7724!important;
   	color: #fff!important;
 }
 
 input[type='radio']:checked:after {
-        border: 6px solid #df8144;
+        border: 6px solid #ea7724;
 }
 
 input[type='checkbox']:checked:after {
-        border: 6px solid #df8144;
+        border: 6px solid #ea7724;
 }
 
 
 .numberlist .nav-pills>li.active>a {
     color: #fff;
-    background-color: #df8144;
+    background-color: #ea7724;
 }
 
 .numberlist .tab-content{
-	border: 1px solid #df8144;
+	border: 1px solid #ea7724;
 }
 
 .fc-today {
 	font-weight: 600;
-	background: #df8144 !important;
+	background: #ea7724 !important;
 	color: #ffff;
 }
 
 /* couleur par filiale */
 .aLink, .aLink:hover, .aLink:focus {
-	color: #df8144;
+	color: #ea7724;
 }
 
 .stat_icon_wrapper .glyphicon-stats{
-	color: #df8144;
+	color: #ea7724;
 }
 
 #collapseHistoSim .searchTerm {
-    border: 2px solid #df8144;
+    border: 2px solid #ea7724;
 }
   
   #collapseHistoSim .form-control:focus {
-    border-color: #df8144;
+    border-color: #ea7724;
     box-shadow: none;
 }
   
 #collapseHistoSim .searchButton {
-    border: 1px solid #df8144;
-    background: #df8144;
+    border: 1px solid #ea7724;
+    background: #ea7724;
 }
 
 .numberlist .accordion-view .panel {
-	border: 1px solid #df8144;
+	border: 1px solid #ea7724;
 }
 
 .ajouter_operation .btn-circle{
-    background-color: #df8144 !important;
+    background-color: #ea7724 !important;
     border: 3px solid #ddd;
     color: white;
     position: absolute;
@@ -255,22 +255,22 @@ input[type='checkbox']:checked:after {
 
 .ajouter_operation .btn_operation{
     background-color: white !important;
-    border: 1px solid #df8144;
+    border: 1px solid #ea7724;
     /* width: 50%; */
     text-align: left;
 }
 
 .dateEstimeeCommande .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active {
-	background-color: #df8144;
+	background-color: #ea7724;
 	background-image: none;
 }
 
 .visualiserKit .glyphicon-download-alt{
-	color: #df8144;
+	color: #ea7724;
 }
 
 select option {
-	background: #df8144;
+	background: #ea7724;
 }
 
 option:not(:checked) { 
@@ -278,17 +278,17 @@ option:not(:checked) {
 }
 
 .dateEstimeeCommande .input_holder .form-control{
-	border: 2px solid #df8144;
+	border: 2px solid #ea7724;
 	margin-left: 10px;
 }
 
 .dateEstimeeCommande .calendar_button{
-	color: #df8144;
+	color: #ea7724;
 }
 
 
 legend {
-	background:#df8144;
+	background:#ea7724;
 	color:#fff;
 }
 
@@ -297,5 +297,5 @@ legend {
 /*   			notification  			  */
 /******************************************/
 .dropdown-alerte-notification, .dropdown-user-profile {
-	border:1px solid #00307c !important;
+	border:1px solid #263980 !important;
 }

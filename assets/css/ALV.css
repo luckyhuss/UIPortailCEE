@@ -12,29 +12,29 @@
 }
 
 .sidebar {
-	background-color: #576777;
+	background-color: #7f7f7f;
 }
 
 .navbar-fixed-bottom {
-	background-color: #576777;
+	background-color: #7f7f7f;
 	border: 0px;
 }
 
 .nav_area .menu_item_wrapper .menu_item {
-	background: #576777 !important;
+	background: #7f7f7f !important;
 }
 
 .nav_area .panel-default {
-	border-color: #576777 !important;
+	border-color: #7f7f7f !important;
 }
 
 .nav-menu {
-	background: #576777 !important;
+	background: #7f7f7f !important;
 }
 
 /*MENU ON HOVER*/
 .nav_area .nav-menu:hover {
-	background: #fa012c !important;
+	background: #ff0023 !important;
 }
 
 .nav_area .menu_item_wrapper .menu_item a:hover, .nav_area .menu_item_wrapper .menu_item a:focus
@@ -43,15 +43,15 @@
 }
 
 .active-link {
-	background-color: #fa012c !important;
+	background-color: #ff0023 !important;
 }
 
 .home {
-	background-color: #fa012c !important;
+	background-color: #ff0023 !important;
 }
 
 .submit_button {
-	background-color: #fa012c !important;
+	background-color: #ff0023 !important;
 	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
 	font-weight: 700;
@@ -59,69 +59,69 @@
 }
 
 .icon_holder .glyphicon {
-	color: #fa012c;
+	color: #ff0023;
 }
 
 .user_profile {
-	color: #fa012c;
+	color: #ff0023;
 }
 
 .content-user-profile {
-	color: #fa012c;
+	color: #ff0023;
 }
 
 .arrow-up {
-	border-bottom: 10px solid #576777;
+	border-bottom: 10px solid #7f7f7f;
 }
 
 .dropdown-menu-user-profile, #dropdown-alerte-notification, #dropdown-user-profile {
-	background: #576777 !important;
+	background: #7f7f7f !important;
 }
 
 /* modal css */
 
 /* .popin-donnee .modal-header, .popin-donnee .modal-footer {
-	background-color: #576777;
+	background-color: #7f7f7f;
 }
  */
 
 
 /* .popin-donnee .modal-header .btn:hover, .popin-donnee .modal-footer .btn:hover {
 	color: #ffffff;
-	background: #fa012c;
+	background: #ff0023;
 } */
 
 .pagination>.active>a {
-	background-color: #fa012c;
-	border-color: #fa012c;
+	background-color: #ff0023;
+	border-color: #ff0023;
 }
 
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
     z-index: 3;
     color: #fff;
     cursor: default;
-    background-color: #fa012c;
-    border-color: #fa012c;
+    background-color: #ff0023;
+    border-color: #ff0023;
 }
 
 /* numbered list for documents info cee */
 .numberlist a {
 	background: #FFF;
-	color: #576777;
+	color: #7f7f7f;
 }
 
 .numberlist a:hover, .numberlist a:hover span {
-	background: #fa012c;
+	background: #ff0023;
 }
 
 
 
 .numberlist a:before {
-	background: #fa012c;
+	background: #ff0023;
 }
 
 .numberlist .expand {
-	border: 1px solid #576777;
+	border: 1px solid #7f7f7f;
 }
 
 .numberlist span {
@@ -132,28 +132,28 @@
 /* info cee card hover */
 .card-test:hover .btn-default {
 	color: #fff;
-	background-color: #fa012c;
-	border-color: #fa012c;
+	background-color: #ff0023;
+	border-color: #ff0023;
 }
 
 .card-test:hover .card {
-	border-color: #fa012c;
+	border-color: #ff0023;
 }
 
 .card .glyphicon {
-	color: #fa012c;
+	color: #ff0023;
 }
 /* info cee card hover */
 .submit_button_holder .btn-primary {
-	border-color: #fa012c;
+	border-color: #ff0023;
 }
 
 .fc-head tr {
-	background: #576777 !important;
+	background: #7f7f7f !important;
 }
 
 .fc-right button {
-	background: #fa012c !important;
+	background: #ff0023 !important;
 }
 
 .fc-day-grid {
@@ -164,88 +164,88 @@
 ************************ TABS Rechercher **************************/
 
 .with-nav-tabs {
-	border-color:#576777;
+	border-color:#7f7f7f;
 }
 
 .panel-default > .tabs-rechercher, .panel-default > .tabs-administration {
-	background:#576777; /* #01afba; */
+	background:#7f7f7f; /* #01afba; */
 }
 
 .nav-tabs>li>a:hover {
-    background-color: #fa012c!important;
+    background-color: #ff0023!important;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    background-color: #fa012c!important;
+    background-color: #ff0023!important;
 }
 
 
 /**************************************************************************************/
 
 .select-items .same-as-selected div {
-  	background-color: #fa012c!important;
+  	background-color: #ff0023!important;
   	color: blue!important;
 }
 
 
 .select-items div:hover,.same-as-selected {
-  	background-color: #fa012c!important;
+  	background-color: #ff0023!important;
   	color: #fff!important;
 }
 
 input[type='radio']:checked:after {
-        border: 6px solid #fa012c;
+        border: 6px solid #ff0023;
 }
 
 input[type='checkbox']:checked:after {
-        border: 6px solid #fa012c;
+        border: 6px solid #ff0023;
 }
 
 
 .numberlist .nav-pills>li.active>a {
     color: #fff;
-    background-color: #fa012c;
+    background-color: #ff0023;
 }
 
 .numberlist .tab-content{
-	border: 1px solid #fa012c;
+	border: 1px solid #ff0023;
 }
 
 .fc-today {
 	font-weight: 600;
-	background: #fa012c !important;
+	background: #ff0023 !important;
 	color: #ffff;
 }
 
 /* couleur par filiale */
 .aLink, .aLink:hover, .aLink:focus {
-	color: #fa012c;
+	color: #ff0023;
 }
 
 .stat_icon_wrapper .glyphicon-stats{
-	color: #fa012c;
+	color: #ff0023;
 }
 
 #collapseHistoSim .searchTerm {
-    border: 2px solid #fa012c;
+    border: 2px solid #ff0023;
 }
   
   #collapseHistoSim .form-control:focus {
-    border-color: #fa012c;
+    border-color: #ff0023;
     box-shadow: none;
 }
   
 #collapseHistoSim .searchButton {
-    border: 1px solid #fa012c;
-    background: #fa012c;
+    border: 1px solid #ff0023;
+    background: #ff0023;
 }
 
 .numberlist .accordion-view .panel {
-	border: 1px solid #fa012c;
+	border: 1px solid #ff0023;
 }
 
 .ajouter_operation .btn-circle{
-    background-color: #fa012c !important;
+    background-color: #ff0023 !important;
     border: 3px solid #ddd;
     color: white;
     position: absolute;
@@ -255,22 +255,22 @@ input[type='checkbox']:checked:after {
 
 .ajouter_operation .btn_operation{
     background-color: white !important;
-    border: 1px solid #fa012c;
+    border: 1px solid #ff0023;
     /* width: 50%; */
     text-align: left;
 }
 
 .dateEstimeeCommande .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active {
-	background-color: #fa012c;
+	background-color: #ff0023;
 	background-image: none;
 }
 
 .visualiserKit .glyphicon-download-alt{
-	color: #fa012c;
+	color: #ff0023;
 }
 
 select option {
-	background: #fa012c;
+	background: #ff0023;
 }
 
 option:not(:checked) { 
@@ -278,17 +278,17 @@ option:not(:checked) {
 }
 
 .dateEstimeeCommande .input_holder .form-control{
-	border: 2px solid #fa012c;
+	border: 2px solid #ff0023;
 	margin-left: 10px;
 }
 
 .dateEstimeeCommande .calendar_button{
-	color: #fa012c;
+	color: #ff0023;
 }
 
 
 legend {
-	background:#fa012c;
+	background:#ff0023;
 	color:#fff;
 }
 
@@ -297,5 +297,5 @@ legend {
 /*   			notification  			  */
 /******************************************/
 .dropdown-alerte-notification, .dropdown-user-profile {
-	border:1px solid #576777 !important;
+	border:1px solid #7f7f7f !important;
 }

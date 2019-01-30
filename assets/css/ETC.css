@@ -1,5 +1,5 @@
 /*
-	Load css for Capeb
+	Load css for ETC
 
 	
 */
@@ -12,24 +12,24 @@
 }
 
 .sidebar {
-	background-color: #16568d;
+	background-color: #11426a;
 }
 
 .navbar-fixed-bottom {
-	background-color: #16568d;
+	background-color: #11426a;
 	border: 0px;
 }
 
 .nav_area .menu_item_wrapper .menu_item {
-	background: #16568d !important;
+	background: #11426a !important;
 }
 
 .nav_area .panel-default {
-	border-color: #16568d !important;
+	border-color: #11426a !important;
 }
 
 .nav-menu {
-	background: #16568d !important;
+	background: #11426a !important;
 }
 
 /*MENU ON HOVER*/
@@ -71,17 +71,17 @@
 }
 
 .arrow-up {
-	border-bottom: 10px solid #16568d;
+	border-bottom: 10px solid #11426a;
 }
 
 .dropdown-menu-user-profile, #dropdown-alerte-notification, #dropdown-user-profile {
-	background: #16568d !important;
+	background: #11426a !important;
 }
 
 /* modal css */
 
 /* .popin-donnee .modal-header, .popin-donnee .modal-footer {
-	background-color: #16568d;
+	background-color: #11426a;
 }
  */
 
@@ -107,7 +107,7 @@
 /* numbered list for documents info cee */
 .numberlist a {
 	background: #FFF;
-	color: #16568d;
+	color: #11426a;
 }
 
 .numberlist a:hover, .numberlist a:hover span {
@@ -121,7 +121,7 @@
 }
 
 .numberlist .expand {
-	border: 1px solid #16568d;
+	border: 1px solid #11426a;
 }
 
 .numberlist span {
@@ -149,7 +149,7 @@
 }
 
 .fc-head tr {
-	background: #16568d !important;
+	background: #11426a !important;
 }
 
 .fc-right button {
@@ -164,11 +164,11 @@
 ************************ TABS Rechercher **************************/
 
 .with-nav-tabs {
-	border-color:#16568d;
+	border-color:#11426a;
 }
 
 .panel-default > .tabs-rechercher, .panel-default > .tabs-administration {
-	background:#16568d; /* #01afba; */
+	background:#11426a; /* #01afba; */
 }
 
 .nav-tabs>li>a:hover {
@@ -297,5 +297,5 @@ legend {
 /*   			notification  			  */
 /******************************************/
 .dropdown-alerte-notification, .dropdown-user-profile {
-	border:1px solid #16568d !important;
+	border:1px solid #11426a !important;
 }
