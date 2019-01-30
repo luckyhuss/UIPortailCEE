@@ -326,12 +326,13 @@
 
 </div>
 
+<?php include '_Operation.php'; ?>
 
 <!-- button ajouter -->
 
-<div class="col-md-12 submit_button_holder simuler_btn_holder">
+<!-- <div class="col-md-12 submit_button_holder simuler_btn_holder">
 	<a href="javascript:void(0)"  id="calculateCumac"  class="btn btn-primary submit_button" role="button">Calculer</a>
-</div>
+</div> -->
 
 
 

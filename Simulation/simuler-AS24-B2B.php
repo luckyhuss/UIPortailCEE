@@ -15,21 +15,14 @@
 
 <?php include 'panel-choix-simulation.php'; ?>
 
-
 <?php include 'operationB2BAS24.php'; ?>
 
-
 <?php include 'resultat-cumule.php'; ?>
-
-<!--  div class="col-md-5 simulationHistoriques"-->
-    <?php //include 'simulationHistoriques.php'; ?>
-<!-- /div-->
 
 <div id="button_operation">
     <div class="col-md-12 submit_button_holder">
         <a href="#" data-toggle="modal" data-target="#brouillonModal" class="btn btn-primary submit_button" role="button">Brouillon</a>
         <a href="#" data-toggle="modal" data-target="#CreerDossierModal" class="btn btn-primary submit_button" role="button">Créer Dossier</a>
-        <!-- <a href="#" class="btn btn-primary submit_button" id="btn_historique" role="button">Historiques</a> -->
     </div>
 </div>
 
@@ -114,7 +107,6 @@
         </div>
     </div>
 </div>
-
 <script>
 
 $( "#brouillonModal .modal-footer #modal-btn-ok" ).click(function() {

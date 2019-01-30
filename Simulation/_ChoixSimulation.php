@@ -57,9 +57,6 @@
 							<div class="form-group">
 								<span class="form_label"><label for="RaisonSociale">Raison
 										sociale</label></span> 
-										<!-- <span class="form_input"><input
-									type="text" class="form-control" 
-									id="raisonSocial" placeholder=""></span> -->
 									<div id="msRaisonSociale" class="form-control"></div>
 							</div>
 						</div>
@@ -67,8 +64,6 @@
 						<div class="col-sm-6 col-md-4 input_holder">
 							<div class="form-group">
 								<span class="form_label"><label for="Siren">SIREN</label></span>
-								<!-- <span class="form_input"><input type="text" class="form-control"
-									id="siren" placeholder=""></span> -->
 									<div id="msSiren" class="form-control"></div>
 							</div>
 						</div>

@@ -94,7 +94,7 @@ body { background-color: #fafafa; }
 	           case 'NouvelleSimulation':
 	               $activeSimulation = "active-link";
 	               $activeNouvelleSimulation = "active-link";
-	               $pageLoaded = "simuler-AS24-B2B";
+	               $pageLoaded = "Simulation\simuler-AS24-B2B";
 	               $openSimulation = "in";
 	               break;
 	               
