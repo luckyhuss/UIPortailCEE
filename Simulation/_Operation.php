@@ -208,4 +208,165 @@
 	<a href="javascript:void(0)"  id="calculateCumac"  class="btn btn-primary submit_button" role="button">Calculer</a>
 </div>
 
+<script>
+var regex = /^(.+?)(\d+)$/i;
+    var cloneIndex = $(".clonedOP").length;
+    if ($(".clonedOP").length == 1) {
+        $('.remove').hide();
+    } else {
+        $('.remove').show();
+    }
 
+    
+    function clone() {
+     	//console.log('cloneIndex ' + cloneIndex + ', numOP at Clone : ' + numOperation() );
+
+        $('#clonedOP1').clone(true, true)
+            .appendTo(".tbodyClone")
+            .attr("id", "clonedOP" + ( cloneIndex + 1 ))
+            .find("*")
+            .each(function () {
+                var id = this.id || "";
+                var match = id.match(regex) || [];
+                if (match.length == 3) {
+                    this.id = match[1] + (cloneIndex);
+                }
+            })
+            .on('click', 'clone', clone)
+            .on('click', 'remove', remove);
+
+            $(".tbodyClone .clone").hide();
+
+            cloneIndex++;
+
+            var obj = $( ".tbodyClone .clonedOP:last-child" ).attr('id');
+
+            $( "#" + obj + " div.col-md-12.ajouter_operation button").show();
+
+        if ($(".clonedOP").length == 1) {
+            $('.remove').hide();
+        } else {
+            $('.remove').show();
+        }
+        $("#clonedOP1 .remove").hide();
+
+		 $('#clonedOP' + cloneIndex).find('.choisirCritereContainer').addClass('displayed');
+    	
+    	$('#numId_OP' + (cloneIndex - 1 )).html(cloneIndex );
+
+    	// hide results for added panel
+		hideResultatOperation(cloneIndex-1);
+
+    }
+    function remove(all = false, object = null) {
+		if(!all){
+			object = object !== null ? object : $(this);
+			object.parents(".clonedOP").remove();
+		}else{
+			$(".clonedOP").each(function(index, val){
+				if (index == 0) {
+					$('.remove').hide();
+					$(this).parent().addClass('displayed');
+					$(this).find('.choisirCritereContainer, .criteresEligibilitePanel, .resultatOperationPanel').addClass('displayed');
+				} else {
+					$(this).remove();
+				}
+			})
+		}
+ 
+        if ($(".clonedOP").length == 1) {
+            $('.remove').hide();
+        } else {
+            $('.remove').show();
+        }
+        $("#clonedOP1 .remove, .tbodyClone .clone").hide();
+
+		var obj = $( ".tbodyClone .clonedOP:last-child" ).attr('id');
+		
+		$( `#${obj} div.col-md-12.ajouter_operation button`).show();
+
+		var numOP = numOperation();
+		if(numOP == 1) {
+			cloneIndex = 1;
+		}
+
+		cloneIndex = parseInt(getLastOperationId(obj));
+
+		//hide resultatCumulePanel on each removal
+		$('#resultatCumulePanel').addClass('displayed');
+
+		// hide all results if one panel is removed
+		// hideResultatOperation();
+	}
+
+    $(document).on("click", ".clone", clone);
+    $(document).on("click", ".remove", function(){
+		remove(false, $(this));
+	});
+
+
+
+
+    // Select operation - onchange display critere
+    
+    $('select[id^="selectOperation"]').change(function () {
+    	$('select[id^="selectOperation"]').each(function () {
+    		var valueChecked = $('#' + this.id).val();
+    		var str = this.id;
+    		var idSelected = str.split("_")[1];
+
+			$('#sectionCritere_' + idSelected).addClass('displayed');
+
+			if(valueChecked != 0) {
+				$('#sectionCritere_' + idSelected).removeClass('displayed');
+			}
+        });
+    	
+    });
+     
+
+function getLastOperationId(obj) {
+	var lastOperationId = 0;
+	var lastNumId = $( ".tbodyClone .numId:last-child" ).attr('id');
+	lastOperationId = obj.substr(8);
+	return lastOperationId;
+}
+
+function numOperation() {
+	var numOP = 0;
+
+	$('span[id^="numId"]').each(function () {
+		numOP++;
+	}); 
+
+	return numOP;
+}
+
+function isAnyBarSelected() {
+	var isBar = 0;
+	$('select[id^="selectSecteur"]').each(function () {
+		var valueChecked = $('#' + this.id).val();
+		
+		if(valueChecked == '2') {
+			isBar++;
+		}
+		
+	});
+
+	return isBar;
+}
+
+
+
+$('#calculateCumac').click(function() {
+	//display results per operation
+	displayResultatOperation();
+
+	//display only if num OP > 1
+	displayResultatCumule();
+
+	
+
+});
+
+</script>
