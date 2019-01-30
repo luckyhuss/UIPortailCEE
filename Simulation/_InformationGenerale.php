@@ -158,3 +158,42 @@
 
 	</div>
 </div>
+
+<script>
+    //select type de benef
+    $('select[id^="selectBenef"]').change(function () {
+
+    var typeSelected =  $('#' + this.id).val();
+
+    $('#sectionLogements').addClass('displayed');
+    $('#sectionPlusLogements').addClass('displayed');
+    $('#sectionCalculReel' ).addClass('displayed');
+    $('#sectionCalculPreca #calculateRepartition').addClass('displayed');
+    $('#sectionStatistiques' ).addClass('displayed');
+
+    switch(typeSelected) {
+    case '1':
+            $('#sectionLogements').removeClass('displayed');
+        break;
+    case '2':
+            $('#sectionPlusLogements').removeClass('displayed');
+            $('#classique' ).val('');
+            $('#precarite').val('');
+            $('#grandprecarite').val('');
+        break;
+    case '3':
+            $('#calculReel').prop('checked',false);
+            $('#sectionCalculReel').removeClass('displayed');
+            $('#sectionStatistiques' ).removeClass('displayed');
+            $('#classique').val('');
+            $('#precarite').val('');
+            $('#grandprecarite').val('');
+        break;
+    default:
+        //no code
+        break;
+    }
+
+        
+    });
+</script>

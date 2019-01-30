@@ -80,3 +80,33 @@
 
 	</div>
 </div>
+
+<script>
+    $(document).ready(function() {
+	 
+	 $( "input[name='optradio']" ).click(function(e) {
+		 	$('.choix-container').removeClass('displayed');
+	   		var checkedValue = $("input[name='optradio']:checked").val();
+	   		if(checkedValue == 'partenaire') {
+		   		$('.prospect-container').addClass('displayed');
+				$('.partenaire-container').removeClass('displayed');
+	   		}
+			else{
+	   			$('.prospect-container').removeClass('displayed');
+				$('.partenaire-container').addClass('displayed');
+			}
+	 });
+	
+	 });
+
+	$(function() {
+	var msRaisonSociale = $('#msRaisonSociale').magicSuggest({
+		data: ["GALLIANCE DINDE","GARTAL", "DELABLI", "ENERGEL"]
+	});
+
+	var msSiren = $('#msSiren').magicSuggest({
+		data: ['111222333','111222331','114222331','114222931','114222939','114224331','114222731','114221939']
+		});
+
+	});
+</script>
