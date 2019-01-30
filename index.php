@@ -107,7 +107,7 @@ body { background-color: #fafafa; }
 	               
 	           case 'Creer':
 	               $activeCreer = "active-link";
-	               $pageLoaded = "creer";
+	               $pageLoaded = "CreerDossier\creer-dossier";
 	               break;
 	               
 	           case 'Rechercher':
