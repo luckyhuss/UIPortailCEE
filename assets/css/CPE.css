@@ -1,0 +1,301 @@
+/*
+	Load css for Capeb
+
+	
+*/
+.header_left {
+	background-color: #ffffff;
+}
+
+.header_right {
+	background-color: #ffffff;
+}
+
+.sidebar {
+	background-color: #233780;
+}
+
+.navbar-fixed-bottom {
+	background-color: #233780;
+	border: 0px;
+}
+
+.nav_area .menu_item_wrapper .menu_item {
+	background: #233780 !important;
+}
+
+.nav_area .panel-default {
+	border-color: #233780 !important;
+}
+
+.nav-menu {
+	background: #233780 !important;
+}
+
+/*MENU ON HOVER*/
+.nav_area .nav-menu:hover {
+	background: #d90000 !important;
+}
+
+.nav_area .menu_item_wrapper .menu_item a:hover, .nav_area .menu_item_wrapper .menu_item a:focus
+	{
+	text-decoration: none;
+}
+
+.active-link {
+	background-color: #d90000 !important;
+}
+
+.home {
+	background-color: #d90000 !important;
+}
+
+.submit_button {
+	background-color: #d90000 !important;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.icon_holder .glyphicon {
+	color: #d90000;
+}
+
+.user_profile {
+	color: #d90000;
+}
+
+.content-user-profile {
+	color: #d90000;
+}
+
+.arrow-up {
+	border-bottom: 10px solid #233780;
+}
+
+.dropdown-menu-user-profile, #dropdown-alerte-notification, #dropdown-user-profile {
+	background: #233780 !important;
+}
+
+/* modal css */
+
+/* .popin-donnee .modal-header, .popin-donnee .modal-footer {
+	background-color: #233780;
+}
+ */
+
+
+/* .popin-donnee .modal-header .btn:hover, .popin-donnee .modal-footer .btn:hover {
+	color: #ffffff;
+	background: #d90000;
+} */
+
+.pagination>.active>a {
+	background-color: #d90000;
+	border-color: #d90000;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #d90000;
+    border-color: #d90000;
+}
+
+/* numbered list for documents info cee */
+.numberlist a {
+	background: #FFF;
+	color: #233780;
+}
+
+.numberlist a:hover, .numberlist a:hover span {
+	background: #d90000;
+}
+
+
+
+.numberlist a:before {
+	background: #d90000;
+}
+
+.numberlist .expand {
+	border: 1px solid #233780;
+}
+
+.numberlist span {
+	color: #7f8c8d;
+}
+/* numbered list for documents info cee */
+
+/* info cee card hover */
+.card-test:hover .btn-default {
+	color: #fff;
+	background-color: #d90000;
+	border-color: #d90000;
+}
+
+.card-test:hover .card {
+	border-color: #d90000;
+}
+
+.card .glyphicon {
+	color: #d90000;
+}
+/* info cee card hover */
+.submit_button_holder .btn-primary {
+	border-color: #d90000;
+}
+
+.fc-head tr {
+	background: #233780 !important;
+}
+
+.fc-right button {
+	background: #d90000 !important;
+}
+
+.fc-day-grid {
+	background: #f9f9f9;
+}
+
+/*******************************************************************
+************************ TABS Rechercher **************************/
+
+.with-nav-tabs {
+	border-color:#233780;
+}
+
+.panel-default > .tabs-rechercher, .panel-default > .tabs-administration {
+	background:#233780; /* #01afba; */
+}
+
+.nav-tabs>li>a:hover {
+    background-color: #d90000!important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #d90000!important;
+}
+
+
+/**************************************************************************************/
+
+.select-items .same-as-selected div {
+  	background-color: #d90000!important;
+  	color: blue!important;
+}
+
+
+.select-items div:hover,.same-as-selected {
+  	background-color: #d90000!important;
+  	color: #fff!important;
+}
+
+input[type='radio']:checked:after {
+        border: 6px solid #d90000;
+}
+
+input[type='checkbox']:checked:after {
+        border: 6px solid #d90000;
+}
+
+
+.numberlist .nav-pills>li.active>a {
+    color: #fff;
+    background-color: #d90000;
+}
+
+.numberlist .tab-content{
+	border: 1px solid #d90000;
+}
+
+.fc-today {
+	font-weight: 600;
+	background: #d90000 !important;
+	color: #ffff;
+}
+
+/* couleur par filiale */
+.aLink, .aLink:hover, .aLink:focus {
+	color: #d90000;
+}
+
+.stat_icon_wrapper .glyphicon-stats{
+	color: #d90000;
+}
+
+#collapseHistoSim .searchTerm {
+    border: 2px solid #d90000;
+}
+  
+  #collapseHistoSim .form-control:focus {
+    border-color: #d90000;
+    box-shadow: none;
+}
+  
+#collapseHistoSim .searchButton {
+    border: 1px solid #d90000;
+    background: #d90000;
+}
+
+.numberlist .accordion-view .panel {
+	border: 1px solid #d90000;
+}
+
+.ajouter_operation .btn-circle{
+    background-color: #d90000 !important;
+    border: 3px solid #ddd;
+    color: white;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+}
+
+.ajouter_operation .btn_operation{
+    background-color: white !important;
+    border: 1px solid #d90000;
+    /* width: 50%; */
+    text-align: left;
+}
+
+.dateEstimeeCommande .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active {
+	background-color: #d90000;
+	background-image: none;
+}
+
+.visualiserKit .glyphicon-download-alt{
+	color: #d90000;
+}
+
+select option {
+	background: #d90000;
+}
+
+option:not(:checked) { 
+	background-color: #FFF; 
+}
+
+.dateEstimeeCommande .input_holder .form-control{
+	border: 2px solid #d90000;
+	margin-left: 10px;
+}
+
+.dateEstimeeCommande .calendar_button{
+	color: #d90000;
+}
+
+
+legend {
+	background:#d90000;
+	color:#fff;
+}
+
+
+/******************************************/
+/*   			notification  			  */
+/******************************************/
+.dropdown-alerte-notification, .dropdown-user-profile {
+	border:1px solid #233780 !important;
+}
