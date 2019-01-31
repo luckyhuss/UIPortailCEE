@@ -119,7 +119,7 @@
 					</div>
 
 					<div class="col-md-12 submit_button_holder displayed" id="sectionCalculPreca">
-    					<button type="submit" class="btn btn-primary submit_button" id="calculateRepartition">Calcul Répartition</button>
+    					<button type="button" class="btn btn-primary submit_button" id="calculateRepartition">Calcul Répartition</button>
 					</div>
 
 					<div class="header-group col-md-12 displayed" id="sectionResultatRepartition">
@@ -209,5 +209,9 @@ $('input[id^="calculReel"]').click(function () {
     }
 });
 
+});
+
+$('#calculateRepartition').click(function() {
+	$('#sectionResultatRepartition').removeClass('displayed');
 });
 </script>

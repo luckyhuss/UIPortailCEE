@@ -35,8 +35,8 @@
 
 			<?php include '_Operation.php'; ?>
 		  
-			<div class="col-md-12 submit_button_holder simuler_btn_holder" id="sectionStepOne">
-				<button type="button" class="btn btn-primary nextBtn pull-right submit_button" id="ContinueStepOne">Continuer</button>
+			<div class="col-md-12 submit_button_holder" id="sectionStepOne">
+				<button type="button" class="btn btn-primary nextBtn submit_button" id="ContinueStepOne">Continuer</button>
 			</div>
       </div>
 	</div>
@@ -134,5 +134,7 @@
   });
 
   $('div.setup-panel div a.btn-primary').trigger('click');
-});
+})
+
+
 </script>

@@ -3324,6 +3324,9 @@ input[name='optradio'] {
     position: relative;
 }
 
+#step-1 #sectionStepOne {
+	margin-bottom: 40px;
+}
 
 /*******************************************************
 *
