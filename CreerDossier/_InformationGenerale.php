@@ -1,4 +1,4 @@
-<div class="panel-group displayed" id="informationsgeneralesPanel">
+<div class="panel-group" id="informationsgeneralesPanel">
 	<div class="panel panel-default">
 
 		<div class="panel-body">
@@ -7,16 +7,15 @@
 				<legend>Informations générales</legend>
 
 				<div class="fieldset-container">
-                            
-					<div class="header-group col-md-12" id="sectionCodePostalTravaux">
-                        
-                        <div class="input_holder">
-                            <div class="header-group">
-                                <span class="form_label"><label for="AddrDesTravaux">Addresse des travaux</label></span> 
-                                <span class="header_output"><input type="text" class="form-control" id="addrDesTravaux" placeholder=""></span>
-                            </div>
-                        </div>
+                                                    
+					<div class="input_holder">
+						<div class="header-group">
+							<span class="form_label"><label for="AddrDesTravaux">Addresse des travaux</label></span> 
+							<span class="header_output"><input type="text" class="form-control" id="addrDesTravaux" placeholder=""></span>
+						</div>
+					</div>
                                 
+					<div class="header-group col-md-12" id="sectionCodePostalTravaux">
 						<span class="form_label"><label for="DepartmentdesTravaux">Département des travaux</label></span> 
 						<span class="header_output">
 							<select id="selectDeptTravaux" name="selectDeptTravaux" class="form-control">
@@ -27,13 +26,11 @@
 							</select>
                         </span>
                         
-                        <?php include '_DateEstimee.php'; ?>
-
                     </div>
                     
-                    
+					<?php include 'Simulation\_DateEstimee.php'; ?>
 
-					<div class="header-group col-md-12 " id="sectionBenef">
+					<div class="header-group col-md-12 displayed" id="sectionBenef">
 						<span class="form_label"><label for="TypeDeBenef">Type de bénéficiaire</label></span> 
 						<span class="header_output">
 							<select id="selectBenef" name="selectBenef" class="form-control beneficiaire">
@@ -75,15 +72,6 @@
 								</div>
 							</div>
 						</fieldset>
-					</div>
-
-					<div class="header-group col-md-12 displayed" id="sectionStatistiques">
-
-						<fieldset class="fieldset-margin-bottom"
-							id="repartitionFieldset">
-							<legend> Statistiques de la ville</legend>
-						</fieldset>
-
 					</div>
 
 					<div class="header-group col-md-12 displayed" id="sectionCalculReel">
@@ -130,11 +118,11 @@
 						</fieldset>
 					</div>
 
-					<div class="col-md-12 submit_button_holder simuler_btn_holder" id="sectionCalculPreca">
-    					<button type="submit" class="btn btn-primary submit_button displayed" id="calculateRepartition">Calcul Répartition</button>
+					<div class="col-md-12 submit_button_holder displayed" id="sectionCalculPreca">
+    					<button type="submit" class="btn btn-primary submit_button" id="calculateRepartition">Calcul Répartition</button>
 					</div>
 
-					<div class="header-group col-md-12" id="sectionResultatRepartition">
+					<div class="header-group col-md-12 displayed" id="sectionResultatRepartition">
 						<fieldset class="fieldset-margin-bottom" id="resultatRepartitionFieldset">
 							<legend>Résultat répartition</legend>
 
@@ -180,7 +168,7 @@
     $('#sectionLogements').addClass('displayed');
     $('#sectionPlusLogements').addClass('displayed');
     $('#sectionCalculReel' ).addClass('displayed');
-    $('#sectionCalculPreca #calculateRepartition').addClass('displayed');
+    $('.choisirInfoGeneralPanel .submit_button_holder').addClass('displayed');
     $('#sectionStatistiques' ).addClass('displayed');
 
     switch(typeSelected) {
@@ -214,10 +202,10 @@ $(document).ready(function() {
 
 $('input[id^="calculReel"]').click(function () {
     $('#sectionPlusLogements').addClass('displayed');
-    $('#sectionCalculPreca #calculateRepartition').addClass('displayed');
+    $('.choisirInfoGeneralPanel .submit_button_holder').addClass('displayed');
     if($('#'+this.id).is(':checked')) {
         $('#sectionPlusLogements').removeClass('displayed');
-        $('#sectionCalculPreca #calculateRepartition').removeClass('displayed');
+        $('.choisirInfoGeneralPanel .submit_button_holder').removeClass('displayed');
     }
 });
 

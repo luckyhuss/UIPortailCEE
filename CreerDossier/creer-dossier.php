@@ -26,29 +26,24 @@
 </div>
   
   <form role="form" action="" method="post">
-    <div class="row setup-content" id="step-1">
-      <div class="">
-        <div class="col-md-12">
-          <!-- <h3> Step 1</h3> -->
-		  	<?php include 'Simulation\_Secteur.php'; ?>
- 
-		  	<?php include 'Simulation\_InformationGenerale.php'; ?>
+    <div class="setup-content" id="step-1">
+      <div class="stepOnePage">
 
-			<?php include 'Simulation\_Operation.php'; ?>
+		  	<?php include '_Secteur.php'; ?>
+ 
+		  	<?php include '_InformationGenerale.php'; ?>
+
+			<?php include '_Operation.php'; ?>
 		  
 			<div class="col-md-12 submit_button_holder simuler_btn_holder" id="sectionStepOne">
 				<button type="button" class="btn btn-primary nextBtn pull-right submit_button" id="ContinueStepOne">Continuer</button>
 			</div>
-
-        </div>
       </div>
 	</div>
 	
 
-    <div class="row setup-content" id="step-2">
-      <div class="">
-        <div class="col-md-12">
-          <!-- <h3> Step 2</h3> -->
+    <div class="setup-content" id="step-2">
+      <div class="stepTwoPage">
 
 		  	<?php include '_InfoBeneficiaire.php'; ?>
 
@@ -59,14 +54,11 @@
 				<button type="button" class="btn btn-primary nextBtn submit_button" id="continueStepTwo">Continuer</button>
 			</div>
 
-        </div>
       </div>
 	</div>
 
-	<div class="row setup-content" id="step-3">
-      <div class="">
-        <div class="col-md-12">
-          <!-- <h3> Step 3</h3> -->
+	<div class="setup-content" id="step-3">
+      <div class="stepThreePage">
 
 		  <?php include '_InfoPaiement.php'; ?>
 
@@ -75,19 +67,17 @@
 				<button type="button" class="btn btn-primary nextBtn submit_button" id="continueStepThree">Continuer</button>
 			</div>
 
-        </div>
       </div>
 	</div>
 
-    <div class="row setup-content" id="step-4">
-      <div class="">
-        <div class="col-md-12">
-		  <!-- <h3> Step 4</h3> -->
+    <div class="setup-content" id="step-4">
+      <div class="stepFourPage">
 
 		  <?php include 'Dossier\_ListesPieces.php'; ?>
 
-          <button class="btn btn-success pull-right" type="submit">Créer</button>
-        </div>
+		  	<div class="col-md-12 submit_button_holder " id="sectionStepThree">
+				<button type="submit" class="btn btn-primary submit_button" id="createDossier_btn">Créer</button>
+			</div>
       </div>
     </div>
   </form>

@@ -21,8 +21,6 @@
 
 					<?php include '_CritereSaisie.php'; ?>
 
-					<?php include '_DateEstimee.php'; ?>
-
 					<div class="col-md-12 resultatOperationPanel">
 						<!-- <div class="panel panel-default">
 							<div class="panel-body">

@@ -44,23 +44,20 @@
 
     var secteurSelected =  $('#' + this.id).val();
 
-    $('#informationsgeneralesPanel').addClass('displayed');
+    $('#sectionBenef').addClass('displayed');
 
     switch(secteurSelected) {
     case '2':
-            $('#informationsgeneralesPanel').removeClass('displayed');
             $('#sectionBenef').removeClass('displayed');
             $('#selectBenef' ).val('');
             $('#selectDeptTravaux' ).val('');
         break;
     case '4':
-            $('#informationsgeneralesPanel').removeClass('displayed');
             $('#sectionBenef').addClass('displayed');
             $('#sectionLogements').addClass('displayed');
             $('#sectionPlusLogements').addClass('displayed');
             $('#sectionCalculPreca #calculateRepartition').addClass('displayed');
             $('#sectionCalculReel' ).addClass('displayed');
-            $('#sectionStatistiques' ).addClass('displayed');
             $('#selectDeptTravaux' ).val('');
         break;
     default:

@@ -418,6 +418,10 @@
 	.choisirInfoGeneralPanel .header_output {
 		width: 100%;
 	}
+
+	.choisirInfoGeneralPanel .header-group label{
+		width: 100%;
+	}
 }
 
 @media (max-width: 452px){
