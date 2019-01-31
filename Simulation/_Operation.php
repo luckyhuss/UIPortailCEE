@@ -369,4 +369,39 @@ $('#calculateCumac').click(function() {
 
 });
 
+function displayResultatOperation() {
+
+$('fieldset[id^="resultatOperationPanel"]').each(function () {
+    var fieldsetId = this.id;
+
+    $('#' + fieldsetId).removeClass('displayed');
+});
+
+$('fieldset[id^="criteresEligibilitePanel"]').each(function () {
+    var fieldsetId = this.id;
+
+    $('#' + fieldsetId).removeClass('displayed');
+});
+
+}
+
+function hideResultatOperation(fieldsetId) {
+$('#resultatOperationPanel_OP' + fieldsetId).addClass('displayed');
+$('#criteresEligibilitePanel_OP' + fieldsetId).addClass('displayed');
+$('#resultatCumulePanel').addClass('displayed');
+}
+
+function displayResultatCumule() {
+// get number of operations
+var totalNumOperation = numOperation();
+
+$('#resultatCumulePanel').addClass('displayed');
+if(parseInt(totalNumOperation) > 1) {
+    //display panel resultat cumuler
+    $('#resultatCumulePanel').removeClass('displayed');
+    //display total number of operations for the calculation
+    $('#numOperation').html(totalNumOperation );
+}
+
+}
 </script>

@@ -299,3 +299,13 @@ legend {
 .dropdown-alerte-notification, .dropdown-user-profile {
 	border:1px solid #020950 !important;
 }
+
+.stepwizardCreer-step .btn-primary {
+	background: #d90000;
+	color:#fff;
+	border: 1px solid #d90000;
+}
+
+.stepwizardCreer-step .btn-primary:active:hover:focus {
+	color: #d90000;
+}

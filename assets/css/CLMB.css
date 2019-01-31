@@ -294,3 +294,13 @@ legend {
 	border:1px solid #576777 !important;
 }
 
+.stepwizardCreer-step .btn-primary {
+	background: #01afba;
+	color:#fff;
+	border: 1px solid #01afba;
+}
+
+.stepwizardCreer-step .btn-primary:active:hover:focus {
+	color: #01afba;
+}
+
