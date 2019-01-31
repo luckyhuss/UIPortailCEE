@@ -12,24 +12,24 @@
 }
 
 .sidebar {
-	background-color: #263980;
+	background-color: #020950;
 }
 
 .navbar-fixed-bottom {
-	background-color: #263980;
+	background-color: #020950;
 	border: 0px;
 }
 
 .nav_area .menu_item_wrapper .menu_item {
-	background: #263980 !important;
+	background: #020950 !important;
 }
 
 .nav_area .panel-default {
-	border-color: #263980 !important;
+	border-color: #020950 !important;
 }
 
 .nav-menu {
-	background: #263980 !important;
+	background: #020950 !important;
 }
 
 /*MENU ON HOVER*/
@@ -71,17 +71,17 @@
 }
 
 .arrow-up {
-	border-bottom: 10px solid #263980;
+	border-bottom: 10px solid #020950;
 }
 
 .dropdown-menu-user-profile, #dropdown-alerte-notification, #dropdown-user-profile {
-	background: #263980 !important;
+	background: #020950 !important;
 }
 
 /* modal css */
 
 /* .popin-donnee .modal-header, .popin-donnee .modal-footer {
-	background-color: #263980;
+	background-color: #020950;
 }
  */
 
@@ -107,7 +107,7 @@
 /* numbered list for documents info cee */
 .numberlist a {
 	background: #FFF;
-	color: #263980;
+	color: #020950;
 }
 
 .numberlist a:hover, .numberlist a:hover span {
@@ -121,7 +121,7 @@
 }
 
 .numberlist .expand {
-	border: 1px solid #263980;
+	border: 1px solid #020950;
 }
 
 .numberlist span {
@@ -149,7 +149,7 @@
 }
 
 .fc-head tr {
-	background: #263980 !important;
+	background: #020950 !important;
 }
 
 .fc-right button {
@@ -164,11 +164,11 @@
 ************************ TABS Rechercher **************************/
 
 .with-nav-tabs {
-	border-color:#263980;
+	border-color:#020950;
 }
 
 .panel-default > .tabs-rechercher, .panel-default > .tabs-administration {
-	background:#263980; /* #01afba; */
+	background:#020950; /* #01afba; */
 }
 
 .nav-tabs>li>a:hover {
@@ -297,5 +297,5 @@ legend {
 /*   			notification  			  */
 /******************************************/
 .dropdown-alerte-notification, .dropdown-user-profile {
-	border:1px solid #263980 !important;
+	border:1px solid #020950 !important;
 }
