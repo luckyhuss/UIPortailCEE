@@ -3293,7 +3293,6 @@ input[name='optradio'] {
 
 
 
-
 .stepwizardCreer-step p {
     margin-top: 10px;
 }
@@ -3324,3 +3323,35 @@ input[name='optradio'] {
     text-align: center;
     position: relative;
 }
+
+
+/*******************************************************
+*
+*				Demande Habilitation
+*
+********************************************************/
+.demande-main {
+	padding: 70px 0 25px;
+	position: relative;
+}
+
+.demande-content {
+	-ms-flex-order: 1;
+	order: 1;
+	min-height: calc(100vh - 95px);
+    padding: 10px;
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+
+.bg-demande {
+	background: #e6f1f8;
+}
+
+.section-header {
+	color:#92c81f;
+}
+
