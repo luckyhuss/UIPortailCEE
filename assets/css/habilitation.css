@@ -1,0 +1,275 @@
+
+/*******************************************************
+*
+*				Demande Habilitation
+*
+********************************************************/
+header, footer, .page_area {
+	float: left;
+	width: 100%;
+}
+
+/* Header */
+header {
+	background-color: #ffffff;
+}
+
+footer {
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	vertical-align: middle;
+}
+
+.navbar .navbar-default .navbar-fixed-bottom {
+	border: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* Footer */
+.navbar-fixed-bottom {
+	min-height: 25px !important;
+	font-size: 13px;
+}
+
+.copyright_area {
+	padding: 4px 0px 0px;
+}
+
+.page_total-logo {
+	height:100%!important;
+}
+
+.page_total-logo img {
+	width: 220px;
+	position: relative;
+	height:100%!important;
+}
+
+@media ( max-width : 640px) {
+	.page_total-logo img {
+		width: 220px;
+	}
+}
+
+@media ( max-width : 300px) {
+	.page_total-logo img {
+		width: 200px !important;
+	}
+}
+
+
+input[type=checkbox], input[type=radio] {
+	margin: 0px!important;
+  	vertical-align: top;
+  	width: 0%!important;
+}
+
+input[type='radio']:after {
+      width: 17px;
+      height: 17px;
+      border-radius: 15px;
+      top: -1px;
+      left: -1px;
+      position: relative;
+      background-color: #fff;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 1px solid #cacaca;
+  }
+
+input[type='radio']:checked:after {
+      width: 17px;
+      height: 17px;
+      border-radius: 15px;
+      top: -1px;
+      left: -1px;
+      position: relative;
+      background-color: #fff;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+}
+
+input[type='checkbox']:after {
+     width: 17px;
+     height: 17px;
+     top: -1px;
+     left: -1px;
+     position: relative;
+     background-color: #fff;
+     content: '';
+     display: inline-block;
+     visibility: visible;
+     border: 1px solid #cacaca;
+}
+
+input[type='radio']:checked:after, input[type='checkbox']:after {
+     width: 17px;
+     height: 17px;
+     top: -1px;
+     left: -1px;
+     position: relative;
+     background-color: #fff;
+     content: '';
+     display: inline-block;
+     visibility: visible;
+        
+}
+
+input[type='radio']:checked:after {
+     border: 6px solid #1a5566;
+}
+
+input[name='optradio'] {
+	margin-right:10px;
+}
+
+.form-control {
+	border-radius:10px!important;
+	padding:5px 10px 5px 10px!important;
+	font-weight:500!important;
+}
+
+
+/* validation error message */
+.input-validation-error {
+	border:1px solid red !important;
+}
+
+
+.page_banner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	background-image: linear-gradient(to right, #ffffff, #e6e6e6); 
+	/* background: #fff; */
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+	/*background-image: linear-gradient(to right, white, #e6e6e6);
+	
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0
+		rgba(0, 0, 0, .12);*/
+}
+
+
+
+
+.section-demande {
+	
+}
+
+.demande-main {
+	padding: 70px 0 25px;
+	position: relative;
+	background-color: #ebe9e5;
+}
+
+.demande-content {
+	-ms-flex-order: 1;
+	order: 1;
+	min-height: calc(100vh - 95px);
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	
+}
+
+
+.bg-demande {
+	background: #fafafa;
+	min-height: calc(100vh - 95px);
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	box-shadow: -5px 0 5px -5px #333, 5px 0 5px -5px #333;
+	padding:15px 5px 25px;
+}
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.signpost { /* our rectangle */
+	width:200px;
+  	height:37px;
+  	background-color: #fff;
+  	margin:0px;
+  	position: relative;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	padding:7px 5px;
+	text-transform: uppercase;
+	color:#92c81f;
+	font-size:15px;
+	font-weight: 600;
+	/* text-shadow: 1px 1px 0px #000000; */
+	/* margin-bottom : 10px;	
+	margin-left: -10px; */
+	margin: 0 0 10px -10px;
+}
+
+.signpost:after { /*  our pseudo-element */
+  content:"";/* required */
+  position: absolute; /* takes the 'cap' out off flow */
+  top:0; /* stick it to top edge of the sign */
+  left:100%; /* push it way overto the right*/
+  height:0; /* we're doing this with borders remember */
+  width:0; 
+  border-width: 19px;
+  border-style:solid;
+  border-color:#fff; /* same as bg of our rectangle */
+  /* now we make some of theborders disappear*/
+  border-top-color:transparent;
+  border-bottom-color:transparent;
+  border-right-color:transparent;
+}
+
+.signpost-identite {
+	width:180px;
+}
+
+.signpost-standard {
+	width:200px;
+}
+
+.section-num {
+	font-size: 30px;
+    position: relative;
+    top: -10px;
+    padding-right: 7px;
+}
+
+.section-label {
+	display: inline-block;
+    margin-top: 1px!important;
+    position: absolute;
+}
+
+.panel-default {
+	margin-left: 5px;
+    margin-right: 5px;
+}
+
+.panel-body {
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+}
+
+#adresse-ligne-1, #adresse-ligne-2 {
+	margin-bottom: 5px;
+}
+
+.select-pays .form_input {
+	padding-right: 25px;
+}
+
+label[for=pays-france] {
+	margin-right: 60px; 
+}
+

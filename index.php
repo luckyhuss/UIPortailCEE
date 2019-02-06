@@ -50,7 +50,6 @@ $isGraph = false;
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link href="node_modules/magicsuggest/css/magicsuggest.css" rel="stylesheet" type="text/css">
 <style>
 body { background-color: #fafafa; }
 .container { margin-top: 150px; max-width: 350px; }

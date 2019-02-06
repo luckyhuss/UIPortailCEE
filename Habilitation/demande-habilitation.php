@@ -7,7 +7,8 @@
 
 <title>TOTAL -</title>
 <link rel="icon" type="image/png" href="../assets/img/total-icon.png">
-<link href="../assets/css/main.css" rel="stylesheet">
+<!-- <link href="../assets/css/main.css" rel="stylesheet"> -->
+<link href="../assets/css/habilitation.css" rel="stylesheet">
 
 <!-- Bootstrap -->
 <link href="../assets/css/simple-layout.css" rel="stylesheet">
@@ -16,6 +17,12 @@
 <!-- Bootstrap -->
 <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
 	rel="stylesheet">
+	
+<link href="../node_modules/magicsuggest/css/magicsuggest.css" rel="stylesheet" type="text/css">
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../node_modules/magicsuggest/js/magicsuggest.js"></script>
+
+
 </head>
 <body>
 
