@@ -163,7 +163,8 @@
 
 
 					<div class="col-md-12 submit_button_holder simuler_btn_holder">
-						<a href="javascript:void(0)"  id="generer_cc"  class="btn btn-primary submit_button" role="button">Générer</a>
+                        <a href="javascript:void(0)"  id="generer_cc"  class="btn btn-primary submit_button" role="button">Générer</a>
+                        <a href="javascript:void(0)"  id="visualiser_cc"  class="btn btn-primary submit_button" role="button">Visualiser</a>
 					</div>
 
 					</div>

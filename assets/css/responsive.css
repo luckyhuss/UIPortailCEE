@@ -343,7 +343,7 @@
 
 @media ( max-width : 417px) {
 
-	.choisirSecteurPanel .header_output, .choisirOperationPanel .header_output, .critereAsaisirPanel .header_output {
+	.choisirSecteurPanel .header_output, .choisirOperationPanel .header_output, .critereAsaisirPanel .header_output, .choisirAdressePanel .header_output {
 		width:100%;
 	}
 	
@@ -354,6 +354,10 @@
 
 	.prospect-container .input_holder{
 		height: auto;
+	}
+
+	.choisirAdressePanel .header-group label {
+		width: 100%;
 	}
 }
 

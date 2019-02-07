@@ -45,6 +45,8 @@
     <div class="setup-content" id="step-2">
       <div class="stepTwoPage">
 
+	  		<?php include '_Adresse.php'; ?>
+
 		  	<?php include '_InfoBeneficiaire.php'; ?>
 
 			<?php include '_InfoProfessionnel.php'; ?>
@@ -121,11 +123,11 @@
           curInputs = curStep.find("input[type='text'],input[type='url']"),
           isValid = true;
 
-      $(".form-group").removeClass("has-error");
+      $(".header-group").removeClass("has-error");
       for(var i=0; i<curInputs.length; i++){
           if (!curInputs[i].validity.valid){
               isValid = false;
-              $(curInputs[i]).closest(".form-group").addClass("has-error");
+              $(curInputs[i]).closest(".header-group").addClass("has-error");
           }
       }
 

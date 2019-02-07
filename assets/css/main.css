@@ -2798,7 +2798,7 @@ input[name='optradio'] {
 
 .choisirSecteurPanel .header_output, .choisirOperationPanel .header_output, .critereAsaisirPanel .header_output,
 .choisirInfoGeneralPanel .header_output, .choisirIndicePanel .header_output, .listesPiecesContainer .header_output,
-.choisirInfoBenefPanel .header_output, .choisirInfoProPanel .header_output{
+.choisirInfoBenefPanel .header_output, .choisirInfoProPanel .header_output, .choisirAdressePanel .header_output{
 	width:55%;
 }
 
@@ -3125,7 +3125,8 @@ input[name='optradio'] {
 	margin-top: 70px;
 }
 
-#btn_mentionSurDevis .btn, #btn_mentionSurDevis_cc .btn, #btn_ajouterUnDoc{
+#btn_mentionSurDevis .btn, #btn_mentionSurDevis_cc .btn, #btn_ajouterUnDoc, #button_operation #msd_only,
+#button_operation #msd_cc{
 	white-space: normal;
 }
 

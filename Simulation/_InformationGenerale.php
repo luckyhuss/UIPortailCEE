@@ -10,13 +10,6 @@
                             
 					<div class="header-group col-md-12" id="sectionCodePostalTravaux">
                         
-                        <div class="input_holder">
-                            <div class="header-group">
-                                <span class="form_label"><label for="AddrDesTravaux">Addresse des travaux</label></span> 
-                                <span class="header_output"><input type="text" class="form-control" id="addrDesTravaux" placeholder=""></span>
-                            </div>
-                        </div>
-                                
 						<span class="form_label"><label for="DepartmentdesTravaux">Département des travaux</label></span> 
 						<span class="header_output">
 							<select id="selectDeptTravaux" name="selectDeptTravaux" class="form-control">
