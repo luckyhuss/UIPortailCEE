@@ -1049,7 +1049,7 @@ caption {
 	#collapseDossiersDeposes .submit_button_holder, #collapseSearchBarFiche .submit_button_holder,
 	#formCritereSim .submit_button_holder, #collapseDetailSimulation .submit_button_holder, #collapseHistoSim .submit_button_holder,
 	#uploadFileModal .submit_button_holder, #step-1 .submit_button_holder, #step-2 .submit_button_holder, #step-3 .submit_button_holder,
-	#step-4 .submit_button_holder
+	#step-4 .submit_button_holder, #step-5 .submit_button_holder
 	{
 	text-align: right;
 }

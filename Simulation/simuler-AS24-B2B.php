@@ -19,6 +19,11 @@
 	  <div class="stepwizardCreer-step">
         <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
         <p>étape 4</p>
+      </div>
+      
+      <div class="stepwizardCreer-step">
+        <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">5</a>
+        <p>étape 5</p>
 	  </div>
 	  
 	</div>
@@ -195,6 +200,18 @@
 			</div>
       </div>
     </div>
+
+    <div class="setup-content" id="step-5">
+      <div class="stepFourPage">
+
+		  <?php include 'CreerDossier\_CourierOffre.php'; ?>
+
+		  	<div class="col-md-12 submit_button_holder " id="sectionStepFive">
+				<button type="submit" class="btn btn-primary submit_button" id="deposerDevis_btn">Déposer</button>
+			</div>
+      </div>
+    </div>
+
   </form>
 
 
