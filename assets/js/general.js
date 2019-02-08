@@ -447,7 +447,7 @@ $(document).ready(function() {
 		/*searching:true,
 		"dom": '<"top"f>rt<"bottom"flp><"clear">'*/
 	});	
-	jQuery('.table').wrap('<div class="dataTables_scroll" />');			
+	jQuery('.listDataTable').wrap('<div class="dataTables_scroll" />');			
 });
 
 	$.extend(true, $.fn.DataTable.defaults, {

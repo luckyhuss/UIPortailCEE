@@ -30,7 +30,7 @@
 
 <?php 
 
-$cssLoaded = "ROZO";
+$cssLoaded = "ADMIN";
 
 
 $persona = ($cssLoaded == "AS24") ? "-AS24": "";
@@ -168,15 +168,15 @@ body { background-color: #fafafa; }
 	?>
 
 	<script src="assets/js/jquery.min.js"></script>
-   <?php include("header.php"); ?>
-   <!-- <script src="assets/js/jquery.min.js"></script> -->
-   <script src="assets/js/bootstrap-datepicker.js"></script>
+    <?php include("header.php"); ?>
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <script src="assets/js/bootstrap-datepicker.js"></script>
 	<script src="assets/js/bootstrap-datepicker.fr.js" charset="UTF-8"></script>
    
-   <!-- script src="assets/js/jquery.js"></script-->
-   <?php include("page-content.php"); ?>
+    <!-- script src="assets/js/jquery.js"></script-->
+    <?php include("page-content.php"); ?>
    
-   <?php include("footer.php"); ?>
+    <?php include("footer.php"); ?>
 
    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

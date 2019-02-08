@@ -7,20 +7,29 @@
 
 <title>TOTAL -</title>
 <link rel="icon" type="image/png" href="../assets/img/total-icon.png">
-<!-- <link href="../assets/css/main.css" rel="stylesheet"> -->
+
 <link href="../assets/css/habilitation.css" rel="stylesheet">
-
-<!-- Bootstrap -->
 <link href="../assets/css/simple-layout.css" rel="stylesheet">
-
-
-<!-- Bootstrap -->
 <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
 	rel="stylesheet">
-	
-<link href="../node_modules/magicsuggest/css/magicsuggest.css" rel="stylesheet" type="text/css">
+
+<!-- Bootstrap -->
+<link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../assets/css/bootstrap-datepicker.css" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="../node_modules/datatables/datatables.min.css"/>
+<link rel="stylesheet" type="text/css" href="../node_modules/datatables/DataTables/css/jquery.dataTables.min.css"/>
+
+<link rel="stylesheet" type="text/css" href="../node_modules/datatables/DataTables/css/dataTables.bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="../node_modules/responsive/css/responsive.bootstrap.min.css"/>
+
+
+<link href="../node_modules/magicsuggest/css/magicsuggest.css"	rel="stylesheet" type="text/css">
+
 <script src="../assets/js/jquery.min.js"></script>
-<script src="../node_modules/magicsuggest/js/magicsuggest.js"></script>
+<script type="text/javascript" src="../node_modules/datatables/datatables.min.js"></script>
+
 
 
 </head>
@@ -43,7 +52,7 @@
 			<div class="row flex-container">
 
 				<section class="demande-main">
-					<div class="demande-content" > 
+					<div class="demande-content"> 
         			 	<?php include ('content-demande-habilitation.php'); ?>
         			</div>
 				</section>
@@ -52,7 +61,23 @@
 		</div>
 	</section>
     	
-    	<?php include ('../footer.php'); ?>
+    <?php include ('../footer.php'); ?>
+    	
 
-	</body>
+    
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../node_modules/datatables/datatables.min.js"></script>
+
+	<script type="text/javascript" src="../node_modules/datatables/DataTables/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="../node_modules/datatables/DataTables/js/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" src="../node_modules/responsive/js/dataTables.responsive.min.js"></script>
+
+	<script type="text/javascript" src="../node_modules/responsive/js/responsive.bootstrap.min.js"></script>
+
+	<script src="../assets/js/habilitation.js"></script>
+	<script src="../node_modules/magicsuggest/js/magicsuggest.js"></script>
+
+
+
+</body>
 </html>

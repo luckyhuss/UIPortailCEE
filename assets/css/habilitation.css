@@ -119,8 +119,9 @@ input[type='radio']:checked:after, input[type='checkbox']:after {
         
 }
 
-input[type='radio']:checked:after {
-     border: 6px solid #1a5566;
+input[type='radio']:checked:after, input[type='checkbox']:checked:after {
+     border: 6px solid #e00032;
+     color: #e00032;
 }
 
 input[name='optradio'] {
@@ -140,6 +141,95 @@ input[name='optradio'] {
 }
 
 
+.listDataTable {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	width:100%;
+}
+
+.data_table_holder {	
+	padding-left:0px!important;
+	padding-right:0px!important;
+}
+
+.listDataTable tbody {
+	color: #303030;
+}
+
+.listDataTable thead {
+	color: #838383;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0!important;
+    border: 0!important;
+	display: inline!important;
+	margin-left: 0px!important;
+}
+
+div.dataTables_wrapper div.dataTables_paginate {	
+	margin-top: 8px!important;
+	font-size: 12px!important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: none!important;
+    border: none!important;
+}
+
+
+.dataTables_paginate .pagination li {
+	padding: 0px!important;
+}
+
+.pagination>li>a {
+	padding: 5px 10px!important;
+}
+
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    background-color: #ddd!important;
+    border-color: #ddd!important;
+}
+
+.pagination a:focus {
+    outline: none!important;
+}
+
+.pagination>.active>a {
+	background-color: #e00032!important;
+	border-color: #e00032!important;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3!important;
+    color: #fff!important;
+    cursor: default!important;
+    background-color: #e00032!important;
+    border-color: #e00032!important;
+}
+
+.submit_button_holder{
+	margin-bottom: 5px;
+    padding: 0px;
+    text-align: center;
+    height: 32px;
+    display: inline-flex;
+    float: right;
+    position: relative;
+    right: auto;
+}
+
+
+.submit_button {
+	background-color: #e00032 !important;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.submit_button_holder .btn-primary {
+	border-color: #e00032;
+}
 .page_banner {
 	position: absolute;
 	top: 0;
@@ -199,13 +289,13 @@ input[name='optradio'] {
 .signpost { /* our rectangle */
 	width:200px;
   	height:37px;
-  	background-color: #fff;
+  	background-color: #e00032;
   	margin:0px;
   	position: relative;
   	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   	padding:7px 5px;
 	text-transform: uppercase;
-	color:#92c81f;
+	color:#fff;
 	font-size:15px;
 	font-weight: 600;
 	/* text-shadow: 1px 1px 0px #000000; */
@@ -221,9 +311,9 @@ input[name='optradio'] {
   left:100%; /* push it way overto the right*/
   height:0; /* we're doing this with borders remember */
   width:0; 
-  border-width: 19px;
+  border-width: 18px;
   border-style:solid;
-  border-color:#fff; /* same as bg of our rectangle */
+  border-color:#e00032; /* same as bg of our rectangle */
   /* now we make some of theborders disappear*/
   border-top-color:transparent;
   border-bottom-color:transparent;
@@ -271,5 +361,34 @@ input[name='optradio'] {
 
 label[for=pays-france] {
 	margin-right: 60px; 
+}
+
+.radio-answers, .checkbox-answers {
+	display:inline-block;	
+}
+
+.radio-answers .form_input, .checkbox-answers .form_input {
+	padding-right: 25px;
+}
+
+label[for=ans-oui] {
+	margin-right: 40px; 
+}
+
+input[value=oui] {
+	margin-left: 10px!important; 
+}
+
+.questions-reponses {
+	margin-bottom:12px;
+}
+
+.checkbox-answers input[type=checkbox] {
+	margin-left: 10px!important;
+	margin-right: 25px!important;
+}
+
+.dataTables_scroll{
+	overflow:auto;
 }
 

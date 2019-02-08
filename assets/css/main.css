@@ -603,7 +603,7 @@ div.each-row{
 	 #conventionsFiche tbody, 
 	#infoActiviteFiche tbody,  #operationsFiche tbody, #resultatRechercherDossier tbody,
 	#simulationEnregistree tbody, #resultatRechercheSim tbody, #listePiecesTable tbody, 
-	#listPermission tbody, #listRefusPieces tbody, #listRefusDossiers tbody
+	#listPermission tbody
 	{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
@@ -619,7 +619,7 @@ div.each-row{
 	#conventionsFiche thead,  #infoActiviteFiche thead, #operationsFiche thead, #resultatRechercherDossier thead,
 	#simulationEnregistree thead, #resultatRechercheSim thead, #listUtilisateur thead, #listContent thead,
 	#listePiecesTable thead, 
-	#listPermission thead, #listRefusPieces thead, #listRefusDossiers thead {
+	#listPermission thead {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	color: #838383;
@@ -3262,8 +3262,7 @@ input[name='optradio'] {
 .listDataTable {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
-	width:100%;
-	
+	width:100%;	
 }
 
 .listDataTable tbody {
