@@ -309,3 +309,8 @@ legend {
 .stepwizardCreer-step .btn-primary:active:hover:focus {
 	color: #71bf4d;
 }
+
+.stepwizardCreer-step .btn-primary[disabled]:hover, .stepwizardCreer-step .btn-primary[disabled]:focus{
+	background-color: #71bf4d;
+	border-color: #71bf4d;
+}
