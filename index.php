@@ -30,7 +30,7 @@
 
 <?php 
 
-$cssLoaded = "ADMIN";
+$cssLoaded = "GFX";
 
 
 $persona = ($cssLoaded == "AS24") ? "-AS24": "";
@@ -78,9 +78,13 @@ body { background-color: #fafafa; }
 	   $activeAdminGigya = "";
 	   $activeAdminPermission = "";
 	   $activeAdminContenu = "";
+	   $activeAdminHabilitation = "";
 	   $openSimulation = "";
 	   $openAdmin = "";
-	   $activeAdmin = "";
+	   $openAdminContenu = "";
+	   $openAdminUser = "";
+	   $activeContenu = "";
+	   $activeUser = "";
 	   
 	   if (isset($_GET) && $_GET != null) {
 	      
@@ -130,28 +134,34 @@ body { background-color: #fafafa; }
 	               $pageLoaded = "info-cee";
 	               break;
 	           case 'AdminContenu':
-	               $activeAdmin = "active-link";
+	               $activeContenu = "active-link";
 	               $activeAdminContenu = "active-link";
 	               $pageLoaded = "admin-contenu";
-	               $openAdmin = "in";
-	               break;
-	           case 'AdminUtilisateur':
-	               $activeAdmin = "active-link";
-	               $activeAdminUtilisateur = "active-link";
-	               $pageLoaded = "admin-utilisateur";
-	               $openAdmin = "in";
-	               break;
-	           case 'AdminGigya':
-	               $activeAdmin = "active-link";
-	               $activeAdminGigya = "active-link";
-	               $pageLoaded = "admin-gigya";
-	               $openAdmin = "in";
+	               $openAdminContenu = "in";
 	               break;
 	           case 'AdminPermission':
-	               $activeAdmin = "active-link";
+	               $activeContenu = "active-link";
 	               $activeAdminPermission = "active-link";
 	               $pageLoaded = "admin-permission";
-	               $openAdmin = "in";
+	               $openAdminContenu = "in";
+	               break;
+	           case 'AdminUtilisateur':
+	               $activeUser = "active-link";
+	               $activeAdminUtilisateur = "active-link";
+	               $pageLoaded = "admin-utilisateur";
+	               $openAdminUser = "in";
+	               break;
+	           case 'AdminGigya':
+	               $activeUser = "active-link";
+	               $activeAdminGigya = "active-link";
+	               $pageLoaded = "admin-gigya";
+	               $openAdminUser = "in";
+	               break;
+	           case 'AdminHabilitation':
+	               $activeUser = "active-link";
+	               $activeAdminHabilitation = "active-link";
+	               $pageLoaded = "admin-habilitation";
+	               $openAdminUser = "in";
 	               break;
 	           case 'HistoriqueAlertes':
 	               $pageLoaded = "historique-alertes";

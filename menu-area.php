@@ -17,28 +17,15 @@
 			</div>
 		</div>
 
-
-		<!-- div class="panel-group menu_item_wrapper">
-			<div class="panel panel-default menu_item">
-				<div class="panel-heading nav-menu <?php //echo $activeSimuler ?>">
-					<h4 class="panel-title">
-						<a href="javascript:void(0)" id="Simuler" alt="Simuler"><span
-							class="glyphicon glyphicon-signal" aria-hidden="true"></span> <span
-							class="menu_title">Simuler</span></a>
-					</h4>
-				</div>
-
-			</div>
-		</div-->
-
+		<?php if($cssLoaded != "ADMIN") {?>
 		<div class="panel-group menu_item_wrapper">
 			<div class="panel panel-default menu_item">
 				<div class="panel-heading nav-menu <?php echo $activeSimulation ?>">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" href="#simulation" id="simulation" class="collapsed"
-							aria-expanded="true"><span class="glyphicon glyphicon-stats"
-							aria-hidden="true"></span> <span class="menu_title">Simulation<span
-								class="caret"></span></span></a>
+						<a data-toggle="collapse" href="#simulation" id="simulation"
+							class="collapsed" aria-expanded="true"><span
+							class="glyphicon glyphicon-stats" aria-hidden="true"></span> <span
+							class="menu_title">Simulation<span class="caret"></span></span></a>
 					</h4>
 				</div>
 
@@ -136,37 +123,72 @@
 			</div>
 		</div>
 
-		<?php if($cssLoaded == "ADMIN") {?>
+		<?php }else if($cssLoaded == "ADMIN") {?>
+		
 		<div class="panel-group menu_item_wrapper">
 			<div class="panel panel-default menu_item">
-				<div class="panel-heading nav-menu <?php echo $activeAdmin ?>">
+				<div class="panel-heading nav-menu <?php echo $activeContenu ?>">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" href="#admin" id="admin" class="collapsed"
-							aria-expanded="true"><span class="glyphicon glyphicon-cog"
-							aria-hidden="true"></span> <span class="menu_title">Administration<span
-								class="caret"></span></span></a>
+						<a data-toggle="collapse" href="#contenu" id="contenu"
+							class="collapsed" aria-expanded="true"><span
+							class="glyphicon glyphicon-globe" aria-hidden="true"></span> <span
+							class="menu_title">Gestion contenu<span class="caret"></span></span></a>
 					</h4>
 				</div>
 
-				<div id="admin"
-					class="panel-collapse sub_menu_items collapse <?php echo $openAdmin ?>"
+				<div id="contenu"
+					class="panel-collapse sub_menu_items collapse <?php echo $openAdminContenu ?>"
 					aria-expanded="true">
 					<div
 						class="panel-heading nav-menu sous-menu <?php echo $activeAdminContenu ?>">
 						<h4 class="panel-title">
 							<a href="javascript:void(0)" id="AdminContenu"><span
 								class="glyphicon glyphicon" aria-hidden="true"></span><span
-								class="glyphicon glyphicon-list" aria-hidden="true"></span> <span
-								class="menu_title">Gestion Contenu</span></a>
+								class="glyphicon glyphicon-globe" aria-hidden="true"></span> <span
+								class="menu_title">Contenu</span></a>
 						</h4>
 					</div>
+
+					<div
+						class="panel-heading nav-menu sous-menu <?php echo $activeAdminPermission ?>">
+						<h4 class="panel-title">
+							<a href="javascript:void(0)" id="AdminPermission"><span
+								class="glyphicon glyphicon" aria-hidden="true"></span><span
+								class="glyphicon glyphicon-fire" aria-hidden="true"></span> <span
+								class="menu_title">Permission</span></a>
+						</h4>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="panel-group menu_item_wrapper">
+			<div class="panel panel-default menu_item">
+				<div class="panel-heading nav-menu <?php echo $activeUser ?>">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" href="#user" id="user" class="collapsed"
+							aria-expanded="true"><span class="glyphicon glyphicon-user"
+							aria-hidden="true"></span> <span class="menu_title">Gestion
+								utilisateur<span class="caret"></span>
+						</span></a>
+					</h4>
+				</div>
+
+				<div id="user"
+					class="panel-collapse sub_menu_items collapse <?php echo $openAdminUser ?>"
+					aria-expanded="true">
+
 					<div
 						class="panel-heading nav-menu sous-menu <?php echo $activeAdminUtilisateur ?>">
 						<h4 class="panel-title">
 							<a href="javascript:void(0)" id="AdminUtilisateur"><span
 								class="glyphicon glyphicon" aria-hidden="true"></span><span
 								class="glyphicon glyphicon-user" aria-hidden="true"></span> <span
-								class="menu_title">Gestion Utilisateur</span></a>
+								class="menu_title">Utilisateur</span></a>
 						</h4>
 					</div>
 					<div
@@ -174,49 +196,28 @@
 						<h4 class="panel-title">
 							<a href="javascript:void(0)" id="AdminGigya"><span
 								class="glyphicon glyphicon" aria-hidden="true"></span><span
-								class="glyphicon glyphicon-user" aria-hidden="true"></span> <span
-								class="menu_title">Gestion Gigya</span></a>
+								class="glyphicon glyphicon-send" aria-hidden="true"></span> <span
+								class="menu_title">Gigya</span></a>
 						</h4>
 					</div>
+					
 					<div
-						class="panel-heading nav-menu sous-menu <?php echo $activeAdminPermission ?>">
+						class="panel-heading nav-menu sous-menu <?php echo $activeAdminHabilitation ?>">
 						<h4 class="panel-title">
-							<a href="javascript:void(0)" id="AdminPermission"><span
+							<a href="javascript:void(0)" id="AdminHabilitation"><span
 								class="glyphicon glyphicon" aria-hidden="true"></span><span
-								class="glyphicon glyphicon-wrench" aria-hidden="true"></span> <span
-								class="menu_title">Gestion Permission</span></a>
+								class="glyphicon glyphicon-fire" aria-hidden="true"></span> <span
+								class="menu_title">Habilitation</span></a>
 						</h4>
 					</div>
+
 				</div>
 			</div>
 		</div>
 		
 		<?php }?>
 		
-		<!-- div class="panel-group menu_item_wrapper">
-			<div class="panel panel-default menu_item">
-				<div class="panel-heading nav-menu">
-					<h4 class="panel-title">
-						<a href="#"><span class="glyphicon glyphicon-euro"
-							aria-hidden="true"></span> <span class="menu_title">Ma
-								Facturation</span></a>
-					</h4>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="panel-group menu_item_wrapper">
-			<div class="panel panel-default menu_item">
-				<div class="panel-heading nav-menu">
-					<h4 class="panel-title">
-						<a href="#"><span class="glyphicon glyphicon-info-sign"
-							aria-hidden="true"></span> <span class="menu_title">Infos CEE</span></a>
-					</h4>
-				</div>
-
-			</div>
-		</div-->
+		
 
 	</div>
 
@@ -247,16 +248,32 @@ function setNavigation() {
    		
    		var href = $('a', this).attr('href');
    		var id = $('a', this).attr('id');
+
+
+   		switch(id) {
+       	  case 'contenu':
+       		$( "div #contenu" ).toggleClass( "in" );
+       	    break;
+       	  case 'user':
+     		$( "div #user" ).toggleClass( "in" );
+       	    break;
+       	  case 'simulation':
+     		$( "div #simulation" ).toggleClass( "in" );
+       	    break;
+       	  default:
+       		window.location.href = '/uiportailcee?pageLoaded=' + id,true;
+       	}
+   	   	
    		
 		//alert('id: ' + id);
-	    if(id == 'admin') {
+	    /* if(id == 'admin') {
     	    $( "div #admin" ).toggleClass( "in" );
 	    }
 	    else if(id == 'simulation') {
 	    	$( "div #simulation" ).toggleClass( "in" );    
   	    }else {
    			window.location.href = '/uiportailcee?pageLoaded=' + id,true;
-   	    }
+   	    } */
 
    	});
    	

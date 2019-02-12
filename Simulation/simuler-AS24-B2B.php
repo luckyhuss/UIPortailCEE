@@ -111,8 +111,10 @@
                                 <span class="header_output"><a><i class="disabled-icon glyphicon glyphicon-download-alt" rel="tooltip" title="Télécharger dossier"></i></a></span>
                             </div>
                         </div>
-
-                        <span class="brouillon-error-message text-danger displayed" id="sectionErrorMsg"> Votre brouillon n'a pas pu être sauvegarder.</span>
+						<div id="sectionErrorMsg" class="displayed">
+							<span class="brouillon-error-message text-danger" > Votre brouillon n'a pas pu être sauvegardé.</span>
+						</div>
+                        
                     </div>
 
                     <div class="modal-footer">

@@ -2883,8 +2883,6 @@ input[name='optradio'] {
 
 
 
-
-
 .icon-holder {
 	padding-left:10px;
 	padding-right:10px;	
@@ -2892,14 +2890,6 @@ input[name='optradio'] {
 
 .col-action-btn {
 	width:10%;
-}
-
-.glyphicon-edit, .glyphicon-trash {
-	font-size:15px;	
-}
-
-.glyphicon-trash {
-	color:red;
 }
 
 
@@ -3205,7 +3195,7 @@ input[name='optradio'] {
 	color : black;
 }
 
-#listUtilisateur .alert {
+#listUtilisateur .alert, #listDemandesHabilitation .alert {
     padding: 5px;
     font-weight: bold;
 }
@@ -3278,10 +3268,22 @@ input[name='optradio'] {
 }
 
 
+.glyphicon-eye-open, .glyphicon-edit, a > .glyphicon-edit, .glyphicon-trash, .glyphicon-ok-circle {
+    font-size: 21px !important;
+}
+
 .glyphicon-eye-open, .glyphicon-edit, a > .glyphicon-edit {
-    font-size: 18px !important;
     color: /* #337ab7 */ #000 !important;
 }
+
+.glyphicon-ok-circle {
+	color : green;
+}
+
+.glyphicon-trash {
+	color:red;
+}
+
 
 .choisirInfoBenefPanel .infoBenefFields {
 	padding: 0px;
@@ -3330,3 +3332,11 @@ input[name='optradio'] {
 }
 
 
+#sectionErrorMsg {
+	margin-top: 5px;
+    padding-top: 5px;
+}
+
+#brouillonName {
+	padding-bottom: 5px;
+}

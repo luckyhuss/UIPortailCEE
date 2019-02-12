@@ -101,8 +101,7 @@
 
 						<div class="col-md-12 data_table_holder">
 							<table id="listContent-<?=$gestion ?>"
-								class="table table-striped table-bordered nowrap"
-								style="width: 100%">
+								class="table table-striped table-bordered nowrap listDataTable" style="width: 100%">
 								<thead>
 									<tr>
 										<th>Titre</th>

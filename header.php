@@ -31,15 +31,13 @@
 
 					<div class="icon_holder dropdown">
 						<span class="disabled-icon glyphicon glyphicon-th"
-							data-target="#dropdown1" class="dropdown-toggle"
-							data-toggle="dropdown" aria-hidden="true"
-							title="Prévu pour le lot 2"> </span>
+							title="Désactivé"> </span>
 						<!-- span class="badge badge-notify">99+</span-->
 					</div>
 
 					<div class="icon_holder">
-						<span class="glyphicon glyphicon-bell" title="Notification"></span>
-						<span class="badge badge-notify">9+</span>
+						<span class="glyphicon glyphicon-bell disabled-icon" title="Désactivé"></span>
+						<!-- <span class="badge badge-notify">9+</span> -->
 
 						<?php include("dropdown-alerte-notification.php"); ?>
 						
@@ -53,7 +51,7 @@
 					</div>
 
 					<div class="icon_holder">
-						<span class="glyphicon glyphicon-user displayed" title="Profile"></span>
+						<span class="glyphicon glyphicon-user displayed" id="user-profile" title="Profile"></span>
 
 						<div class="dropdown-user-profile displayed"
 							id="dropdown-user-profile">
@@ -116,7 +114,7 @@ $(document).on('click', function (e) {
         $("#dropdown-alerte-notification").addClass("displayed");
     }
 
-    if (($(e.target).closest(".glyphicon-user").length === 0  
+    if (($(e.target).closest("#user-profile").length === 0  
     	    	    && (!$("#dropdown-user-profile").is(e.target) && $("#dropdown-user-profile").has(e.target).length === 0))) {
         //console.log("removed : " + $("#dropdown-alerte-notification").has(e.target).length);
         $("#dropdown-user-profile").addClass("displayed");
@@ -126,7 +124,7 @@ $(document).on('click', function (e) {
 
 
 // On clicking on User [ user profile ]
-$('.glyphicon-user').on('click', function(e) {
+$('#user-profile').on('click', function(e) {
 	console.log('user clicked');
 	$('.dropdown-user-profile').toggleClass("displayed");
 	e.preventDefault();
@@ -134,6 +132,7 @@ $('.glyphicon-user').on('click', function(e) {
 });
 
 
+/*
 // On clicking on bell [ alerte notification ] 
 $('.glyphicon-bell').on('click', function(e) {
 	console.log('bell clicked');
@@ -141,11 +140,11 @@ $('.glyphicon-bell').on('click', function(e) {
   	// close user profile if already open
   	//$('.dropdown-menu-user-profile').addClass("displayed");	
 
-  	$('.dropdown-alerte-notification').toggleClass("displayed"); //you can list several class names 
+  	$('.dropdown-alerte-notification').toggleClass("displayed"); 
   	e.preventDefault();
   
 });
-
+*/
 
 
 </script>
