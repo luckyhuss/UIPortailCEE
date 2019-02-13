@@ -1048,8 +1048,8 @@ caption {
 	#collapseDossiersEnCours .submit_button_holder,
 	#collapseDossiersDeposes .submit_button_holder, #collapseSearchBarFiche .submit_button_holder,
 	#formCritereSim .submit_button_holder, #collapseDetailSimulation .submit_button_holder, #collapseHistoSim .submit_button_holder,
-	#uploadFileModal .submit_button_holder, #step-1 .submit_button_holder, #step-2 .submit_button_holder, #step-3 .submit_button_holder,
-	#step-4 .submit_button_holder, #step-5 .submit_button_holder
+	#uploadFileModal .submit_button_holder, #simulationStep1 .submit_button_holder, #predossierStep2 .submit_button_holder, #predossierStep3 .submit_button_holder,
+	#predossierStep4 .submit_button_holder
 	{
 	text-align: right;
 }
@@ -1147,13 +1147,13 @@ caption {
 
 /*End piloter mon activite*/
 #collapseListeDossiers .submit_button_holder a, #collapseDossiersPayes .submit_button_holder a,
-	#collapseDossiersEnCours .submit_button_holder a,
-	#collapseDossiersDeposes .submit_button_holder a,
-	#collapseSearchBarFiche .submit_button_holder,
-	#collapseDetailSimulation .submit_button_holder a, #step-2 .submit_button_holder button{
-	position: inherit;
-	top: 10px;
-	left: 15px;
+#collapseDossiersEnCours .submit_button_holder a,
+#collapseDossiersDeposes .submit_button_holder a,
+#collapseSearchBarFiche .submit_button_holder,
+#collapseDetailSimulation .submit_button_holder a, #predossierStep2 .submit_button_holder button, #predossierStep3 .submit_button_holder button, #predossierStep4 .submit_button_holder button {
+    position: inherit;
+    top: 10px;
+    left: 15px;
 }
 
 /* info cee */
@@ -3327,7 +3327,7 @@ input[name='optradio'] {
 }
 
 
-#step-1 #sectionStepOne {
+#sectionStepOne {
 	margin-bottom: 40px;
 }
 
