@@ -204,8 +204,8 @@ function saveBrouillonSuccess(){
 }
 
 function saveBrouillonFail(){
-    $("#sectionErrorMsg").css("display", "block");
-    $("#brouillonModal .modal-footer").css("display", "none");
+    $("#sectionErrorMsg").removeClass("displayed");
+    //$("#brouillonModal .modal-footer").css("display", "none");
 }
 
 function hideButtonOk(){

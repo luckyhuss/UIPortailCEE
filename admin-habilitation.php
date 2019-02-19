@@ -48,18 +48,20 @@
 	</div>
 </div>
 
-<div class="panel-group displayed" id="add-edit-panel">
+<div class="panel-group displayed" id="edit-panel">
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h4 class="panel-title">
 				<span class="panel_header_element"><a data-toggle="collapse"
 					href="#gestEditDemandeHabilitation">Modifier demande habilitation</a></span>
 				<span class="panel_header_element"><a data-toggle="collapse"
-					href="#gestEditDemandeHabilitation"><i class="glyphicon glyphicon-fire"></i></a></span>
+					href="#gestEditDemandeHabilitation"><i
+						class="glyphicon glyphicon-fire"></i></a></span>
 			</h4>
 		</div>
 
-		<div id="gestEditDemandeHabilitation" class="panel-collapse collapse in">
+		<div id="gestEditDemandeHabilitation"
+			class="panel-collapse collapse in">
 			<div class="panel-body"></div>
 		</div>
 	</div>
@@ -87,9 +89,38 @@
 </div>
 
 
+<div id="infoSuppression" class="modal fade in popin-info" tabindex="-1"
+	role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog ">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="btn btn-default close-popup">x</button>
+				<h4 id="modalTitle" class="modal-title"></h4>
+			</div>
+			<div id="modalBody" class="modal-body">
+				<ul class="list-group">
+					<li class="list-group-item"><img src="assets/img/popin-info.png"></li>
+					<li class="list-group-item">Etes-vous sur de supprimer cette demande? Cliquez sur OK pour confirmer la suppression ou sur Annuler</li>
+				</ul>
+			</div>
+			<div class="modal-footer">
+				<!-- <button type="button" class="btn js-close btn-default"
+									data-dismiss="modal">Fermer</button> -->
+			</div>
+		</div>
+	</div>
+</div>
+
 
 <script>
+
+
 $(document).ready(function() {
+	loadDemandeHabilitation(25);
+});
+
+
+function loadDemandeHabilitation(numDemandes) {
 	
 	$.fn.DataTable.ext.pager.numbers_length = 4;
 	$('#listDemandesHabilitation').DataTable({
@@ -100,7 +131,7 @@ $(document).ready(function() {
 		
 		
         data : [
-        	<?php for($i=0; $i <7 ; $i++) {?>
+        	<?php for($i=0; $i <25 ; $i++) {?>
     			   {"Nom"     : "test<?=$i?>",
     				"Prénom"  : "Smith",
     				"SIREN"   : "5346232222",
@@ -115,8 +146,7 @@ $(document).ready(function() {
 		],
 		"columnDefs": [
             {
-
-            	// Droit Simulation column
+            	// Droit Simulation / Pre-dossier
                 targets: [ -2, -3],
                 className: 'dt-body-center',
                 render: function ( data ) {
@@ -152,7 +182,7 @@ $(document).ready(function() {
 
         "paging": true,
 		"destroy": true,
-        "pageLength": 15, // affichage des demandes par 15
+        "pageLength": 10, // affichage des demandes par 15
         "language": {
             "lengthMenu": "Afficher _MENU_ lignes par page",
             "zeroRecords": "Pas de données" ,   
@@ -176,7 +206,8 @@ $(document).ready(function() {
 		
 	});	
 	jQuery('.listDataTable').wrap('<div class="dataTables_scroll" />');			
-});
+
+}
 
 
 function processDemande(process, id) {
@@ -185,25 +216,32 @@ function processDemande(process, id) {
  	  case 'supprimer':
  		 mscConfirm("", "Etes-vous sur de supprimer cette demande?","Cliquez sur OK pour confirmer la suppression ou sur Annuler.", 
  	            function()	{
- 	      		  alert("Demande deleted");
  	      		  // TODO : Appel WS to delete
+				  // reload Ajax Call
+				  loadDemandeHabilitation(10);	
+				  
+ 	      		  // Display message "Demande Supprimée" on popup
+				  $('#infoSuppression').modal();
  	      		},
  	      		function() {
  	      		  // NOTHING to be done
- 	      			
  	  			}
  	  	); 
  	    break;
  	  case 'valider':
  	 	  break;
  	  case 'edit':
- 	 	  $('#add-edit-panel').removeClass('displayed');
+ 	 	  $('#edit-panel').removeClass('displayed');
  	 	  $("html,body").animate({scrollTop: $("#gestEditDemandeHabilitation").offset().top}, 1000);
  	 	  break;
  	  default:
  	 	  // NOTHING
 	}
 }
+
+$(".close-popup").on('click', function() {
+    $('#infoSuppression').modal('hide');
+});
 	
 
 </script>
